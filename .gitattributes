@@ -1,0 +1,5 @@
+# Store and check out every file byte-for-byte.
+# This archive is hash-verified (MANIFEST.sha256, tools/verify_archive.py), so line endings must never
+# be converted on checkout. Without this, a Windows clone with core.autocrlf=true would rewrite every
+# text file to CRLF and every recorded SHA256 would fail.
+* -text

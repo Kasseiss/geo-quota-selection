@@ -8,6 +8,7 @@
 # 192 DINOv2 feature caches (*.npz), one trained checkpoint (*.pt), and compiled
 # manuscript exports (*.docx/*.pdf/*.zip). See README.md.
 
+afb4d4d85ff60a86160eb4088a2da9a45fef75a569b1e506fd0365177e49c37f  .gitattributes
 bce6f91f15484f05d7e86754cbc99ea873cb55b35d381408ce4eed2c07f21c2a  .gitignore
 769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d  cache/dinov2-formal120/index.json
 8c7339630c32f8d89a8725ffab9450ce5054d15fab8c0c299e45b9d8fe0010e8  code/core.py
