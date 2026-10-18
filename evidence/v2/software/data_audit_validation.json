@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "started_utc": "2026-10-17T23:47:48.151572+00:00",
+  "completed_utc": "2026-10-17T23:47:48.977736+00:00",
+  "command": [
+    "python",
+    "code/v2_audit_data.py",
+    "--self-test"
+  ],
+  "validated_file_sha256": {
+    "code/v2_audit_data.py": "a94131564077480c71811312974a8a1719f5ca37adcc9781b74fde94b7dc9547",
+    "code/geography_audit.py": "c595e317d56a55090efb37ba69009925c1d68ca43739269d9653ed2e9ea63653"
+  },
+  "code_unchanged_during_check": true,
+  "stdout": "",
+  "stderr": "test_bbox_candidates_and_caution_exclusion (__main__.SyntheticChecks.test_bbox_candidates_and_caution_exclusion) ... ok\ntest_duplicate_requires_dimensions_and_cross_roles (__main__.SyntheticChecks.test_duplicate_requires_dimensions_and_cross_roles) ... ok\ntest_fixed_count_failure_and_disjoint_partition (__main__.SyntheticChecks.test_fixed_count_failure_and_disjoint_partition) ... ok\ntest_processed_mask_histogram_has_void_and_exact_truth_margins (__main__.SyntheticChecks.test_processed_mask_histogram_has_void_and_exact_truth_margins) ... ok\ntest_real_legacy_original_schema_omits_id_and_rejects_identity_drift (__main__.SyntheticChecks.test_real_legacy_original_schema_omits_id_and_rejects_identity_drift) ... ok\n\n----------------------------------------------------------------------\nRan 5 tests in 0.002s\n\nOK\n",
+  "returncode": 0,
+  "scientific_new_panel_scores_read": false,
+  "synthetic_checks_only": true
+}

@@ -1,0 +1,122 @@
+{
+  "format": "v2-supplement-working-review-1",
+  "created_utc": "2026-10-18T09:31:48.204721+00:00",
+  "status": "EXACT_WORKING_SUPPLEMENT_REVIEW_NO_NEW_CRITICAL_FINDING",
+  "candidate": "paper/v2/supplementary_source.json",
+  "candidate_sha256": "c7af676c27af5e8cf3d4c8bbd06a84d10438e4ede2e226a79107a57312d44e5d",
+  "candidate_text_sha256": "096a3d90c03f113de8b8e76cfd5359949cee9e7e1852412126d0fc77cb5c0116",
+  "candidate_text_hash_definition": {
+    "included_top_level_fields": [
+      "format",
+      "kind",
+      "title",
+      "authors",
+      "keywords",
+      "abstract",
+      "sections",
+      "back_matter",
+      "reference_order"
+    ],
+    "serialization": "UTF-8 json.dumps ensure_ascii=False sort_keys=True separators=(comma,colon) allow_nan=False; listed fields only if present; evidence_binding excluded",
+    "scope": "Includes full prose,tables,captions,asset paths and citation order. A binding-only refresh does not change this digest; changed scientific text/table/caption/layout fields does."
+  },
+  "review_scope": "Entire supplement:17tables,2figure captions,13references,execution accounting,training/calibration,source attribution and main-source agreement.",
+  "checks": {
+    "displayed_numeric_fields_checked": 468,
+    "numeric_discrepancies": [],
+    "table_count": 17,
+    "table_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S4",
+      "S5",
+      "S6",
+      "S7",
+      "S8",
+      "S9",
+      "S10",
+      "S11a",
+      "S11b",
+      "S11c",
+      "S11d",
+      "S11e",
+      "S11f",
+      "S11g"
+    ],
+    "condition_rows": 64,
+    "contrast_rows": 36,
+    "pixel_rows": 8,
+    "source_regions": 24,
+    "panel_regions": 24,
+    "reference_count": 13,
+    "first_use_order_matches": true,
+    "missing_citekeys": [],
+    "numeric_binding_current": true,
+    "supplemental_binding_current": true,
+    "asset_binding_current": true
+  },
+  "open_critical_findings": [],
+  "resolved_findings": [
+    "16crop proposals replaces16retries in recipe and pixel descriptions.",
+    "Continuous S1-S10,S11a-g table IDs and references.",
+    "Internal working provenance section/SHA table removed from publication; evidence retained separately.",
+    "CPU-reference reload retained accurately; absent qualitative supplement example no longer promised."
+  ],
+  "scientific_checks": [
+    "90full+486frozen=576active;72CPUreference+27pixel=675 distinct completed executions,calibration6trajectories/18checkpoint comparisons separate.",
+    "TableS2 roles and TableS3 exact72imageIDs/Monrovia disposition independently matched design/manifest.",
+    "Learning rates/steps,parameter counts,BNstatistics,crop/augmentation,MLPtarget supervision and runtime provenance agree with recorded code/calibration.",
+    "119x71=8449 supported cross-role comparisons/0overlap and0decoded cross-role duplicate candidates match disposition;Aachen/Monrovia cautions scoped accurately.",
+    "All48region attribution rows and license/alias uncertainty manually agree with registered ledgers.",
+    "CPU checkpointreload72images/24regions and exactintegerCM/aggregate statement matches passed receipt.",
+    "64conditions,36contrasts and8pixel rows independently rederived from canonical evidence;468 display fields match including equivalent Unicode minus signs.",
+    "Main/supplement scientific claims agree;each document preserves its own reference-first-use ordering."
+  ],
+  "main_candidate_sha256": "f6509692cdb6c0238eabd9d0f678dc96483467928354078ba531ed2cfbeff478",
+  "main_candidate_text_sha256": "04e414e27e78c0d43e73ad57b7074711de5c8756934590a14e7ea9a083537bf9",
+  "evidence_sha256": {
+    "configs/v2_design.json": "d790c26eae4a3c029cca73e3845efd3d95673017d88bafe42e37fb81f70046a4",
+    "configs/v2_extension.json": "7786624c6fc28aafe71f86495e8c653ab8ffc860cf2e316048e78db5c089ba92",
+    "configs/v2_active_gpu_amendment.json": "05b06f37acaaff2412e63baf126ab0e66ce552770af2b3dcbaed497c7ed94518",
+    "evidence/v2/calibration/calibration.json": "9bc9f894a2dc916d824bcec465ef23edab2be74005a5c3c6151f59dc8bf0aac3",
+    "evidence/v2/geographic_disposition.json": "8c191f8b296df66f33a6d75c08ee80fd5c64ebb4ab232fe3955ed9a2dccb59e3",
+    "evidence/v2/checkpoint_reload.json": "cbcb485704ac96babfc17bbf9fcff6b01f71a54635c4e177133d0b7a4b39cfbe",
+    "docs/data_attribution.md": "a858c550ee13265ea4d5fe750ac202892ee9b618da6911fcd30ea3f6262e611c",
+    "docs/v2_data_attribution.md": "e7627d5a77dcff392b132930d8f06806db4bb8fb82a32ec79c34ddc5d9406534",
+    "docs/v2_attribution_followup.md": "84f6ddd5a11349c0f58206bbd5d73ff847e147e913b03a4abe5277ece10caa93",
+    "docs/references_v2.bib": "a0389f038d2495538cb70a7173f0812c3a78fbf8e73106a1066a892847e71d97",
+    "tables/v2/conditions_by_source.csv": "1ee93c61458730b6bd1767f318f140082c533d1f6602c75e37d0e65d9bc7a930",
+    "tables/v2/conditions.csv": "6839eb25476fa491ff065efbe9f6dd5dd3511c208435f95f06265a860c4a9ef4",
+    "tables/v2/primary.json": "4b1cba5b9778d3a338a7d54f2cb8b70ada0ab44335c72e4b4885fd9f47e61f8f",
+    "tables/v2/contrasts.json": "55b704657c96730da6b3e1f6ea81e08f68a012e70dc2f844444ef2e545124551",
+    "tables/v2_pixel_budget/descriptive_analysis.json": "271dcfa7a38085003a4c964f4dda8889092ad4946e6ec7ee0c73aaf74cd2c162"
+  },
+  "release_boundary": {
+    "research_review_final_gate": false,
+    "rendered_main_supplement_DOCX_PDF_visual_QA": false,
+    "reason": "Final5paper+6numeric exactfile binding follows completed exports and visualQA."
+  },
+  "functional_completeness": "Entire requested supplemental scientific,numerical,method,citation,attribution scope covered; source precision/internal-workflow issues resolved. No additional defensive scope prose requested.",
+  "review_history": [
+    {
+      "candidate_sha256": "f52230cc2b88b52794215ec4e03ad4df23c55d8262b25ffabe52e55757fe7e10",
+      "candidate_text_sha256": "ae323f2f9ed25324ac5c1e164a269414394558d836ec88b618bff6c3b4e8027f",
+      "status": "EXACT_WORKING_SUPPLEMENT_REVIEW_NO_NEW_CRITICAL_FINDING"
+    },
+    {
+      "candidate_sha256": "19a94a7033c0ee19e072a0e2f825e62ccd05bddbd376ade4ce25935c37a94ff6",
+      "candidate_text_sha256": "edff50e08e4363ac22e5f2e909c411da04cd9d4539d9eeaf440ff8e8a2700e6e",
+      "status": "EXACT_WORKING_SUPPLEMENT_REVIEW_NO_NEW_CRITICAL_FINDING"
+    }
+  ],
+  "last_editorial_update": {
+    "verified_clauses": [
+      "Attribution cross-reference correctly points to Tables S9 and S10.",
+      "Complete condition appendix cross-reference correctly points to Tables S11a-S11g."
+    ],
+    "numeric_claims_changed": false,
+    "citations_changed": false,
+    "open_material_findings": []
+  }
+}

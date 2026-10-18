@@ -1,0 +1,45 @@
+{
+  "worker": 0,
+  "assigned_indices": [
+    0,
+    2,
+    4,
+    6,
+    8,
+    10,
+    12,
+    14,
+    16,
+    18,
+    20,
+    22,
+    24,
+    26
+  ],
+  "executed_indices": [
+    0,
+    2,
+    4,
+    6,
+    8,
+    10,
+    12,
+    14,
+    16,
+    18,
+    20,
+    22,
+    24,
+    26
+  ],
+  "skipped_existing": [],
+  "status": "complete",
+  "process": {
+    "pid": 21728,
+    "alive": true,
+    "creation_token": "134367855463322089",
+    "working_set_bytes": 1394360320,
+    "peak_working_set_bytes": 1519771648
+  },
+  "utc": "2026-10-18T08:42:15.839437+00:00"
+}

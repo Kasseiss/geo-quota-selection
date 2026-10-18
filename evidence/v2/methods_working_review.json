@@ -1,0 +1,173 @@
+{
+  "format": "v2-methods-working-review-1",
+  "created_utc": "2026-10-18T01:12:06.121908+00:00",
+  "status": "WORKING_FACT_AUDIT_NO_SUBSTANTIVE_INCONSISTENCY_FOUND",
+  "reviewed_file": "paper/v2_working/methods_source.json",
+  "reviewed_file_sha256": "b1032e452a68aae794658f30e3af6dc7192472e0209f28353783bc638423c350",
+  "scope": "Bounded outcome-neutral factual audit of the19-paragraph working Methods against frozen implementation, calibration identities and current literature registration; not final manuscript or completed-result review.",
+  "working_fact_check_passed": true,
+  "release_approved": false,
+  "results_or_contribution_adjudicated": false,
+  "partial_model_results_read": false,
+  "training_or_analysis_executed": false,
+  "manuscript_or_frozen_files_modified": false,
+  "frozen_dependency_check": {
+    "count": 53,
+    "changed": []
+  },
+  "bibliography_check": {
+    "entries": 25,
+    "unique_entries": 25,
+    "cited_keys": [
+      "xia2023openearthmap",
+      "vanetten2018spacenet",
+      "oquab2024dinov2",
+      "sener2018coreset",
+      "arthur2007kmeanspp",
+      "wei2015submodularity",
+      "nogueira2026coreset",
+      "wang2024utilityfairness",
+      "rafiey2024decomposable",
+      "he2016resnet",
+      "ronneberger2015unet",
+      "loshchilov2019adamw",
+      "roberts2017crossvalidation"
+    ],
+    "unregistered_keys": [],
+    "first_occurrence_order_matches": true
+  },
+  "checks": [
+    {
+      "topic": "Quota sampling and capacity awareness",
+      "manuscript": "sections[0].blocks[2].blocks[1]; line56",
+      "verdict": "consistent",
+      "evidence": [
+        "code/core.py:54-67",
+        "code/v2_selection.py:154-155"
+      ],
+      "detail": "Eligible union includes remaining images in non-exhausted groups at the current minimum selected count. Random selection is candidate-uniform on that union, not group-uniform. Quota k-center uses maximum nearest-selected cosine distance after its first random choice."
+    },
+    {
+      "topic": "Selector-only label blindness and preparation access",
+      "manuscript": "sections[0].blocks[0].blocks[0]; line16; sections[0].blocks[1].blocks[3]; line42",
+      "verdict": "consistent",
+      "evidence": [
+        "code/v2_selection.py:119-165",
+        "code/v2_run.py:70-88",
+        "code/cache_features.py:95-146",
+        "code/v2_prepare_data.py:230-244",
+        "code/v2_audit_data.py:244-287",
+        "code/v2_extract_panel.py:18-50"
+      ],
+      "detail": "The selector accepts IDs, descriptors, regions, budget, strategy and seed. Source native masks and class counts coexist in the cache, and panel masks are decoded during preparation/integrity/scoring. The manuscript limits blindness to the selector and explicitly discloses preparation access; it does not claim all panel labels were inaccessible to the pipeline."
+    },
+    {
+      "topic": "Frozen versus full supervision and metric grid",
+      "manuscript": "sections[0].blocks[3].blocks[1]; line82; sections[0].blocks[4].blocks[0]; line96",
+      "verdict": "consistent",
+      "evidence": [
+        "code/cache_features.py:121-146",
+        "code/v2_run.py:178-198",
+        "code/v2_segmentation.py:105-137",
+        "code/gpu_head.py:38-77"
+      ],
+      "detail": "DINO-S/14 dense features are384-channel32x32; native-mask class indicators are adaptively pooled, valid-class normalized and retained at coverage>=0.5. The MLP has384*128+128+128*8+8=50,312 parameters and uses4096-cell replacement batches for600 steps. Full training uses hard processed448 labels and224 crops; both evaluations use hard448 panel labels after bilinear-logit expansion. Recipe differences and causal limits are disclosed."
+    },
+    {
+      "topic": "Calibration recipe and planned matrix",
+      "manuscript": "sections[0].blocks[0].blocks[1]; line20; sections[0].blocks[3].blocks[2]; line86",
+      "verdict": "consistent",
+      "evidence": [
+        "configs/v2_design.json:188-219",
+        "configs/v2_extension.json",
+        "code/v2_calibrate.py:51-89",
+        "evidence/v2/calibration/calibration.json (only completion, chosen LR/steps and identity used)"
+      ],
+      "detail": "Each allocation uses a fixed24-image balanced-pool calibration sample and20 validation images, init0;2 LRs x3 checkpoints use maximum equal-region union mIoU, fewer steps then lower LR tie rules. Chosen source0=3e-4/600, source1=1e-4/1200, source2=1e-4/600. Planned matrix90+486=576, with3 allocations x3 paired selection/initialization seeds=9 fits per condition. Complete-model means architectural training scope, not a claim that all formal runs have finished."
+    },
+    {
+      "topic": "Parameter count, BN and recorded hardware",
+      "manuscript": "sections[0].blocks[3].blocks[0]; line78; sections[0].blocks[4].blocks[1]; line100",
+      "verdict": "consistent_with_recorded_implementation_and_environment",
+      "evidence": [
+        "code/v2_segmentation.py:61-102",
+        "code/v2_segmentation.py:177-180",
+        "evidence/v2/software/segmentation_validation.json",
+        "configs/v2_freeze.json calibration_environment",
+        "cache/dinov2-formal120/index.json extraction identity",
+        "v2/cache/new_panel_dinov2/index.json identity",
+        "evidence/v2/environment_record.json:61-74"
+      ],
+      "detail": "Existing software validation records12,456,328 trainable parameters, finite gradients across encoder/decoder, first encoder-convolution update and fixed BN running statistics. Calibration is CPU PyTorch2.13.0+cpu with8 threads; old/new feature extraction identities are CPU. GPU identity is recorded RTX4060 Laptop throughCuPy, with the environment record transparently identifying it as an earlier observation. This review did not reprobe hardware or inspect formal-run device fields."
+    },
+    {
+      "topic": "Regional estimand, bootstrap and Monrovia sensitivity",
+      "manuscript": "sections[0].blocks[5].blocks[0:3]; lines110,114,118",
+      "verdict": "consistent",
+      "evidence": [
+        "code/core.py:113-144",
+        "code/v2_statistics.py:59-97",
+        "code/v2_statistics.py:101-131",
+        "code/v2_statistics.py:233-285",
+        "configs/v2_geographic_sensitivity.json"
+      ],
+      "detail": "Per fit/region the3 imageCMs are summed, then classIoUs and regionalmIoU computed. Nine fit metrics are averaged perregion before matched policy differences and10,000 percentile region-bootstrap resamples, seed2026101805. Primary retains24; descriptive sensitivity filters entireMonrovia after fit averaging, leaving23. Truth-present omits absent-true class terms but errors from valid true pixels still affect retained true-class IoUs; the manuscript correctly avoids saying those errors are ignored."
+    },
+    {
+      "topic": "Citation registration and use boundaries",
+      "manuscript": "All13 local citation keys and local_citation_order",
+      "verdict": "consistent_with_current_registration",
+      "evidence": [
+        "docs/references_v2.bib",
+        "docs/v2_literature_matrix.md:19,36-37,45-46",
+        "docs/v2_nogueira_version_check.md",
+        "docs/v2_spacenet_reference_check.md"
+      ],
+      "detail": "All13 cited keys resolve uniquely in the current25-entry bibliography and local_citation_order matches first occurrence. NogueiraFD is accurately limited to a fixed-DINO/K12 adaptation of published ResNet18/Vendi-adaptive selection. WeightedFL is treated as an existing construction; U-Net/ResNet as existing architecture families. SpaceNet is registered as the upstream dataset preprint. This was a cross-file registration/claim-scope check, not a new external full-text or DOI audit."
+    }
+  ],
+  "substantive_findings": [],
+  "required_manuscript_corrections": [],
+  "remaining_release_dependencies": [
+    "Actual completion and exact inventory validation of all90 full and486 frozen formal fits; this audit did not inspect formal results or assert completed576.",
+    "Actual six-file numerical reproduction and predetermined checkpoint reload, including final delivery-root verification.",
+    "Scientific contribution and claim-scope assessment from the full matrix and controls; no effect, significance, equivalence, novelty or venue judgment made here.",
+    "Integration with final Introduction/Results/Discussion, full bibliography and global citation numbering; the13-key local order is not a final cross-manuscript numbering certificate.",
+    "Final evidence-bound manuscript schema, author declarations and DOCX/PDF all-page visual/layout inspection; this working source is not deliverable."
+  ],
+  "limitations": [
+    "Static source and existing development/software/environment record review only; no refitting, formal statistics or runtime hardware probe.",
+    "No independent re-acquisition of cited external literature in this bounded audit.",
+    "No method wording was changed. Any later substantive change to the working source invalidates this exact-file review."
+  ],
+  "source_sha256": {
+    "configs/v2_freeze.json": "5fd417464cc88024ad4063b2dc77366c1b6d3c80ea7cb1fd3083b0ddc2957bd8",
+    "configs/v2_design.json": "d790c26eae4a3c029cca73e3845efd3d95673017d88bafe42e37fb81f70046a4",
+    "configs/v2_extension.json": "7786624c6fc28aafe71f86495e8c653ab8ffc860cf2e316048e78db5c089ba92",
+    "configs/v2_geographic_sensitivity.json": "83e6a506dc88ca8509cf7f384a9c3295dddcdcb3de314e7bdff4ec4ed37b519a",
+    "code/core.py": "8c7339630c32f8d89a8725ffab9450ce5054d15fab8c0c299e45b9d8fe0010e8",
+    "code/v2_selection.py": "e1665e1932e05e5f00a1403c62399e0b1a00dc2618c72ba05c44fdc3d20efe96",
+    "code/v2_weighted_selection.py": "9d73d805e8ebe0b6f0afbac5c16de1f6fdc8ffc6f6a892b30d87cf82c3fc1f11",
+    "code/v2_segmentation.py": "5f8d46af866497e5a6db1c9779764566bdb8ddd3bcc01bcf3bb2721478e5a5d2",
+    "code/v2_calibrate.py": "92a4a16140fe89cc3a9efa413362667954943f9078fd204f277c1accd8293334",
+    "code/v2_run.py": "cd629e13d391575194825a00727356912ec8992f9b7c117002d7fab6293693fe",
+    "code/v2_statistics.py": "fdc8f32ddac241ffea227ed756ff6d852f72feefa4b1578a4b998a1ea66612c2",
+    "code/cache_features.py": "5c8122e7396e7203a64eb43e324c686d9b00b980fbd407cb0ebfa22af4bf13bc",
+    "code/gpu_head.py": "4d2bd675a46b5943b7ec8764a6bf625fa23177ce369ee38a3a45fe38e41e4b70",
+    "code/v2_extract_panel.py": "d15da0a2905a9a8e22095f6bf27ae0aeac8ece4d99f3dcd25ea1350095f5f9e9",
+    "code/v2_prepare_data.py": "28ab383e2d67f3c3a45f8fff796a7f54f5aee9f1bb5b66bd86ba4fd0a6370db6",
+    "code/v2_audit_data.py": "a94131564077480c71811312974a8a1719f5ca37adcc9781b74fde94b7dc9547",
+    "cache/dinov2-formal120/index.json": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+    "v2/cache/new_panel_dinov2/index.json": "a357fcc755ea3eedb9c81c01ee020356affab6e7e3eec9d9a1c2bf1dc9cd2952",
+    "evidence/v2/calibration/calibration.json": "9bc9f894a2dc916d824bcec465ef23edab2be74005a5c3c6151f59dc8bf0aac3",
+    "evidence/v2/software/segmentation_validation.json": "3b15371b690c303fc8f4eaddffd1dab3146fca0ad94bf5eeb9ce0d651d98fd05",
+    "evidence/v2/environment_record.json": "923aaa43ae58687db6122c05f1ecc0e9cbe32a2615b27df2f923009ae930238c",
+    "docs/v2_environment_record.md": "8819da2b2d94a9bda263686c6a21987eaa94873ce2bf3a8f1e5bd1cbc9b82d73",
+    "docs/references_v2.bib": "2336b3efcf61fbca512b0872d834de35c36839e14f41498053b990fb7ff7d01c",
+    "docs/v2_literature_matrix.md": "202ad59165103a347b082686f38bd70bf39ed6f135e944722b6171049e299ad0",
+    "docs/v2_nogueira_version_check.md": "63501c93136f4863cda827acdd3b7af8d368c2c45acedd807b8dcc9e21b71722",
+    "docs/v2_spacenet_reference_check.md": "1d13febdab9b7308f2144a20026507c734ea87575c24e4e243db2c6cfb511f35",
+    "docs/v2_weighted_selection.md": "b96ab73efc2f2bcbbdbd3db6ffc20a9ae9734a01fabb5fc2809e4311b73ca562"
+  },
+  "functional_coverage_retrospective": "All requested method facts were checked against relevant implementation/identities; no substantive mismatch found. Complete-result, contribution, global citation integration and final-layout gates remain explicitly open."
+}

@@ -1,0 +1,156 @@
+{
+  "format": "v2-research-review-1",
+  "created_utc": "2026-10-18T09:31:48.204721+00:00",
+  "passed": true,
+  "release_recommendation": "AUTHOR_REVIEW_PACKAGE",
+  "reviewer": "Internal independent scientific-review agent",
+  "review_scope": "Final main and supplement sources, actual DOCX/PDF deliverables, completed active576 results and pixel27, local citation trace, exact prose checks, and independent all-page visual review records.",
+  "checked_file_sha256": {
+    "paper/v2/manuscript.docx": "287c4e2845cfefddd8b69bb751d147417dcf2728b2525c071492a01c394c1ee4",
+    "paper/v2/manuscript.pdf": "b0396af740ecb50d10dbc1b6de8028d757946ed320bfe0d3e734693d6c757629",
+    "paper/v2/supplementary_material.docx": "3bedc34d314dd53f75510510936822b6117769311907665eeddbd8c221d765f3",
+    "paper/v2/supplementary_material.pdf": "394c2f2263439b0a37f8bb9192d7c4f42bf205fcab0de6c7a9bc089fec75cacf",
+    "paper/v2/manuscript_source.json": "f6509692cdb6c0238eabd9d0f678dc96483467928354078ba531ed2cfbeff478",
+    "tables/v2/conditions_by_source.csv": "1ee93c61458730b6bd1767f318f140082c533d1f6602c75e37d0e65d9bc7a930",
+    "tables/v2/conditions.csv": "6839eb25476fa491ff065efbe9f6dd5dd3511c208435f95f06265a860c4a9ef4",
+    "tables/v2/regions.csv": "f9a26a39d0c5d444fbeb2da3b46be518e64ac26c6261717ad30bbb78840e59c6",
+    "tables/v2/classes.csv": "64573f6c486f3d4c9a181d386d8dd1173876faa05d8b7f606b796ee2ca5ad533",
+    "tables/v2/contrasts.json": "55b704657c96730da6b3e1f6ea81e08f68a012e70dc2f844444ef2e545124551",
+    "tables/v2/primary.json": "4b1cba5b9778d3a338a7d54f2cb8b70ada0ab44335c72e4b4885fd9f47e61f8f",
+    "configs/v2_active_gpu_amendment.json": "05b06f37acaaff2412e63baf126ab0e66ce552770af2b3dcbaed497c7ed94518",
+    "evidence/v2/active_run_completeness.json": "cb32a37310ed765320b23ce29650e5a9fe60af4e874bab66f35b42b0adba5dfb",
+    "evidence/v2/cpu_reference_snapshot.json": "2e48118bccb1729cbd828917735a51d9ce58956d1d0accc383de330ea07b7201",
+    "tables/v2_cuda/descriptive_analysis.json": "6005ce9e5bae772d04d5cab09833b3a0cf2a28d01d672ba8a478a5050d60a23e",
+    "evidence/v2/pixel_budget_audit.json": "31c72c299db23cd51432c76d37f7a0a3f14357e31b87a11f19e340a5f2ba94e7",
+    "tables/v2_pixel_budget/descriptive_analysis.json": "271dcfa7a38085003a4c964f4dda8889092ad4946e6ec7ee0c73aaf74cd2c162",
+    "paper/v2/supplementary_source.json": "c7af676c27af5e8cf3d4c8bbd06a84d10438e4ede2e226a79107a57312d44e5d",
+    "docs/references_v2.bib": "a0389f038d2495538cb70a7173f0812c3a78fbf8e73106a1066a892847e71d97",
+    "evidence/v2/main_working_review.json": "a7238801126aca3dc31759158ddd5e1a9397ea07b69abfd77412ada018c5d546",
+    "evidence/v2/supplement_working_review.json": "35338526f5cce73154b889c171a180968f1b0326093821ca4fa766c6f51a0449",
+    "evidence/v2/main_visual_review.json": "7e418486ebb9773ade8f5f92f33173dd5e3b0d56dfef38edea1b72c4de892308",
+    "evidence/v2/supplement_visual_review.json": "410b45c9ad394865f3624c466a7f37cc9edf2178bdb9370614b28633599a18a3",
+    "evidence/v2/main_prose_review.json": "849d0e53843f7d43eb024058fa9397adb452dce1839c023c0b78f1ff91de3156",
+    "evidence/v2/supplement_prose_review.json": "1b5dce32c0afe1cb21f8b80975cdeda500c5d988a8da900bb22281843721834a",
+    "evidence/v2/pdf_structure_check.json": "fa2a48a92a425bca31e6b2863d527b7a6fb62bcea180e7227623efd8b49d06d6",
+    "evidence/v2/active_findings_working_review.json": "64f9cff689159c2f0adfdb1341ac9738cd3aadf2497b69d64cba7393556a807c"
+  },
+  "checked_candidates": {
+    "main": {
+      "path": "paper/v2/manuscript_source.json",
+      "sha256": "f6509692cdb6c0238eabd9d0f678dc96483467928354078ba531ed2cfbeff478",
+      "canonical_text_sha256": "04e414e27e78c0d43e73ad57b7074711de5c8756934590a14e7ea9a083537bf9"
+    },
+    "supplement": {
+      "path": "paper/v2/supplementary_source.json",
+      "sha256": "c7af676c27af5e8cf3d4c8bbd06a84d10438e4ede2e226a79107a57312d44e5d",
+      "canonical_text_sha256": "096a3d90c03f113de8b8e76cfd5359949cee9e7e1852412126d0fc77cb5c0116"
+    }
+  },
+  "scientific_review": {
+    "open_material_findings": [],
+    "contribution": "A controlled empirical comparison of geographic allocation, visual coverage and available supervision in source-image selection for land cover segmentation. The evidence identifies useful source balancing, competitive simple quota-random selection, and different responses of quota-versus-k-center and actual-versus-permuted contrasts to pixel matching.",
+    "evidence_alignment": "Abstract, Methods, Results, Discussion, Conclusion and both documents agree with the completed canonical results. Existing coverage and weighted-objective components are attributed to registered precedents; the text presents an empirical contribution.",
+    "counts": {
+      "active_full_GPU": 90,
+      "active_frozen_head": 486,
+      "active_total": 576,
+      "CPU_reference_separate": 72,
+      "pixel_control_separate": 27,
+      "distinct_completed_executions": 675,
+      "calibration_trajectories_separate": 6,
+      "calibration_checkpoint_comparisons": 18,
+      "conditions": 64,
+      "source_conditions": 192,
+      "geographic_panel_regions": 24,
+      "panel_images": 72,
+      "main_tables": 4,
+      "supplement_tables": 17,
+      "main_references": 18,
+      "supplement_references": 13
+    },
+    "main_union_contrast": {
+      "difference_pp": 1.6780811979067192,
+      "ci95_pp": [
+        0.8565408951195421,
+        2.5067002001370393
+      ]
+    },
+    "pixel_contrasts": [
+      {
+        "a": "region_kcenter",
+        "b": "kcenter",
+        "thinned": {
+          "difference_pp": 1.996366311303345,
+          "ci95_pp": [
+            1.1907778433675158,
+            2.832273180523063
+          ]
+        },
+        "paired_change": {
+          "difference_pp": 0.3182851133966262,
+          "ci95_pp": [
+            -0.13450481423599234,
+            0.7393443899253599
+          ]
+        }
+      },
+      {
+        "a": "region_kcenter",
+        "b": "permuted_region_kcenter",
+        "thinned": {
+          "difference_pp": 0.24674043204977228,
+          "ci95_pp": [
+            -0.1872248402183526,
+            0.6883328174731155
+          ]
+        },
+        "paired_change": {
+          "difference_pp": -0.6495980704799907,
+          "ci95_pp": [
+            -1.0486679039674904,
+            -0.2582620926664077
+          ]
+        }
+      }
+    ],
+    "scope_record": "GPU90 plus frozen486 is the descriptive active display after the recorded post-exposure backend amendment. CPU72 remains separate. Recipes differ in representation, architecture, supervision and augmentation. Pixel matching concerns available unique processed labels; calibration and validation use additional shared development labels.",
+    "reviewed_dimensions": [
+      "Selection information interface and source/panel separation",
+      "Metric class sets, regional confusion-matrix merging, and nine-fit averaging before bootstrap",
+      "Direct paired changes in pixel-budget contrasts",
+      "Source-specific effects, 24/23-region sensitivity and truth-present metric sensitivity",
+      "Strong baseline ranking and frozen-recipe budget matrix",
+      "Model parameter counts, calibrated recipes, BatchNorm statistics and runtime identity",
+      "Citation support and first-use ordering within each document",
+      "Data attribution, licensing uncertainty and truthful back matter"
+    ]
+  },
+  "verification": {
+    "original_frozen_file_count": 53,
+    "original_frozen_changed": [],
+    "active_audit_passed": true,
+    "active_table_byte_reproduction_passed": true,
+    "pixel27_audit_passed": true,
+    "canonical_six_SHA_match_analysis_identity": true,
+    "supplement_display_fields_independently_checked": 468,
+    "supplement_display_numeric_discrepancies": [],
+    "visual_main_pages": 13,
+    "visual_supplement_pages": 18,
+    "visual_all_pages_passed": true,
+    "final_public_PDFs_match_visual_review": true,
+    "PDF_structure_passed": true,
+    "prose_reviews_passed_and_match_current_sources": true,
+    "latest_DOCX_supplement_crossrefs_match_source": true,
+    "packager_checked_file_contract": "Verified before and after writing with v2_package_delivery.verify_research_review. The checked map excludes operational reports that may be regenerated in the delivery folder."
+  },
+  "author_metadata_status": "UNDETERMINED",
+  "known_author_completion_items": [
+    "Author identities, affiliations, contributions, funding and applicable declarations require completion by the human authors.",
+    "Final human author review and the submission decision remain pending."
+  ],
+  "submission_ready": false,
+  "human_author_approval_claimed": false,
+  "journal_acceptance_claimed": false,
+  "visual_review_basis": "The separate independent visual-review records document inspection of all pages and bind the final PDFs. QA image/PDF paths are excluded from the checked deliverable map.",
+  "functional_completeness": "Scientific, method, numeric, citation, prose and rendered-layout checks cover this exact author-review package, with no open material scientific findings. Personal metadata and human approval remain explicit completion items."
+}

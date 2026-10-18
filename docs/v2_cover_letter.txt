@@ -1,0 +1,11 @@
+Dear Editors,
+
+Please consider the manuscript “Geographic allocation and visual coverage for data efficient land cover segmentation” for publication in Remote Sensing.
+
+The study examines how source-region allocation complements visual coverage when a small number of training images must support land cover segmentation in other regions. It compares actual and size-preserving permuted source groups within shared selection rules, evaluates source-mean weighting within facility location, and follows the quota comparisons through an available-supervision-pixel intervention.
+
+The main matrix contains 576 fits evaluated on a fixed 24-region panel. Geographic quota k-center improves on visual k-center by 1.68 mIoU percentage points in the complete-model analysis and by 2.00 points when available processed supervision pixels are matched. Geographic weighted facility location improves on ordinary coverage, while quota random provides a strong simple reference. Pixel matching reduces the actual-versus-permuted quota contrast, showing that the allocation and membership comparisons respond differently to the supervision budget.
+
+The manuscript provides evidence for allocating limited training resources across geographic sources. Supplementary materials report the complete conditions, source-specific effects and experimental execution sequence. The accompanying research folder preserves the processed data provenance, selected image identities, code, confusion matrices and numerical results.
+
+Author details and submission declarations will be completed by the corresponding author before this letter is sent.

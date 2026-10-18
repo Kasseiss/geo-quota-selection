@@ -1,0 +1,50 @@
+{
+  "state": "terminal",
+  "pid": 2420,
+  "worker": 2,
+  "workers": 4,
+  "generation": "20261018T073131_cb9b1c1f59",
+  "assigned_indices": [
+    2,
+    6,
+    10,
+    14,
+    18,
+    22,
+    26,
+    30,
+    34,
+    38,
+    42,
+    46,
+    50,
+    54,
+    58,
+    62,
+    66,
+    70,
+    74,
+    78,
+    82,
+    86
+  ],
+  "alive": true,
+  "creation_token": "134367823432083427",
+  "working_set_bytes": 21762048,
+  "peak_working_set_bytes": 22847488,
+  "process_after_runtime_import": {
+    "pid": 2420,
+    "alive": true,
+    "creation_token": "134367823432083427",
+    "working_set_bytes": 471568384,
+    "peak_working_set_bytes": 473669632
+  },
+  "process_at_exit": {
+    "pid": 2420,
+    "alive": true,
+    "creation_token": "134367823432083427",
+    "working_set_bytes": 1364135936,
+    "peak_working_set_bytes": 1404575744
+  },
+  "terminal_utc": "2026-10-18T07:37:29.788251+00:00"
+}

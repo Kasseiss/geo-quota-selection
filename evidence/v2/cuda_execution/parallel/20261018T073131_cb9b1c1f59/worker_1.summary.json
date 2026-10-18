@@ -1,0 +1,55 @@
+{
+  "worker": 1,
+  "workers": 4,
+  "generation": "20261018T073131_cb9b1c1f59",
+  "assigned_indices": [
+    1,
+    5,
+    9,
+    13,
+    17,
+    21,
+    25,
+    29,
+    33,
+    37,
+    41,
+    45,
+    49,
+    53,
+    57,
+    61,
+    65,
+    69,
+    73,
+    77,
+    81,
+    85,
+    89
+  ],
+  "executed_indices": [
+    37
+  ],
+  "skipped_existing": [
+    1,
+    5,
+    9,
+    13,
+    17,
+    21,
+    25,
+    29,
+    33
+  ],
+  "successful_fitting_steps": 1200,
+  "status": "complete",
+  "wall_seconds": 260.67200000000594,
+  "process": {
+    "pid": 26236,
+    "alive": true,
+    "creation_token": "134367823214336809",
+    "working_set_bytes": 1365528576,
+    "peak_working_set_bytes": 1406177280
+  },
+  "free_physical_bytes_at_end": 718438400
+}

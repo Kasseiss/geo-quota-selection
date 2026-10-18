@@ -1,0 +1,26 @@
+{
+  "created_utc": "2026-10-18T01:10:22.808682+00:00",
+  "source_sha256": "b1032e452a68aae794658f30e3af6dc7192472e0209f28353783bc638423c350",
+  "paragraph_count": 19,
+  "approximate_words": 1949,
+  "citation_keys_valid": [
+    "xia2023openearthmap",
+    "vanetten2018spacenet",
+    "oquab2024dinov2",
+    "sener2018coreset",
+    "arthur2007kmeanspp",
+    "wei2015submodularity",
+    "nogueira2026coreset",
+    "wang2024utilityfairness",
+    "rafiey2024decomposable",
+    "he2016resnet",
+    "ronneberger2015unet",
+    "loshchilov2019adamw",
+    "roberts2017crossvalidation"
+  ],
+  "current_frozen_files_checked": 53,
+  "changed_frozen_files": [],
+  "complete_results_read": false,
+  "final_manuscript_created": false,
+  "scope": "Mechanical source/citation/input consistency only; factual and contribution review pending."
+}

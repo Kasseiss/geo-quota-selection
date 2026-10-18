@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "started_utc": "2026-10-17T23:47:31.125995+00:00",
+  "completed_utc": "2026-10-17T23:47:48.150466+00:00",
+  "command": [
+    "python",
+    "code/v2_statistics.py",
+    "--self-test"
+  ],
+  "validated_file_sha256": {
+    "code/v2_statistics.py": "fdc8f32ddac241ffea227ed756ff6d852f72feefa4b1578a4b998a1ea66612c2",
+    "code/v2_audit_runs.py": "ad6f3084f0c5109458f2a72358a400dcf60c5e170805dabc84db30de2c886ff1",
+    "configs/v2_design.json": "d790c26eae4a3c029cca73e3845efd3d95673017d88bafe42e37fb81f70046a4",
+    "configs/v2_extension.json": "7786624c6fc28aafe71f86495e8c653ab8ffc860cf2e316048e78db5c089ba92"
+  },
+  "code_unchanged_during_check": true,
+  "stdout": "",
+  "stderr": "test_average_fits_before_geography (__main__.SyntheticStatisticsTests.test_average_fits_before_geography) ... ok\ntest_condition_counts_from_cartesian_design (__main__.SyntheticStatisticsTests.test_condition_counts_from_cartesian_design) ... ok\ntest_descriptive_geographic_filter_preserves_primary_inputs (__main__.SyntheticStatisticsTests.test_descriptive_geographic_filter_preserves_primary_inputs) ... ok\ntest_full_synthetic_analysis_matrix_in_memory (__main__.SyntheticStatisticsTests.test_full_synthetic_analysis_matrix_in_memory) ... ok\ntest_metric_convention_from_synthetic_confusion (__main__.SyntheticStatisticsTests.test_metric_convention_from_synthetic_confusion) ... ok\ntest_paired_region_metric_and_leave_one_out (__main__.SyntheticStatisticsTests.test_paired_region_metric_and_leave_one_out) ... ok\n\n----------------------------------------------------------------------\nRan 6 tests in 16.444s\n\nOK\n",
+  "returncode": 0,
+  "scientific_new_panel_scores_read": false,
+  "synthetic_checks_only": true
+}

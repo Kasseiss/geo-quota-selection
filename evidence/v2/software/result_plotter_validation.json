@@ -1,0 +1,24 @@
+{
+  "created_utc": "2026-10-18T00:30:06.690994+00:00",
+  "code": "code/v2_plot_results.py",
+  "code_sha256": "ee24c0b544ac13178f530e06e634b54763207dc3acd92d8ccba263a0185bcf14",
+  "command": "python -B code/v2_plot_results.py --self-test",
+  "exit_code": 0,
+  "passed": true,
+  "parent_observed_native_session": 91626,
+  "checks": [
+    "synthetic64condition schema",
+    "four invalid schemas rejected",
+    "12temporary SVG/PDF/PNG formats",
+    "minimum9pt and canvas bounds",
+    "missing-CI handling",
+    "stable inventory digest sensitivity",
+    "incomplete audit refused"
+  ],
+  "environment": {
+    "python": "3.13.13",
+    "matplotlib": "3.11.0"
+  },
+  "formal_results_read_or_written": false,
+  "limitation": "Actual complete-matrix figures and visual review pending."
+}

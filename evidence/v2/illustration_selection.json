@@ -1,0 +1,29 @@
+{
+  "created_utc": "2026-10-18T00:07:09.635206+00:00",
+  "rule": "First two alphabetical new-panel regions whose official catalogue has a single unambiguous CC BY4.0 source, then first alphabetical image ID in each. Catalogue-level attribution; exact upstream scene URI not independently resolved.",
+  "regions": [
+    "al_qurnah",
+    "baybay"
+  ],
+  "ids": [
+    "al_qurnah__al_qurnah_33",
+    "baybay__baybay_36"
+  ],
+  "scope": "Descriptive illustration fixed after the experiment freeze and first fits, before inspecting these images or per-image outcomes; not a prospective statistical comparison.",
+  "source_attribution_document_sha256": "e7627d5a77dcff392b132930d8f06806db4bb8fb82a32ec79c34ddc5d9406534",
+  "performance_or_appearance_used_to_select_examples": false,
+  "catalogue_credits": {
+    "al_qurnah": {
+      "provider": "Bilal Ko\u00e7",
+      "source": "OpenAerialMap / Open Imagery Network contributors",
+      "url": "https://map.openaerialmap.org/",
+      "license": "CC BY4.0"
+    },
+    "baybay": {
+      "provider": "SkyEye",
+      "source": "OpenAerialMap / Open Imagery Network contributors",
+      "url": "https://map.openaerialmap.org/",
+      "license": "CC BY4.0"
+    }
+  }
+}

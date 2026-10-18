@@ -1,0 +1,76 @@
+{
+  "created_utc": "2026-10-18T00:29:48.742101+00:00",
+  "scope": "Existing dependency metadata, SHA-bound CPU calibration identity, and an earlier observed GPU identity; not clean-install validation.",
+  "python": "3.13.13",
+  "platform": "Windows 11",
+  "package_metadata_observed_now": {
+    "numpy": {
+      "version": "2.5.1",
+      "scope": "interpreter-visible metadata"
+    },
+    "Pillow": {
+      "version": "12.2.0",
+      "scope": "interpreter-visible metadata"
+    },
+    "torch": {
+      "version": "2.13.0",
+      "scope": "interpreter-visible metadata"
+    },
+    "torchvision": {
+      "version": "0.28.0",
+      "scope": "interpreter-visible metadata"
+    },
+    "matplotlib": {
+      "version": "3.11.0",
+      "scope": "interpreter-visible metadata"
+    },
+    "pyproj": {
+      "version": "3.8.0",
+      "scope": "project-isolated metadata"
+    },
+    "scipy": {
+      "version": "1.18.0",
+      "scope": "interpreter-visible metadata"
+    },
+    "requests": {
+      "version": "2.33.1",
+      "scope": "interpreter-visible metadata"
+    },
+    "cupy-cuda12x": {
+      "version": "14.2.0",
+      "scope": "project-isolated metadata"
+    },
+    "cuda-pathfinder": {
+      "version": "1.8.3",
+      "scope": "project-isolated metadata"
+    },
+    "fastrlock": {
+      "version": "0.8.4",
+      "scope": "project-isolated metadata"
+    }
+  },
+  "full_model_calibration_environment": {
+    "torch": "2.13.0+cpu",
+    "numpy": "2.5.1",
+    "python": "3.13.13",
+    "threads": 8,
+    "device": "cpu",
+    "device_name": "AMD64 Family 25 Model 117 Stepping 2, AuthenticAMD",
+    "pretrained_weight_sha256": "f37072fd47e89c5e827621c5baffa7500819f7896bbacec160b1a16c560e07ec"
+  },
+  "gpu_runtime_previously_observed": {
+    "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "cupy": "14.2.0",
+    "runtime": 12090,
+    "driver": 13020,
+    "total_memory_bytes": 8585216000
+  },
+  "source_records": {
+    "evidence/v2/environment_source_record.json": "4adc00344f966b60b4a81df85998e36d808e701daaefb7f158bb460ad08ed06c",
+    "evidence/v2/calibration/calibration.json": "9bc9f894a2dc916d824bcec465ef23edab2be74005a5c3c6151f59dc8bf0aac3"
+  },
+  "recording_code_sha256": "e53f8732b7193cc9b520acb911d1ac0c85f8901af63756f6b3dad502a5b23071",
+  "no_dependencies_installed": true,
+  "gpu_runtime_reprobed_now": false,
+  "a100_execution_claimed": false
+}

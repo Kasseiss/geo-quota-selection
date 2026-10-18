@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "command": [
+    "python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "code",
+    "-p",
+    "test_v2_selection.py",
+    "-v"
+  ],
+  "stdout": "",
+  "stderr": "test_budget_reproducibility_and_input_preservation (test_v2_selection.SelectionTests.test_budget_reproducibility_and_input_preservation) ... ok\ntest_facility_location_known_marginal_gains (test_v2_selection.SelectionTests.test_facility_location_known_marginal_gains) ... ok\ntest_facility_location_seed_only_breaks_ties (test_v2_selection.SelectionTests.test_facility_location_seed_only_breaks_ties) ... ok\ntest_fd_empty_repair_unique_members_and_full_coverage (test_v2_selection.SelectionTests.test_fd_empty_repair_unique_members_and_full_coverage) ... ok\ntest_invalid_inputs (test_v2_selection.SelectionTests.test_invalid_inputs) ... ok\ntest_kmeanspp_d_squared_probabilities (test_v2_selection.SelectionTests.test_kmeanspp_d_squared_probabilities) ... ok\ntest_kmeanspp_degenerate_uniform_remaining (test_v2_selection.SelectionTests.test_kmeanspp_degenerate_uniform_remaining) ... ok\ntest_legacy_exact_sequences_and_permuted_group_sizes (test_v2_selection.SelectionTests.test_legacy_exact_sequences_and_permuted_group_sizes) ... ok\ntest_new_strategies_use_unit_rows (test_v2_selection.SelectionTests.test_new_strategies_use_unit_rows) ... ok\ntest_region_constraint_until_exhaustion (test_v2_selection.SelectionTests.test_region_constraint_until_exhaustion) ... ok\n\n----------------------------------------------------------------------\nRan 10 tests in 0.250s\n\nOK\n"
+}

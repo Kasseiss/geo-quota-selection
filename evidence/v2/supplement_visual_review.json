@@ -1,0 +1,407 @@
+{
+  "format": "v2-supplement-visual-review-1",
+  "created_utc": "2026-10-18T09:27:17.129266+00:00",
+  "passed": true,
+  "scope": "Final supplement visual layout and numbering review",
+  "review_method": "Every original 1190x1540, 140dpi page viewed individually at original detail; corrected pages11 and14 viewed again after parent regeneration. DOCX/PDF structure inspected read-only.",
+  "file_sha256": {
+    "paper/v2/supplementary_material.docx": "3bedc34d314dd53f75510510936822b6117769311907665eeddbd8c221d765f3",
+    "paper/v2/supplementary_source.json": "c7af676c27af5e8cf3d4c8bbd06a84d10438e4ede2e226a79107a57312d44e5d",
+    "paper/v2/_qa/supplement/supplementary_material.pdf": "394c2f2263439b0a37f8bb9192d7c4f42bf205fcab0de6c7a9bc089fec75cacf",
+    "paper/v2/supplementary_material.pdf": "394c2f2263439b0a37f8bb9192d7c4f42bf205fcab0de6c7a9bc089fec75cacf"
+  },
+  "page_count": 18,
+  "pages_inspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18
+  ],
+  "pages": [
+    {
+      "page": 1,
+      "path": "paper/v2/_qa/supplement/page-1.png",
+      "sha256": "dfa2242a20bc0643a2a2b0e8e16260d9e297c6d6055c186840da2abb098a84ed",
+      "dimensions_px": [
+        1190,
+        1540
+      ],
+      "original_render_dpi": 140,
+      "visually_inspected": true,
+      "corrected_page_reinspected": false,
+      "minimum_pdf_text_pt": 9.0,
+      "layout_passed": true
+    },
+    {
+      "page": 2,
+      "path": "paper/v2/_qa/supplement/page-2.png",
+      "sha256": "17bcd214f663e3dd53a22878f4824190fda9e19946f79166a6a870f294d9d459",
+      "dimensions_px": [
+        1190,
+        1540
+      ],
+      "original_render_dpi": 140,
+      "visually_inspected": true,
+      "corrected_page_reinspected": false,
+      "minimum_pdf_text_pt": 9.0,
+      "layout_passed": true
+    },
+    {
+      "page": 3,
+      "path": "paper/v2/_qa/supplement/page-3.png",
+      "sha256": "941cb9ca5a58a92fdfac03c3a81f3d4a3233927076e2c9f9d95a86c0ca6cd503",
+      "dimensions_px": [
+        1190,
+        1540
+      ],
+      "original_render_dpi": 140,
+      "visually_inspected": true,
+      "corrected_page_reinspected": false,
+      "minimum_pdf_text_pt": 9.0,
+      "layout_passed": true
+    },
+    {
+      "page": 4,
+      "path": "paper/v2/_qa/supplement/page-4.png",
+      "sha256": "6d68acc52201ca0514ba400ba512c5dfdd66b5909d157963d6ad69566d29919d",
+      "dimensions_px": [
+        1190,
+        1540
+      ],
+      "original_render_dpi": 140,
+      "visually_inspected": true,
+      "corrected_page_reinspected": false,
+      "minimum_pdf_text_pt": 9.0,
+      "layout_passed": true
+    },
+    {
+      "page": 5,
+      "path": "paper/v2/_qa/supplement/page-5.png",
+      "sha256": "14c140a72c121d1da0c05f7ed056bf6fc637828aff2deb691cee8aaf611a456c",
+      "dimensions_px": [
+        1190,
+        1540
+      ],
+      "original_render_dpi": 140,
+      "visually_inspected": true,
+      "corrected_page_reinspected": false,
+      "minimum_pdf_text_pt": 9.0,
+      "layout_passed": true
+    },
+    {
+      "page": 6,
+      "path": "paper/v2/_qa/supplement/page-6.png",
+      "sha256": "4db075624deecb6631cf5acb989a200f45c87879cd980a72f78d7e86e024909d",
+      "dimensions_px": [
+        1190,
+        1540
+      ],
+      "original_render_dpi": 140,
+      "visually_inspected": true,
+      "corrected_page_reinspected": false,
+      "minimum_pdf_text_pt": 9.0,
+      "layout_passed": true
+    },
+    {
+      "page": 7,
+      "path": "paper/v2/_qa/supplement/page-7.png",
+      "sha256": "c779b345e632db29062bef126dc44d159651d03d329643a6e7a9c2090bcc9532",
+      "dimensions_px": [
+        1190,
+        1540
+      ],
+      "original_render_dpi": 140,
+      "visually_inspected": true,
+      "corrected_page_reinspected": false,
+      "minimum_pdf_text_pt": 9.0,
+      "layout_passed": true
+    },
+    {
+      "page": 8,
+      "path": "paper/v2/_qa/supplement/page-8.png",
+      "sha256": "757fb8eb1d02e1b82c09c2d91e418bfdf66baeccde8d3f4940de6c842c4923de",
+      "dimensions_px": [
+        1190,
+        1540
+      ],
+      "original_render_dpi": 140,
+      "visually_inspected": true,
+      "corrected_page_reinspected": false,
+      "minimum_pdf_text_pt": 9.0,
+      "layout_passed": true
+    },
+    {
+      "page": 9,
+      "path": "paper/v2/_qa/supplement/page-9.png",
+      "sha256": "26020175f1bfbb40671a176c08ef1af4a3a4311af55afbe763a80c30105cde85",
+      "dimensions_px": [
+        1190,
+        1540
+      ],
+      "original_render_dpi": 140,
+      "visually_inspected": true,
+      "corrected_page_reinspected": false,
+      "minimum_pdf_text_pt": 9.0,
+      "layout_passed": true
+    },
+    {
+      "page": 10,
+      "path": "paper/v2/_qa/supplement/page-10.png",
+      "sha256": "7dc0e3128053e1d08450c5862c67516f8728a916bfd638baec0984b9025cb48a",
+      "dimensions_px": [
+        1190,
+        1540
+      ],
+      "original_render_dpi": 140,
+      "visually_inspected": true,
+      "corrected_page_reinspected": false,
+      "minimum_pdf_text_pt": 9.96,
+      "layout_passed": true
+    },
+    {
+      "page": 11,
+      "path": "paper/v2/_qa/supplement/page-11.png",
+      "sha256": "c82b103af49eb1f33d8fdb5c1eff4f6953d8084f2e5be785598b61de498204f0",
+      "dimensions_px": [
+        1190,
+        1540
+      ],
+      "original_render_dpi": 140,
+      "visually_inspected": true,
+      "corrected_page_reinspected": true,
+      "minimum_pdf_text_pt": 9.96,
+      "layout_passed": true
+    },
+    {
+      "page": 12,
+      "path": "paper/v2/_qa/supplement/page-12.png",
+      "sha256": "146996c9441173761873e2fd60ff4ec040271b7cd4c7ec58189037e96a183861",
+      "dimensions_px": [
+        1190,
+        1540
+      ],
+      "original_render_dpi": 140,
+      "visually_inspected": true,
+      "corrected_page_reinspected": false,
+      "minimum_pdf_text_pt": 9.0,
+      "layout_passed": true
+    },
+    {
+      "page": 13,
+      "path": "paper/v2/_qa/supplement/page-13.png",
+      "sha256": "ffa1e2e89faebce25b9792d24b3014d22e17b6f507fb716ea8a0f033a082e5f9",
+      "dimensions_px": [
+        1190,
+        1540
+      ],
+      "original_render_dpi": 140,
+      "visually_inspected": true,
+      "corrected_page_reinspected": false,
+      "minimum_pdf_text_pt": 9.0,
+      "layout_passed": true
+    },
+    {
+      "page": 14,
+      "path": "paper/v2/_qa/supplement/page-14.png",
+      "sha256": "e53f2055995e0a5d18b556df8cd9d6bf6725a62e1b22fa1918183219e8dd5046",
+      "dimensions_px": [
+        1190,
+        1540
+      ],
+      "original_render_dpi": 140,
+      "visually_inspected": true,
+      "corrected_page_reinspected": true,
+      "minimum_pdf_text_pt": 9.0,
+      "layout_passed": true
+    },
+    {
+      "page": 15,
+      "path": "paper/v2/_qa/supplement/page-15.png",
+      "sha256": "50071e6070447b2d8dc03a8891ef7053d0f314d5bf2c326618901b09a55583e5",
+      "dimensions_px": [
+        1190,
+        1540
+      ],
+      "original_render_dpi": 140,
+      "visually_inspected": true,
+      "corrected_page_reinspected": false,
+      "minimum_pdf_text_pt": 9.0,
+      "layout_passed": true
+    },
+    {
+      "page": 16,
+      "path": "paper/v2/_qa/supplement/page-16.png",
+      "sha256": "590e275f328315bddc4ea65f1b7aefabb059725ee5531919ec0d5f2532d16f62",
+      "dimensions_px": [
+        1190,
+        1540
+      ],
+      "original_render_dpi": 140,
+      "visually_inspected": true,
+      "corrected_page_reinspected": false,
+      "minimum_pdf_text_pt": 9.0,
+      "layout_passed": true
+    },
+    {
+      "page": 17,
+      "path": "paper/v2/_qa/supplement/page-17.png",
+      "sha256": "bfd54290078f27491b407906d24cd19b1a3b0c2978e53e060235d9b25bcdf907",
+      "dimensions_px": [
+        1190,
+        1540
+      ],
+      "original_render_dpi": 140,
+      "visually_inspected": true,
+      "corrected_page_reinspected": false,
+      "minimum_pdf_text_pt": 9.0,
+      "layout_passed": true
+    },
+    {
+      "page": 18,
+      "path": "paper/v2/_qa/supplement/page-18.png",
+      "sha256": "6ed7fa4b9143863efcbe8f250feb8ab92a02c93abc86f87686f8281776667f25",
+      "dimensions_px": [
+        1190,
+        1540
+      ],
+      "original_render_dpi": 140,
+      "visually_inspected": true,
+      "corrected_page_reinspected": false,
+      "minimum_pdf_text_pt": 9.96,
+      "layout_passed": true
+    }
+  ],
+  "checks": {
+    "all_18_pages_viewed": true,
+    "table_count": 17,
+    "table_numbering": [
+      "S1",
+      "S2",
+      "S3",
+      "S4",
+      "S5",
+      "S6",
+      "S7",
+      "S8",
+      "S9",
+      "S10",
+      "S11a",
+      "S11b",
+      "S11c",
+      "S11d",
+      "S11e",
+      "S11f",
+      "S11g"
+    ],
+    "black_three_line_tables": true,
+    "all_table_header_rows_marked_repeat": true,
+    "continuation_headers_visually_verified_pages": [
+      4,
+      7,
+      8,
+      16
+    ],
+    "cell_wrapping_readable": true,
+    "figures": 2,
+    "figure_caption_same_page": {
+      "S1": 10,
+      "S2": 11
+    },
+    "minimum_docx_explicit_font_pt": 9.0,
+    "minimum_pdf_text_pt": 9.0,
+    "figure_embedded_width_inches": [
+      6.5,
+      6.5
+    ],
+    "figure_font_evidence": "Existing plotter enforces minimum9pt, with6.5in canvas embedded at6.5in; labels visually readable in final pages.",
+    "no_observed_overlap_clipping_or_missing_glyphs": true,
+    "rendered_pdf_equals_delivery_pdf": true,
+    "page_numbers_1_to_18": true,
+    "corrected_plural_table_references_current": true
+  },
+  "resolved_findings": [
+    {
+      "page": 11,
+      "region": "S9 opening paragraph at foot of page",
+      "original": "Tables S10-S11",
+      "corrected": "Tables S9 and S10",
+      "status": "RESOLVED; final page visually rechecked"
+    },
+    {
+      "page": 14,
+      "region": "Appendix S1 opening paragraph",
+      "original": "Tables S13a-S13g",
+      "corrected": "Tables S11a-S11g (rendered range dash)",
+      "status": "RESOLVED; final page visually rechecked"
+    }
+  ],
+  "layout_observations": [
+    "TableS6 starts with one data row on page6 and continues on page7 with repeated header; content remains readable.",
+    "Page9 remaining white space permits FigureS1 and its caption to stay together on page10.",
+    "Source/license table notes continue as text across pages12-14 without clipping."
+  ],
+  "open_findings": [],
+  "scientific_numbers_recomputed": false,
+  "document_files_modified_by_reviewer": false,
+  "limits": [
+    "Review addresses the displayed final supplement, table numbering, text/figure legibility and layout; scientific audits and package reproduction have their separate reports."
+  ],
+  "page_hash_comparison": {
+    "compared_unchanged_pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      12,
+      13,
+      15,
+      16,
+      17,
+      18
+    ],
+    "byte_identical": true,
+    "corrected_pages_visually_reinspected": [
+      11,
+      14
+    ],
+    "comparison_inventory_sha256": {
+      "1": "dfa2242a20bc0643a2a2b0e8e16260d9e297c6d6055c186840da2abb098a84ed",
+      "2": "17bcd214f663e3dd53a22878f4824190fda9e19946f79166a6a870f294d9d459",
+      "3": "941cb9ca5a58a92fdfac03c3a81f3d4a3233927076e2c9f9d95a86c0ca6cd503",
+      "4": "6d68acc52201ca0514ba400ba512c5dfdd66b5909d157963d6ad69566d29919d",
+      "5": "14c140a72c121d1da0c05f7ed056bf6fc637828aff2deb691cee8aaf611a456c",
+      "6": "4db075624deecb6631cf5acb989a200f45c87879cd980a72f78d7e86e024909d",
+      "7": "c779b345e632db29062bef126dc44d159651d03d329643a6e7a9c2090bcc9532",
+      "8": "757fb8eb1d02e1b82c09c2d91e418bfdf66baeccde8d3f4940de6c842c4923de",
+      "9": "26020175f1bfbb40671a176c08ef1af4a3a4311af55afbe763a80c30105cde85",
+      "10": "7dc0e3128053e1d08450c5862c67516f8728a916bfd638baec0984b9025cb48a",
+      "12": "146996c9441173761873e2fd60ff4ec040271b7cd4c7ec58189037e96a183861",
+      "13": "ffa1e2e89faebce25b9792d24b3014d22e17b6f507fb716ea8a0f033a082e5f9",
+      "15": "50071e6070447b2d8dc03a8891ef7053d0f314d5bf2c326618901b09a55583e5",
+      "16": "590e275f328315bddc4ea65f1b7aefabb059725ee5531919ec0d5f2532d16f62",
+      "17": "bfd54290078f27491b407906d24cd19b1a3b0c2978e53e060235d9b25bcdf907",
+      "18": "6ed7fa4b9143863efcbe8f250feb8ab92a02c93abc86f87686f8281776667f25"
+    },
+    "timing_note": "Comparison hashes were captured during the parent correction cycle. The original error-bearing pages11/14 were viewed before correction; their earlier SHA was not recorded. Final corrected pages were viewed again and are bound by the final page SHA map."
+  }
+}

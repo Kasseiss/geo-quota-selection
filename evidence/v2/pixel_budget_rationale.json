@@ -1,0 +1,20 @@
+{
+  "created_utc": "2026-10-18T08:00:52.651669+00:00",
+  "status": "SOURCE_AVAILABILITY_RATIONALE_NOT_AN_OUTCOME_ANALYSIS",
+  "source_diagnostic_sha256": "659ad2be043854390813288840fcf7ce0e2721454ac171323c81bddd1c0d7b84",
+  "fixed_cuda_plan_sha256": "15d586fd03389d495dfc2b7d9cdea35b2b3089461ccb49cc37e5f8bd39ff1545",
+  "planned_full_model_selections": 90,
+  "processed_grid": [
+    448,
+    448
+  ],
+  "selected_images_per_fit": 12,
+  "available_valid_pixel_count_min": 2303273,
+  "available_valid_pixel_count_max": 2408419,
+  "fixed_available_supervision_budget": 2300000,
+  "target_scores_used": false,
+  "selection_changed": false,
+  "native_annotation_time_controlled": false,
+  "rationale": "A round common processed-label budget below source-only minimum, chosen without effect-size or target-score search.",
+  "supplement_scope": "27 post-panel-exposure descriptive fits, existing3 source allocations x3 paired seeds x3 policies; source validation/panel labels remain complete."
+}

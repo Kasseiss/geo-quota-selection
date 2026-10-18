@@ -1,0 +1,127 @@
+{
+  "format": "v2-pixel-budget-software-validation-1",
+  "created_utc": "2026-10-18T08:12:39.570526+00:00",
+  "scope": "New pixel-supervision ablation runner and synthetic-only validation; no real fits, model outcomes, mask files or existing experiment outputs were read or modified.",
+  "passed": true,
+  "syntax_compilation_passed": true,
+  "tests_run": 11,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "test_command": "C:\\Users\\china\\AppData\\Local\\Programs\\Python\\Python312\\python.exe -B code/v2_pixel_budget.py --self-test",
+  "test_runtime": {
+    "python": "3.12.3",
+    "torch": "2.5.1+cu121",
+    "numpy": "2.3.5",
+    "actual_cuda_kernels_executed": false
+  },
+  "final_test_duration_seconds": 25.901,
+  "test_results": [
+    {
+      "test": "test_plan_exact27_binding_code_helper_protocol_and_supervision",
+      "status": "passed"
+    },
+    {
+      "test": "test_exact_large_budget_reproducible_without_replacement",
+      "status": "passed"
+    },
+    {
+      "test": "test_sampling_uses_validity_not_classes_and_handles_views",
+      "status": "passed"
+    },
+    {
+      "test": "test_loader_is_training_only_restored_on_success_and_failure",
+      "status": "passed"
+    },
+    {
+      "test": "test_backend_evaluates_only_after_restoration",
+      "status": "passed"
+    },
+    {
+      "test": "test_batch_rgb_augmentations_and_rng_state_equal_frozen_sampler",
+      "status": "passed"
+    },
+    {
+      "test": "test_original_sparse_eligibility_retries_then_thin_empty_fails_no_extra_draw",
+      "status": "passed"
+    },
+    {
+      "test": "test_live_cuda_writer_unknown_child_and_missing90_refuse",
+      "status": "passed"
+    },
+    {
+      "test": "test_existing_result_missing_or_changed_log_never_overwritten",
+      "status": "passed"
+    },
+    {
+      "test": "test_source_files_selection_immutable_and_rare_class_loss_recorded",
+      "status": "passed"
+    },
+    {
+      "test": "test_budget_refuses_cap_and_two_real_os_workers_share_storage",
+      "status": "passed"
+    }
+  ],
+  "independent_os_process_smoke": {
+    "workers": 2,
+    "distinct_pids": true,
+    "work": "Synthetic NumPy mask construction, temporary shared budget mutex/state and PID leases only; not scientific fits"
+  },
+  "checks": {
+    "exact_large_test_original_valid_pixels": 2303273,
+    "exact_large_test_retained_pixels": 2300000,
+    "uniform_deletion_without_replacement": true,
+    "same_seed_reproducible": true,
+    "global_numpy_optimization_stream_unconsumed_by_mask_sampling": true,
+    "class_independent_keep_mask_under_relabeling": true,
+    "noncontiguous_input_supported": true,
+    "only_original_valid0_to7_becomes255": true,
+    "original_void_preserved": true,
+    "rare_class_loss_reported_without_resampling": true,
+    "source_files_and_ordered_selection_unchanged": true,
+    "training_loader_restored_on_success_and_failure": true,
+    "batch_sampler_restored_before_evaluation": true,
+    "original_frozen_sampler_RGB_and_generator_state_exact_on_synthetic_cases": true,
+    "original_sparse_crop_eligibility_retry_and_no_extra_draw_when_thin_empty": true,
+    "source27_specs_code_helper_protocol_supervision_bindings_reject_mutations": true,
+    "live_CUDA90_and_unknown_worker_and_missing90_startup_refused": true,
+    "missing_or_changed_result_log_not_overwritten": true,
+    "exclusive_result_creation": true,
+    "whole_project_cap_plus55MB_external_plus_two4MB_worker_reserves_checked": true
+  },
+  "original_freeze_sha256": "5fd417464cc88024ad4063b2dc77366c1b6d3c80ea7cb1fd3083b0ddc2957bd8",
+  "original_frozen_dependency_count": 53,
+  "changed_or_mismatched_frozen_dependencies": [],
+  "source_cuda_plan_sha256": "15d586fd03389d495dfc2b7d9cdea35b2b3089461ccb49cc37e5f8bd39ff1545",
+  "runtime_scientific_execution_performed": false,
+  "partial_model_scores_read": false,
+  "scientific_approval": false,
+  "code_and_document_sha256": {
+    "code/v2_pixel_budget.py": "1b7e79fa4058bae13b2ad7161392aab5416049056380ade950d3c2b1872b5e1b",
+    "code/test_v2_pixel_budget.py": "a92e3b27ad6569478da1203f91e78ed83f656830c12e2afa390aed8103fcd075",
+    "docs/v2_pixel_budget_implementation.md": "975970c3f6934080c75425efcfbbc0e57df9acec930b850e3395d6996674388f",
+    "code/v2_cuda_parallel_v2.py": "80d9e40683f1703fe5c7d12367680d0a207177f75d656c44038fa57e15d9945b",
+    "docs/v2_pixel_budget_protocol.md": "74e3a0d3cc25612b5a6d9be7749f797d39111baf579033bec4dbae62de653d04"
+  },
+  "plan_binding_contract": {
+    "runner_field": "runner_code_sha256",
+    "helper_field": "helper_code_sha256 (one-entry map)",
+    "exact_final_runner_sha256": "1b7e79fa4058bae13b2ad7161392aab5416049056380ade950d3c2b1872b5e1b",
+    "actual_pixel_plan_loaded_during_tests": false,
+    "plan_fixtures": "Synthetic53-file freeze, source90 plan and exact27 filtered specs in OS temporary directory"
+  },
+  "development_history": [
+    "Initial bundledPython3.13 test attempt lackedTorch; corrected by using the existingPython3.12.3 CUDA environment. No dependency was installed.",
+    "Added original-mask crop eligibility wrapper and exact RNG-state/sparse-retry tests before ready; scientific code files remained untouched.",
+    "A stale expected digest in the expanding resume test was corrected; the final11-test suite passed on the exact runner/test hashes above."
+  ],
+  "limits": [
+    "Tests use temporary synthetic arrays/files, CPU tensors and mock fit/evaluate objects. They do not validate real CUDA convergence or actual27 scientific outputs.",
+    "Two OS processes exercise synthetic masking/storage; the real supervisor/worker scientific launch was not executed.",
+    "No completeCUDA90 scientific audit or real pixel plan acceptance is certified by this report; parent must finish those gates before explicit --run.",
+    "Original actualmask files remain immutable; unique available processed labels are matched, not realized crop label consumption, native annotation area, effort or time.",
+    "Original-full-mask crop eligibility is fixed; a thinned all-ignored selected crop fails closed without resampling.",
+    "All27 fits are post-panel-exposure descriptive analyses on the same panel and cannot replace the original primary.",
+    "Stale/unknown leases and incomplete result files are preserved for manual inspection, never automatically removed; external scalarCUDA launch paths must remain stopped."
+  ]
+}

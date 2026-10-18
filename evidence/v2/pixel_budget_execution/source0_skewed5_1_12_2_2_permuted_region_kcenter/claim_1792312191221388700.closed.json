@@ -1,0 +1,11 @@
+{
+  "pid": 21728,
+  "alive": true,
+  "creation_token": "134367855463322089",
+  "working_set_bytes": 1394470912,
+  "peak_working_set_bytes": 1519169536,
+  "generation": "20261018T082541_c3223d9620",
+  "worker": 0,
+  "index": 8,
+  "plan_sha256": "3e776a5517286d634eb29968ab3a7cafa3912e166f47d84137e8d16ef03d58e9"
+}

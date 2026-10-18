@@ -1,0 +1,63 @@
+{
+  "attempts": [
+    {
+      "utc": "2026-10-17T23:35:44.758838+00:00",
+      "milestone": "Before formal576 fit freeze",
+      "relay_reachable": true,
+      "expected_a100_reverse_listener_present": false,
+      "a100_alias_exit_code": 1,
+      "a100_outcome": "SSH banner exchange timeout",
+      "secrets_or_connection_configuration_recorded": false
+    },
+    {
+      "utc": "2026-10-17T23:59:13.834112+00:00",
+      "milestone": "Predetermined full-model checkpoint independently reloaded; formal matrix continuing",
+      "a100_alias_exit_code": 1,
+      "a100_outcome": "SSH banner exchange timeout",
+      "secrets_or_connection_configuration_recorded": false
+    },
+    {
+      "utc": "2026-10-18T00:34:00.073351+00:00",
+      "milestone": "Formal complete-model and frozen-control matrix continuing beyond200 completed fits",
+      "relay_reachable": true,
+      "expected_a100_reverse_listener_present": false,
+      "a100_alias_exit_code": 1,
+      "a100_outcome": "SSH banner exchange timeout",
+      "direct_connection_outcome": "SSH port22 connection timeout",
+      "secrets_or_connection_configuration_recorded": false,
+      "frozen_local_execution_continues": true
+    },
+    {
+      "utc": "2026-10-18T00:50:29.371675+00:00",
+      "milestone": "Additional direct-from-relay path check while fixed formal matrix runs",
+      "relay_command_completed": true,
+      "relay_internal_a100_port22_probe": "Socket connection timeout within bounded6s probe; no SSH banner",
+      "relay_probe_exit_code": 1,
+      "alternative_usable_route_found": false,
+      "secrets_or_connection_configuration_recorded": false,
+      "frozen_local_execution_continues": true
+    },
+    {
+      "utc": "2026-10-18T01:31:22.128139+00:00",
+      "milestone": "All432 base frozen-control fits observed complete; weighted54 extension started; full-model matrix continuing",
+      "relay_reachable": true,
+      "expected_a100_reverse_listener_present": false,
+      "relay_listener_check_exit_code": 0,
+      "a100_alias_exit_code": 1,
+      "a100_outcome": "SSH banner exchange timeout under8s connection bound",
+      "secrets_or_connection_configuration_recorded": false,
+      "frozen_local_execution_continues": true
+    },
+    {
+      "utc": "2026-10-18T01:46:03.494034+00:00",
+      "milestone": "Frozen486 process terminal exit0 and exact identity/log inventory phase check passed; complete-model40/90 continuing",
+      "relay_reachable": true,
+      "expected_a100_reverse_listener_present": false,
+      "relay_listener_check_exit_code": 0,
+      "a100_alias_exit_code": 1,
+      "a100_outcome": "SSH banner exchange timeout with8s connect bound",
+      "secrets_or_connection_configuration_recorded": false,
+      "frozen_local_execution_continues": true
+    }
+  ]
+}

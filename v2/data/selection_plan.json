@@ -1,0 +1,3731 @@
+{
+  "format": "v2-compact-selection-plan-1",
+  "stage": "all",
+  "created_utc": "2026-10-17T23:09:17.022611+00:00",
+  "bindings": {
+    "conversion_code_sha256": "28ab383e2d67f3c3a45f8fff796a7f54f5aee9f1bb5b66bd86ba4fd0a6370db6",
+    "data_access_code_sha256": "4a090827b05e8d15c7bdeeb673a87c3407f146cd13f3b736adfd2449b4a31b71",
+    "geography_audit_code_sha256": "c595e317d56a55090efb37ba69009925c1d68ca43739269d9653ed2e9ea63653",
+    "original_development_manifest_sha256": "193af54a83f3a61805403ddbde3159978f02e7db4d77ad6e851bebb85dc3d20f"
+  },
+  "runtime": {
+    "python": "3.13.13",
+    "Pillow": "12.2.0",
+    "numpy": "2.5.1",
+    "pyproj": "3.8.0",
+    "PROJ": "9.8.1"
+  },
+  "source": {
+    "url": "https://zenodo.org/records/7223446/files/OpenEarthMap.zip",
+    "archive_bytes": 9099481727,
+    "publisher_archive_md5": "64155d1dc9d3b68536063f79878e1a67",
+    "archive_md5_verified": false,
+    "directory_transfer_bytes": 1053311
+  },
+  "selection": {
+    "old_role": "all old formal120 pairs are development/source data",
+    "new_regions": [
+      "abancay",
+      "al_qurnah",
+      "baybay",
+      "bielefeld",
+      "buenos_aires",
+      "chiclayo",
+      "coxsbazar",
+      "dowa",
+      "kagera",
+      "kampala",
+      "khartoum",
+      "kinshasa",
+      "kitsap",
+      "monrovia",
+      "ngaoundere",
+      "paris",
+      "rosario",
+      "san_tome",
+      "soriano",
+      "svaneti",
+      "tokyo",
+      "tyrolw",
+      "western",
+      "zanzibar"
+    ],
+    "new_pairs_per_region": 3,
+    "new_seed": 2026101802,
+    "rule": "Per-region random.Random(str(seed)+':' + region).sample of filename-sorted complete ZIP pairs; sorted chosen filenames",
+    "image_or_label_content_read_for_selection": false
+  },
+  "processing": {
+    "size": [
+      448,
+      448
+    ],
+    "rgb_resize": "Pillow BILINEAR",
+    "label_resize": "Pillow NEAREST",
+    "format": "lossless PNG",
+    "png_compress_level": 9,
+    "png_optimize": false,
+    "pair_limit_bytes_including_metadata": 900000,
+    "compact_data_reservation_bytes": 200000000
+  },
+  "expected": {
+    "old_development": 120,
+    "new_panel": 72,
+    "total": 192
+  },
+  "pairs": [
+    {
+      "id": "aachen__aachen_1",
+      "region": "aachen",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/aachen/images/aachen_1.tif",
+        "bytes": 3003372,
+        "compressed_bytes": 2360854,
+        "zip_crc32": "1d7bf0c5",
+        "sha256": "051dca0c05ad8b57c0d0e82477ec19273920bb794bca7682eead0ef3ef408536"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/aachen/labels/aachen_1.tif",
+        "bytes": 1001110,
+        "compressed_bytes": 17256,
+        "zip_crc32": "3af98738",
+        "sha256": "53010d1651f6d445cdebe447bad16c02bfede0be9abbcf6dc87bd932aa81b260"
+      }
+    },
+    {
+      "id": "aachen__aachen_28",
+      "region": "aachen",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/aachen/images/aachen_28.tif",
+        "bytes": 3003372,
+        "compressed_bytes": 2281170,
+        "zip_crc32": "de492bca",
+        "sha256": "f663769f699383c6bb98cd1f81ed259d8a7a7f0051ec910242e6678609d37791"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/aachen/labels/aachen_28.tif",
+        "bytes": 1001110,
+        "compressed_bytes": 7166,
+        "zip_crc32": "8d93583f",
+        "sha256": "c30d86a9739ff916cdf84632d51afe44ba97c77163e91caa921c4fa3a020a162"
+      }
+    },
+    {
+      "id": "aachen__aachen_36",
+      "region": "aachen",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/aachen/images/aachen_36.tif",
+        "bytes": 3003372,
+        "compressed_bytes": 2242922,
+        "zip_crc32": "3adf5cc2",
+        "sha256": "75d1227b030d120edeb3f38be1d8939489e7ae08e7a81ea0d2dfac3dfe75af22"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/aachen/labels/aachen_36.tif",
+        "bytes": 1001110,
+        "compressed_bytes": 19073,
+        "zip_crc32": "fed77ddb",
+        "sha256": "b1c4f96d8b71a646d794dad6dddb040d3fcdb56ea0788e6208ac38b1c330ffbc"
+      }
+    },
+    {
+      "id": "aachen__aachen_47",
+      "region": "aachen",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/aachen/images/aachen_47.tif",
+        "bytes": 3003372,
+        "compressed_bytes": 2279933,
+        "zip_crc32": "3517297e",
+        "sha256": "8aaf8a95d98e0ce0cb631bc3ca71fb073c76e09f0e7c3c7da387d43740520123"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/aachen/labels/aachen_47.tif",
+        "bytes": 1001110,
+        "compressed_bytes": 29540,
+        "zip_crc32": "3ae77907",
+        "sha256": "6031d07c8a05bb163aa8a9773900a2c719fbd809c2db04705c2849ed7d03f67e"
+      }
+    },
+    {
+      "id": "aachen__aachen_68",
+      "region": "aachen",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/aachen/images/aachen_68.tif",
+        "bytes": 3003372,
+        "compressed_bytes": 2418251,
+        "zip_crc32": "4f57d719",
+        "sha256": "0d89c183889b126a2dd9619f01b51205983dd54bca26494bc3bf55a3e97437f7"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/aachen/labels/aachen_68.tif",
+        "bytes": 1001110,
+        "compressed_bytes": 34522,
+        "zip_crc32": "9f9d6680",
+        "sha256": "563e0d98ba87944010b10bc2db9f8b2da6c60a7c11837982a5924cb18f395814"
+      }
+    },
+    {
+      "id": "accra__accra_16",
+      "region": "accra",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/accra/images/accra_16.tif",
+        "bytes": 3149172,
+        "compressed_bytes": 2000018,
+        "zip_crc32": "3a24f031",
+        "sha256": "16e280d3465d98f5d0a8efc862ec0df48d6e678d552a517ed68bf4b5859a7271"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/accra/labels/accra_16.tif",
+        "bytes": 1049704,
+        "compressed_bytes": 56824,
+        "zip_crc32": "b8987017",
+        "sha256": "5dca47712fd95405eaa8d5b5ba5e9e0ecfd10f558ce9dc04a1edaeaf6b527fd0"
+      }
+    },
+    {
+      "id": "accra__accra_43",
+      "region": "accra",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/accra/images/accra_43.tif",
+        "bytes": 3149172,
+        "compressed_bytes": 2023729,
+        "zip_crc32": "91e77676",
+        "sha256": "528f2bb7e8f6c9b8093936a6f00773f8cc753a15756ca410edcf73ee99f60d34"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/accra/labels/accra_43.tif",
+        "bytes": 1049704,
+        "compressed_bytes": 33872,
+        "zip_crc32": "15fffe54",
+        "sha256": "37ee0ca66e816d5eeece7f41317b5871a65b7a1857a6cc76f6aef123597e8e0d"
+      }
+    },
+    {
+      "id": "accra__accra_54",
+      "region": "accra",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/accra/images/accra_54.tif",
+        "bytes": 3149172,
+        "compressed_bytes": 1892733,
+        "zip_crc32": "7404b99a",
+        "sha256": "807d71bea90958855d241883816757bcd47943ad5c2f83bc7825e94ba5bd90fb"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/accra/labels/accra_54.tif",
+        "bytes": 1049704,
+        "compressed_bytes": 37963,
+        "zip_crc32": "ea6ff324",
+        "sha256": "5de0acfc804eff1914fe3bfcb47d53e098525bf21664109e22d65c71622c02e8"
+      }
+    },
+    {
+      "id": "accra__accra_62",
+      "region": "accra",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/accra/images/accra_62.tif",
+        "bytes": 3149172,
+        "compressed_bytes": 1911085,
+        "zip_crc32": "cf388b91",
+        "sha256": "da3233fbff145ec50bbf6db0dd84415177bb660373372ddb4cb4f597acbe70d9"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/accra/labels/accra_62.tif",
+        "bytes": 1049704,
+        "compressed_bytes": 52898,
+        "zip_crc32": "bf6aa81c",
+        "sha256": "b57ce8255365b3d253fb024f2bf663fcdc9f2a19b7eeda5e78ddabc664c92f67"
+      }
+    },
+    {
+      "id": "accra__accra_9",
+      "region": "accra",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/accra/images/accra_9.tif",
+        "bytes": 3149172,
+        "compressed_bytes": 2669832,
+        "zip_crc32": "5cc85651",
+        "sha256": "d7f08a3cb47d341f07a73c6b4d55b75ebd5e419537d0475787bf83219a10c424"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/accra/labels/accra_9.tif",
+        "bytes": 1049704,
+        "compressed_bytes": 51455,
+        "zip_crc32": "2d60d606",
+        "sha256": "657833a125a4b0bc9ec005e3ba6f801f16d37bc9958fa791af77b67cadfa3580"
+      }
+    },
+    {
+      "id": "austin__austin_18",
+      "region": "austin",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/austin/images/austin_18.tif",
+        "bytes": 3003370,
+        "compressed_bytes": 2565769,
+        "zip_crc32": "23ef3529",
+        "sha256": "65ce7f33f6386d3cab3998a533a784b45fbffce19363467f08013fa4748d101e"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/austin/labels/austin_18.tif",
+        "bytes": 1001108,
+        "compressed_bytes": 43146,
+        "zip_crc32": "bd5b3a9b",
+        "sha256": "c927c787a1b7692d1f3913c0f5f7fa531aa45fef97541e61c413ecc0ea232c77"
+      }
+    },
+    {
+      "id": "austin__austin_31",
+      "region": "austin",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/austin/images/austin_31.tif",
+        "bytes": 3003370,
+        "compressed_bytes": 2587890,
+        "zip_crc32": "e95b6b93",
+        "sha256": "05332ccb9b14f8e744f893d25f92cca9376f8daeabe51177ae3ce72788a09e74"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/austin/labels/austin_31.tif",
+        "bytes": 1001108,
+        "compressed_bytes": 44682,
+        "zip_crc32": "176287fe",
+        "sha256": "121810925519e9d656ce56a4261f9e4ff67e37663a812bfa41f7565f0b2ebe86"
+      }
+    },
+    {
+      "id": "austin__austin_42",
+      "region": "austin",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/austin/images/austin_42.tif",
+        "bytes": 3003370,
+        "compressed_bytes": 2668858,
+        "zip_crc32": "6d17d487",
+        "sha256": "6466d1ea97f90bb051aa70d172e20df6ec05b93b2a1c73edc839b941923563b5"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/austin/labels/austin_42.tif",
+        "bytes": 1001108,
+        "compressed_bytes": 56211,
+        "zip_crc32": "296ca55f",
+        "sha256": "64ec522b28e8f8d8f51ca5a929e54de37433aaa7220a77293ae4f31bb5a633de"
+      }
+    },
+    {
+      "id": "austin__austin_45",
+      "region": "austin",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/austin/images/austin_45.tif",
+        "bytes": 3003370,
+        "compressed_bytes": 2648809,
+        "zip_crc32": "d5aa54cb",
+        "sha256": "27f32414b3e6772da2edf1cbce279d4134210a917cf9da6e3f73b5da0e29d674"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/austin/labels/austin_45.tif",
+        "bytes": 1001108,
+        "compressed_bytes": 44542,
+        "zip_crc32": "03aa9c2b",
+        "sha256": "cb6d79b59abd7a0e866fe639995dfc12d26c45af756a7b3928fad777361b3e60"
+      }
+    },
+    {
+      "id": "austin__austin_50",
+      "region": "austin",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/austin/images/austin_50.tif",
+        "bytes": 3003370,
+        "compressed_bytes": 2653412,
+        "zip_crc32": "686ced57",
+        "sha256": "e6b74efa665adaf2dc68a377783b32dd7b4311bb0aa1608b547e27d4be7ff919"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/austin/labels/austin_50.tif",
+        "bytes": 1001108,
+        "compressed_bytes": 41258,
+        "zip_crc32": "435e2395",
+        "sha256": "0f9012835877f376333a249deba7166c5e0ab9c62271ebf5ef97e299f151721a"
+      }
+    },
+    {
+      "id": "bogota__bogota_1",
+      "region": "bogota",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/bogota/images/bogota_1.tif",
+        "bytes": 3149172,
+        "compressed_bytes": 2526894,
+        "zip_crc32": "220c7270",
+        "sha256": "6ee2a6132b576468578b5fe308734c0cea1aefb6bc62492556f5814e3218e414"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/bogota/labels/bogota_1.tif",
+        "bytes": 1049704,
+        "compressed_bytes": 30127,
+        "zip_crc32": "2a8e27b2",
+        "sha256": "ee0fa8d5d66fe07b24342fce1152a76bc89cb04005e5b79a8636800b5789bd30"
+      }
+    },
+    {
+      "id": "bogota__bogota_2",
+      "region": "bogota",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/bogota/images/bogota_2.tif",
+        "bytes": 3149172,
+        "compressed_bytes": 2819588,
+        "zip_crc32": "54e7e9b5",
+        "sha256": "c06fa1ef12dd78e252fa358d77b3e00ddf7c1f250890f82ce4b9826461abb0f6"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/bogota/labels/bogota_2.tif",
+        "bytes": 1049704,
+        "compressed_bytes": 37111,
+        "zip_crc32": "a032d119",
+        "sha256": "af046538b71bd1e2c39328211175ba67e90015ae10e6b2a934dec9ca80314e2a"
+      }
+    },
+    {
+      "id": "bogota__bogota_3",
+      "region": "bogota",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/bogota/images/bogota_3.tif",
+        "bytes": 3149172,
+        "compressed_bytes": 2747197,
+        "zip_crc32": "08926d9b",
+        "sha256": "c4afb3b5ac2447a7b8ebff5a38b4e68e39ef0ac297445cb09a50905e9cd28eae"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/bogota/labels/bogota_3.tif",
+        "bytes": 1049704,
+        "compressed_bytes": 41646,
+        "zip_crc32": "804d8f94",
+        "sha256": "3e8a066499a09cdf83064a9425d8563e5925dd2277644348285bb16fe704a348"
+      }
+    },
+    {
+      "id": "bogota__bogota_4",
+      "region": "bogota",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/bogota/images/bogota_4.tif",
+        "bytes": 3149172,
+        "compressed_bytes": 1808235,
+        "zip_crc32": "8edb2995",
+        "sha256": "476d46b7d11d049bca0e75cee62594981735e9742466e7de254cea799f3d72d9"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/bogota/labels/bogota_4.tif",
+        "bytes": 1049704,
+        "compressed_bytes": 25130,
+        "zip_crc32": "d4442b87",
+        "sha256": "66124caa9126c6efe6378cbf90ad6be6544973f1972b98b0254bd53d23c9da05"
+      }
+    },
+    {
+      "id": "bogota__bogota_6",
+      "region": "bogota",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/bogota/images/bogota_6.tif",
+        "bytes": 3149172,
+        "compressed_bytes": 2492772,
+        "zip_crc32": "897ed803",
+        "sha256": "fe75c225c69ff0058ec09d1ec0027322ee0dba4f0dde2edc36c39339ef24d29a"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/bogota/labels/bogota_6.tif",
+        "bytes": 1049704,
+        "compressed_bytes": 44912,
+        "zip_crc32": "854cf427",
+        "sha256": "f1ee477161b63c2cd1bd40b6bbf29eb0ea50781f969007d5c971e356bb0c606e"
+      }
+    },
+    {
+      "id": "chiangmai__chiangmai_10",
+      "region": "chiangmai",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/chiangmai/images/chiangmai_10.tif",
+        "bytes": 3149172,
+        "compressed_bytes": 2636333,
+        "zip_crc32": "9721bd4f",
+        "sha256": "626d191fbc1b38957a666955592b47b63ce44c6843b09b670fdb4eb33dfd9a6e"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/chiangmai/labels/chiangmai_10.tif",
+        "bytes": 1049704,
+        "compressed_bytes": 35564,
+        "zip_crc32": "b7ac47d3",
+        "sha256": "db7e1bd751c9f48a4837557de4967b321bfe2288cd5181b54b4e254922f14a92"
+      }
+    },
+    {
+      "id": "chiangmai__chiangmai_16",
+      "region": "chiangmai",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/chiangmai/images/chiangmai_16.tif",
+        "bytes": 3149172,
+        "compressed_bytes": 2835249,
+        "zip_crc32": "c159f0d8",
+        "sha256": "c588fdcefee3b77d804bab9fc42521c446ad3c288fad16f550c9b8e3d5653c30"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/chiangmai/labels/chiangmai_16.tif",
+        "bytes": 1049704,
+        "compressed_bytes": 47996,
+        "zip_crc32": "989b7fa3",
+        "sha256": "936f4453a129cb187c61850694572525d4608b226c54f870f6e37f7e858edd38"
+      }
+    },
+    {
+      "id": "chiangmai__chiangmai_2",
+      "region": "chiangmai",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/chiangmai/images/chiangmai_2.tif",
+        "bytes": 3149172,
+        "compressed_bytes": 2449475,
+        "zip_crc32": "6a1c1b4b",
+        "sha256": "02e7e8bd53be4705ef3962fd2e322b4d1c77c6454c90f7e669c93ac190e1559f"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/chiangmai/labels/chiangmai_2.tif",
+        "bytes": 1049704,
+        "compressed_bytes": 34585,
+        "zip_crc32": "093458b0",
+        "sha256": "ca5c4c838919a96774434292fe4672b0292cbd81afdeb1d67cd3d73a04c3592e"
+      }
+    },
+    {
+      "id": "chiangmai__chiangmai_3",
+      "region": "chiangmai",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/chiangmai/images/chiangmai_3.tif",
+        "bytes": 3149172,
+        "compressed_bytes": 2873009,
+        "zip_crc32": "e7a11be0",
+        "sha256": "e394b1e29b159d441e8a64ecef244a6888f034851ddea23e47f20fa72cccb078"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/chiangmai/labels/chiangmai_3.tif",
+        "bytes": 1049704,
+        "compressed_bytes": 45831,
+        "zip_crc32": "5c4718e5",
+        "sha256": "a8b6f66ec6c976ae60d365e083a0ea3cd6b8a3e1e049493052b8cfa344295d49"
+      }
+    },
+    {
+      "id": "chiangmai__chiangmai_4",
+      "region": "chiangmai",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/chiangmai/images/chiangmai_4.tif",
+        "bytes": 3149172,
+        "compressed_bytes": 2787969,
+        "zip_crc32": "080deb96",
+        "sha256": "8c55ca2cda4810cc75c4545875a1931badb0951fb63f9d0cf49baa8dbe3b6b48"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/chiangmai/labels/chiangmai_4.tif",
+        "bytes": 1049704,
+        "compressed_bytes": 49022,
+        "zip_crc32": "4155712e",
+        "sha256": "0523f7648ca8f63881e51b9e9aec5e3af587ae51076373ad1ae41ba3a56b3755"
+      }
+    },
+    {
+      "id": "chicago__chicago_14",
+      "region": "chicago",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/chicago/images/chicago_14.tif",
+        "bytes": 3003370,
+        "compressed_bytes": 2622581,
+        "zip_crc32": "e00acc85",
+        "sha256": "832fb1156503981f463d75ebbbed7f45b5648a1ef0e2499f3d8b8ee9d833bae2"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/chicago/labels/chicago_14.tif",
+        "bytes": 1001108,
+        "compressed_bytes": 38296,
+        "zip_crc32": "354db0c9",
+        "sha256": "8eef44db7f89830245d2f0b5c31d89551dee5c6fa28d3f1f765edcd6c3bce817"
+      }
+    },
+    {
+      "id": "chicago__chicago_21",
+      "region": "chicago",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/chicago/images/chicago_21.tif",
+        "bytes": 3003370,
+        "compressed_bytes": 2680695,
+        "zip_crc32": "368fbae1",
+        "sha256": "e49534f7aaed716047f1273faf66a0a146167eba41ae14bece9766760b4ffeed"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/chicago/labels/chicago_21.tif",
+        "bytes": 1001108,
+        "compressed_bytes": 32183,
+        "zip_crc32": "d3fe4d3b",
+        "sha256": "9cd9e2a297612dd442b08d9ffde9749662f754f2f9db9a357e42277d6ae0fec3"
+      }
+    },
+    {
+      "id": "chicago__chicago_23",
+      "region": "chicago",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/chicago/images/chicago_23.tif",
+        "bytes": 3003370,
+        "compressed_bytes": 2620529,
+        "zip_crc32": "b301fde7",
+        "sha256": "6a685cf4ff126e8e30fa07176238bc206cba1a2da70827347257a498665a8a94"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/chicago/labels/chicago_23.tif",
+        "bytes": 1001108,
+        "compressed_bytes": 38736,
+        "zip_crc32": "835ba7e6",
+        "sha256": "19e063e7d9a3a06f6a1e44c4a771650b3394813bc47295c08d4187783d7a7b2e"
+      }
+    },
+    {
+      "id": "chicago__chicago_38",
+      "region": "chicago",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/chicago/images/chicago_38.tif",
+        "bytes": 3003370,
+        "compressed_bytes": 2493624,
+        "zip_crc32": "4d7c5213",
+        "sha256": "d77c85839d91e3d669b25ac972fa2595e0748a71749df6347c16d459039bb6a3"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/chicago/labels/chicago_38.tif",
+        "bytes": 1001108,
+        "compressed_bytes": 19628,
+        "zip_crc32": "eafd07e4",
+        "sha256": "b3eec856bf8de267b497ae0fae7d06f74aa3e3dd5898add3fe74096c2f2ae6d1"
+      }
+    },
+    {
+      "id": "chicago__chicago_49",
+      "region": "chicago",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/chicago/images/chicago_49.tif",
+        "bytes": 3003370,
+        "compressed_bytes": 2533934,
+        "zip_crc32": "8a09c366",
+        "sha256": "08fc68ad46657ce611cf7602e3d0a06093353bccd83560a8d15323b258bd5685"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/chicago/labels/chicago_49.tif",
+        "bytes": 1001108,
+        "compressed_bytes": 24885,
+        "zip_crc32": "f60a634f",
+        "sha256": "a29caa95f2049f9168c890f092acea275dd47dda0857e49bfc6e13f928f1485d"
+      }
+    },
+    {
+      "id": "chisinau__chisinau_2",
+      "region": "chisinau",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/chisinau/images/chisinau_2.tif",
+        "bytes": 3149175,
+        "compressed_bytes": 2640022,
+        "zip_crc32": "107ed554",
+        "sha256": "8a795c905d6e8ec6f411c9e5b076b6c0f58e9345b979a84fd2e67c4da8db7d86"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/chisinau/labels/chisinau_2.tif",
+        "bytes": 1049707,
+        "compressed_bytes": 39080,
+        "zip_crc32": "6f3c4430",
+        "sha256": "8747aec19f3e80d8e0ae92dd07c69b6de2ec78b2daf30cf64363803870a3ff63"
+      }
+    },
+    {
+      "id": "chisinau__chisinau_28",
+      "region": "chisinau",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/chisinau/images/chisinau_28.tif",
+        "bytes": 3149175,
+        "compressed_bytes": 2676812,
+        "zip_crc32": "bf780cf4",
+        "sha256": "04eaba1e6ec27fd1200a5c8e145bd0de387b99be209e3d21755899a8e6ca77de"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/chisinau/labels/chisinau_28.tif",
+        "bytes": 1049707,
+        "compressed_bytes": 49561,
+        "zip_crc32": "f20718a7",
+        "sha256": "970234cfa7925189ac477a11370b57ab3ef9a700d3618a1523960e33a92c0429"
+      }
+    },
+    {
+      "id": "chisinau__chisinau_51",
+      "region": "chisinau",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/chisinau/images/chisinau_51.tif",
+        "bytes": 3149175,
+        "compressed_bytes": 2850347,
+        "zip_crc32": "2c07704e",
+        "sha256": "50c64e18038da702e2e6c0a1e6b885a4ae8dee84e15bb27cd634dd0caacf0d40"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/chisinau/labels/chisinau_51.tif",
+        "bytes": 1049707,
+        "compressed_bytes": 58441,
+        "zip_crc32": "2a6ac6fd",
+        "sha256": "7c571e09109af9cfcfa00364e9001b642ebe95d96c38e79e9a599cbef82c7290"
+      }
+    },
+    {
+      "id": "chisinau__chisinau_66",
+      "region": "chisinau",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/chisinau/images/chisinau_66.tif",
+        "bytes": 3149175,
+        "compressed_bytes": 2673587,
+        "zip_crc32": "a1e589a0",
+        "sha256": "e85c12e8a7d580477ecdc147eecc02c8372cb14e2d2479ae4eaaeb2f3bdcddcf"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/chisinau/labels/chisinau_66.tif",
+        "bytes": 1049707,
+        "compressed_bytes": 45566,
+        "zip_crc32": "4538069b",
+        "sha256": "99d0a28f231d14c23915b29dc6713726a738ce43a8632b0b6bb9039bcb5e138a"
+      }
+    },
+    {
+      "id": "chisinau__chisinau_7",
+      "region": "chisinau",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/chisinau/images/chisinau_7.tif",
+        "bytes": 3149175,
+        "compressed_bytes": 2678361,
+        "zip_crc32": "b90bdb94",
+        "sha256": "9c8053c3fac36c0019262e240ff98e97de1d06127490f83ed2dac81e2d95ae71"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/chisinau/labels/chisinau_7.tif",
+        "bytes": 1049707,
+        "compressed_bytes": 39199,
+        "zip_crc32": "ec936c2e",
+        "sha256": "ea60ff94df0634cb48fbbf15c201678e85a0a0cd1b535a48f6a32cfd22684f3e"
+      }
+    },
+    {
+      "id": "christchurch__christchurch_15",
+      "region": "christchurch",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/christchurch/images/christchurch_15.tif",
+        "bytes": 3149200,
+        "compressed_bytes": 1911872,
+        "zip_crc32": "bd117cb5",
+        "sha256": "bc29cfa81002334df51de06bb9adaaa7ba64adbca8ae5de560497c99c2727b3b"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/christchurch/labels/christchurch_15.tif",
+        "bytes": 1049732,
+        "compressed_bytes": 17410,
+        "zip_crc32": "a98e61bd",
+        "sha256": "3c2dfc31541c6a1595e82b28538da03f757b24868bff131a1792c54756ea63e2"
+      }
+    },
+    {
+      "id": "christchurch__christchurch_3",
+      "region": "christchurch",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/christchurch/images/christchurch_3.tif",
+        "bytes": 3149200,
+        "compressed_bytes": 2681685,
+        "zip_crc32": "caade7c1",
+        "sha256": "89cd390f5c515cecbd6cb396f9bd0eeb6113ae29cadbff9822eeeddcc1852d9f"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/christchurch/labels/christchurch_3.tif",
+        "bytes": 1049732,
+        "compressed_bytes": 14010,
+        "zip_crc32": "bff48501",
+        "sha256": "0c34500dc06e73fc397c0dddf17a28fb5cc637383cd2c050cb58590d60afe6cd"
+      }
+    },
+    {
+      "id": "christchurch__christchurch_45",
+      "region": "christchurch",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/christchurch/images/christchurch_45.tif",
+        "bytes": 3149200,
+        "compressed_bytes": 2615995,
+        "zip_crc32": "d242fd04",
+        "sha256": "473602d0803930bec4a5868c5a29028ab2437a1d8a931bb60f8a759e77685d93"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/christchurch/labels/christchurch_45.tif",
+        "bytes": 1049732,
+        "compressed_bytes": 33554,
+        "zip_crc32": "01c2138f",
+        "sha256": "522fc28dee856bbdd7eccbff45f625052c92f8d99e487eee6b726e56c0f6dccd"
+      }
+    },
+    {
+      "id": "christchurch__christchurch_56",
+      "region": "christchurch",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/christchurch/images/christchurch_56.tif",
+        "bytes": 3149200,
+        "compressed_bytes": 2412629,
+        "zip_crc32": "6fa5e157",
+        "sha256": "5872699fab3abf321344598454c1d9a53b3b552ec7d84ac4544a9df693f02aed"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/christchurch/labels/christchurch_56.tif",
+        "bytes": 1049732,
+        "compressed_bytes": 18909,
+        "zip_crc32": "a9e6232c",
+        "sha256": "d40102951e1478d2a22e5c0135ba338e3636983008e515299133231138e0c69a"
+      }
+    },
+    {
+      "id": "christchurch__christchurch_9",
+      "region": "christchurch",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/christchurch/images/christchurch_9.tif",
+        "bytes": 3149200,
+        "compressed_bytes": 2246759,
+        "zip_crc32": "b5a92d49",
+        "sha256": "c3f761d65bde07b61316bcec87cf27907a8296da78d8dc309ce1e41510a68b99"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/christchurch/labels/christchurch_9.tif",
+        "bytes": 1049732,
+        "compressed_bytes": 33013,
+        "zip_crc32": "98ddbb1d",
+        "sha256": "ff714fedadd2663df0cae09902ec0bcb7cd3d06cf6705cd68e83453bb5517f8d"
+      }
+    },
+    {
+      "id": "daressalaam__daressalaam_104",
+      "region": "daressalaam",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/daressalaam/images/daressalaam_104.tif",
+        "bytes": 3149172,
+        "compressed_bytes": 2748507,
+        "zip_crc32": "155be21b",
+        "sha256": "c3dfcff1e28fd160ab88b3d7116a2ae467801c3a1b02d75e1dee92ad464c1078"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/daressalaam/labels/daressalaam_104.tif",
+        "bytes": 1049704,
+        "compressed_bytes": 52139,
+        "zip_crc32": "59ad69a8",
+        "sha256": "0cbe4a80f871e0e9b6efa804fb95a6d2f94b586b784edcfd59adabaf4bc234b3"
+      }
+    },
+    {
+      "id": "daressalaam__daressalaam_3",
+      "region": "daressalaam",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/daressalaam/images/daressalaam_3.tif",
+        "bytes": 3149172,
+        "compressed_bytes": 2705566,
+        "zip_crc32": "1abdbc48",
+        "sha256": "d13ebe8e87f369d55e82980be41b6b50eedb2996258605ea5c85e6e9f7fcb238"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/daressalaam/labels/daressalaam_3.tif",
+        "bytes": 1049704,
+        "compressed_bytes": 55415,
+        "zip_crc32": "059e597a",
+        "sha256": "77ca4653e4ab6017f1c3360cc57c7aa383c060939e4755e6f1196d6fae915350"
+      }
+    },
+    {
+      "id": "daressalaam__daressalaam_41",
+      "region": "daressalaam",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/daressalaam/images/daressalaam_41.tif",
+        "bytes": 3149172,
+        "compressed_bytes": 2713971,
+        "zip_crc32": "2e43d261",
+        "sha256": "a268832839d686ea65558e7003a153379831c2f07a2905aa6bff821a005b6335"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/daressalaam/labels/daressalaam_41.tif",
+        "bytes": 1049704,
+        "compressed_bytes": 77587,
+        "zip_crc32": "7236e0a5",
+        "sha256": "b22ac3457ccf75bb3ece0161180639c1427e7603188c987339e791e37551c340"
+      }
+    },
+    {
+      "id": "daressalaam__daressalaam_83",
+      "region": "daressalaam",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/daressalaam/images/daressalaam_83.tif",
+        "bytes": 3149172,
+        "compressed_bytes": 2698165,
+        "zip_crc32": "58534633",
+        "sha256": "1ca8b8fb5c49d3064bdf52468224c0962fc03478f851ed3b0f2664312586bcb3"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/daressalaam/labels/daressalaam_83.tif",
+        "bytes": 1049704,
+        "compressed_bytes": 47273,
+        "zip_crc32": "e9c58b69",
+        "sha256": "1f30243f708c0aa700c2baa7e9a40f83499ab30161f1c42189dceebaff01f0ad"
+      }
+    },
+    {
+      "id": "daressalaam__daressalaam_98",
+      "region": "daressalaam",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/daressalaam/images/daressalaam_98.tif",
+        "bytes": 3149172,
+        "compressed_bytes": 2751285,
+        "zip_crc32": "d3ca2513",
+        "sha256": "d2037ba1ca1d7d56e5c9d165b78d9f68928ee59bf8854c8ae58ea55453894586"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/daressalaam/labels/daressalaam_98.tif",
+        "bytes": 1049704,
+        "compressed_bytes": 67019,
+        "zip_crc32": "4c112d35",
+        "sha256": "cd417197761ec693ad2a35deca7af8fab535905f1ccba6be09ae15658fbeba94"
+      }
+    },
+    {
+      "id": "dhaka__dhaka_32",
+      "region": "dhaka",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/dhaka/images/dhaka_32.tif",
+        "bytes": 3149172,
+        "compressed_bytes": 2408125,
+        "zip_crc32": "051210b6",
+        "sha256": "8be4edc3225a611bab7763e0cf164a3fa0603a870ce6d481993e669061ff473a"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/dhaka/labels/dhaka_32.tif",
+        "bytes": 1049704,
+        "compressed_bytes": 33742,
+        "zip_crc32": "71d7ac9a",
+        "sha256": "0e3d7878235b1acd11b3203d748cc515d1c2668451b5d59338d7a33c80e3cd63"
+      }
+    },
+    {
+      "id": "dhaka__dhaka_38",
+      "region": "dhaka",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/dhaka/images/dhaka_38.tif",
+        "bytes": 3149172,
+        "compressed_bytes": 2817865,
+        "zip_crc32": "f1b19569",
+        "sha256": "787e41e97c7bc9b9b86f7165d9d6b3754a323646e0ccb87d384f1d15a5b2ca37"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/dhaka/labels/dhaka_38.tif",
+        "bytes": 1049704,
+        "compressed_bytes": 39200,
+        "zip_crc32": "2c2bfed7",
+        "sha256": "5b654a54f0f83f78688cbe6afee47a9803946c0cd0227a8cf4d74d098221f7d1"
+      }
+    },
+    {
+      "id": "dhaka__dhaka_39",
+      "region": "dhaka",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/dhaka/images/dhaka_39.tif",
+        "bytes": 3149172,
+        "compressed_bytes": 2797700,
+        "zip_crc32": "3c3b08a7",
+        "sha256": "ad3564e452fd7947c4ff9a9b024290bf51388a6028ed759bc5fc4a7005f5ef0c"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/dhaka/labels/dhaka_39.tif",
+        "bytes": 1049704,
+        "compressed_bytes": 52905,
+        "zip_crc32": "4f5bba2d",
+        "sha256": "3f25fa583d8f008b8dbb6192684bae822316460edd1d184cd2caa4cfe03ce2d0"
+      }
+    },
+    {
+      "id": "dhaka__dhaka_40",
+      "region": "dhaka",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/dhaka/images/dhaka_40.tif",
+        "bytes": 3149172,
+        "compressed_bytes": 2858998,
+        "zip_crc32": "459677ab",
+        "sha256": "7af8ccd4746e856dd4b88cda6e4f0af35c41c0c9e956b6547ebf1f257f850cbb"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/dhaka/labels/dhaka_40.tif",
+        "bytes": 1049704,
+        "compressed_bytes": 54186,
+        "zip_crc32": "f3ce04df",
+        "sha256": "93338242448d876902ea26e24fed1e75669bb85bed41042cbe1551795182a84f"
+      }
+    },
+    {
+      "id": "dhaka__dhaka_48",
+      "region": "dhaka",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/dhaka/images/dhaka_48.tif",
+        "bytes": 3149172,
+        "compressed_bytes": 1484776,
+        "zip_crc32": "70ae9ac0",
+        "sha256": "62c75c3702294ea7c984f86b73e40b382cfbb055f4e6cc2a3d6d137e647a3261"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/dhaka/labels/dhaka_48.tif",
+        "bytes": 1049704,
+        "compressed_bytes": 18303,
+        "zip_crc32": "e054182c",
+        "sha256": "7a70e2963e9708dd1303a2ccf70ac38fb21bfe4997e8bb8758305fdbd6abfb76"
+      }
+    },
+    {
+      "id": "kyoto__kyoto_11",
+      "region": "kyoto",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/kyoto/images/kyoto_11.tif",
+        "bytes": 3149172,
+        "compressed_bytes": 2279565,
+        "zip_crc32": "274d9769",
+        "sha256": "d11e6c3c48a4bab03c11ace34144a431fad222fad096f56bf1424bf5b4335a43"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/kyoto/labels/kyoto_11.tif",
+        "bytes": 1049704,
+        "compressed_bytes": 61767,
+        "zip_crc32": "434f4548",
+        "sha256": "e8b95d5e67cc188fee970e6cee9de835d44ec7a1435aa64e7c6c2235f9d33a23"
+      }
+    },
+    {
+      "id": "kyoto__kyoto_15",
+      "region": "kyoto",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/kyoto/images/kyoto_15.tif",
+        "bytes": 3149172,
+        "compressed_bytes": 2299467,
+        "zip_crc32": "06b7bab3",
+        "sha256": "6a106760ae3222ca23eceac3121c9a659c6043f1a992da9a92c6bd645a201ffd"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/kyoto/labels/kyoto_15.tif",
+        "bytes": 1049704,
+        "compressed_bytes": 44813,
+        "zip_crc32": "88f04db1",
+        "sha256": "08c79d279faaf175b1c51e6c531303df37ec2d3794bcc5032e0ee70fd7ce12d3"
+      }
+    },
+    {
+      "id": "kyoto__kyoto_39",
+      "region": "kyoto",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/kyoto/images/kyoto_39.tif",
+        "bytes": 3149172,
+        "compressed_bytes": 1949139,
+        "zip_crc32": "b9205c15",
+        "sha256": "7ff60aeca571c8e1f883e9dd8a75ed4357a30e3382e47547a07a0a1eb55715ba"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/kyoto/labels/kyoto_39.tif",
+        "bytes": 1049704,
+        "compressed_bytes": 39868,
+        "zip_crc32": "5e01bdbc",
+        "sha256": "eefd41ab757b3f2dcb05f388072afd8b34e67a639ae677971e088bb3a28732eb"
+      }
+    },
+    {
+      "id": "kyoto__kyoto_60",
+      "region": "kyoto",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/kyoto/images/kyoto_60.tif",
+        "bytes": 3149172,
+        "compressed_bytes": 2215033,
+        "zip_crc32": "9e53fc68",
+        "sha256": "79e8a9629872e52361a061b7ee8e1e373907b39b6a005f1cb4fcbcebca5bfc40"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/kyoto/labels/kyoto_60.tif",
+        "bytes": 1049704,
+        "compressed_bytes": 42655,
+        "zip_crc32": "54e4bda2",
+        "sha256": "f6d8925822bb4d240c9061c657a1f21aee28d2b347688be2621b22edc08421f5"
+      }
+    },
+    {
+      "id": "kyoto__kyoto_64",
+      "region": "kyoto",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/kyoto/images/kyoto_64.tif",
+        "bytes": 3149172,
+        "compressed_bytes": 2246097,
+        "zip_crc32": "ed499e06",
+        "sha256": "d9ff4db259198bca8b4c56816a1458a859135f345fd3804f513e02c6c016e964"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/kyoto/labels/kyoto_64.tif",
+        "bytes": 1049704,
+        "compressed_bytes": 64971,
+        "zip_crc32": "ff0bda4a",
+        "sha256": "056d0aab738d5aec658b0646024dadb2894e60e60edf6d23a121005a639ab8e6"
+      }
+    },
+    {
+      "id": "mahe__mahe_10",
+      "region": "mahe",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/mahe/images/mahe_10.tif",
+        "bytes": 3149172,
+        "compressed_bytes": 2629277,
+        "zip_crc32": "14f5604c",
+        "sha256": "e610fda4948cf42f146bdf04468cad7975c90506c07e58476114812cc9053646"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/mahe/labels/mahe_10.tif",
+        "bytes": 1049704,
+        "compressed_bytes": 33170,
+        "zip_crc32": "580250d1",
+        "sha256": "15a7f14af21bb97180052be2ec146db39804c8879889c5906567f5975a7b385e"
+      }
+    },
+    {
+      "id": "mahe__mahe_22",
+      "region": "mahe",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/mahe/images/mahe_22.tif",
+        "bytes": 3149172,
+        "compressed_bytes": 2326752,
+        "zip_crc32": "69ef0844",
+        "sha256": "288334bc37a04a4ae11f25cda17c94fd7643421ff20c40ecab3313435cd3dbce"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/mahe/labels/mahe_22.tif",
+        "bytes": 1049704,
+        "compressed_bytes": 18967,
+        "zip_crc32": "0e49e19c",
+        "sha256": "314f8c8afb0b802dbdb1257898c4fbf340dc9f9e7be584af4eece921461c9e27"
+      }
+    },
+    {
+      "id": "mahe__mahe_4",
+      "region": "mahe",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/mahe/images/mahe_4.tif",
+        "bytes": 3149172,
+        "compressed_bytes": 2899741,
+        "zip_crc32": "b667707c",
+        "sha256": "7d1e81f8f14ac6df0b2978d051db401daf1c1d041e491bdaa711963274edbadb"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/mahe/labels/mahe_4.tif",
+        "bytes": 1049704,
+        "compressed_bytes": 17703,
+        "zip_crc32": "e456fb7d",
+        "sha256": "a0231cab8ffd39d6b6879f476803a687dd2deed5b92220b1f55fb49e1a81e29a"
+      }
+    },
+    {
+      "id": "mahe__mahe_42",
+      "region": "mahe",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/mahe/images/mahe_42.tif",
+        "bytes": 3149172,
+        "compressed_bytes": 2809780,
+        "zip_crc32": "0569edac",
+        "sha256": "ce5cf6d7c7f0aa85fd09bc097b87327cb7a884d7c5228a0717331d63469b4b9d"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/mahe/labels/mahe_42.tif",
+        "bytes": 1049704,
+        "compressed_bytes": 57978,
+        "zip_crc32": "9ed0f24b",
+        "sha256": "76768490cdb8a7d9977689192157a4081114367d84364cd6caf9c78d825f7028"
+      }
+    },
+    {
+      "id": "mahe__mahe_70",
+      "region": "mahe",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/mahe/images/mahe_70.tif",
+        "bytes": 3149172,
+        "compressed_bytes": 2930930,
+        "zip_crc32": "839420d1",
+        "sha256": "03cde0306d6330f3c083d05e095f0bbc16f0966f506af6cf9eb9dbb7318e13cb"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/mahe/labels/mahe_70.tif",
+        "bytes": 1049704,
+        "compressed_bytes": 61326,
+        "zip_crc32": "b89710e6",
+        "sha256": "87aae9c69a4f3a484128d99fd22d61720d066aad154e1620f7c348cf726c0fbe"
+      }
+    },
+    {
+      "id": "maputo__maputo_1",
+      "region": "maputo",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/maputo/images/maputo_1.tif",
+        "bytes": 3149175,
+        "compressed_bytes": 2623183,
+        "zip_crc32": "42b614c8",
+        "sha256": "5d3ff050479d7c5f2ce645c96bb7e0ccbb0c9a222adcd0b662a960ffed47485e"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/maputo/labels/maputo_1.tif",
+        "bytes": 1049707,
+        "compressed_bytes": 56541,
+        "zip_crc32": "b60ca531",
+        "sha256": "8befe1fa57721a2a8e88adcb87bea33605dfa960a7d10e191d32fd84191e92c1"
+      }
+    },
+    {
+      "id": "maputo__maputo_11",
+      "region": "maputo",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/maputo/images/maputo_11.tif",
+        "bytes": 3149175,
+        "compressed_bytes": 2456864,
+        "zip_crc32": "26ff7157",
+        "sha256": "d596d2043c4f2218a2903639a8958678d61e88592315b70542b24e610f14bc52"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/maputo/labels/maputo_11.tif",
+        "bytes": 1049707,
+        "compressed_bytes": 45103,
+        "zip_crc32": "a561d98d",
+        "sha256": "4a285593b44419c417a508af77fd3251e5a979b6088f284485d09aa4304d2940"
+      }
+    },
+    {
+      "id": "maputo__maputo_13",
+      "region": "maputo",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/maputo/images/maputo_13.tif",
+        "bytes": 3149175,
+        "compressed_bytes": 2914695,
+        "zip_crc32": "e3c669f6",
+        "sha256": "d609ff79f36ccd26009fd2350ef130d7c2147cea38dc7abc17fad2afacf94e81"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/maputo/labels/maputo_13.tif",
+        "bytes": 1049707,
+        "compressed_bytes": 60984,
+        "zip_crc32": "0b83d14c",
+        "sha256": "293c9719ab9d35a47735bc137265647c9d62b363642a647453c8883faebd0777"
+      }
+    },
+    {
+      "id": "maputo__maputo_14",
+      "region": "maputo",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/maputo/images/maputo_14.tif",
+        "bytes": 3149175,
+        "compressed_bytes": 2892140,
+        "zip_crc32": "9b6c7527",
+        "sha256": "367aea58e6e0e1de5bfadd6aeca06c2f7e3cabc871365aa395aca0314c84aaf6"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/maputo/labels/maputo_14.tif",
+        "bytes": 1049707,
+        "compressed_bytes": 54253,
+        "zip_crc32": "184a152e",
+        "sha256": "a638804f8cec50d84080f8ff8438ebc20971f273d744d1af12cfb4f24d8fc09f"
+      }
+    },
+    {
+      "id": "maputo__maputo_9",
+      "region": "maputo",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/maputo/images/maputo_9.tif",
+        "bytes": 3149175,
+        "compressed_bytes": 2894632,
+        "zip_crc32": "7be6c8f3",
+        "sha256": "e433391c7e9cf20686dc0b0939ef403a965ba19f4c9fc719ab39b96f024249f7"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/maputo/labels/maputo_9.tif",
+        "bytes": 1049707,
+        "compressed_bytes": 56976,
+        "zip_crc32": "49c92f62",
+        "sha256": "fc4d066dd842de7dfe330770756622f4aa37486f1289d6172203dd8636520665"
+      }
+    },
+    {
+      "id": "melbourne__melbourne_18",
+      "region": "melbourne",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/melbourne/images/melbourne_18.tif",
+        "bytes": 3149175,
+        "compressed_bytes": 2319075,
+        "zip_crc32": "3ac776e5",
+        "sha256": "9b705446da7f9f45e0f3bb6c7bc7c0e7079bf624ae8e6b59c0910bafe894a082"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/melbourne/labels/melbourne_18.tif",
+        "bytes": 1049707,
+        "compressed_bytes": 29019,
+        "zip_crc32": "8cdb55c6",
+        "sha256": "e1aa6d199b9b17a969d93faf4b25545827acdee86c46817f7789145459a253f3"
+      }
+    },
+    {
+      "id": "melbourne__melbourne_23",
+      "region": "melbourne",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/melbourne/images/melbourne_23.tif",
+        "bytes": 3149175,
+        "compressed_bytes": 2593601,
+        "zip_crc32": "e8bb880a",
+        "sha256": "a2bd9be7f22808a1e503cfabec822d8839e00a9f63b63a9613ecaeacf9c34449"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/melbourne/labels/melbourne_23.tif",
+        "bytes": 1049707,
+        "compressed_bytes": 43836,
+        "zip_crc32": "7d2fec86",
+        "sha256": "4febd3280cb63e9c632871cda4d5f56caa66f2f81dc76b6c52c09267ca8ec695"
+      }
+    },
+    {
+      "id": "melbourne__melbourne_34",
+      "region": "melbourne",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/melbourne/images/melbourne_34.tif",
+        "bytes": 3149175,
+        "compressed_bytes": 2651867,
+        "zip_crc32": "d0458b4d",
+        "sha256": "b25c73fff12028fc28b8d919279329777c41cc13b6f163228ec009b34f826ceb"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/melbourne/labels/melbourne_34.tif",
+        "bytes": 1049707,
+        "compressed_bytes": 55600,
+        "zip_crc32": "67a30441",
+        "sha256": "8380ef728b62a8ccc00ac3e24ba6f2e5e0268b52ee680ebca794004136f294d8"
+      }
+    },
+    {
+      "id": "melbourne__melbourne_64",
+      "region": "melbourne",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/melbourne/images/melbourne_64.tif",
+        "bytes": 3149175,
+        "compressed_bytes": 2477867,
+        "zip_crc32": "cca9f2f8",
+        "sha256": "5904de84d8b3f6593fe4bb223925c666c119b02555e4f9abf3d65476d1d2209a"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/melbourne/labels/melbourne_64.tif",
+        "bytes": 1049707,
+        "compressed_bytes": 34133,
+        "zip_crc32": "16dfc13f",
+        "sha256": "82bad5882c944be73a8902e0198401f3ad1b042fd4737e123abd7797d37b45b3"
+      }
+    },
+    {
+      "id": "melbourne__melbourne_7",
+      "region": "melbourne",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/melbourne/images/melbourne_7.tif",
+        "bytes": 3149175,
+        "compressed_bytes": 2123213,
+        "zip_crc32": "7468728e",
+        "sha256": "bb3932038548763171dde40744c0fb5e31d5210ff6ed4fd1c06152ef3a059877"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/melbourne/labels/melbourne_7.tif",
+        "bytes": 1049707,
+        "compressed_bytes": 39758,
+        "zip_crc32": "6e3a3741",
+        "sha256": "f43cd1ef6e7d77644ab8df23bbe7258c30164c1a5eef1b270a59e49221e87e0c"
+      }
+    },
+    {
+      "id": "niamey__niamey_10",
+      "region": "niamey",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/niamey/images/niamey_10.tif",
+        "bytes": 3149172,
+        "compressed_bytes": 2667258,
+        "zip_crc32": "395dd556",
+        "sha256": "289863d3a3b174d172bf93967b3867403da1c46b4e97743e3383b126d59b8a74"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/niamey/labels/niamey_10.tif",
+        "bytes": 1049704,
+        "compressed_bytes": 58686,
+        "zip_crc32": "2790f224",
+        "sha256": "17bc09ee9eab875297da9a68236f30c01b8e6fbc9451997d644a8ff8050ee5ee"
+      }
+    },
+    {
+      "id": "niamey__niamey_11",
+      "region": "niamey",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/niamey/images/niamey_11.tif",
+        "bytes": 3149172,
+        "compressed_bytes": 2903254,
+        "zip_crc32": "d28c29e1",
+        "sha256": "ca3507ca09a871edfc55cad2e47ef950b6d8d832a1ed1e279424cb1a6ed1ad89"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/niamey/labels/niamey_11.tif",
+        "bytes": 1049704,
+        "compressed_bytes": 61037,
+        "zip_crc32": "3c6c970d",
+        "sha256": "622c5d5283aa3a75118068eabae515f477e5e0289217c111c474ac22e45e0da7"
+      }
+    },
+    {
+      "id": "niamey__niamey_3",
+      "region": "niamey",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/niamey/images/niamey_3.tif",
+        "bytes": 3149172,
+        "compressed_bytes": 2822609,
+        "zip_crc32": "98709052",
+        "sha256": "6f01e097e9178fa4378ea946393b5798ed8866bbc814c7eee78e78f20475aa1c"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/niamey/labels/niamey_3.tif",
+        "bytes": 1049704,
+        "compressed_bytes": 59960,
+        "zip_crc32": "cc6268ad",
+        "sha256": "7c83dcf498f7f26d79c702415c5620d964a2a14e02e478abf21e3347150cb00c"
+      }
+    },
+    {
+      "id": "niamey__niamey_8",
+      "region": "niamey",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/niamey/images/niamey_8.tif",
+        "bytes": 3149172,
+        "compressed_bytes": 2637355,
+        "zip_crc32": "c2296cb1",
+        "sha256": "4e2448233eae661791833096ced0097e2d916be77f67796dd8532975e7af357d"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/niamey/labels/niamey_8.tif",
+        "bytes": 1049704,
+        "compressed_bytes": 51757,
+        "zip_crc32": "86004e22",
+        "sha256": "21ac07b9ca396dde4d8f94f5a13701f753a4180d09f70e452ebae3657da7e252"
+      }
+    },
+    {
+      "id": "niamey__niamey_9",
+      "region": "niamey",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/niamey/images/niamey_9.tif",
+        "bytes": 3149172,
+        "compressed_bytes": 2908782,
+        "zip_crc32": "c490e54b",
+        "sha256": "097030224797418bec922da0895bc4e32938ce7e24bac255498f76774be32da5"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/niamey/labels/niamey_9.tif",
+        "bytes": 1049704,
+        "compressed_bytes": 65917,
+        "zip_crc32": "5f3c7601",
+        "sha256": "81e44a97670c5599575d57b67c777b6554c0125adda46958487156df81a8124b"
+      }
+    },
+    {
+      "id": "pointenoire__pointenoire_1",
+      "region": "pointenoire",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/pointenoire/images/pointenoire_1.tif",
+        "bytes": 3149172,
+        "compressed_bytes": 2571120,
+        "zip_crc32": "e68b1fbe",
+        "sha256": "1091afe4ce3e99979413ac8341b361f59d2514be2dec7abcd68066a6b2bbbd85"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/pointenoire/labels/pointenoire_1.tif",
+        "bytes": 1049704,
+        "compressed_bytes": 51291,
+        "zip_crc32": "ad5f436a",
+        "sha256": "1d5b5b5a5ef01fd53d9d25261cc24901dfc61b49ab17e61ba9c425e01057d731"
+      }
+    },
+    {
+      "id": "pointenoire__pointenoire_5",
+      "region": "pointenoire",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/pointenoire/images/pointenoire_5.tif",
+        "bytes": 3149172,
+        "compressed_bytes": 2743870,
+        "zip_crc32": "edb21d67",
+        "sha256": "119a48ad05ca35b00abca47d068c0fb4671dc300385ef44ec55254ae16cf83ec"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/pointenoire/labels/pointenoire_5.tif",
+        "bytes": 1049704,
+        "compressed_bytes": 64087,
+        "zip_crc32": "fed8c508",
+        "sha256": "e9089353af4b9fcc10b6884f82f137cb8f57a79cdaaa5c3cb4705842d45e3de9"
+      }
+    },
+    {
+      "id": "pointenoire__pointenoire_7",
+      "region": "pointenoire",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/pointenoire/images/pointenoire_7.tif",
+        "bytes": 3149172,
+        "compressed_bytes": 2744096,
+        "zip_crc32": "3375b5fe",
+        "sha256": "a4691a475d753dc25e5a768d19de62e05d22c45b02bf7e2c3c8ed7b54f15c326"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/pointenoire/labels/pointenoire_7.tif",
+        "bytes": 1049704,
+        "compressed_bytes": 64292,
+        "zip_crc32": "29c9bd3e",
+        "sha256": "fdba61e5523f25f6b96e2978cb04f6b60c5f7a235787240ed26ce1e41e6d7282"
+      }
+    },
+    {
+      "id": "pointenoire__pointenoire_8",
+      "region": "pointenoire",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/pointenoire/images/pointenoire_8.tif",
+        "bytes": 3149172,
+        "compressed_bytes": 2747463,
+        "zip_crc32": "7acfb0c8",
+        "sha256": "4679101f034e8e88470e1ceaa26cad65c7b80eebeb753327f9d6d614cdf6f89a"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/pointenoire/labels/pointenoire_8.tif",
+        "bytes": 1049704,
+        "compressed_bytes": 64487,
+        "zip_crc32": "6de4402b",
+        "sha256": "9c9ae11852d8a4ff3c23b0c9323caba785b10fdc1e09dc0769d79df4fa4211a2"
+      }
+    },
+    {
+      "id": "pointenoire__pointenoire_9",
+      "region": "pointenoire",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/pointenoire/images/pointenoire_9.tif",
+        "bytes": 3149172,
+        "compressed_bytes": 2594368,
+        "zip_crc32": "95bbb040",
+        "sha256": "7591865031f88e9febc33a45236d53f3b69419afa70d68bf4c2ea8ae313abb4d"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/pointenoire/labels/pointenoire_9.tif",
+        "bytes": 1049704,
+        "compressed_bytes": 66319,
+        "zip_crc32": "86cb5df4",
+        "sha256": "3a75ab84ed50d63237842b092604956d97a2e59a3f7582234d802ac919e72c23"
+      }
+    },
+    {
+      "id": "rio__rio_19",
+      "region": "rio",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/rio/images/rio_19.tif",
+        "bytes": 534270,
+        "compressed_bytes": 447570,
+        "zip_crc32": "eb41dc20",
+        "sha256": "df729ce60d2e9b0cfe7402bd1b8c01107f0be785d62bbcaa4bac6e6cce9b5703"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/rio/labels/rio_19.tif",
+        "bytes": 178332,
+        "compressed_bytes": 7276,
+        "zip_crc32": "0bd27f1f",
+        "sha256": "9d6980076ef7687501b491642dba26e4b410647e712495de042ef2e39c0fac07"
+      }
+    },
+    {
+      "id": "rio__rio_22",
+      "region": "rio",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/rio/images/rio_22.tif",
+        "bytes": 535488,
+        "compressed_bytes": 436665,
+        "zip_crc32": "f1e9fc4a",
+        "sha256": "1f22d17cf843885af56d125c05e6c1cf6b0b808f68c026f1b18f858202b59421"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/rio/labels/rio_22.tif",
+        "bytes": 178738,
+        "compressed_bytes": 8260,
+        "zip_crc32": "09e5f95d",
+        "sha256": "8511b7642937ddeafe2e0d72833e4140b14d6f68bbb92acfe792a030e3847968"
+      }
+    },
+    {
+      "id": "rio__rio_34",
+      "region": "rio",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/rio/images/rio_34.tif",
+        "bytes": 534270,
+        "compressed_bytes": 450804,
+        "zip_crc32": "c0c5e4c4",
+        "sha256": "9b0eb5840a3b63cf12048a540bd7a9e342be40644467ec6707240e07081b0281"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/rio/labels/rio_34.tif",
+        "bytes": 178332,
+        "compressed_bytes": 10538,
+        "zip_crc32": "11f47efb",
+        "sha256": "cc4e68389fbee9d90b0a523b10dd356aa29ca618540c6e6928fc4be76b5d7ede"
+      }
+    },
+    {
+      "id": "rio__rio_5",
+      "region": "rio",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/rio/images/rio_5.tif",
+        "bytes": 535488,
+        "compressed_bytes": 482054,
+        "zip_crc32": "36d65c2e",
+        "sha256": "d9ecc2fda3d6cfbce4861da2715544840385207920f0bb2d8603d7a9548f6a1f"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/rio/labels/rio_5.tif",
+        "bytes": 178738,
+        "compressed_bytes": 14011,
+        "zip_crc32": "314d1caf",
+        "sha256": "6f6fa419a569e26560cdbd9cc44862c58bf56d324e3db65276b8182125bd26ee"
+      }
+    },
+    {
+      "id": "rio__rio_50",
+      "region": "rio",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/rio/images/rio_50.tif",
+        "bytes": 535488,
+        "compressed_bytes": 460136,
+        "zip_crc32": "dc898a43",
+        "sha256": "cce1e75f34242a037891678898eaa75bc1af6479856296a241d1d327b6fc346f"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/rio/labels/rio_50.tif",
+        "bytes": 178738,
+        "compressed_bytes": 5313,
+        "zip_crc32": "58d219d6",
+        "sha256": "5c8586ce6b1a0ce5f31f407534c16544a5eeab1ae257f1c879929bc98eed2c91"
+      }
+    },
+    {
+      "id": "rotterdam__rotterdam_20",
+      "region": "rotterdam",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/rotterdam/images/rotterdam_20.tif",
+        "bytes": 2432172,
+        "compressed_bytes": 1689283,
+        "zip_crc32": "100bb7d1",
+        "sha256": "0b3bf67ab37549dfbf9ac8f4d0a988bba974e3434b5ed93acc83154b123a5b3b"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/rotterdam/labels/rotterdam_20.tif",
+        "bytes": 810960,
+        "compressed_bytes": 32479,
+        "zip_crc32": "20ba6c9f",
+        "sha256": "b107cb5d9e7598fc5bf0ed63483b589853bbdad36f7b83af6d7c554be67b153f"
+      }
+    },
+    {
+      "id": "rotterdam__rotterdam_30",
+      "region": "rotterdam",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/rotterdam/images/rotterdam_30.tif",
+        "bytes": 2432172,
+        "compressed_bytes": 1653616,
+        "zip_crc32": "3fdc524a",
+        "sha256": "f4412bf8755ab25f342fc16d4652434fed2e0eff3cd1d9f10dbd2ec84282f985"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/rotterdam/labels/rotterdam_30.tif",
+        "bytes": 810960,
+        "compressed_bytes": 27711,
+        "zip_crc32": "911ad250",
+        "sha256": "1aa634f97e747ac8220817b55e8b27d70ddde0095db129cca2db3e7147f7b8bb"
+      }
+    },
+    {
+      "id": "rotterdam__rotterdam_31",
+      "region": "rotterdam",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/rotterdam/images/rotterdam_31.tif",
+        "bytes": 2432172,
+        "compressed_bytes": 1679480,
+        "zip_crc32": "1f2a17dd",
+        "sha256": "02c585d1c61b83f4724d5745abc9baeaa0f4b65a08095b34249603440ceeb21d"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/rotterdam/labels/rotterdam_31.tif",
+        "bytes": 810960,
+        "compressed_bytes": 37960,
+        "zip_crc32": "dce59541",
+        "sha256": "a5fa9649ad062f93bcabbfb94ca827be3d965d3b63cb873571dcc94a8bfce398"
+      }
+    },
+    {
+      "id": "rotterdam__rotterdam_32",
+      "region": "rotterdam",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/rotterdam/images/rotterdam_32.tif",
+        "bytes": 2432172,
+        "compressed_bytes": 1641439,
+        "zip_crc32": "a0dcdfac",
+        "sha256": "105403ef59ed7ef54dc5f7ec2cdec97e04a63c28bceecbabec70c6e076cffc79"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/rotterdam/labels/rotterdam_32.tif",
+        "bytes": 810960,
+        "compressed_bytes": 18690,
+        "zip_crc32": "09cf57cd",
+        "sha256": "21deb870cfe92ea4c9cd80d2b7b961ab907473e444a3ec289d91b1e9a5a1d90a"
+      }
+    },
+    {
+      "id": "rotterdam__rotterdam_44",
+      "region": "rotterdam",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/rotterdam/images/rotterdam_44.tif",
+        "bytes": 2432172,
+        "compressed_bytes": 1728486,
+        "zip_crc32": "635eb008",
+        "sha256": "a8140eb1de45a5c420e7f3a36fc77d99bc272444164e79a89702cf48e721f248"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/rotterdam/labels/rotterdam_44.tif",
+        "bytes": 810960,
+        "compressed_bytes": 20677,
+        "zip_crc32": "8309f6f8",
+        "sha256": "77febcae95a18d8faabfed00ce1cf2ebb7d56f84209761667ef72d743a715753"
+      }
+    },
+    {
+      "id": "santiago__santiago_1",
+      "region": "santiago",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/santiago/images/santiago_1.tif",
+        "bytes": 3149172,
+        "compressed_bytes": 2233206,
+        "zip_crc32": "edc9f36a",
+        "sha256": "02a829475d48690e4c967081bcc3edde9f5cea1655d737536d71a9d874acc404"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/santiago/labels/santiago_1.tif",
+        "bytes": 1049704,
+        "compressed_bytes": 55664,
+        "zip_crc32": "077c3a1b",
+        "sha256": "22058d7fc9849385cb4e8875f3cbc70578cf0dd4b761893bfb5a7bdcd80414de"
+      }
+    },
+    {
+      "id": "santiago__santiago_26",
+      "region": "santiago",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/santiago/images/santiago_26.tif",
+        "bytes": 3149172,
+        "compressed_bytes": 2760867,
+        "zip_crc32": "69365ccb",
+        "sha256": "4108753a9d7d76dfa5a6280b01d66344ca39de9d4674d46fb2b2093e0af41506"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/santiago/labels/santiago_26.tif",
+        "bytes": 1049704,
+        "compressed_bytes": 65284,
+        "zip_crc32": "837ffe99",
+        "sha256": "708ffeb174d053e7aea47ebd6ad6fdc8195a5b27cc3b25c63a23d8e7205065ab"
+      }
+    },
+    {
+      "id": "santiago__santiago_29",
+      "region": "santiago",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/santiago/images/santiago_29.tif",
+        "bytes": 3149172,
+        "compressed_bytes": 2284035,
+        "zip_crc32": "db35a5e8",
+        "sha256": "49bbc450a40a6e93b16d969de9e0a0ab249fd5717f62e422cd6ba7c763b0ef82"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/santiago/labels/santiago_29.tif",
+        "bytes": 1049704,
+        "compressed_bytes": 53711,
+        "zip_crc32": "b04a2b20",
+        "sha256": "61c1cddce86564877e0c273cadf8e83f62a82298ce26e457221f0f0af611b298"
+      }
+    },
+    {
+      "id": "santiago__santiago_51",
+      "region": "santiago",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/santiago/images/santiago_51.tif",
+        "bytes": 3149172,
+        "compressed_bytes": 2467904,
+        "zip_crc32": "9fe783af",
+        "sha256": "168d7aad1f64c501091d9b91866e0555bb401b1b4fe3f837ec3b2c016d0f3fc3"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/santiago/labels/santiago_51.tif",
+        "bytes": 1049704,
+        "compressed_bytes": 66413,
+        "zip_crc32": "3becf019",
+        "sha256": "f8a8ad56c0538d6ac1180d8063bc145e453ab2c73ec103557fd5cd373fc6bee1"
+      }
+    },
+    {
+      "id": "santiago__santiago_57",
+      "region": "santiago",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/santiago/images/santiago_57.tif",
+        "bytes": 3149172,
+        "compressed_bytes": 2326584,
+        "zip_crc32": "e79c8ca5",
+        "sha256": "7f8e8d5d841bfb941c9dd8fa73d06ffa3ecf1aeb94d4959b62df73affa027e28"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/santiago/labels/santiago_57.tif",
+        "bytes": 1049704,
+        "compressed_bytes": 52575,
+        "zip_crc32": "d7121a20",
+        "sha256": "575963cb875ff1031e1cdd49d35611dc1aa6827c336bab6cfafda091c4d4f46c"
+      }
+    },
+    {
+      "id": "shanghai__shanghai_27",
+      "region": "shanghai",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/shanghai/images/shanghai_27.tif",
+        "bytes": 1268856,
+        "compressed_bytes": 1032730,
+        "zip_crc32": "49007bc3",
+        "sha256": "b0d01bcfc5b5454b9f92ae90a28c04f537b08dc4d2fedcd94cbaeac9e69763e1"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/shanghai/labels/shanghai_27.tif",
+        "bytes": 423196,
+        "compressed_bytes": 3966,
+        "zip_crc32": "53b84cde",
+        "sha256": "4a1350dd7f72290cb0d7db91c68a3d77fcadf39b345bdf5527bec60ac4a5e7b5"
+      }
+    },
+    {
+      "id": "shanghai__shanghai_29",
+      "region": "shanghai",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/shanghai/images/shanghai_29.tif",
+        "bytes": 1268856,
+        "compressed_bytes": 1010690,
+        "zip_crc32": "f322943f",
+        "sha256": "542cdbe7bff2fde446d412240dd25d7a8b681de37dbf34ec1fa4b3eccfceb9a9"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/shanghai/labels/shanghai_29.tif",
+        "bytes": 423196,
+        "compressed_bytes": 9724,
+        "zip_crc32": "017e4077",
+        "sha256": "b08ad39fbf63b1f0636b8cf6e0d49749e56e2b1d45605ee696ef3c1194868ada"
+      }
+    },
+    {
+      "id": "shanghai__shanghai_46",
+      "region": "shanghai",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/shanghai/images/shanghai_46.tif",
+        "bytes": 1268856,
+        "compressed_bytes": 1026890,
+        "zip_crc32": "f8dd8ebd",
+        "sha256": "fb4978211b543c9c3317b4dc1bf57472773629c82ff45b1438fc080897ca59dc"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/shanghai/labels/shanghai_46.tif",
+        "bytes": 423196,
+        "compressed_bytes": 16880,
+        "zip_crc32": "cdd2637f",
+        "sha256": "5b194d47517830a550f1aeae62df854783dc88616fb4b4c3abe22941f669983f"
+      }
+    },
+    {
+      "id": "shanghai__shanghai_50",
+      "region": "shanghai",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/shanghai/images/shanghai_50.tif",
+        "bytes": 1268856,
+        "compressed_bytes": 870359,
+        "zip_crc32": "a658d3ff",
+        "sha256": "5d88f2f5db752689f134be0edb074ac9dfb7672405dc7d8ab72144300a59c6fe"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/shanghai/labels/shanghai_50.tif",
+        "bytes": 423196,
+        "compressed_bytes": 9369,
+        "zip_crc32": "6e142925",
+        "sha256": "db67a3a023b0d9ee8649bb8133fef0712b0ee6f00a7a5488cd6b8764f691fbd4"
+      }
+    },
+    {
+      "id": "shanghai__shanghai_6",
+      "region": "shanghai",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/shanghai/images/shanghai_6.tif",
+        "bytes": 1268856,
+        "compressed_bytes": 1057792,
+        "zip_crc32": "875ba025",
+        "sha256": "dc8131c2bab6d39e85b20e0cbf880c36c2cc13c08c42a6bba1014f0feaaf5b19"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/shanghai/labels/shanghai_6.tif",
+        "bytes": 423196,
+        "compressed_bytes": 3692,
+        "zip_crc32": "70ea47c6",
+        "sha256": "9a9114d036febde0d9b9a139afeede8a30e4f806e565b498a9dd02736c6e670a"
+      }
+    },
+    {
+      "id": "tonga__tonga_32",
+      "region": "tonga",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/tonga/images/tonga_32.tif",
+        "bytes": 3149178,
+        "compressed_bytes": 2750789,
+        "zip_crc32": "ffb7534d",
+        "sha256": "ea22ae2b84e968ede815c7293301c2499b237efb74e967adff1051a30ec60f0b"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/tonga/labels/tonga_32.tif",
+        "bytes": 1049710,
+        "compressed_bytes": 30443,
+        "zip_crc32": "a020ad28",
+        "sha256": "309bee6651f2de5e1ed2480a291e6b5ef177ba7c01df1ee00df03a2322997dfc"
+      }
+    },
+    {
+      "id": "tonga__tonga_43",
+      "region": "tonga",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/tonga/images/tonga_43.tif",
+        "bytes": 3149178,
+        "compressed_bytes": 2785766,
+        "zip_crc32": "b799eebc",
+        "sha256": "569293d3bcbb1c02aa85c59a2ffc7f86a1cbd02a621aa28ea7a50db567fee0a1"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/tonga/labels/tonga_43.tif",
+        "bytes": 1049710,
+        "compressed_bytes": 59049,
+        "zip_crc32": "8d40c9a1",
+        "sha256": "5d5725f74dfcef329ef7ba0d6f826f607e9db7beba444fc58a41f8665851bc56"
+      }
+    },
+    {
+      "id": "tonga__tonga_53",
+      "region": "tonga",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/tonga/images/tonga_53.tif",
+        "bytes": 3149178,
+        "compressed_bytes": 2425081,
+        "zip_crc32": "48ae0231",
+        "sha256": "57230a6b3cf33f368058eed769d6d09fac21a4a5635ec7456229020d3a575750"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/tonga/labels/tonga_53.tif",
+        "bytes": 1049710,
+        "compressed_bytes": 29587,
+        "zip_crc32": "5d34b219",
+        "sha256": "98d837c653ce7936d0ca11b6133dbbbf56d300515d6d47b07f057b9b0b8d60e3"
+      }
+    },
+    {
+      "id": "tonga__tonga_6",
+      "region": "tonga",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/tonga/images/tonga_6.tif",
+        "bytes": 3149178,
+        "compressed_bytes": 2631565,
+        "zip_crc32": "4b70a16d",
+        "sha256": "32321b49b61af4b678cabbca3ae9f09f43abad52bb597c196918fc6f55f538a9"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/tonga/labels/tonga_6.tif",
+        "bytes": 1049710,
+        "compressed_bytes": 43802,
+        "zip_crc32": "9ee05333",
+        "sha256": "b8eccf5a0dd38fa5111a01f7351c4dca019aef61b6096e09c7ea6f651fc003aa"
+      }
+    },
+    {
+      "id": "tonga__tonga_63",
+      "region": "tonga",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/tonga/images/tonga_63.tif",
+        "bytes": 3149178,
+        "compressed_bytes": 2777795,
+        "zip_crc32": "d98e49b6",
+        "sha256": "012d85fc35ecbe1d60f9470f2cce7535badf78b435b6ce7b3b0640a348a1597b"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/tonga/labels/tonga_63.tif",
+        "bytes": 1049710,
+        "compressed_bytes": 59666,
+        "zip_crc32": "57feb155",
+        "sha256": "480512add8b556cf015b836c9dfb7da20ce26bed79ccacc28d8c154696a5afb7"
+      }
+    },
+    {
+      "id": "ulaanbaatar__ulaanbaatar_23",
+      "region": "ulaanbaatar",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/ulaanbaatar/images/ulaanbaatar_23.tif",
+        "bytes": 3149172,
+        "compressed_bytes": 2709062,
+        "zip_crc32": "f4e57ff1",
+        "sha256": "d96b4cc832132d437be38528a2b0ab13f5f236ee83cd62f25de59a38ecf6f811"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/ulaanbaatar/labels/ulaanbaatar_23.tif",
+        "bytes": 1049704,
+        "compressed_bytes": 52806,
+        "zip_crc32": "f1e1c807",
+        "sha256": "3ef1758b234afef653ac14d10a37b10a879fcf932ace9b034d199c5cc528d79d"
+      }
+    },
+    {
+      "id": "ulaanbaatar__ulaanbaatar_3",
+      "region": "ulaanbaatar",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/ulaanbaatar/images/ulaanbaatar_3.tif",
+        "bytes": 3149172,
+        "compressed_bytes": 2550519,
+        "zip_crc32": "112d2d96",
+        "sha256": "2fc667c05ff4dfbcc464638e9c4444b8fca89270dff6db32a64932a18bc0bd06"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/ulaanbaatar/labels/ulaanbaatar_3.tif",
+        "bytes": 1049704,
+        "compressed_bytes": 50761,
+        "zip_crc32": "7410b16f",
+        "sha256": "ed06ccc8485545240d837ad1569d3597e472f4b2e766471d038d8f463114ed49"
+      }
+    },
+    {
+      "id": "ulaanbaatar__ulaanbaatar_31",
+      "region": "ulaanbaatar",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/ulaanbaatar/images/ulaanbaatar_31.tif",
+        "bytes": 3149172,
+        "compressed_bytes": 2662215,
+        "zip_crc32": "f192b030",
+        "sha256": "58b377579b9d39226976f609a3d303a231e2f475a6b76dd26ebbb1deec611e4c"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/ulaanbaatar/labels/ulaanbaatar_31.tif",
+        "bytes": 1049704,
+        "compressed_bytes": 45324,
+        "zip_crc32": "9470e7bf",
+        "sha256": "b3bdcd617438c1328b13ef1ce4cbb2b52882ede0a97558a96292c8d86dffc166"
+      }
+    },
+    {
+      "id": "ulaanbaatar__ulaanbaatar_36",
+      "region": "ulaanbaatar",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/ulaanbaatar/images/ulaanbaatar_36.tif",
+        "bytes": 3149172,
+        "compressed_bytes": 2609812,
+        "zip_crc32": "09b86bef",
+        "sha256": "5a873e1e9a52cd97d159c935c88951c9f333d7742f9979d664463b400968070e"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/ulaanbaatar/labels/ulaanbaatar_36.tif",
+        "bytes": 1049704,
+        "compressed_bytes": 50859,
+        "zip_crc32": "69c68843",
+        "sha256": "522b13fb99203ebd5850d742313fffa81405ca9142a22974101fb1714dd95217"
+      }
+    },
+    {
+      "id": "ulaanbaatar__ulaanbaatar_46",
+      "region": "ulaanbaatar",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/ulaanbaatar/images/ulaanbaatar_46.tif",
+        "bytes": 3149172,
+        "compressed_bytes": 2615063,
+        "zip_crc32": "bb4574c9",
+        "sha256": "afabd56072110d6bca03982fc5d17606b178cfa6e3597b422793a5ec477273a6"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/ulaanbaatar/labels/ulaanbaatar_46.tif",
+        "bytes": 1049704,
+        "compressed_bytes": 51432,
+        "zip_crc32": "ce1ecfd0",
+        "sha256": "8fc509c346d84cd39a6f2384177d4957cd7b517e18fdee4168293849dcf81d62"
+      }
+    },
+    {
+      "id": "vegas__vegas_14",
+      "region": "vegas",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/vegas/images/vegas_14.tif",
+        "bytes": 1268856,
+        "compressed_bytes": 1010467,
+        "zip_crc32": "0d4f5c5d",
+        "sha256": "5d3d50295816d77017b52e45980643f6d7c79a37c8ce721130d56cbb569e1fda"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/vegas/labels/vegas_14.tif",
+        "bytes": 423196,
+        "compressed_bytes": 14108,
+        "zip_crc32": "774cf73e",
+        "sha256": "b695b4caa1f43dc28a72cfe166b90318babf5ce22b115f43780d0dbeb55330e8"
+      }
+    },
+    {
+      "id": "vegas__vegas_17",
+      "region": "vegas",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/vegas/images/vegas_17.tif",
+        "bytes": 1268856,
+        "compressed_bytes": 865962,
+        "zip_crc32": "b4510c56",
+        "sha256": "b541e89c9e6cf28671937a7028def39503c95ed09cac422f189e9c60b29678f2"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/vegas/labels/vegas_17.tif",
+        "bytes": 423196,
+        "compressed_bytes": 9648,
+        "zip_crc32": "7aa40d90",
+        "sha256": "1612516c8d879451da70d568b174ef9a536285d89d2588c72926cfa7b48b5380"
+      }
+    },
+    {
+      "id": "vegas__vegas_32",
+      "region": "vegas",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/vegas/images/vegas_32.tif",
+        "bytes": 1268856,
+        "compressed_bytes": 884101,
+        "zip_crc32": "c624d620",
+        "sha256": "e35ec030f9b89cdc15801afa5a4b58909ab399ec5857cc19fdaf96a41c839f57"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/vegas/labels/vegas_32.tif",
+        "bytes": 423196,
+        "compressed_bytes": 2535,
+        "zip_crc32": "59ac30c8",
+        "sha256": "ebcc06683904a43b69ce31f6449184e79bb6d0fcbceeac70e64c042b0195f9d8"
+      }
+    },
+    {
+      "id": "vegas__vegas_39",
+      "region": "vegas",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/vegas/images/vegas_39.tif",
+        "bytes": 1268856,
+        "compressed_bytes": 701782,
+        "zip_crc32": "d2f8a825",
+        "sha256": "2fbd57fef0c1cd8428f063820a84d868c589e8167cc64a477d3b5378ec2f2fe7"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/vegas/labels/vegas_39.tif",
+        "bytes": 423196,
+        "compressed_bytes": 5133,
+        "zip_crc32": "67b8e71d",
+        "sha256": "973f9a5ff7a45f58dca76602e87445d066c82c534fcecdb1493826b19197eded"
+      }
+    },
+    {
+      "id": "vegas__vegas_7",
+      "region": "vegas",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/vegas/images/vegas_7.tif",
+        "bytes": 1268856,
+        "compressed_bytes": 933881,
+        "zip_crc32": "d1b161bc",
+        "sha256": "d5a4cc0bcffb2f0d4f8156e4bcfc9a9c9f304bd41e38eb36e60b823eaa2e5a15"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/vegas/labels/vegas_7.tif",
+        "bytes": 423196,
+        "compressed_bytes": 13479,
+        "zip_crc32": "ec5d8e23",
+        "sha256": "0a118f375fc6f59a9198a146324cb0bab53d692c6464f842c6a539573b6a28d3"
+      }
+    },
+    {
+      "id": "vienna__vienna_26",
+      "region": "vienna",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/vienna/images/vienna_26.tif",
+        "bytes": 3003369,
+        "compressed_bytes": 2316198,
+        "zip_crc32": "17a81f4d",
+        "sha256": "4909d2372d9d31032905fcc788f10522e7f99656a7c824e9e48a94138dccd1bc"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/vienna/labels/vienna_26.tif",
+        "bytes": 1001107,
+        "compressed_bytes": 37742,
+        "zip_crc32": "ce8e16d6",
+        "sha256": "54c899f99600c0604e86725cebbb0f987c8c897d0bbd13dc560e571258cf773c"
+      }
+    },
+    {
+      "id": "vienna__vienna_33",
+      "region": "vienna",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/vienna/images/vienna_33.tif",
+        "bytes": 3003369,
+        "compressed_bytes": 1976079,
+        "zip_crc32": "7336f36d",
+        "sha256": "ba3ed392f4d7427bb2b9f0519ab01c6994195386d3a5980df9fd92e2cf446566"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/vienna/labels/vienna_33.tif",
+        "bytes": 1001107,
+        "compressed_bytes": 31696,
+        "zip_crc32": "d9a61866",
+        "sha256": "81d9b30353e441b404c3dc5d77d17272521c508c8fe0bce2159293b319429445"
+      }
+    },
+    {
+      "id": "vienna__vienna_41",
+      "region": "vienna",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/vienna/images/vienna_41.tif",
+        "bytes": 3003369,
+        "compressed_bytes": 1993555,
+        "zip_crc32": "4f432b9d",
+        "sha256": "cde2cb796480f15ef8c8f2b1090590e90da07f1cd71dad529cd7339ec63b3a92"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/vienna/labels/vienna_41.tif",
+        "bytes": 1001107,
+        "compressed_bytes": 36405,
+        "zip_crc32": "42fa9856",
+        "sha256": "cd1d4f1ba90461f0fbacbfd56bbdff6d41dcf9f5a8b36e81ea4eaf2bfdf4e118"
+      }
+    },
+    {
+      "id": "vienna__vienna_61",
+      "region": "vienna",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/vienna/images/vienna_61.tif",
+        "bytes": 3003369,
+        "compressed_bytes": 1935665,
+        "zip_crc32": "b892c253",
+        "sha256": "c4e1ec026ab08988abab8bee99465f27e5a51ff45d04c397243f24adfb9649b3"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/vienna/labels/vienna_61.tif",
+        "bytes": 1001107,
+        "compressed_bytes": 39112,
+        "zip_crc32": "321f9e53",
+        "sha256": "38539357dd3342a60b1fbe792cfd9e13e6bed2e1221b583a0eef4ec843776163"
+      }
+    },
+    {
+      "id": "vienna__vienna_68",
+      "region": "vienna",
+      "role": "old_development",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/vienna/images/vienna_68.tif",
+        "bytes": 3003369,
+        "compressed_bytes": 2136683,
+        "zip_crc32": "eeb41578",
+        "sha256": "8f8d6051c01f081e35bb4f0314ec0c1568d8ff340389a0d1a1b54de43ce1e43e"
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/vienna/labels/vienna_68.tif",
+        "bytes": 1001107,
+        "compressed_bytes": 38023,
+        "zip_crc32": "b2665ea7",
+        "sha256": "8924b73a21d5128b75388b760e7d85a0b9a6a8b98dd141170cd046fd29782a7e"
+      }
+    },
+    {
+      "id": "abancay__abancay_32",
+      "region": "abancay",
+      "role": "new_panel",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/abancay/images/abancay_32.tif",
+        "bytes": 3149172,
+        "compressed_bytes": 2815465,
+        "zip_crc32": "af4b9075",
+        "sha256": null
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/abancay/labels/abancay_32.tif",
+        "bytes": 1049704,
+        "compressed_bytes": 54484,
+        "zip_crc32": "df7181ae",
+        "sha256": null
+      }
+    },
+    {
+      "id": "abancay__abancay_41",
+      "region": "abancay",
+      "role": "new_panel",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/abancay/images/abancay_41.tif",
+        "bytes": 3149172,
+        "compressed_bytes": 2750286,
+        "zip_crc32": "ba4d69e0",
+        "sha256": null
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/abancay/labels/abancay_41.tif",
+        "bytes": 1049704,
+        "compressed_bytes": 52946,
+        "zip_crc32": "7c1a337b",
+        "sha256": null
+      }
+    },
+    {
+      "id": "abancay__abancay_45",
+      "region": "abancay",
+      "role": "new_panel",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/abancay/images/abancay_45.tif",
+        "bytes": 3149172,
+        "compressed_bytes": 2779157,
+        "zip_crc32": "14cee692",
+        "sha256": null
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/abancay/labels/abancay_45.tif",
+        "bytes": 1049704,
+        "compressed_bytes": 48262,
+        "zip_crc32": "e2df754e",
+        "sha256": null
+      }
+    },
+    {
+      "id": "al_qurnah__al_qurnah_33",
+      "region": "al_qurnah",
+      "role": "new_panel",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/al_qurnah/images/al_qurnah_33.tif",
+        "bytes": 3149172,
+        "compressed_bytes": 2637381,
+        "zip_crc32": "cca1e2e4",
+        "sha256": null
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/al_qurnah/labels/al_qurnah_33.tif",
+        "bytes": 1049704,
+        "compressed_bytes": 46898,
+        "zip_crc32": "eac5aa0f",
+        "sha256": null
+      }
+    },
+    {
+      "id": "al_qurnah__al_qurnah_49",
+      "region": "al_qurnah",
+      "role": "new_panel",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/al_qurnah/images/al_qurnah_49.tif",
+        "bytes": 3149172,
+        "compressed_bytes": 2229972,
+        "zip_crc32": "7bcb55ac",
+        "sha256": null
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/al_qurnah/labels/al_qurnah_49.tif",
+        "bytes": 1049704,
+        "compressed_bytes": 55714,
+        "zip_crc32": "6fa14004",
+        "sha256": null
+      }
+    },
+    {
+      "id": "al_qurnah__al_qurnah_60",
+      "region": "al_qurnah",
+      "role": "new_panel",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/al_qurnah/images/al_qurnah_60.tif",
+        "bytes": 3149172,
+        "compressed_bytes": 2666751,
+        "zip_crc32": "65100ca3",
+        "sha256": null
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/al_qurnah/labels/al_qurnah_60.tif",
+        "bytes": 1049704,
+        "compressed_bytes": 49850,
+        "zip_crc32": "6244eb79",
+        "sha256": null
+      }
+    },
+    {
+      "id": "baybay__baybay_36",
+      "region": "baybay",
+      "role": "new_panel",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/baybay/images/baybay_36.tif",
+        "bytes": 3149176,
+        "compressed_bytes": 2815985,
+        "zip_crc32": "8faf04ff",
+        "sha256": null
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/baybay/labels/baybay_36.tif",
+        "bytes": 1049708,
+        "compressed_bytes": 45723,
+        "zip_crc32": "213aa8da",
+        "sha256": null
+      }
+    },
+    {
+      "id": "baybay__baybay_53",
+      "region": "baybay",
+      "role": "new_panel",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/baybay/images/baybay_53.tif",
+        "bytes": 3149176,
+        "compressed_bytes": 2655517,
+        "zip_crc32": "625576ef",
+        "sha256": null
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/baybay/labels/baybay_53.tif",
+        "bytes": 1049708,
+        "compressed_bytes": 36404,
+        "zip_crc32": "0a0dec12",
+        "sha256": null
+      }
+    },
+    {
+      "id": "baybay__baybay_65",
+      "region": "baybay",
+      "role": "new_panel",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/baybay/images/baybay_65.tif",
+        "bytes": 3149176,
+        "compressed_bytes": 2806472,
+        "zip_crc32": "fea30719",
+        "sha256": null
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/baybay/labels/baybay_65.tif",
+        "bytes": 1049708,
+        "compressed_bytes": 30421,
+        "zip_crc32": "9a5e95c4",
+        "sha256": null
+      }
+    },
+    {
+      "id": "bielefeld__bielefeld_29",
+      "region": "bielefeld",
+      "role": "new_panel",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/bielefeld/images/bielefeld_29.tif",
+        "bytes": 3003372,
+        "compressed_bytes": 2622962,
+        "zip_crc32": "2124798a",
+        "sha256": null
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/bielefeld/labels/bielefeld_29.tif",
+        "bytes": 1001110,
+        "compressed_bytes": 51044,
+        "zip_crc32": "e1c363d0",
+        "sha256": null
+      }
+    },
+    {
+      "id": "bielefeld__bielefeld_61",
+      "region": "bielefeld",
+      "role": "new_panel",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/bielefeld/images/bielefeld_61.tif",
+        "bytes": 3003372,
+        "compressed_bytes": 2671227,
+        "zip_crc32": "cdff403b",
+        "sha256": null
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/bielefeld/labels/bielefeld_61.tif",
+        "bytes": 1001110,
+        "compressed_bytes": 55054,
+        "zip_crc32": "2a49d7dd",
+        "sha256": null
+      }
+    },
+    {
+      "id": "bielefeld__bielefeld_63",
+      "region": "bielefeld",
+      "role": "new_panel",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/bielefeld/images/bielefeld_63.tif",
+        "bytes": 3003372,
+        "compressed_bytes": 2654227,
+        "zip_crc32": "6c7bc8e8",
+        "sha256": null
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/bielefeld/labels/bielefeld_63.tif",
+        "bytes": 1001110,
+        "compressed_bytes": 40732,
+        "zip_crc32": "001e42bb",
+        "sha256": null
+      }
+    },
+    {
+      "id": "buenos_aires__buenos_aires_15",
+      "region": "buenos_aires",
+      "role": "new_panel",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/buenos_aires/images/buenos_aires_15.tif",
+        "bytes": 3149172,
+        "compressed_bytes": 2916447,
+        "zip_crc32": "15c381f8",
+        "sha256": null
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/buenos_aires/labels/buenos_aires_15.tif",
+        "bytes": 1049704,
+        "compressed_bytes": 63580,
+        "zip_crc32": "732d00b1",
+        "sha256": null
+      }
+    },
+    {
+      "id": "buenos_aires__buenos_aires_34",
+      "region": "buenos_aires",
+      "role": "new_panel",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/buenos_aires/images/buenos_aires_34.tif",
+        "bytes": 3149172,
+        "compressed_bytes": 2732891,
+        "zip_crc32": "03baaf59",
+        "sha256": null
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/buenos_aires/labels/buenos_aires_34.tif",
+        "bytes": 1049704,
+        "compressed_bytes": 53345,
+        "zip_crc32": "13b83143",
+        "sha256": null
+      }
+    },
+    {
+      "id": "buenos_aires__buenos_aires_45",
+      "region": "buenos_aires",
+      "role": "new_panel",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/buenos_aires/images/buenos_aires_45.tif",
+        "bytes": 3149172,
+        "compressed_bytes": 2820780,
+        "zip_crc32": "5bfe0694",
+        "sha256": null
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/buenos_aires/labels/buenos_aires_45.tif",
+        "bytes": 1049704,
+        "compressed_bytes": 51540,
+        "zip_crc32": "b4d2ef80",
+        "sha256": null
+      }
+    },
+    {
+      "id": "chiclayo__chiclayo_23",
+      "region": "chiclayo",
+      "role": "new_panel",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/chiclayo/images/chiclayo_23.tif",
+        "bytes": 3149172,
+        "compressed_bytes": 2420814,
+        "zip_crc32": "ffe20aff",
+        "sha256": null
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/chiclayo/labels/chiclayo_23.tif",
+        "bytes": 1049704,
+        "compressed_bytes": 36206,
+        "zip_crc32": "1c488bfc",
+        "sha256": null
+      }
+    },
+    {
+      "id": "chiclayo__chiclayo_25",
+      "region": "chiclayo",
+      "role": "new_panel",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/chiclayo/images/chiclayo_25.tif",
+        "bytes": 3149172,
+        "compressed_bytes": 2781589,
+        "zip_crc32": "08eef3bb",
+        "sha256": null
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/chiclayo/labels/chiclayo_25.tif",
+        "bytes": 1049704,
+        "compressed_bytes": 23718,
+        "zip_crc32": "3cddf94a",
+        "sha256": null
+      }
+    },
+    {
+      "id": "chiclayo__chiclayo_4",
+      "region": "chiclayo",
+      "role": "new_panel",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/chiclayo/images/chiclayo_4.tif",
+        "bytes": 3149172,
+        "compressed_bytes": 2670225,
+        "zip_crc32": "64b4b2e1",
+        "sha256": null
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/chiclayo/labels/chiclayo_4.tif",
+        "bytes": 1049704,
+        "compressed_bytes": 48614,
+        "zip_crc32": "9a6008a3",
+        "sha256": null
+      }
+    },
+    {
+      "id": "coxsbazar__coxsbazar_14",
+      "region": "coxsbazar",
+      "role": "new_panel",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/coxsbazar/images/coxsbazar_14.tif",
+        "bytes": 3149172,
+        "compressed_bytes": 2325726,
+        "zip_crc32": "870ea1c6",
+        "sha256": null
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/coxsbazar/labels/coxsbazar_14.tif",
+        "bytes": 1049704,
+        "compressed_bytes": 33463,
+        "zip_crc32": "f21f9dd3",
+        "sha256": null
+      }
+    },
+    {
+      "id": "coxsbazar__coxsbazar_52",
+      "region": "coxsbazar",
+      "role": "new_panel",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/coxsbazar/images/coxsbazar_52.tif",
+        "bytes": 3149172,
+        "compressed_bytes": 2402614,
+        "zip_crc32": "850ed417",
+        "sha256": null
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/coxsbazar/labels/coxsbazar_52.tif",
+        "bytes": 1049704,
+        "compressed_bytes": 31769,
+        "zip_crc32": "58251590",
+        "sha256": null
+      }
+    },
+    {
+      "id": "coxsbazar__coxsbazar_53",
+      "region": "coxsbazar",
+      "role": "new_panel",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/coxsbazar/images/coxsbazar_53.tif",
+        "bytes": 3149172,
+        "compressed_bytes": 2577458,
+        "zip_crc32": "ae6b6853",
+        "sha256": null
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/coxsbazar/labels/coxsbazar_53.tif",
+        "bytes": 1049704,
+        "compressed_bytes": 25385,
+        "zip_crc32": "a5c3a630",
+        "sha256": null
+      }
+    },
+    {
+      "id": "dowa__dowa_12",
+      "region": "dowa",
+      "role": "new_panel",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/dowa/images/dowa_12.tif",
+        "bytes": 3149172,
+        "compressed_bytes": 2577057,
+        "zip_crc32": "5c7601ee",
+        "sha256": null
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/dowa/labels/dowa_12.tif",
+        "bytes": 1049704,
+        "compressed_bytes": 38768,
+        "zip_crc32": "34b9ea8c",
+        "sha256": null
+      }
+    },
+    {
+      "id": "dowa__dowa_20",
+      "region": "dowa",
+      "role": "new_panel",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/dowa/images/dowa_20.tif",
+        "bytes": 3149175,
+        "compressed_bytes": 2541610,
+        "zip_crc32": "738ffc4b",
+        "sha256": null
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/dowa/labels/dowa_20.tif",
+        "bytes": 1049707,
+        "compressed_bytes": 27234,
+        "zip_crc32": "a6ce0808",
+        "sha256": null
+      }
+    },
+    {
+      "id": "dowa__dowa_9",
+      "region": "dowa",
+      "role": "new_panel",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/dowa/images/dowa_9.tif",
+        "bytes": 3149175,
+        "compressed_bytes": 2660664,
+        "zip_crc32": "d39b291b",
+        "sha256": null
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/dowa/labels/dowa_9.tif",
+        "bytes": 1049707,
+        "compressed_bytes": 61725,
+        "zip_crc32": "65c5d556",
+        "sha256": null
+      }
+    },
+    {
+      "id": "kagera__kagera_24",
+      "region": "kagera",
+      "role": "new_panel",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/kagera/images/kagera_24.tif",
+        "bytes": 3149172,
+        "compressed_bytes": 2627285,
+        "zip_crc32": "0fa41e97",
+        "sha256": null
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/kagera/labels/kagera_24.tif",
+        "bytes": 1049704,
+        "compressed_bytes": 34093,
+        "zip_crc32": "e085c5b7",
+        "sha256": null
+      }
+    },
+    {
+      "id": "kagera__kagera_46",
+      "region": "kagera",
+      "role": "new_panel",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/kagera/images/kagera_46.tif",
+        "bytes": 3149172,
+        "compressed_bytes": 2128658,
+        "zip_crc32": "b9adb32e",
+        "sha256": null
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/kagera/labels/kagera_46.tif",
+        "bytes": 1049704,
+        "compressed_bytes": 44682,
+        "zip_crc32": "41db6a6f",
+        "sha256": null
+      }
+    },
+    {
+      "id": "kagera__kagera_59",
+      "region": "kagera",
+      "role": "new_panel",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/kagera/images/kagera_59.tif",
+        "bytes": 3149172,
+        "compressed_bytes": 2133576,
+        "zip_crc32": "fa6a4335",
+        "sha256": null
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/kagera/labels/kagera_59.tif",
+        "bytes": 1049704,
+        "compressed_bytes": 43402,
+        "zip_crc32": "b42b2ea8",
+        "sha256": null
+      }
+    },
+    {
+      "id": "kampala__kampala_1",
+      "region": "kampala",
+      "role": "new_panel",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/kampala/images/kampala_1.tif",
+        "bytes": 3149172,
+        "compressed_bytes": 2839197,
+        "zip_crc32": "dc6b75c8",
+        "sha256": null
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/kampala/labels/kampala_1.tif",
+        "bytes": 1049704,
+        "compressed_bytes": 41721,
+        "zip_crc32": "42aba4fc",
+        "sha256": null
+      }
+    },
+    {
+      "id": "kampala__kampala_2",
+      "region": "kampala",
+      "role": "new_panel",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/kampala/images/kampala_2.tif",
+        "bytes": 3149172,
+        "compressed_bytes": 2744097,
+        "zip_crc32": "92d5ba99",
+        "sha256": null
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/kampala/labels/kampala_2.tif",
+        "bytes": 1049704,
+        "compressed_bytes": 50147,
+        "zip_crc32": "38a626ab",
+        "sha256": null
+      }
+    },
+    {
+      "id": "kampala__kampala_5",
+      "region": "kampala",
+      "role": "new_panel",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/kampala/images/kampala_5.tif",
+        "bytes": 3149172,
+        "compressed_bytes": 2723866,
+        "zip_crc32": "28b6edb5",
+        "sha256": null
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/kampala/labels/kampala_5.tif",
+        "bytes": 1049704,
+        "compressed_bytes": 48585,
+        "zip_crc32": "d3ad24d8",
+        "sha256": null
+      }
+    },
+    {
+      "id": "khartoum__khartoum_21",
+      "region": "khartoum",
+      "role": "new_panel",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/khartoum/images/khartoum_21.tif",
+        "bytes": 1268856,
+        "compressed_bytes": 1064899,
+        "zip_crc32": "999bb0b2",
+        "sha256": null
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/khartoum/labels/khartoum_21.tif",
+        "bytes": 423196,
+        "compressed_bytes": 7554,
+        "zip_crc32": "b26311ec",
+        "sha256": null
+      }
+    },
+    {
+      "id": "khartoum__khartoum_33",
+      "region": "khartoum",
+      "role": "new_panel",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/khartoum/images/khartoum_33.tif",
+        "bytes": 1268856,
+        "compressed_bytes": 1029723,
+        "zip_crc32": "5aad57a2",
+        "sha256": null
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/khartoum/labels/khartoum_33.tif",
+        "bytes": 423196,
+        "compressed_bytes": 12578,
+        "zip_crc32": "9f4f1c8f",
+        "sha256": null
+      }
+    },
+    {
+      "id": "khartoum__khartoum_53",
+      "region": "khartoum",
+      "role": "new_panel",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/khartoum/images/khartoum_53.tif",
+        "bytes": 1268856,
+        "compressed_bytes": 1043194,
+        "zip_crc32": "c52a67c9",
+        "sha256": null
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/khartoum/labels/khartoum_53.tif",
+        "bytes": 423196,
+        "compressed_bytes": 11983,
+        "zip_crc32": "85dd7394",
+        "sha256": null
+      }
+    },
+    {
+      "id": "kinshasa__kinshasa_1",
+      "region": "kinshasa",
+      "role": "new_panel",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/kinshasa/images/kinshasa_1.tif",
+        "bytes": 3149172,
+        "compressed_bytes": 2685813,
+        "zip_crc32": "f9cbe545",
+        "sha256": null
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/kinshasa/labels/kinshasa_1.tif",
+        "bytes": 1049704,
+        "compressed_bytes": 49863,
+        "zip_crc32": "8118c94a",
+        "sha256": null
+      }
+    },
+    {
+      "id": "kinshasa__kinshasa_2",
+      "region": "kinshasa",
+      "role": "new_panel",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/kinshasa/images/kinshasa_2.tif",
+        "bytes": 3149172,
+        "compressed_bytes": 2844741,
+        "zip_crc32": "570b1824",
+        "sha256": null
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/kinshasa/labels/kinshasa_2.tif",
+        "bytes": 1049704,
+        "compressed_bytes": 59511,
+        "zip_crc32": "9858518a",
+        "sha256": null
+      }
+    },
+    {
+      "id": "kinshasa__kinshasa_3",
+      "region": "kinshasa",
+      "role": "new_panel",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/kinshasa/images/kinshasa_3.tif",
+        "bytes": 3149172,
+        "compressed_bytes": 2520727,
+        "zip_crc32": "fed0ad43",
+        "sha256": null
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/kinshasa/labels/kinshasa_3.tif",
+        "bytes": 1049704,
+        "compressed_bytes": 47651,
+        "zip_crc32": "86c35751",
+        "sha256": null
+      }
+    },
+    {
+      "id": "kitsap__kitsap_2",
+      "region": "kitsap",
+      "role": "new_panel",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/kitsap/images/kitsap_2.tif",
+        "bytes": 3003370,
+        "compressed_bytes": 2616233,
+        "zip_crc32": "712d7267",
+        "sha256": null
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/kitsap/labels/kitsap_2.tif",
+        "bytes": 1001108,
+        "compressed_bytes": 29864,
+        "zip_crc32": "aca5e662",
+        "sha256": null
+      }
+    },
+    {
+      "id": "kitsap__kitsap_39",
+      "region": "kitsap",
+      "role": "new_panel",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/kitsap/images/kitsap_39.tif",
+        "bytes": 3003370,
+        "compressed_bytes": 2671541,
+        "zip_crc32": "698a94ee",
+        "sha256": null
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/kitsap/labels/kitsap_39.tif",
+        "bytes": 1001108,
+        "compressed_bytes": 46370,
+        "zip_crc32": "0063c8d5",
+        "sha256": null
+      }
+    },
+    {
+      "id": "kitsap__kitsap_46",
+      "region": "kitsap",
+      "role": "new_panel",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/kitsap/images/kitsap_46.tif",
+        "bytes": 3003370,
+        "compressed_bytes": 2848801,
+        "zip_crc32": "dda9bdd4",
+        "sha256": null
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/kitsap/labels/kitsap_46.tif",
+        "bytes": 1001108,
+        "compressed_bytes": 3563,
+        "zip_crc32": "d8d2645c",
+        "sha256": null
+      }
+    },
+    {
+      "id": "monrovia__monrovia_26",
+      "region": "monrovia",
+      "role": "new_panel",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/monrovia/images/monrovia_26.tif",
+        "bytes": 3149172,
+        "compressed_bytes": 2724889,
+        "zip_crc32": "4dea075f",
+        "sha256": null
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/monrovia/labels/monrovia_26.tif",
+        "bytes": 1049704,
+        "compressed_bytes": 62013,
+        "zip_crc32": "7f1ca0fe",
+        "sha256": null
+      }
+    },
+    {
+      "id": "monrovia__monrovia_48",
+      "region": "monrovia",
+      "role": "new_panel",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/monrovia/images/monrovia_48.tif",
+        "bytes": 3149172,
+        "compressed_bytes": 2461192,
+        "zip_crc32": "a313ac96",
+        "sha256": null
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/monrovia/labels/monrovia_48.tif",
+        "bytes": 1049704,
+        "compressed_bytes": 49352,
+        "zip_crc32": "937fa7fb",
+        "sha256": null
+      }
+    },
+    {
+      "id": "monrovia__monrovia_58",
+      "region": "monrovia",
+      "role": "new_panel",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/monrovia/images/monrovia_58.tif",
+        "bytes": 3149172,
+        "compressed_bytes": 2833124,
+        "zip_crc32": "758c1e5e",
+        "sha256": null
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/monrovia/labels/monrovia_58.tif",
+        "bytes": 1049704,
+        "compressed_bytes": 48892,
+        "zip_crc32": "2427e865",
+        "sha256": null
+      }
+    },
+    {
+      "id": "ngaoundere__ngaoundere_28",
+      "region": "ngaoundere",
+      "role": "new_panel",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/ngaoundere/images/ngaoundere_28.tif",
+        "bytes": 3149172,
+        "compressed_bytes": 2826649,
+        "zip_crc32": "64626277",
+        "sha256": null
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/ngaoundere/labels/ngaoundere_28.tif",
+        "bytes": 1049704,
+        "compressed_bytes": 63231,
+        "zip_crc32": "8f492b45",
+        "sha256": null
+      }
+    },
+    {
+      "id": "ngaoundere__ngaoundere_31",
+      "region": "ngaoundere",
+      "role": "new_panel",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/ngaoundere/images/ngaoundere_31.tif",
+        "bytes": 3149172,
+        "compressed_bytes": 2884428,
+        "zip_crc32": "ee926982",
+        "sha256": null
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/ngaoundere/labels/ngaoundere_31.tif",
+        "bytes": 1049704,
+        "compressed_bytes": 47201,
+        "zip_crc32": "d7194955",
+        "sha256": null
+      }
+    },
+    {
+      "id": "ngaoundere__ngaoundere_34",
+      "region": "ngaoundere",
+      "role": "new_panel",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/ngaoundere/images/ngaoundere_34.tif",
+        "bytes": 3149172,
+        "compressed_bytes": 2697162,
+        "zip_crc32": "2bd181d3",
+        "sha256": null
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/ngaoundere/labels/ngaoundere_34.tif",
+        "bytes": 1049704,
+        "compressed_bytes": 28740,
+        "zip_crc32": "5814d254",
+        "sha256": null
+      }
+    },
+    {
+      "id": "paris__paris_38",
+      "region": "paris",
+      "role": "new_panel",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/paris/images/paris_38.tif",
+        "bytes": 1268856,
+        "compressed_bytes": 871895,
+        "zip_crc32": "89ada189",
+        "sha256": null
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/paris/labels/paris_38.tif",
+        "bytes": 423196,
+        "compressed_bytes": 17873,
+        "zip_crc32": "1be3adbd",
+        "sha256": null
+      }
+    },
+    {
+      "id": "paris__paris_54",
+      "region": "paris",
+      "role": "new_panel",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/paris/images/paris_54.tif",
+        "bytes": 1268856,
+        "compressed_bytes": 927692,
+        "zip_crc32": "ab7e2ed6",
+        "sha256": null
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/paris/labels/paris_54.tif",
+        "bytes": 423196,
+        "compressed_bytes": 19336,
+        "zip_crc32": "bccefb89",
+        "sha256": null
+      }
+    },
+    {
+      "id": "paris__paris_61",
+      "region": "paris",
+      "role": "new_panel",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/paris/images/paris_61.tif",
+        "bytes": 1268856,
+        "compressed_bytes": 882702,
+        "zip_crc32": "c1ae032d",
+        "sha256": null
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/paris/labels/paris_61.tif",
+        "bytes": 423196,
+        "compressed_bytes": 16448,
+        "zip_crc32": "aeff8ba6",
+        "sha256": null
+      }
+    },
+    {
+      "id": "rosario__rosario_1",
+      "region": "rosario",
+      "role": "new_panel",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/rosario/images/rosario_1.tif",
+        "bytes": 3149172,
+        "compressed_bytes": 2696593,
+        "zip_crc32": "ca9aea8f",
+        "sha256": null
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/rosario/labels/rosario_1.tif",
+        "bytes": 1049704,
+        "compressed_bytes": 48603,
+        "zip_crc32": "f2d4c650",
+        "sha256": null
+      }
+    },
+    {
+      "id": "rosario__rosario_4",
+      "region": "rosario",
+      "role": "new_panel",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/rosario/images/rosario_4.tif",
+        "bytes": 3149172,
+        "compressed_bytes": 2905185,
+        "zip_crc32": "f5f5f183",
+        "sha256": null
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/rosario/labels/rosario_4.tif",
+        "bytes": 1049704,
+        "compressed_bytes": 49994,
+        "zip_crc32": "942e065e",
+        "sha256": null
+      }
+    },
+    {
+      "id": "rosario__rosario_9",
+      "region": "rosario",
+      "role": "new_panel",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/rosario/images/rosario_9.tif",
+        "bytes": 3149172,
+        "compressed_bytes": 2449989,
+        "zip_crc32": "0fc218df",
+        "sha256": null
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/rosario/labels/rosario_9.tif",
+        "bytes": 1049704,
+        "compressed_bytes": 34212,
+        "zip_crc32": "65662656",
+        "sha256": null
+      }
+    },
+    {
+      "id": "san_tome__san_tome_17",
+      "region": "san_tome",
+      "role": "new_panel",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/san_tome/images/san_tome_17.tif",
+        "bytes": 3149172,
+        "compressed_bytes": 2800566,
+        "zip_crc32": "d4037ec4",
+        "sha256": null
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/san_tome/labels/san_tome_17.tif",
+        "bytes": 1049704,
+        "compressed_bytes": 64928,
+        "zip_crc32": "7974030c",
+        "sha256": null
+      }
+    },
+    {
+      "id": "san_tome__san_tome_41",
+      "region": "san_tome",
+      "role": "new_panel",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/san_tome/images/san_tome_41.tif",
+        "bytes": 3149172,
+        "compressed_bytes": 2588653,
+        "zip_crc32": "96f25264",
+        "sha256": null
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/san_tome/labels/san_tome_41.tif",
+        "bytes": 1049704,
+        "compressed_bytes": 50308,
+        "zip_crc32": "454f4102",
+        "sha256": null
+      }
+    },
+    {
+      "id": "san_tome__san_tome_46",
+      "region": "san_tome",
+      "role": "new_panel",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/san_tome/images/san_tome_46.tif",
+        "bytes": 3149172,
+        "compressed_bytes": 2558754,
+        "zip_crc32": "e4796906",
+        "sha256": null
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/san_tome/labels/san_tome_46.tif",
+        "bytes": 1049704,
+        "compressed_bytes": 47537,
+        "zip_crc32": "9830e8c0",
+        "sha256": null
+      }
+    },
+    {
+      "id": "soriano__soriano_20",
+      "region": "soriano",
+      "role": "new_panel",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/soriano/images/soriano_20.tif",
+        "bytes": 3149172,
+        "compressed_bytes": 2598632,
+        "zip_crc32": "6a3a113a",
+        "sha256": null
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/soriano/labels/soriano_20.tif",
+        "bytes": 1049704,
+        "compressed_bytes": 60505,
+        "zip_crc32": "22ca52ae",
+        "sha256": null
+      }
+    },
+    {
+      "id": "soriano__soriano_5",
+      "region": "soriano",
+      "role": "new_panel",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/soriano/images/soriano_5.tif",
+        "bytes": 3149172,
+        "compressed_bytes": 2585276,
+        "zip_crc32": "547ff9d1",
+        "sha256": null
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/soriano/labels/soriano_5.tif",
+        "bytes": 1049704,
+        "compressed_bytes": 53273,
+        "zip_crc32": "07b25216",
+        "sha256": null
+      }
+    },
+    {
+      "id": "soriano__soriano_7",
+      "region": "soriano",
+      "role": "new_panel",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/soriano/images/soriano_7.tif",
+        "bytes": 3149172,
+        "compressed_bytes": 2679149,
+        "zip_crc32": "049ddfce",
+        "sha256": null
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/soriano/labels/soriano_7.tif",
+        "bytes": 1049704,
+        "compressed_bytes": 66665,
+        "zip_crc32": "56e07f95",
+        "sha256": null
+      }
+    },
+    {
+      "id": "svaneti__svaneti_19",
+      "region": "svaneti",
+      "role": "new_panel",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/svaneti/images/svaneti_19.tif",
+        "bytes": 3149175,
+        "compressed_bytes": 2039443,
+        "zip_crc32": "67b4db6f",
+        "sha256": null
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/svaneti/labels/svaneti_19.tif",
+        "bytes": 1049707,
+        "compressed_bytes": 28167,
+        "zip_crc32": "dad17838",
+        "sha256": null
+      }
+    },
+    {
+      "id": "svaneti__svaneti_45",
+      "region": "svaneti",
+      "role": "new_panel",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/svaneti/images/svaneti_45.tif",
+        "bytes": 3149175,
+        "compressed_bytes": 1788920,
+        "zip_crc32": "de33be33",
+        "sha256": null
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/svaneti/labels/svaneti_45.tif",
+        "bytes": 1049707,
+        "compressed_bytes": 34566,
+        "zip_crc32": "ebe7a6d3",
+        "sha256": null
+      }
+    },
+    {
+      "id": "svaneti__svaneti_7",
+      "region": "svaneti",
+      "role": "new_panel",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/svaneti/images/svaneti_7.tif",
+        "bytes": 3149175,
+        "compressed_bytes": 2844009,
+        "zip_crc32": "13326ca3",
+        "sha256": null
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/svaneti/labels/svaneti_7.tif",
+        "bytes": 1049707,
+        "compressed_bytes": 55459,
+        "zip_crc32": "ef9ce11b",
+        "sha256": null
+      }
+    },
+    {
+      "id": "tokyo__tokyo_13",
+      "region": "tokyo",
+      "role": "new_panel",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/tokyo/images/tokyo_13.tif",
+        "bytes": 3149172,
+        "compressed_bytes": 2267021,
+        "zip_crc32": "1277916a",
+        "sha256": null
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/tokyo/labels/tokyo_13.tif",
+        "bytes": 1049704,
+        "compressed_bytes": 54359,
+        "zip_crc32": "7cb5f847",
+        "sha256": null
+      }
+    },
+    {
+      "id": "tokyo__tokyo_29",
+      "region": "tokyo",
+      "role": "new_panel",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/tokyo/images/tokyo_29.tif",
+        "bytes": 3149172,
+        "compressed_bytes": 2102554,
+        "zip_crc32": "5815e9d0",
+        "sha256": null
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/tokyo/labels/tokyo_29.tif",
+        "bytes": 1049704,
+        "compressed_bytes": 55380,
+        "zip_crc32": "7c56faf5",
+        "sha256": null
+      }
+    },
+    {
+      "id": "tokyo__tokyo_40",
+      "region": "tokyo",
+      "role": "new_panel",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/tokyo/images/tokyo_40.tif",
+        "bytes": 3149172,
+        "compressed_bytes": 2152530,
+        "zip_crc32": "d48c73ca",
+        "sha256": null
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/tokyo/labels/tokyo_40.tif",
+        "bytes": 1049704,
+        "compressed_bytes": 60175,
+        "zip_crc32": "722e9b3c",
+        "sha256": null
+      }
+    },
+    {
+      "id": "tyrolw__tyrolw_4",
+      "region": "tyrolw",
+      "role": "new_panel",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/tyrolw/images/tyrolw_4.tif",
+        "bytes": 3003369,
+        "compressed_bytes": 1915839,
+        "zip_crc32": "49ecfa4b",
+        "sha256": null
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/tyrolw/labels/tyrolw_4.tif",
+        "bytes": 1001107,
+        "compressed_bytes": 10701,
+        "zip_crc32": "9a1e824a",
+        "sha256": null
+      }
+    },
+    {
+      "id": "tyrolw__tyrolw_57",
+      "region": "tyrolw",
+      "role": "new_panel",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/tyrolw/images/tyrolw_57.tif",
+        "bytes": 3003369,
+        "compressed_bytes": 1615545,
+        "zip_crc32": "2e38b9ff",
+        "sha256": null
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/tyrolw/labels/tyrolw_57.tif",
+        "bytes": 1001107,
+        "compressed_bytes": 15689,
+        "zip_crc32": "d60e0553",
+        "sha256": null
+      }
+    },
+    {
+      "id": "tyrolw__tyrolw_68",
+      "region": "tyrolw",
+      "role": "new_panel",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/tyrolw/images/tyrolw_68.tif",
+        "bytes": 3003369,
+        "compressed_bytes": 1674286,
+        "zip_crc32": "09292841",
+        "sha256": null
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/tyrolw/labels/tyrolw_68.tif",
+        "bytes": 1001107,
+        "compressed_bytes": 16780,
+        "zip_crc32": "7d61d1bb",
+        "sha256": null
+      }
+    },
+    {
+      "id": "western__western_14",
+      "region": "western",
+      "role": "new_panel",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/western/images/western_14.tif",
+        "bytes": 3149172,
+        "compressed_bytes": 2115528,
+        "zip_crc32": "a5d00650",
+        "sha256": null
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/western/labels/western_14.tif",
+        "bytes": 1049704,
+        "compressed_bytes": 39089,
+        "zip_crc32": "d55ee764",
+        "sha256": null
+      }
+    },
+    {
+      "id": "western__western_18",
+      "region": "western",
+      "role": "new_panel",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/western/images/western_18.tif",
+        "bytes": 3149172,
+        "compressed_bytes": 2330312,
+        "zip_crc32": "abc91394",
+        "sha256": null
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/western/labels/western_18.tif",
+        "bytes": 1049704,
+        "compressed_bytes": 47090,
+        "zip_crc32": "63076192",
+        "sha256": null
+      }
+    },
+    {
+      "id": "western__western_20",
+      "region": "western",
+      "role": "new_panel",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/western/images/western_20.tif",
+        "bytes": 3149172,
+        "compressed_bytes": 2043179,
+        "zip_crc32": "1bce5e32",
+        "sha256": null
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/western/labels/western_20.tif",
+        "bytes": 1049704,
+        "compressed_bytes": 42939,
+        "zip_crc32": "0b23413a",
+        "sha256": null
+      }
+    },
+    {
+      "id": "zanzibar__zanzibar_131",
+      "region": "zanzibar",
+      "role": "new_panel",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/zanzibar/images/zanzibar_131.tif",
+        "bytes": 3149172,
+        "compressed_bytes": 2807664,
+        "zip_crc32": "8f071202",
+        "sha256": null
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/zanzibar/labels/zanzibar_131.tif",
+        "bytes": 1049704,
+        "compressed_bytes": 62383,
+        "zip_crc32": "baf48f52",
+        "sha256": null
+      }
+    },
+    {
+      "id": "zanzibar__zanzibar_133",
+      "region": "zanzibar",
+      "role": "new_panel",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/zanzibar/images/zanzibar_133.tif",
+        "bytes": 3149172,
+        "compressed_bytes": 2652301,
+        "zip_crc32": "b7f7932c",
+        "sha256": null
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/zanzibar/labels/zanzibar_133.tif",
+        "bytes": 1049704,
+        "compressed_bytes": 56881,
+        "zip_crc32": "a464bd2c",
+        "sha256": null
+      }
+    },
+    {
+      "id": "zanzibar__zanzibar_36",
+      "region": "zanzibar",
+      "role": "new_panel",
+      "rgb": {
+        "member": "OpenEarthMap_wo_xBD/zanzibar/images/zanzibar_36.tif",
+        "bytes": 3149172,
+        "compressed_bytes": 2854038,
+        "zip_crc32": "a981084f",
+        "sha256": null
+      },
+      "label": {
+        "member": "OpenEarthMap_wo_xBD/zanzibar/labels/zanzibar_36.tif",
+        "bytes": 1049704,
+        "compressed_bytes": 40319,
+        "zip_crc32": "666e85c1",
+        "sha256": null
+      }
+    }
+  ],
+  "geographic_claim_limits": [
+    "Geographic bounds come from declared TIFF metadata and offline transformations, not surveyed ground truth.",
+    "A supported transform or absence of a bbox intersection does not prove independence of original source mosaics or absence of leakage.",
+    "Unknown CRS, missing georeferences, area-of-use cautions and failed transforms are retained; no sample is replaced."
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "created_utc": "2026-10-18T00:22:21.226523+00:00",
+  "code": "code/v2_package_delivery.py",
+  "code_sha256": "a80910501ee268414004589b199268a3fc57f363b888b91590305f7e0a791152",
+  "command": "python -B code/v2_package_delivery.py --self-test",
+  "exit_code": 0,
+  "tests_run": 8,
+  "tests_passed": 7,
+  "tests_skipped": 1,
+  "passed": true,
+  "limitations": [
+    "Windows symbolic link creation was not permitted; actual Windows junction protection passed.",
+    "Temporary synthetic software fixtures only; not complete576 scientific evidence, real package assembly or delivery-root reproduction."
+  ],
+  "parent_observed_native_session": 53955
+}

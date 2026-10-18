@@ -1,0 +1,1477 @@
+{
+  "format": "v2-active-findings-working-review-1",
+  "created_utc": "2026-10-18T08:52:13.501674+00:00",
+  "status": "WORKING_NUMERIC_AND_CONTRIBUTION_SYNTHESIS_NOT_FINAL_MANUSCRIPT_REVIEW",
+  "scope": "Completed canonical six tables, CUDA90 and pixel27 summaries, local literature trace; read-only source review. No experiment or canonical mutation.",
+  "source_sha256": {
+    "tables/v2/conditions_by_source.csv": "1ee93c61458730b6bd1767f318f140082c533d1f6602c75e37d0e65d9bc7a930",
+    "tables/v2/conditions.csv": "6839eb25476fa491ff065efbe9f6dd5dd3511c208435f95f06265a860c4a9ef4",
+    "tables/v2/regions.csv": "f9a26a39d0c5d444fbeb2da3b46be518e64ac26c6261717ad30bbb78840e59c6",
+    "tables/v2/classes.csv": "64573f6c486f3d4c9a181d386d8dd1173876faa05d8b7f606b796ee2ca5ad533",
+    "tables/v2/contrasts.json": "55b704657c96730da6b3e1f6ea81e08f68a012e70dc2f844444ef2e545124551",
+    "tables/v2/primary.json": "4b1cba5b9778d3a338a7d54f2cb8b70ada0ab44335c72e4b4885fd9f47e61f8f",
+    "tables/v2/analysis_identity.json": "174fc68da192de332ab35ac5313a5415b5a3386661f83a1c8c98a577a9d3ea36",
+    "tables/v2_cuda/descriptive_analysis.json": "6005ce9e5bae772d04d5cab09833b3a0cf2a28d01d672ba8a478a5050d60a23e",
+    "tables/v2_pixel_budget/descriptive_analysis.json": "271dcfa7a38085003a4c964f4dda8889092ad4946e6ec7ee0c73aaf74cd2c162",
+    "evidence/v2/active_run_completeness.json": "cb32a37310ed765320b23ce29650e5a9fe60af4e874bab66f35b42b0adba5dfb",
+    "evidence/v2/active_reproduction_check.json": "b8936dbd63e678b247f8e0725f86d891db8620d490d64d460954c957f429c13e",
+    "evidence/v2/pixel_budget_audit.json": "31c72c299db23cd51432c76d37f7a0a3f14357e31b87a11f19e340a5f2ba94e7",
+    "docs/v2_literature_matrix.md": "d12f7505ba122bbfef3f81f91c586ac833f29a651d9fa2038db384107d46e938",
+    "docs/v2_pixel_budget_protocol.md": "74e3a0d3cc25612b5a6d9be7749f797d39111baf579033bec4dbae62de653d04",
+    "configs/v2_active_gpu_amendment.json": "05b06f37acaaff2412e63baf126ab0e66ce552770af2b3dcbaed497c7ed94518",
+    "paper/v2_working/introduction_outline.json": "a6c4be7996751fba1f5001c5d60521df9a25af09c3fa7a8492775fb04b1da4be",
+    "manuscript_state.json": "e66874893ceee4e61310c1151f0470ea619b6d12d371ad12ac0f4145428d1cb3"
+  },
+  "completed_evidence_checks": {
+    "active_audit_passed": true,
+    "active_validated_runs": 576,
+    "reproduction_passed": true,
+    "pixel_audit_passed": true,
+    "canonical_six_actual_SHA_match_analysis_identity": true,
+    "csv_rows": {
+      "conditions_by_source.csv": 192,
+      "conditions.csv": 64,
+      "regions.csv": 1536,
+      "classes.csv": 512
+    },
+    "analysis_counts": {
+      "fits": 576,
+      "conditions_by_source": 192,
+      "conditions": 64,
+      "regions_rows": 1536,
+      "classes_rows": 512
+    }
+  },
+  "primary_full_recipe": {
+    "metric": "equal-region union-class mIoU",
+    "context": "ResNet18 U-Net-style CUDA recipe; skewed5_1 pool; B12;3 allocations x3 paired fit seeds;24 panel regions",
+    "quota_kcenter_minus_kcenter": {
+      "difference": 0.01678081197906719,
+      "difference_pp": 1.6780811979067192,
+      "region_count": 24,
+      "ci95_pp": [
+        0.8565408951195421,
+        2.5067002001370393
+      ],
+      "region_signs": {
+        "positive": 20,
+        "negative": 4,
+        "zero": 0
+      },
+      "leave_one_region_out_range_pp": [
+        1.5015663531852357,
+        1.8868432688417096
+      ]
+    },
+    "truth_present_convention": {
+      "difference": 0.02275782194088759,
+      "difference_pp": 2.2757821940887593,
+      "region_count": 24,
+      "ci95_pp": [
+        1.3431422511488458,
+        3.2332123814829803
+      ],
+      "region_signs": {
+        "positive": 19,
+        "negative": 5,
+        "zero": 0
+      },
+      "leave_one_region_out_range_pp": [
+        2.031981219864025,
+        2.494984088703317
+      ]
+    },
+    "exclude_monrovia": {
+      "difference": 0.015760308601026125,
+      "difference_pp": 1.5760308601026125,
+      "region_count": 23,
+      "ci95_pp": [
+        0.7476927680676901,
+        2.412450157383336
+      ],
+      "region_signs": {
+        "positive": 19,
+        "negative": 4,
+        "zero": 0
+      },
+      "leave_one_region_out_range_pp": [
+        1.3868539616299662,
+        1.7896434643617343
+      ]
+    }
+  },
+  "cuda_fixed_descriptive_contrasts": [
+    {
+      "a": "region_kcenter",
+      "b": "kcenter",
+      "overall24": {
+        "difference": 0.01678081197906719,
+        "difference_pp": 1.6780811979067192,
+        "region_count": 24,
+        "ci95_pp": [
+          0.8565408951195421,
+          2.5067002001370393
+        ],
+        "region_signs": {
+          "positive": 20,
+          "negative": 4,
+          "zero": 0
+        },
+        "leave_one_region_out_range_pp": [
+          1.5015663531852357,
+          1.8868432688417096
+        ]
+      },
+      "by_source": [
+        {
+          "source_split": "source0",
+          "difference": 0.034830368945811964,
+          "difference_pp": 3.4830368945811965,
+          "region_count": 24,
+          "ci95_pp": [
+            2.1086552217868353,
+            4.889574644342377
+          ],
+          "region_signs": {
+            "positive": 22,
+            "negative": 2,
+            "zero": 0
+          },
+          "leave_one_region_out_range_pp": [
+            3.117050815295938,
+            3.772594220721158
+          ]
+        },
+        {
+          "source_split": "source1",
+          "difference": -0.005410319750683112,
+          "difference_pp": -0.5410319750683112,
+          "region_count": 24,
+          "ci95_pp": [
+            -1.8236433415761828,
+            0.8173610814464435
+          ],
+          "region_signs": {
+            "positive": 9,
+            "negative": 15,
+            "zero": 0
+          },
+          "leave_one_region_out_range_pp": [
+            -0.8872274569726073,
+            -0.34785196667584006
+          ]
+        },
+        {
+          "source_split": "source2",
+          "difference": 0.02092238674207268,
+          "difference_pp": 2.092238674207268,
+          "region_count": 24,
+          "ci95_pp": [
+            0.9795385719356176,
+            3.22765869217904
+          ],
+          "region_signs": {
+            "positive": 20,
+            "negative": 4,
+            "zero": 0
+          },
+          "leave_one_region_out_range_pp": [
+            1.7820062825513343,
+            2.3709900846335548
+          ]
+        }
+      ]
+    },
+    {
+      "a": "region_kcenter",
+      "b": "permuted_region_kcenter",
+      "overall24": {
+        "difference": 0.00896338502529763,
+        "difference_pp": 0.896338502529763,
+        "region_count": 24,
+        "ci95_pp": [
+          0.3429189919191568,
+          1.448528625773833
+        ],
+        "region_signs": {
+          "positive": 18,
+          "negative": 6,
+          "zero": 0
+        },
+        "leave_one_region_out_range_pp": [
+          0.7774729876384462,
+          0.9945143173719485
+        ]
+      },
+      "by_source": [
+        {
+          "source_split": "source0",
+          "difference": 0.011096136510476286,
+          "difference_pp": 1.1096136510476287,
+          "region_count": 24,
+          "ci95_pp": [
+            0.20938641836929545,
+            2.01570370287734
+          ],
+          "region_signs": {
+            "positive": 17,
+            "negative": 7,
+            "zero": 0
+          },
+          "leave_one_region_out_range_pp": [
+            0.8585370311749065,
+            1.2968795312843209
+          ]
+        },
+        {
+          "source_split": "source1",
+          "difference": -0.003510201765789235,
+          "difference_pp": -0.3510201765789235,
+          "region_count": 24,
+          "ci95_pp": [
+            -1.6568368650337224,
+            0.9367484501284145
+          ],
+          "region_signs": {
+            "positive": 10,
+            "negative": 14,
+            "zero": 0
+          },
+          "leave_one_region_out_range_pp": [
+            -0.6174999386637575,
+            -0.088855585702452
+          ]
+        },
+        {
+          "source_split": "source2",
+          "difference": 0.01930422033120581,
+          "difference_pp": 1.930422033120581,
+          "region_count": 24,
+          "ci95_pp": [
+            0.7289616152905137,
+            3.178379647827452
+          ],
+          "region_signs": {
+            "positive": 17,
+            "negative": 7,
+            "zero": 0
+          },
+          "leave_one_region_out_range_pp": [
+            1.583988384459898,
+            2.181246824231804
+          ]
+        }
+      ]
+    },
+    {
+      "a": "region_weighted_facility_location",
+      "b": "facility_location",
+      "overall24": {
+        "difference": 0.01350355857268469,
+        "difference_pp": 1.350355857268469,
+        "region_count": 24,
+        "ci95_pp": [
+          0.5901280575024611,
+          2.0959500124937565
+        ],
+        "region_signs": {
+          "positive": 18,
+          "negative": 6,
+          "zero": 0
+        },
+        "leave_one_region_out_range_pp": [
+          1.2005851186899594,
+          1.5279021786396614
+        ]
+      },
+      "by_source": [
+        {
+          "source_split": "source0",
+          "difference": 0.024252943686327272,
+          "difference_pp": 2.425294368632727,
+          "region_count": 24,
+          "ci95_pp": [
+            1.5203750627005839,
+            3.348442746408261
+          ],
+          "region_signs": {
+            "positive": 21,
+            "negative": 3,
+            "zero": 0
+          },
+          "leave_one_region_out_range_pp": [
+            2.170305102068917,
+            2.572891121504381
+          ]
+        },
+        {
+          "source_split": "source1",
+          "difference": 0.007713590341525657,
+          "difference_pp": 0.7713590341525657,
+          "region_count": 24,
+          "ci95_pp": [
+            -0.5346969383542193,
+            2.0599472025963474
+          ],
+          "region_signs": {
+            "positive": 16,
+            "negative": 8,
+            "zero": 0
+          },
+          "leave_one_region_out_range_pp": [
+            0.45261395419903633,
+            1.0723817472742774
+          ]
+        },
+        {
+          "source_split": "source2",
+          "difference": 0.008544141690201167,
+          "difference_pp": 0.8544141690201167,
+          "region_count": 24,
+          "ci95_pp": [
+            -0.5086998368470448,
+            2.4036905598837777
+          ],
+          "region_signs": {
+            "positive": 13,
+            "negative": 11,
+            "zero": 0
+          },
+          "leave_one_region_out_range_pp": [
+            0.3728819566565015,
+            1.0698017353940754
+          ]
+        }
+      ]
+    },
+    {
+      "a": "region_weighted_facility_location",
+      "b": "permuted_region_weighted_facility_location",
+      "overall24": {
+        "difference": 0.021316746439250796,
+        "difference_pp": 2.1316746439250798,
+        "region_count": 24,
+        "ci95_pp": [
+          1.259603470438358,
+          2.9825639409605724
+        ],
+        "region_signs": {
+          "positive": 21,
+          "negative": 3,
+          "zero": 0
+        },
+        "leave_one_region_out_range_pp": [
+          1.9411908236210953,
+          2.344097478637783
+        ]
+      },
+      "by_source": [
+        {
+          "source_split": "source0",
+          "difference": 0.006670090452922912,
+          "difference_pp": 0.6670090452922912,
+          "region_count": 24,
+          "ci95_pp": [
+            -0.3140818679199624,
+            1.6301373038551201
+          ],
+          "region_signs": {
+            "positive": 14,
+            "negative": 10,
+            "zero": 0
+          },
+          "leave_one_region_out_range_pp": [
+            0.42947632684791376,
+            0.8720846921530818
+          ]
+        },
+        {
+          "source_split": "source1",
+          "difference": 0.019076991536453796,
+          "difference_pp": 1.9076991536453796,
+          "region_count": 24,
+          "ci95_pp": [
+            0.6808191320564034,
+            3.090633984016699
+          ],
+          "region_signs": {
+            "positive": 17,
+            "negative": 7,
+            "zero": 0
+          },
+          "leave_one_region_out_range_pp": [
+            1.689607608146217,
+            2.265838903263987
+          ]
+        },
+        {
+          "source_split": "source2",
+          "difference": 0.0382031573283757,
+          "difference_pp": 3.82031573283757,
+          "region_count": 24,
+          "ci95_pp": [
+            1.8876216418291651,
+            5.7792646739750815
+          ],
+          "region_signs": {
+            "positive": 16,
+            "negative": 8,
+            "zero": 0
+          },
+          "leave_one_region_out_range_pp": [
+            3.3607918646550226,
+            4.159482765496361
+          ]
+        }
+      ]
+    }
+  ],
+  "frozen_descriptive_contrasts": [
+    {
+      "pool": "balanced3",
+      "budget": 6,
+      "a": "region_kcenter",
+      "b": "kcenter",
+      "union": {
+        "difference": -0.002400519965315336,
+        "difference_pp": -0.2400519965315336,
+        "region_count": 24,
+        "ci95_pp": null,
+        "region_signs": {
+          "positive": 13,
+          "negative": 11,
+          "zero": 0
+        },
+        "leave_one_region_out_range_pp": [
+          -0.2815455014397672,
+          -0.11489519766774317
+        ]
+      },
+      "source_effects_pp": {
+        "source0": -0.486813378918122,
+        "source1": 0.1692199200167562,
+        "source2": -0.4025625306932349
+      }
+    },
+    {
+      "pool": "balanced3",
+      "budget": 6,
+      "a": "region_kcenter",
+      "b": "permuted_region_kcenter",
+      "union": {
+        "difference": -0.00039790363869778483,
+        "difference_pp": -0.03979036386977848,
+        "region_count": 24,
+        "ci95_pp": null,
+        "region_signs": {
+          "positive": 13,
+          "negative": 11,
+          "zero": 0
+        },
+        "leave_one_region_out_range_pp": [
+          -0.08800735949067355,
+          0.051023449432759646
+        ]
+      },
+      "source_effects_pp": {
+        "source0": -0.3625456247705792,
+        "source1": 0.3475852219620585,
+        "source2": -0.10441068880081203
+      }
+    },
+    {
+      "pool": "balanced3",
+      "budget": 6,
+      "a": "region_kcenter",
+      "b": "facility_location",
+      "union": {
+        "difference": 0.0012174305267380718,
+        "difference_pp": 0.12174305267380718,
+        "region_count": 24,
+        "ci95_pp": null,
+        "region_signs": {
+          "positive": 12,
+          "negative": 12,
+          "zero": 0
+        },
+        "leave_one_region_out_range_pp": [
+          -0.0453122481539427,
+          0.29932009221058836
+        ]
+      },
+      "source_effects_pp": {
+        "source0": 0.4767798969617355,
+        "source1": 0.2230147658812027,
+        "source2": -0.3345655048215152
+      }
+    },
+    {
+      "pool": "balanced3",
+      "budget": 6,
+      "a": "region_kcenter",
+      "b": "fd_roundrobin",
+      "union": {
+        "difference": -0.005442998734478403,
+        "difference_pp": -0.5442998734478403,
+        "region_count": 24,
+        "ci95_pp": null,
+        "region_signs": {
+          "positive": 5,
+          "negative": 19,
+          "zero": 0
+        },
+        "leave_one_region_out_range_pp": [
+          -0.7222762401901531,
+          -0.4217641150233308
+        ]
+      },
+      "source_effects_pp": {
+        "source0": -1.2920277378383758,
+        "source1": -0.34939965233219505,
+        "source2": 0.008527769827050096
+      }
+    },
+    {
+      "pool": "balanced3",
+      "budget": 12,
+      "a": "region_kcenter",
+      "b": "kcenter",
+      "union": {
+        "difference": 0.009023695271839051,
+        "difference_pp": 0.9023695271839052,
+        "region_count": 24,
+        "ci95_pp": null,
+        "region_signs": {
+          "positive": 17,
+          "negative": 7,
+          "zero": 0
+        },
+        "leave_one_region_out_range_pp": [
+          0.7593445274599707,
+          1.0499272243788031
+        ]
+      },
+      "source_effects_pp": {
+        "source0": -0.6393639978800849,
+        "source1": 1.619324393776901,
+        "source2": 1.7271481856548963
+      }
+    },
+    {
+      "pool": "balanced3",
+      "budget": 12,
+      "a": "region_kcenter",
+      "b": "permuted_region_kcenter",
+      "union": {
+        "difference": 0.007337013581832527,
+        "difference_pp": 0.7337013581832528,
+        "region_count": 24,
+        "ci95_pp": null,
+        "region_signs": {
+          "positive": 18,
+          "negative": 6,
+          "zero": 0
+        },
+        "leave_one_region_out_range_pp": [
+          0.6407810798463918,
+          0.8160074512875595
+        ]
+      },
+      "source_effects_pp": {
+        "source0": -0.09284819016728307,
+        "source1": 1.7538347811344932,
+        "source2": 0.5401174835825462
+      }
+    },
+    {
+      "pool": "balanced3",
+      "budget": 12,
+      "a": "region_kcenter",
+      "b": "facility_location",
+      "union": {
+        "difference": 0.0029047075749306477,
+        "difference_pp": 0.2904707574930648,
+        "region_count": 24,
+        "ci95_pp": null,
+        "region_signs": {
+          "positive": 12,
+          "negative": 12,
+          "zero": 0
+        },
+        "leave_one_region_out_range_pp": [
+          0.14008979971077912,
+          0.4405179440278514
+        ]
+      },
+      "source_effects_pp": {
+        "source0": -0.5886801721117,
+        "source1": 0.8843740649336573,
+        "source2": 0.5757183796572356
+      }
+    },
+    {
+      "pool": "balanced3",
+      "budget": 12,
+      "a": "region_kcenter",
+      "b": "fd_roundrobin",
+      "union": {
+        "difference": 0.007457813452280359,
+        "difference_pp": 0.7457813452280359,
+        "region_count": 24,
+        "ci95_pp": null,
+        "region_signs": {
+          "positive": 19,
+          "negative": 5,
+          "zero": 0
+        },
+        "leave_one_region_out_range_pp": [
+          0.5497866975383227,
+          0.8625307623742748
+        ]
+      },
+      "source_effects_pp": {
+        "source0": -0.8733680523494466,
+        "source1": 2.266806761051434,
+        "source2": 0.8439053269821192
+      }
+    },
+    {
+      "pool": "balanced3",
+      "budget": 24,
+      "a": "region_kcenter",
+      "b": "kcenter",
+      "union": {
+        "difference": 0.0016784270928863084,
+        "difference_pp": 0.16784270928863085,
+        "region_count": 24,
+        "ci95_pp": null,
+        "region_signs": {
+          "positive": 13,
+          "negative": 11,
+          "zero": 0
+        },
+        "leave_one_region_out_range_pp": [
+          0.08334096647438685,
+          0.29111286150613747
+        ]
+      },
+      "source_effects_pp": {
+        "source0": 0.2707554583325775,
+        "source1": -0.044626648298725397,
+        "source2": 0.2773993178320397
+      }
+    },
+    {
+      "pool": "balanced3",
+      "budget": 24,
+      "a": "region_kcenter",
+      "b": "permuted_region_kcenter",
+      "union": {
+        "difference": 0.001829911087112477,
+        "difference_pp": 0.18299110871124769,
+        "region_count": 24,
+        "ci95_pp": null,
+        "region_signs": {
+          "positive": 17,
+          "negative": 7,
+          "zero": 0
+        },
+        "leave_one_region_out_range_pp": [
+          0.11795409545138297,
+          0.2717124681743358
+        ]
+      },
+      "source_effects_pp": {
+        "source0": 0.2640157953225372,
+        "source1": 0.004663101703843153,
+        "source2": 0.2802944291073623
+      }
+    },
+    {
+      "pool": "balanced3",
+      "budget": 24,
+      "a": "region_kcenter",
+      "b": "facility_location",
+      "union": {
+        "difference": 0.007039580043110432,
+        "difference_pp": 0.7039580043110432,
+        "region_count": 24,
+        "ci95_pp": null,
+        "region_signs": {
+          "positive": 16,
+          "negative": 8,
+          "zero": 0
+        },
+        "leave_one_region_out_range_pp": [
+          0.5556384425478267,
+          0.8355048568682287
+        ]
+      },
+      "source_effects_pp": {
+        "source0": 0.4010334533529011,
+        "source1": 0.8322907495185647,
+        "source2": 0.8785498100616662
+      }
+    },
+    {
+      "pool": "balanced3",
+      "budget": 24,
+      "a": "region_kcenter",
+      "b": "fd_roundrobin",
+      "union": {
+        "difference": 0.0046483171229393565,
+        "difference_pp": 0.46483171229393566,
+        "region_count": 24,
+        "ci95_pp": null,
+        "region_signs": {
+          "positive": 13,
+          "negative": 11,
+          "zero": 0
+        },
+        "leave_one_region_out_range_pp": [
+          0.3303423180591634,
+          0.535321771922702
+        ]
+      },
+      "source_effects_pp": {
+        "source0": -0.15280746821571417,
+        "source1": 1.6435160432188012,
+        "source2": -0.09621343812127951
+      }
+    },
+    {
+      "pool": "skewed5_1",
+      "budget": 6,
+      "a": "region_kcenter",
+      "b": "kcenter",
+      "union": {
+        "difference": 0.0016553501665131376,
+        "difference_pp": 0.16553501665131376,
+        "region_count": 24,
+        "ci95_pp": null,
+        "region_signs": {
+          "positive": 17,
+          "negative": 7,
+          "zero": 0
+        },
+        "leave_one_region_out_range_pp": [
+          0.08918991769220426,
+          0.31924128976369176
+        ]
+      },
+      "source_effects_pp": {
+        "source0": -0.8292388260150761,
+        "source1": 1.6648492762711475,
+        "source2": -0.3390054003021311
+      }
+    },
+    {
+      "pool": "skewed5_1",
+      "budget": 6,
+      "a": "region_kcenter",
+      "b": "permuted_region_kcenter",
+      "union": {
+        "difference": 0.0077657855723642375,
+        "difference_pp": 0.7765785572364238,
+        "region_count": 24,
+        "ci95_pp": null,
+        "region_signs": {
+          "positive": 19,
+          "negative": 5,
+          "zero": 0
+        },
+        "leave_one_region_out_range_pp": [
+          0.6446085610722574,
+          0.9594740255155088
+        ]
+      },
+      "source_effects_pp": {
+        "source0": 0.31489385369963296,
+        "source1": 2.380630858785873,
+        "source2": -0.3657890407762357
+      }
+    },
+    {
+      "pool": "skewed5_1",
+      "budget": 6,
+      "a": "region_kcenter",
+      "b": "facility_location",
+      "union": {
+        "difference": -0.005036831125803088,
+        "difference_pp": -0.5036831125803087,
+        "region_count": 24,
+        "ci95_pp": null,
+        "region_signs": {
+          "positive": 9,
+          "negative": 15,
+          "zero": 0
+        },
+        "leave_one_region_out_range_pp": [
+          -0.7277600958254237,
+          -0.3723556629728162
+        ]
+      },
+      "source_effects_pp": {
+        "source0": -0.03266819302346624,
+        "source1": -1.0663233686879776,
+        "source2": -0.41205777602948274
+      }
+    },
+    {
+      "pool": "skewed5_1",
+      "budget": 6,
+      "a": "region_kcenter",
+      "b": "fd_roundrobin",
+      "union": {
+        "difference": 0.005255389039103186,
+        "difference_pp": 0.5255389039103187,
+        "region_count": 24,
+        "ci95_pp": null,
+        "region_signs": {
+          "positive": 16,
+          "negative": 8,
+          "zero": 0
+        },
+        "leave_one_region_out_range_pp": [
+          0.4165502800297066,
+          0.6459227566908797
+        ]
+      },
+      "source_effects_pp": {
+        "source0": 0.9449203662651546,
+        "source1": 0.5902516774965245,
+        "source2": 0.04144466796927673
+      }
+    },
+    {
+      "pool": "skewed5_1",
+      "budget": 6,
+      "a": "region_weighted_facility_location",
+      "b": "facility_location",
+      "union": {
+        "difference": 0.00316408855389601,
+        "difference_pp": 0.316408855389601,
+        "region_count": 24,
+        "ci95_pp": null,
+        "region_signs": {
+          "positive": 13,
+          "negative": 11,
+          "zero": 0
+        },
+        "leave_one_region_out_range_pp": [
+          0.11391131065206048,
+          0.4523350296204159
+        ]
+      },
+      "source_effects_pp": {
+        "source0": 0.5601906286716106,
+        "source1": 0.5471352900893235,
+        "source2": -0.15809935259213326
+      }
+    },
+    {
+      "pool": "skewed5_1",
+      "budget": 6,
+      "a": "region_weighted_facility_location",
+      "b": "permuted_region_weighted_facility_location",
+      "union": {
+        "difference": 0.009269300351499293,
+        "difference_pp": 0.9269300351499292,
+        "region_count": 24,
+        "ci95_pp": null,
+        "region_signs": {
+          "positive": 15,
+          "negative": 9,
+          "zero": 0
+        },
+        "leave_one_region_out_range_pp": [
+          0.6473436740250882,
+          1.1626083447688353
+        ]
+      },
+      "source_effects_pp": {
+        "source0": 1.2420799316856426,
+        "source1": 0.8255227735434559,
+        "source2": 0.7131874002206886
+      }
+    },
+    {
+      "pool": "skewed5_1",
+      "budget": 12,
+      "a": "region_kcenter",
+      "b": "kcenter",
+      "union": {
+        "difference": 0.013321559894731652,
+        "difference_pp": 1.3321559894731652,
+        "region_count": 24,
+        "ci95_pp": null,
+        "region_signs": {
+          "positive": 19,
+          "negative": 5,
+          "zero": 0
+        },
+        "leave_one_region_out_range_pp": [
+          1.1593554511753887,
+          1.4611565369884532
+        ]
+      },
+      "source_effects_pp": {
+        "source0": 0.7140684458185823,
+        "source1": 3.0661738231362796,
+        "source2": 0.2162256994646325
+      }
+    },
+    {
+      "pool": "skewed5_1",
+      "budget": 12,
+      "a": "region_kcenter",
+      "b": "permuted_region_kcenter",
+      "union": {
+        "difference": 0.012709083885892545,
+        "difference_pp": 1.2709083885892545,
+        "region_count": 24,
+        "ci95_pp": null,
+        "region_signs": {
+          "positive": 18,
+          "negative": 6,
+          "zero": 0
+        },
+        "leave_one_region_out_range_pp": [
+          1.1055792984467319,
+          1.490233120657377
+        ]
+      },
+      "source_effects_pp": {
+        "source0": 1.0598939118042197,
+        "source1": 2.7469842279005734,
+        "source2": 0.005847026062970212
+      }
+    },
+    {
+      "pool": "skewed5_1",
+      "budget": 12,
+      "a": "region_kcenter",
+      "b": "facility_location",
+      "union": {
+        "difference": 0.005540907776202343,
+        "difference_pp": 0.5540907776202343,
+        "region_count": 24,
+        "ci95_pp": null,
+        "region_signs": {
+          "positive": 13,
+          "negative": 11,
+          "zero": 0
+        },
+        "leave_one_region_out_range_pp": [
+          0.3317671542164208,
+          0.6555665222502988
+        ]
+      },
+      "source_effects_pp": {
+        "source0": 1.3525787096364759,
+        "source1": 0.6059709738172835,
+        "source2": -0.29627735059305715
+      }
+    },
+    {
+      "pool": "skewed5_1",
+      "budget": 12,
+      "a": "region_kcenter",
+      "b": "fd_roundrobin",
+      "union": {
+        "difference": 0.00852679322832437,
+        "difference_pp": 0.852679322832437,
+        "region_count": 24,
+        "ci95_pp": null,
+        "region_signs": {
+          "positive": 18,
+          "negative": 6,
+          "zero": 0
+        },
+        "leave_one_region_out_range_pp": [
+          0.6546711879902452,
+          0.9995111936536006
+        ]
+      },
+      "source_effects_pp": {
+        "source0": 0.1845606051774974,
+        "source1": 2.7898087729287826,
+        "source2": -0.41633140960896514
+      }
+    },
+    {
+      "pool": "skewed5_1",
+      "budget": 12,
+      "a": "region_weighted_facility_location",
+      "b": "facility_location",
+      "union": {
+        "difference": 0.004532883965131581,
+        "difference_pp": 0.4532883965131581,
+        "region_count": 24,
+        "ci95_pp": null,
+        "region_signs": {
+          "positive": 14,
+          "negative": 10,
+          "zero": 0
+        },
+        "leave_one_region_out_range_pp": [
+          0.21157244770622052,
+          0.6109071773332772
+        ]
+      },
+      "source_effects_pp": {
+        "source0": 0.9330111939334153,
+        "source1": 0.1021892646749168,
+        "source2": 0.32466473093114023
+      }
+    },
+    {
+      "pool": "skewed5_1",
+      "budget": 12,
+      "a": "region_weighted_facility_location",
+      "b": "permuted_region_weighted_facility_location",
+      "union": {
+        "difference": 0.007644069178633492,
+        "difference_pp": 0.7644069178633492,
+        "region_count": 24,
+        "ci95_pp": null,
+        "region_signs": {
+          "positive": 15,
+          "negative": 9,
+          "zero": 0
+        },
+        "leave_one_region_out_range_pp": [
+          0.5626212859900704,
+          0.9311264866113236
+        ]
+      },
+      "source_effects_pp": {
+        "source0": 0.8447356826085279,
+        "source1": 0.4411948765304453,
+        "source2": 1.0072901944510742
+      }
+    },
+    {
+      "pool": "skewed5_1",
+      "budget": 24,
+      "a": "region_kcenter",
+      "b": "kcenter",
+      "union": {
+        "difference": 0.0031978464070579345,
+        "difference_pp": 0.31978464070579343,
+        "region_count": 24,
+        "ci95_pp": null,
+        "region_signs": {
+          "positive": 14,
+          "negative": 10,
+          "zero": 0
+        },
+        "leave_one_region_out_range_pp": [
+          0.23374382468905197,
+          0.4228086330427474
+        ]
+      },
+      "source_effects_pp": {
+        "source0": 0.2320737202029193,
+        "source1": 0.5374356281663075,
+        "source2": 0.18984457374815755
+      }
+    },
+    {
+      "pool": "skewed5_1",
+      "budget": 24,
+      "a": "region_kcenter",
+      "b": "permuted_region_kcenter",
+      "union": {
+        "difference": 0.0038960894738749225,
+        "difference_pp": 0.38960894738749224,
+        "region_count": 24,
+        "ci95_pp": null,
+        "region_signs": {
+          "positive": 15,
+          "negative": 9,
+          "zero": 0
+        },
+        "leave_one_region_out_range_pp": [
+          0.24762218369674707,
+          0.4825340107739955
+        ]
+      },
+      "source_effects_pp": {
+        "source0": 0.5373690526219502,
+        "source1": 0.5908907173679863,
+        "source2": 0.04056707217254009
+      }
+    },
+    {
+      "pool": "skewed5_1",
+      "budget": 24,
+      "a": "region_kcenter",
+      "b": "facility_location",
+      "union": {
+        "difference": 0.0010645502595929696,
+        "difference_pp": 0.10645502595929696,
+        "region_count": 24,
+        "ci95_pp": null,
+        "region_signs": {
+          "positive": 15,
+          "negative": 9,
+          "zero": 0
+        },
+        "leave_one_region_out_range_pp": [
+          0.029114320907430713,
+          0.23698658191991917
+        ]
+      },
+      "source_effects_pp": {
+        "source0": 0.623247932415981,
+        "source1": -0.027163393382689572,
+        "source2": -0.27671946115540114
+      }
+    },
+    {
+      "pool": "skewed5_1",
+      "budget": 24,
+      "a": "region_kcenter",
+      "b": "fd_roundrobin",
+      "union": {
+        "difference": 0.008803399624375725,
+        "difference_pp": 0.8803399624375725,
+        "region_count": 24,
+        "ci95_pp": null,
+        "region_signs": {
+          "positive": 19,
+          "negative": 5,
+          "zero": 0
+        },
+        "leave_one_region_out_range_pp": [
+          0.7538381912218499,
+          0.9928892915358364
+        ]
+      },
+      "source_effects_pp": {
+        "source0": 0.8838463956876035,
+        "source1": 1.8153842970654694,
+        "source2": -0.058210805440354084
+      }
+    },
+    {
+      "pool": "skewed5_1",
+      "budget": 24,
+      "a": "region_weighted_facility_location",
+      "b": "facility_location",
+      "union": {
+        "difference": 0.00031689861286006774,
+        "difference_pp": 0.031689861286006774,
+        "region_count": 24,
+        "ci95_pp": null,
+        "region_signs": {
+          "positive": 10,
+          "negative": 14,
+          "zero": 0
+        },
+        "leave_one_region_out_range_pp": [
+          -0.04048494579606386,
+          0.06618752467340754
+        ]
+      },
+      "source_effects_pp": {
+        "source0": 0.2164312672169833,
+        "source1": 0.02642797156231375,
+        "source2": -0.1477896549212802
+      }
+    },
+    {
+      "pool": "skewed5_1",
+      "budget": 24,
+      "a": "region_weighted_facility_location",
+      "b": "permuted_region_weighted_facility_location",
+      "union": {
+        "difference": 0.0011511465158152874,
+        "difference_pp": 0.11511465158152874,
+        "region_count": 24,
+        "ci95_pp": null,
+        "region_signs": {
+          "positive": 15,
+          "negative": 9,
+          "zero": 0
+        },
+        "leave_one_region_out_range_pp": [
+          -0.005819521650784066,
+          0.17709721639780546
+        ]
+      },
+      "source_effects_pp": {
+        "source0": -0.0008903262729416846,
+        "source1": -0.00832474390712971,
+        "source2": 0.3545590249246554
+      }
+    }
+  ],
+  "pixel_budget_secondary": [
+    {
+      "a": "region_kcenter",
+      "b": "kcenter",
+      "thinned_overall24": {
+        "difference": 0.01996366311303345,
+        "difference_pp": 1.996366311303345,
+        "region_count": 24,
+        "ci95_pp": [
+          1.1907778433675158,
+          2.832273180523063
+        ],
+        "region_signs": {
+          "positive": 23,
+          "negative": 1,
+          "zero": 0
+        },
+        "leave_one_region_out_range_pp": [
+          1.787093141677061,
+          2.2217786355330724
+        ]
+      },
+      "full_label_overall24": {
+        "difference": 0.01678081197906719,
+        "difference_pp": 1.6780811979067192,
+        "region_count": 24,
+        "ci95_pp": [
+          0.8565408951195421,
+          2.5067002001370393
+        ],
+        "region_signs": {
+          "positive": 20,
+          "negative": 4,
+          "zero": 0
+        },
+        "leave_one_region_out_range_pp": [
+          1.5015663531852357,
+          1.8868432688417096
+        ]
+      },
+      "paired_change_thinned_minus_full": {
+        "difference": 0.0031828511339662617,
+        "difference_pp": 0.3182851133966262,
+        "region_count": 24,
+        "ci95_pp": [
+          -0.13450481423599234,
+          0.7393443899253599
+        ],
+        "region_signs": {
+          "positive": 18,
+          "negative": 6,
+          "zero": 0
+        },
+        "leave_one_region_out_range_pp": [
+          0.22542085811163987,
+          0.4468275336807085
+        ]
+      },
+      "thinned_source_effects_pp": {
+        "source0": 2.97523242025122,
+        "source1": -0.6143522205374924,
+        "source2": 3.628218734196307
+      },
+      "paired_change_source_effects_pp": {
+        "source0": -0.5078044743299767,
+        "source1": -0.07332024546918116,
+        "source2": 1.5359800599890396
+      }
+    },
+    {
+      "a": "region_kcenter",
+      "b": "permuted_region_kcenter",
+      "thinned_overall24": {
+        "difference": 0.002467404320497723,
+        "difference_pp": 0.24674043204977228,
+        "region_count": 24,
+        "ci95_pp": [
+          -0.1872248402183526,
+          0.6883328174731155
+        ],
+        "region_signs": {
+          "positive": 14,
+          "negative": 10,
+          "zero": 0
+        },
+        "leave_one_region_out_range_pp": [
+          0.16250231174214647,
+          0.3259879187268299
+        ]
+      },
+      "full_label_overall24": {
+        "difference": 0.00896338502529763,
+        "difference_pp": 0.896338502529763,
+        "region_count": 24,
+        "ci95_pp": [
+          0.3429189919191568,
+          1.448528625773833
+        ],
+        "region_signs": {
+          "positive": 18,
+          "negative": 6,
+          "zero": 0
+        },
+        "leave_one_region_out_range_pp": [
+          0.7774729876384462,
+          0.9945143173719485
+        ]
+      },
+      "paired_change_thinned_minus_full": {
+        "difference": -0.006495980704799907,
+        "difference_pp": -0.6495980704799907,
+        "region_count": 24,
+        "ci95_pp": [
+          -1.0486679039674904,
+          -0.2582620926664077
+        ],
+        "region_signs": {
+          "positive": 6,
+          "negative": 18,
+          "zero": 0
+        },
+        "leave_one_region_out_range_pp": [
+          -0.7317620912563093,
+          -0.5434573410174921
+        ]
+      },
+      "thinned_source_effects_pp": {
+        "source0": 2.0175618806547098,
+        "source1": -1.4742619695240224,
+        "source2": 0.19692138501863324
+      },
+      "paired_change_source_effects_pp": {
+        "source0": 0.907948229607081,
+        "source1": -1.123241792945099,
+        "source2": -1.7335006481019477
+      }
+    }
+  ],
+  "full_recipe_condition_means": [
+    {
+      "strategy": "facility_location",
+      "union_miou_percent": 19.88885714809299,
+      "truth_present_miou_percent": 20.76819098987433,
+      "selected_region_count_mean": 7.333333333333333
+    },
+    {
+      "strategy": "fd_roundrobin",
+      "union_miou_percent": 19.20610297018547,
+      "truth_present_miou_percent": 19.991740932656192,
+      "selected_region_count_mean": 7.888888888888889
+    },
+    {
+      "strategy": "kcenter",
+      "union_miou_percent": 17.843476996507846,
+      "truth_present_miou_percent": 18.542435217422792,
+      "selected_region_count_mean": 7.666666666666667
+    },
+    {
+      "strategy": "kmeanspp",
+      "union_miou_percent": 19.655059711797147,
+      "truth_present_miou_percent": 20.52702603647368,
+      "selected_region_count_mean": 8.0
+    },
+    {
+      "strategy": "permuted_region_kcenter",
+      "union_miou_percent": 18.6252196918848,
+      "truth_present_miou_percent": 19.45542338992016,
+      "selected_region_count_mean": 7.555555555555555
+    },
+    {
+      "strategy": "permuted_region_weighted_facility_location",
+      "union_miou_percent": 19.107538361436383,
+      "truth_present_miou_percent": 20.323240222646856,
+      "selected_region_count_mean": 7.333333333333333
+    },
+    {
+      "strategy": "random",
+      "union_miou_percent": 18.91427796813034,
+      "truth_present_miou_percent": 19.40340075597907,
+      "selected_region_count_mean": 7.555555555555555
+    },
+    {
+      "strategy": "region_kcenter",
+      "union_miou_percent": 19.521558194414563,
+      "truth_present_miou_percent": 20.818217411511544,
+      "selected_region_count_mean": 12.0
+    },
+    {
+      "strategy": "region_random",
+      "union_miou_percent": 21.413467631067796,
+      "truth_present_miou_percent": 22.434477008512076,
+      "selected_region_count_mean": 12.0
+    },
+    {
+      "strategy": "region_weighted_facility_location",
+      "union_miou_percent": 21.23921300536146,
+      "truth_present_miou_percent": 22.089310979420034,
+      "selected_region_count_mean": 11.333333333333334
+    }
+  ],
+  "scientific_synthesis": [
+    "Source-balanced selection improves the fixed k-center comparison in this completed panel: quota k-center reaches19.521558% versus17.843477% for visual k-center, with a1.678081pp regional difference,20/24 positive regions, and a positive leave-one-region-out range.",
+    "Geographic weighting also improves a different coverage objective: real source-mean weighted facility location reaches21.239213% versus19.888857% for ordinary FL, and exceeds its size/weight-multiset-preserving permuted control by2.131675pp.",
+    "Strong simple baselines sharpen the practical finding: quota random has the highest full-recipe mean(21.413468%); it exceeds quota k-center by1.891909pp. Thus metadata balancing is practically useful here, while greedy farthest-first scoring is not the best observed rule.",
+    "At exactly2,300,000 available unique processed training labels per fit, quota k-center versus visual k-center remains positive(+1.996366pp). Its paired change from full labels is+0.318285pp with CI[-0.134505,0.739344].",
+    "Under the same pixel control, quota k-center versus permuted groups falls from+0.896339 to+0.246740pp; the directly paired contrast change is-0.649598pp with CI[-1.048668,-0.258262]. This is evidence that the two comparisons respond differently to supervision matching, and motivates joint reporting of source-group semantics and label availability.",
+    "The frozen DINOv2-MLP recipe shows its largest quota-k-center versus visual-k-center mean effects atB12(+0.902370pp balanced,+1.332156pp skewed), with smaller differences atB24(+0.167843,+0.319785) and mixed B6 directions(-0.240052,+0.165535).",
+    "All ten matched B12/skewed strategy means are higher for the frozen DINOv2-MLP recipe than for the full ResNet18 U-Net-style recipe(by4.401640 to7.057375pp). This comparison concerns the complete recipes, which differ in representation, architecture and supervision."
+  ],
+  "contribution_assessment": {
+    "assessment": "The completed evidence supports a substantive controlled empirical contribution: it identifies when source-group balancing helps visual subset selection, compares hard quotas with source-mean coverage weights under the same feature information, and shows which contrasts persist under equal available processed-label budgets.",
+    "recommended_central_claim": "Source-group balancing can improve unseen-region segmentation under limited image budgets; its value depends on the coverage objective, supervision budget and model recipe.",
+    "distinctive_evidence_chain": [
+      "Exact same-pool image-budget comparisons with group-size-preserving and weight-multiset-preserving geographic controls.",
+      "A complete576-fit logical matrix evaluated on24 fixed new regions, with allocation/seed averaging before geographic inference.",
+      "A matched27-fit available-pixel intervention and direct paired regional changes, separating robustness to label quantity from image-count comparisons.",
+      "A complementary frozen-representation recipe spanning two pool profiles and three budgets."
+    ],
+    "literature_links": [
+      {
+        "keys": [
+          "sener2018coreset",
+          "wei2015submodularity",
+          "nogueira2026coreset"
+        ],
+        "role": "Existing visual-coverage/coreset/data-efficient segmentation components; empirical adaptation and controlled comparison are the study contribution."
+      },
+      {
+        "keys": [
+          "alemadi2025spatialshift",
+          "lu2025strategicsampling",
+          "he2024geocomplexity",
+          "kaijage2024spatialal",
+          "cai2021spatialdiversity"
+        ],
+        "role": "Existing geographic-diversity/spatial-selection precedents; frame the question around source-group alignment and information/budget controls."
+      },
+      {
+        "keys": [
+          "wang2024utilityfairness",
+          "rafiey2024decomposable",
+          "zhang2026coversoftly"
+        ],
+        "role": "Established group-mean/weighted-FL ideas; source-count weights are an application within this controlled remote-sensing setting."
+      },
+      {
+        "keys": [
+          "mittal2025realistic"
+        ],
+        "role": "Motivates reporting realistic strong/random baselines and conditional method advantages."
+      }
+    ],
+    "necessary_scope_once": "Active display uses complete GPU90 plus original frozen486 under a user-driven backend amendment after panel exposure. CPU72 remains a separate reference. Geographic units are24 regions; recipe contrasts combine multiple design differences. Pixel matching concerns available unique processed labels, with source calibration/development access accounted separately.",
+    "claims_to_avoid_in_final_interpretation": [
+      "Quota k-center or weighted FL is the best method overall: quota random has the highest full-recipe mean.",
+      "Gains demonstrate encoder fine-tuning causes lower accuracy: the two recipes differ in more than fine-tuning.",
+      "The pixel control proves all gains are caused by label count, or a causal mediation fraction.",
+      "Real/permuted weighted FL isolates hard-quota rigidity: those comparisons use different coverage objectives when compared with quota k-center.",
+      "New algorithm family/theory or first spatial-diversity selection: the cited predecessors already establish those components."
+    ]
+  },
+  "working_release_notes": [
+    "Current manuscript_state lifecycle and local protocol accounting still describe the earlier running/original576+extra90 setup; synchronize the final manuscript/provenance narrative to the completed active576+CPU72 reference+pixel27 accounting.",
+    "This is a working synthesis of complete evidence, not the research_review final manuscript gate. Exact finished manuscript wording, references and rendered layout remain to be reviewed.",
+    "Literature assessment uses the existing local trace and its recorded inspection depth; no new exhaustive search or full-text review was claimed."
+  ]
+}

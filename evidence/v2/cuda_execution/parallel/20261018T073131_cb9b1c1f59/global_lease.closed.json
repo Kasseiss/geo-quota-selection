@@ -1,0 +1,48 @@
+{
+  "pid": 29064,
+  "alive": true,
+  "creation_token": "134367822828850868",
+  "working_set_bytes": 23126016,
+  "peak_working_set_bytes": 24076288,
+  "format": "v2-cuda-parallel-writer-1",
+  "generation": "20261018T073131_cb9b1c1f59",
+  "workers": 4,
+  "plan_sha256": "15d586fd03389d495dfc2b7d9cdea35b2b3089461ccb49cc37e5f8bd39ff1545",
+  "executor_sha256": "ac41d0c19aabdb6ffb041b07f50fd02828872f4bdac039ff886dd84d78d6bffc",
+  "children": [
+    {
+      "worker": 0,
+      "pid": 20056,
+      "alive": true,
+      "creation_token": "134367822996276300",
+      "working_set_bytes": 2134016,
+      "peak_working_set_bytes": 2134016
+    },
+    {
+      "worker": 1,
+      "pid": 26236,
+      "alive": true,
+      "creation_token": "134367823214336809",
+      "working_set_bytes": 2134016,
+      "peak_working_set_bytes": 2134016
+    },
+    {
+      "worker": 2,
+      "pid": 2420,
+      "alive": true,
+      "creation_token": "134367823432083427",
+      "working_set_bytes": 2134016,
+      "peak_working_set_bytes": 2134016
+    },
+    {
+      "worker": 3,
+      "pid": 21000,
+      "alive": true,
+      "creation_token": "134367823647205518",
+      "working_set_bytes": 2134016,
+      "peak_working_set_bytes": 2134016
+    }
+  ],
+  "utc": "2026-10-18T07:31:31.311715+00:00",
+  "amendment_sha256": "796d2160f2c72496031a4bc0763289142da5dcb7bea91ee7d368d483ef47c31a"
+}

@@ -1,0 +1,40 @@
+{
+  "format": "v2-cuda-scheduling-amendment-1",
+  "status": "SCHEDULING_ONLY_AFTER_PRIOR_SCORES",
+  "created_utc": "2026-10-18T07:24:13.887874+00:00",
+  "generation": "20261018T072413_80f828a119",
+  "workers": 2,
+  "allowed_workers": [
+    2,
+    3,
+    4
+  ],
+  "plan_sha256": "15d586fd03389d495dfc2b7d9cdea35b2b3089461ccb49cc37e5f8bd39ff1545",
+  "executor_code_sha256": "ac41d0c19aabdb6ffb041b07f50fd02828872f4bdac039ff886dd84d78d6bffc",
+  "scalar_reference_code_sha256": "dd14784a1642798b2df5be622545e2f8733d72db87cb29ecf984aff1d69e6cff",
+  "motivation": "User explicitly requested concurrent GPU experiments to improve utilization and wall time.",
+  "primary_and_original_576_unchanged": true,
+  "source_selected_ids_lr_steps_batch_crop_seeds_unchanged": true,
+  "new_confirmatory_holdout": false,
+  "cpu_threads_per_worker": 2,
+  "deterministic_warn_only": true,
+  "partition_rule": "fixed plan index modulo workers; serial independent fits per process",
+  "limit_per_worker": 2,
+  "runtime": {
+    "torch": "2.5.1+cu121",
+    "numpy": "2.3.5",
+    "python": "3.13.13",
+    "cuda_python": "3.12.3",
+    "cuda_build": "12.1",
+    "device": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "threads": 2
+  },
+  "memory_launch_policy": "At least512MiB per pending worker plus256MiB physical reserve; increase forecast to observed initialization RAM deltas; refuse/back off, never silently lower workers",
+  "storage_policy": {
+    "whole_root_cap_bytes": 2000000000,
+    "external_writer_reserve_bytes": 55000000,
+    "additional_per_worker_reserve_bytes": 2000000
+  },
+  "no_extra_checkpoint": true,
+  "score_fields_used_for_scheduling": false
+}

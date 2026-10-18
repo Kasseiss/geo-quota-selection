@@ -1,0 +1,9370 @@
+{
+  "format": "v2-pixel-budget-result-1",
+  "status": "complete",
+  "identity": {
+    "model": "resnet18_unet",
+    "source_split": "source1",
+    "pool": "skewed5_1",
+    "budget": 12,
+    "selection_seed": 1,
+    "initialization_seed": 1,
+    "strategy": "region_kcenter"
+  },
+  "plan_sha256": "3e776a5517286d634eb29968ab3a7cafa3912e166f47d84137e8d16ef03d58e9",
+  "runner_code_sha256": "1b7e79fa4058bae13b2ad7161392aab5416049056380ade950d3c2b1872b5e1b",
+  "helper_code_sha256": {
+    "code/v2_cuda_parallel_v2.py": "80d9e40683f1703fe5c7d12367680d0a207177f75d656c44038fa57e15d9945b"
+  },
+  "source_cuda_plan_sha256": "15d586fd03389d495dfc2b7d9cdea35b2b3089461ccb49cc37e5f8bd39ff1545",
+  "original_freeze_sha256": "5fd417464cc88024ad4063b2dc77366c1b6d3c80ea7cb1fd3083b0ddc2957bd8",
+  "original_frozen_file_sha256": {
+    "cache/dinov2-formal120/index.json": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+    "code/core.py": "8c7339630c32f8d89a8725ffab9450ce5054d15fab8c0c299e45b9d8fe0010e8",
+    "code/data_access.py": "4a090827b05e8d15c7bdeeb673a87c3407f146cd13f3b736adfd2449b4a31b71",
+    "code/geography_audit.py": "c595e317d56a55090efb37ba69009925c1d68ca43739269d9653ed2e9ea63653",
+    "code/gpu_head.py": "4d2bd675a46b5943b7ec8764a6bf625fa23177ce369ee38a3a45fe38e41e4b70",
+    "code/test_v2_training.py": "dd906fb4f66b6241ec99127dcf7b3699d59c0d587494cfba28cea361e6cf7399",
+    "code/test_v2_weighted_selection.py": "a7cd168a84432cf6ae8cc9e1b8facca596e541be89dca42b3da9d488f79af5f4",
+    "code/v2_audit_data.py": "a94131564077480c71811312974a8a1719f5ca37adcc9781b74fde94b7dc9547",
+    "code/v2_audit_runs.py": "ad6f3084f0c5109458f2a72358a400dcf60c5e170805dabc84db30de2c886ff1",
+    "code/v2_calibrate.py": "92a4a16140fe89cc3a9efa413362667954943f9078fd204f277c1accd8293334",
+    "code/v2_extract_panel.py": "d15da0a2905a9a8e22095f6bf27ae0aeac8ece4d99f3dcd25ea1350095f5f9e9",
+    "code/v2_freeze.py": "ff23fa22d7795fd1f51991ff85a660b4ebef0700a7596405edf6cc08f2c1ec5c",
+    "code/v2_prepare_data.py": "28ab383e2d67f3c3a45f8fff796a7f54f5aee9f1bb5b66bd86ba4fd0a6370db6",
+    "code/v2_reload_checkpoint.py": "85a62b5104297dc397589794d6fb8d4030154c359ae92fea90cf7f707c6c8dcd",
+    "code/v2_run.py": "cd629e13d391575194825a00727356912ec8992f9b7c117002d7fab6293693fe",
+    "code/v2_segmentation.py": "5f8d46af866497e5a6db1c9779764566bdb8ddd3bcc01bcf3bb2721478e5a5d2",
+    "code/v2_selection.py": "e1665e1932e05e5f00a1403c62399e0b1a00dc2618c72ba05c44fdc3d20efe96",
+    "code/v2_statistics.py": "fdc8f32ddac241ffea227ed756ff6d852f72feefa4b1578a4b998a1ea66612c2",
+    "code/v2_validate_software.py": "b265e8659c44e793a1501002c4856772314dcdd3b84ad29b4edbbc9eb5799ce2",
+    "code/v2_weighted_selection.py": "9d73d805e8ebe0b6f0afbac5c16de1f6fdc8ffc6f6a892b30d87cf82c3fc1f11",
+    "configs/v2_design.json": "d790c26eae4a3c029cca73e3845efd3d95673017d88bafe42e37fb81f70046a4",
+    "configs/v2_extension.json": "7786624c6fc28aafe71f86495e8c653ab8ffc860cf2e316048e78db5c089ba92",
+    "configs/v2_geographic_sensitivity.json": "83e6a506dc88ca8509cf7f384a9c3295dddcdcb3de314e7bdff4ec4ed37b519a",
+    "docs/v2_protocol.md": "1812c005fba15c6c072f66d3ade92e9f4377e6839c67a62e64667733da557673",
+    "docs/v2_weighted_selection.md": "b96ab73efc2f2bcbbdbd3db6ffc20a9ae9734a01fabb5fc2809e4311b73ca562",
+    "evidence/v2/calibration/calibration.json": "9bc9f894a2dc916d824bcec465ef23edab2be74005a5c3c6151f59dc8bf0aac3",
+    "evidence/v2/calibration/source0/encoder_lr_0.0001.attempt_1792279356894673100.jsonl": "d7729de2b698cd3b5c836ea0aa108b30f18f20f9395cdf640d3713cee6669f43",
+    "evidence/v2/calibration/source0/encoder_lr_0.0001.json": "33da3e41edc3fc0a70f5c8dc73bf811ce27bdb9d69409aa7cf2e7a8d59af3d49",
+    "evidence/v2/calibration/source0/encoder_lr_0.0003.attempt_1792279537421072800.jsonl": "e6e608925e7d82f3f36a740c208ba0b65ad90dfceb8ffc007d3b4fe476e5039f",
+    "evidence/v2/calibration/source0/encoder_lr_0.0003.json": "a918173d48a663ec07fbdb7204a913a79ece1e4d2f8d699209492ad031d26038",
+    "evidence/v2/calibration/source1/encoder_lr_0.0001.attempt_1792279721216566600.jsonl": "5bcb7a7c34dcad4852599709a552d7f0272d93d8eaf96973d1cbb06dd826944b",
+    "evidence/v2/calibration/source1/encoder_lr_0.0001.json": "09c49a8e21f17aefe98e0a1e6d7900bed60ddc02d0f93d0e2690dd402e185054",
+    "evidence/v2/calibration/source1/encoder_lr_0.0003.attempt_1792279902980940000.jsonl": "c50203280ce2e2c6110c93c46a27f7e8e4eaa79dff9f055bfc02087589437ee9",
+    "evidence/v2/calibration/source1/encoder_lr_0.0003.json": "4226990eb77ab8d57027a52310774c244b2d4e0ebd55ada1c4f1822645b49bf4",
+    "evidence/v2/calibration/source2/encoder_lr_0.0001.attempt_1792280087602445600.jsonl": "4f5c60b415bf07a5910eac73e87c6b3f2acb63fe7d4d13c77c8c8d8f815f9e97",
+    "evidence/v2/calibration/source2/encoder_lr_0.0001.json": "325a4474ec97a9d6017ad8ee49c8e6f247e657016afdfe6914f4a2d000d7333f",
+    "evidence/v2/calibration/source2/encoder_lr_0.0003.attempt_1792280273014459800.jsonl": "22c3f19f32c138b8fd98311f364d9c36dc207e3503d6b19c962a7ceed4aceac2",
+    "evidence/v2/calibration/source2/encoder_lr_0.0003.json": "9c454c724c049926ae2570277f42c6a4f550b41981db3f0bb8edc22433b93c6f",
+    "evidence/v2/data_audit.json": "ca67960d03e63af09f664520bd585ebdeb012ea826ac48d92ff7e658575b2a3c",
+    "evidence/v2/geographic_disposition.json": "8c191f8b296df66f33a6d75c08ee80fd5c64ebb4ab232fe3955ed9a2dccb59e3",
+    "evidence/v2/prospective_amendments/weighted_fl_before_fit_seed_amendment.json": "78bf5085b5df246266ee18d7c9f81d0867d28b0eea9abf5fa28bbaba881a8ddc",
+    "evidence/v2/software/data_audit_validation.json": "ff9bd578d0989963b378460b72731dc3be5f049f48212b0bca4f200d4b171106",
+    "evidence/v2/software/preparation_validation.json": "e24b262a703f7791b4a41ef49b0182917ec28d77498765d8d1b1f8807f8634eb",
+    "evidence/v2/software/runs_audit_validation.json": "c6bebe647e7b98323cfe0d9fd72038098fd65c4e3be7db5d52ff36f4b72a1c44",
+    "evidence/v2/software/segmentation_validation.json": "3b15371b690c303fc8f4eaddffd1dab3146fca0ad94bf5eeb9ce0d651d98fd05",
+    "evidence/v2/software/statistics_validation.json": "61359f93a0cc4768e3d141adb9dbce91707dbe678214163d33fb45a89cd04ad9",
+    "evidence/v2/software/training_prefix_validation.json": "73f08b0867f319e8ce5d9d3d2a896690f8837232098dd9e8e710c0c78ccdcf83",
+    "evidence/v2/software/weighted_selection_validation.json": "385d33449c34f75a857728306a0742a4ce7089e2317444233c0ad9b915ef304e",
+    "evidence/v2/source_selection_seed_diagnostic.json": "8089fc8f0e89e9066051253bcaac8fcc1233c9d306e21decb91f97f8cc1befb4",
+    "v2/cache/new_panel_dinov2/index.json": "a357fcc755ea3eedb9c81c01ee020356affab6e7e3eec9d9a1c2bf1dc9cd2952",
+    "v2/data/development_manifest.json": "0b66d75a91e6251ff7db4c71d0241a0bdf1f0bd8195b3d0e8263b52b1f852147",
+    "v2/data/manifest.json": "676953ed28ab90a6448bfd15c1bbed352b8b5d42ae8de6d54416ad258a1d105a",
+    "v2/data/selection_plan.json": "ba6a1558b1c78da17ec92d2f04a2bd8028f30b184206c74c6c39ae84e50014ea"
+  },
+  "protocol_sha256": "74e3a0d3cc25612b5a6d9be7749f797d39111baf579033bec4dbae62de653d04",
+  "selection": {
+    "candidate_ids": [
+      "austin__austin_18",
+      "austin__austin_31",
+      "austin__austin_42",
+      "austin__austin_45",
+      "austin__austin_50",
+      "chiangmai__chiangmai_10",
+      "chiangmai__chiangmai_16",
+      "chiangmai__chiangmai_2",
+      "chiangmai__chiangmai_3",
+      "chiangmai__chiangmai_4",
+      "chicago__chicago_38",
+      "christchurch__christchurch_45",
+      "dhaka__dhaka_32",
+      "dhaka__dhaka_38",
+      "dhaka__dhaka_39",
+      "dhaka__dhaka_40",
+      "dhaka__dhaka_48",
+      "kyoto__kyoto_11",
+      "kyoto__kyoto_15",
+      "kyoto__kyoto_39",
+      "kyoto__kyoto_60",
+      "kyoto__kyoto_64",
+      "niamey__niamey_9",
+      "rotterdam__rotterdam_44",
+      "shanghai__shanghai_46",
+      "ulaanbaatar__ulaanbaatar_23",
+      "ulaanbaatar__ulaanbaatar_3",
+      "ulaanbaatar__ulaanbaatar_31",
+      "ulaanbaatar__ulaanbaatar_36",
+      "ulaanbaatar__ulaanbaatar_46",
+      "vegas__vegas_14",
+      "vegas__vegas_17",
+      "vegas__vegas_32",
+      "vegas__vegas_39",
+      "vegas__vegas_7",
+      "vienna__vienna_33"
+    ],
+    "selected_ids": [
+      "ulaanbaatar__ulaanbaatar_46",
+      "vegas__vegas_32",
+      "dhaka__dhaka_48",
+      "chiangmai__chiangmai_10",
+      "austin__austin_31",
+      "christchurch__christchurch_45",
+      "chicago__chicago_38",
+      "shanghai__shanghai_46",
+      "kyoto__kyoto_15",
+      "niamey__niamey_9",
+      "vienna__vienna_33",
+      "rotterdam__rotterdam_44"
+    ],
+    "selected_regions": [
+      "austin",
+      "chiangmai",
+      "chicago",
+      "christchurch",
+      "dhaka",
+      "kyoto",
+      "niamey",
+      "rotterdam",
+      "shanghai",
+      "ulaanbaatar",
+      "vegas",
+      "vienna"
+    ],
+    "mean_candidate_cosine_distance": 0.11215633117802584,
+    "maximum_candidate_cosine_distance": 0.28166043526225293,
+    "equal_region_mean_candidate_cosine_distance": 0.06729379870681554,
+    "candidate_region_mean_cosine_distances": {
+      "austin": 0.1325809928591342,
+      "chiangmai": 0.16808117174291975,
+      "chicago": 1.1102230246251565e-16,
+      "christchurch": 2.220446049250313e-16,
+      "dhaka": 0.1690645613210962,
+      "kyoto": 0.0883678035392795,
+      "niamey": 1.1102230246251565e-16,
+      "rotterdam": 0.0,
+      "shanghai": 0.0,
+      "ulaanbaatar": 0.061244077655229476,
+      "vegas": 0.18818697736412693,
+      "vienna": 0.0
+    },
+    "selected_region_counts": {
+      "austin": 1,
+      "chiangmai": 1,
+      "chicago": 1,
+      "christchurch": 1,
+      "dhaka": 1,
+      "kyoto": 1,
+      "niamey": 1,
+      "rotterdam": 1,
+      "shanghai": 1,
+      "ulaanbaatar": 1,
+      "vegas": 1,
+      "vienna": 1
+    },
+    "selected_valid_original_pixels": 10698041,
+    "selected_original_class_counts": [
+      342058,
+      1850910,
+      2789615,
+      1215339,
+      1276285,
+      918196,
+      294228,
+      2011410
+    ],
+    "selection_seconds": 0.0016709999908925965
+  },
+  "log_file": "evidence/v2/pixel_budget_execution/source1_skewed5_1_12_1_1_region_kcenter/training_1792312394451747500.jsonl",
+  "log_sha256": "f79eafc210166aa6cd06252ad7ddbc8e61db083e53703d9996b3d4932afa7413",
+  "scheduling": {
+    "generation": "20261018T082541_c3223d9620",
+    "worker": 1,
+    "workers": 2,
+    "pid": 18292,
+    "alive": true,
+    "creation_token": "134367855584820258",
+    "working_set_bytes": 1409892352,
+    "peak_working_set_bytes": 1534840832
+  },
+  "interpretation": "Post-panel-exposure descriptive secondary; original primary unchanged; no new holdout or annotation-cost equivalence",
+  "created_utc": "2026-10-18T08:34:50.502404+00:00",
+  "training": {
+    "identity": {
+      "initial_model_state_sha256": "bcef32e1f960e33d872cf1b69d29f2ccaa53351837ca728b91ef11eb1271e88d",
+      "selected_ids": [
+        "ulaanbaatar__ulaanbaatar_46",
+        "vegas__vegas_32",
+        "dhaka__dhaka_48",
+        "chiangmai__chiangmai_10",
+        "austin__austin_31",
+        "christchurch__christchurch_45",
+        "chicago__chicago_38",
+        "shanghai__shanghai_46",
+        "kyoto__kyoto_15",
+        "niamey__niamey_9",
+        "vienna__vienna_33",
+        "rotterdam__rotterdam_44"
+      ],
+      "selected_record_sha256": "ad8dd0cbb6724044418d8d24a2e2c1a763b09ca322fa677c775deebdc6abbaec",
+      "pretrained_weight_sha256": "f37072fd47e89c5e827621c5baffa7500819f7896bbacec160b1a16c560e07ec",
+      "model_code_sha256": "5f8d46af866497e5a6db1c9779764566bdb8ddd3bcc01bcf3bb2721478e5a5d2",
+      "torch": "2.5.1+cu121",
+      "numpy": "2.3.5",
+      "python": "3.12.3",
+      "threads": 2,
+      "device_name": "NVIDIA GeForce RTX 4060 Laptop GPU"
+    },
+    "final_model_state_sha256": "cd16abceb00f382edc18388b70a211b494571bcc1373d179dfaedb216a539fe5",
+    "all_final_parameters_finite": true,
+    "log": [
+      {
+        "step": 1,
+        "loss": 2.2714600563049316,
+        "elapsed_seconds": 0.09399999999732245
+      },
+      {
+        "step": 50,
+        "loss": 1.8379958868026733,
+        "elapsed_seconds": 4.14100000000326
+      },
+      {
+        "step": 100,
+        "loss": 2.21863055229187,
+        "elapsed_seconds": 8.203999999997905
+      },
+      {
+        "step": 150,
+        "loss": 2.0428333282470703,
+        "elapsed_seconds": 12.218999999997322
+      },
+      {
+        "step": 200,
+        "loss": 1.7356990575790405,
+        "elapsed_seconds": 16.296999999991385
+      },
+      {
+        "step": 250,
+        "loss": 1.5832960605621338,
+        "elapsed_seconds": 20.312999999994645
+      },
+      {
+        "step": 300,
+        "loss": 1.6630650758743286,
+        "elapsed_seconds": 24.375
+      },
+      {
+        "step": 350,
+        "loss": 1.409285068511963,
+        "elapsed_seconds": 28.406999999991967
+      },
+      {
+        "step": 400,
+        "loss": 1.4418364763259888,
+        "elapsed_seconds": 32.46899999999732
+      },
+      {
+        "step": 450,
+        "loss": 1.4114433526992798,
+        "elapsed_seconds": 36.5
+      },
+      {
+        "step": 500,
+        "loss": 1.252248764038086,
+        "elapsed_seconds": 40.59399999999732
+      },
+      {
+        "step": 550,
+        "loss": 1.2108460664749146,
+        "elapsed_seconds": 44.65699999999197
+      },
+      {
+        "step": 600,
+        "loss": 1.1861425638198853,
+        "elapsed_seconds": 48.73500000000058
+      },
+      {
+        "step": 650,
+        "loss": 1.196285605430603,
+        "elapsed_seconds": 51.84399999999732
+      },
+      {
+        "step": 700,
+        "loss": 0.6685656905174255,
+        "elapsed_seconds": 54.453999999997905
+      },
+      {
+        "step": 750,
+        "loss": 1.4489184617996216,
+        "elapsed_seconds": 57.01600000000326
+      },
+      {
+        "step": 800,
+        "loss": 0.5075811743736267,
+        "elapsed_seconds": 59.46899999999732
+      },
+      {
+        "step": 850,
+        "loss": 1.1026017665863037,
+        "elapsed_seconds": 62.578999999997905
+      },
+      {
+        "step": 900,
+        "loss": 1.3825446367263794,
+        "elapsed_seconds": 66.625
+      },
+      {
+        "step": 950,
+        "loss": 0.8596050143241882,
+        "elapsed_seconds": 70.65699999999197
+      },
+      {
+        "step": 1000,
+        "loss": 1.0643935203552246,
+        "elapsed_seconds": 74.71899999999732
+      },
+      {
+        "step": 1050,
+        "loss": 0.45763686299324036,
+        "elapsed_seconds": 78.81299999999464
+      },
+      {
+        "step": 1100,
+        "loss": 0.9344179630279541,
+        "elapsed_seconds": 82.96899999999732
+      },
+      {
+        "step": 1150,
+        "loss": 0.7454814910888672,
+        "elapsed_seconds": 87.25
+      },
+      {
+        "step": 1200,
+        "loss": 0.5982167720794678,
+        "elapsed_seconds": 91.53199999999197
+      }
+    ],
+    "validation": [],
+    "elapsed_seconds": 91.67199999999139,
+    "encoder_lr": 0.0001,
+    "decoder_lr": 0.001,
+    "steps": 1200,
+    "seed": 1,
+    "batch_size": 2,
+    "crop": 224,
+    "device": "cuda:0",
+    "trainable_parameters": 12456328
+  },
+  "pixel_supervision": {
+    "seed": 2026101812,
+    "generator": "numpy.default_rng/PCG64",
+    "numpy": "2.3.5",
+    "sampling": "uniform_remove_without_replacement",
+    "order": "ordered_selected_ids_then_row_major_original_valid_positions",
+    "class_conditioned_sampling": false,
+    "available_valid_pixels_before": 2354540,
+    "available_valid_pixels_after": 2300000,
+    "removed_pixels": 54540,
+    "ordered_selected_ids": [
+      "ulaanbaatar__ulaanbaatar_46",
+      "vegas__vegas_32",
+      "dhaka__dhaka_48",
+      "chiangmai__chiangmai_10",
+      "austin__austin_31",
+      "christchurch__christchurch_45",
+      "chicago__chicago_38",
+      "shanghai__shanghai_46",
+      "kyoto__kyoto_15",
+      "niamey__niamey_9",
+      "vienna__vienna_33",
+      "rotterdam__rotterdam_44"
+    ],
+    "images": [
+      {
+        "id": "ulaanbaatar__ulaanbaatar_46",
+        "shape": [
+          448,
+          448
+        ],
+        "original_valid_pixels": 200704,
+        "retained_valid_pixels": 196030,
+        "removed_pixels": 4674,
+        "original_class_counts": [
+          0,
+          60223,
+          88134,
+          20247,
+          0,
+          0,
+          0,
+          32100
+        ],
+        "retained_class_counts": [
+          0,
+          58833,
+          86108,
+          19771,
+          0,
+          0,
+          0,
+          31318
+        ],
+        "classes_removed_entirely": [],
+        "keep_bitmap_sha256": "80d13936fee270135099ef404cbc4ae6714724273629d69eef09fe1ef0ddf957",
+        "training_mask_uint8_row_major_sha256": "e8151f24301f6928531bb9a47146ff5469302f19cc7152d3598e18fb8469114d"
+      },
+      {
+        "id": "vegas__vegas_32",
+        "shape": [
+          448,
+          448
+        ],
+        "original_valid_pixels": 200704,
+        "retained_valid_pixels": 196183,
+        "removed_pixels": 4521,
+        "original_class_counts": [
+          162492,
+          0,
+          11076,
+          9666,
+          2623,
+          0,
+          0,
+          14847
+        ],
+        "retained_class_counts": [
+          158804,
+          0,
+          10844,
+          9447,
+          2578,
+          0,
+          0,
+          14510
+        ],
+        "classes_removed_entirely": [],
+        "keep_bitmap_sha256": "af0e8fa73564c2e1e7055fdf48352459925732f38968dd4470090f15e21434c7",
+        "training_mask_uint8_row_major_sha256": "8ed57dc3669ece6467c9ef3cfc6f3e12135c1521751fbd1bba6aa606dacadaaa"
+      },
+      {
+        "id": "dhaka__dhaka_48",
+        "shape": [
+          448,
+          448
+        ],
+        "original_valid_pixels": 188505,
+        "retained_valid_pixels": 184209,
+        "removed_pixels": 4296,
+        "original_class_counts": [
+          0,
+          16773,
+          3344,
+          1545,
+          16027,
+          134520,
+          5646,
+          10650
+        ],
+        "retained_class_counts": [
+          0,
+          16429,
+          3266,
+          1501,
+          15657,
+          131446,
+          5516,
+          10394
+        ],
+        "classes_removed_entirely": [],
+        "keep_bitmap_sha256": "f225fdf4d377f1ad706e7c466ac3c64fbb8fa10bdd1b7780e3c97fc838e3c202",
+        "training_mask_uint8_row_major_sha256": "73a7ad00266850fe655420bcc4ddfd12c6d10a0d2cb827908292e28ced0202a1"
+      },
+      {
+        "id": "chiangmai__chiangmai_10",
+        "shape": [
+          448,
+          448
+        ],
+        "original_valid_pixels": 186903,
+        "retained_valid_pixels": 182531,
+        "removed_pixels": 4372,
+        "original_class_counts": [
+          0,
+          25634,
+          21311,
+          11579,
+          108609,
+          12505,
+          0,
+          7265
+        ],
+        "retained_class_counts": [
+          0,
+          25076,
+          20786,
+          11304,
+          106039,
+          12241,
+          0,
+          7085
+        ],
+        "classes_removed_entirely": [],
+        "keep_bitmap_sha256": "3c30af8b95fc36fd61fd58f828112cbc6bd8e407ec6f9b54b7e017659a9a47c9",
+        "training_mask_uint8_row_major_sha256": "913d334317e6ee099e57ec595f1c4c3a84d5ccdd2584adf07fd009694dd43260"
+      },
+      {
+        "id": "austin__austin_31",
+        "shape": [
+          448,
+          448
+        ],
+        "original_valid_pixels": 200704,
+        "retained_valid_pixels": 196168,
+        "removed_pixels": 4536,
+        "original_class_counts": [
+          0,
+          34390,
+          60064,
+          47300,
+          11270,
+          167,
+          0,
+          47513
+        ],
+        "retained_class_counts": [
+          0,
+          33609,
+          58712,
+          46224,
+          11043,
+          160,
+          0,
+          46420
+        ],
+        "classes_removed_entirely": [],
+        "keep_bitmap_sha256": "8a752b26ef37e88e528c1a4e83c518c32ee3bbfe7fd1ba5bc945c48f66ccd8bd",
+        "training_mask_uint8_row_major_sha256": "4845ccf239ff15bb8d2d586be00398eb7c6e970322abbf5738c9fa0d8b615676"
+      },
+      {
+        "id": "christchurch__christchurch_45",
+        "shape": [
+          448,
+          448
+        ],
+        "original_valid_pixels": 200704,
+        "retained_valid_pixels": 195980,
+        "removed_pixels": 4724,
+        "original_class_counts": [
+          0,
+          132703,
+          6092,
+          17153,
+          30673,
+          13685,
+          0,
+          398
+        ],
+        "retained_class_counts": [
+          0,
+          129564,
+          5965,
+          16760,
+          29975,
+          13330,
+          0,
+          386
+        ],
+        "classes_removed_entirely": [],
+        "keep_bitmap_sha256": "1bc3adb9f3f270607ce0d69cdf9b62ea77a0eb5d8e4c5bb0620efde37e6feed6",
+        "training_mask_uint8_row_major_sha256": "b082f7a7d100ac06a5b9e41a74cf4ddaf94ddac7cc98bc11668dbbb59c6ebbd1"
+      },
+      {
+        "id": "chicago__chicago_38",
+        "shape": [
+          448,
+          448
+        ],
+        "original_valid_pixels": 200704,
+        "retained_valid_pixels": 196000,
+        "removed_pixels": 4704,
+        "original_class_counts": [
+          0,
+          234,
+          62022,
+          28939,
+          12698,
+          0,
+          0,
+          96811
+        ],
+        "retained_class_counts": [
+          0,
+          230,
+          60524,
+          28289,
+          12383,
+          0,
+          0,
+          94574
+        ],
+        "classes_removed_entirely": [],
+        "keep_bitmap_sha256": "3e67d7eaa93c9589413bbf6d19bd072cbd666d14d3cc9694df71cf618bb04acf",
+        "training_mask_uint8_row_major_sha256": "a024c904e69d65607f857ecb36ef5923071fac0e40622a4ae3239f862b54429a"
+      },
+      {
+        "id": "shanghai__shanghai_46",
+        "shape": [
+          448,
+          448
+        ],
+        "original_valid_pixels": 200701,
+        "retained_valid_pixels": 196039,
+        "removed_pixels": 4662,
+        "original_class_counts": [
+          0,
+          7609,
+          99367,
+          13030,
+          4583,
+          4542,
+          4908,
+          66662
+        ],
+        "retained_class_counts": [
+          0,
+          7428,
+          97097,
+          12712,
+          4459,
+          4428,
+          4790,
+          65125
+        ],
+        "classes_removed_entirely": [],
+        "keep_bitmap_sha256": "542151f5bc10aaf89ebe1174622bd2f80e31ebc07c60d9406819cc66a08c9396",
+        "training_mask_uint8_row_major_sha256": "067dc412ef4fc302d3c1ddd23354887f1e98b8183c4cd03fbbfe2672bab8a991"
+      },
+      {
+        "id": "kyoto__kyoto_15",
+        "shape": [
+          448,
+          448
+        ],
+        "original_valid_pixels": 200704,
+        "retained_valid_pixels": 196067,
+        "removed_pixels": 4637,
+        "original_class_counts": [
+          0,
+          33960,
+          31259,
+          20451,
+          20885,
+          6110,
+          46871,
+          41168
+        ],
+        "retained_class_counts": [
+          0,
+          33178,
+          30532,
+          20000,
+          20393,
+          5968,
+          45772,
+          40224
+        ],
+        "classes_removed_entirely": [],
+        "keep_bitmap_sha256": "a6678bb7b5399d0d08da77e729f230478aff2971d1671d07d4011c1560094cda",
+        "training_mask_uint8_row_major_sha256": "e4cd71d8389859453a373392060603669fa10e7a3e2d9faac91c4f8ac35eeddf"
+      },
+      {
+        "id": "niamey__niamey_9",
+        "shape": [
+          448,
+          448
+        ],
+        "original_valid_pixels": 200704,
+        "retained_valid_pixels": 196010,
+        "removed_pixels": 4694,
+        "original_class_counts": [
+          0,
+          16654,
+          76686,
+          28328,
+          27915,
+          0,
+          1788,
+          49333
+        ],
+        "retained_class_counts": [
+          0,
+          16259,
+          74931,
+          27661,
+          27272,
+          0,
+          1747,
+          48140
+        ],
+        "classes_removed_entirely": [],
+        "keep_bitmap_sha256": "f5a14382d61f1d8038d20a09c0590323906d5500642d7cf15c04a6fec61dd9f5",
+        "training_mask_uint8_row_major_sha256": "834d1782bfdb9492a22da3251519d386c98b99dc834a0742502c38ce7a1b6261"
+      },
+      {
+        "id": "vienna__vienna_33",
+        "shape": [
+          448,
+          448
+        ],
+        "original_valid_pixels": 200704,
+        "retained_valid_pixels": 196002,
+        "removed_pixels": 4702,
+        "original_class_counts": [
+          0,
+          26522,
+          69805,
+          30224,
+          12378,
+          7332,
+          0,
+          54443
+        ],
+        "retained_class_counts": [
+          0,
+          25873,
+          68162,
+          29527,
+          12101,
+          7162,
+          0,
+          53177
+        ],
+        "classes_removed_entirely": [],
+        "keep_bitmap_sha256": "98ef1ebcae1b89cacc952938a182b34854be79602c27870396311aabcf524eec",
+        "training_mask_uint8_row_major_sha256": "9754042d8693bd07e33bc75c7734815c835175d108c2b29f5ef61c002cb86713"
+      },
+      {
+        "id": "rotterdam__rotterdam_44",
+        "shape": [
+          448,
+          448
+        ],
+        "original_valid_pixels": 172799,
+        "retained_valid_pixels": 168781,
+        "removed_pixels": 4018,
+        "original_class_counts": [
+          0,
+          8746,
+          102679,
+          29707,
+          3480,
+          0,
+          0,
+          28187
+        ],
+        "retained_class_counts": [
+          0,
+          8528,
+          100312,
+          28996,
+          3400,
+          0,
+          0,
+          27545
+        ],
+        "classes_removed_entirely": [],
+        "keep_bitmap_sha256": "fca7fc0a6cc41d8e775f699e8e2868422e7f5b18c53188dad12dd4e2a2203e3f",
+        "training_mask_uint8_row_major_sha256": "9c9ab7f4c16981c455baf600cb0379af9ce66b6505df27abc53762e1a0ca1d28"
+      }
+    ],
+    "combined_keep_bitmap_sha256": "552b568e31ae9df35e2c0771060c51bbde2fea30cec785b65a9e7849fcb048a6",
+    "keep_bitmap_encoding": "Per-image full-grid row-major booleans, numpy.packbits(bitorder=little); concatenate in selected-ID order",
+    "budget_scope": "unique available processed-grid training labels; not repeated crop consumption, native annotation effort or time",
+    "source_processed_file_sha256": [
+      {
+        "id": "ulaanbaatar__ulaanbaatar_46",
+        "rgb": "fa8a9d34135148f0cb5566c0fb92ce89ff7baf520a9244dd258a8e2c3178c232",
+        "label": "fd7b27f0f878ee7fa35bd135b8ed9d349801fed474567306c4b5d9ca181674f0"
+      },
+      {
+        "id": "vegas__vegas_32",
+        "rgb": "01a1609a7f63c05c1468f99786acb51d14fc7dc5d8de5f6e244ed713f8ac484c",
+        "label": "753b9f3ba0df3213b2efc106f9c7bae07ccb20c03cfe3ff49d0b162d5ef97c47"
+      },
+      {
+        "id": "dhaka__dhaka_48",
+        "rgb": "6793a156f435cad1a27a8354ba7f9f60d26cb6d488c3ee71f8903c05fc1d8313",
+        "label": "605f21466c7601431b7c0e4db9b4eedcce97657d8488f817aa88abbc46efa440"
+      },
+      {
+        "id": "chiangmai__chiangmai_10",
+        "rgb": "0b3c3106204ebd1698a8ac47e97891036f03ac2050ab3c005a95d0db83fb9941",
+        "label": "b0c42e8068029a0efe87f859a3887b0ed0edbcb2793cd5fd12172e0097f199cc"
+      },
+      {
+        "id": "austin__austin_31",
+        "rgb": "2f0113c91801b2ea69570f17fa780f328c084fcb9612469027aa7c7cbceac5db",
+        "label": "b37a3478bb18d4dd56ebaaf539c6e49b7acc26faaed416dddf7c8769df9ae422"
+      },
+      {
+        "id": "christchurch__christchurch_45",
+        "rgb": "65d1feaa9c86b0f2eef21d421b5cf4a942f2b995a38581a9a1044f494511932f",
+        "label": "01f5d053de118fd4634754dbb413ab8bc1784c9c2f3de10bb682b63b5be82c0d"
+      },
+      {
+        "id": "chicago__chicago_38",
+        "rgb": "80bf609e87a6caef0ff53205e919c5f5d1c1019415a53e72966b49d07aa073f4",
+        "label": "34f85c70e119252e1d207de3fe586f632b60a7c9aa0cc1b25964139867601212"
+      },
+      {
+        "id": "shanghai__shanghai_46",
+        "rgb": "7f944096e4efc063ef9fc1ea65450c5cec9ea8aa86f8b34d2960607ab164f175",
+        "label": "6e54d2bf3af6127b0b77030ced105fe91a381dd0e86fa6691116db319650d9f0"
+      },
+      {
+        "id": "kyoto__kyoto_15",
+        "rgb": "3aa90870b295af2c103d3f9ed70d0615137443d14ac657bbb57145bfcdda99c9",
+        "label": "1d4f5123379abc98335d6beb9758d97d5b4422adb6d9623a76e5c282c9a2e22d"
+      },
+      {
+        "id": "niamey__niamey_9",
+        "rgb": "9bb224018731570dab714854148d3ee155a1392ffd45369fc911a9cac25fdc24",
+        "label": "45572fd34a408cce2ab08869dd81f1a0db115b3a7e1cd42edf027065620b8f4e"
+      },
+      {
+        "id": "vienna__vienna_33",
+        "rgb": "1099ffb182616c5475f0b5d5bd3ca056bdb1a41cea8c58933e28592a29e61768",
+        "label": "817553a75fe93cb1e88374a66e6ec4e0b0c03e6a308b1e8679cc73a81a470335"
+      },
+      {
+        "id": "rotterdam__rotterdam_44",
+        "rgb": "84d9854cad698c4fdd4c013d28a184a1c2fc3896f61d4471375fabfe07004f94",
+        "label": "7f17fd66f7a03729994409bc4aae75e6af9ee0bc25a549a437791f630d650abf"
+      }
+    ]
+  },
+  "test": {
+    "images": [
+      {
+        "id": "abancay__abancay_32",
+        "region": "abancay",
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            12991,
+            11315,
+            1191,
+            6538,
+            0,
+            0,
+            77
+          ],
+          [
+            0,
+            6703,
+            47025,
+            5794,
+            150,
+            0,
+            0,
+            2479
+          ],
+          [
+            0,
+            168,
+            12377,
+            11624,
+            2,
+            0,
+            0,
+            312
+          ],
+          [
+            0,
+            5884,
+            1000,
+            10,
+            17256,
+            0,
+            0,
+            11
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1512,
+            104,
+            20,
+            1454,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            2014,
+            24807,
+            343,
+            34,
+            0,
+            0,
+            27509
+          ]
+        ]
+      },
+      {
+        "id": "abancay__abancay_41",
+        "region": "abancay",
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            24134,
+            15449,
+            1549,
+            2057,
+            0,
+            0,
+            724
+          ],
+          [
+            0,
+            15299,
+            50056,
+            4904,
+            405,
+            0,
+            0,
+            2771
+          ],
+          [
+            0,
+            313,
+            3708,
+            7678,
+            12,
+            0,
+            0,
+            55
+          ],
+          [
+            0,
+            11212,
+            1093,
+            39,
+            14018,
+            0,
+            0,
+            57
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            2247,
+            21688,
+            973,
+            26,
+            0,
+            0,
+            20237
+          ]
+        ]
+      },
+      {
+        "id": "abancay__abancay_45",
+        "region": "abancay",
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            37712,
+            15681,
+            1216,
+            16565,
+            0,
+            753,
+            556
+          ],
+          [
+            0,
+            5797,
+            14239,
+            1870,
+            489,
+            0,
+            0,
+            699
+          ],
+          [
+            0,
+            1329,
+            5921,
+            5217,
+            37,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            6574,
+            149,
+            29,
+            30124,
+            0,
+            19,
+            4
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            16453,
+            207,
+            0,
+            3824,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            2241,
+            16755,
+            1393,
+            136,
+            0,
+            0,
+            14713
+          ]
+        ]
+      },
+      {
+        "id": "al_qurnah__al_qurnah_33",
+        "region": "al_qurnah",
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            41561,
+            20747,
+            702,
+            2027,
+            0,
+            0,
+            983
+          ],
+          [
+            0,
+            4080,
+            49178,
+            8471,
+            81,
+            0,
+            0,
+            4134
+          ],
+          [
+            0,
+            47,
+            9417,
+            4093,
+            0,
+            0,
+            0,
+            1299
+          ],
+          [
+            0,
+            13949,
+            2324,
+            139,
+            9336,
+            0,
+            4,
+            128
+          ],
+          [
+            0,
+            2746,
+            219,
+            0,
+            962,
+            0,
+            25,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            72,
+            7843,
+            239,
+            0,
+            0,
+            0,
+            15898
+          ]
+        ]
+      },
+      {
+        "id": "al_qurnah__al_qurnah_49",
+        "region": "al_qurnah",
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            5775,
+            4069,
+            121,
+            860,
+            102,
+            80,
+            90
+          ],
+          [
+            0,
+            3399,
+            59258,
+            5595,
+            10,
+            0,
+            0,
+            1369
+          ],
+          [
+            0,
+            316,
+            10210,
+            4358,
+            22,
+            0,
+            0,
+            14
+          ],
+          [
+            0,
+            2891,
+            1636,
+            32,
+            448,
+            0,
+            0,
+            29
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            370,
+            572,
+            0,
+            0,
+            0,
+            0,
+            48
+          ],
+          [
+            0,
+            412,
+            75917,
+            1379,
+            6,
+            0,
+            0,
+            21316
+          ]
+        ]
+      },
+      {
+        "id": "al_qurnah__al_qurnah_60",
+        "region": "al_qurnah",
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            9752,
+            9920,
+            619,
+            578,
+            0,
+            0,
+            136
+          ],
+          [
+            0,
+            3820,
+            72851,
+            6736,
+            30,
+            0,
+            0,
+            3466
+          ],
+          [
+            0,
+            45,
+            9058,
+            8787,
+            0,
+            0,
+            0,
+            14
+          ],
+          [
+            0,
+            11155,
+            1871,
+            4,
+            3258,
+            0,
+            0,
+            42
+          ],
+          [
+            0,
+            928,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            998,
+            162,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            140,
+            27917,
+            21,
+            0,
+            0,
+            0,
+            28394
+          ]
+        ]
+      },
+      {
+        "id": "baybay__baybay_36",
+        "region": "baybay",
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            7640,
+            830,
+            125,
+            20185,
+            0,
+            0,
+            22
+          ],
+          [
+            0,
+            2392,
+            1320,
+            504,
+            1050,
+            0,
+            0,
+            119
+          ],
+          [
+            0,
+            2084,
+            2545,
+            1442,
+            322,
+            0,
+            0,
+            316
+          ],
+          [
+            0,
+            6726,
+            426,
+            112,
+            98921,
+            1,
+            0,
+            37
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            22337,
+            14168,
+            1909,
+            2165,
+            2531,
+            0,
+            32
+          ],
+          [
+            0,
+            1602,
+            2785,
+            948,
+            600,
+            0,
+            0,
+            4508
+          ]
+        ]
+      },
+      {
+        "id": "baybay__baybay_53",
+        "region": "baybay",
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            10254,
+            1417,
+            166,
+            9251,
+            24,
+            157,
+            1035
+          ],
+          [
+            0,
+            2744,
+            2746,
+            2808,
+            314,
+            18,
+            0,
+            2145
+          ],
+          [
+            0,
+            350,
+            440,
+            3701,
+            49,
+            484,
+            0,
+            266
+          ],
+          [
+            0,
+            8521,
+            376,
+            93,
+            45921,
+            14,
+            65,
+            462
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            31858,
+            28570,
+            21554,
+            735,
+            2681,
+            459,
+            720
+          ],
+          [
+            0,
+            2110,
+            2606,
+            36,
+            128,
+            990,
+            55,
+            14381
+          ]
+        ]
+      },
+      {
+        "id": "baybay__baybay_65",
+        "region": "baybay",
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            9116,
+            105,
+            6,
+            19055,
+            131,
+            0,
+            0
+          ],
+          [
+            0,
+            895,
+            287,
+            138,
+            90,
+            0,
+            0,
+            8
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            6974,
+            123,
+            20,
+            114072,
+            7,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            33192,
+            6007,
+            2122,
+            1397,
+            3812,
+            0,
+            0
+          ],
+          [
+            0,
+            1032,
+            711,
+            700,
+            274,
+            0,
+            0,
+            430
+          ]
+        ]
+      },
+      {
+        "id": "bielefeld__bielefeld_29",
+        "region": "bielefeld",
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            5524,
+            79255,
+            2497,
+            199,
+            0,
+            0,
+            4624
+          ],
+          [
+            0,
+            30,
+            6455,
+            3002,
+            0,
+            0,
+            0,
+            1085
+          ],
+          [
+            0,
+            0,
+            1882,
+            3544,
+            0,
+            0,
+            0,
+            718
+          ],
+          [
+            0,
+            3213,
+            65946,
+            497,
+            13,
+            0,
+            0,
+            2619
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            3293,
+            87,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            26,
+            5933,
+            117,
+            0,
+            0,
+            0,
+            10143
+          ]
+        ]
+      },
+      {
+        "id": "bielefeld__bielefeld_61",
+        "region": "bielefeld",
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            16812,
+            40991,
+            3283,
+            274,
+            13,
+            0,
+            4493
+          ],
+          [
+            0,
+            296,
+            8515,
+            2505,
+            0,
+            0,
+            0,
+            8525
+          ],
+          [
+            0,
+            31,
+            4578,
+            5885,
+            0,
+            0,
+            0,
+            1824
+          ],
+          [
+            0,
+            19226,
+            51809,
+            2218,
+            18,
+            0,
+            0,
+            1661
+          ],
+          [
+            0,
+            109,
+            88,
+            0,
+            0,
+            0,
+            0,
+            9
+          ],
+          [
+            0,
+            7201,
+            2140,
+            36,
+            0,
+            0,
+            0,
+            6
+          ],
+          [
+            0,
+            53,
+            3721,
+            203,
+            0,
+            0,
+            0,
+            14010
+          ]
+        ]
+      },
+      {
+        "id": "bielefeld__bielefeld_63",
+        "region": "bielefeld",
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            17481,
+            27816,
+            3667,
+            1550,
+            595,
+            1347,
+            15598
+          ],
+          [
+            0,
+            148,
+            11220,
+            2384,
+            11,
+            0,
+            0,
+            7886
+          ],
+          [
+            0,
+            0,
+            8390,
+            9088,
+            0,
+            0,
+            0,
+            2686
+          ],
+          [
+            0,
+            4689,
+            19594,
+            2026,
+            23,
+            0,
+            28,
+            3912
+          ],
+          [
+            0,
+            28,
+            30,
+            0,
+            0,
+            0,
+            0,
+            7
+          ],
+          [
+            0,
+            16164,
+            20652,
+            304,
+            0,
+            412,
+            0,
+            305
+          ],
+          [
+            0,
+            18,
+            2840,
+            88,
+            0,
+            0,
+            0,
+            19707
+          ]
+        ]
+      },
+      {
+        "id": "buenos_aires__buenos_aires_15",
+        "region": "buenos_aires",
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            18760,
+            14963,
+            1265,
+            1607,
+            0,
+            22,
+            782
+          ],
+          [
+            0,
+            4870,
+            30666,
+            6653,
+            361,
+            0,
+            0,
+            5474
+          ],
+          [
+            0,
+            245,
+            6161,
+            13309,
+            13,
+            0,
+            0,
+            307
+          ],
+          [
+            0,
+            12718,
+            3992,
+            230,
+            14298,
+            0,
+            0,
+            102
+          ],
+          [
+            0,
+            1,
+            38,
+            0,
+            2,
+            0,
+            0,
+            16
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            524,
+            14291,
+            37,
+            3,
+            0,
+            0,
+            48994
+          ]
+        ]
+      },
+      {
+        "id": "buenos_aires__buenos_aires_34",
+        "region": "buenos_aires",
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            19444,
+            6443,
+            344,
+            7905,
+            0,
+            326,
+            427
+          ],
+          [
+            0,
+            5683,
+            31117,
+            7826,
+            515,
+            0,
+            0,
+            6271
+          ],
+          [
+            0,
+            1853,
+            6508,
+            17005,
+            246,
+            0,
+            0,
+            272
+          ],
+          [
+            0,
+            3645,
+            447,
+            18,
+            10162,
+            0,
+            22,
+            26
+          ],
+          [
+            0,
+            3,
+            29,
+            0,
+            0,
+            0,
+            0,
+            418
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1504,
+            24801,
+            455,
+            131,
+            0,
+            0,
+            46858
+          ]
+        ]
+      },
+      {
+        "id": "buenos_aires__buenos_aires_45",
+        "region": "buenos_aires",
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            13121,
+            3033,
+            79,
+            5788,
+            0,
+            17,
+            162
+          ],
+          [
+            0,
+            7060,
+            21852,
+            4979,
+            995,
+            0,
+            0,
+            3796
+          ],
+          [
+            0,
+            2430,
+            6788,
+            13350,
+            928,
+            0,
+            0,
+            206
+          ],
+          [
+            0,
+            6451,
+            449,
+            24,
+            20566,
+            0,
+            1,
+            31
+          ],
+          [
+            0,
+            31,
+            108,
+            0,
+            0,
+            0,
+            0,
+            356
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1625,
+            35136,
+            4062,
+            67,
+            0,
+            0,
+            47213
+          ]
+        ]
+      },
+      {
+        "id": "chiclayo__chiclayo_23",
+        "region": "chiclayo",
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            3327,
+            5058,
+            43,
+            67,
+            0,
+            0,
+            182
+          ],
+          [
+            0,
+            79,
+            22008,
+            3933,
+            0,
+            0,
+            0,
+            9186
+          ],
+          [
+            0,
+            0,
+            25363,
+            11695,
+            0,
+            0,
+            0,
+            3807
+          ],
+          [
+            0,
+            997,
+            3961,
+            36,
+            107,
+            0,
+            0,
+            354
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            20526,
+            152,
+            0,
+            0,
+            0,
+            71185
+          ]
+        ]
+      },
+      {
+        "id": "chiclayo__chiclayo_25",
+        "region": "chiclayo",
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            12644,
+            245,
+            0,
+            4555,
+            2,
+            0,
+            0
+          ],
+          [
+            0,
+            3658,
+            60,
+            0,
+            122,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            9122,
+            1241,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1841,
+            0,
+            0,
+            14389,
+            8,
+            0,
+            0
+          ],
+          [
+            0,
+            326,
+            0,
+            0,
+            296,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            6598,
+            0,
+            0,
+            145312,
+            284,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "id": "chiclayo__chiclayo_4",
+        "region": "chiclayo",
+        "confusion": [
+          [
+            0,
+            105,
+            6186,
+            368,
+            0,
+            0,
+            0,
+            184
+          ],
+          [
+            0,
+            5860,
+            9040,
+            442,
+            856,
+            0,
+            0,
+            2245
+          ],
+          [
+            0,
+            3135,
+            26946,
+            1782,
+            132,
+            0,
+            0,
+            9571
+          ],
+          [
+            0,
+            121,
+            15198,
+            12502,
+            0,
+            0,
+            0,
+            2131
+          ],
+          [
+            0,
+            5518,
+            922,
+            1,
+            2374,
+            0,
+            322,
+            171
+          ],
+          [
+            0,
+            727,
+            2779,
+            1,
+            0,
+            0,
+            0,
+            60
+          ],
+          [
+            0,
+            9771,
+            7,
+            0,
+            0,
+            0,
+            48,
+            0
+          ],
+          [
+            0,
+            125,
+            51131,
+            1431,
+            13,
+            0,
+            0,
+            28499
+          ]
+        ]
+      },
+      {
+        "id": "coxsbazar__coxsbazar_14",
+        "region": "coxsbazar",
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            15056,
+            2677,
+            2850,
+            1035,
+            378,
+            10072,
+            0,
+            3906
+          ],
+          [
+            2971,
+            4,
+            786,
+            107,
+            145,
+            3640,
+            0,
+            1979
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            8132,
+            1449,
+            966,
+            261,
+            777,
+            5375,
+            0,
+            1114
+          ],
+          [
+            3043,
+            930,
+            0,
+            6,
+            74,
+            2067,
+            0,
+            2
+          ],
+          [
+            71522,
+            10300,
+            7583,
+            1336,
+            137,
+            33516,
+            0,
+            1265
+          ],
+          [
+            1123,
+            0,
+            259,
+            161,
+            6,
+            1279,
+            0,
+            2407
+          ]
+        ]
+      },
+      {
+        "id": "coxsbazar__coxsbazar_52",
+        "region": "coxsbazar",
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            9094,
+            8551,
+            3286,
+            11324,
+            2734,
+            49,
+            66
+          ],
+          [
+            0,
+            548,
+            3208,
+            3115,
+            928,
+            131,
+            0,
+            722
+          ],
+          [
+            0,
+            273,
+            895,
+            1061,
+            333,
+            558,
+            0,
+            0
+          ],
+          [
+            0,
+            3628,
+            1026,
+            676,
+            57199,
+            1011,
+            98,
+            26
+          ],
+          [
+            0,
+            353,
+            79,
+            514,
+            282,
+            1867,
+            0,
+            7
+          ],
+          [
+            0,
+            4414,
+            2072,
+            2224,
+            9924,
+            54848,
+            1509,
+            0
+          ],
+          [
+            0,
+            475,
+            2177,
+            4380,
+            1026,
+            1630,
+            0,
+            2348
+          ]
+        ]
+      },
+      {
+        "id": "coxsbazar__coxsbazar_53",
+        "region": "coxsbazar",
+        "confusion": [
+          [
+            0,
+            1932,
+            560,
+            614,
+            130,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            12795,
+            787,
+            282,
+            37909,
+            2787,
+            0,
+            0
+          ],
+          [
+            0,
+            377,
+            115,
+            219,
+            14,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            5764,
+            193,
+            42,
+            103595,
+            640,
+            0,
+            0
+          ],
+          [
+            0,
+            701,
+            377,
+            3528,
+            44,
+            3291,
+            0,
+            0
+          ],
+          [
+            0,
+            5034,
+            1292,
+            7597,
+            244,
+            5549,
+            0,
+            0
+          ],
+          [
+            0,
+            8,
+            263,
+            95,
+            0,
+            0,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "id": "dowa__dowa_12",
+        "region": "dowa",
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            18210,
+            8538,
+            345,
+            3807,
+            0,
+            0,
+            6447
+          ],
+          [
+            0,
+            420,
+            8109,
+            2364,
+            3,
+            0,
+            0,
+            674
+          ],
+          [
+            0,
+            190,
+            1673,
+            0,
+            0,
+            0,
+            0,
+            473
+          ],
+          [
+            0,
+            11985,
+            1772,
+            5,
+            12566,
+            0,
+            0,
+            328
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            4042,
+            79634,
+            11614,
+            40,
+            40,
+            0,
+            16411
+          ],
+          [
+            0,
+            2,
+            910,
+            0,
+            0,
+            0,
+            0,
+            1599
+          ]
+        ]
+      },
+      {
+        "id": "dowa__dowa_20",
+        "region": "dowa",
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            3192,
+            6482,
+            1935,
+            110,
+            0,
+            0,
+            43
+          ],
+          [
+            0,
+            5215,
+            11688,
+            6722,
+            36,
+            3,
+            0,
+            480
+          ],
+          [
+            0,
+            6,
+            740,
+            5691,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            7027,
+            2227,
+            327,
+            2613,
+            0,
+            3,
+            26
+          ],
+          [
+            0,
+            65,
+            596,
+            146,
+            5,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            123185,
+            6474,
+            1581,
+            1982,
+            31,
+            8,
+            360
+          ],
+          [
+            0,
+            146,
+            1244,
+            190,
+            0,
+            2,
+            0,
+            2183
+          ]
+        ]
+      },
+      {
+        "id": "dowa__dowa_9",
+        "region": "dowa",
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            3158,
+            1078,
+            1,
+            565,
+            29,
+            167,
+            96
+          ],
+          [
+            0,
+            31214,
+            41286,
+            3644,
+            149,
+            17,
+            49,
+            7548
+          ],
+          [
+            0,
+            4862,
+            8109,
+            3073,
+            69,
+            0,
+            0,
+            109
+          ],
+          [
+            0,
+            819,
+            350,
+            2,
+            1592,
+            0,
+            26,
+            24
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            11004,
+            1791,
+            223,
+            165,
+            15,
+            5,
+            75
+          ],
+          [
+            0,
+            7199,
+            28717,
+            3913,
+            35,
+            0,
+            18,
+            34018
+          ]
+        ]
+      },
+      {
+        "id": "kagera__kagera_24",
+        "region": "kagera",
+        "confusion": [
+          [
+            0,
+            4872,
+            141,
+            525,
+            4924,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            55267,
+            16251,
+            917,
+            49336,
+            27,
+            0,
+            15
+          ],
+          [
+            0,
+            2394,
+            1539,
+            2,
+            246,
+            0,
+            0,
+            18
+          ],
+          [
+            0,
+            2445,
+            874,
+            233,
+            1454,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            3404,
+            141,
+            30,
+            47513,
+            2,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1017,
+            4354,
+            365,
+            176,
+            0,
+            0,
+            2222
+          ]
+        ]
+      },
+      {
+        "id": "kagera__kagera_46",
+        "region": "kagera",
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            31892,
+            4111,
+            333,
+            21547,
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            6715,
+            2945,
+            220,
+            1932,
+            0,
+            0,
+            74
+          ],
+          [
+            0,
+            256,
+            1386,
+            2546,
+            29,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            12536,
+            453,
+            15,
+            60655,
+            0,
+            0,
+            28
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            31938,
+            1491,
+            609,
+            11413,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            1947,
+            2965,
+            4,
+            46,
+            0,
+            0,
+            2555
+          ]
+        ]
+      },
+      {
+        "id": "kagera__kagera_59",
+        "region": "kagera",
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            13209,
+            3779,
+            196,
+            5951,
+            0,
+            0,
+            3
+          ],
+          [
+            0,
+            4952,
+            2462,
+            408,
+            1173,
+            0,
+            0,
+            7
+          ],
+          [
+            0,
+            1180,
+            153,
+            1528,
+            387,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            9025,
+            438,
+            68,
+            53780,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            48815,
+            1323,
+            0,
+            43324,
+            2,
+            0,
+            0
+          ],
+          [
+            0,
+            2254,
+            3666,
+            1090,
+            83,
+            0,
+            0,
+            1447
+          ]
+        ]
+      },
+      {
+        "id": "kampala__kampala_1",
+        "region": "kampala",
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            25912,
+            438,
+            82,
+            85327,
+            1668,
+            0,
+            3
+          ],
+          [
+            0,
+            19586,
+            666,
+            331,
+            7833,
+            0,
+            0,
+            36
+          ],
+          [
+            0,
+            8272,
+            860,
+            2011,
+            1841,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            208,
+            0,
+            0,
+            18021,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            438,
+            0,
+            0,
+            339,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            9389,
+            8191,
+            2671,
+            1724,
+            4132,
+            0,
+            725
+          ]
+        ]
+      },
+      {
+        "id": "kampala__kampala_2",
+        "region": "kampala",
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            6736,
+            543,
+            7,
+            18737,
+            0,
+            1902,
+            8
+          ],
+          [
+            0,
+            24848,
+            26945,
+            6248,
+            2762,
+            2,
+            17,
+            1868
+          ],
+          [
+            0,
+            1865,
+            6383,
+            5862,
+            167,
+            5,
+            0,
+            23
+          ],
+          [
+            0,
+            2117,
+            102,
+            61,
+            9181,
+            0,
+            45,
+            11
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            25145,
+            32491,
+            2788,
+            1309,
+            0,
+            7,
+            22519
+          ]
+        ]
+      },
+      {
+        "id": "kampala__kampala_5",
+        "region": "kampala",
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            14944,
+            681,
+            260,
+            21614,
+            27,
+            685,
+            41
+          ],
+          [
+            0,
+            37734,
+            15523,
+            6850,
+            6562,
+            0,
+            0,
+            1472
+          ],
+          [
+            0,
+            1980,
+            4513,
+            5236,
+            96,
+            0,
+            0,
+            18
+          ],
+          [
+            0,
+            2087,
+            38,
+            51,
+            21756,
+            0,
+            49,
+            0
+          ],
+          [
+            0,
+            178,
+            574,
+            0,
+            26,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            26361,
+            11550,
+            4895,
+            1876,
+            0,
+            0,
+            13027
+          ]
+        ]
+      },
+      {
+        "id": "khartoum__khartoum_21",
+        "region": "khartoum",
+        "confusion": [
+          [
+            61297,
+            3285,
+            6706,
+            1096,
+            113,
+            680,
+            0,
+            3083
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            61199,
+            0,
+            7040,
+            965,
+            326,
+            623,
+            0,
+            8993
+          ],
+          [
+            8328,
+            0,
+            38,
+            0,
+            0,
+            0,
+            0,
+            18
+          ],
+          [
+            427,
+            0,
+            325,
+            14,
+            318,
+            21,
+            0,
+            874
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            27040,
+            34,
+            1581,
+            272,
+            3,
+            0,
+            0,
+            5958
+          ]
+        ]
+      },
+      {
+        "id": "khartoum__khartoum_33",
+        "region": "khartoum",
+        "confusion": [
+          [
+            0,
+            0,
+            1147,
+            156,
+            0,
+            0,
+            0,
+            276
+          ],
+          [
+            30,
+            1374,
+            1296,
+            0,
+            13,
+            0,
+            0,
+            609
+          ],
+          [
+            519,
+            704,
+            76989,
+            2780,
+            21,
+            0,
+            0,
+            20770
+          ],
+          [
+            3,
+            0,
+            24243,
+            2103,
+            0,
+            0,
+            0,
+            4570
+          ],
+          [
+            90,
+            3402,
+            2773,
+            0,
+            452,
+            0,
+            0,
+            2595
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            5,
+            5,
+            35147,
+            103,
+            0,
+            0,
+            0,
+            18529
+          ]
+        ]
+      },
+      {
+        "id": "khartoum__khartoum_53",
+        "region": "khartoum",
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            107,
+            59595,
+            1021,
+            0,
+            0,
+            0,
+            16878
+          ],
+          [
+            0,
+            185,
+            31711,
+            2916,
+            0,
+            0,
+            0,
+            6594
+          ],
+          [
+            0,
+            1602,
+            1841,
+            0,
+            0,
+            0,
+            0,
+            86
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            67019,
+            5,
+            0,
+            0,
+            0,
+            11144
+          ]
+        ]
+      },
+      {
+        "id": "kinshasa__kinshasa_1",
+        "region": "kinshasa",
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            57532,
+            15582,
+            4917,
+            12366,
+            0,
+            35,
+            3902
+          ],
+          [
+            0,
+            3275,
+            13679,
+            7770,
+            281,
+            0,
+            1,
+            10499
+          ],
+          [
+            0,
+            675,
+            1008,
+            3857,
+            146,
+            0,
+            0,
+            327
+          ],
+          [
+            0,
+            4631,
+            541,
+            201,
+            9854,
+            0,
+            14,
+            208
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            56,
+            783,
+            544,
+            0,
+            0,
+            0,
+            624
+          ],
+          [
+            0,
+            1005,
+            5913,
+            2607,
+            69,
+            0,
+            0,
+            25783
+          ]
+        ]
+      },
+      {
+        "id": "kinshasa__kinshasa_2",
+        "region": "kinshasa",
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            36650,
+            13508,
+            1687,
+            6435,
+            0,
+            2,
+            1453
+          ],
+          [
+            0,
+            4637,
+            34391,
+            10570,
+            275,
+            1,
+            1,
+            8807
+          ],
+          [
+            0,
+            642,
+            5442,
+            7371,
+            72,
+            0,
+            0,
+            277
+          ],
+          [
+            0,
+            4746,
+            687,
+            28,
+            7965,
+            0,
+            15,
+            36
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1328,
+            18953,
+            1227,
+            110,
+            0,
+            0,
+            31450
+          ]
+        ]
+      },
+      {
+        "id": "kinshasa__kinshasa_3",
+        "region": "kinshasa",
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            17572,
+            6027,
+            388,
+            7004,
+            0,
+            808,
+            1347
+          ],
+          [
+            0,
+            10788,
+            40931,
+            4454,
+            274,
+            1,
+            6,
+            11963
+          ],
+          [
+            0,
+            565,
+            5214,
+            3976,
+            27,
+            0,
+            0,
+            144
+          ],
+          [
+            0,
+            3325,
+            393,
+            16,
+            7410,
+            0,
+            49,
+            75
+          ],
+          [
+            0,
+            218,
+            956,
+            163,
+            31,
+            0,
+            0,
+            11
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            2219,
+            11600,
+            7323,
+            170,
+            1,
+            0,
+            36596
+          ]
+        ]
+      },
+      {
+        "id": "kitsap__kitsap_2",
+        "region": "kitsap",
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            43083,
+            11806,
+            11031,
+            1222,
+            3439,
+            223,
+            1451
+          ],
+          [
+            0,
+            453,
+            2044,
+            333,
+            0,
+            0,
+            0,
+            869
+          ],
+          [
+            0,
+            1159,
+            5342,
+            2057,
+            0,
+            34,
+            15,
+            2327
+          ],
+          [
+            0,
+            91227,
+            3895,
+            3498,
+            7431,
+            251,
+            71,
+            736
+          ],
+          [
+            0,
+            6,
+            19,
+            0,
+            0,
+            0,
+            0,
+            28
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            733,
+            1602,
+            861,
+            0,
+            8,
+            0,
+            3416
+          ]
+        ]
+      },
+      {
+        "id": "kitsap__kitsap_39",
+        "region": "kitsap",
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            33769,
+            9027,
+            1055,
+            2412,
+            15,
+            17,
+            3230
+          ],
+          [
+            0,
+            5528,
+            9961,
+            3006,
+            24,
+            0,
+            0,
+            3438
+          ],
+          [
+            0,
+            385,
+            8583,
+            17647,
+            2,
+            0,
+            0,
+            1681
+          ],
+          [
+            0,
+            28637,
+            9173,
+            725,
+            22647,
+            33,
+            60,
+            1204
+          ],
+          [
+            0,
+            1,
+            7,
+            0,
+            0,
+            0,
+            0,
+            38
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            5820,
+            9282,
+            987,
+            2,
+            0,
+            0,
+            22306
+          ]
+        ]
+      },
+      {
+        "id": "kitsap__kitsap_46",
+        "region": "kitsap",
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            61,
+            5473,
+            180,
+            0,
+            0,
+            0,
+            580
+          ],
+          [
+            0,
+            0,
+            1021,
+            0,
+            0,
+            0,
+            0,
+            66
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            69196,
+            31013,
+            10327,
+            54962,
+            6,
+            159,
+            27132
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            123,
+            0,
+            0,
+            0,
+            0,
+            405
+          ]
+        ]
+      },
+      {
+        "id": "monrovia__monrovia_26",
+        "region": "monrovia",
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            40688,
+            4474,
+            1282,
+            14776,
+            0,
+            39,
+            709
+          ],
+          [
+            0,
+            7859,
+            10384,
+            16939,
+            1040,
+            0,
+            0,
+            1975
+          ],
+          [
+            0,
+            974,
+            562,
+            441,
+            57,
+            0,
+            0,
+            18
+          ],
+          [
+            0,
+            9503,
+            322,
+            21,
+            29364,
+            0,
+            0,
+            35
+          ],
+          [
+            0,
+            978,
+            273,
+            42,
+            3,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            7934,
+            582,
+            365,
+            1011,
+            0,
+            0,
+            25
+          ],
+          [
+            0,
+            4879,
+            11812,
+            4531,
+            487,
+            0,
+            0,
+            26320
+          ]
+        ]
+      },
+      {
+        "id": "monrovia__monrovia_48",
+        "region": "monrovia",
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            29921,
+            3400,
+            59,
+            1951,
+            0,
+            0,
+            76
+          ],
+          [
+            0,
+            23860,
+            18023,
+            1000,
+            1051,
+            0,
+            0,
+            945
+          ],
+          [
+            0,
+            36,
+            4687,
+            3488,
+            0,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            5471,
+            250,
+            4,
+            4496,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            15909,
+            54822,
+            6964,
+            231,
+            0,
+            0,
+            24056
+          ]
+        ]
+      },
+      {
+        "id": "monrovia__monrovia_58",
+        "region": "monrovia",
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            17470,
+            1004,
+            45,
+            19437,
+            0,
+            465,
+            15
+          ],
+          [
+            0,
+            38942,
+            23184,
+            5687,
+            7407,
+            0,
+            0,
+            1547
+          ],
+          [
+            0,
+            2905,
+            3291,
+            10011,
+            895,
+            0,
+            0,
+            112
+          ],
+          [
+            0,
+            1336,
+            83,
+            17,
+            18882,
+            0,
+            0,
+            44
+          ],
+          [
+            0,
+            91,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            6847,
+            16027,
+            2877,
+            888,
+            6,
+            15,
+            21174
+          ]
+        ]
+      },
+      {
+        "id": "ngaoundere__ngaoundere_28",
+        "region": "ngaoundere",
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            25348,
+            5019,
+            264,
+            21390,
+            0,
+            0,
+            87
+          ],
+          [
+            0,
+            19870,
+            17267,
+            1137,
+            1438,
+            10,
+            5,
+            1139
+          ],
+          [
+            0,
+            2965,
+            2458,
+            949,
+            127,
+            6,
+            13,
+            0
+          ],
+          [
+            0,
+            3734,
+            349,
+            141,
+            16663,
+            0,
+            0,
+            3
+          ],
+          [
+            0,
+            49,
+            40,
+            0,
+            395,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            24300,
+            2365,
+            26,
+            30729,
+            0,
+            0,
+            17
+          ],
+          [
+            0,
+            995,
+            5228,
+            92,
+            6,
+            1,
+            0,
+            16079
+          ]
+        ]
+      },
+      {
+        "id": "ngaoundere__ngaoundere_31",
+        "region": "ngaoundere",
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            3845,
+            1142,
+            880,
+            3101,
+            57,
+            0,
+            6
+          ],
+          [
+            0,
+            7683,
+            7478,
+            1769,
+            1103,
+            0,
+            0,
+            253
+          ],
+          [
+            0,
+            444,
+            260,
+            3,
+            217,
+            0,
+            0,
+            70
+          ],
+          [
+            0,
+            8145,
+            446,
+            180,
+            31809,
+            132,
+            0,
+            2
+          ],
+          [
+            0,
+            655,
+            377,
+            589,
+            162,
+            37,
+            1,
+            0
+          ],
+          [
+            0,
+            38165,
+            4492,
+            818,
+            56253,
+            158,
+            20,
+            72
+          ],
+          [
+            0,
+            2309,
+            17541,
+            729,
+            49,
+            0,
+            0,
+            9251
+          ]
+        ]
+      },
+      {
+        "id": "ngaoundere__ngaoundere_34",
+        "region": "ngaoundere",
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            80567,
+            35134,
+            3704,
+            9013,
+            8,
+            0,
+            432
+          ],
+          [
+            0,
+            3365,
+            9728,
+            5342,
+            1859,
+            56,
+            1,
+            2040
+          ],
+          [
+            0,
+            324,
+            1298,
+            3526,
+            2,
+            0,
+            0,
+            425
+          ],
+          [
+            0,
+            6916,
+            1696,
+            249,
+            7057,
+            3,
+            0,
+            16
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            6205,
+            1709,
+            297,
+            4426,
+            0,
+            0,
+            71
+          ],
+          [
+            0,
+            220,
+            2586,
+            4,
+            5,
+            0,
+            0,
+            9100
+          ]
+        ]
+      },
+      {
+        "id": "paris__paris_38",
+        "region": "paris",
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            99516,
+            3429,
+            1552,
+            1223,
+            0,
+            1500,
+            0,
+            1314
+          ],
+          [
+            15905,
+            0,
+            104,
+            675,
+            0,
+            1859,
+            0,
+            1491
+          ],
+          [
+            10095,
+            0,
+            0,
+            745,
+            0,
+            76,
+            0,
+            253
+          ],
+          [
+            43061,
+            215,
+            1474,
+            27,
+            0,
+            332,
+            0,
+            100
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            10093,
+            0,
+            3,
+            131,
+            0,
+            896,
+            0,
+            4635
+          ]
+        ]
+      },
+      {
+        "id": "paris__paris_54",
+        "region": "paris",
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1975,
+            3551,
+            57672,
+            1090,
+            0,
+            0,
+            0,
+            23889
+          ],
+          [
+            14,
+            0,
+            17657,
+            1112,
+            0,
+            0,
+            0,
+            5530
+          ],
+          [
+            0,
+            0,
+            25383,
+            3529,
+            0,
+            0,
+            0,
+            5018
+          ],
+          [
+            263,
+            875,
+            10273,
+            234,
+            0,
+            0,
+            0,
+            2035
+          ],
+          [
+            0,
+            1,
+            20,
+            0,
+            0,
+            0,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            950,
+            0,
+            12343,
+            620,
+            0,
+            0,
+            0,
+            26665
+          ]
+        ]
+      },
+      {
+        "id": "paris__paris_61",
+        "region": "paris",
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            49661,
+            5331,
+            7539,
+            395,
+            2,
+            1491,
+            0,
+            5106
+          ],
+          [
+            27982,
+            819,
+            8173,
+            642,
+            0,
+            345,
+            0,
+            967
+          ],
+          [
+            21650,
+            0,
+            2394,
+            174,
+            0,
+            0,
+            0,
+            729
+          ],
+          [
+            22768,
+            1270,
+            6241,
+            251,
+            0,
+            496,
+            0,
+            727
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            23252,
+            3,
+            3081,
+            630,
+            0,
+            646,
+            0,
+            7932
+          ]
+        ]
+      },
+      {
+        "id": "rosario__rosario_1",
+        "region": "rosario",
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            13459,
+            24722,
+            6501,
+            3979,
+            15,
+            646,
+            4840
+          ],
+          [
+            0,
+            4414,
+            17561,
+            4104,
+            215,
+            0,
+            4,
+            6226
+          ],
+          [
+            0,
+            126,
+            4281,
+            8416,
+            15,
+            0,
+            0,
+            341
+          ],
+          [
+            0,
+            5394,
+            6372,
+            1138,
+            4764,
+            0,
+            154,
+            525
+          ],
+          [
+            0,
+            413,
+            298,
+            1354,
+            442,
+            268,
+            2827,
+            105
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            371,
+            11540,
+            894,
+            13,
+            0,
+            1,
+            54182
+          ]
+        ]
+      },
+      {
+        "id": "rosario__rosario_4",
+        "region": "rosario",
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            3476,
+            17395,
+            1783,
+            1253,
+            0,
+            176,
+            1295
+          ],
+          [
+            0,
+            3197,
+            39538,
+            5138,
+            137,
+            0,
+            1,
+            4795
+          ],
+          [
+            0,
+            171,
+            6351,
+            7218,
+            10,
+            0,
+            0,
+            426
+          ],
+          [
+            0,
+            8500,
+            16388,
+            1032,
+            3053,
+            0,
+            3,
+            517
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            443,
+            25205,
+            329,
+            14,
+            0,
+            0,
+            52860
+          ]
+        ]
+      },
+      {
+        "id": "rosario__rosario_9",
+        "region": "rosario",
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            44037,
+            9396,
+            982,
+            8561,
+            0,
+            9,
+            7668
+          ],
+          [
+            0,
+            20786,
+            21749,
+            7318,
+            676,
+            0,
+            34,
+            12121
+          ],
+          [
+            0,
+            5,
+            946,
+            8260,
+            0,
+            0,
+            0,
+            325
+          ],
+          [
+            0,
+            5785,
+            844,
+            609,
+            7881,
+            0,
+            0,
+            1093
+          ],
+          [
+            0,
+            103,
+            0,
+            0,
+            113,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            5323,
+            4330,
+            0,
+            0,
+            0,
+            61,
+            0
+          ],
+          [
+            0,
+            21,
+            830,
+            46,
+            0,
+            0,
+            0,
+            4830
+          ]
+        ]
+      },
+      {
+        "id": "san_tome__san_tome_17",
+        "region": "san_tome",
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            24719,
+            2487,
+            676,
+            35231,
+            5057,
+            982,
+            219
+          ],
+          [
+            0,
+            11105,
+            10758,
+            7135,
+            2362,
+            11,
+            8,
+            3218
+          ],
+          [
+            0,
+            1113,
+            1436,
+            8756,
+            221,
+            0,
+            0,
+            15
+          ],
+          [
+            0,
+            5853,
+            236,
+            92,
+            36771,
+            84,
+            26,
+            14
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            4496,
+            11478,
+            3607,
+            228,
+            4,
+            0,
+            22306
+          ]
+        ]
+      },
+      {
+        "id": "san_tome__san_tome_41",
+        "region": "san_tome",
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            17368,
+            1690,
+            198,
+            2431,
+            0,
+            0,
+            835
+          ],
+          [
+            0,
+            13469,
+            26916,
+            7865,
+            349,
+            7,
+            0,
+            3917
+          ],
+          [
+            0,
+            3238,
+            5253,
+            15347,
+            111,
+            139,
+            0,
+            54
+          ],
+          [
+            0,
+            27031,
+            366,
+            7,
+            25244,
+            0,
+            920,
+            123
+          ],
+          [
+            0,
+            216,
+            789,
+            472,
+            8,
+            0,
+            0,
+            104
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            9110,
+            10698,
+            5513,
+            294,
+            64,
+            0,
+            20558
+          ]
+        ]
+      },
+      {
+        "id": "san_tome__san_tome_46",
+        "region": "san_tome",
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            19003,
+            1178,
+            88,
+            3292,
+            0,
+            0,
+            518
+          ],
+          [
+            0,
+            20242,
+            32947,
+            7844,
+            820,
+            0,
+            0,
+            5980
+          ],
+          [
+            0,
+            2196,
+            9115,
+            14103,
+            21,
+            31,
+            0,
+            295
+          ],
+          [
+            0,
+            22191,
+            125,
+            13,
+            18296,
+            0,
+            0,
+            40
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            4096,
+            9489,
+            8219,
+            151,
+            0,
+            0,
+            20411
+          ]
+        ]
+      },
+      {
+        "id": "soriano__soriano_20",
+        "region": "soriano",
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            36496,
+            10185,
+            1663,
+            29241,
+            210,
+            51,
+            784
+          ],
+          [
+            0,
+            7652,
+            19346,
+            5109,
+            1152,
+            353,
+            216,
+            6253
+          ],
+          [
+            0,
+            877,
+            6478,
+            13313,
+            104,
+            5,
+            0,
+            3106
+          ],
+          [
+            0,
+            6331,
+            1892,
+            397,
+            17548,
+            82,
+            91,
+            161
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1178,
+            5990,
+            142,
+            123,
+            5,
+            0,
+            24170
+          ]
+        ]
+      },
+      {
+        "id": "soriano__soriano_5",
+        "region": "soriano",
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            36981,
+            7947,
+            662,
+            14483,
+            20,
+            61,
+            1288
+          ],
+          [
+            0,
+            8724,
+            30102,
+            9387,
+            1037,
+            0,
+            0,
+            10152
+          ],
+          [
+            0,
+            639,
+            9169,
+            13663,
+            40,
+            0,
+            0,
+            1412
+          ],
+          [
+            0,
+            6101,
+            2064,
+            185,
+            14068,
+            0,
+            0,
+            171
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1028,
+            8520,
+            918,
+            50,
+            0,
+            0,
+            21832
+          ]
+        ]
+      },
+      {
+        "id": "soriano__soriano_7",
+        "region": "soriano",
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            11279,
+            6296,
+            402,
+            11267,
+            0,
+            1,
+            446
+          ],
+          [
+            0,
+            4140,
+            24586,
+            4770,
+            766,
+            0,
+            0,
+            3827
+          ],
+          [
+            0,
+            578,
+            11520,
+            8150,
+            31,
+            0,
+            0,
+            414
+          ],
+          [
+            0,
+            9979,
+            5314,
+            141,
+            22606,
+            0,
+            4,
+            215
+          ],
+          [
+            0,
+            0,
+            7,
+            0,
+            0,
+            0,
+            0,
+            50
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            2023,
+            26940,
+            957,
+            269,
+            0,
+            0,
+            43726
+          ]
+        ]
+      },
+      {
+        "id": "svaneti__svaneti_19",
+        "region": "svaneti",
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            6351,
+            0,
+            137,
+            89451,
+            9985,
+            2125,
+            1
+          ],
+          [
+            0,
+            1365,
+            585,
+            4672,
+            1453,
+            964,
+            0,
+            0
+          ],
+          [
+            0,
+            1702,
+            64,
+            232,
+            59,
+            21,
+            0,
+            0
+          ],
+          [
+            0,
+            80,
+            0,
+            0,
+            12558,
+            19,
+            85,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            14910,
+            7558,
+            14285,
+            11171,
+            8387,
+            0,
+            0
+          ],
+          [
+            0,
+            96,
+            14,
+            26,
+            61,
+            0,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "id": "svaneti__svaneti_45",
+        "region": "svaneti",
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            16467,
+            238,
+            3,
+            40007,
+            3610,
+            0,
+            0
+          ],
+          [
+            0,
+            2270,
+            44,
+            5,
+            1045,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            540,
+            0,
+            18,
+            349,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            432,
+            0,
+            0,
+            39681,
+            254,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            3575,
+            16,
+            0,
+            66738,
+            9068,
+            0,
+            0
+          ],
+          [
+            0,
+            168,
+            412,
+            145,
+            4,
+            0,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "id": "svaneti__svaneti_7",
+        "region": "svaneti",
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            22147,
+            629,
+            296,
+            72954,
+            867,
+            0,
+            0
+          ],
+          [
+            0,
+            8125,
+            1805,
+            370,
+            2101,
+            0,
+            0,
+            16
+          ],
+          [
+            0,
+            6384,
+            1150,
+            1851,
+            116,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            3319,
+            2,
+            0,
+            66469,
+            3,
+            0,
+            0
+          ],
+          [
+            0,
+            76,
+            0,
+            0,
+            25,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            398,
+            0,
+            0,
+            84,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            5715,
+            2837,
+            2353,
+            372,
+            0,
+            0,
+            240
+          ]
+        ]
+      },
+      {
+        "id": "tokyo__tokyo_13",
+        "region": "tokyo",
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            109,
+            13860,
+            2936,
+            0,
+            0,
+            0,
+            1410
+          ],
+          [
+            0,
+            0,
+            73751,
+            1282,
+            0,
+            0,
+            0,
+            15888
+          ],
+          [
+            0,
+            0,
+            16255,
+            574,
+            0,
+            0,
+            0,
+            1320
+          ],
+          [
+            0,
+            6,
+            5607,
+            209,
+            0,
+            0,
+            0,
+            253
+          ],
+          [
+            0,
+            0,
+            979,
+            1293,
+            0,
+            0,
+            0,
+            180
+          ],
+          [
+            0,
+            1157,
+            14153,
+            2235,
+            0,
+            0,
+            0,
+            2146
+          ],
+          [
+            0,
+            0,
+            24039,
+            84,
+            0,
+            0,
+            0,
+            20978
+          ]
+        ]
+      },
+      {
+        "id": "tokyo__tokyo_29",
+        "region": "tokyo",
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            741,
+            1589,
+            60,
+            31,
+            0,
+            0,
+            341
+          ],
+          [
+            74,
+            378,
+            38030,
+            2697,
+            11,
+            0,
+            0,
+            12891
+          ],
+          [
+            51,
+            74,
+            37644,
+            4686,
+            0,
+            0,
+            0,
+            11153
+          ],
+          [
+            31,
+            946,
+            2461,
+            27,
+            54,
+            0,
+            0,
+            1460
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            996,
+            55482,
+            2012,
+            158,
+            0,
+            0,
+            26625
+          ]
+        ]
+      },
+      {
+        "id": "tokyo__tokyo_40",
+        "region": "tokyo",
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            8303,
+            15038,
+            942,
+            30,
+            0,
+            0,
+            967
+          ],
+          [
+            0,
+            26,
+            44944,
+            1076,
+            0,
+            0,
+            0,
+            11759
+          ],
+          [
+            0,
+            0,
+            25104,
+            2184,
+            0,
+            0,
+            0,
+            3086
+          ],
+          [
+            0,
+            8470,
+            14617,
+            545,
+            1203,
+            0,
+            0,
+            2527
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            72,
+            1425,
+            11328,
+            1741,
+            18,
+            0,
+            0,
+            1389
+          ],
+          [
+            0,
+            11,
+            19790,
+            469,
+            0,
+            0,
+            0,
+            23640
+          ]
+        ]
+      },
+      {
+        "id": "tyrolw__tyrolw_4",
+        "region": "tyrolw",
+        "confusion": [
+          [
+            162,
+            0,
+            0,
+            0,
+            0,
+            2036,
+            0,
+            1345
+          ],
+          [
+            406,
+            338,
+            707,
+            26,
+            13,
+            3525,
+            0,
+            1040
+          ],
+          [
+            137,
+            61,
+            16,
+            0,
+            0,
+            815,
+            0,
+            143
+          ],
+          [
+            17,
+            0,
+            0,
+            0,
+            0,
+            840,
+            0,
+            17
+          ],
+          [
+            2963,
+            3750,
+            5303,
+            4974,
+            246,
+            39864,
+            75,
+            55522
+          ],
+          [
+            97,
+            0,
+            0,
+            0,
+            0,
+            3626,
+            0,
+            116
+          ],
+          [
+            41314,
+            12927,
+            6959,
+            0,
+            2,
+            9826,
+            32,
+            467
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            393,
+            0,
+            576
+          ]
+        ]
+      },
+      {
+        "id": "tyrolw__tyrolw_57",
+        "region": "tyrolw",
+        "confusion": [
+          [
+            0,
+            0,
+            2475,
+            264,
+            0,
+            0,
+            0,
+            978
+          ],
+          [
+            2,
+            296,
+            9941,
+            1999,
+            164,
+            850,
+            5,
+            1175
+          ],
+          [
+            7,
+            0,
+            4616,
+            1774,
+            0,
+            1754,
+            0,
+            4480
+          ],
+          [
+            1,
+            0,
+            18173,
+            2022,
+            0,
+            2356,
+            0,
+            4634
+          ],
+          [
+            1,
+            2710,
+            26401,
+            7261,
+            16292,
+            59,
+            9,
+            8564
+          ],
+          [
+            333,
+            0,
+            18230,
+            512,
+            0,
+            291,
+            0,
+            23556
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            12,
+            0,
+            2792,
+            1986,
+            0,
+            3115,
+            0,
+            30607
+          ]
+        ]
+      },
+      {
+        "id": "tyrolw__tyrolw_68",
+        "region": "tyrolw",
+        "confusion": [
+          [
+            39,
+            0,
+            0,
+            0,
+            0,
+            1972,
+            0,
+            60
+          ],
+          [
+            14331,
+            1513,
+            694,
+            445,
+            0,
+            13697,
+            0,
+            8234
+          ],
+          [
+            568,
+            0,
+            0,
+            0,
+            0,
+            140,
+            0,
+            0
+          ],
+          [
+            3025,
+            0,
+            61,
+            161,
+            0,
+            1628,
+            0,
+            3259
+          ],
+          [
+            28504,
+            579,
+            38829,
+            4701,
+            0,
+            6824,
+            0,
+            56659
+          ],
+          [
+            3664,
+            0,
+            0,
+            0,
+            0,
+            407,
+            0,
+            3160
+          ],
+          [
+            5399,
+            1268,
+            0,
+            0,
+            0,
+            666,
+            0,
+            10
+          ],
+          [
+            35,
+            3,
+            17,
+            21,
+            0,
+            10,
+            0,
+            121
+          ]
+        ]
+      },
+      {
+        "id": "western__western_14",
+        "region": "western",
+        "confusion": [
+          [
+            0,
+            1112,
+            3619,
+            0,
+            18,
+            0,
+            0,
+            1948
+          ],
+          [
+            0,
+            37407,
+            11048,
+            7198,
+            35217,
+            87,
+            693,
+            16052
+          ],
+          [
+            0,
+            790,
+            1380,
+            720,
+            61,
+            0,
+            0,
+            1645
+          ],
+          [
+            0,
+            184,
+            538,
+            1045,
+            14,
+            0,
+            0,
+            1726
+          ],
+          [
+            0,
+            6324,
+            511,
+            2177,
+            29656,
+            0,
+            127,
+            1028
+          ],
+          [
+            0,
+            5380,
+            28241,
+            6,
+            188,
+            0,
+            0,
+            616
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            187
+          ]
+        ]
+      },
+      {
+        "id": "western__western_18",
+        "region": "western",
+        "confusion": [
+          [
+            0,
+            1087,
+            3080,
+            0,
+            0,
+            0,
+            0,
+            4110
+          ],
+          [
+            0,
+            23292,
+            17167,
+            5553,
+            21496,
+            64,
+            524,
+            9117
+          ],
+          [
+            0,
+            742,
+            21927,
+            2666,
+            77,
+            0,
+            0,
+            9995
+          ],
+          [
+            0,
+            511,
+            5832,
+            2112,
+            0,
+            0,
+            0,
+            528
+          ],
+          [
+            0,
+            6406,
+            6989,
+            745,
+            29347,
+            0,
+            433,
+            358
+          ],
+          [
+            0,
+            9840,
+            4930,
+            91,
+            340,
+            0,
+            21,
+            355
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            17,
+            1859,
+            9,
+            0,
+            0,
+            0,
+            9084
+          ]
+        ]
+      },
+      {
+        "id": "western__western_20",
+        "region": "western",
+        "confusion": [
+          [
+            0,
+            298,
+            7506,
+            738,
+            7,
+            0,
+            0,
+            8687
+          ],
+          [
+            0,
+            23015,
+            7868,
+            9407,
+            22191,
+            43,
+            92,
+            11632
+          ],
+          [
+            0,
+            116,
+            35,
+            3,
+            0,
+            0,
+            3,
+            96
+          ],
+          [
+            0,
+            718,
+            2484,
+            1038,
+            20,
+            0,
+            0,
+            141
+          ],
+          [
+            0,
+            3781,
+            1219,
+            6504,
+            34705,
+            283,
+            1111,
+            2818
+          ],
+          [
+            0,
+            15303,
+            30500,
+            42,
+            497,
+            13,
+            28,
+            3304
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "id": "zanzibar__zanzibar_131",
+        "region": "zanzibar",
+        "confusion": [
+          [
+            0,
+            12,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            69990,
+            12022,
+            695,
+            27866,
+            0,
+            0,
+            14
+          ],
+          [
+            0,
+            6339,
+            3161,
+            50,
+            1023,
+            0,
+            0,
+            141
+          ],
+          [
+            0,
+            1932,
+            510,
+            98,
+            285,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            10074,
+            926,
+            307,
+            51195,
+            0,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            5475,
+            6005,
+            27,
+            531,
+            0,
+            0,
+            2020
+          ]
+        ]
+      },
+      {
+        "id": "zanzibar__zanzibar_133",
+        "region": "zanzibar",
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            96246,
+            16970,
+            5516,
+            17807,
+            0,
+            0,
+            486
+          ],
+          [
+            0,
+            3323,
+            4721,
+            2350,
+            234,
+            0,
+            0,
+            338
+          ],
+          [
+            0,
+            172,
+            1344,
+            2885,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            20783,
+            1016,
+            68,
+            22348,
+            0,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            560,
+            2134,
+            1090,
+            95,
+            0,
+            0,
+            213
+          ]
+        ]
+      },
+      {
+        "id": "zanzibar__zanzibar_36",
+        "region": "zanzibar",
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            17375,
+            732,
+            1261,
+            32377,
+            191,
+            0,
+            82
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            34,
+            0,
+            0,
+            122,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            6142,
+            17,
+            128,
+            65950,
+            40,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            39703,
+            1039,
+            1330,
+            33464,
+            512,
+            0,
+            6
+          ],
+          [
+            0,
+            69,
+            9,
+            64,
+            4,
+            0,
+            0,
+            53
+          ]
+        ]
+      }
+    ],
+    "aggregate": {
+      "regions": {
+        "abancay": {
+          "miou": 0.3380677013804456,
+          "union_class_miou": 0.3380677013804456,
+          "class_iou": [
+            null,
+            0.33076542293174926,
+            0.38527829885025644,
+            0.3601180859501219,
+            0.5150493255486209,
+            null,
+            0.0,
+            0.43719507500192495
+          ],
+          "valid_classes": 6,
+          "union_valid_classes": 6,
+          "primary_class_set": "classes present in ground truth; fixed across strategies",
+          "pixel_accuracy": 0.5555992904974489,
+          "evaluated_pixels": 602112
+        },
+        "al_qurnah": {
+          "miou": 0.2401546676531399,
+          "union_class_miou": 0.2401546676531399,
+          "class_iou": [
+            null,
+            0.3978535089553279,
+            0.4483306954199228,
+            0.24029105913184087,
+            0.2516594627971596,
+            0.0,
+            0.0,
+            0.34294794726772815
+          ],
+          "valid_classes": 7,
+          "union_valid_classes": 7,
+          "primary_class_set": "classes present in ground truth; fixed across strategies",
+          "pixel_accuracy": 0.5551508689413265,
+          "evaluated_pixels": 602112
+        },
+        "baybay": {
+          "miou": 0.261648922133938,
+          "union_class_miou": 0.22427050468623255,
+          "class_iou": [
+            null,
+            0.13349082713901628,
+            0.0553204468336574,
+            0.11894079555966698,
+            0.764917899115473,
+            0.0,
+            0.0026001835423676966,
+            0.4946233806134467
+          ],
+          "valid_classes": 6,
+          "union_valid_classes": 7,
+          "primary_class_set": "classes present in ground truth; fixed across strategies",
+          "pixel_accuracy": 0.5234873246173469,
+          "evaluated_pixels": 602112
+        },
+        "bielefeld": {
+          "miou": 0.12855027076647918,
+          "union_class_miou": 0.12855027076647918,
+          "class_iou": [
+            null,
+            0.14192782593817727,
+            0.06753237376680574,
+            0.30131970774412964,
+            0.0003007920858260085,
+            0.0,
+            0.0,
+            0.38877119583041564
+          ],
+          "valid_classes": 7,
+          "union_valid_classes": 7,
+          "primary_class_set": "classes present in ground truth; fixed across strategies",
+          "pixel_accuracy": 0.21337732523271016,
+          "evaluated_pixels": 601929
+        },
+        "buenos_aires": {
+          "miou": 0.36861789533956685,
+          "union_class_miou": 0.315958196005343,
+          "class_iou": [
+            null,
+            0.3585875875945812,
+            0.3200665888521077,
+            0.45676984716454133,
+            0.4907840380192494,
+            0.0,
+            0.0,
+            0.5854993104069213
+          ],
+          "valid_classes": 6,
+          "union_valid_classes": 7,
+          "primary_class_set": "classes present in ground truth; fixed across strategies",
+          "pixel_accuracy": 0.6090478183460885,
+          "evaluated_pixels": 602112
+        },
+        "chiclayo": {
+          "miou": 0.16649530924602307,
+          "union_class_miou": 0.16649530924602307,
+          "class_iou": [
+            0.0,
+            0.25183125886790714,
+            0.22051658125964485,
+            0.2707508112341949,
+            0.09251185873707878,
+            0.0,
+            0.0002956720996414976,
+            0.4960562917697173
+          ],
+          "valid_classes": 8,
+          "union_valid_classes": 8,
+          "primary_class_set": "classes present in ground truth; fixed across strategies",
+          "pixel_accuracy": 0.3627308157689974,
+          "evaluated_pixels": 583474
+        },
+        "coxsbazar": {
+          "miou": 0.14228570298903764,
+          "union_class_miou": 0.14228570298903764,
+          "class_iou": [
+            0.0,
+            0.15180314902241887,
+            0.08396166656449866,
+            0.03254800908031168,
+            0.6339349472279986,
+            0.05126476744598574,
+            0.006843133964890959,
+            0.17792995060619668
+          ],
+          "valid_classes": 8,
+          "union_valid_classes": 8,
+          "primary_class_set": "classes present in ground truth; fixed across strategies",
+          "pixel_accuracy": 0.34238635242742954,
+          "evaluated_pixels": 598143
+        },
+        "dowa": {
+          "miou": 0.16424028976310517,
+          "union_class_miou": 0.1642402897631052,
+          "class_iou": [
+            null,
+            0.0938895345281057,
+            0.22627020699669576,
+            0.15108521385350043,
+            0.3446709688026635,
+            0.0,
+            5.020409897158834e-05,
+            0.33371590006179924
+          ],
+          "valid_classes": 7,
+          "union_valid_classes": 7,
+          "primary_class_set": "classes present in ground truth; fixed across strategies",
+          "pixel_accuracy": 0.25680178014026706,
+          "evaluated_pixels": 580179
+        },
+        "kagera": {
+          "miou": 0.19977359452686402,
+          "union_class_miou": 0.17480189521100603,
+          "class_iou": [
+            0.0,
+            0.29819422079349706,
+            0.1042739405221203,
+            0.24963774416043585,
+            0.4905879858229075,
+            0.0,
+            0.0,
+            0.2557212703890875
+          ],
+          "valid_classes": 7,
+          "union_valid_classes": 8,
+          "primary_class_set": "classes present in ground truth; fixed across strategies",
+          "pixel_accuracy": 0.4647322822613329,
+          "evaluated_pixels": 602052
+        },
+        "kampala": {
+          "miou": 0.16477453378121648,
+          "union_class_miou": 0.14123531466961411,
+          "class_iou": [
+            null,
+            0.14004937864711925,
+            0.1911569841389427,
+            0.2068448624084827,
+            0.24006080219672452,
+            0.0,
+            0.0,
+            0.21053517529602972
+          ],
+          "valid_classes": 6,
+          "union_valid_classes": 7,
+          "primary_class_set": "classes present in ground truth; fixed across strategies",
+          "pixel_accuracy": 0.3140013818027211,
+          "evaluated_pixels": 602112
+        },
+        "khartoum": {
+          "miou": 0.17525915261670366,
+          "union_class_miou": 0.15022213081431743,
+          "class_iou": [
+            0.3493104627307955,
+            0.10865095682429227,
+            0.33218844612207044,
+            0.05760953157103339,
+            0.050339958158995814,
+            0.0,
+            null,
+            0.15345556029303462
+          ],
+          "valid_classes": 6,
+          "union_valid_classes": 7,
+          "primary_class_set": "classes present in ground truth; fixed across strategies",
+          "pixel_accuracy": 0.41144228613189604,
+          "evaluated_pixels": 602065
+        },
+        "kinshasa": {
+          "miou": 0.27767635772514243,
+          "union_class_miou": 0.27767635772514243,
+          "class_iou": [
+            null,
+            0.49596804615555307,
+            0.3571311057698095,
+            0.21223373070158297,
+            0.37401784920093695,
+            0.0,
+            0.0,
+            0.5043837722481145
+          ],
+          "valid_classes": 7,
+          "union_valid_classes": 7,
+          "primary_class_set": "classes present in ground truth; fixed across strategies",
+          "pixel_accuracy": 0.5882692766937784,
+          "evaluated_pixels": 569496
+        },
+        "kitsap": {
+          "miou": 0.19060624687819674,
+          "union_class_miou": 0.16337678303845435,
+          "class_iou": [
+            null,
+            0.23221192020989134,
+            0.10669353253390997,
+            0.27660560117919564,
+            0.2323211626985753,
+            0.0,
+            0.0,
+            0.29580526464760826
+          ],
+          "valid_classes": 6,
+          "union_valid_classes": 7,
+          "primary_class_set": "classes present in ground truth; fixed across strategies",
+          "pixel_accuracy": 0.3667477195569995,
+          "evaluated_pixels": 602076
+        },
+        "monrovia": {
+          "miou": 0.21910552896549326,
+          "union_class_miou": 0.21910552896549326,
+          "class_iou": [
+            null,
+            0.3344750982588718,
+            0.1973400348847884,
+            0.20709531732826242,
+            0.44297184707384263,
+            0.0,
+            0.0,
+            0.35185640521268746
+          ],
+          "valid_classes": 7,
+          "union_valid_classes": 7,
+          "primary_class_set": "classes present in ground truth; fixed across strategies",
+          "pixel_accuracy": 0.4615453603316326,
+          "evaluated_pixels": 602112
+        },
+        "ngaoundere": {
+          "miou": 0.21306326184860908,
+          "union_class_miou": 0.21306326184860908,
+          "class_iou": [
+            null,
+            0.34696735484809116,
+            0.2106083099649933,
+            0.1527910468131568,
+            0.26720271778881316,
+            0.013523391812865496,
+            0.00011754818006030222,
+            0.5002324635322833
+          ],
+          "valid_classes": 7,
+          "union_valid_classes": 7,
+          "primary_class_set": "classes present in ground truth; fixed across strategies",
+          "pixel_accuracy": 0.39868167691231166,
+          "evaluated_pixels": 598791
+        },
+        "paris": {
+          "miou": 0.08472061405606618,
+          "union_class_miou": 0.07261766919091386,
+          "class_iou": [
+            0.0,
+            0.04569462435834147,
+            0.12276449704142012,
+            0.05770927396336084,
+            0.0,
+            0.0,
+            null,
+            0.28215528897327463
+          ],
+          "valid_classes": 6,
+          "union_valid_classes": 7,
+          "primary_class_set": "classes present in ground truth; fixed across strategies",
+          "pixel_accuracy": 0.13606430772041422,
+          "evaluated_pixels": 602105
+        },
+        "rosario": {
+          "miou": 0.25183136104753095,
+          "union_class_miou": 0.25183136104753095,
+          "class_iou": [
+            null,
+            0.29706935613535046,
+            0.28474027850002886,
+            0.3507685080520853,
+            0.19750880724710618,
+            0.04513304142809026,
+            0.004495541307391849,
+            0.5831039946626637
+          ],
+          "valid_classes": 7,
+          "union_valid_classes": 7,
+          "primary_class_set": "classes present in ground truth; fixed across strategies",
+          "pixel_accuracy": 0.5148843680588171,
+          "evaluated_pixels": 566366
+        },
+        "san_tome": {
+          "miou": 0.3056894077932868,
+          "union_class_miou": 0.2620194923942459,
+          "class_iou": [
+            null,
+            0.25419426783396026,
+            0.33742647866866066,
+            0.3703100617409594,
+            0.4389754633754393,
+            0.0,
+            0.0,
+            0.4332301751407014
+          ],
+          "valid_classes": 6,
+          "union_valid_classes": 7,
+          "primary_class_set": "classes present in ground truth; fixed across strategies",
+          "pixel_accuracy": 0.5206722337372449,
+          "evaluated_pixels": 602112
+        },
+        "soriano": {
+          "miou": 0.330001667263254,
+          "union_class_miou": 0.28285857193993197,
+          "class_iou": [
+            null,
+            0.38699072657787437,
+            0.30861130332563547,
+            0.37276084557262923,
+            0.3716049974985094,
+            0.0,
+            0.0,
+            0.5400421306048752
+          ],
+          "valid_classes": 6,
+          "union_valid_classes": 7,
+          "primary_class_set": "classes present in ground truth; fixed across strategies",
+          "pixel_accuracy": 0.5611348054846939,
+          "evaluated_pixels": 602112
+        },
+        "svaneti": {
+          "miou": 0.08249879326525049,
+          "union_class_miou": 0.08249879326525049,
+          "class_iou": [
+            null,
+            0.14300798605699966,
+            0.06449390567037626,
+            0.06041175455747887,
+            0.29031626933273336,
+            0.0,
+            0.0,
+            0.019261637239165328
+          ],
+          "valid_classes": 7,
+          "union_valid_classes": 7,
+          "primary_class_set": "classes present in ground truth; fixed across strategies",
+          "pixel_accuracy": 0.2933560892356455,
+          "evaluated_pixels": 574210
+        },
+        "tokyo": {
+          "miou": 0.12618814381807292,
+          "union_class_miou": 0.1104146258408138,
+          "class_iou": [
+            0.0,
+            0.15293999699233043,
+            0.3401497114506037,
+            0.06216854992942984,
+            0.03251086281812539,
+            0.0,
+            0.0,
+            0.29554788553602096
+          ],
+          "valid_classes": 7,
+          "union_valid_classes": 8,
+          "primary_class_set": "classes present in ground truth; fixed across strategies",
+          "pixel_accuracy": 0.4082662361819728,
+          "evaluated_pixels": 602112
+        },
+        "tyrolw": {
+          "miou": 0.04089947959014997,
+          "union_class_miou": 0.04089947959014997,
+          "class_iou": [
+            0.001824834085358657,
+            0.026605038476313212,
+            0.03192435196735886,
+            0.036288378742291,
+            0.05330213459933155,
+            0.029952480569679002,
+            0.00040527362301954177,
+            0.14689334465784792
+          ],
+          "valid_classes": 8,
+          "union_valid_classes": 8,
+          "primary_class_set": "classes present in ground truth; fixed across strategies",
+          "pixel_accuracy": 0.10191553572051415,
+          "evaluated_pixels": 602077
+        },
+        "western": {
+          "miou": 0.14683227268219806,
+          "union_class_miou": 0.1284782385969233,
+          "class_iou": [
+            0.0,
+            0.2685103216453049,
+            0.13442213225681987,
+            0.0795260663507109,
+            0.43656591256382543,
+            0.00012977678393163758,
+            0.0,
+            0.1086716991747937
+          ],
+          "valid_classes": 7,
+          "union_valid_classes": 8,
+          "primary_class_set": "classes present in ground truth; fixed across strategies",
+          "pixel_accuracy": 0.36074343358147004,
+          "evaluated_pixels": 593893
+        },
+        "zanzibar": {
+          "miou": 0.1899075106417904,
+          "union_class_miou": 0.16616907181156662,
+          "class_iou": [
+            0.0,
+            0.4657246200361194,
+            0.12238180265507337,
+            0.1471778172488652,
+            0.4763909949045804,
+            0.0,
+            0.0,
+            0.11767733964789458
+          ],
+          "valid_classes": 7,
+          "union_valid_classes": 8,
+          "primary_class_set": "classes present in ground truth; fixed across strategies",
+          "pixel_accuracy": 0.5584592235331632,
+          "evaluated_pixels": 602112
+        }
+      },
+      "equal_region_miou": 0.20037036190714838,
+      "worst_region_miou": 0.04089947959014997,
+      "pooled_pixel_scores": {
+        "miou": 0.1943291940681967,
+        "union_class_miou": 0.1943291940681967,
+        "class_iou": [
+          0.08011182150245164,
+          0.25793600405445877,
+          0.2540864480614196,
+          0.21792478268127013,
+          0.35105126676354886,
+          0.024477731390571113,
+          0.001363450612152406,
+          0.3676820474797011
+        ],
+        "valid_classes": 8,
+        "union_valid_classes": 8,
+        "primary_class_set": "classes present in ground truth; fixed across strategies",
+        "pixel_accuracy": 0.4115716797957977,
+        "evaluated_pixels": 14297976
+      },
+      "equal_region_union_miou": 0.18572046743499038
+    }
+  },
+  "validation": {
+    "images": [
+      {
+        "id": "aachen__aachen_1",
+        "region": "aachen",
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            6082,
+            847,
+            2102,
+            17035,
+            656,
+            1047,
+            2960
+          ],
+          [
+            0,
+            278,
+            1686,
+            1617,
+            432,
+            421,
+            0,
+            4216
+          ],
+          [
+            0,
+            0,
+            0,
+            352,
+            3,
+            0,
+            0,
+            434
+          ],
+          [
+            0,
+            304,
+            205,
+            1522,
+            5509,
+            10,
+            0,
+            1122
+          ],
+          [
+            0,
+            0,
+            6,
+            101,
+            71,
+            0,
+            0,
+            83
+          ],
+          [
+            0,
+            35982,
+            49323,
+            3703,
+            14572,
+            23794,
+            20283,
+            135
+          ],
+          [
+            0,
+            0,
+            3,
+            692,
+            120,
+            0,
+            0,
+            2991
+          ]
+        ]
+      },
+      {
+        "id": "aachen__aachen_28",
+        "region": "aachen",
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            626,
+            140,
+            125,
+            909,
+            0,
+            0,
+            575
+          ],
+          [
+            7,
+            624,
+            1742,
+            1414,
+            88,
+            725,
+            0,
+            2609
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            5,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            161,
+            57859,
+            86820,
+            8434,
+            16133,
+            9491,
+            2223,
+            8526
+          ],
+          [
+            0,
+            0,
+            243,
+            14,
+            0,
+            0,
+            0,
+            1211
+          ]
+        ]
+      },
+      {
+        "id": "aachen__aachen_36",
+        "region": "aachen",
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            3507,
+            5298,
+            6803,
+            9164,
+            1610,
+            0,
+            2789
+          ],
+          [
+            0,
+            105,
+            2501,
+            2048,
+            14,
+            0,
+            0,
+            2673
+          ],
+          [
+            0,
+            0,
+            49,
+            3408,
+            0,
+            0,
+            0,
+            156
+          ],
+          [
+            0,
+            498,
+            179,
+            1752,
+            12974,
+            0,
+            0,
+            751
+          ],
+          [
+            0,
+            7,
+            55,
+            323,
+            707,
+            650,
+            0,
+            84
+          ],
+          [
+            0,
+            48411,
+            13647,
+            1843,
+            6089,
+            65872,
+            1755,
+            293
+          ],
+          [
+            0,
+            0,
+            184,
+            1753,
+            1,
+            0,
+            0,
+            2751
+          ]
+        ]
+      },
+      {
+        "id": "aachen__aachen_47",
+        "region": "aachen",
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            19288,
+            4112,
+            4973,
+            8045,
+            22434,
+            597,
+            2519
+          ],
+          [
+            0,
+            10,
+            1338,
+            3996,
+            179,
+            35,
+            0,
+            5507
+          ],
+          [
+            0,
+            0,
+            133,
+            4417,
+            48,
+            23,
+            0,
+            132
+          ],
+          [
+            0,
+            922,
+            1377,
+            2280,
+            6792,
+            115,
+            8,
+            1922
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            4,
+            0,
+            0,
+            54
+          ],
+          [
+            0,
+            29853,
+            22491,
+            1342,
+            6616,
+            41008,
+            1768,
+            601
+          ],
+          [
+            0,
+            3,
+            178,
+            966,
+            55,
+            1,
+            0,
+            4562
+          ]
+        ]
+      },
+      {
+        "id": "aachen__aachen_68",
+        "region": "aachen",
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            23545,
+            9640,
+            2997,
+            14657,
+            71,
+            0,
+            4422
+          ],
+          [
+            0,
+            166,
+            3153,
+            2915,
+            197,
+            19,
+            0,
+            3523
+          ],
+          [
+            0,
+            44,
+            1022,
+            4703,
+            0,
+            0,
+            0,
+            203
+          ],
+          [
+            0,
+            7755,
+            1653,
+            2139,
+            9469,
+            13,
+            0,
+            2229
+          ],
+          [
+            0,
+            6,
+            0,
+            0,
+            7,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            54752,
+            26939,
+            1014,
+            3270,
+            9316,
+            5,
+            189
+          ],
+          [
+            0,
+            79,
+            2032,
+            1161,
+            164,
+            6,
+            0,
+            7229
+          ]
+        ]
+      },
+      {
+        "id": "chisinau__chisinau_2",
+        "region": "chisinau",
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            6544,
+            4793,
+            1458,
+            1304,
+            0,
+            115,
+            180
+          ],
+          [
+            0,
+            4823,
+            36002,
+            9723,
+            220,
+            0,
+            105,
+            15121
+          ],
+          [
+            0,
+            569,
+            13782,
+            11476,
+            98,
+            0,
+            2,
+            1860
+          ],
+          [
+            0,
+            8200,
+            2031,
+            250,
+            17765,
+            3,
+            318,
+            151
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1084,
+            17329,
+            2081,
+            69,
+            0,
+            0,
+            43248
+          ]
+        ]
+      },
+      {
+        "id": "chisinau__chisinau_28",
+        "region": "chisinau",
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            16564,
+            1788,
+            302,
+            9246,
+            0,
+            536,
+            430
+          ],
+          [
+            0,
+            8190,
+            14428,
+            7016,
+            304,
+            0,
+            0,
+            4685
+          ],
+          [
+            0,
+            2218,
+            5089,
+            9755,
+            85,
+            0,
+            0,
+            541
+          ],
+          [
+            0,
+            14676,
+            314,
+            143,
+            38751,
+            0,
+            0,
+            44
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            3073,
+            17590,
+            6937,
+            85,
+            0,
+            0,
+            37914
+          ]
+        ]
+      },
+      {
+        "id": "chisinau__chisinau_51",
+        "region": "chisinau",
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            14868,
+            706,
+            71,
+            11588,
+            129,
+            15,
+            96
+          ],
+          [
+            0,
+            12725,
+            9293,
+            4224,
+            1449,
+            351,
+            30,
+            3511
+          ],
+          [
+            0,
+            1744,
+            1991,
+            2201,
+            178,
+            79,
+            0,
+            1288
+          ],
+          [
+            0,
+            10215,
+            190,
+            86,
+            68793,
+            333,
+            55,
+            32
+          ],
+          [
+            0,
+            161,
+            0,
+            0,
+            16,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1271,
+            30,
+            94,
+            293,
+            0,
+            0,
+            104
+          ],
+          [
+            0,
+            5754,
+            15777,
+            11757,
+            292,
+            26,
+            0,
+            18888
+          ]
+        ]
+      },
+      {
+        "id": "chisinau__chisinau_66",
+        "region": "chisinau",
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            20227,
+            714,
+            374,
+            10012,
+            1,
+            229,
+            231
+          ],
+          [
+            0,
+            11330,
+            25308,
+            11829,
+            853,
+            0,
+            0,
+            14168
+          ],
+          [
+            0,
+            506,
+            1628,
+            8161,
+            11,
+            0,
+            0,
+            812
+          ],
+          [
+            0,
+            15780,
+            268,
+            103,
+            36359,
+            0,
+            61,
+            53
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            3565,
+            14454,
+            7187,
+            72,
+            146,
+            1,
+            16261
+          ]
+        ]
+      },
+      {
+        "id": "chisinau__chisinau_7",
+        "region": "chisinau",
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            3178,
+            481,
+            18,
+            609,
+            0,
+            0,
+            26
+          ],
+          [
+            0,
+            15491,
+            25626,
+            9149,
+            1620,
+            0,
+            0,
+            6164
+          ],
+          [
+            0,
+            1809,
+            2435,
+            7643,
+            413,
+            52,
+            34,
+            718
+          ],
+          [
+            0,
+            12776,
+            859,
+            15,
+            26681,
+            0,
+            263,
+            88
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            3837,
+            45714,
+            7569,
+            60,
+            0,
+            0,
+            27376
+          ]
+        ]
+      },
+      {
+        "id": "melbourne__melbourne_18",
+        "region": "melbourne",
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            4829,
+            900,
+            305,
+            1797,
+            0,
+            0,
+            333
+          ],
+          [
+            0,
+            6818,
+            17535,
+            6493,
+            3464,
+            6,
+            4,
+            10939
+          ],
+          [
+            33,
+            3840,
+            13732,
+            15786,
+            424,
+            343,
+            0,
+            4495
+          ],
+          [
+            0,
+            6325,
+            300,
+            87,
+            4479,
+            0,
+            0,
+            116
+          ],
+          [
+            0,
+            427,
+            14,
+            0,
+            21,
+            0,
+            124,
+            12
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1421,
+            57794,
+            827,
+            429,
+            8,
+            0,
+            36244
+          ]
+        ]
+      },
+      {
+        "id": "melbourne__melbourne_23",
+        "region": "melbourne",
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            22131,
+            3885,
+            463,
+            3364,
+            0,
+            0,
+            1872
+          ],
+          [
+            0,
+            11657,
+            25100,
+            10747,
+            735,
+            523,
+            208,
+            8820
+          ],
+          [
+            0,
+            1052,
+            12075,
+            15860,
+            163,
+            0,
+            0,
+            1445
+          ],
+          [
+            0,
+            8651,
+            951,
+            161,
+            6163,
+            0,
+            0,
+            163
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            2025,
+            26847,
+            202,
+            16,
+            0,
+            0,
+            35425
+          ]
+        ]
+      },
+      {
+        "id": "melbourne__melbourne_34",
+        "region": "melbourne",
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            21860,
+            328,
+            29,
+            4246,
+            2307,
+            87,
+            1
+          ],
+          [
+            0,
+            20942,
+            4074,
+            1941,
+            3794,
+            27,
+            0,
+            400
+          ],
+          [
+            0,
+            4723,
+            6572,
+            17074,
+            288,
+            18,
+            0,
+            208
+          ],
+          [
+            0,
+            24255,
+            544,
+            124,
+            20852,
+            17,
+            207,
+            18
+          ],
+          [
+            0,
+            967,
+            208,
+            271,
+            117,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            25417,
+            26593,
+            1879,
+            3914,
+            0,
+            0,
+            6402
+          ]
+        ]
+      },
+      {
+        "id": "melbourne__melbourne_64",
+        "region": "melbourne",
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            16057,
+            158,
+            124,
+            53506,
+            2409,
+            7392,
+            3
+          ],
+          [
+            0,
+            14548,
+            7489,
+            9232,
+            4910,
+            345,
+            0,
+            1542
+          ],
+          [
+            0,
+            1652,
+            735,
+            11933,
+            701,
+            1684,
+            0,
+            39
+          ],
+          [
+            0,
+            6948,
+            448,
+            204,
+            25233,
+            12,
+            0,
+            25
+          ],
+          [
+            0,
+            45,
+            203,
+            0,
+            8,
+            0,
+            0,
+            127
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            4570,
+            20759,
+            1085,
+            376,
+            122,
+            0,
+            6080
+          ]
+        ]
+      },
+      {
+        "id": "melbourne__melbourne_7",
+        "region": "melbourne",
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            5974,
+            3837,
+            344,
+            1963,
+            0,
+            0,
+            158
+          ],
+          [
+            0,
+            3491,
+            30775,
+            7987,
+            1528,
+            408,
+            0,
+            10341
+          ],
+          [
+            0,
+            178,
+            21167,
+            15703,
+            155,
+            0,
+            0,
+            1116
+          ],
+          [
+            0,
+            2829,
+            2515,
+            545,
+            4522,
+            0,
+            0,
+            548
+          ],
+          [
+            0,
+            27,
+            126,
+            722,
+            0,
+            17137,
+            12,
+            2698
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            393,
+            21095,
+            465,
+            193,
+            0,
+            0,
+            41752
+          ]
+        ]
+      },
+      {
+        "id": "tonga__tonga_32",
+        "region": "tonga",
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            32353,
+            3219,
+            190,
+            81129,
+            4,
+            23,
+            105
+          ],
+          [
+            0,
+            7360,
+            23910,
+            1052,
+            635,
+            0,
+            0,
+            449
+          ],
+          [
+            0,
+            228,
+            1192,
+            593,
+            3,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1258,
+            162,
+            2,
+            31103,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1374,
+            0,
+            0,
+            41,
+            167,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            2030,
+            8259,
+            238,
+            24,
+            0,
+            0,
+            3601
+          ]
+        ]
+      },
+      {
+        "id": "tonga__tonga_43",
+        "region": "tonga",
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            35931,
+            2583,
+            1452,
+            26919,
+            0,
+            367,
+            393
+          ],
+          [
+            0,
+            11055,
+            7354,
+            2815,
+            1409,
+            0,
+            0,
+            696
+          ],
+          [
+            0,
+            1826,
+            3817,
+            8668,
+            311,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            15782,
+            608,
+            332,
+            35611,
+            0,
+            2,
+            142
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            6646,
+            9085,
+            1459,
+            269,
+            536,
+            0,
+            24634
+          ]
+        ]
+      },
+      {
+        "id": "tonga__tonga_53",
+        "region": "tonga",
+        "confusion": [
+          [
+            0,
+            546,
+            2615,
+            2649,
+            660,
+            397,
+            0,
+            33
+          ],
+          [
+            0,
+            33527,
+            2341,
+            1086,
+            61210,
+            12840,
+            4974,
+            330
+          ],
+          [
+            0,
+            5678,
+            11022,
+            7181,
+            4738,
+            418,
+            5,
+            4346
+          ],
+          [
+            0,
+            11,
+            2737,
+            5508,
+            0,
+            0,
+            0,
+            69
+          ],
+          [
+            0,
+            330,
+            0,
+            50,
+            13944,
+            100,
+            22,
+            12
+          ],
+          [
+            0,
+            133,
+            0,
+            127,
+            114,
+            3812,
+            4,
+            110
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1025,
+            7198,
+            550,
+            233,
+            25,
+            2,
+            7992
+          ]
+        ]
+      },
+      {
+        "id": "tonga__tonga_6",
+        "region": "tonga",
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            38512,
+            3775,
+            581,
+            44306,
+            759,
+            672,
+            149
+          ],
+          [
+            0,
+            6009,
+            3963,
+            1273,
+            1781,
+            0,
+            0,
+            208
+          ],
+          [
+            0,
+            4215,
+            3563,
+            6326,
+            1099,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            5408,
+            299,
+            135,
+            49184,
+            0,
+            0,
+            11
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            2301,
+            16524,
+            1582,
+            62,
+            121,
+            0,
+            7886
+          ]
+        ]
+      },
+      {
+        "id": "tonga__tonga_63",
+        "region": "tonga",
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            37722,
+            1137,
+            89,
+            15536,
+            0,
+            31,
+            432
+          ],
+          [
+            0,
+            14611,
+            13033,
+            5868,
+            353,
+            0,
+            0,
+            1027
+          ],
+          [
+            0,
+            2505,
+            2608,
+            9193,
+            66,
+            0,
+            0,
+            27
+          ],
+          [
+            0,
+            18079,
+            177,
+            13,
+            29411,
+            0,
+            31,
+            56
+          ],
+          [
+            0,
+            742,
+            36,
+            0,
+            263,
+            33,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            8769,
+            14019,
+            3157,
+            182,
+            242,
+            0,
+            21228
+          ]
+        ]
+      }
+    ],
+    "aggregate": {
+      "regions": {
+        "aachen": {
+          "miou": 0.12149614123289894,
+          "union_class_miou": 0.10630912357878655,
+          "class_iou": [
+            0.0,
+            0.1271423880661405,
+            0.03847659279062382,
+            0.17606211383891957,
+            0.2170659337227098,
+            0.0036562454296932127,
+            0.03850243653546102,
+            0.2495672782467446
+          ],
+          "valid_classes": 7,
+          "union_valid_classes": 8,
+          "primary_class_set": "classes present in ground truth; fixed across strategies",
+          "pixel_accuracy": 0.15597674175273912,
+          "evaluated_pixels": 1003515
+        },
+        "chisinau": {
+          "miou": 0.2591010463558992,
+          "union_class_miou": 0.25910104635589915,
+          "class_iou": [
+            null,
+            0.2488788874021814,
+            0.2754710593202407,
+            0.24901627275265922,
+            0.6394835213711197,
+            0.0,
+            0.0,
+            0.40085758364509316
+          ],
+          "valid_classes": 7,
+          "union_valid_classes": 7,
+          "primary_class_set": "classes present in ground truth; fixed across strategies",
+          "pixel_accuracy": 0.5414042570153061,
+          "evaluated_pixels": 1003520
+        },
+        "melbourne": {
+          "miou": 0.3315952186045638,
+          "union_class_miou": 0.24869641395342285,
+          "class_iou": [
+            0.0,
+            0.22573861844180423,
+            0.1894143898138468,
+            0.3867477751720854,
+            0.30119397700561584,
+            0.544118113986347,
+            0.0,
+            0.34235843720768344
+          ],
+          "valid_classes": 6,
+          "union_valid_classes": 8,
+          "primary_class_set": "classes present in ground truth; fixed across strategies",
+          "pixel_accuracy": 0.4349380181760204,
+          "evaluated_pixels": 1003520
+        },
+        "tonga": {
+          "miou": 0.2687948200910785,
+          "union_class_miou": 0.2351954675796937,
+          "class_iou": [
+            0.0,
+            0.3164693084582597,
+            0.26441216219229896,
+            0.35036091060521934,
+            0.3589956876244063,
+            0.17904319885755088,
+            0.0,
+            0.4122824728998145
+          ],
+          "valid_classes": 7,
+          "union_valid_classes": 8,
+          "primary_class_set": "classes present in ground truth; fixed across strategies",
+          "pixel_accuracy": 0.49448929847673445,
+          "evaluated_pixels": 1003502
+        }
+      },
+      "equal_region_miou": 0.24524680657111014,
+      "worst_region_miou": 0.12149614123289894,
+      "pooled_pixel_scores": {
+        "miou": 0.20548550819503525,
+        "union_class_miou": 0.20548550819503525,
+        "class_iou": [
+          0.0,
+          0.23587569887893717,
+          0.19722491260489086,
+          0.3085120647338996,
+          0.4026946773676695,
+          0.09356677454523603,
+          0.03751902324294411,
+          0.3684909141867048
+        ],
+        "valid_classes": 8,
+        "union_valid_classes": 8,
+        "primary_class_set": "classes present in ground truth; fixed across strategies",
+        "pixel_accuracy": 0.4067019975052671,
+        "evaluated_pixels": 4014057
+      },
+      "equal_region_union_miou": 0.21232551286695056
+    }
+  },
+  "evaluation_original_loader_restored": true,
+  "evaluation_original_batch_sampler_restored": true,
+  "crop_eligibility": "original_full_mask; identical optimization RNG draws; thin-empty crop fails without resampling",
+  "deterministic_warn_only": true,
+  "warnings": [
+    "nll_loss2d_forward_out_cuda_template does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\\actions-runner\\_work\\pytorch\\pytorch\\builder\\windows\\pytorch\\aten\\src\\ATen\\Context.cpp:95.)"
+  ],
+  "cuda_peak_allocated_bytes": 263349760,
+  "cuda_peak_reserved_bytes": 306184192,
+  "total_seconds": 95.875,
+  "pixel_supervision_sha256": "e043256505860d8985aafb5487793bdf4ff27285d75407d2c1bb0ce186e59d59"
+}

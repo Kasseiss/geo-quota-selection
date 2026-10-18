@@ -1,0 +1,4158 @@
+{
+  "format": "v2-compact-manifest-1",
+  "created_utc": "2026-10-17T23:05:36.862966+00:00",
+  "identity": {
+    "selection_plan_sha256": "9f70696edfdf15405144b7838615b40f1693931264250cafc4aba8594ecf8dee",
+    "bindings": {
+      "conversion_code_sha256": "28ab383e2d67f3c3a45f8fff796a7f54f5aee9f1bb5b66bd86ba4fd0a6370db6",
+      "data_access_code_sha256": "4a090827b05e8d15c7bdeeb673a87c3407f146cd13f3b736adfd2449b4a31b71",
+      "geography_audit_code_sha256": "c595e317d56a55090efb37ba69009925c1d68ca43739269d9653ed2e9ea63653",
+      "original_development_manifest_sha256": "193af54a83f3a61805403ddbde3159978f02e7db4d77ad6e851bebb85dc3d20f"
+    },
+    "runtime": {
+      "python": "3.13.13",
+      "Pillow": "12.2.0",
+      "numpy": "2.5.1",
+      "pyproj": "3.8.0",
+      "PROJ": "9.8.1"
+    }
+  },
+  "source": {
+    "url": "https://zenodo.org/records/7223446/files/OpenEarthMap.zip",
+    "archive_bytes": 9099481727,
+    "publisher_archive_md5": "64155d1dc9d3b68536063f79878e1a67",
+    "archive_md5_verified": false,
+    "directory_transfer_bytes": 0
+  },
+  "selection": {
+    "old_role": "all old formal120 pairs are development/source data",
+    "new_regions": [
+      "abancay",
+      "al_qurnah",
+      "baybay",
+      "bielefeld",
+      "buenos_aires",
+      "chiclayo",
+      "coxsbazar",
+      "dowa",
+      "kagera",
+      "kampala",
+      "khartoum",
+      "kinshasa",
+      "kitsap",
+      "monrovia",
+      "ngaoundere",
+      "paris",
+      "rosario",
+      "san_tome",
+      "soriano",
+      "svaneti",
+      "tokyo",
+      "tyrolw",
+      "western",
+      "zanzibar"
+    ],
+    "new_pairs_per_region": 3,
+    "new_seed": 2026101802,
+    "rule": "Per-region random.Random(str(seed)+':' + region).sample of filename-sorted complete ZIP pairs; sorted chosen filenames",
+    "image_or_label_content_read_for_selection": false
+  },
+  "processing": {
+    "size": [
+      448,
+      448
+    ],
+    "rgb_resize": "Pillow BILINEAR",
+    "label_resize": "Pillow NEAREST",
+    "format": "lossless PNG",
+    "png_compress_level": 9,
+    "png_optimize": false,
+    "pair_limit_bytes_including_metadata": 900000,
+    "compact_data_reservation_bytes": 200000000
+  },
+  "expected": {
+    "old_development": 120,
+    "new_panel": 0,
+    "total": 120
+  },
+  "pairs": [
+    {
+      "id": "aachen__aachen_1",
+      "region": "aachen",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/aachen/aachen_1_rgb.png",
+        "sha256": "d72e16a696f0725ea2fac335ff1699c530fb420dc7848a06a7e31933a1267f4b",
+        "bytes": 314518
+      },
+      "label": {
+        "relative_path": "old_development/aachen/aachen_1_mask.png",
+        "sha256": "6e13a3f8e1a694cefc21b9d8f8288b56bfc69cef4eafcb3457d7863518157429",
+        "bytes": 6015
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/aachen/images/aachen_1.tif",
+        "sha256": "051dca0c05ad8b57c0d0e82477ec19273920bb794bca7682eead0ef3ef408536",
+        "bytes": 3003372,
+        "zip_crc32": "1d7bf0c5"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/aachen/labels/aachen_1.tif",
+        "sha256": "53010d1651f6d445cdebe447bad16c02bfede0be9abbcf6dc87bd932aa81b260",
+        "bytes": 1001110,
+        "zip_crc32": "3af98738"
+      },
+      "metadata": {
+        "relative_path": "old_development/aachen/aachen_1.json",
+        "sha256": "cb95d442c0ad95ec0dc145db481b00076e231a7b45f688e63584f041c56f827b",
+        "bytes": 52065
+      },
+      "compact_payload_bytes": 372598
+    },
+    {
+      "id": "aachen__aachen_28",
+      "region": "aachen",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/aachen/aachen_28_rgb.png",
+        "sha256": "d603b66f0e3db7d0824abd590e323fe555dbc6bf78eeb859787378e8e5ff8503",
+        "bytes": 311836
+      },
+      "label": {
+        "relative_path": "old_development/aachen/aachen_28_mask.png",
+        "sha256": "ae8aa7c8cd089ec7aee9acfa6712531669588bb309407b41e9d239b7fcf006ff",
+        "bytes": 2985
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/aachen/images/aachen_28.tif",
+        "sha256": "f663769f699383c6bb98cd1f81ed259d8a7a7f0051ec910242e6678609d37791",
+        "bytes": 3003372,
+        "zip_crc32": "de492bca"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/aachen/labels/aachen_28.tif",
+        "sha256": "c30d86a9739ff916cdf84632d51afe44ba97c77163e91caa921c4fa3a020a162",
+        "bytes": 1001110,
+        "zip_crc32": "8d93583f"
+      },
+      "metadata": {
+        "relative_path": "old_development/aachen/aachen_28.json",
+        "sha256": "0886c5c9a138e11283f58f713dd2ebd99e044dc7d5e57636c0812165aafb1468",
+        "bytes": 51993
+      },
+      "compact_payload_bytes": 366814
+    },
+    {
+      "id": "aachen__aachen_36",
+      "region": "aachen",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/aachen/aachen_36_rgb.png",
+        "sha256": "812a5df402a12796f580e23e863ffa6ca9760cfcfde21e98824a923415fe33d1",
+        "bytes": 321120
+      },
+      "label": {
+        "relative_path": "old_development/aachen/aachen_36_mask.png",
+        "sha256": "25b43d892df912c6a419839bc0635984f31f7071b5ddde8b0384a5160d5b1d9f",
+        "bytes": 7210
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/aachen/images/aachen_36.tif",
+        "sha256": "75d1227b030d120edeb3f38be1d8939489e7ae08e7a81ea0d2dfac3dfe75af22",
+        "bytes": 3003372,
+        "zip_crc32": "3adf5cc2"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/aachen/labels/aachen_36.tif",
+        "sha256": "b1c4f96d8b71a646d794dad6dddb040d3fcdb56ea0788e6208ac38b1c330ffbc",
+        "bytes": 1001110,
+        "zip_crc32": "fed77ddb"
+      },
+      "metadata": {
+        "relative_path": "old_development/aachen/aachen_36.json",
+        "sha256": "76b0c9dfab1fc98c6c67f53147c4c991bca362008808f8049fe88f2898aa0dbd",
+        "bytes": 52030
+      },
+      "compact_payload_bytes": 380360
+    },
+    {
+      "id": "aachen__aachen_47",
+      "region": "aachen",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/aachen/aachen_47_rgb.png",
+        "sha256": "832f758819caea42e6c341b413f22f22d9e9d6da1e579853fc065983b66b64f0",
+        "bytes": 332349
+      },
+      "label": {
+        "relative_path": "old_development/aachen/aachen_47_mask.png",
+        "sha256": "36940f72947aa20176ee3070ec08b130ab0391c1f3039d4de35f39969c46625b",
+        "bytes": 11489
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/aachen/images/aachen_47.tif",
+        "sha256": "8aaf8a95d98e0ce0cb631bc3ca71fb073c76e09f0e7c3c7da387d43740520123",
+        "bytes": 3003372,
+        "zip_crc32": "3517297e"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/aachen/labels/aachen_47.tif",
+        "sha256": "6031d07c8a05bb163aa8a9773900a2c719fbd809c2db04705c2849ed7d03f67e",
+        "bytes": 1001110,
+        "zip_crc32": "3ae77907"
+      },
+      "metadata": {
+        "relative_path": "old_development/aachen/aachen_47.json",
+        "sha256": "2cdeacb39d3d69f96acfb764c582dfd43575078bfdc62b9038c1a4119323e956",
+        "bytes": 52038
+      },
+      "compact_payload_bytes": 395876
+    },
+    {
+      "id": "aachen__aachen_68",
+      "region": "aachen",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/aachen/aachen_68_rgb.png",
+        "sha256": "a7906e8f1cced5d10a23d256312b9841b20d699a4dbed37f5aeef30a4eb55f1d",
+        "bytes": 364771
+      },
+      "label": {
+        "relative_path": "old_development/aachen/aachen_68_mask.png",
+        "sha256": "290164d8c48ad5d5ca6afad0cd4e6300862a4f8670f4425e1813674cc957fb22",
+        "bytes": 12719
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/aachen/images/aachen_68.tif",
+        "sha256": "0d89c183889b126a2dd9619f01b51205983dd54bca26494bc3bf55a3e97437f7",
+        "bytes": 3003372,
+        "zip_crc32": "4f57d719"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/aachen/labels/aachen_68.tif",
+        "sha256": "563e0d98ba87944010b10bc2db9f8b2da6c60a7c11837982a5924cb18f395814",
+        "bytes": 1001110,
+        "zip_crc32": "9f9d6680"
+      },
+      "metadata": {
+        "relative_path": "old_development/aachen/aachen_68.json",
+        "sha256": "270b90d7c15b2cdae3ff30a224e7aa1743776dcae173d7b7a9d89b18edeee527",
+        "bytes": 52022
+      },
+      "compact_payload_bytes": 429512
+    },
+    {
+      "id": "accra__accra_16",
+      "region": "accra",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/accra/accra_16_rgb.png",
+        "sha256": "2c3bbef9272d9eeb60e61638d6c0e301bff08f33a8a0ac2fb1448a0049687f43",
+        "bytes": 384762
+      },
+      "label": {
+        "relative_path": "old_development/accra/accra_16_mask.png",
+        "sha256": "9872c2d686896062478e3c2a1a87c796999d712292f63ff3fc5c0f72f3f64c95",
+        "bytes": 19689
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/accra/images/accra_16.tif",
+        "sha256": "16e280d3465d98f5d0a8efc862ec0df48d6e678d552a517ed68bf4b5859a7271",
+        "bytes": 3149172,
+        "zip_crc32": "3a24f031"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/accra/labels/accra_16.tif",
+        "sha256": "5dca47712fd95405eaa8d5b5ba5e9e0ecfd10f558ce9dc04a1edaeaf6b527fd0",
+        "bytes": 1049704,
+        "zip_crc32": "b8987017"
+      },
+      "metadata": {
+        "relative_path": "old_development/accra/accra_16.json",
+        "sha256": "f4365a5d03fad3617b2a104514fb1c6309d6b835f64c3c6fe6c22dbd45539bb7",
+        "bytes": 52599
+      },
+      "compact_payload_bytes": 457050
+    },
+    {
+      "id": "accra__accra_43",
+      "region": "accra",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/accra/accra_43_rgb.png",
+        "sha256": "d1aa0eb73c1de203f3d1fcb8e467da95631d60c0d24f07ad230657190ef21544",
+        "bytes": 373745
+      },
+      "label": {
+        "relative_path": "old_development/accra/accra_43_mask.png",
+        "sha256": "223e29e8de998408c3eea3127498b0823f390f8a72f4b9146c253912228c2604",
+        "bytes": 10300
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/accra/images/accra_43.tif",
+        "sha256": "528f2bb7e8f6c9b8093936a6f00773f8cc753a15756ca410edcf73ee99f60d34",
+        "bytes": 3149172,
+        "zip_crc32": "91e77676"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/accra/labels/accra_43.tif",
+        "sha256": "37ee0ca66e816d5eeece7f41317b5871a65b7a1857a6cc76f6aef123597e8e0d",
+        "bytes": 1049704,
+        "zip_crc32": "15fffe54"
+      },
+      "metadata": {
+        "relative_path": "old_development/accra/accra_43.json",
+        "sha256": "a24e0b298cd0df9df9faa725b71288ac0f003d79583762ead86b784f933c0723",
+        "bytes": 52587
+      },
+      "compact_payload_bytes": 436632
+    },
+    {
+      "id": "accra__accra_54",
+      "region": "accra",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/accra/accra_54_rgb.png",
+        "sha256": "826eb9832cfb4ee24f4bcd9de91ade062ebfdb423356c3b3fd0c57a926939ae4",
+        "bytes": 337204
+      },
+      "label": {
+        "relative_path": "old_development/accra/accra_54_mask.png",
+        "sha256": "644af1e8133861bceee5defbfa5cf57d8c9d25a9aa5469ec87a0172a6bee1b04",
+        "bytes": 12334
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/accra/images/accra_54.tif",
+        "sha256": "807d71bea90958855d241883816757bcd47943ad5c2f83bc7825e94ba5bd90fb",
+        "bytes": 3149172,
+        "zip_crc32": "7404b99a"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/accra/labels/accra_54.tif",
+        "sha256": "5de0acfc804eff1914fe3bfcb47d53e098525bf21664109e22d65c71622c02e8",
+        "bytes": 1049704,
+        "zip_crc32": "ea6ff324"
+      },
+      "metadata": {
+        "relative_path": "old_development/accra/accra_54.json",
+        "sha256": "4fdc28abe1fbc0932253c1c0532a18421653dad5dab23ac2bc3de180751fefde",
+        "bytes": 52369
+      },
+      "compact_payload_bytes": 401907
+    },
+    {
+      "id": "accra__accra_62",
+      "region": "accra",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/accra/accra_62_rgb.png",
+        "sha256": "d4ee698bbbca4292a0db582fbf783cd11c769fa8f8c964cccd6828af2bc5a0c3",
+        "bytes": 356561
+      },
+      "label": {
+        "relative_path": "old_development/accra/accra_62_mask.png",
+        "sha256": "503cdf194b2c3bf47f347a9a01c4eea685a296ad8c7daeafb85750abed8dc4df",
+        "bytes": 15617
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/accra/images/accra_62.tif",
+        "sha256": "da3233fbff145ec50bbf6db0dd84415177bb660373372ddb4cb4f597acbe70d9",
+        "bytes": 3149172,
+        "zip_crc32": "cf388b91"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/accra/labels/accra_62.tif",
+        "sha256": "b57ce8255365b3d253fb024f2bf663fcdc9f2a19b7eeda5e78ddabc664c92f67",
+        "bytes": 1049704,
+        "zip_crc32": "bf6aa81c"
+      },
+      "metadata": {
+        "relative_path": "old_development/accra/accra_62.json",
+        "sha256": "69ca23ad75760c5db0bc7277ad5509efa7b7d973c1bcb2d250427f4fe627b9da",
+        "bytes": 52574
+      },
+      "compact_payload_bytes": 424752
+    },
+    {
+      "id": "accra__accra_9",
+      "region": "accra",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/accra/accra_9_rgb.png",
+        "sha256": "c0957b5a3b92621a2c658b9ac74907cb7703f64f4c8398cf6d3312a0273243cb",
+        "bytes": 397626
+      },
+      "label": {
+        "relative_path": "old_development/accra/accra_9_mask.png",
+        "sha256": "ba667dcfca74d125a01aa487ad2149db56162e9befb9ffaf59c6594366cc8903",
+        "bytes": 14190
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/accra/images/accra_9.tif",
+        "sha256": "d7f08a3cb47d341f07a73c6b4d55b75ebd5e419537d0475787bf83219a10c424",
+        "bytes": 3149172,
+        "zip_crc32": "5cc85651"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/accra/labels/accra_9.tif",
+        "sha256": "657833a125a4b0bc9ec005e3ba6f801f16d37bc9958fa791af77b67cadfa3580",
+        "bytes": 1049704,
+        "zip_crc32": "2d60d606"
+      },
+      "metadata": {
+        "relative_path": "old_development/accra/accra_9.json",
+        "sha256": "a6dd9f720e6a224f92624c1d18464e7eb296f26e546b2ec37813eaaef4c97fa9",
+        "bytes": 52431
+      },
+      "compact_payload_bytes": 464247
+    },
+    {
+      "id": "austin__austin_18",
+      "region": "austin",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/austin/austin_18_rgb.png",
+        "sha256": "0aeaec88d23bdb28ab75d60a3537b6bb4d2c6c9face8f2d6241e55573a4f5144",
+        "bytes": 404616
+      },
+      "label": {
+        "relative_path": "old_development/austin/austin_18_mask.png",
+        "sha256": "33a2ee42bc88da77ef64b90235715431b1a8d482028b8b43c6c7a348fc83a4b3",
+        "bytes": 14347
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/austin/images/austin_18.tif",
+        "sha256": "65ce7f33f6386d3cab3998a533a784b45fbffce19363467f08013fa4748d101e",
+        "bytes": 3003370,
+        "zip_crc32": "23ef3529"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/austin/labels/austin_18.tif",
+        "sha256": "c927c787a1b7692d1f3913c0f5f7fa531aa45fef97541e61c413ecc0ea232c77",
+        "bytes": 1001108,
+        "zip_crc32": "bd5b3a9b"
+      },
+      "metadata": {
+        "relative_path": "old_development/austin/austin_18.json",
+        "sha256": "526474393d43e361e017b074f2b9684aae55db95bce9c523bb90b19aa7e3a86e",
+        "bytes": 53204
+      },
+      "compact_payload_bytes": 472167
+    },
+    {
+      "id": "austin__austin_31",
+      "region": "austin",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/austin/austin_31_rgb.png",
+        "sha256": "2f0113c91801b2ea69570f17fa780f328c084fcb9612469027aa7c7cbceac5db",
+        "bytes": 401432
+      },
+      "label": {
+        "relative_path": "old_development/austin/austin_31_mask.png",
+        "sha256": "b37a3478bb18d4dd56ebaaf539c6e49b7acc26faaed416dddf7c8769df9ae422",
+        "bytes": 14566
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/austin/images/austin_31.tif",
+        "sha256": "05332ccb9b14f8e744f893d25f92cca9376f8daeabe51177ae3ce72788a09e74",
+        "bytes": 3003370,
+        "zip_crc32": "e95b6b93"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/austin/labels/austin_31.tif",
+        "sha256": "121810925519e9d656ce56a4261f9e4ff67e37663a812bfa41f7565f0b2ebe86",
+        "bytes": 1001108,
+        "zip_crc32": "176287fe"
+      },
+      "metadata": {
+        "relative_path": "old_development/austin/austin_31.json",
+        "sha256": "f77f6f19ae82de8d6d102dd11068573d3a4ebbe15bd20ae2b1cec6f0e2e60d0e",
+        "bytes": 53094
+      },
+      "compact_payload_bytes": 469092
+    },
+    {
+      "id": "austin__austin_42",
+      "region": "austin",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/austin/austin_42_rgb.png",
+        "sha256": "4786623a9f9f5acb03701348e76839a5e524e4cf6a8d88b7a4044aeb757e848d",
+        "bytes": 407837
+      },
+      "label": {
+        "relative_path": "old_development/austin/austin_42_mask.png",
+        "sha256": "b402590a426092be94ac2d1dca6476a17b6b25785db9e4399a594a50fd9bf241",
+        "bytes": 18029
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/austin/images/austin_42.tif",
+        "sha256": "6466d1ea97f90bb051aa70d172e20df6ec05b93b2a1c73edc839b941923563b5",
+        "bytes": 3003370,
+        "zip_crc32": "6d17d487"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/austin/labels/austin_42.tif",
+        "sha256": "64ec522b28e8f8d8f51ca5a929e54de37433aaa7220a77293ae4f31bb5a633de",
+        "bytes": 1001108,
+        "zip_crc32": "296ca55f"
+      },
+      "metadata": {
+        "relative_path": "old_development/austin/austin_42.json",
+        "sha256": "18c497cabc12f421d2f317475a956354e367c4d0fe2d2060d07a2d646c1f7827",
+        "bytes": 53147
+      },
+      "compact_payload_bytes": 479013
+    },
+    {
+      "id": "austin__austin_45",
+      "region": "austin",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/austin/austin_45_rgb.png",
+        "sha256": "c6d0ff17373c1368829f308a966361dc81e7d1217decc2771164a02c9fc81038",
+        "bytes": 406052
+      },
+      "label": {
+        "relative_path": "old_development/austin/austin_45_mask.png",
+        "sha256": "c2a01c5cbbd1af7f597dc5805505ee8a129a6a7ac0836b64b03df8996d3af56f",
+        "bytes": 14903
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/austin/images/austin_45.tif",
+        "sha256": "27f32414b3e6772da2edf1cbce279d4134210a917cf9da6e3f73b5da0e29d674",
+        "bytes": 3003370,
+        "zip_crc32": "d5aa54cb"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/austin/labels/austin_45.tif",
+        "sha256": "cb6d79b59abd7a0e866fe639995dfc12d26c45af756a7b3928fad777361b3e60",
+        "bytes": 1001108,
+        "zip_crc32": "03aa9c2b"
+      },
+      "metadata": {
+        "relative_path": "old_development/austin/austin_45.json",
+        "sha256": "a23a60840173863d8762f86c8a025c8f6bbd7ff431e4a087a75f06c9436e215c",
+        "bytes": 53155
+      },
+      "compact_payload_bytes": 474110
+    },
+    {
+      "id": "austin__austin_50",
+      "region": "austin",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/austin/austin_50_rgb.png",
+        "sha256": "35c9d1b78ad382703880b6b47aed13f9a77c29fec46a0647947a131af4fad38d",
+        "bytes": 424569
+      },
+      "label": {
+        "relative_path": "old_development/austin/austin_50_mask.png",
+        "sha256": "fc4d8fe944baba116c27724c8c460704153f3992d387d53c16b0edc813ed6879",
+        "bytes": 14021
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/austin/images/austin_50.tif",
+        "sha256": "e6b74efa665adaf2dc68a377783b32dd7b4311bb0aa1608b547e27d4be7ff919",
+        "bytes": 3003370,
+        "zip_crc32": "686ced57"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/austin/labels/austin_50.tif",
+        "sha256": "0f9012835877f376333a249deba7166c5e0ab9c62271ebf5ef97e299f151721a",
+        "bytes": 1001108,
+        "zip_crc32": "435e2395"
+      },
+      "metadata": {
+        "relative_path": "old_development/austin/austin_50.json",
+        "sha256": "9cadbf605747c215d2da25b3a74bfd5d9c3c20ae41a29f5871c78ab0e2872fa5",
+        "bytes": 53126
+      },
+      "compact_payload_bytes": 491716
+    },
+    {
+      "id": "bogota__bogota_1",
+      "region": "bogota",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/bogota/bogota_1_rgb.png",
+        "sha256": "ad23fe26b14ec72ea31ab245aae8a75de5b20c376b2992982e7bcd39ae38be8a",
+        "bytes": 339016
+      },
+      "label": {
+        "relative_path": "old_development/bogota/bogota_1_mask.png",
+        "sha256": "0ed47eaa1dcb8b58e572df889f9307b37da4a6f6501a79093bc4fddf1bcc5a55",
+        "bytes": 9168
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/bogota/images/bogota_1.tif",
+        "sha256": "6ee2a6132b576468578b5fe308734c0cea1aefb6bc62492556f5814e3218e414",
+        "bytes": 3149172,
+        "zip_crc32": "220c7270"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/bogota/labels/bogota_1.tif",
+        "sha256": "ee0fa8d5d66fe07b24342fce1152a76bc89cb04005e5b79a8636800b5789bd30",
+        "bytes": 1049704,
+        "zip_crc32": "2a8e27b2"
+      },
+      "metadata": {
+        "relative_path": "old_development/bogota/bogota_1.json",
+        "sha256": "0c2f10fdee1ddf4077212c0cd6f220e03559abba08ba7ccad9831c39294a0be7",
+        "bytes": 51431
+      },
+      "compact_payload_bytes": 399615
+    },
+    {
+      "id": "bogota__bogota_2",
+      "region": "bogota",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/bogota/bogota_2_rgb.png",
+        "sha256": "7288c82fa46cfb1ed5b51b4c85d1e1c9acd8b6aa8aa9dbdde23c0d154386957f",
+        "bytes": 404824
+      },
+      "label": {
+        "relative_path": "old_development/bogota/bogota_2_mask.png",
+        "sha256": "07dcae1f7c9945f5d452506e3d70b9309b2580bf88de0da23f4400e57fc4dd65",
+        "bytes": 10500
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/bogota/images/bogota_2.tif",
+        "sha256": "c06fa1ef12dd78e252fa358d77b3e00ddf7c1f250890f82ce4b9826461abb0f6",
+        "bytes": 3149172,
+        "zip_crc32": "54e7e9b5"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/bogota/labels/bogota_2.tif",
+        "sha256": "af046538b71bd1e2c39328211175ba67e90015ae10e6b2a934dec9ca80314e2a",
+        "bytes": 1049704,
+        "zip_crc32": "a032d119"
+      },
+      "metadata": {
+        "relative_path": "old_development/bogota/bogota_2.json",
+        "sha256": "a275144b7f2a1b7f9eb2a1b86c188371c78dd6e29a2e6efe20e6c2e61e1b4930",
+        "bytes": 51484
+      },
+      "compact_payload_bytes": 466808
+    },
+    {
+      "id": "bogota__bogota_3",
+      "region": "bogota",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/bogota/bogota_3_rgb.png",
+        "sha256": "3e4ce115b07a1c57f955781a79c2aeff7a472914f089e2b85f6966d55cfce45e",
+        "bytes": 399298
+      },
+      "label": {
+        "relative_path": "old_development/bogota/bogota_3_mask.png",
+        "sha256": "52df52f8aa7a5eeb6c602b1b98dbd66ce9e2b8bb2dd4ffe4eebe2d9f4dd0dabb",
+        "bytes": 12633
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/bogota/images/bogota_3.tif",
+        "sha256": "c4afb3b5ac2447a7b8ebff5a38b4e68e39ef0ac297445cb09a50905e9cd28eae",
+        "bytes": 3149172,
+        "zip_crc32": "08926d9b"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/bogota/labels/bogota_3.tif",
+        "sha256": "3e8a066499a09cdf83064a9425d8563e5925dd2277644348285bb16fe704a348",
+        "bytes": 1049704,
+        "zip_crc32": "804d8f94"
+      },
+      "metadata": {
+        "relative_path": "old_development/bogota/bogota_3.json",
+        "sha256": "3906f981878bdef525db823193da4d2a354050d29ca7d3a7e7d40f38a295ccbd",
+        "bytes": 51501
+      },
+      "compact_payload_bytes": 463432
+    },
+    {
+      "id": "bogota__bogota_4",
+      "region": "bogota",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/bogota/bogota_4_rgb.png",
+        "sha256": "6c9a4dd4e70a74d881e940610ed8f17a33f7b88744d7608f5714d28f21dc77c5",
+        "bytes": 244908
+      },
+      "label": {
+        "relative_path": "old_development/bogota/bogota_4_mask.png",
+        "sha256": "909633500fce46097e6b1325000fb2c092e1b86dcc14acbbc9503c973332ad3a",
+        "bytes": 7815
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/bogota/images/bogota_4.tif",
+        "sha256": "476d46b7d11d049bca0e75cee62594981735e9742466e7de254cea799f3d72d9",
+        "bytes": 3149172,
+        "zip_crc32": "8edb2995"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/bogota/labels/bogota_4.tif",
+        "sha256": "66124caa9126c6efe6378cbf90ad6be6544973f1972b98b0254bd53d23c9da05",
+        "bytes": 1049704,
+        "zip_crc32": "d4442b87"
+      },
+      "metadata": {
+        "relative_path": "old_development/bogota/bogota_4.json",
+        "sha256": "aee55fabd06dfd85b519ee91b5473c9daa39ef89f9e8174c0849ef0aa3f9a324",
+        "bytes": 51457
+      },
+      "compact_payload_bytes": 304180
+    },
+    {
+      "id": "bogota__bogota_6",
+      "region": "bogota",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/bogota/bogota_6_rgb.png",
+        "sha256": "90f9d4ba6aa9d43bcc746f6724d244705760a6d4bce4e7d79c91684f2ed4438e",
+        "bytes": 372988
+      },
+      "label": {
+        "relative_path": "old_development/bogota/bogota_6_mask.png",
+        "sha256": "816c10ca6aacab6ee1d8686053ae57a430287328b567881d7c8adeaa4bb0e1bd",
+        "bytes": 14007
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/bogota/images/bogota_6.tif",
+        "sha256": "fe75c225c69ff0058ec09d1ec0027322ee0dba4f0dde2edc36c39339ef24d29a",
+        "bytes": 3149172,
+        "zip_crc32": "897ed803"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/bogota/labels/bogota_6.tif",
+        "sha256": "f1ee477161b63c2cd1bd40b6bbf29eb0ea50781f969007d5c971e356bb0c606e",
+        "bytes": 1049704,
+        "zip_crc32": "854cf427"
+      },
+      "metadata": {
+        "relative_path": "old_development/bogota/bogota_6.json",
+        "sha256": "46f55208552464508debf5a97906775adc7d2b0a31de0c8310d5430e17546889",
+        "bytes": 51501
+      },
+      "compact_payload_bytes": 438496
+    },
+    {
+      "id": "chiangmai__chiangmai_10",
+      "region": "chiangmai",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/chiangmai/chiangmai_10_rgb.png",
+        "sha256": "0b3c3106204ebd1698a8ac47e97891036f03ac2050ab3c005a95d0db83fb9941",
+        "bytes": 397709
+      },
+      "label": {
+        "relative_path": "old_development/chiangmai/chiangmai_10_mask.png",
+        "sha256": "b0c42e8068029a0efe87f859a3887b0ed0edbcb2793cd5fd12172e0097f199cc",
+        "bytes": 10732
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/chiangmai/images/chiangmai_10.tif",
+        "sha256": "626d191fbc1b38957a666955592b47b63ce44c6843b09b670fdb4eb33dfd9a6e",
+        "bytes": 3149172,
+        "zip_crc32": "9721bd4f"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/chiangmai/labels/chiangmai_10.tif",
+        "sha256": "db7e1bd751c9f48a4837557de4967b321bfe2288cd5181b54b4e254922f14a92",
+        "bytes": 1049704,
+        "zip_crc32": "b7ac47d3"
+      },
+      "metadata": {
+        "relative_path": "old_development/chiangmai/chiangmai_10.json",
+        "sha256": "fc0886da20cf8bece6b01dd2a8e2b365240b9a834cbbf11739ae383bb4b07d1e",
+        "bytes": 51292
+      },
+      "compact_payload_bytes": 459733
+    },
+    {
+      "id": "chiangmai__chiangmai_16",
+      "region": "chiangmai",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/chiangmai/chiangmai_16_rgb.png",
+        "sha256": "617a07ba1565b8abaf1d1f1077ec677a31d777e4c422787eea4cd82ac6820301",
+        "bytes": 420539
+      },
+      "label": {
+        "relative_path": "old_development/chiangmai/chiangmai_16_mask.png",
+        "sha256": "7620bdd2e742bb314decc7ad42eb2a8a439b5058514203b81911eb962e817835",
+        "bytes": 15027
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/chiangmai/images/chiangmai_16.tif",
+        "sha256": "c588fdcefee3b77d804bab9fc42521c446ad3c288fad16f550c9b8e3d5653c30",
+        "bytes": 3149172,
+        "zip_crc32": "c159f0d8"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/chiangmai/labels/chiangmai_16.tif",
+        "sha256": "936f4453a129cb187c61850694572525d4608b226c54f870f6e37f7e858edd38",
+        "bytes": 1049704,
+        "zip_crc32": "989b7fa3"
+      },
+      "metadata": {
+        "relative_path": "old_development/chiangmai/chiangmai_16.json",
+        "sha256": "9055a66783ea561044b20edbbf062f0d92d33e897d9e9cfff5a8a84cc9921c5b",
+        "bytes": 51280
+      },
+      "compact_payload_bytes": 486846
+    },
+    {
+      "id": "chiangmai__chiangmai_2",
+      "region": "chiangmai",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/chiangmai/chiangmai_2_rgb.png",
+        "sha256": "e717c74595e870bd9824de18ba441b1645024e5bbdf34ea51752a7d8ca0f2f05",
+        "bytes": 360059
+      },
+      "label": {
+        "relative_path": "old_development/chiangmai/chiangmai_2_mask.png",
+        "sha256": "8ce80cabae92a793374e53da76406a5d706495564540bd930b334fcce7f51fed",
+        "bytes": 11244
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/chiangmai/images/chiangmai_2.tif",
+        "sha256": "02e7e8bd53be4705ef3962fd2e322b4d1c77c6454c90f7e669c93ac190e1559f",
+        "bytes": 3149172,
+        "zip_crc32": "6a1c1b4b"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/chiangmai/labels/chiangmai_2.tif",
+        "sha256": "ca5c4c838919a96774434292fe4672b0292cbd81afdeb1d67cd3d73a04c3592e",
+        "bytes": 1049704,
+        "zip_crc32": "093458b0"
+      },
+      "metadata": {
+        "relative_path": "old_development/chiangmai/chiangmai_2.json",
+        "sha256": "bbfbd19b1581e8dd8ab015c408cec23cc590dbd12c0cd32172e7274dcc181ea2",
+        "bytes": 51299
+      },
+      "compact_payload_bytes": 422602
+    },
+    {
+      "id": "chiangmai__chiangmai_3",
+      "region": "chiangmai",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/chiangmai/chiangmai_3_rgb.png",
+        "sha256": "a92b98cb93bc60fa03b79ee73009b4e6186c90fec7352ab576efba7e8fef7780",
+        "bytes": 426124
+      },
+      "label": {
+        "relative_path": "old_development/chiangmai/chiangmai_3_mask.png",
+        "sha256": "5d6a2c19a6b8ed5123659422546c0f72e1520f5a14a21899e6a524d2fe73850a",
+        "bytes": 15249
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/chiangmai/images/chiangmai_3.tif",
+        "sha256": "e394b1e29b159d441e8a64ecef244a6888f034851ddea23e47f20fa72cccb078",
+        "bytes": 3149172,
+        "zip_crc32": "e7a11be0"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/chiangmai/labels/chiangmai_3.tif",
+        "sha256": "a8b6f66ec6c976ae60d365e083a0ea3cd6b8a3e1e049493052b8cfa344295d49",
+        "bytes": 1049704,
+        "zip_crc32": "5c4718e5"
+      },
+      "metadata": {
+        "relative_path": "old_development/chiangmai/chiangmai_3.json",
+        "sha256": "e803385221a10386add90ce8c340998f8a604f9609971bfac64a38ea16a687da",
+        "bytes": 51290
+      },
+      "compact_payload_bytes": 492663
+    },
+    {
+      "id": "chiangmai__chiangmai_4",
+      "region": "chiangmai",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/chiangmai/chiangmai_4_rgb.png",
+        "sha256": "df8683eedd1254f0fcfb85332603b5a605cd9b8df8dfd6fb2fb0ded9e305644a",
+        "bytes": 414172
+      },
+      "label": {
+        "relative_path": "old_development/chiangmai/chiangmai_4_mask.png",
+        "sha256": "a04fcdc473b9bd4a0b4e82e01ca38666249a396a12da78399cb2e1f726227b77",
+        "bytes": 14997
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/chiangmai/images/chiangmai_4.tif",
+        "sha256": "8c55ca2cda4810cc75c4545875a1931badb0951fb63f9d0cf49baa8dbe3b6b48",
+        "bytes": 3149172,
+        "zip_crc32": "080deb96"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/chiangmai/labels/chiangmai_4.tif",
+        "sha256": "0523f7648ca8f63881e51b9e9aec5e3af587ae51076373ad1ae41ba3a56b3755",
+        "bytes": 1049704,
+        "zip_crc32": "4155712e"
+      },
+      "metadata": {
+        "relative_path": "old_development/chiangmai/chiangmai_4.json",
+        "sha256": "188df3fd0d452c8ab4ce8eaf3812026f39afef780f6ae7cd4ffc200b44a5f34f",
+        "bytes": 51324
+      },
+      "compact_payload_bytes": 480493
+    },
+    {
+      "id": "chicago__chicago_14",
+      "region": "chicago",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/chicago/chicago_14_rgb.png",
+        "sha256": "f676144afb868fad95b0a90ede9a0b1e7c41ec6a9aeb213cc39a54000a043869",
+        "bytes": 378256
+      },
+      "label": {
+        "relative_path": "old_development/chicago/chicago_14_mask.png",
+        "sha256": "4919b6681fd7dd1a5e369abadbff8b0ca37c4e5bdd7b29f34260fb96e4ef3971",
+        "bytes": 10885
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/chicago/images/chicago_14.tif",
+        "sha256": "832fb1156503981f463d75ebbbed7f45b5648a1ef0e2499f3d8b8ee9d833bae2",
+        "bytes": 3003370,
+        "zip_crc32": "e00acc85"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/chicago/labels/chicago_14.tif",
+        "sha256": "8eef44db7f89830245d2f0b5c31d89551dee5c6fa28d3f1f765edcd6c3bce817",
+        "bytes": 1001108,
+        "zip_crc32": "354db0c9"
+      },
+      "metadata": {
+        "relative_path": "old_development/chicago/chicago_14.json",
+        "sha256": "81b2e72f9bccf5f2402893bae47e97ed784889a480055006325ed43c182653c4",
+        "bytes": 52977
+      },
+      "compact_payload_bytes": 442118
+    },
+    {
+      "id": "chicago__chicago_21",
+      "region": "chicago",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/chicago/chicago_21_rgb.png",
+        "sha256": "10992b489e0bb1dddd5e96306532fafeb356a0f4d34a98ba2634a4ae6db9a5a5",
+        "bytes": 379315
+      },
+      "label": {
+        "relative_path": "old_development/chicago/chicago_21_mask.png",
+        "sha256": "755dda75910e1cc0a98102ba5bbec7471e64f45df433b0991cbefa60e71e77cb",
+        "bytes": 8477
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/chicago/images/chicago_21.tif",
+        "sha256": "e49534f7aaed716047f1273faf66a0a146167eba41ae14bece9766760b4ffeed",
+        "bytes": 3003370,
+        "zip_crc32": "368fbae1"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/chicago/labels/chicago_21.tif",
+        "sha256": "9cd9e2a297612dd442b08d9ffde9749662f754f2f9db9a357e42277d6ae0fec3",
+        "bytes": 1001108,
+        "zip_crc32": "d3fe4d3b"
+      },
+      "metadata": {
+        "relative_path": "old_development/chicago/chicago_21.json",
+        "sha256": "ed99580767a2acfb14fd5d740b61e053fc0c66d952aac426438f4763ffe38f15",
+        "bytes": 53027
+      },
+      "compact_payload_bytes": 440819
+    },
+    {
+      "id": "chicago__chicago_23",
+      "region": "chicago",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/chicago/chicago_23_rgb.png",
+        "sha256": "07f42993837ce8af251ae898b048fde83a3b7e7b8b5d302750475b5616319bdd",
+        "bytes": 373425
+      },
+      "label": {
+        "relative_path": "old_development/chicago/chicago_23_mask.png",
+        "sha256": "35b300cca1bbf6a8138243f07812e6a95087a1a67ea54eacac1af292e884564a",
+        "bytes": 11024
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/chicago/images/chicago_23.tif",
+        "sha256": "6a685cf4ff126e8e30fa07176238bc206cba1a2da70827347257a498665a8a94",
+        "bytes": 3003370,
+        "zip_crc32": "b301fde7"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/chicago/labels/chicago_23.tif",
+        "sha256": "19e063e7d9a3a06f6a1e44c4a771650b3394813bc47295c08d4187783d7a7b2e",
+        "bytes": 1001108,
+        "zip_crc32": "835ba7e6"
+      },
+      "metadata": {
+        "relative_path": "old_development/chicago/chicago_23.json",
+        "sha256": "75f672a3cc97aa3227f9fd5ba26135d5cd1bd37a2a28bea132ee85793fa6c459",
+        "bytes": 52937
+      },
+      "compact_payload_bytes": 437386
+    },
+    {
+      "id": "chicago__chicago_38",
+      "region": "chicago",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/chicago/chicago_38_rgb.png",
+        "sha256": "80bf609e87a6caef0ff53205e919c5f5d1c1019415a53e72966b49d07aa073f4",
+        "bytes": 349620
+      },
+      "label": {
+        "relative_path": "old_development/chicago/chicago_38_mask.png",
+        "sha256": "34f85c70e119252e1d207de3fe586f632b60a7c9aa0cc1b25964139867601212",
+        "bytes": 4606
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/chicago/images/chicago_38.tif",
+        "sha256": "d77c85839d91e3d669b25ac972fa2595e0748a71749df6347c16d459039bb6a3",
+        "bytes": 3003370,
+        "zip_crc32": "4d7c5213"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/chicago/labels/chicago_38.tif",
+        "sha256": "b3eec856bf8de267b497ae0fae7d06f74aa3e3dd5898add3fe74096c2f2ae6d1",
+        "bytes": 1001108,
+        "zip_crc32": "eafd07e4"
+      },
+      "metadata": {
+        "relative_path": "old_development/chicago/chicago_38.json",
+        "sha256": "90ee00b5418bb1a2a9facecef2908ca0ae41d969739e02bf43426d60fecc4439",
+        "bytes": 52968
+      },
+      "compact_payload_bytes": 407194
+    },
+    {
+      "id": "chicago__chicago_49",
+      "region": "chicago",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/chicago/chicago_49_rgb.png",
+        "sha256": "c3357b6d6f3a6fa43ba43995a7b1572fbeaf9984668f5577a9e715b4568f2cbf",
+        "bytes": 354203
+      },
+      "label": {
+        "relative_path": "old_development/chicago/chicago_49_mask.png",
+        "sha256": "9d2f6c38450f193fd42e69e401ea5675c3b3735519de269acf19d200b1bf701c",
+        "bytes": 6169
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/chicago/images/chicago_49.tif",
+        "sha256": "08fc68ad46657ce611cf7602e3d0a06093353bccd83560a8d15323b258bd5685",
+        "bytes": 3003370,
+        "zip_crc32": "8a09c366"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/chicago/labels/chicago_49.tif",
+        "sha256": "a29caa95f2049f9168c890f092acea275dd47dda0857e49bfc6e13f928f1485d",
+        "bytes": 1001108,
+        "zip_crc32": "f60a634f"
+      },
+      "metadata": {
+        "relative_path": "old_development/chicago/chicago_49.json",
+        "sha256": "246576a78dcdb5d6b1a3aa43dfb301bdf2f0701b4534fd8666e48b8fb62eae1b",
+        "bytes": 52995
+      },
+      "compact_payload_bytes": 413367
+    },
+    {
+      "id": "chisinau__chisinau_2",
+      "region": "chisinau",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/chisinau/chisinau_2_rgb.png",
+        "sha256": "61ed762b4180044e0565285cabb9bc882b7bb4ac8bdb3f77dd5831b1fd7b491e",
+        "bytes": 429992
+      },
+      "label": {
+        "relative_path": "old_development/chisinau/chisinau_2_mask.png",
+        "sha256": "978e8a44d69f3a0d9d95ea82873dd54618330ad742ea4afeaa8167b7fe92f887",
+        "bytes": 12622
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/chisinau/images/chisinau_2.tif",
+        "sha256": "8a795c905d6e8ec6f411c9e5b076b6c0f58e9345b979a84fd2e67c4da8db7d86",
+        "bytes": 3149175,
+        "zip_crc32": "107ed554"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/chisinau/labels/chisinau_2.tif",
+        "sha256": "8747aec19f3e80d8e0ae92dd07c69b6de2ec78b2daf30cf64363803870a3ff63",
+        "bytes": 1049707,
+        "zip_crc32": "6f3c4430"
+      },
+      "metadata": {
+        "relative_path": "old_development/chisinau/chisinau_2.json",
+        "sha256": "edb81bf9c4327950c76fbfe408dbd2e5c1d7ff22e263cf98316900d77f0e0383",
+        "bytes": 51277
+      },
+      "compact_payload_bytes": 493891
+    },
+    {
+      "id": "chisinau__chisinau_28",
+      "region": "chisinau",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/chisinau/chisinau_28_rgb.png",
+        "sha256": "02ee9ab9da607f04d0c9fe89d617908d689b18ecb2bfa9f25b07cd3b8a0fbf2f",
+        "bytes": 415228
+      },
+      "label": {
+        "relative_path": "old_development/chisinau/chisinau_28_mask.png",
+        "sha256": "47d0087323a973b432d5dd1a0b4189872d0ad252b9f9e97e1fed847ed4acabea",
+        "bytes": 16397
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/chisinau/images/chisinau_28.tif",
+        "sha256": "04eaba1e6ec27fd1200a5c8e145bd0de387b99be209e3d21755899a8e6ca77de",
+        "bytes": 3149175,
+        "zip_crc32": "bf780cf4"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/chisinau/labels/chisinau_28.tif",
+        "sha256": "970234cfa7925189ac477a11370b57ab3ef9a700d3618a1523960e33a92c0429",
+        "bytes": 1049707,
+        "zip_crc32": "f20718a7"
+      },
+      "metadata": {
+        "relative_path": "old_development/chisinau/chisinau_28.json",
+        "sha256": "f214a11b8b05234520dcbf7a090dded62bca8d37be71663b4b242a1e281903e1",
+        "bytes": 51162
+      },
+      "compact_payload_bytes": 482787
+    },
+    {
+      "id": "chisinau__chisinau_51",
+      "region": "chisinau",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/chisinau/chisinau_51_rgb.png",
+        "sha256": "f409f23c81e4d45d426e1239fe1394aded539428dde2abe5c676e0834a9dfe67",
+        "bytes": 450578
+      },
+      "label": {
+        "relative_path": "old_development/chisinau/chisinau_51_mask.png",
+        "sha256": "3d3e6f780cb402a940d185876c6798271ddd83c83104efb86a87d81cb3306248",
+        "bytes": 19759
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/chisinau/images/chisinau_51.tif",
+        "sha256": "50c64e18038da702e2e6c0a1e6b885a4ae8dee84e15bb27cd634dd0caacf0d40",
+        "bytes": 3149175,
+        "zip_crc32": "2c07704e"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/chisinau/labels/chisinau_51.tif",
+        "sha256": "7c571e09109af9cfcfa00364e9001b642ebe95d96c38e79e9a599cbef82c7290",
+        "bytes": 1049707,
+        "zip_crc32": "2a6ac6fd"
+      },
+      "metadata": {
+        "relative_path": "old_development/chisinau/chisinau_51.json",
+        "sha256": "87307c227a33b516d1a40e9770a11d2113848de00e46209c4a49ef4984b01bb2",
+        "bytes": 51099
+      },
+      "compact_payload_bytes": 521436
+    },
+    {
+      "id": "chisinau__chisinau_66",
+      "region": "chisinau",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/chisinau/chisinau_66_rgb.png",
+        "sha256": "12f2fd9c6d352938c12dec12770a5cbfab5ccb9adb0973d2377374af0c25ab6c",
+        "bytes": 403803
+      },
+      "label": {
+        "relative_path": "old_development/chisinau/chisinau_66_mask.png",
+        "sha256": "aa971e9059a5655580e6502b67f92e97b0f4f54dc144f6f3ed7ee8e8d2fffda9",
+        "bytes": 13860
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/chisinau/images/chisinau_66.tif",
+        "sha256": "e85c12e8a7d580477ecdc147eecc02c8372cb14e2d2479ae4eaaeb2f3bdcddcf",
+        "bytes": 3149175,
+        "zip_crc32": "a1e589a0"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/chisinau/labels/chisinau_66.tif",
+        "sha256": "99d0a28f231d14c23915b29dc6713726a738ce43a8632b0b6bb9039bcb5e138a",
+        "bytes": 1049707,
+        "zip_crc32": "4538069b"
+      },
+      "metadata": {
+        "relative_path": "old_development/chisinau/chisinau_66.json",
+        "sha256": "9b188c243a9ce20a93073fe083cefd29d91ad16fd58a634882373c0f2c140b8a",
+        "bytes": 51002
+      },
+      "compact_payload_bytes": 468665
+    },
+    {
+      "id": "chisinau__chisinau_7",
+      "region": "chisinau",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/chisinau/chisinau_7_rgb.png",
+        "sha256": "47bd342aa9e457e234b6ae9e8d8be922469a6834a5bf4eff4840c07af24005ad",
+        "bytes": 420351
+      },
+      "label": {
+        "relative_path": "old_development/chisinau/chisinau_7_mask.png",
+        "sha256": "2cc3086082ff31eb80ab216356c79f91dbf9287581dfcb74ddb2b2ce3114ad0d",
+        "bytes": 12878
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/chisinau/images/chisinau_7.tif",
+        "sha256": "9c8053c3fac36c0019262e240ff98e97de1d06127490f83ed2dac81e2d95ae71",
+        "bytes": 3149175,
+        "zip_crc32": "b90bdb94"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/chisinau/labels/chisinau_7.tif",
+        "sha256": "ea60ff94df0634cb48fbbf15c201678e85a0a0cd1b535a48f6a32cfd22684f3e",
+        "bytes": 1049707,
+        "zip_crc32": "ec936c2e"
+      },
+      "metadata": {
+        "relative_path": "old_development/chisinau/chisinau_7.json",
+        "sha256": "70500a666c899607464a02b7535b94fe9e580bc82b7ee9b36ac4584f4fa6569e",
+        "bytes": 51182
+      },
+      "compact_payload_bytes": 484411
+    },
+    {
+      "id": "christchurch__christchurch_15",
+      "region": "christchurch",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/christchurch/christchurch_15_rgb.png",
+        "sha256": "a0a92d726402a68807630f9cc4e861d8603456e010ade229f47ca50894d9770e",
+        "bytes": 317416
+      },
+      "label": {
+        "relative_path": "old_development/christchurch/christchurch_15_mask.png",
+        "sha256": "de2a5c5f7ee52e1c2d4bdfbffa7a4b7fb231bdf487888f542464a2c21085d714",
+        "bytes": 4948
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/christchurch/images/christchurch_15.tif",
+        "sha256": "bc29cfa81002334df51de06bb9adaaa7ba64adbca8ae5de560497c99c2727b3b",
+        "bytes": 3149200,
+        "zip_crc32": "bd117cb5"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/christchurch/labels/christchurch_15.tif",
+        "sha256": "3c2dfc31541c6a1595e82b28538da03f757b24868bff131a1792c54756ea63e2",
+        "bytes": 1049732,
+        "zip_crc32": "a98e61bd"
+      },
+      "metadata": {
+        "relative_path": "old_development/christchurch/christchurch_15.json",
+        "sha256": "22a4df0034c58c6817af13fbdd0181d1f2faa9a591b6c9c667b88e501c454067",
+        "bytes": 52314
+      },
+      "compact_payload_bytes": 374678
+    },
+    {
+      "id": "christchurch__christchurch_3",
+      "region": "christchurch",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/christchurch/christchurch_3_rgb.png",
+        "sha256": "9c5c085d5c50fb4eb9588bd760f7be4e633008fddcebab9f2a62d0d8bd652761",
+        "bytes": 398118
+      },
+      "label": {
+        "relative_path": "old_development/christchurch/christchurch_3_mask.png",
+        "sha256": "46fa7697922aca303090a07bf98ee1b215ecb615c32586e1dfbe70c396713be1",
+        "bytes": 4249
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/christchurch/images/christchurch_3.tif",
+        "sha256": "89cd390f5c515cecbd6cb396f9bd0eeb6113ae29cadbff9822eeeddcc1852d9f",
+        "bytes": 3149200,
+        "zip_crc32": "caade7c1"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/christchurch/labels/christchurch_3.tif",
+        "sha256": "0c34500dc06e73fc397c0dddf17a28fb5cc637383cd2c050cb58590d60afe6cd",
+        "bytes": 1049732,
+        "zip_crc32": "bff48501"
+      },
+      "metadata": {
+        "relative_path": "old_development/christchurch/christchurch_3.json",
+        "sha256": "73fad9b49e044e1f07d14103bd7b44b3e92a43a29f1feef3b71327e8f7b273b1",
+        "bytes": 52329
+      },
+      "compact_payload_bytes": 454696
+    },
+    {
+      "id": "christchurch__christchurch_45",
+      "region": "christchurch",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/christchurch/christchurch_45_rgb.png",
+        "sha256": "65d1feaa9c86b0f2eef21d421b5cf4a942f2b995a38581a9a1044f494511932f",
+        "bytes": 393397
+      },
+      "label": {
+        "relative_path": "old_development/christchurch/christchurch_45_mask.png",
+        "sha256": "01f5d053de118fd4634754dbb413ab8bc1784c9c2f3de10bb682b63b5be82c0d",
+        "bytes": 10516
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/christchurch/images/christchurch_45.tif",
+        "sha256": "473602d0803930bec4a5868c5a29028ab2437a1d8a931bb60f8a759e77685d93",
+        "bytes": 3149200,
+        "zip_crc32": "d242fd04"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/christchurch/labels/christchurch_45.tif",
+        "sha256": "522fc28dee856bbdd7eccbff45f625052c92f8d99e487eee6b726e56c0f6dccd",
+        "bytes": 1049732,
+        "zip_crc32": "01c2138f"
+      },
+      "metadata": {
+        "relative_path": "old_development/christchurch/christchurch_45.json",
+        "sha256": "fd91bb9b182f87ddc24fcb505626ad9bca4c6847309a0cc49429af36798463c1",
+        "bytes": 52295
+      },
+      "compact_payload_bytes": 456208
+    },
+    {
+      "id": "christchurch__christchurch_56",
+      "region": "christchurch",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/christchurch/christchurch_56_rgb.png",
+        "sha256": "675c57313c286ecde985708be99d9291fe6e063f6b9d12595a8b5808cba22ffe",
+        "bytes": 350242
+      },
+      "label": {
+        "relative_path": "old_development/christchurch/christchurch_56_mask.png",
+        "sha256": "7c2f7762edfaac1c66556cddead206b1dddf46f11411ffc6131d2dcbc971afb6",
+        "bytes": 6391
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/christchurch/images/christchurch_56.tif",
+        "sha256": "5872699fab3abf321344598454c1d9a53b3b552ec7d84ac4544a9df693f02aed",
+        "bytes": 3149200,
+        "zip_crc32": "6fa5e157"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/christchurch/labels/christchurch_56.tif",
+        "sha256": "d40102951e1478d2a22e5c0135ba338e3636983008e515299133231138e0c69a",
+        "bytes": 1049732,
+        "zip_crc32": "a9e6232c"
+      },
+      "metadata": {
+        "relative_path": "old_development/christchurch/christchurch_56.json",
+        "sha256": "c84df6225e90a78d05043f9a4d780c6c3aba5a02b1cc0a4fc914893b192c1b7c",
+        "bytes": 52345
+      },
+      "compact_payload_bytes": 408978
+    },
+    {
+      "id": "christchurch__christchurch_9",
+      "region": "christchurch",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/christchurch/christchurch_9_rgb.png",
+        "sha256": "7a66139de4f3883fd92d30d1cb6ddecb45d197ea8f818de301f43ff61a7ee671",
+        "bytes": 340780
+      },
+      "label": {
+        "relative_path": "old_development/christchurch/christchurch_9_mask.png",
+        "sha256": "1ce130fc67d4c9930de478186d25790667fc708ee3e0c64f40540d3aa8632b54",
+        "bytes": 8077
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/christchurch/images/christchurch_9.tif",
+        "sha256": "c3f761d65bde07b61316bcec87cf27907a8296da78d8dc309ce1e41510a68b99",
+        "bytes": 3149200,
+        "zip_crc32": "b5a92d49"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/christchurch/labels/christchurch_9.tif",
+        "sha256": "ff714fedadd2663df0cae09902ec0bcb7cd3d06cf6705cd68e83453bb5517f8d",
+        "bytes": 1049732,
+        "zip_crc32": "98ddbb1d"
+      },
+      "metadata": {
+        "relative_path": "old_development/christchurch/christchurch_9.json",
+        "sha256": "fcc5935d0f3e6e6a2c834d9e8e2f53d6bceceec15529f3ed12c0590e0f059435",
+        "bytes": 52324
+      },
+      "compact_payload_bytes": 401181
+    },
+    {
+      "id": "daressalaam__daressalaam_104",
+      "region": "daressalaam",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/daressalaam/daressalaam_104_rgb.png",
+        "sha256": "520cd4ee10c326c357ce77b1910761048d71b3de3ab96b8ce200e69a60cc3159",
+        "bytes": 405893
+      },
+      "label": {
+        "relative_path": "old_development/daressalaam/daressalaam_104_mask.png",
+        "sha256": "e20dd9d9457e298b52dfb533681010d62639242b1ef7c23942565cc7ae523c7e",
+        "bytes": 17490
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/daressalaam/images/daressalaam_104.tif",
+        "sha256": "c3dfcff1e28fd160ab88b3d7116a2ae467801c3a1b02d75e1dee92ad464c1078",
+        "bytes": 3149172,
+        "zip_crc32": "155be21b"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/daressalaam/labels/daressalaam_104.tif",
+        "sha256": "0cbe4a80f871e0e9b6efa804fb95a6d2f94b586b784edcfd59adabaf4bc234b3",
+        "bytes": 1049704,
+        "zip_crc32": "59ad69a8"
+      },
+      "metadata": {
+        "relative_path": "old_development/daressalaam/daressalaam_104.json",
+        "sha256": "81c20250a8a70cc2a093fbca94b7e2888ce94f38a999cb17752e231f864640fc",
+        "bytes": 51509
+      },
+      "compact_payload_bytes": 474892
+    },
+    {
+      "id": "daressalaam__daressalaam_3",
+      "region": "daressalaam",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/daressalaam/daressalaam_3_rgb.png",
+        "sha256": "1066a0392df4f34d7de6556651b208ec782e10a64175c17e18e3a4888c1d5b8f",
+        "bytes": 419100
+      },
+      "label": {
+        "relative_path": "old_development/daressalaam/daressalaam_3_mask.png",
+        "sha256": "f442ee2cfa78ddbdab26d8e7c5ab3dfd54571e0a3e439e09927086c3ed342625",
+        "bytes": 19160
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/daressalaam/images/daressalaam_3.tif",
+        "sha256": "d13ebe8e87f369d55e82980be41b6b50eedb2996258605ea5c85e6e9f7fcb238",
+        "bytes": 3149172,
+        "zip_crc32": "1abdbc48"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/daressalaam/labels/daressalaam_3.tif",
+        "sha256": "77ca4653e4ab6017f1c3360cc57c7aa383c060939e4755e6f1196d6fae915350",
+        "bytes": 1049704,
+        "zip_crc32": "059e597a"
+      },
+      "metadata": {
+        "relative_path": "old_development/daressalaam/daressalaam_3.json",
+        "sha256": "62e1593017e16d3b63fdca84bccb4e61778b2ea9afa22802d70a4d335e73e973",
+        "bytes": 51451
+      },
+      "compact_payload_bytes": 489711
+    },
+    {
+      "id": "daressalaam__daressalaam_41",
+      "region": "daressalaam",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/daressalaam/daressalaam_41_rgb.png",
+        "sha256": "51fb29e9945817c7aa04ed2fef94a810879611987e94ae6ce695201df6a896e2",
+        "bytes": 423732
+      },
+      "label": {
+        "relative_path": "old_development/daressalaam/daressalaam_41_mask.png",
+        "sha256": "785a655a0a7d3ee1ffbe375327bea3a9b02b4e3f00f67d3892fede6a00f9e101",
+        "bytes": 26259
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/daressalaam/images/daressalaam_41.tif",
+        "sha256": "a268832839d686ea65558e7003a153379831c2f07a2905aa6bff821a005b6335",
+        "bytes": 3149172,
+        "zip_crc32": "2e43d261"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/daressalaam/labels/daressalaam_41.tif",
+        "sha256": "b22ac3457ccf75bb3ece0161180639c1427e7603188c987339e791e37551c340",
+        "bytes": 1049704,
+        "zip_crc32": "7236e0a5"
+      },
+      "metadata": {
+        "relative_path": "old_development/daressalaam/daressalaam_41.json",
+        "sha256": "e958aacdd1de143290d2768fa2ff19650ba29a082322a44578272c3697147763",
+        "bytes": 51417
+      },
+      "compact_payload_bytes": 501408
+    },
+    {
+      "id": "daressalaam__daressalaam_83",
+      "region": "daressalaam",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/daressalaam/daressalaam_83_rgb.png",
+        "sha256": "fffe841fcd876e2387125765d3a10bdd9a34b8345f31df2482f2485c536a9689",
+        "bytes": 402771
+      },
+      "label": {
+        "relative_path": "old_development/daressalaam/daressalaam_83_mask.png",
+        "sha256": "b69d85afaf174671e6d73a522d399c3d18d9535f0260a2e477d50b68fb41f36f",
+        "bytes": 15042
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/daressalaam/images/daressalaam_83.tif",
+        "sha256": "1ca8b8fb5c49d3064bdf52468224c0962fc03478f851ed3b0f2664312586bcb3",
+        "bytes": 3149172,
+        "zip_crc32": "58534633"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/daressalaam/labels/daressalaam_83.tif",
+        "sha256": "1f30243f708c0aa700c2baa7e9a40f83499ab30161f1c42189dceebaff01f0ad",
+        "bytes": 1049704,
+        "zip_crc32": "e9c58b69"
+      },
+      "metadata": {
+        "relative_path": "old_development/daressalaam/daressalaam_83.json",
+        "sha256": "d28d47a3148589a346fe80ed17ebd6986ca515a72d1a056661a3ebabd9cc0b8a",
+        "bytes": 51467
+      },
+      "compact_payload_bytes": 469280
+    },
+    {
+      "id": "daressalaam__daressalaam_98",
+      "region": "daressalaam",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/daressalaam/daressalaam_98_rgb.png",
+        "sha256": "cece5add263289a6cac400ae2cdf8023e86bdb6a62e1e985cad282b370a57f16",
+        "bytes": 378622
+      },
+      "label": {
+        "relative_path": "old_development/daressalaam/daressalaam_98_mask.png",
+        "sha256": "ec1d1f18fa4c26f9ff591762c3ca0095283a6d10502945d6cb4c08db3050a225",
+        "bytes": 22453
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/daressalaam/images/daressalaam_98.tif",
+        "sha256": "d2037ba1ca1d7d56e5c9d165b78d9f68928ee59bf8854c8ae58ea55453894586",
+        "bytes": 3149172,
+        "zip_crc32": "d3ca2513"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/daressalaam/labels/daressalaam_98.tif",
+        "sha256": "cd417197761ec693ad2a35deca7af8fab535905f1ccba6be09ae15658fbeba94",
+        "bytes": 1049704,
+        "zip_crc32": "4c112d35"
+      },
+      "metadata": {
+        "relative_path": "old_development/daressalaam/daressalaam_98.json",
+        "sha256": "24453f390439e2f2d93d3bf2f6c1b8fee2e997d4de7a0374ba07b60a9f67d52d",
+        "bytes": 51414
+      },
+      "compact_payload_bytes": 452489
+    },
+    {
+      "id": "dhaka__dhaka_32",
+      "region": "dhaka",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/dhaka/dhaka_32_rgb.png",
+        "sha256": "0b8250b838613f40681a713a6651f360ae41da6a1ff0644fb59bb8767dab8c7a",
+        "bytes": 401113
+      },
+      "label": {
+        "relative_path": "old_development/dhaka/dhaka_32_mask.png",
+        "sha256": "2eb0c7eb6b31b10a4fc3ed56f260c3799220fdcf3e960e9ada928328d0bc4b07",
+        "bytes": 10914
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/dhaka/images/dhaka_32.tif",
+        "sha256": "8be4edc3225a611bab7763e0cf164a3fa0603a870ce6d481993e669061ff473a",
+        "bytes": 3149172,
+        "zip_crc32": "051210b6"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/dhaka/labels/dhaka_32.tif",
+        "sha256": "0e3d7878235b1acd11b3203d748cc515d1c2668451b5d59338d7a33c80e3cd63",
+        "bytes": 1049704,
+        "zip_crc32": "71d7ac9a"
+      },
+      "metadata": {
+        "relative_path": "old_development/dhaka/dhaka_32.json",
+        "sha256": "962a9e98c7711dcf5211fb2899687605b88c0b10378f3ad8b6b01bab48de09e3",
+        "bytes": 51170
+      },
+      "compact_payload_bytes": 463197
+    },
+    {
+      "id": "dhaka__dhaka_38",
+      "region": "dhaka",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/dhaka/dhaka_38_rgb.png",
+        "sha256": "057f47d54e96e8646c9be7c7075d5df8ea0a421149ae43af435d51fc41af1e8e",
+        "bytes": 432232
+      },
+      "label": {
+        "relative_path": "old_development/dhaka/dhaka_38_mask.png",
+        "sha256": "499196dc4136664529e63ba5dd04890e57485114814617b6297398ff421e540b",
+        "bytes": 11615
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/dhaka/images/dhaka_38.tif",
+        "sha256": "787e41e97c7bc9b9b86f7165d9d6b3754a323646e0ccb87d384f1d15a5b2ca37",
+        "bytes": 3149172,
+        "zip_crc32": "f1b19569"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/dhaka/labels/dhaka_38.tif",
+        "sha256": "5b654a54f0f83f78688cbe6afee47a9803946c0cd0227a8cf4d74d098221f7d1",
+        "bytes": 1049704,
+        "zip_crc32": "2c2bfed7"
+      },
+      "metadata": {
+        "relative_path": "old_development/dhaka/dhaka_38.json",
+        "sha256": "b07defc80fcc94fedc811c347d5b69bada99cacdddd028232c4b8e37e0bf706e",
+        "bytes": 51233
+      },
+      "compact_payload_bytes": 495080
+    },
+    {
+      "id": "dhaka__dhaka_39",
+      "region": "dhaka",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/dhaka/dhaka_39_rgb.png",
+        "sha256": "02ee27d212606f6184274eb6563aca3e67aa5e83b4d7e4f92826d4cdf4807fa7",
+        "bytes": 431852
+      },
+      "label": {
+        "relative_path": "old_development/dhaka/dhaka_39_mask.png",
+        "sha256": "f22f1c2f9aae6b961a6bad48a397e5dba79c745a58d5b873db7476cabb399e35",
+        "bytes": 15307
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/dhaka/images/dhaka_39.tif",
+        "sha256": "ad3564e452fd7947c4ff9a9b024290bf51388a6028ed759bc5fc4a7005f5ef0c",
+        "bytes": 3149172,
+        "zip_crc32": "3c3b08a7"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/dhaka/labels/dhaka_39.tif",
+        "sha256": "3f25fa583d8f008b8dbb6192684bae822316460edd1d184cd2caa4cfe03ce2d0",
+        "bytes": 1049704,
+        "zip_crc32": "4f5bba2d"
+      },
+      "metadata": {
+        "relative_path": "old_development/dhaka/dhaka_39.json",
+        "sha256": "f046b13064dcf96c540a001737e686a4cbc327a3577ae07fce14c7913a4d80d3",
+        "bytes": 51221
+      },
+      "compact_payload_bytes": 498380
+    },
+    {
+      "id": "dhaka__dhaka_40",
+      "region": "dhaka",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/dhaka/dhaka_40_rgb.png",
+        "sha256": "2b185fef61c76c3a7d77c2a78c3b5c9b74a1185e61feb3495fff0c90c09621d2",
+        "bytes": 438690
+      },
+      "label": {
+        "relative_path": "old_development/dhaka/dhaka_40_mask.png",
+        "sha256": "7f023d4af660b6615447710001046d6a6aba44f88f5ced4eeaee3785519df5e2",
+        "bytes": 16548
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/dhaka/images/dhaka_40.tif",
+        "sha256": "7af8ccd4746e856dd4b88cda6e4f0af35c41c0c9e956b6547ebf1f257f850cbb",
+        "bytes": 3149172,
+        "zip_crc32": "459677ab"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/dhaka/labels/dhaka_40.tif",
+        "sha256": "93338242448d876902ea26e24fed1e75669bb85bed41042cbe1551795182a84f",
+        "bytes": 1049704,
+        "zip_crc32": "f3ce04df"
+      },
+      "metadata": {
+        "relative_path": "old_development/dhaka/dhaka_40.json",
+        "sha256": "8fd3511e8227191e949177c8163c41cf71fefefd3cbacf11879c81a4c8f1db69",
+        "bytes": 51236
+      },
+      "compact_payload_bytes": 506474
+    },
+    {
+      "id": "dhaka__dhaka_48",
+      "region": "dhaka",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/dhaka/dhaka_48_rgb.png",
+        "sha256": "6793a156f435cad1a27a8354ba7f9f60d26cb6d488c3ee71f8903c05fc1d8313",
+        "bytes": 287656
+      },
+      "label": {
+        "relative_path": "old_development/dhaka/dhaka_48_mask.png",
+        "sha256": "605f21466c7601431b7c0e4db9b4eedcce97657d8488f817aa88abbc46efa440",
+        "bytes": 6382
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/dhaka/images/dhaka_48.tif",
+        "sha256": "62c75c3702294ea7c984f86b73e40b382cfbb055f4e6cc2a3d6d137e647a3261",
+        "bytes": 3149172,
+        "zip_crc32": "70ae9ac0"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/dhaka/labels/dhaka_48.tif",
+        "sha256": "7a70e2963e9708dd1303a2ccf70ac38fb21bfe4997e8bb8758305fdbd6abfb76",
+        "bytes": 1049704,
+        "zip_crc32": "e054182c"
+      },
+      "metadata": {
+        "relative_path": "old_development/dhaka/dhaka_48.json",
+        "sha256": "c1d9c1d213eafd500455c528e337ba933b8f024035c46832893ed00956f16288",
+        "bytes": 51256
+      },
+      "compact_payload_bytes": 345294
+    },
+    {
+      "id": "kyoto__kyoto_11",
+      "region": "kyoto",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/kyoto/kyoto_11_rgb.png",
+        "sha256": "1f0e3b94c7a8fee2fae77004b9d4354c53e2e871acf6be3e6d63dbe038e2894f",
+        "bytes": 400408
+      },
+      "label": {
+        "relative_path": "old_development/kyoto/kyoto_11_mask.png",
+        "sha256": "0c9ed56e8d1ecc1823d8caacdf6203464b29be8470b67831efe8a0354085e891",
+        "bytes": 17905
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/kyoto/images/kyoto_11.tif",
+        "sha256": "d11e6c3c48a4bab03c11ace34144a431fad222fad096f56bf1424bf5b4335a43",
+        "bytes": 3149172,
+        "zip_crc32": "274d9769"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/kyoto/labels/kyoto_11.tif",
+        "sha256": "e8b95d5e67cc188fee970e6cee9de835d44ec7a1435aa64e7c6c2235f9d33a23",
+        "bytes": 1049704,
+        "zip_crc32": "434f4548"
+      },
+      "metadata": {
+        "relative_path": "old_development/kyoto/kyoto_11.json",
+        "sha256": "0970e9a7a327ab3ab44f6275b07b0cef17afab6a88e54e2a69d3f34a33ec026d",
+        "bytes": 51303
+      },
+      "compact_payload_bytes": 469616
+    },
+    {
+      "id": "kyoto__kyoto_15",
+      "region": "kyoto",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/kyoto/kyoto_15_rgb.png",
+        "sha256": "3aa90870b295af2c103d3f9ed70d0615137443d14ac657bbb57145bfcdda99c9",
+        "bytes": 380777
+      },
+      "label": {
+        "relative_path": "old_development/kyoto/kyoto_15_mask.png",
+        "sha256": "1d4f5123379abc98335d6beb9758d97d5b4422adb6d9623a76e5c282c9a2e22d",
+        "bytes": 12810
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/kyoto/images/kyoto_15.tif",
+        "sha256": "6a106760ae3222ca23eceac3121c9a659c6043f1a992da9a92c6bd645a201ffd",
+        "bytes": 3149172,
+        "zip_crc32": "06b7bab3"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/kyoto/labels/kyoto_15.tif",
+        "sha256": "08c79d279faaf175b1c51e6c531303df37ec2d3794bcc5032e0ee70fd7ce12d3",
+        "bytes": 1049704,
+        "zip_crc32": "88f04db1"
+      },
+      "metadata": {
+        "relative_path": "old_development/kyoto/kyoto_15.json",
+        "sha256": "25b1fbfe84453acb147161a199f1c101bc0a8f68aede2ae4c1d86b355722e3d8",
+        "bytes": 51343
+      },
+      "compact_payload_bytes": 444930
+    },
+    {
+      "id": "kyoto__kyoto_39",
+      "region": "kyoto",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/kyoto/kyoto_39_rgb.png",
+        "sha256": "868602475fe26e0ceca8f987cb199b17b49a9494aab194206c31d8f886dabefd",
+        "bytes": 338401
+      },
+      "label": {
+        "relative_path": "old_development/kyoto/kyoto_39_mask.png",
+        "sha256": "430ea6bc85b956786970fbae0853d987c384a4dbda6de5c5418d4b7117027ee4",
+        "bytes": 13172
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/kyoto/images/kyoto_39.tif",
+        "sha256": "7ff60aeca571c8e1f883e9dd8a75ed4357a30e3382e47547a07a0a1eb55715ba",
+        "bytes": 3149172,
+        "zip_crc32": "b9205c15"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/kyoto/labels/kyoto_39.tif",
+        "sha256": "eefd41ab757b3f2dcb05f388072afd8b34e67a639ae677971e088bb3a28732eb",
+        "bytes": 1049704,
+        "zip_crc32": "5e01bdbc"
+      },
+      "metadata": {
+        "relative_path": "old_development/kyoto/kyoto_39.json",
+        "sha256": "adafa72c9bd5e2bb84f50f4c344e6f6dabd4071812562f57460bd7ba0df98114",
+        "bytes": 51365
+      },
+      "compact_payload_bytes": 402938
+    },
+    {
+      "id": "kyoto__kyoto_60",
+      "region": "kyoto",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/kyoto/kyoto_60_rgb.png",
+        "sha256": "405308280edceed9f81e8a71aabaaae80f514eb43cfbd290541020c021eb20fa",
+        "bytes": 382176
+      },
+      "label": {
+        "relative_path": "old_development/kyoto/kyoto_60_mask.png",
+        "sha256": "f490b08a196e35c234737fb034f28dd49c59f8b896304550e0ada6a4d774eb91",
+        "bytes": 10954
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/kyoto/images/kyoto_60.tif",
+        "sha256": "79e8a9629872e52361a061b7ee8e1e373907b39b6a005f1cb4fcbcebca5bfc40",
+        "bytes": 3149172,
+        "zip_crc32": "9e53fc68"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/kyoto/labels/kyoto_60.tif",
+        "sha256": "f6d8925822bb4d240c9061c657a1f21aee28d2b347688be2621b22edc08421f5",
+        "bytes": 1049704,
+        "zip_crc32": "54e4bda2"
+      },
+      "metadata": {
+        "relative_path": "old_development/kyoto/kyoto_60.json",
+        "sha256": "c35a94377ce3848a24eb1dca7ed85403fcc117b3d114f7f079b217b1a00a5135",
+        "bytes": 51379
+      },
+      "compact_payload_bytes": 444509
+    },
+    {
+      "id": "kyoto__kyoto_64",
+      "region": "kyoto",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/kyoto/kyoto_64_rgb.png",
+        "sha256": "db5669ccb5585d987f2d46f95039eb03e1eb265a36c293f7957a203d6932638e",
+        "bytes": 404467
+      },
+      "label": {
+        "relative_path": "old_development/kyoto/kyoto_64_mask.png",
+        "sha256": "391e46f1986f23527c50f29eaf79935321a49cffe52ab2a215729b3049b39c93",
+        "bytes": 18532
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/kyoto/images/kyoto_64.tif",
+        "sha256": "d9ff4db259198bca8b4c56816a1458a859135f345fd3804f513e02c6c016e964",
+        "bytes": 3149172,
+        "zip_crc32": "ed499e06"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/kyoto/labels/kyoto_64.tif",
+        "sha256": "056d0aab738d5aec658b0646024dadb2894e60e60edf6d23a121005a639ab8e6",
+        "bytes": 1049704,
+        "zip_crc32": "ff0bda4a"
+      },
+      "metadata": {
+        "relative_path": "old_development/kyoto/kyoto_64.json",
+        "sha256": "65bdbbe41815fb746f479cf0015911cdb4260bf1de5cb97325655f9189ec1d27",
+        "bytes": 51373
+      },
+      "compact_payload_bytes": 474372
+    },
+    {
+      "id": "mahe__mahe_10",
+      "region": "mahe",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/mahe/mahe_10_rgb.png",
+        "sha256": "6a3a55df2cf26b686ee50f05fe833894981fc66e80843a9b60ef2bfacf3c5a95",
+        "bytes": 374722
+      },
+      "label": {
+        "relative_path": "old_development/mahe/mahe_10_mask.png",
+        "sha256": "0239991e302d01d5e22370e9cb3a04c34623cb8d08c6c4813591c3e3bdb3d493",
+        "bytes": 9218
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/mahe/images/mahe_10.tif",
+        "sha256": "e610fda4948cf42f146bdf04468cad7975c90506c07e58476114812cc9053646",
+        "bytes": 3149172,
+        "zip_crc32": "14f5604c"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/mahe/labels/mahe_10.tif",
+        "sha256": "15a7f14af21bb97180052be2ec146db39804c8879889c5906567f5975a7b385e",
+        "bytes": 1049704,
+        "zip_crc32": "580250d1"
+      },
+      "metadata": {
+        "relative_path": "old_development/mahe/mahe_10.json",
+        "sha256": "7a3e8fbf399f1934b683f2001893e48f2e39910d98701bfb5348f6252e5574a0",
+        "bytes": 51327
+      },
+      "compact_payload_bytes": 435267
+    },
+    {
+      "id": "mahe__mahe_22",
+      "region": "mahe",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/mahe/mahe_22_rgb.png",
+        "sha256": "1b96346c5e113b1c6a09521f50f6c6793cd8e550651f725b157d4083ef6c351a",
+        "bytes": 296059
+      },
+      "label": {
+        "relative_path": "old_development/mahe/mahe_22_mask.png",
+        "sha256": "d2c07f6ce95133d61549f1920bfc2ee124c7da5bfaed9259f1e1437cb0121cdf",
+        "bytes": 6129
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/mahe/images/mahe_22.tif",
+        "sha256": "288334bc37a04a4ae11f25cda17c94fd7643421ff20c40ecab3313435cd3dbce",
+        "bytes": 3149172,
+        "zip_crc32": "69ef0844"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/mahe/labels/mahe_22.tif",
+        "sha256": "314f8c8afb0b802dbdb1257898c4fbf340dc9f9e7be584af4eece921461c9e27",
+        "bytes": 1049704,
+        "zip_crc32": "0e49e19c"
+      },
+      "metadata": {
+        "relative_path": "old_development/mahe/mahe_22.json",
+        "sha256": "1e799753361394d1f77cf23d8bc537b554bede3807b9874205c9dc4901386472",
+        "bytes": 51389
+      },
+      "compact_payload_bytes": 353577
+    },
+    {
+      "id": "mahe__mahe_4",
+      "region": "mahe",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/mahe/mahe_4_rgb.png",
+        "sha256": "b491498a790490bf9e4d9329c00169c995e58e0c2f092029969c48659d37c436",
+        "bytes": 441593
+      },
+      "label": {
+        "relative_path": "old_development/mahe/mahe_4_mask.png",
+        "sha256": "879e5b83e0c56c0324f0da24e779b8c1548da02507473efe61f7763360a10af8",
+        "bytes": 5650
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/mahe/images/mahe_4.tif",
+        "sha256": "7d1e81f8f14ac6df0b2978d051db401daf1c1d041e491bdaa711963274edbadb",
+        "bytes": 3149172,
+        "zip_crc32": "b667707c"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/mahe/labels/mahe_4.tif",
+        "sha256": "a0231cab8ffd39d6b6879f476803a687dd2deed5b92220b1f55fb49e1a81e29a",
+        "bytes": 1049704,
+        "zip_crc32": "e456fb7d"
+      },
+      "metadata": {
+        "relative_path": "old_development/mahe/mahe_4.json",
+        "sha256": "01fdc04167daa4e776bec874c50f554e262ebbef77f99afc6d686b8668d92f49",
+        "bytes": 51362
+      },
+      "compact_payload_bytes": 498605
+    },
+    {
+      "id": "mahe__mahe_42",
+      "region": "mahe",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/mahe/mahe_42_rgb.png",
+        "sha256": "b049d92a91d4c49777d4ac47eeb12b95136cbdfc6b90fe5683bb55182df55b8d",
+        "bytes": 415481
+      },
+      "label": {
+        "relative_path": "old_development/mahe/mahe_42_mask.png",
+        "sha256": "86789315e610b23089192b1ad6eca5790f124af686de9b342f715cdaa53d5245",
+        "bytes": 18959
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/mahe/images/mahe_42.tif",
+        "sha256": "ce5cf6d7c7f0aa85fd09bc097b87327cb7a884d7c5228a0717331d63469b4b9d",
+        "bytes": 3149172,
+        "zip_crc32": "0569edac"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/mahe/labels/mahe_42.tif",
+        "sha256": "76768490cdb8a7d9977689192157a4081114367d84364cd6caf9c78d825f7028",
+        "bytes": 1049704,
+        "zip_crc32": "9ed0f24b"
+      },
+      "metadata": {
+        "relative_path": "old_development/mahe/mahe_42.json",
+        "sha256": "ae53aa1ddbb969afc75f7163db3f6b649866c19e933e89aa8a71b28f7f27bb24",
+        "bytes": 51391
+      },
+      "compact_payload_bytes": 485831
+    },
+    {
+      "id": "mahe__mahe_70",
+      "region": "mahe",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/mahe/mahe_70_rgb.png",
+        "sha256": "b5000a98abcedbefe4916dda40b295e7a66f8e028bf221aca70d709c457c4d89",
+        "bytes": 451183
+      },
+      "label": {
+        "relative_path": "old_development/mahe/mahe_70_mask.png",
+        "sha256": "1c500eda31254b937110c572117672b52b3cefcaf8dc7a1f69542ec85e8fc136",
+        "bytes": 21044
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/mahe/images/mahe_70.tif",
+        "sha256": "03cde0306d6330f3c083d05e095f0bbc16f0966f506af6cf9eb9dbb7318e13cb",
+        "bytes": 3149172,
+        "zip_crc32": "839420d1"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/mahe/labels/mahe_70.tif",
+        "sha256": "87aae9c69a4f3a484128d99fd22d61720d066aad154e1620f7c348cf726c0fbe",
+        "bytes": 1049704,
+        "zip_crc32": "b89710e6"
+      },
+      "metadata": {
+        "relative_path": "old_development/mahe/mahe_70.json",
+        "sha256": "55df524992475ae3920806cccdeaf547855847d6ac3ed64ec32e79b63c20bb2f",
+        "bytes": 51399
+      },
+      "compact_payload_bytes": 523626
+    },
+    {
+      "id": "maputo__maputo_1",
+      "region": "maputo",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/maputo/maputo_1_rgb.png",
+        "sha256": "d1fd01ef892a5e54307477bf4d27eb5303099c06ad907de408648e896c28298a",
+        "bytes": 410885
+      },
+      "label": {
+        "relative_path": "old_development/maputo/maputo_1_mask.png",
+        "sha256": "a99aac377b2cec403c0863da4b52a5bfca6b47c79c675ae23caee652690af8ea",
+        "bytes": 19333
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/maputo/images/maputo_1.tif",
+        "sha256": "5d3ff050479d7c5f2ce645c96bb7e0ccbb0c9a222adcd0b662a960ffed47485e",
+        "bytes": 3149175,
+        "zip_crc32": "42b614c8"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/maputo/labels/maputo_1.tif",
+        "sha256": "8befe1fa57721a2a8e88adcb87bea33605dfa960a7d10e191d32fd84191e92c1",
+        "bytes": 1049707,
+        "zip_crc32": "b60ca531"
+      },
+      "metadata": {
+        "relative_path": "old_development/maputo/maputo_1.json",
+        "sha256": "849ca66d5ca9deae1bfb721df37f852a1a67ca8b50ef4504e7102964ad25b05f",
+        "bytes": 51719
+      },
+      "compact_payload_bytes": 481937
+    },
+    {
+      "id": "maputo__maputo_11",
+      "region": "maputo",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/maputo/maputo_11_rgb.png",
+        "sha256": "70e8a081eeb4c8390ef044c3f26cdbe2eebae72e7c5da805bb601204482674c9",
+        "bytes": 381963
+      },
+      "label": {
+        "relative_path": "old_development/maputo/maputo_11_mask.png",
+        "sha256": "67416f9e2fbd9af2f41ef93c4315f819179889a3a45c83643660b22f39a900c4",
+        "bytes": 14912
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/maputo/images/maputo_11.tif",
+        "sha256": "d596d2043c4f2218a2903639a8958678d61e88592315b70542b24e610f14bc52",
+        "bytes": 3149175,
+        "zip_crc32": "26ff7157"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/maputo/labels/maputo_11.tif",
+        "sha256": "4a285593b44419c417a508af77fd3251e5a979b6088f284485d09aa4304d2940",
+        "bytes": 1049707,
+        "zip_crc32": "a561d98d"
+      },
+      "metadata": {
+        "relative_path": "old_development/maputo/maputo_11.json",
+        "sha256": "433bcbc71eb61de512a6be279fb6fd7a3a0bff43fa1e2be87c440d81839bbe5a",
+        "bytes": 51564
+      },
+      "compact_payload_bytes": 448439
+    },
+    {
+      "id": "maputo__maputo_13",
+      "region": "maputo",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/maputo/maputo_13_rgb.png",
+        "sha256": "ba093aa70d5dde2cef669d4a8addc2f9030314588c1f678121f33c896133edbc",
+        "bytes": 454950
+      },
+      "label": {
+        "relative_path": "old_development/maputo/maputo_13_mask.png",
+        "sha256": "4543a5f9e15b00bad157254a5527eb6e25a8439ae011315b25c6ed2358eacc9d",
+        "bytes": 19972
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/maputo/images/maputo_13.tif",
+        "sha256": "d609ff79f36ccd26009fd2350ef130d7c2147cea38dc7abc17fad2afacf94e81",
+        "bytes": 3149175,
+        "zip_crc32": "e3c669f6"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/maputo/labels/maputo_13.tif",
+        "sha256": "293c9719ab9d35a47735bc137265647c9d62b363642a647453c8883faebd0777",
+        "bytes": 1049707,
+        "zip_crc32": "0b83d14c"
+      },
+      "metadata": {
+        "relative_path": "old_development/maputo/maputo_13.json",
+        "sha256": "5702502912704536427f43ca1bdb93377d072f250f13ed3b3d5f9b0a443b82f8",
+        "bytes": 51155
+      },
+      "compact_payload_bytes": 526077
+    },
+    {
+      "id": "maputo__maputo_14",
+      "region": "maputo",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/maputo/maputo_14_rgb.png",
+        "sha256": "0649cee6a04240437e9532c9903588603b0f8607e67b91ba0318b32f8552672e",
+        "bytes": 439859
+      },
+      "label": {
+        "relative_path": "old_development/maputo/maputo_14_mask.png",
+        "sha256": "21d47ccd9dfcf1d5ceb566757e097806dc79ff35e09980863dd68a544a5fc608",
+        "bytes": 16977
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/maputo/images/maputo_14.tif",
+        "sha256": "367aea58e6e0e1de5bfadd6aeca06c2f7e3cabc871365aa395aca0314c84aaf6",
+        "bytes": 3149175,
+        "zip_crc32": "9b6c7527"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/maputo/labels/maputo_14.tif",
+        "sha256": "a638804f8cec50d84080f8ff8438ebc20971f273d744d1af12cfb4f24d8fc09f",
+        "bytes": 1049707,
+        "zip_crc32": "184a152e"
+      },
+      "metadata": {
+        "relative_path": "old_development/maputo/maputo_14.json",
+        "sha256": "713af19b01656c6f432e223f4eed0dde399596bf01a833542c5a2d3eda51ba23",
+        "bytes": 51009
+      },
+      "compact_payload_bytes": 507845
+    },
+    {
+      "id": "maputo__maputo_9",
+      "region": "maputo",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/maputo/maputo_9_rgb.png",
+        "sha256": "90b2102121bc98a54225f4aadbe23d7feb612116a2fa90375257da15d3e22840",
+        "bytes": 439466
+      },
+      "label": {
+        "relative_path": "old_development/maputo/maputo_9_mask.png",
+        "sha256": "e314c59e722b3231f32384b5c79fecb2073c9fa790ada75b9c740c87b7b15989",
+        "bytes": 18231
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/maputo/images/maputo_9.tif",
+        "sha256": "e433391c7e9cf20686dc0b0939ef403a965ba19f4c9fc719ab39b96f024249f7",
+        "bytes": 3149175,
+        "zip_crc32": "7be6c8f3"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/maputo/labels/maputo_9.tif",
+        "sha256": "fc4d066dd842de7dfe330770756622f4aa37486f1289d6172203dd8636520665",
+        "bytes": 1049707,
+        "zip_crc32": "49c92f62"
+      },
+      "metadata": {
+        "relative_path": "old_development/maputo/maputo_9.json",
+        "sha256": "54270e2988586844dc825d21792cda206fa065671ed83fe13baf9f3f3c78a911",
+        "bytes": 51536
+      },
+      "compact_payload_bytes": 509233
+    },
+    {
+      "id": "melbourne__melbourne_18",
+      "region": "melbourne",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/melbourne/melbourne_18_rgb.png",
+        "sha256": "ba712031feefe728765a3a9668c28912f8f288ed81189947cc5214807342e43d",
+        "bytes": 369661
+      },
+      "label": {
+        "relative_path": "old_development/melbourne/melbourne_18_mask.png",
+        "sha256": "8833041c7240894b3c92e88133e39bc129e288b2722d659e68e791df4324839c",
+        "bytes": 10041
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/melbourne/images/melbourne_18.tif",
+        "sha256": "9b705446da7f9f45e0f3bb6c7bc7c0e7079bf624ae8e6b59c0910bafe894a082",
+        "bytes": 3149175,
+        "zip_crc32": "3ac776e5"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/melbourne/labels/melbourne_18.tif",
+        "sha256": "e1aa6d199b9b17a969d93faf4b25545827acdee86c46817f7789145459a253f3",
+        "bytes": 1049707,
+        "zip_crc32": "8cdb55c6"
+      },
+      "metadata": {
+        "relative_path": "old_development/melbourne/melbourne_18.json",
+        "sha256": "09a438af2f1ae6f80d70982420cf1cca292628a5244fc0e7ca224af91b1f2289",
+        "bytes": 51377
+      },
+      "compact_payload_bytes": 431079
+    },
+    {
+      "id": "melbourne__melbourne_23",
+      "region": "melbourne",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/melbourne/melbourne_23_rgb.png",
+        "sha256": "c9453e670345e6ddb33c4ecb7f176ff5b784edfacb2c13101380f8ace3b0d3c7",
+        "bytes": 387005
+      },
+      "label": {
+        "relative_path": "old_development/melbourne/melbourne_23_mask.png",
+        "sha256": "33b51ee4c22da1c6fad71dab2a84f53a7be286fd69cd9efddcb007897206a2e1",
+        "bytes": 12749
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/melbourne/images/melbourne_23.tif",
+        "sha256": "a2bd9be7f22808a1e503cfabec822d8839e00a9f63b63a9613ecaeacf9c34449",
+        "bytes": 3149175,
+        "zip_crc32": "e8bb880a"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/melbourne/labels/melbourne_23.tif",
+        "sha256": "4febd3280cb63e9c632871cda4d5f56caa66f2f81dc76b6c52c09267ca8ec695",
+        "bytes": 1049707,
+        "zip_crc32": "7d2fec86"
+      },
+      "metadata": {
+        "relative_path": "old_development/melbourne/melbourne_23.json",
+        "sha256": "f2e64aca9acb1d466db0115ea6d76520d2d109ea74adbd7e7246c5a6ba8c341e",
+        "bytes": 51877
+      },
+      "compact_payload_bytes": 451631
+    },
+    {
+      "id": "melbourne__melbourne_34",
+      "region": "melbourne",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/melbourne/melbourne_34_rgb.png",
+        "sha256": "5131cc429f40e30775f41f5eb9ac23aeee5c98530b62c9b5aa97d4c8841d6446",
+        "bytes": 397496
+      },
+      "label": {
+        "relative_path": "old_development/melbourne/melbourne_34_mask.png",
+        "sha256": "fa7c911b06c470c96010ad77656cbd4e6222c1ec607a62473cb02b2a05163f29",
+        "bytes": 18736
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/melbourne/images/melbourne_34.tif",
+        "sha256": "b25c73fff12028fc28b8d919279329777c41cc13b6f163228ec009b34f826ceb",
+        "bytes": 3149175,
+        "zip_crc32": "d0458b4d"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/melbourne/labels/melbourne_34.tif",
+        "sha256": "8380ef728b62a8ccc00ac3e24ba6f2e5e0268b52ee680ebca794004136f294d8",
+        "bytes": 1049707,
+        "zip_crc32": "67a30441"
+      },
+      "metadata": {
+        "relative_path": "old_development/melbourne/melbourne_34.json",
+        "sha256": "e090603e9559c39c970087910dd3c79782b1be6b2aec04a94d768ed0936aeed9",
+        "bytes": 51523
+      },
+      "compact_payload_bytes": 467755
+    },
+    {
+      "id": "melbourne__melbourne_64",
+      "region": "melbourne",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/melbourne/melbourne_64_rgb.png",
+        "sha256": "e548591b6b6b18222b05008a5701cf3d9636456d42c9795b275a9d7b1154f121",
+        "bytes": 347242
+      },
+      "label": {
+        "relative_path": "old_development/melbourne/melbourne_64_mask.png",
+        "sha256": "ad4d346a159af68e83ccdf4c5b808b50d3f97708571058ff922a849304cb8a4e",
+        "bytes": 10060
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/melbourne/images/melbourne_64.tif",
+        "sha256": "5904de84d8b3f6593fe4bb223925c666c119b02555e4f9abf3d65476d1d2209a",
+        "bytes": 3149175,
+        "zip_crc32": "cca9f2f8"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/melbourne/labels/melbourne_64.tif",
+        "sha256": "82bad5882c944be73a8902e0198401f3ad1b042fd4737e123abd7797d37b45b3",
+        "bytes": 1049707,
+        "zip_crc32": "16dfc13f"
+      },
+      "metadata": {
+        "relative_path": "old_development/melbourne/melbourne_64.json",
+        "sha256": "7da4c2f9706d1064159d32237cc28473264a70f8c5eab614c9c31ba2b8bde3e7",
+        "bytes": 51452
+      },
+      "compact_payload_bytes": 408754
+    },
+    {
+      "id": "melbourne__melbourne_7",
+      "region": "melbourne",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/melbourne/melbourne_7_rgb.png",
+        "sha256": "905994d064a021327e17ddd973b4dce7be9e6157001f904d7bbd3cb41a250acc",
+        "bytes": 342875
+      },
+      "label": {
+        "relative_path": "old_development/melbourne/melbourne_7_mask.png",
+        "sha256": "f13d9fe6697596731efd0cb5e8356d6600ab1eb2ea7cfba2a676ca741ab9b8e6",
+        "bytes": 13208
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/melbourne/images/melbourne_7.tif",
+        "sha256": "bb3932038548763171dde40744c0fb5e31d5210ff6ed4fd1c06152ef3a059877",
+        "bytes": 3149175,
+        "zip_crc32": "7468728e"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/melbourne/labels/melbourne_7.tif",
+        "sha256": "f43cd1ef6e7d77644ab8df23bbe7258c30164c1a5eef1b270a59e49221e87e0c",
+        "bytes": 1049707,
+        "zip_crc32": "6e3a3741"
+      },
+      "metadata": {
+        "relative_path": "old_development/melbourne/melbourne_7.json",
+        "sha256": "9bda2c3fe131d0e4d09efe67c210ef27b4ba0b5a026440e8a299db61de72f266",
+        "bytes": 51868
+      },
+      "compact_payload_bytes": 407951
+    },
+    {
+      "id": "niamey__niamey_10",
+      "region": "niamey",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/niamey/niamey_10_rgb.png",
+        "sha256": "fd8a0720012038420d98673c538d54756a0f14a6af6a774c5aaf50ddd2218988",
+        "bytes": 376235
+      },
+      "label": {
+        "relative_path": "old_development/niamey/niamey_10_mask.png",
+        "sha256": "e7a9c45d8615456a15f6bebdc038ac5249d9264a27487e9f9a35fc2e244599ac",
+        "bytes": 19395
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/niamey/images/niamey_10.tif",
+        "sha256": "289863d3a3b174d172bf93967b3867403da1c46b4e97743e3383b126d59b8a74",
+        "bytes": 3149172,
+        "zip_crc32": "395dd556"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/niamey/labels/niamey_10.tif",
+        "sha256": "17bc09ee9eab875297da9a68236f30c01b8e6fbc9451997d644a8ff8050ee5ee",
+        "bytes": 1049704,
+        "zip_crc32": "2790f224"
+      },
+      "metadata": {
+        "relative_path": "old_development/niamey/niamey_10.json",
+        "sha256": "dbcf451dbaa11d28b146bf2d2d56531360079925e5561ceb99abfc6eba0e8593",
+        "bytes": 51789
+      },
+      "compact_payload_bytes": 447419
+    },
+    {
+      "id": "niamey__niamey_11",
+      "region": "niamey",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/niamey/niamey_11_rgb.png",
+        "sha256": "54962030f205147c515855a64abe41d652468231421927195196bd2bcf7a80ba",
+        "bytes": 425120
+      },
+      "label": {
+        "relative_path": "old_development/niamey/niamey_11_mask.png",
+        "sha256": "0f63a3137e29cd08740d2dad4312ae5643252e2c235bb1fce129e482b8e6a4b0",
+        "bytes": 20862
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/niamey/images/niamey_11.tif",
+        "sha256": "ca3507ca09a871edfc55cad2e47ef950b6d8d832a1ed1e279424cb1a6ed1ad89",
+        "bytes": 3149172,
+        "zip_crc32": "d28c29e1"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/niamey/labels/niamey_11.tif",
+        "sha256": "622c5d5283aa3a75118068eabae515f477e5e0289217c111c474ac22e45e0da7",
+        "bytes": 1049704,
+        "zip_crc32": "3c6c970d"
+      },
+      "metadata": {
+        "relative_path": "old_development/niamey/niamey_11.json",
+        "sha256": "812b11f13cf3b0ca0ed8b7dbb74eaeedf39062cb73b1da758412405975047ab0",
+        "bytes": 51835
+      },
+      "compact_payload_bytes": 497817
+    },
+    {
+      "id": "niamey__niamey_3",
+      "region": "niamey",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/niamey/niamey_3_rgb.png",
+        "sha256": "014fc0acfb587ccca9e2cc37672e9229da0fea9a9462344c46fa4b28f9313397",
+        "bytes": 444093
+      },
+      "label": {
+        "relative_path": "old_development/niamey/niamey_3_mask.png",
+        "sha256": "5b54a6371b084a6c350871ce9a1c91198980e7ed0f46742ebaa31ad92556aa69",
+        "bytes": 20798
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/niamey/images/niamey_3.tif",
+        "sha256": "6f01e097e9178fa4378ea946393b5798ed8866bbc814c7eee78e78f20475aa1c",
+        "bytes": 3149172,
+        "zip_crc32": "98709052"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/niamey/labels/niamey_3.tif",
+        "sha256": "7c83dcf498f7f26d79c702415c5620d964a2a14e02e478abf21e3347150cb00c",
+        "bytes": 1049704,
+        "zip_crc32": "cc6268ad"
+      },
+      "metadata": {
+        "relative_path": "old_development/niamey/niamey_3.json",
+        "sha256": "d7931cd3d5eedb36a76df90ea2b6d9c9de5b4ef1cc11cf8e723e85602a93d9cc",
+        "bytes": 51800
+      },
+      "compact_payload_bytes": 516691
+    },
+    {
+      "id": "niamey__niamey_8",
+      "region": "niamey",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/niamey/niamey_8_rgb.png",
+        "sha256": "5bdac6e73dbf233f6412aeaa1e82484588060231ae33881faf19e7e67506d64d",
+        "bytes": 367245
+      },
+      "label": {
+        "relative_path": "old_development/niamey/niamey_8_mask.png",
+        "sha256": "fdf3acbb977a639a4f49ff6968b00baa33e0519484689179c2a3dbdd48a868c2",
+        "bytes": 17318
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/niamey/images/niamey_8.tif",
+        "sha256": "4e2448233eae661791833096ced0097e2d916be77f67796dd8532975e7af357d",
+        "bytes": 3149172,
+        "zip_crc32": "c2296cb1"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/niamey/labels/niamey_8.tif",
+        "sha256": "21ac07b9ca396dde4d8f94f5a13701f753a4180d09f70e452ebae3657da7e252",
+        "bytes": 1049704,
+        "zip_crc32": "86004e22"
+      },
+      "metadata": {
+        "relative_path": "old_development/niamey/niamey_8.json",
+        "sha256": "41e2ce65d7d4d9dd59c5f280375476bfb5e1260ae9cbc88b8c36341aad5de571",
+        "bytes": 51781
+      },
+      "compact_payload_bytes": 436344
+    },
+    {
+      "id": "niamey__niamey_9",
+      "region": "niamey",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/niamey/niamey_9_rgb.png",
+        "sha256": "9bb224018731570dab714854148d3ee155a1392ffd45369fc911a9cac25fdc24",
+        "bytes": 432611
+      },
+      "label": {
+        "relative_path": "old_development/niamey/niamey_9_mask.png",
+        "sha256": "45572fd34a408cce2ab08869dd81f1a0db115b3a7e1cd42edf027065620b8f4e",
+        "bytes": 22582
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/niamey/images/niamey_9.tif",
+        "sha256": "097030224797418bec922da0895bc4e32938ce7e24bac255498f76774be32da5",
+        "bytes": 3149172,
+        "zip_crc32": "c490e54b"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/niamey/labels/niamey_9.tif",
+        "sha256": "81e44a97670c5599575d57b67c777b6554c0125adda46958487156df81a8124b",
+        "bytes": 1049704,
+        "zip_crc32": "5f3c7601"
+      },
+      "metadata": {
+        "relative_path": "old_development/niamey/niamey_9.json",
+        "sha256": "78d942ad839850a8bd22f2a10cf996a665a76273906b242d9846d579bae1e64d",
+        "bytes": 51772
+      },
+      "compact_payload_bytes": 506965
+    },
+    {
+      "id": "pointenoire__pointenoire_1",
+      "region": "pointenoire",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/pointenoire/pointenoire_1_rgb.png",
+        "sha256": "4f725f3f3d7d2d252f997bebd94172f545fffaaf4aa51b0845e93f80fe51d0ac",
+        "bytes": 422163
+      },
+      "label": {
+        "relative_path": "old_development/pointenoire/pointenoire_1_mask.png",
+        "sha256": "ee35d5d76a23c927dbdf6ed4f4710f247126f786f8c215a9ad157f20f4948e4f",
+        "bytes": 17319
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/pointenoire/images/pointenoire_1.tif",
+        "sha256": "1091afe4ce3e99979413ac8341b361f59d2514be2dec7abcd68066a6b2bbbd85",
+        "bytes": 3149172,
+        "zip_crc32": "e68b1fbe"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/pointenoire/labels/pointenoire_1.tif",
+        "sha256": "1d5b5b5a5ef01fd53d9d25261cc24901dfc61b49ab17e61ba9c425e01057d731",
+        "bytes": 1049704,
+        "zip_crc32": "ad5f436a"
+      },
+      "metadata": {
+        "relative_path": "old_development/pointenoire/pointenoire_1.json",
+        "sha256": "14e23ec05db05131ac390781e28fc1c3036e9a46cd6e2e006391d9d0058b6ca7",
+        "bytes": 51740
+      },
+      "compact_payload_bytes": 491222
+    },
+    {
+      "id": "pointenoire__pointenoire_5",
+      "region": "pointenoire",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/pointenoire/pointenoire_5_rgb.png",
+        "sha256": "f3d00cbf692e7304f980ae8b92f546b18ba503aa3007a643c0a409577324ed07",
+        "bytes": 414062
+      },
+      "label": {
+        "relative_path": "old_development/pointenoire/pointenoire_5_mask.png",
+        "sha256": "7bd1f5c30d6b24a9732192aab56c5071d33cfad042144d07594f34095d49a71c",
+        "bytes": 22868
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/pointenoire/images/pointenoire_5.tif",
+        "sha256": "119a48ad05ca35b00abca47d068c0fb4671dc300385ef44ec55254ae16cf83ec",
+        "bytes": 3149172,
+        "zip_crc32": "edb21d67"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/pointenoire/labels/pointenoire_5.tif",
+        "sha256": "e9089353af4b9fcc10b6884f82f137cb8f57a79cdaaa5c3cb4705842d45e3de9",
+        "bytes": 1049704,
+        "zip_crc32": "fed8c508"
+      },
+      "metadata": {
+        "relative_path": "old_development/pointenoire/pointenoire_5.json",
+        "sha256": "d3d367557a9df30ce809262d13f80622f802622c943aa690cc23798296acf1b5",
+        "bytes": 51702
+      },
+      "compact_payload_bytes": 488632
+    },
+    {
+      "id": "pointenoire__pointenoire_7",
+      "region": "pointenoire",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/pointenoire/pointenoire_7_rgb.png",
+        "sha256": "501bfa3eeef363792c99f07d5c53bf8fe424b71c0c65a56f5060bc6780a01f92",
+        "bytes": 413815
+      },
+      "label": {
+        "relative_path": "old_development/pointenoire/pointenoire_7_mask.png",
+        "sha256": "ba59de8d80324b7dcbbcbb52d576460d7d8e23524e107547eb23c52793b20a78",
+        "bytes": 22960
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/pointenoire/images/pointenoire_7.tif",
+        "sha256": "a4691a475d753dc25e5a768d19de62e05d22c45b02bf7e2c3c8ed7b54f15c326",
+        "bytes": 3149172,
+        "zip_crc32": "3375b5fe"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/pointenoire/labels/pointenoire_7.tif",
+        "sha256": "fdba61e5523f25f6b96e2978cb04f6b60c5f7a235787240ed26ce1e41e6d7282",
+        "bytes": 1049704,
+        "zip_crc32": "29c9bd3e"
+      },
+      "metadata": {
+        "relative_path": "old_development/pointenoire/pointenoire_7.json",
+        "sha256": "c2aad82843b1536a70226dfc4978fa92f01f121cd9b2d4c29bc4f19e0b2e520e",
+        "bytes": 51666
+      },
+      "compact_payload_bytes": 488441
+    },
+    {
+      "id": "pointenoire__pointenoire_8",
+      "region": "pointenoire",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/pointenoire/pointenoire_8_rgb.png",
+        "sha256": "3139459f147ed2beb6bb0624b4b1469bdc8556b4e931cf55f5558bcf73f0871a",
+        "bytes": 412598
+      },
+      "label": {
+        "relative_path": "old_development/pointenoire/pointenoire_8_mask.png",
+        "sha256": "78f44afb98662da9fdad53d3895a27a3f49e5a2b299a267648a2f5f3018cfde3",
+        "bytes": 22779
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/pointenoire/images/pointenoire_8.tif",
+        "sha256": "4679101f034e8e88470e1ceaa26cad65c7b80eebeb753327f9d6d614cdf6f89a",
+        "bytes": 3149172,
+        "zip_crc32": "7acfb0c8"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/pointenoire/labels/pointenoire_8.tif",
+        "sha256": "9c9ae11852d8a4ff3c23b0c9323caba785b10fdc1e09dc0769d79df4fa4211a2",
+        "bytes": 1049704,
+        "zip_crc32": "6de4402b"
+      },
+      "metadata": {
+        "relative_path": "old_development/pointenoire/pointenoire_8.json",
+        "sha256": "f6f20338f9d7503221ac2941246d777a41a00066ea7ea4ffb25265f03c080909",
+        "bytes": 51676
+      },
+      "compact_payload_bytes": 487053
+    },
+    {
+      "id": "pointenoire__pointenoire_9",
+      "region": "pointenoire",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/pointenoire/pointenoire_9_rgb.png",
+        "sha256": "6ebdeffad1e20f1dbd3e709f77e04d07f086131b26917c8baab8e6453c87d7ba",
+        "bytes": 393362
+      },
+      "label": {
+        "relative_path": "old_development/pointenoire/pointenoire_9_mask.png",
+        "sha256": "9bbf131d6628d93d1035fea88c733a699f7cd606285009928842cb0947b45751",
+        "bytes": 23364
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/pointenoire/images/pointenoire_9.tif",
+        "sha256": "7591865031f88e9febc33a45236d53f3b69419afa70d68bf4c2ea8ae313abb4d",
+        "bytes": 3149172,
+        "zip_crc32": "95bbb040"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/pointenoire/labels/pointenoire_9.tif",
+        "sha256": "3a75ab84ed50d63237842b092604956d97a2e59a3f7582234d802ac919e72c23",
+        "bytes": 1049704,
+        "zip_crc32": "86cb5df4"
+      },
+      "metadata": {
+        "relative_path": "old_development/pointenoire/pointenoire_9.json",
+        "sha256": "e19e0263a8da53989db1a51c74d64c691a1df14fd09104df565896bff0809c5e",
+        "bytes": 51691
+      },
+      "compact_payload_bytes": 468417
+    },
+    {
+      "id": "rio__rio_19",
+      "region": "rio",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/rio/rio_19_rgb.png",
+        "sha256": "4f0c8ef9c0e9868400a8da15f60595f0cbe56204e0a69cd4172e9c19da72c8d6",
+        "bytes": 346639
+      },
+      "label": {
+        "relative_path": "old_development/rio/rio_19_mask.png",
+        "sha256": "779c4470d585fbcee17340e4ec3a108f8d296af7b11fe489a1bf01afdf2bb19b",
+        "bytes": 6868
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/rio/images/rio_19.tif",
+        "sha256": "df729ce60d2e9b0cfe7402bd1b8c01107f0be785d62bbcaa4bac6e6cce9b5703",
+        "bytes": 534270,
+        "zip_crc32": "eb41dc20"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/rio/labels/rio_19.tif",
+        "sha256": "9d6980076ef7687501b491642dba26e4b410647e712495de042ef2e39c0fac07",
+        "bytes": 178332,
+        "zip_crc32": "0bd27f1f"
+      },
+      "metadata": {
+        "relative_path": "old_development/rio/rio_19.json",
+        "sha256": "04ac3da309b5e0ee894b13d1000be44b10744def097688738fa9ee93b69704d6",
+        "bytes": 49480
+      },
+      "compact_payload_bytes": 402987
+    },
+    {
+      "id": "rio__rio_22",
+      "region": "rio",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/rio/rio_22_rgb.png",
+        "sha256": "9f28ea93542c81adf5edcf7c8ca4b73c214ac773b8deac52c7f97f4c1fc0f549",
+        "bytes": 342703
+      },
+      "label": {
+        "relative_path": "old_development/rio/rio_22_mask.png",
+        "sha256": "124c7537f67b48b447e06d3d05a55382678a75716c417f232914703c479d0265",
+        "bytes": 7499
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/rio/images/rio_22.tif",
+        "sha256": "1f22d17cf843885af56d125c05e6c1cf6b0b808f68c026f1b18f858202b59421",
+        "bytes": 535488,
+        "zip_crc32": "f1e9fc4a"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/rio/labels/rio_22.tif",
+        "sha256": "8511b7642937ddeafe2e0d72833e4140b14d6f68bbb92acfe792a030e3847968",
+        "bytes": 178738,
+        "zip_crc32": "09e5f95d"
+      },
+      "metadata": {
+        "relative_path": "old_development/rio/rio_22.json",
+        "sha256": "0e9ba58ec455d1d75b070e9dcba32c4726c1abb526fb0fe2c7b36853d3b9ae86",
+        "bytes": 49296
+      },
+      "compact_payload_bytes": 399498
+    },
+    {
+      "id": "rio__rio_34",
+      "region": "rio",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/rio/rio_34_rgb.png",
+        "sha256": "3668eb7836f8c699ed7a810f831a1b279c81a4a75456876798035ce0ff93cb0e",
+        "bytes": 372959
+      },
+      "label": {
+        "relative_path": "old_development/rio/rio_34_mask.png",
+        "sha256": "7eb95a55b9a7961438e69f277bf94dd66b79153c149a5549c497998aaf304bad",
+        "bytes": 11755
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/rio/images/rio_34.tif",
+        "sha256": "9b0eb5840a3b63cf12048a540bd7a9e342be40644467ec6707240e07081b0281",
+        "bytes": 534270,
+        "zip_crc32": "c0c5e4c4"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/rio/labels/rio_34.tif",
+        "sha256": "cc4e68389fbee9d90b0a523b10dd356aa29ca618540c6e6928fc4be76b5d7ede",
+        "bytes": 178332,
+        "zip_crc32": "11f47efb"
+      },
+      "metadata": {
+        "relative_path": "old_development/rio/rio_34.json",
+        "sha256": "685ea8e814a0755bded804b0d5f54eef1ca983a26b1e9bd87542553fa394a922",
+        "bytes": 49044
+      },
+      "compact_payload_bytes": 433758
+    },
+    {
+      "id": "rio__rio_5",
+      "region": "rio",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/rio/rio_5_rgb.png",
+        "sha256": "172d9e609a579f4bc330f8ec3079ddc484a7a03b94e4c3c061842782931dc9de",
+        "bytes": 390370
+      },
+      "label": {
+        "relative_path": "old_development/rio/rio_5_mask.png",
+        "sha256": "e8faabd684bf31977f9f55f5af6bbe6bb22c56cb16aae4c1aa0b2d85f96f0f8e",
+        "bytes": 14901
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/rio/images/rio_5.tif",
+        "sha256": "d9ecc2fda3d6cfbce4861da2715544840385207920f0bb2d8603d7a9548f6a1f",
+        "bytes": 535488,
+        "zip_crc32": "36d65c2e"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/rio/labels/rio_5.tif",
+        "sha256": "6f6fa419a569e26560cdbd9cc44862c58bf56d324e3db65276b8182125bd26ee",
+        "bytes": 178738,
+        "zip_crc32": "314d1caf"
+      },
+      "metadata": {
+        "relative_path": "old_development/rio/rio_5.json",
+        "sha256": "ca1ac7dad3a3c07d9d2a0894e74aec57192bae70e0a532bb51c4520a37038372",
+        "bytes": 49431
+      },
+      "compact_payload_bytes": 454702
+    },
+    {
+      "id": "rio__rio_50",
+      "region": "rio",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/rio/rio_50_rgb.png",
+        "sha256": "88ad0f2dc678f53011799c0c593cdb3f86697acdaf7d89a2b229ccec8287099b",
+        "bytes": 350790
+      },
+      "label": {
+        "relative_path": "old_development/rio/rio_50_mask.png",
+        "sha256": "acf60fe4e75ccf3b2c15bf7537b10fd422ed8757a1ff5ed315d8ae65a9b9909b",
+        "bytes": 4563
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/rio/images/rio_50.tif",
+        "sha256": "cce1e75f34242a037891678898eaa75bc1af6479856296a241d1d327b6fc346f",
+        "bytes": 535488,
+        "zip_crc32": "dc898a43"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/rio/labels/rio_50.tif",
+        "sha256": "5c8586ce6b1a0ce5f31f407534c16544a5eeab1ae257f1c879929bc98eed2c91",
+        "bytes": 178738,
+        "zip_crc32": "58d219d6"
+      },
+      "metadata": {
+        "relative_path": "old_development/rio/rio_50.json",
+        "sha256": "bbe2251204c727dbdc9b1bb952b97e56c68fef84f3e9c0458098fdff7828e5ec",
+        "bytes": 49413
+      },
+      "compact_payload_bytes": 404766
+    },
+    {
+      "id": "rotterdam__rotterdam_20",
+      "region": "rotterdam",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/rotterdam/rotterdam_20_rgb.png",
+        "sha256": "c60c6e16f30095feb39a2a3f8156987c21218d2c84e09f33a6655a2dbe0dbe1b",
+        "bytes": 328905
+      },
+      "label": {
+        "relative_path": "old_development/rotterdam/rotterdam_20_mask.png",
+        "sha256": "43bb10eee60a60bf692580e2890e9107d45429f716ae0b7f20284a611ddda8e6",
+        "bytes": 13626
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/rotterdam/images/rotterdam_20.tif",
+        "sha256": "0b3bf67ab37549dfbf9ac8f4d0a988bba974e3434b5ed93acc83154b123a5b3b",
+        "bytes": 2432172,
+        "zip_crc32": "100bb7d1"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/rotterdam/labels/rotterdam_20.tif",
+        "sha256": "b107cb5d9e7598fc5bf0ed63483b589853bbdad36f7b83af6d7c554be67b153f",
+        "bytes": 810960,
+        "zip_crc32": "20ba6c9f"
+      },
+      "metadata": {
+        "relative_path": "old_development/rotterdam/rotterdam_20.json",
+        "sha256": "8c8db6e0883a0699b9e393f764dbbeec91aec61d3ca5043409c50030f9b27a91",
+        "bytes": 51382
+      },
+      "compact_payload_bytes": 393913
+    },
+    {
+      "id": "rotterdam__rotterdam_30",
+      "region": "rotterdam",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/rotterdam/rotterdam_30_rgb.png",
+        "sha256": "3bca849b33e36a6e30513b7b415cb47c1ae096da2473bc28e53f6d4ee89a96d8",
+        "bytes": 311977
+      },
+      "label": {
+        "relative_path": "old_development/rotterdam/rotterdam_30_mask.png",
+        "sha256": "232fedf866e112859ead24bce91b4b1328a0fe8c51aba89d68bf08e1a5fbc27b",
+        "bytes": 10434
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/rotterdam/images/rotterdam_30.tif",
+        "sha256": "f4412bf8755ab25f342fc16d4652434fed2e0eff3cd1d9f10dbd2ec84282f985",
+        "bytes": 2432172,
+        "zip_crc32": "3fdc524a"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/rotterdam/labels/rotterdam_30.tif",
+        "sha256": "1aa634f97e747ac8220817b55e8b27d70ddde0095db129cca2db3e7147f7b8bb",
+        "bytes": 810960,
+        "zip_crc32": "911ad250"
+      },
+      "metadata": {
+        "relative_path": "old_development/rotterdam/rotterdam_30.json",
+        "sha256": "ef01c520f49ee3ec18c2751a55f099bf124ba516d91612ec3ea62b1d55501425",
+        "bytes": 51405
+      },
+      "compact_payload_bytes": 373816
+    },
+    {
+      "id": "rotterdam__rotterdam_31",
+      "region": "rotterdam",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/rotterdam/rotterdam_31_rgb.png",
+        "sha256": "4dfe58e89b7789a8f401d2f833b5aab43999814040f299dbd25eaace746d5990",
+        "bytes": 327544
+      },
+      "label": {
+        "relative_path": "old_development/rotterdam/rotterdam_31_mask.png",
+        "sha256": "0cdda1dcad17debec182c507f779b6ef26a486300e5b6174cee4a3f396e7e0b8",
+        "bytes": 15251
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/rotterdam/images/rotterdam_31.tif",
+        "sha256": "02c585d1c61b83f4724d5745abc9baeaa0f4b65a08095b34249603440ceeb21d",
+        "bytes": 2432172,
+        "zip_crc32": "1f2a17dd"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/rotterdam/labels/rotterdam_31.tif",
+        "sha256": "a5fa9649ad062f93bcabbfb94ca827be3d965d3b63cb873571dcc94a8bfce398",
+        "bytes": 810960,
+        "zip_crc32": "dce59541"
+      },
+      "metadata": {
+        "relative_path": "old_development/rotterdam/rotterdam_31.json",
+        "sha256": "c326bd4fc0bb8878287cd7f3b8f49205998e4e235b2238144b46c4b01c6836b5",
+        "bytes": 51385
+      },
+      "compact_payload_bytes": 394180
+    },
+    {
+      "id": "rotterdam__rotterdam_32",
+      "region": "rotterdam",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/rotterdam/rotterdam_32_rgb.png",
+        "sha256": "3513235c1aa565dc521ac40b7dd3b713b961d95759fc27e0c0b4142d152d6f76",
+        "bytes": 292583
+      },
+      "label": {
+        "relative_path": "old_development/rotterdam/rotterdam_32_mask.png",
+        "sha256": "3e8a8edd2ef3222db74bcec8d380ced1e9a624a95725876562f112ae4454cc4d",
+        "bytes": 6678
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/rotterdam/images/rotterdam_32.tif",
+        "sha256": "105403ef59ed7ef54dc5f7ec2cdec97e04a63c28bceecbabec70c6e076cffc79",
+        "bytes": 2432172,
+        "zip_crc32": "a0dcdfac"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/rotterdam/labels/rotterdam_32.tif",
+        "sha256": "21deb870cfe92ea4c9cd80d2b7b961ab907473e444a3ec289d91b1e9a5a1d90a",
+        "bytes": 810960,
+        "zip_crc32": "09cf57cd"
+      },
+      "metadata": {
+        "relative_path": "old_development/rotterdam/rotterdam_32.json",
+        "sha256": "e6e1f6825e15bf4a0cdbbc73da6594ff5c5bcda97fe68cc9414619e8449bb3d3",
+        "bytes": 51367
+      },
+      "compact_payload_bytes": 350628
+    },
+    {
+      "id": "rotterdam__rotterdam_44",
+      "region": "rotterdam",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/rotterdam/rotterdam_44_rgb.png",
+        "sha256": "84d9854cad698c4fdd4c013d28a184a1c2fc3896f61d4471375fabfe07004f94",
+        "bytes": 304002
+      },
+      "label": {
+        "relative_path": "old_development/rotterdam/rotterdam_44_mask.png",
+        "sha256": "7f17fd66f7a03729994409bc4aae75e6af9ee0bc25a549a437791f630d650abf",
+        "bytes": 6121
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/rotterdam/images/rotterdam_44.tif",
+        "sha256": "a8140eb1de45a5c420e7f3a36fc77d99bc272444164e79a89702cf48e721f248",
+        "bytes": 2432172,
+        "zip_crc32": "635eb008"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/rotterdam/labels/rotterdam_44.tif",
+        "sha256": "77febcae95a18d8faabfed00ce1cf2ebb7d56f84209761667ef72d743a715753",
+        "bytes": 810960,
+        "zip_crc32": "8309f6f8"
+      },
+      "metadata": {
+        "relative_path": "old_development/rotterdam/rotterdam_44.json",
+        "sha256": "baad0086ebc6c50b8258bba5200e4ff775b2ece277ec647a024c95207f95c392",
+        "bytes": 51369
+      },
+      "compact_payload_bytes": 361492
+    },
+    {
+      "id": "santiago__santiago_1",
+      "region": "santiago",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/santiago/santiago_1_rgb.png",
+        "sha256": "5290af157ca65c66749b6cb2892715ff69953647604f7cc40295e84ec705f28d",
+        "bytes": 352964
+      },
+      "label": {
+        "relative_path": "old_development/santiago/santiago_1_mask.png",
+        "sha256": "ebb81e284373c52dc1d43fde0ac6a29417ff4c6e11d5e070c0041db7c3c82f55",
+        "bytes": 17657
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/santiago/images/santiago_1.tif",
+        "sha256": "02a829475d48690e4c967081bcc3edde9f5cea1655d737536d71a9d874acc404",
+        "bytes": 3149172,
+        "zip_crc32": "edc9f36a"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/santiago/labels/santiago_1.tif",
+        "sha256": "22058d7fc9849385cb4e8875f3cbc70578cf0dd4b761893bfb5a7bdcd80414de",
+        "bytes": 1049704,
+        "zip_crc32": "077c3a1b"
+      },
+      "metadata": {
+        "relative_path": "old_development/santiago/santiago_1.json",
+        "sha256": "3d8d235ced6c19dba8320072e66f6573f3261a0fa7e8f2d6fb91b23edb4c55c5",
+        "bytes": 51825
+      },
+      "compact_payload_bytes": 422446
+    },
+    {
+      "id": "santiago__santiago_26",
+      "region": "santiago",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/santiago/santiago_26_rgb.png",
+        "sha256": "8d7eb2992093513c1d0b7906e4ebd14cbd74fc03cb9505d40787ffbf2116e7bd",
+        "bytes": 426983
+      },
+      "label": {
+        "relative_path": "old_development/santiago/santiago_26_mask.png",
+        "sha256": "ede3f6146f321fa46f97c8275dd24c74839aee31ba33320b2c7954f28bbf6b73",
+        "bytes": 21400
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/santiago/images/santiago_26.tif",
+        "sha256": "4108753a9d7d76dfa5a6280b01d66344ca39de9d4674d46fb2b2093e0af41506",
+        "bytes": 3149172,
+        "zip_crc32": "69365ccb"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/santiago/labels/santiago_26.tif",
+        "sha256": "708ffeb174d053e7aea47ebd6ad6fdc8195a5b27cc3b25c63a23d8e7205065ab",
+        "bytes": 1049704,
+        "zip_crc32": "837ffe99"
+      },
+      "metadata": {
+        "relative_path": "old_development/santiago/santiago_26.json",
+        "sha256": "6f3f31a6be08929d255521e1aa10bb5e7aa2e33be0133fc0d9664cd5b41f6355",
+        "bytes": 51878
+      },
+      "compact_payload_bytes": 500261
+    },
+    {
+      "id": "santiago__santiago_29",
+      "region": "santiago",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/santiago/santiago_29_rgb.png",
+        "sha256": "37c25e3a37a252731a93b73a36fbd0d5faf6148e2de83150baef46bd8ec86ca7",
+        "bytes": 363531
+      },
+      "label": {
+        "relative_path": "old_development/santiago/santiago_29_mask.png",
+        "sha256": "b09b9cfe263bab66a1058c65936228ee9a36a9d318963810c4dd856c3b3bb844",
+        "bytes": 16760
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/santiago/images/santiago_29.tif",
+        "sha256": "49bbc450a40a6e93b16d969de9e0a0ab249fd5717f62e422cd6ba7c763b0ef82",
+        "bytes": 3149172,
+        "zip_crc32": "db35a5e8"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/santiago/labels/santiago_29.tif",
+        "sha256": "61c1cddce86564877e0c273cadf8e83f62a82298ce26e457221f0f0af611b298",
+        "bytes": 1049704,
+        "zip_crc32": "b04a2b20"
+      },
+      "metadata": {
+        "relative_path": "old_development/santiago/santiago_29.json",
+        "sha256": "b5450419d15c62feda19f394d79c9d5bade57ee7fd79d4eca54d2ee7a1df1ec4",
+        "bytes": 51879
+      },
+      "compact_payload_bytes": 432170
+    },
+    {
+      "id": "santiago__santiago_51",
+      "region": "santiago",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/santiago/santiago_51_rgb.png",
+        "sha256": "4e76683ee93b22b5899f1dee34a4d37b16baf3ff8c391bff44a49c78ab402991",
+        "bytes": 391448
+      },
+      "label": {
+        "relative_path": "old_development/santiago/santiago_51_mask.png",
+        "sha256": "6c8c30a6801ee5c944270cfb674bda6ca64c671fbaa50ff839838998a72a764b",
+        "bytes": 22159
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/santiago/images/santiago_51.tif",
+        "sha256": "168d7aad1f64c501091d9b91866e0555bb401b1b4fe3f837ec3b2c016d0f3fc3",
+        "bytes": 3149172,
+        "zip_crc32": "9fe783af"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/santiago/labels/santiago_51.tif",
+        "sha256": "f8a8ad56c0538d6ac1180d8063bc145e453ab2c73ec103557fd5cd373fc6bee1",
+        "bytes": 1049704,
+        "zip_crc32": "3becf019"
+      },
+      "metadata": {
+        "relative_path": "old_development/santiago/santiago_51.json",
+        "sha256": "865a8a62306fbfa20d5c3f9e290fc7111b5d64ff638cb71c4b8928f2c74aa7ac",
+        "bytes": 51789
+      },
+      "compact_payload_bytes": 465396
+    },
+    {
+      "id": "santiago__santiago_57",
+      "region": "santiago",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/santiago/santiago_57_rgb.png",
+        "sha256": "ca693ad4624c051740b33bd352cb863d8baa3c33a81558ed9d9ea18c5fd4be38",
+        "bytes": 359669
+      },
+      "label": {
+        "relative_path": "old_development/santiago/santiago_57_mask.png",
+        "sha256": "58a89233e6dba9fb78e82cc34cb07b939a0e3c8d2748787e6229717546cdfcec",
+        "bytes": 16353
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/santiago/images/santiago_57.tif",
+        "sha256": "7f8e8d5d841bfb941c9dd8fa73d06ffa3ecf1aeb94d4959b62df73affa027e28",
+        "bytes": 3149172,
+        "zip_crc32": "e79c8ca5"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/santiago/labels/santiago_57.tif",
+        "sha256": "575963cb875ff1031e1cdd49d35611dc1aa6827c336bab6cfafda091c4d4f46c",
+        "bytes": 1049704,
+        "zip_crc32": "d7121a20"
+      },
+      "metadata": {
+        "relative_path": "old_development/santiago/santiago_57.json",
+        "sha256": "2c06e07dc4285e86c521202a96e4a500d6da393c03f3631cbf7e7314a3b00b22",
+        "bytes": 51854
+      },
+      "compact_payload_bytes": 427876
+    },
+    {
+      "id": "shanghai__shanghai_27",
+      "region": "shanghai",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/shanghai/shanghai_27_rgb.png",
+        "sha256": "6ef109fe3c9c066688e0de50cf724cc344ca0134b2fe3f9d867f17dc4c7f0ec2",
+        "bytes": 406430
+      },
+      "label": {
+        "relative_path": "old_development/shanghai/shanghai_27_mask.png",
+        "sha256": "05551081be21e4c207d0995851a6ee446f56fa4da8fe87b7cf4cc12bc9554422",
+        "bytes": 2321
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/shanghai/images/shanghai_27.tif",
+        "sha256": "b0d01bcfc5b5454b9f92ae90a28c04f537b08dc4d2fedcd94cbaeac9e69763e1",
+        "bytes": 1268856,
+        "zip_crc32": "49007bc3"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/shanghai/labels/shanghai_27.tif",
+        "sha256": "4a1350dd7f72290cb0d7db91c68a3d77fcadf39b345bdf5527bec60ac4a5e7b5",
+        "bytes": 423196,
+        "zip_crc32": "53b84cde"
+      },
+      "metadata": {
+        "relative_path": "old_development/shanghai/shanghai_27.json",
+        "sha256": "81ee0b3c0ef6988e7e743c2e82663eb2cfd3ba1c0d278ac4a77d2a83f6c7e384",
+        "bytes": 46219
+      },
+      "compact_payload_bytes": 454970
+    },
+    {
+      "id": "shanghai__shanghai_29",
+      "region": "shanghai",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/shanghai/shanghai_29_rgb.png",
+        "sha256": "519b90b49754bc3aa68f12664e3b95223bcd0fd5f983a3537d99a518a5d78124",
+        "bytes": 344591
+      },
+      "label": {
+        "relative_path": "old_development/shanghai/shanghai_29_mask.png",
+        "sha256": "79f437af0fd8e177ff281fbc1ec2be5823f5e4b64c329f932321d351ebf255f9",
+        "bytes": 5692
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/shanghai/images/shanghai_29.tif",
+        "sha256": "542cdbe7bff2fde446d412240dd25d7a8b681de37dbf34ec1fa4b3eccfceb9a9",
+        "bytes": 1268856,
+        "zip_crc32": "f322943f"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/shanghai/labels/shanghai_29.tif",
+        "sha256": "b08ad39fbf63b1f0636b8cf6e0d49749e56e2b1d45605ee696ef3c1194868ada",
+        "bytes": 423196,
+        "zip_crc32": "017e4077"
+      },
+      "metadata": {
+        "relative_path": "old_development/shanghai/shanghai_29.json",
+        "sha256": "a1d6ad68a6279f1c09c08ec21a61d3bb33e483a026272e67a9571855aed8d0bb",
+        "bytes": 46712
+      },
+      "compact_payload_bytes": 396995
+    },
+    {
+      "id": "shanghai__shanghai_46",
+      "region": "shanghai",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/shanghai/shanghai_46_rgb.png",
+        "sha256": "7f944096e4efc063ef9fc1ea65450c5cec9ea8aa86f8b34d2960607ab164f175",
+        "bytes": 375364
+      },
+      "label": {
+        "relative_path": "old_development/shanghai/shanghai_46_mask.png",
+        "sha256": "6e54d2bf3af6127b0b77030ced105fe91a381dd0e86fa6691116db319650d9f0",
+        "bytes": 9966
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/shanghai/images/shanghai_46.tif",
+        "sha256": "fb4978211b543c9c3317b4dc1bf57472773629c82ff45b1438fc080897ca59dc",
+        "bytes": 1268856,
+        "zip_crc32": "f8dd8ebd"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/shanghai/labels/shanghai_46.tif",
+        "sha256": "5b194d47517830a550f1aeae62df854783dc88616fb4b4c3abe22941f669983f",
+        "bytes": 423196,
+        "zip_crc32": "cdd2637f"
+      },
+      "metadata": {
+        "relative_path": "old_development/shanghai/shanghai_46.json",
+        "sha256": "82d2dcfb4c6f6ccd3301e8b72a8779b082f5bef9e3950b8d928277c52d289996",
+        "bytes": 46796
+      },
+      "compact_payload_bytes": 432126
+    },
+    {
+      "id": "shanghai__shanghai_50",
+      "region": "shanghai",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/shanghai/shanghai_50_rgb.png",
+        "sha256": "cc97b4a503d584cd8c3d794642453faee0238e283ffe94d54f6273e1eefce2e8",
+        "bytes": 301452
+      },
+      "label": {
+        "relative_path": "old_development/shanghai/shanghai_50_mask.png",
+        "sha256": "f2262cfcb77b4e5048244b28f49a747b0c3400817c208f9eff93ca4da0de3ec1",
+        "bytes": 5174
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/shanghai/images/shanghai_50.tif",
+        "sha256": "5d88f2f5db752689f134be0edb074ac9dfb7672405dc7d8ab72144300a59c6fe",
+        "bytes": 1268856,
+        "zip_crc32": "a658d3ff"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/shanghai/labels/shanghai_50.tif",
+        "sha256": "db67a3a023b0d9ee8649bb8133fef0712b0ee6f00a7a5488cd6b8764f691fbd4",
+        "bytes": 423196,
+        "zip_crc32": "6e142925"
+      },
+      "metadata": {
+        "relative_path": "old_development/shanghai/shanghai_50.json",
+        "sha256": "dc216037c639aca752f72572e994b42667699595f73be4493ade9c73d140b43c",
+        "bytes": 46840
+      },
+      "compact_payload_bytes": 353466
+    },
+    {
+      "id": "shanghai__shanghai_6",
+      "region": "shanghai",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/shanghai/shanghai_6_rgb.png",
+        "sha256": "bb144b1529f6b059ddfd076b2a92815d65191b7ac9340743a72c7b36411156c1",
+        "bytes": 398022
+      },
+      "label": {
+        "relative_path": "old_development/shanghai/shanghai_6_mask.png",
+        "sha256": "44e62a7f72b0ab0b8042700ab7b6a3d6a1f3c22c29d98a8e07f567609824cc58",
+        "bytes": 2367
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/shanghai/images/shanghai_6.tif",
+        "sha256": "dc8131c2bab6d39e85b20e0cbf880c36c2cc13c08c42a6bba1014f0feaaf5b19",
+        "bytes": 1268856,
+        "zip_crc32": "875ba025"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/shanghai/labels/shanghai_6.tif",
+        "sha256": "9a9114d036febde0d9b9a139afeede8a30e4f806e565b498a9dd02736c6e670a",
+        "bytes": 423196,
+        "zip_crc32": "70ea47c6"
+      },
+      "metadata": {
+        "relative_path": "old_development/shanghai/shanghai_6.json",
+        "sha256": "f0f75b4e34de52990b48e8243def480b809295e95b93905867cf0f3d60a874c2",
+        "bytes": 45882
+      },
+      "compact_payload_bytes": 446271
+    },
+    {
+      "id": "tonga__tonga_32",
+      "region": "tonga",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/tonga/tonga_32_rgb.png",
+        "sha256": "6136ee921a5ea168f302b19409a16f3ff214f049cadada0cda4c67a8b72f31af",
+        "bytes": 416155
+      },
+      "label": {
+        "relative_path": "old_development/tonga/tonga_32_mask.png",
+        "sha256": "12f51aab0d9665f1a70872a28b627868dd196c96ed5cfe6b4913eceeabc38c49",
+        "bytes": 10005
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/tonga/images/tonga_32.tif",
+        "sha256": "ea22ae2b84e968ede815c7293301c2499b237efb74e967adff1051a30ec60f0b",
+        "bytes": 3149178,
+        "zip_crc32": "ffb7534d"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/tonga/labels/tonga_32.tif",
+        "sha256": "309bee6651f2de5e1ed2480a291e6b5ef177ba7c01df1ee00df03a2322997dfc",
+        "bytes": 1049710,
+        "zip_crc32": "a020ad28"
+      },
+      "metadata": {
+        "relative_path": "old_development/tonga/tonga_32.json",
+        "sha256": "7f618d3fbcf0bf11eab6f457d3f828e9108d730522a8828b019f68a66c4fa942",
+        "bytes": 52255
+      },
+      "compact_payload_bytes": 478415
+    },
+    {
+      "id": "tonga__tonga_43",
+      "region": "tonga",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/tonga/tonga_43_rgb.png",
+        "sha256": "c297aa4194476a68c6e47fcb9f1c4b505ae652f6bb9943cadd0e7f2ecbb5dae4",
+        "bytes": 422224
+      },
+      "label": {
+        "relative_path": "old_development/tonga/tonga_43_mask.png",
+        "sha256": "f14bb9241929f944275ac13d7d09f8a5f041cfe5734d570ea4d37ff1fe007328",
+        "bytes": 19177
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/tonga/images/tonga_43.tif",
+        "sha256": "569293d3bcbb1c02aa85c59a2ffc7f86a1cbd02a621aa28ea7a50db567fee0a1",
+        "bytes": 3149178,
+        "zip_crc32": "b799eebc"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/tonga/labels/tonga_43.tif",
+        "sha256": "5d5725f74dfcef329ef7ba0d6f826f607e9db7beba444fc58a41f8665851bc56",
+        "bytes": 1049710,
+        "zip_crc32": "8d40c9a1"
+      },
+      "metadata": {
+        "relative_path": "old_development/tonga/tonga_43.json",
+        "sha256": "ad2e74551990e4738505384e0e36b57b0399884fab2872ce87f0af6ab0cacfd3",
+        "bytes": 52273
+      },
+      "compact_payload_bytes": 493674
+    },
+    {
+      "id": "tonga__tonga_53",
+      "region": "tonga",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/tonga/tonga_53_rgb.png",
+        "sha256": "e79be2d982efea8f1de1f581a001eb80535a7aae0c287eacd99df1bed381a721",
+        "bytes": 353556
+      },
+      "label": {
+        "relative_path": "old_development/tonga/tonga_53_mask.png",
+        "sha256": "c059a071dc4e9f2d945485c532c3f981eeb79d05e71b7276348198d12bf183a6",
+        "bytes": 8522
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/tonga/images/tonga_53.tif",
+        "sha256": "57230a6b3cf33f368058eed769d6d09fac21a4a5635ec7456229020d3a575750",
+        "bytes": 3149178,
+        "zip_crc32": "48ae0231"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/tonga/labels/tonga_53.tif",
+        "sha256": "98d837c653ce7936d0ca11b6133dbbbf56d300515d6d47b07f057b9b0b8d60e3",
+        "bytes": 1049710,
+        "zip_crc32": "5d34b219"
+      },
+      "metadata": {
+        "relative_path": "old_development/tonga/tonga_53.json",
+        "sha256": "3961d1c5ee22ca4891ddc72a4f68801fc66456aca7884fe05dc7054a0249a005",
+        "bytes": 52418
+      },
+      "compact_payload_bytes": 414496
+    },
+    {
+      "id": "tonga__tonga_6",
+      "region": "tonga",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/tonga/tonga_6_rgb.png",
+        "sha256": "8dbd9e4333dc7a14596e308f8b6b5d9780f709c5e36f8cd662ddb26a4b5e1023",
+        "bytes": 398021
+      },
+      "label": {
+        "relative_path": "old_development/tonga/tonga_6_mask.png",
+        "sha256": "dd9ac870de9b0cab84a0e537c7dc2037ecdb49bb82e5db6bd225a69115938c9f",
+        "bytes": 14677
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/tonga/images/tonga_6.tif",
+        "sha256": "32321b49b61af4b678cabbca3ae9f09f43abad52bb597c196918fc6f55f538a9",
+        "bytes": 3149178,
+        "zip_crc32": "4b70a16d"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/tonga/labels/tonga_6.tif",
+        "sha256": "b8eccf5a0dd38fa5111a01f7351c4dca019aef61b6096e09c7ea6f651fc003aa",
+        "bytes": 1049710,
+        "zip_crc32": "9ee05333"
+      },
+      "metadata": {
+        "relative_path": "old_development/tonga/tonga_6.json",
+        "sha256": "cfae09cb430a844f5ff8e3e63dc444c4551e5306ef5329abf2c838cd0da0e0b5",
+        "bytes": 52275
+      },
+      "compact_payload_bytes": 464973
+    },
+    {
+      "id": "tonga__tonga_63",
+      "region": "tonga",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/tonga/tonga_63_rgb.png",
+        "sha256": "18348bac0dfd79931cded0b200591731e6d0a0cb062f52df6b280f924dff6617",
+        "bytes": 431797
+      },
+      "label": {
+        "relative_path": "old_development/tonga/tonga_63_mask.png",
+        "sha256": "f8ebd76bf8bd80bc5c9534e63254c07fdf69ea7290751ef7f784c540b9a64aef",
+        "bytes": 20193
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/tonga/images/tonga_63.tif",
+        "sha256": "012d85fc35ecbe1d60f9470f2cce7535badf78b435b6ce7b3b0640a348a1597b",
+        "bytes": 3149178,
+        "zip_crc32": "d98e49b6"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/tonga/labels/tonga_63.tif",
+        "sha256": "480512add8b556cf015b836c9dfb7da20ce26bed79ccacc28d8c154696a5afb7",
+        "bytes": 1049710,
+        "zip_crc32": "57feb155"
+      },
+      "metadata": {
+        "relative_path": "old_development/tonga/tonga_63.json",
+        "sha256": "e424c54433e4f7a23e09abce1445a108c5c4e7436b74421ebc43dcd2603c6cc5",
+        "bytes": 52406
+      },
+      "compact_payload_bytes": 504396
+    },
+    {
+      "id": "ulaanbaatar__ulaanbaatar_23",
+      "region": "ulaanbaatar",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/ulaanbaatar/ulaanbaatar_23_rgb.png",
+        "sha256": "eb20d8e8bdfcdebe0ded08bf25398ee2b1e837064f9ed58757fc2c7d4458560e",
+        "bytes": 427545
+      },
+      "label": {
+        "relative_path": "old_development/ulaanbaatar/ulaanbaatar_23_mask.png",
+        "sha256": "3f3477acb7878b8835e10e6d1f6f6a6f7fafb62a7bab6c9c668a69be694813a6",
+        "bytes": 17213
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/ulaanbaatar/images/ulaanbaatar_23.tif",
+        "sha256": "d96b4cc832132d437be38528a2b0ab13f5f236ee83cd62f25de59a38ecf6f811",
+        "bytes": 3149172,
+        "zip_crc32": "f4e57ff1"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/ulaanbaatar/labels/ulaanbaatar_23.tif",
+        "sha256": "3ef1758b234afef653ac14d10a37b10a879fcf932ace9b034d199c5cc528d79d",
+        "bytes": 1049704,
+        "zip_crc32": "f1e1c807"
+      },
+      "metadata": {
+        "relative_path": "old_development/ulaanbaatar/ulaanbaatar_23.json",
+        "sha256": "edba4606270aced481807af1a9c30c6ab433001f369c984a51fecaebabb2c302",
+        "bytes": 51675
+      },
+      "compact_payload_bytes": 496433
+    },
+    {
+      "id": "ulaanbaatar__ulaanbaatar_3",
+      "region": "ulaanbaatar",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/ulaanbaatar/ulaanbaatar_3_rgb.png",
+        "sha256": "2f4b9bdad4f6cdf7d95ecec6b874412a88131a1792b7b78d49d64c3afc19cf6b",
+        "bytes": 398905
+      },
+      "label": {
+        "relative_path": "old_development/ulaanbaatar/ulaanbaatar_3_mask.png",
+        "sha256": "d3b2bd567f5202cdef0f8d325ea7c9dd7eae324a0b9a44a9ba425506171b21d6",
+        "bytes": 14887
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/ulaanbaatar/images/ulaanbaatar_3.tif",
+        "sha256": "2fc667c05ff4dfbcc464638e9c4444b8fca89270dff6db32a64932a18bc0bd06",
+        "bytes": 3149172,
+        "zip_crc32": "112d2d96"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/ulaanbaatar/labels/ulaanbaatar_3.tif",
+        "sha256": "ed06ccc8485545240d837ad1569d3597e472f4b2e766471d038d8f463114ed49",
+        "bytes": 1049704,
+        "zip_crc32": "7410b16f"
+      },
+      "metadata": {
+        "relative_path": "old_development/ulaanbaatar/ulaanbaatar_3.json",
+        "sha256": "6c31cfecfecd6efabbd9d2b33f344a7bf5de152ea6037a40da608bd4c47e9af4",
+        "bytes": 51688
+      },
+      "compact_payload_bytes": 465480
+    },
+    {
+      "id": "ulaanbaatar__ulaanbaatar_31",
+      "region": "ulaanbaatar",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/ulaanbaatar/ulaanbaatar_31_rgb.png",
+        "sha256": "406e8cc33145b46e54655bdf6dc4adc710d6f497caa8bbe4a6dc9b0d4803c519",
+        "bytes": 416686
+      },
+      "label": {
+        "relative_path": "old_development/ulaanbaatar/ulaanbaatar_31_mask.png",
+        "sha256": "81c71fbeabfd687e8f199b6b5378d9ff814ec56ae0be80398b70ce517639f05b",
+        "bytes": 14161
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/ulaanbaatar/images/ulaanbaatar_31.tif",
+        "sha256": "58b377579b9d39226976f609a3d303a231e2f475a6b76dd26ebbb1deec611e4c",
+        "bytes": 3149172,
+        "zip_crc32": "f192b030"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/ulaanbaatar/labels/ulaanbaatar_31.tif",
+        "sha256": "b3bdcd617438c1328b13ef1ce4cbb2b52882ede0a97558a96292c8d86dffc166",
+        "bytes": 1049704,
+        "zip_crc32": "9470e7bf"
+      },
+      "metadata": {
+        "relative_path": "old_development/ulaanbaatar/ulaanbaatar_31.json",
+        "sha256": "437b7210c3c07f869eee7dbddea4c9ee075f1ba843a39318f46f8cfe4b2ceeef",
+        "bytes": 51629
+      },
+      "compact_payload_bytes": 482476
+    },
+    {
+      "id": "ulaanbaatar__ulaanbaatar_36",
+      "region": "ulaanbaatar",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/ulaanbaatar/ulaanbaatar_36_rgb.png",
+        "sha256": "89add979106cc2d43ece9170e1237e01e77ce11e8792354dc21e667af76a9cac",
+        "bytes": 405917
+      },
+      "label": {
+        "relative_path": "old_development/ulaanbaatar/ulaanbaatar_36_mask.png",
+        "sha256": "c63e24cceb2b99dfb5f2a436259b48df19c52ef5ecd891947316e9c43cac7210",
+        "bytes": 15759
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/ulaanbaatar/images/ulaanbaatar_36.tif",
+        "sha256": "5a873e1e9a52cd97d159c935c88951c9f333d7742f9979d664463b400968070e",
+        "bytes": 3149172,
+        "zip_crc32": "09b86bef"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/ulaanbaatar/labels/ulaanbaatar_36.tif",
+        "sha256": "522b13fb99203ebd5850d742313fffa81405ca9142a22974101fb1714dd95217",
+        "bytes": 1049704,
+        "zip_crc32": "69c68843"
+      },
+      "metadata": {
+        "relative_path": "old_development/ulaanbaatar/ulaanbaatar_36.json",
+        "sha256": "930ee17d60192a1309b3ec705047cffc9bd4300a9ee9b0adffdd2886271f5e47",
+        "bytes": 51631
+      },
+      "compact_payload_bytes": 473307
+    },
+    {
+      "id": "ulaanbaatar__ulaanbaatar_46",
+      "region": "ulaanbaatar",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/ulaanbaatar/ulaanbaatar_46_rgb.png",
+        "sha256": "fa8a9d34135148f0cb5566c0fb92ce89ff7baf520a9244dd258a8e2c3178c232",
+        "bytes": 411892
+      },
+      "label": {
+        "relative_path": "old_development/ulaanbaatar/ulaanbaatar_46_mask.png",
+        "sha256": "fd7b27f0f878ee7fa35bd135b8ed9d349801fed474567306c4b5d9ca181674f0",
+        "bytes": 16465
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/ulaanbaatar/images/ulaanbaatar_46.tif",
+        "sha256": "afabd56072110d6bca03982fc5d17606b178cfa6e3597b422793a5ec477273a6",
+        "bytes": 3149172,
+        "zip_crc32": "bb4574c9"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/ulaanbaatar/labels/ulaanbaatar_46.tif",
+        "sha256": "8fc509c346d84cd39a6f2384177d4957cd7b517e18fdee4168293849dcf81d62",
+        "bytes": 1049704,
+        "zip_crc32": "ce1ecfd0"
+      },
+      "metadata": {
+        "relative_path": "old_development/ulaanbaatar/ulaanbaatar_46.json",
+        "sha256": "891caf261e154509642005026987fee70ac3343abcfe0db81a47b0dfe2cbd6cd",
+        "bytes": 51613
+      },
+      "compact_payload_bytes": 479970
+    },
+    {
+      "id": "vegas__vegas_14",
+      "region": "vegas",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/vegas/vegas_14_rgb.png",
+        "sha256": "ac562e5e98287d3b70eaa8069e4515d2fb47fa59936ba0ba9e63852e5cebdfb3",
+        "bytes": 331766
+      },
+      "label": {
+        "relative_path": "old_development/vegas/vegas_14_mask.png",
+        "sha256": "fb7fb0a6dcbfa33fba748f45fc65bc3aa9e27be35b571a22559f973c5234e985",
+        "bytes": 6938
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/vegas/images/vegas_14.tif",
+        "sha256": "5d3d50295816d77017b52e45980643f6d7c79a37c8ce721130d56cbb569e1fda",
+        "bytes": 1268856,
+        "zip_crc32": "0d4f5c5d"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/vegas/labels/vegas_14.tif",
+        "sha256": "b695b4caa1f43dc28a72cfe166b90318babf5ce22b115f43780d0dbeb55330e8",
+        "bytes": 423196,
+        "zip_crc32": "774cf73e"
+      },
+      "metadata": {
+        "relative_path": "old_development/vegas/vegas_14.json",
+        "sha256": "1c243dd8495a9f58dea7fbd517fe824afc301cc08fe85c394136245977ece8a0",
+        "bytes": 47431
+      },
+      "compact_payload_bytes": 386135
+    },
+    {
+      "id": "vegas__vegas_17",
+      "region": "vegas",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/vegas/vegas_17_rgb.png",
+        "sha256": "f051e40520a896676d5e9b0111ce3508da90d56d473b8b01f40a3f9c56cc098a",
+        "bytes": 298455
+      },
+      "label": {
+        "relative_path": "old_development/vegas/vegas_17_mask.png",
+        "sha256": "f66c41afd921359bb87ab6da58f10b2386384fe4d06e52741343e724690b9fe8",
+        "bytes": 4051
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/vegas/images/vegas_17.tif",
+        "sha256": "b541e89c9e6cf28671937a7028def39503c95ed09cac422f189e9c60b29678f2",
+        "bytes": 1268856,
+        "zip_crc32": "b4510c56"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/vegas/labels/vegas_17.tif",
+        "sha256": "1612516c8d879451da70d568b174ef9a536285d89d2588c72926cfa7b48b5380",
+        "bytes": 423196,
+        "zip_crc32": "7aa40d90"
+      },
+      "metadata": {
+        "relative_path": "old_development/vegas/vegas_17.json",
+        "sha256": "2b19e1b0faab5616e1b437bb2b5388af6b10b1c54457f410928b0d31e5c02faf",
+        "bytes": 47503
+      },
+      "compact_payload_bytes": 350009
+    },
+    {
+      "id": "vegas__vegas_32",
+      "region": "vegas",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/vegas/vegas_32_rgb.png",
+        "sha256": "01a1609a7f63c05c1468f99786acb51d14fc7dc5d8de5f6e244ed713f8ac484c",
+        "bytes": 315509
+      },
+      "label": {
+        "relative_path": "old_development/vegas/vegas_32_mask.png",
+        "sha256": "753b9f3ba0df3213b2efc106f9c7bae07ccb20c03cfe3ff49d0b162d5ef97c47",
+        "bytes": 1367
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/vegas/images/vegas_32.tif",
+        "sha256": "e35ec030f9b89cdc15801afa5a4b58909ab399ec5857cc19fdaf96a41c839f57",
+        "bytes": 1268856,
+        "zip_crc32": "c624d620"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/vegas/labels/vegas_32.tif",
+        "sha256": "ebcc06683904a43b69ce31f6449184e79bb6d0fcbceeac70e64c042b0195f9d8",
+        "bytes": 423196,
+        "zip_crc32": "59ac30c8"
+      },
+      "metadata": {
+        "relative_path": "old_development/vegas/vegas_32.json",
+        "sha256": "3c4bea8b67c9fea1b8a69b78c3f669acc9dbbadc2f8796acb4ff22795eb6e2f0",
+        "bytes": 47285
+      },
+      "compact_payload_bytes": 364161
+    },
+    {
+      "id": "vegas__vegas_39",
+      "region": "vegas",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/vegas/vegas_39_rgb.png",
+        "sha256": "156586a14f482b0a91579248c622746efcf1cc5915705a7e1c1b043e40c729ca",
+        "bytes": 226516
+      },
+      "label": {
+        "relative_path": "old_development/vegas/vegas_39_mask.png",
+        "sha256": "1c3fcde2bf5b62e8ad77b3e8ac8534d5270f78a80bd7cd346462b038ec99a3a5",
+        "bytes": 1856
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/vegas/images/vegas_39.tif",
+        "sha256": "2fbd57fef0c1cd8428f063820a84d868c589e8167cc64a477d3b5378ec2f2fe7",
+        "bytes": 1268856,
+        "zip_crc32": "d2f8a825"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/vegas/labels/vegas_39.tif",
+        "sha256": "973f9a5ff7a45f58dca76602e87445d066c82c534fcecdb1493826b19197eded",
+        "bytes": 423196,
+        "zip_crc32": "67b8e71d"
+      },
+      "metadata": {
+        "relative_path": "old_development/vegas/vegas_39.json",
+        "sha256": "8c00150129fdaad45db1744cac64ec9d8f72589d3bb1024e996b4e22c3c56e32",
+        "bytes": 47296
+      },
+      "compact_payload_bytes": 275668
+    },
+    {
+      "id": "vegas__vegas_7",
+      "region": "vegas",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/vegas/vegas_7_rgb.png",
+        "sha256": "a39b29be8583f9941366adee06e4f83143177ae919e658e2817bcff2d826401d",
+        "bytes": 313026
+      },
+      "label": {
+        "relative_path": "old_development/vegas/vegas_7_mask.png",
+        "sha256": "681c00734589903d4cd3cd49480f483eaa2be3ad441c77ff82715d3df5b52ccb",
+        "bytes": 6250
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/vegas/images/vegas_7.tif",
+        "sha256": "d5a4cc0bcffb2f0d4f8156e4bcfc9a9c9f304bd41e38eb36e60b823eaa2e5a15",
+        "bytes": 1268856,
+        "zip_crc32": "d1b161bc"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/vegas/labels/vegas_7.tif",
+        "sha256": "0a118f375fc6f59a9198a146324cb0bab53d692c6464f842c6a539573b6a28d3",
+        "bytes": 423196,
+        "zip_crc32": "ec5d8e23"
+      },
+      "metadata": {
+        "relative_path": "old_development/vegas/vegas_7.json",
+        "sha256": "e4be692ff1f56c206b2564e7cfb3ba4966d889dd973e097970d236a9f086cce8",
+        "bytes": 47494
+      },
+      "compact_payload_bytes": 366770
+    },
+    {
+      "id": "vienna__vienna_26",
+      "region": "vienna",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/vienna/vienna_26_rgb.png",
+        "sha256": "352cbaec676dc6a16f05fa22eefa4673658ff5eddba2dbc4e1281dcef134b72a",
+        "bytes": 423230
+      },
+      "label": {
+        "relative_path": "old_development/vienna/vienna_26_mask.png",
+        "sha256": "7ad71e38bd3c74fed550345c1ced9647d836d986fa069f5a4fc365cfdfbcef09",
+        "bytes": 14563
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/vienna/images/vienna_26.tif",
+        "sha256": "4909d2372d9d31032905fcc788f10522e7f99656a7c824e9e48a94138dccd1bc",
+        "bytes": 3003369,
+        "zip_crc32": "17a81f4d"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/vienna/labels/vienna_26.tif",
+        "sha256": "54c899f99600c0604e86725cebbb0f987c8c897d0bbd13dc560e571258cf773c",
+        "bytes": 1001107,
+        "zip_crc32": "ce8e16d6"
+      },
+      "metadata": {
+        "relative_path": "old_development/vienna/vienna_26.json",
+        "sha256": "861c3795f0d01d3f1d48c497ab0bcb2230fb02c218f912a2d4b07460e10494c0",
+        "bytes": 51353
+      },
+      "compact_payload_bytes": 489146
+    },
+    {
+      "id": "vienna__vienna_33",
+      "region": "vienna",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/vienna/vienna_33_rgb.png",
+        "sha256": "1099ffb182616c5475f0b5d5bd3ca056bdb1a41cea8c58933e28592a29e61768",
+        "bytes": 372688
+      },
+      "label": {
+        "relative_path": "old_development/vienna/vienna_33_mask.png",
+        "sha256": "817553a75fe93cb1e88374a66e6ec4e0b0c03e6a308b1e8679cc73a81a470335",
+        "bytes": 10878
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/vienna/images/vienna_33.tif",
+        "sha256": "ba3ed392f4d7427bb2b9f0519ab01c6994195386d3a5980df9fd92e2cf446566",
+        "bytes": 3003369,
+        "zip_crc32": "7336f36d"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/vienna/labels/vienna_33.tif",
+        "sha256": "81d9b30353e441b404c3dc5d77d17272521c508c8fe0bce2159293b319429445",
+        "bytes": 1001107,
+        "zip_crc32": "d9a61866"
+      },
+      "metadata": {
+        "relative_path": "old_development/vienna/vienna_33.json",
+        "sha256": "20c26e666db205f2b8bf7c474e1f15ce493c10addbf96187d9c7e63d9b294e5f",
+        "bytes": 51340
+      },
+      "compact_payload_bytes": 434906
+    },
+    {
+      "id": "vienna__vienna_41",
+      "region": "vienna",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/vienna/vienna_41_rgb.png",
+        "sha256": "ec2b067efd14f6e1380fd9819185fbc117b1df00839cc2c9e8b73e8972cef14d",
+        "bytes": 361418
+      },
+      "label": {
+        "relative_path": "old_development/vienna/vienna_41_mask.png",
+        "sha256": "066a4ece678afea3ca95ffaeedfaafb4d6477c385c13fc5cd71e1ae9da1e9556",
+        "bytes": 11387
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/vienna/images/vienna_41.tif",
+        "sha256": "cde2cb796480f15ef8c8f2b1090590e90da07f1cd71dad529cd7339ec63b3a92",
+        "bytes": 3003369,
+        "zip_crc32": "4f432b9d"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/vienna/labels/vienna_41.tif",
+        "sha256": "cd1d4f1ba90461f0fbacbfd56bbdff6d41dcf9f5a8b36e81ea4eaf2bfdf4e118",
+        "bytes": 1001107,
+        "zip_crc32": "42fa9856"
+      },
+      "metadata": {
+        "relative_path": "old_development/vienna/vienna_41.json",
+        "sha256": "1f3996953638a53bf1b608e6b8319b74e5ba9e36f53cc6d341873349e0105e22",
+        "bytes": 51384
+      },
+      "compact_payload_bytes": 424189
+    },
+    {
+      "id": "vienna__vienna_61",
+      "region": "vienna",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/vienna/vienna_61_rgb.png",
+        "sha256": "b6407629299a4e64925e73626830693e1dc75407a7a9296306ae549d15ba4679",
+        "bytes": 360908
+      },
+      "label": {
+        "relative_path": "old_development/vienna/vienna_61_mask.png",
+        "sha256": "6b74e005e2708a0a790191c4e70fc2655c4ba413f75c440d0038c1e3d2e3df35",
+        "bytes": 11940
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/vienna/images/vienna_61.tif",
+        "sha256": "c4e1ec026ab08988abab8bee99465f27e5a51ff45d04c397243f24adfb9649b3",
+        "bytes": 3003369,
+        "zip_crc32": "b892c253"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/vienna/labels/vienna_61.tif",
+        "sha256": "38539357dd3342a60b1fbe792cfd9e13e6bed2e1221b583a0eef4ec843776163",
+        "bytes": 1001107,
+        "zip_crc32": "321f9e53"
+      },
+      "metadata": {
+        "relative_path": "old_development/vienna/vienna_61.json",
+        "sha256": "2df798ffb4963326282ca35caf99c16e8f15e9fdb48b7245ead95daa877e2f4b",
+        "bytes": 51338
+      },
+      "compact_payload_bytes": 424186
+    },
+    {
+      "id": "vienna__vienna_68",
+      "region": "vienna",
+      "role": "old_development",
+      "rgb": {
+        "relative_path": "old_development/vienna/vienna_68_rgb.png",
+        "sha256": "1963289a9a02d1240a4577fc072e05e7e676dc365578cf8b6346243cee5984ff",
+        "bytes": 359783
+      },
+      "label": {
+        "relative_path": "old_development/vienna/vienna_68_mask.png",
+        "sha256": "fed01eb0e2d8fb157250c03e9b0f38d99efb5a46928bcf85fe2804e8742b852b",
+        "bytes": 11158
+      },
+      "source_rgb": {
+        "member": "OpenEarthMap_wo_xBD/vienna/images/vienna_68.tif",
+        "sha256": "8f8d6051c01f081e35bb4f0314ec0c1568d8ff340389a0d1a1b54de43ce1e43e",
+        "bytes": 3003369,
+        "zip_crc32": "eeb41578"
+      },
+      "source_label": {
+        "member": "OpenEarthMap_wo_xBD/vienna/labels/vienna_68.tif",
+        "sha256": "8924b73a21d5128b75388b760e7d85a0b9a6a8b98dd141170cd046fd29782a7e",
+        "bytes": 1001107,
+        "zip_crc32": "b2665ea7"
+      },
+      "metadata": {
+        "relative_path": "old_development/vienna/vienna_68.json",
+        "sha256": "253c193f72a853191cdc04c56c3a034639773381158ea9b1751fd99c3ada5dfa",
+        "bytes": 51375
+      },
+      "compact_payload_bytes": 422316
+    }
+  ],
+  "attempts": [],
+  "region_progress": {
+    "old_development": {
+      "aachen": {
+        "complete": 5,
+        "planned": 5
+      },
+      "accra": {
+        "complete": 5,
+        "planned": 5
+      },
+      "austin": {
+        "complete": 5,
+        "planned": 5
+      },
+      "bogota": {
+        "complete": 5,
+        "planned": 5
+      },
+      "chiangmai": {
+        "complete": 5,
+        "planned": 5
+      },
+      "chicago": {
+        "complete": 5,
+        "planned": 5
+      },
+      "chisinau": {
+        "complete": 5,
+        "planned": 5
+      },
+      "christchurch": {
+        "complete": 5,
+        "planned": 5
+      },
+      "daressalaam": {
+        "complete": 5,
+        "planned": 5
+      },
+      "dhaka": {
+        "complete": 5,
+        "planned": 5
+      },
+      "kyoto": {
+        "complete": 5,
+        "planned": 5
+      },
+      "mahe": {
+        "complete": 5,
+        "planned": 5
+      },
+      "maputo": {
+        "complete": 5,
+        "planned": 5
+      },
+      "melbourne": {
+        "complete": 5,
+        "planned": 5
+      },
+      "niamey": {
+        "complete": 5,
+        "planned": 5
+      },
+      "pointenoire": {
+        "complete": 5,
+        "planned": 5
+      },
+      "rio": {
+        "complete": 5,
+        "planned": 5
+      },
+      "rotterdam": {
+        "complete": 5,
+        "planned": 5
+      },
+      "santiago": {
+        "complete": 5,
+        "planned": 5
+      },
+      "shanghai": {
+        "complete": 5,
+        "planned": 5
+      },
+      "tonga": {
+        "complete": 5,
+        "planned": 5
+      },
+      "ulaanbaatar": {
+        "complete": 5,
+        "planned": 5
+      },
+      "vegas": {
+        "complete": 5,
+        "planned": 5
+      },
+      "vienna": {
+        "complete": 5,
+        "planned": 5
+      }
+    }
+  },
+  "geographic_claim_limits": [
+    "Geographic bounds come from declared TIFF metadata and offline transformations, not surveyed ground truth.",
+    "A supported transform or absence of a bbox intersection does not prove independence of original source mosaics or absence of leakage.",
+    "Unknown CRS, missing georeferences, area-of-use cautions and failed transforms are retained; no sample is replaced."
+  ],
+  "stage": "old",
+  "whole_v2_dataset_complete": false,
+  "status": "complete",
+  "current_attempt": {
+    "started_utc": "2026-10-17T23:05:37.006597+00:00",
+    "last_checkpoint_utc": "2026-10-17T23:22:20.619092+00:00",
+    "http_range_bytes": 0,
+    "http_requests": 0
+  },
+  "compact_payload_bytes": 53310530,
+  "scope": "immutable_development_120_only",
+  "immutability_note": "Bind calibration to this file SHA; later panel preparation never rewrites it."
+}

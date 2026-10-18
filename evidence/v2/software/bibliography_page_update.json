@@ -1,0 +1,23 @@
+{
+  "format": "v2-bibliographic-page-update-1",
+  "created_utc": "2026-10-18T01:24:27.888071+00:00",
+  "previous_bibliography": "docs/reference_history/references_v2_before_oem_page_update.bib",
+  "previous_sha256": "2336b3efcf61fbca512b0872d834de35c36839e14f41498053b990fb7ff7d01c",
+  "current_bibliography": "docs/references_v2.bib",
+  "current_sha256": "a0389f038d2495538cb70a7173f0812c3a78fbf8e73106a1066a892847e71d97",
+  "changed_entry_keys": [
+    "xia2023openearthmap"
+  ],
+  "only_field_change": {
+    "pages": "6254--6264"
+  },
+  "other24_entries_unchanged": true,
+  "keys_preserved": 25,
+  "basis_record": "evidence/v2/oem_reference_check.json",
+  "basis_record_sha256": "b11135d4fdb74379ecaddb050d585bd6988a3bc4e7108983baf19bb72befabd5",
+  "checked_reference_display": "[1] Xia, Junshi; Yokoya, Naoto; Adriano, Bruno; Broni-Bediako, Clifford. OpenEarthMap: A Benchmark Dataset for Global High-Resolution Land Cover Mapping. 2023 IEEE/CVF Winter Conference on Applications of Computer Vision (WACV). 2023. 6254\u20136264. https://doi.org/10.1109/WACV56688.2023.00619",
+  "historical_reviews": "Previous working Methods and Introduction checks bind their original bibliography version and remain historical scope checks. Final manuscript must bind the current bibliography and undergo final citation review.",
+  "frozen_experiments_modified": false,
+  "v1_files_modified": false,
+  "passed": true
+}

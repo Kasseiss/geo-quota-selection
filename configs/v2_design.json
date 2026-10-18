@@ -1,0 +1,283 @@
+{
+  "stage": "design_and_development_no_new_panel_predictions",
+  "created_utc": "2026-10-17T22:58:04.554377+00:00",
+  "old_development_regions": [
+    "aachen",
+    "accra",
+    "austin",
+    "bogota",
+    "chiangmai",
+    "chicago",
+    "chisinau",
+    "christchurch",
+    "daressalaam",
+    "dhaka",
+    "kyoto",
+    "mahe",
+    "maputo",
+    "melbourne",
+    "niamey",
+    "pointenoire",
+    "rio",
+    "rotterdam",
+    "santiago",
+    "shanghai",
+    "tonga",
+    "ulaanbaatar",
+    "vegas",
+    "vienna"
+  ],
+  "new_test_regions": [
+    "abancay",
+    "al_qurnah",
+    "baybay",
+    "bielefeld",
+    "buenos_aires",
+    "chiclayo",
+    "coxsbazar",
+    "dowa",
+    "kagera",
+    "kampala",
+    "khartoum",
+    "kinshasa",
+    "kitsap",
+    "monrovia",
+    "ngaoundere",
+    "paris",
+    "rosario",
+    "san_tome",
+    "soriano",
+    "svaneti",
+    "tokyo",
+    "tyrolw",
+    "western",
+    "zanzibar"
+  ],
+  "new_images_per_region": 3,
+  "new_download_seed": 2026101802,
+  "source_splits": [
+    {
+      "id": "source0",
+      "train": [
+        "accra",
+        "bogota",
+        "chicago",
+        "daressalaam",
+        "mahe",
+        "maputo",
+        "niamey",
+        "pointenoire",
+        "rio",
+        "santiago",
+        "ulaanbaatar",
+        "vienna"
+      ],
+      "validation": [
+        "chiangmai",
+        "dhaka",
+        "shanghai",
+        "vegas"
+      ],
+      "unused_development": [
+        "aachen",
+        "austin",
+        "chisinau",
+        "christchurch",
+        "kyoto",
+        "melbourne",
+        "rotterdam",
+        "tonga"
+      ],
+      "candidate_seed": 2026101804
+    },
+    {
+      "id": "source1",
+      "train": [
+        "austin",
+        "chiangmai",
+        "chicago",
+        "christchurch",
+        "dhaka",
+        "kyoto",
+        "niamey",
+        "rotterdam",
+        "shanghai",
+        "ulaanbaatar",
+        "vegas",
+        "vienna"
+      ],
+      "validation": [
+        "aachen",
+        "chisinau",
+        "melbourne",
+        "tonga"
+      ],
+      "unused_development": [
+        "accra",
+        "bogota",
+        "daressalaam",
+        "mahe",
+        "maputo",
+        "pointenoire",
+        "rio",
+        "santiago"
+      ],
+      "candidate_seed": 2026101805
+    },
+    {
+      "id": "source2",
+      "train": [
+        "aachen",
+        "austin",
+        "chisinau",
+        "christchurch",
+        "daressalaam",
+        "kyoto",
+        "mahe",
+        "maputo",
+        "melbourne",
+        "pointenoire",
+        "rotterdam",
+        "tonga"
+      ],
+      "validation": [
+        "accra",
+        "bogota",
+        "rio",
+        "santiago"
+      ],
+      "unused_development": [
+        "chiangmai",
+        "chicago",
+        "dhaka",
+        "niamey",
+        "shanghai",
+        "ulaanbaatar",
+        "vegas",
+        "vienna"
+      ],
+      "candidate_seed": 2026101806
+    }
+  ],
+  "strategies": [
+    "random",
+    "kcenter",
+    "region_random",
+    "region_kcenter",
+    "permuted_region_kcenter",
+    "kmeanspp",
+    "facility_location",
+    "fd_roundrobin"
+  ],
+  "selection_seeds": [
+    0,
+    1,
+    2
+  ],
+  "full_model": {
+    "name": "resnet18_unet",
+    "budgets": [
+      12
+    ],
+    "pools": [
+      "skewed5_1"
+    ],
+    "initialization_seeds": [
+      0
+    ],
+    "batch_size": 2,
+    "crop": 224,
+    "threads": 8,
+    "calibration_encoder_lrs": [
+      0.0001,
+      0.0003
+    ],
+    "calibration_checkpoints": [
+      300,
+      600,
+      1200
+    ],
+    "calibration_selection_seed": 101,
+    "calibration_budget": 24,
+    "calibration_pool": "balanced3",
+    "calibration_metric": "equal-region union-class mIoU on this split old validation regions",
+    "calibration_tie_break": [
+      "fewer steps",
+      "lower encoder LR"
+    ],
+    "decoder_lr_multiplier": 10,
+    "learning_rate_schedule": "constant",
+    "optimizer": "AdamW beta0.9/0.999 eps1e-8 weight_decay1e-4 on all parameters",
+    "encoder_batchnorm": "pretrained running statistics fixed; affine and all convolution parameters trainable",
+    "decoder_normalization": "GroupNorm8",
+    "augmentation": [
+      "random224 crop on448 preprocessed grid",
+      "horizontal flip probability0.5",
+      "vertical flip probability0.5",
+      "uniform quarter rotation"
+    ],
+    "evaluation": "full448 grid inference; no augmentation"
+  },
+  "frozen_control": {
+    "name": "dinov2_mlp128",
+    "budgets": [
+      6,
+      12,
+      24
+    ],
+    "pools": [
+      "balanced3",
+      "skewed5_1"
+    ],
+    "initialization_seeds": [
+      0
+    ],
+    "steps": 600,
+    "learning_rate": 0.001
+  },
+  "primary": {
+    "model": "resnet18_unet",
+    "pool": "skewed5_1",
+    "budget": 12,
+    "contrast": [
+      "region_kcenter",
+      "kcenter"
+    ],
+    "metric": "equal-region union-class mIoU",
+    "unit": "new held-out region",
+    "first_average": [
+      "source_split",
+      "selection_seed",
+      "initialization_seed"
+    ],
+    "interval": "paired percentile region bootstrap",
+    "repetitions": 10000,
+    "bootstrap_seed": 2026101805
+  },
+  "secondary_metrics": [
+    "truth-present-class regional mIoU",
+    "pooled-pixel IoU",
+    "worst-region IoU",
+    "per-class IoU",
+    "source-count coverage",
+    "mean and maximum candidate coverage distance",
+    "selected original valid pixels"
+  ],
+  "secondary_contrasts": [
+    "region_kcenter minus permuted_region_kcenter",
+    "region_kcenter minus facility_location",
+    "region_kcenter minus fd_roundrobin"
+  ],
+  "checkpoint_policy": "Save one predetermined full-model checkpoint: source0, selection0, initialization0, region_kcenter; all fits retain selected IDs, logs and per-image confusion matrices. Not selected by score.",
+  "changes_from_v1": [
+    "Old24 including old test now development only.",
+    "Fresh permanent24 region panel with3 images each.",
+    "Three changing source splits.",
+    "Trainable encoder and spatial decoder.",
+    "Stronger mean-representativeness/cluster controls.",
+    "Primary union-class convention chosen to count prediction-only false positive classes; old truth-present convention reported alongside. New primary cannot be pooled with old prespecified primary."
+  ],
+  "no_equivalence_margin": "No externally justified practical margin is available. Do not call zero-crossing intervals equivalence.",
+  "release_gate": "Full planned matrix and fresh-panel audit; evidence must support a specific contribution or document unresolved insufficiency; writing alone is not completion.",
+  "model_comparison_nonclaim": "Frozen DINOv2 MLP versus trainable ResNet18 spatial model changes encoder family, pretraining, grid/decoder and augmentation. It does not isolate the causal effect of encoder fine tuning."
+}

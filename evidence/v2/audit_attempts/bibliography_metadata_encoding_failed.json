@@ -1,0 +1,8 @@
+{
+  "created_utc": "2026-10-18T01:02:27.870931+00:00",
+  "attempt": "Write current bibliography display check with platform-default file encoding",
+  "error": "UnicodeEncodeError for accented author spelling in GBK default encoding",
+  "affected_file": "evidence/v2/software/bibliography25_parse.json",
+  "resolution": "Immediately regenerated and JSON-read verified with explicit UTF-8; bibliography and frozen research inputs untouched",
+  "scientific_results_changed": false
+}

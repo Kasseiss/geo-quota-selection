@@ -1,0 +1,31 @@
+{
+  "created_utc": "2026-10-18T08:13:11.056303+00:00",
+  "scope": "Software and integration checks only; no actual manuscript release or delivery migration performed.",
+  "frozen53_unchanged": true,
+  "freeze_sha256": "5fd417464cc88024ad4063b2dc77366c1b6d3c80ea7cb1fd3083b0ddc2957bd8",
+  "files": {
+    "code/v2_build_documents.py": "22b09fd0f24b996efc86cac7f3d6886b32c7ef1a55893b9bbbd369a23db447d8",
+    "code/v2_package_delivery.py": "399846adcadb0c34eaa52df315afea5995729157842474d2b5ad568fe11c25ea",
+    "code/v2_cuda_delivery_inventory.py": "fc6b45baa28d0a996f62f70bb3eddf50e7ab4096d6b0e78e6edf4a9ec8ca7dfd"
+  },
+  "document_builder_tests": {
+    "run": 5,
+    "passed": 5,
+    "failures": 0,
+    "scope": "Parser/reference order/stable result inventory/delegation to full supplemental validators and binding drift refusal; no actual DOCX or scientific result."
+  },
+  "packager_tests": {
+    "run": 11,
+    "passed": 9,
+    "skipped": 2,
+    "failures": 0,
+    "elapsed_seconds": 232.856,
+    "skips": "Platform symbolic-link permission fixtures; actual native Windows junction ancestor-protection regression passed."
+  },
+  "independent_static_review": {
+    "reviewer": "internal parallel_audit",
+    "packager_cuda_four_integration_points": "No blocking issue found",
+    "document_gate_initial_defect": "Initial shallow map check did not validate full secondary evidence; superseded by full CUDA inventory / pixel validate_bundle delegation. Updated code and its5 synthetic checks observed by parent; followup independent recheck pending."
+  },
+  "format_change": "DOCX table renderer now uses top/header-bottom/final-bottom black rules with no header shading; actual document page rendering remains pending."
+}

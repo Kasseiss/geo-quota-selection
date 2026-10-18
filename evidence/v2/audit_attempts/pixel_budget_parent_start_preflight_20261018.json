@@ -1,0 +1,15 @@
+{
+  "format": "v2-pixel-budget-parent-start-preflight-1",
+  "created_utc": "2026-10-18T08:25:35.991227+00:00",
+  "passed": true,
+  "cuda90_complete_audit_sha256": "8d2fa70fb0766a9dd39a2db264ccdf3a394f8a897a0a4a330d43713bd47f7d32",
+  "cuda90_analysis_sha256": "6005ce9e5bae772d04d5cab09833b3a0cf2a28d01d672ba8a478a5050d60a23e",
+  "all_audited_maps_current": true,
+  "cuda90_writer_and_children_terminal": true,
+  "pixel_plan_sha256": "3e776a5517286d634eb29968ab3a7cafa3912e166f47d84137e8d16ef03d58e9",
+  "pixel_runner_sha256": "1b7e79fa4058bae13b2ad7161392aab5416049056380ade950d3c2b1872b5e1b",
+  "cpu_reference_snapshot_sha256": "2e48118bccb1729cbd828917735a51d9ce58956d1d0accc383de330ea07b7201",
+  "cpu_boundary_stop_sha256": "dcafa86b226eb1e601a953ac7233c0b4819a15e80a9607bb0b214cbff5698df7",
+  "independent_pixel_read_only_review": "parallel_audit verified61bindings/cropRNG/evaluation restoration/scheduling; no fresh launch blocker.",
+  "legacy_history_pid_reuse": "Original scalar29164 was proven stopped by earlier receipt; current29164 is conhost created later. Separate packaging helper resolution pending; no CUDA training writer remains."
+}

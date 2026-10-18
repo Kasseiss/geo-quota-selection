@@ -1,0 +1,89 @@
+{
+  "format": "v2-packaging-integrity-validation-1",
+  "created_utc": "2026-10-18T08:59:05.962134+00:00",
+  "passed": true,
+  "scope": "SOFTWARE_FIXTURE_VALIDATION_ONLY; not scientific validation or release readiness",
+  "previous_packager_sha256": "7a069610f6dcebb0188c3b3198183655049860310c77da2b5ed3024ea1ab6576",
+  "file_sha256": {
+    "code/v2_package_delivery.py": "888d9b9f511cb464978a0abcbfdad61353acf44ed9df0b26464b07e4df874458",
+    "code/test_v2_package_integrity.py": "bb96e700b00c4e645c341a3de33a1ddedb0d2fd91f1eadbc825e0b2fbaaf5963",
+    "docs/v2_packaging_integrity.md": "8180136005fb508eb4bdb2b0f1a9b4180d3df6c8fa051a3d9dff2c3a6cced1f9",
+    "code/v2_migration_budget.py": "7774558717bec1235ee7b0b981cb9ab9bb30a2860f30d439f9164f68d833ed79",
+    "code/v2_active_gpu_results.py": "c8a220193a9124f548dce2fafd3500495dcc6f91980d957d1a96d1e9d2a7722d",
+    "code/v2_audit_pixel_budget.py": "180aa3679597e571b5983a6bacc328bf4580eda4ba722d4201a2d5f52db722e3",
+    "configs/v2_freeze.json": "5fd417464cc88024ad4063b2dc77366c1b6d3c80ea7cb1fd3083b0ddc2957bd8"
+  },
+  "changes": [
+    "Exact audited pixel admission/budget/stop markers COPY through dedicated restricted origin; require size1 and b0, exact operation set, current SHA and immutable delivered manifest.",
+    "Full read-only active validate_bundle at plan completion, before migration mutation and at destination evidence refresh; stable small active/amendment/CPU reference inventory SHA binding."
+  ],
+  "active_gate_call_lines": {
+    "build_plan": [
+      548
+    ],
+    "_apply_actions": [
+      753
+    ],
+    "validate_refreshed_evidence": [
+      893
+    ]
+  },
+  "validation": [
+    {
+      "command": "python -B -m unittest discover -s code -p test_v2_package_integrity.py -v",
+      "exit_code": 0,
+      "tests": 5,
+      "passed": 5,
+      "skipped": 0,
+      "reported_seconds": 1.283,
+      "coverage": [
+        "full active refusal propagates at all3 gates before receipts/destination writes",
+        "active SHA/inventory plan binding and amendment disappearance",
+        "exact marker path/size/content/action/origin and duplicate/omission rejection",
+        "real temporary fixture COPY+ledger+manifest preserving markers",
+        "capacity charged equals real fixture logical growth; foreign_delta0; immutable manifest rejection"
+      ],
+      "scientific_validators_explicitly_mocked": true
+    },
+    {
+      "command": "python -B code/v2_package_delivery.py --self-test",
+      "native_session": 85847,
+      "exit_code": 0,
+      "tests": 11,
+      "passed": 9,
+      "skipped": 2,
+      "reported_seconds": 37.576,
+      "skips": [
+        "Platform does not permit feature-cache symlink fixtures; shared junction regression remains active",
+        "Platform does not permit symbolic-link fixtures"
+      ],
+      "windows_junction_ancestor_protection_passed": true
+    }
+  ],
+  "frozen53_check": {
+    "expected_count": 53,
+    "observed_count": 53,
+    "mismatches": [],
+    "freeze_sha256": "5fd417464cc88024ad4063b2dc77366c1b6d3c80ea7cb1fd3083b0ddc2957bd8"
+  },
+  "preserved_capacity_accounting": {
+    "migration_budget_sha256": "7774558717bec1235ee7b0b981cb9ab9bb30a2860f30d439f9164f68d833ed79",
+    "same_root_MOVE_charge": 0,
+    "actual_COPY_and_metadata_charged_before_writes": true,
+    "admission_checks_do_not_charge": true,
+    "whole_root_scan_note": "MigrationBudget performs start+finish scans; existing completed ledger event retains one additional logical_bytes(root) scan. External writer quiescence remains required."
+  },
+  "safety": {
+    "formal_plan_run": false,
+    "real_migration_run": false,
+    "scientific_model_scores_read": false,
+    "model_fit_started_or_stopped": false,
+    "frozen_science_or_auditor_modified": false,
+    "existing_proofs_preserved": true
+  },
+  "capacity_before_proof": {
+    "logical_bytes": 1915919556,
+    "cap": 2000000000
+  },
+  "integration": "Generate a fresh package plan only after current scientific/manuscript gates pass. Existing saved plans are invalidated by new packager SHA and exact marker operations."
+}

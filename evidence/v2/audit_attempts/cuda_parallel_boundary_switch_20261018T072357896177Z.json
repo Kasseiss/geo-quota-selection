@@ -1,0 +1,17 @@
+{
+  "created_utc": "2026-10-18T07:23:57.895441+00:00",
+  "reason": "User requested parallel independent GPU fits",
+  "scalar_pid": 29164,
+  "scalar_process_confirmed_terminal": true,
+  "completed_boundary_result": "evidence/v2/cuda_execution/source1_skewed5_1_12_0_0_kmeanspp/result.json",
+  "completed_boundary_sha256": "c4f0dc4c27022f4b88f2930fcd1b2797f7742e78da54210b0f55571eaff6d2a4",
+  "all_prior_complete_results_unchanged": true,
+  "prior_complete_count": 29,
+  "previous_writer_lease": {
+    "pid": 29164,
+    "plan_sha256": "15d586fd03389d495dfc2b7d9cdea35b2b3089461ccb49cc37e5f8bd39ff1545"
+  },
+  "lease_left_for_verified_stale_recovery": true,
+  "unfinished_attempts_retained": true,
+  "scientific_plan_unchanged": true
+}

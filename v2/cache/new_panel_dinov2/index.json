@@ -1,0 +1,519 @@
+{
+  "status": "complete",
+  "identity": {
+    "extractor_sha256": "d15da0a2905a9a8e22095f6bf27ae0aeac8ece4d99f3dcd25ea1350095f5f9e9",
+    "manifest_sha256": "676953ed28ab90a6448bfd15c1bbed352b8b5d42ae8de6d54416ad258a1d105a",
+    "weight_sha256": "b938bf1bc15cd2ec0feacfe3a1bb553fe8ea9ca46a7e1d8d00217f29aef60cd9",
+    "commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+    "input": 448,
+    "torch": "2.13.0+cpu",
+    "normalization": "ImageNet; channelL2; float16cache",
+    "device": "cpu"
+  },
+  "records": [
+    {
+      "id": "abancay__abancay_32",
+      "region": "abancay",
+      "cache": "abancay__abancay_32.npz",
+      "cache_sha256": "991f3cd70e64b233cda04e87b29900e2f3504dd16402aee3aaae19e66424b221",
+      "processed_rgb_sha256": "f596468f1091c448e0c7c3e0480e07510f5f259c2732de8c072946f205fdab9e"
+    },
+    {
+      "id": "abancay__abancay_41",
+      "region": "abancay",
+      "cache": "abancay__abancay_41.npz",
+      "cache_sha256": "2d07242ecdf678dc28a60b611225a1473e7a54cd067c5fa45ffdbfc913788699",
+      "processed_rgb_sha256": "b7a325f8466636d5aa48760aad7953c8f887e63fffddd183f2837ce07ea8de65"
+    },
+    {
+      "id": "abancay__abancay_45",
+      "region": "abancay",
+      "cache": "abancay__abancay_45.npz",
+      "cache_sha256": "aec5b3985e16ee2e07c62b80cebac9e4d0afb8daca96523e5f6ef6cf23a9cccb",
+      "processed_rgb_sha256": "fd864bc0d518585086c1079308f530568acafbf6c5b996f76208501c89ddefed"
+    },
+    {
+      "id": "al_qurnah__al_qurnah_33",
+      "region": "al_qurnah",
+      "cache": "al_qurnah__al_qurnah_33.npz",
+      "cache_sha256": "520469ace5cb59d938c495ad6209962d6e0cbd2ce10875409e404e570f01057a",
+      "processed_rgb_sha256": "fc0374f5455f4a04bbbd662f44d7f76d70b43b07d3d6220e21e5fe83b91e67b9"
+    },
+    {
+      "id": "al_qurnah__al_qurnah_49",
+      "region": "al_qurnah",
+      "cache": "al_qurnah__al_qurnah_49.npz",
+      "cache_sha256": "8048e1da43b13246eb8313c1c6c6539ab5f39fab73543ebb95ab881a3e4f9ef0",
+      "processed_rgb_sha256": "9a187c254c50f08dae2887109f71ccdaff2dc446d4e91b6a8243f1a0710f8cb8"
+    },
+    {
+      "id": "al_qurnah__al_qurnah_60",
+      "region": "al_qurnah",
+      "cache": "al_qurnah__al_qurnah_60.npz",
+      "cache_sha256": "ed5320da202e274c6c25fcb63569fe4281920eb44da8fc59d5b5d9e803f0bb36",
+      "processed_rgb_sha256": "6c943b78c7795d5d501833bff60cf52d44fb9e18f819bf1675be09c1e39984ab"
+    },
+    {
+      "id": "baybay__baybay_36",
+      "region": "baybay",
+      "cache": "baybay__baybay_36.npz",
+      "cache_sha256": "d79c647ac8e2b682d869ac877cb7c550300c1af51237ff494e95a530b656bc99",
+      "processed_rgb_sha256": "f4f2a61959daab31d36542ac617e567930a394c9e2ff388e6b0c06137e55f225"
+    },
+    {
+      "id": "baybay__baybay_53",
+      "region": "baybay",
+      "cache": "baybay__baybay_53.npz",
+      "cache_sha256": "7c3d2bff5f1321bddbd47d4e86355bf289bf8bf7720a350888824b6dc4955ad2",
+      "processed_rgb_sha256": "ce1ef8488c5c9c751781f0f2f72d940eb98c09bde5b566b363f77cf09408d66c"
+    },
+    {
+      "id": "baybay__baybay_65",
+      "region": "baybay",
+      "cache": "baybay__baybay_65.npz",
+      "cache_sha256": "7b17def3d9853ff41d998fe10377d6f0e6d307e71df6bbb9f836cee439d6ed9e",
+      "processed_rgb_sha256": "46164405ce88c7160aae67ea7b23b31e8e391b93257e4122d6b65fe96450ae81"
+    },
+    {
+      "id": "bielefeld__bielefeld_29",
+      "region": "bielefeld",
+      "cache": "bielefeld__bielefeld_29.npz",
+      "cache_sha256": "30edbdc235a1c702bd5a30c7474990a447edc1150496b796bd58e7ded2d2b720",
+      "processed_rgb_sha256": "cd77479eecec3afe2551bd5df673853ccb395d5fd2e01ff5d7db271cecd4a99a"
+    },
+    {
+      "id": "bielefeld__bielefeld_61",
+      "region": "bielefeld",
+      "cache": "bielefeld__bielefeld_61.npz",
+      "cache_sha256": "ec08b7bc2e96aeaf2d44c30fa443442330db52cfcded667ba13869919ee7c901",
+      "processed_rgb_sha256": "20cc62abed8c110bb5fdfc06e11e9bf4956b4552d644a8c1d4b4678a66da5472"
+    },
+    {
+      "id": "bielefeld__bielefeld_63",
+      "region": "bielefeld",
+      "cache": "bielefeld__bielefeld_63.npz",
+      "cache_sha256": "81690ab20893adde6748fa2eb3d8c5965e62f59d21ca8b4082034646b246cce7",
+      "processed_rgb_sha256": "e5c094483b023b3e565a10dd3bfe1733c73613703ea5c7179196cac22e8f5cb4"
+    },
+    {
+      "id": "buenos_aires__buenos_aires_15",
+      "region": "buenos_aires",
+      "cache": "buenos_aires__buenos_aires_15.npz",
+      "cache_sha256": "2f6080f47e5df2e9b6d98cecb3c6e063e81f67dc957161f7fd0a5e5a23bf2bc6",
+      "processed_rgb_sha256": "21641832c268f8e844afc7dff4440c5d25e884dc152c5c9eac0db8d3a2561c00"
+    },
+    {
+      "id": "buenos_aires__buenos_aires_34",
+      "region": "buenos_aires",
+      "cache": "buenos_aires__buenos_aires_34.npz",
+      "cache_sha256": "4c5b10ccc577d7945c55588ed9b7482e3b68fb6bd1131ae76882dc7a0c3fb145",
+      "processed_rgb_sha256": "b3e18dc2e56b7089841d4a273785febfa897cd1cb71b57b5343dacd1a5d98aff"
+    },
+    {
+      "id": "buenos_aires__buenos_aires_45",
+      "region": "buenos_aires",
+      "cache": "buenos_aires__buenos_aires_45.npz",
+      "cache_sha256": "77618d19c46e6c9626d6d67bfd96e01304f25e27c5aabc4acc8ef556c4766e26",
+      "processed_rgb_sha256": "39a084830ea953b96575b33b74c148610153a7cfc161d32e0998fdbe66d440fd"
+    },
+    {
+      "id": "chiclayo__chiclayo_23",
+      "region": "chiclayo",
+      "cache": "chiclayo__chiclayo_23.npz",
+      "cache_sha256": "b77e8295338250ed7f35e3ca03ff4bcb09e2ef56a80cbcc5c40d5531e48aea72",
+      "processed_rgb_sha256": "cdedb0656186e73fab44284bf618bf91f22139160721206b7160347598ad0fba"
+    },
+    {
+      "id": "chiclayo__chiclayo_25",
+      "region": "chiclayo",
+      "cache": "chiclayo__chiclayo_25.npz",
+      "cache_sha256": "0f1303c73831d03711e636361ac92c38d3f0797e6a3289cb2fc08ea49df911c8",
+      "processed_rgb_sha256": "2414be1b757adfad8ee9815ccef2b022b0e04459b42a78fb66cd4c0e87f13f48"
+    },
+    {
+      "id": "chiclayo__chiclayo_4",
+      "region": "chiclayo",
+      "cache": "chiclayo__chiclayo_4.npz",
+      "cache_sha256": "ccb7c902a6b37693c44a4c667460ad41c026e2d80a7cb4d2a88128c1c917c660",
+      "processed_rgb_sha256": "73064f139872fc4633389898df5d4b84787cd73c9e776e34e297620708a7305c"
+    },
+    {
+      "id": "coxsbazar__coxsbazar_14",
+      "region": "coxsbazar",
+      "cache": "coxsbazar__coxsbazar_14.npz",
+      "cache_sha256": "7daae617edac9b509732290a501e423e1931c4cdbc9b0540379f33ec6155dbaf",
+      "processed_rgb_sha256": "4aaaaee9385a63382a7f7ae14fcf3a0daf432aa0902a3382043db471fa091c9e"
+    },
+    {
+      "id": "coxsbazar__coxsbazar_52",
+      "region": "coxsbazar",
+      "cache": "coxsbazar__coxsbazar_52.npz",
+      "cache_sha256": "a2035b26cc8996af0b2944afba5a0ecc461c3292a205b76fab211595a6106bce",
+      "processed_rgb_sha256": "2813890b0a185f26606d1c85b52d90a441e551bbcd93943b90161a731fe22af2"
+    },
+    {
+      "id": "coxsbazar__coxsbazar_53",
+      "region": "coxsbazar",
+      "cache": "coxsbazar__coxsbazar_53.npz",
+      "cache_sha256": "d3bb1938d2c00cdef2ae57eabd1e32e768db77b525793c8a324edd969e36a400",
+      "processed_rgb_sha256": "be7fc4359def0400edcd896e838d0a026e9ad36ceece482a486c1012f4b9de45"
+    },
+    {
+      "id": "dowa__dowa_12",
+      "region": "dowa",
+      "cache": "dowa__dowa_12.npz",
+      "cache_sha256": "ea228dcb0f5acb7702271c7a846febef9817147f0bfbe36a703455e3becfd03f",
+      "processed_rgb_sha256": "c6536aaed0e29547c47506e35eaa093b3e0a784ee941ec9e929cd75fcc07d2a9"
+    },
+    {
+      "id": "dowa__dowa_20",
+      "region": "dowa",
+      "cache": "dowa__dowa_20.npz",
+      "cache_sha256": "8bc1a38beaca9c1e37376855c71fda8c72b1aa481db279fcee2acd545010ec41",
+      "processed_rgb_sha256": "f0165bfe1de149bc925985eba3763f0a58972e4b2827f095c63ac22ea4750ca0"
+    },
+    {
+      "id": "dowa__dowa_9",
+      "region": "dowa",
+      "cache": "dowa__dowa_9.npz",
+      "cache_sha256": "9d493cb94ed823292c6f69fb1211d3251554713e08cd530f4d1e95c9cf87e703",
+      "processed_rgb_sha256": "1049281efa9f3b4aee961d3dd9ffe7f0e18cf4c284c8ed47b465e1f48bb9818a"
+    },
+    {
+      "id": "kagera__kagera_24",
+      "region": "kagera",
+      "cache": "kagera__kagera_24.npz",
+      "cache_sha256": "dead1acbe7856aa1679ee620f92053a6dbe699ff61001b50d0be93c49ab03338",
+      "processed_rgb_sha256": "d06f719679982cc487b3ddc0d0bb80ee686fd4a5a167d5f2daf22fc4996b9cbe"
+    },
+    {
+      "id": "kagera__kagera_46",
+      "region": "kagera",
+      "cache": "kagera__kagera_46.npz",
+      "cache_sha256": "09264a7acb1df97da9b780b16f9f3ceb22966dbe96069c817abc5591dcf88545",
+      "processed_rgb_sha256": "f8bfe70cbbbbe0ff7828bb42cd29da199681d5d54ef45f5ef7a7ce42322cac5a"
+    },
+    {
+      "id": "kagera__kagera_59",
+      "region": "kagera",
+      "cache": "kagera__kagera_59.npz",
+      "cache_sha256": "ef82d9747a42a40980704be081042a1fda76bf36bda4dfb85c44471fa741f607",
+      "processed_rgb_sha256": "2b7898c8654e598fe2708572c64028cd46eedc5930b7258e7026a9559fd884b4"
+    },
+    {
+      "id": "kampala__kampala_1",
+      "region": "kampala",
+      "cache": "kampala__kampala_1.npz",
+      "cache_sha256": "645ec9b5d03c1c94409a3def408f2d2ba36a12e590e7794823fd1ab440ba19f7",
+      "processed_rgb_sha256": "6fac4e0d39217a49273728f4c2c9572018ede7ec7b9f17a463188a60327bf518"
+    },
+    {
+      "id": "kampala__kampala_2",
+      "region": "kampala",
+      "cache": "kampala__kampala_2.npz",
+      "cache_sha256": "727597d831bec4de8d1928cc0d32346c859a9f5beab24645d1fbe4e263ab3153",
+      "processed_rgb_sha256": "818a4873775f54187965a489cfa1826ef38d76cacf61f788470fc58b9062e6ed"
+    },
+    {
+      "id": "kampala__kampala_5",
+      "region": "kampala",
+      "cache": "kampala__kampala_5.npz",
+      "cache_sha256": "108200c12003b40c97ed78b9cdb6d3e53ef6ddbd6d3923aa92939dbc6066fe9a",
+      "processed_rgb_sha256": "8a9c0af2c72371c0679a882713ff436d8b76aa63dd710cc02a081bd7599816db"
+    },
+    {
+      "id": "khartoum__khartoum_21",
+      "region": "khartoum",
+      "cache": "khartoum__khartoum_21.npz",
+      "cache_sha256": "ea9d9cdc16d8b8c46534d4a09357806c7b00efaafd27d80c0f86bff37c602d2e",
+      "processed_rgb_sha256": "059226805ae637ecea8d25c594602a68cbe4c01bd0318f30fa86230ec2e7132d"
+    },
+    {
+      "id": "khartoum__khartoum_33",
+      "region": "khartoum",
+      "cache": "khartoum__khartoum_33.npz",
+      "cache_sha256": "572e71e2b8807123b3ee4869065f74699dac747dfeb0f999c5b1ea16fb05c737",
+      "processed_rgb_sha256": "e5db7903707568a34384f00cda20918927634ee28154a06e4427133c4c4b4876"
+    },
+    {
+      "id": "khartoum__khartoum_53",
+      "region": "khartoum",
+      "cache": "khartoum__khartoum_53.npz",
+      "cache_sha256": "0de0f580f462dadc3bd12cb214e9e96435cfa46878c99fca492631676dcd79b2",
+      "processed_rgb_sha256": "64d1b6ea791279eae75cafaeb594928a4ad09ff165575c74a9fad7fd5e9fc487"
+    },
+    {
+      "id": "kinshasa__kinshasa_1",
+      "region": "kinshasa",
+      "cache": "kinshasa__kinshasa_1.npz",
+      "cache_sha256": "bd293b87794b9a7f6d913fc2b48e66ec5851178735cf2880b444b9b2f9d5fe33",
+      "processed_rgb_sha256": "5e88813e432785b9a9d2706ea26657b96574fb46efc023a3bd55e81636293293"
+    },
+    {
+      "id": "kinshasa__kinshasa_2",
+      "region": "kinshasa",
+      "cache": "kinshasa__kinshasa_2.npz",
+      "cache_sha256": "56ca211493b64d7c781baedbe04ddb94469c9318c1a141885feee5550a9c0623",
+      "processed_rgb_sha256": "daf7ad3cdf99a14dc481976b9ea72c434a36d69f35102e28d24ce80a3832220f"
+    },
+    {
+      "id": "kinshasa__kinshasa_3",
+      "region": "kinshasa",
+      "cache": "kinshasa__kinshasa_3.npz",
+      "cache_sha256": "4730c66a9e10feed27cc8cd8090aeced1af3c233b7c76eed65e17bc5d00d233c",
+      "processed_rgb_sha256": "f0b554760a1962395e1680c3d5a65c07d322c5e873a1446c0237b0c46e23bb50"
+    },
+    {
+      "id": "kitsap__kitsap_2",
+      "region": "kitsap",
+      "cache": "kitsap__kitsap_2.npz",
+      "cache_sha256": "df203fcb20998f2aeb0952ded25ae4e787dfb3b39539d3a01c376ad8f26eeb31",
+      "processed_rgb_sha256": "c386b3f57e9c001b9a854e9825e8b7d06f934caff074c3ddcbd6bf2df798827e"
+    },
+    {
+      "id": "kitsap__kitsap_39",
+      "region": "kitsap",
+      "cache": "kitsap__kitsap_39.npz",
+      "cache_sha256": "87ff3eae4eadf5e6ef2f766983d5bd40bb920a710d0cbb16cb234d3bd883f15c",
+      "processed_rgb_sha256": "2de1fa304cf09cd8154e09a93312e8bc80106ebca57fe5b72403561b358567d9"
+    },
+    {
+      "id": "kitsap__kitsap_46",
+      "region": "kitsap",
+      "cache": "kitsap__kitsap_46.npz",
+      "cache_sha256": "c7d0cc6e3b38f2b5a13f7d73059217e03050bf30c386a4764d973e1140389620",
+      "processed_rgb_sha256": "d41f0cdce911e5c0212acbaeec8098b1f14b6fe562f6d0a26bde0dfaa4c6b712"
+    },
+    {
+      "id": "monrovia__monrovia_26",
+      "region": "monrovia",
+      "cache": "monrovia__monrovia_26.npz",
+      "cache_sha256": "d4e2e6a3291f91a2a274bf427c7f5359cc05471e5f207e6f8a0dfc3b41e37545",
+      "processed_rgb_sha256": "b5800b7478607b4ee08ebdc26fb76c54e51157eebd7abc9b314040e271329059"
+    },
+    {
+      "id": "monrovia__monrovia_48",
+      "region": "monrovia",
+      "cache": "monrovia__monrovia_48.npz",
+      "cache_sha256": "6aee1e8342812e9f88155a0d3ccc3113d01769fbfd75ffa8a3fc4817a89a8cdf",
+      "processed_rgb_sha256": "2ee42acb9e62a7d4a14d88a2b4b23dd8a88439d96760d57a9795444f28f8b42e"
+    },
+    {
+      "id": "monrovia__monrovia_58",
+      "region": "monrovia",
+      "cache": "monrovia__monrovia_58.npz",
+      "cache_sha256": "015c08062ca03d1a1378aa2c256d4be13703684bf52e99a44d1a1d6aa0a0f7ef",
+      "processed_rgb_sha256": "2c18f672e131b2bc7a0592e7438ae9ed5187d941d1655b341cf39798d67a267a"
+    },
+    {
+      "id": "ngaoundere__ngaoundere_28",
+      "region": "ngaoundere",
+      "cache": "ngaoundere__ngaoundere_28.npz",
+      "cache_sha256": "5f3a06ba3d192e7f4911d6041a17c7d11eb090f774a4cbc76786eb04b460042f",
+      "processed_rgb_sha256": "14556c475eb23a8fdcdaf76a8f4dde11819099ec76c4d6b03e3812a901dca70b"
+    },
+    {
+      "id": "ngaoundere__ngaoundere_31",
+      "region": "ngaoundere",
+      "cache": "ngaoundere__ngaoundere_31.npz",
+      "cache_sha256": "33e078a86505d00aa6c38e3226172213d2a75c1742f68c1d19d682f6b2fdbf45",
+      "processed_rgb_sha256": "6f35e940fde948f2498a87d46158c24b494620df67d386c52c694b5cf9dd5b9c"
+    },
+    {
+      "id": "ngaoundere__ngaoundere_34",
+      "region": "ngaoundere",
+      "cache": "ngaoundere__ngaoundere_34.npz",
+      "cache_sha256": "5ce57d3b77de738792218972a5b4a426d2c663c9257b810a5672222f20d7d119",
+      "processed_rgb_sha256": "4274af61b10b5e6f8b865da9df5a5a3cba4fb1391609ce21daa3e253cd77d530"
+    },
+    {
+      "id": "paris__paris_38",
+      "region": "paris",
+      "cache": "paris__paris_38.npz",
+      "cache_sha256": "a0ad556c4c0049970e52cabedf30e35358400147e4750b1d1b0e58cdc701e475",
+      "processed_rgb_sha256": "d82f2bd994f70184385d8a58498ed7aea91262e769d53a014f246e0ded81a329"
+    },
+    {
+      "id": "paris__paris_54",
+      "region": "paris",
+      "cache": "paris__paris_54.npz",
+      "cache_sha256": "3e4306fbea64890ffd4aff9611eaee96bebaed4cf84d83420f5e7633b23ee8fa",
+      "processed_rgb_sha256": "e9c912bac3b11112a624b146535c1451e14e5d757a00ca79c46023f36b1cec50"
+    },
+    {
+      "id": "paris__paris_61",
+      "region": "paris",
+      "cache": "paris__paris_61.npz",
+      "cache_sha256": "455e86a7eb8a81a46ac94286d3dd8109cd8aea813bcc67b531590cd1a40998ae",
+      "processed_rgb_sha256": "4b1980a4339f8346bd333ed3b44d31383b909202188a6e2b2721d57402c5d9e7"
+    },
+    {
+      "id": "rosario__rosario_1",
+      "region": "rosario",
+      "cache": "rosario__rosario_1.npz",
+      "cache_sha256": "9a9dc94a4796e1efdbd701a2fd2e30e15ab6167998543faa3b8dd549e7ff21de",
+      "processed_rgb_sha256": "f1d020bed5ef4864da8eb451235563b1bddbecc5574be370b6db1af8345ad085"
+    },
+    {
+      "id": "rosario__rosario_4",
+      "region": "rosario",
+      "cache": "rosario__rosario_4.npz",
+      "cache_sha256": "161dc56d3e602d3dc415a7e493fa9811f46632ca028e6ecb8f5cf9451af4665d",
+      "processed_rgb_sha256": "d15754611a1c85edb8d397553af887694d798d0f38ae24257d9c855137884abf"
+    },
+    {
+      "id": "rosario__rosario_9",
+      "region": "rosario",
+      "cache": "rosario__rosario_9.npz",
+      "cache_sha256": "d05089ed0aced650cb75f55dd0a261db8904defd97fad4a606a1cfd91594b1af",
+      "processed_rgb_sha256": "9ef7f0939070cdf8796c387aef801a40a25118d69ef65a2ee3cf77f0134b10e6"
+    },
+    {
+      "id": "san_tome__san_tome_17",
+      "region": "san_tome",
+      "cache": "san_tome__san_tome_17.npz",
+      "cache_sha256": "63547ba5359c36ebf4c0eefb59721cb8316fd93b4855ff0f2cbf2e9ab27c1ec7",
+      "processed_rgb_sha256": "e4574666a6b78245a291033e60937b1d2d934f343daeee3008b0478a514ce248"
+    },
+    {
+      "id": "san_tome__san_tome_41",
+      "region": "san_tome",
+      "cache": "san_tome__san_tome_41.npz",
+      "cache_sha256": "11e53ab41211bd5a22e4654782dc5ed3499bee550c147739fef016b21bfaee4e",
+      "processed_rgb_sha256": "9a720dd4615acbdc73180f0b8f4609ea5a5589bf9727edeee70aed1fa06737bd"
+    },
+    {
+      "id": "san_tome__san_tome_46",
+      "region": "san_tome",
+      "cache": "san_tome__san_tome_46.npz",
+      "cache_sha256": "305157adff7acf872adbd75980d4c4066e26aa79feabf08f57922e8b5a0ea034",
+      "processed_rgb_sha256": "4e72981d29b53d45d44edc1aac5b2fc47346d09819bc1a8b3e6e2cf3797641d9"
+    },
+    {
+      "id": "soriano__soriano_20",
+      "region": "soriano",
+      "cache": "soriano__soriano_20.npz",
+      "cache_sha256": "b0eaf1e23cf598484eff036ab48a2cd0dc50c3a1bb039d96765ad097c5e802ae",
+      "processed_rgb_sha256": "4c973d7b185d60dd8fc70b483c0870fc7294f7f68e3dad827f68b462aa40468c"
+    },
+    {
+      "id": "soriano__soriano_5",
+      "region": "soriano",
+      "cache": "soriano__soriano_5.npz",
+      "cache_sha256": "5045489a604ddf4a50df0cf84ca5806feadaed0b3f55d44b6bc382e8761828f6",
+      "processed_rgb_sha256": "60a83c0fa6b35e33892605379c11a6bedbf25f8c71a8ca58b12d714053912087"
+    },
+    {
+      "id": "soriano__soriano_7",
+      "region": "soriano",
+      "cache": "soriano__soriano_7.npz",
+      "cache_sha256": "f70d8a0aa4b595ff17ae76c0e4a46ce3b77bfd96e6eead952c26c1299b77bdfb",
+      "processed_rgb_sha256": "5f0394895876f8b4724b14ffaccde41865667f9db0dc4792a74d284e561e3499"
+    },
+    {
+      "id": "svaneti__svaneti_19",
+      "region": "svaneti",
+      "cache": "svaneti__svaneti_19.npz",
+      "cache_sha256": "6ad96d7aca3ed57bb0a223a8f729139c38936d025d61c363c5aec376da209c69",
+      "processed_rgb_sha256": "4379b8d7593d2017345719a52be8e1bbfb09558b7ff14cb6b0a67eeaf169d9d3"
+    },
+    {
+      "id": "svaneti__svaneti_45",
+      "region": "svaneti",
+      "cache": "svaneti__svaneti_45.npz",
+      "cache_sha256": "1809acfe12f960f5bbec51e155d743be708231cc66bcdfef951e8f96389d6070",
+      "processed_rgb_sha256": "2bfad0378984616e39048d8e7461fde6150db8c5730b2c7d178c222e71c85ea1"
+    },
+    {
+      "id": "svaneti__svaneti_7",
+      "region": "svaneti",
+      "cache": "svaneti__svaneti_7.npz",
+      "cache_sha256": "dd77dda18fc332e0b0971b57e3ef19dab3f51339de279c1cca2f3bc9a690aae9",
+      "processed_rgb_sha256": "d86048a85842e9fa1c1bba732a4c3ae98a38cabb7e6b7234a514a4f3e520352a"
+    },
+    {
+      "id": "tokyo__tokyo_13",
+      "region": "tokyo",
+      "cache": "tokyo__tokyo_13.npz",
+      "cache_sha256": "0a79a9a86aabb2512e41bc2fdf6ee03c7b8403f9efc2290a63185edc1aaf0cdc",
+      "processed_rgb_sha256": "8da3e44556d2157ac44955b2b6b8b5507c6104e00d839284be2b22685338d474"
+    },
+    {
+      "id": "tokyo__tokyo_29",
+      "region": "tokyo",
+      "cache": "tokyo__tokyo_29.npz",
+      "cache_sha256": "a38ecd9b2d175cbf6918d1a07a40ece2cafece19716c4e35fbbdf26887b90fd1",
+      "processed_rgb_sha256": "21dfc00966b5445f17d59bb8da28774570d6638420465d09e1d83685314e6339"
+    },
+    {
+      "id": "tokyo__tokyo_40",
+      "region": "tokyo",
+      "cache": "tokyo__tokyo_40.npz",
+      "cache_sha256": "eb887c987e38f84d775a884b9752cf9392adc0a0ae9057abf7c0b0e618174963",
+      "processed_rgb_sha256": "b2385b32cf947bca3cec3fb0a1c63fdb62df29529fb188b95df3ebc48afa62fb"
+    },
+    {
+      "id": "tyrolw__tyrolw_4",
+      "region": "tyrolw",
+      "cache": "tyrolw__tyrolw_4.npz",
+      "cache_sha256": "47cfd957677c40c276225856e56451be8c488c24663d76f366a0d6c00c64e0c9",
+      "processed_rgb_sha256": "5af3c8a52487f25fca9778e69bef3f7689d313385ca2839a32f9bc902899494a"
+    },
+    {
+      "id": "tyrolw__tyrolw_57",
+      "region": "tyrolw",
+      "cache": "tyrolw__tyrolw_57.npz",
+      "cache_sha256": "4d072573bfc9ef81945e43f948183faf1103103b4f84a38d419645ebeabb75ea",
+      "processed_rgb_sha256": "680e7496ac79ebb8862a8ceb5e3cb7b0c1fda9794e348786e040463e1723d193"
+    },
+    {
+      "id": "tyrolw__tyrolw_68",
+      "region": "tyrolw",
+      "cache": "tyrolw__tyrolw_68.npz",
+      "cache_sha256": "08e0337f39b7e5b72b36b8084c61dbfdf46c3af2ba14d5bf670d9cc046671922",
+      "processed_rgb_sha256": "aa3a33a7206bc3a2e9dd73590095be92be2918b2805e7f528e538e5360e9b8c6"
+    },
+    {
+      "id": "western__western_14",
+      "region": "western",
+      "cache": "western__western_14.npz",
+      "cache_sha256": "ff8befab46a7483bf82fde40bb07b4ca4fb1bd03b78c2ce51de15738ab52ed36",
+      "processed_rgb_sha256": "4b09403ecbf60a98aec030c0a64bad9c49f5fac712fa7a194d251c4d06f03d57"
+    },
+    {
+      "id": "western__western_18",
+      "region": "western",
+      "cache": "western__western_18.npz",
+      "cache_sha256": "20590486959d8bac4fa1a5d0784abdc23498c819d0e2ec8a2935406543de5329",
+      "processed_rgb_sha256": "e961f1b69fcc7a6a7bc07d2eb422fffa89e960263e882eb74c983a6e2db3afc4"
+    },
+    {
+      "id": "western__western_20",
+      "region": "western",
+      "cache": "western__western_20.npz",
+      "cache_sha256": "b468e49df598c6781f3ac6d632f4c15960cf219a1888566fd83a35b8e07352dc",
+      "processed_rgb_sha256": "44a5fbeb7d52f0f69edca2a0d042e78c1d69daaf6294a03e473a45941915bc8d"
+    },
+    {
+      "id": "zanzibar__zanzibar_131",
+      "region": "zanzibar",
+      "cache": "zanzibar__zanzibar_131.npz",
+      "cache_sha256": "a6232cdd0d3022f038c65e17f4a5cb50e710b79631242f8c4eccfb307d1528ca",
+      "processed_rgb_sha256": "249ddf74fc2d0a2ef687f9cda4c64e6e1d3a722794cfc20ba27a88efc5d25eb4"
+    },
+    {
+      "id": "zanzibar__zanzibar_133",
+      "region": "zanzibar",
+      "cache": "zanzibar__zanzibar_133.npz",
+      "cache_sha256": "acca8c7b91d99f6b205bffdead0b37ea9b800dbdd0d19288c1504dcb561e769c",
+      "processed_rgb_sha256": "47dfa36338910fae58c45c7a99586b1382c7744e8dc28408df8bd0dbe976016c"
+    },
+    {
+      "id": "zanzibar__zanzibar_36",
+      "region": "zanzibar",
+      "cache": "zanzibar__zanzibar_36.npz",
+      "cache_sha256": "ef12fedfbe7694a89d62fc129bc61c3302e1831297ec8b3de00f72819117accf",
+      "processed_rgb_sha256": "ef279486eab902e08e1ea57bd450f94cf3b732e6842be6e1d01f7982212a92c5"
+    }
+  ]
+}

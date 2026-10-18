@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="6.5in" height="185.4mm" viewBox="0 0 165.1 185.4" version="1.1">
+<title>Compact workflow: development, selection, model recipes and isolated evaluation</title>
+<desc>Methods overview only. No model outcomes. All text remains editable Arial. New-panel evaluation has no feedback arrows.</desc>
+<defs><marker id="forward-arrow" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="4" markerHeight="4" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#000000"/></marker></defs>
+<g id="background"><rect x="0.0" y="0.0" width="165.1" height="185.4" fill="#FFFFFF"/></g>
+<g id="panel-a" inkscape:groupmode="layer" inkscape:label="Panel a">
+<g id="panel-label-a"><text x="6.0" y="9.5" font-family="Arial" font-size="3.6" font-weight="bold" fill="#000000">a</text></g>
+<g id="panel-a-boundary"><rect x="6.0" y="12.0" width="153.1" height="28.0" rx="1.5" fill="#F1F7FB" stroke="#0072B2" stroke-width="0.3"/></g>
+<g id="panel-a-heading"><text x="11.0" y="18.0" font-family="Arial" font-size="3.6" font-weight="bold" fill="#000000">Old panel: development only</text></g>
+<g id="panel-a-line-1"><text x="11.0" y="24.0" font-family="Arial" font-size="3.3" font-weight="normal" fill="#000000">24 regions × 5 images = 120 images</text></g>
+<g id="panel-a-line-2"><text x="11.0" y="30.0" font-family="Arial" font-size="3.3" font-weight="normal" fill="#000000">3 fixed allocations: 12 source / 4 validation / 8 unused</text></g>
+<g id="panel-a-line-3"><text x="11.0" y="36.0" font-family="Arial" font-size="3.3" font-weight="normal" fill="#000000">Calibration uses extra development labels outside budget B</text></g>
+</g>
+<g id="panel-b" inkscape:groupmode="layer" inkscape:label="Panel b">
+<g id="panel-label-b"><text x="6.0" y="55.5" font-family="Arial" font-size="3.6" font-weight="bold" fill="#000000">b</text></g>
+<g id="panel-b-boundary"><rect x="6.0" y="58.0" width="153.1" height="28.0" rx="1.5" fill="#FFFFFF" stroke="#0072B2" stroke-width="0.3"/></g>
+<g id="panel-b-heading"><text x="11.0" y="64.0" font-family="Arial" font-size="3.6" font-weight="bold" fill="#000000">Candidate selection without candidate masks</text></g>
+<g id="panel-b-line-1"><text x="11.0" y="70.0" font-family="Arial" font-size="3.3" font-weight="normal" fill="#000000">36 candidates per pool; balanced and skewed profiles</text></g>
+<g id="panel-b-line-2"><text x="11.0" y="76.0" font-family="Arial" font-size="3.3" font-weight="normal" fill="#000000">DINOv2 RGB descriptors + source IDs + budget + seed</text></g>
+<g id="panel-b-line-3"><text x="11.0" y="82.0" font-family="Arial" font-size="3.3" font-weight="normal" fill="#000000">8 base selectors + real / permuted weighted FL (skewed only)</text></g>
+</g>
+<g id="panel-c" inkscape:groupmode="layer" inkscape:label="Panel c">
+<g id="panel-label-c"><text x="6.0" y="101.5" font-family="Arial" font-size="3.6" font-weight="bold" fill="#000000">c</text></g>
+<g id="panel-c-boundary"><rect x="6.0" y="104.0" width="153.1" height="28.0" rx="1.5" fill="#FFF9EE" stroke="#E69F00" stroke-width="0.3"/></g>
+<g id="panel-c-heading"><text x="11.0" y="110.0" font-family="Arial" font-size="3.6" font-weight="bold" fill="#000000">Two different model recipes</text></g>
+<g id="panel-c-line-1"><text x="11.0" y="116.0" font-family="Arial" font-size="3.3" font-weight="normal" fill="#000000">ResNet18 U-Net-style: 90 full fits; B=12, skewed pool</text></g>
+<g id="panel-c-line-2"><text x="11.0" y="122.0" font-family="Arial" font-size="3.3" font-weight="normal" fill="#000000">Frozen DINOv2 + MLP: 486 fits; B=6/12/24, both pools</text></g>
+<g id="panel-c-line-3"><text x="11.0" y="128.0" font-family="Arial" font-size="3.3" font-weight="normal" fill="#000000">3 allocations × 3 paired fit seeds per condition; 576 fits total</text></g>
+</g>
+<g id="panel-d" inkscape:groupmode="layer" inkscape:label="Panel d">
+<g id="panel-label-d"><text x="6.0" y="147.5" font-family="Arial" font-size="3.6" font-weight="bold" fill="#000000">d</text></g>
+<g id="panel-d-boundary"><rect x="6.0" y="150.0" width="153.1" height="28.0" rx="1.5" fill="#F1F7FB" stroke="#0072B2" stroke-width="0.3"/></g>
+<g id="panel-d-heading"><text x="11.0" y="156.0" font-family="Arial" font-size="3.6" font-weight="bold" fill="#000000">New panel: 24 regions × 3 images = 72; evaluation only</text></g>
+<g id="panel-d-line-1"><text x="11.0" y="162.0" font-family="Arial" font-size="3.3" font-weight="normal" fill="#000000">Per fit / region: merge the 3 image confusion matrices</text></g>
+<g id="panel-d-line-2"><text x="11.0" y="168.0" font-family="Arial" font-size="3.3" font-weight="normal" fill="#000000">Regional union-class mIoU → average across the 9 fits</text></g>
+<g id="panel-d-line-3"><text x="11.0" y="174.0" font-family="Arial" font-size="3.3" font-weight="normal" fill="#000000">24-region paired bootstrap; 10,000 resamples</text></g>
+</g>
+<g id="arrows" inkscape:groupmode="layer" inkscape:label="Forward flow only">
+<g id="forward-1"><line x1="82.5" y1="43.0" x2="82.5" y2="55.0" stroke="#000000" stroke-width="0.3" marker-end="url(#forward-arrow)"/></g>
+<g id="forward-2"><line x1="82.5" y1="89.0" x2="82.5" y2="101.0" stroke="#000000" stroke-width="0.3" marker-end="url(#forward-arrow)"/></g>
+<g id="forward-3"><line x1="82.5" y1="135.0" x2="82.5" y2="147.0" stroke="#000000" stroke-width="0.3" marker-end="url(#forward-arrow)"/></g>
+</g></svg>

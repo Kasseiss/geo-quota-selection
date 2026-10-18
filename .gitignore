@@ -1,0 +1,18 @@
+# Locally re-derived artifacts are intentionally not tracked.
+# Re-create them from OpenEarthMap with code/data_access.py and code/v2_prepare_data.py.
+
+v2/data/**/*.png
+cache/**/*.npz
+v2/cache/**/*.npz
+*.pt
+*.pth
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Office / LaTeX build by-products
+~$*
+*.aux
+*.log
+*.out

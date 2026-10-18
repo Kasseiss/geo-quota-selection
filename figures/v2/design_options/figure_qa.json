@@ -1,0 +1,446 @@
+{
+  "scope": "Prospective methods schematic: 576 paired-seed fits including skewed-only real/permuted weighted FL; no results",
+  "source_sha256": {
+    "configs/v2_design.json": "d790c26eae4a3c029cca73e3845efd3d95673017d88bafe42e37fb81f70046a4",
+    "configs/v2_extension.json": "7786624c6fc28aafe71f86495e8c653ab8ffc860cf2e316048e78db5c089ba92",
+    "docs/v2_protocol.md": "1812c005fba15c6c072f66d3ade92e9f4377e6839c67a62e64667733da557673"
+  },
+  "variants": [
+    {
+      "svg": "figure_v2_variant_A.svg",
+      "width_mm": 180,
+      "height_mm": 274,
+      "text_elements": 39,
+      "minimum_font_at_6_3_inches_pt": 8.316,
+      "text_bounds_checked_with": "Windows Arial / Arial Bold via Pillow; 0.8 mm container inset",
+      "arrows": [
+        {
+          "id": "development-to-selection",
+          "start": [
+            90,
+            44
+          ],
+          "end": [
+            90,
+            56
+          ],
+          "length_mm": 12.0
+        },
+        {
+          "id": "selection-to-recipes",
+          "start": [
+            90,
+            121
+          ],
+          "end": [
+            90,
+            133
+          ],
+          "length_mm": 12.0
+        },
+        {
+          "id": "recipes-to-evaluation",
+          "start": [
+            90,
+            188
+          ],
+          "end": [
+            90,
+            200
+          ],
+          "length_mm": 12.0
+        }
+      ],
+      "svg_sha256": "ddc5b97ff7250e093235fc6e372181eb53382aecac634b210641c7074fb187b7"
+    },
+    {
+      "svg": "figure_v2_variant_B.svg",
+      "width_mm": 180,
+      "height_mm": 175,
+      "text_elements": 37,
+      "minimum_font_at_6_3_inches_pt": 8.316,
+      "text_bounds_checked_with": "Windows Arial / Arial Bold via Pillow; 0.8 mm container inset",
+      "arrows": [
+        {
+          "id": "selection-to-model-recipes",
+          "start": [
+            84,
+            66
+          ],
+          "end": [
+            96,
+            66
+          ],
+          "length_mm": 12.0
+        },
+        {
+          "id": "recipes-to-new-panel-analysis",
+          "start": [
+            135.5,
+            108
+          ],
+          "end": [
+            135.5,
+            120
+          ],
+          "length_mm": 12.0
+        }
+      ],
+      "svg_sha256": "18c457c901afd1db02b6a5c60a434d42eb9e86ef312b8962284b6885581e7a5b"
+    }
+  ],
+  "randomization": {
+    "selection_optimization_pairs": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        2
+      ]
+    ],
+    "cartesian": false,
+    "calibration_initialization_seed": 0,
+    "primary_panel_regions": 24
+  },
+  "visual_review": "Both amended final PNG previews inspected: no text clipping or arrow obstruction; paired fit seeds replace fixed-init0 formal labels; no reverse panel-feedback arrows",
+  "preview_renderer": "Existing bundled Sharp; no dependencies installed",
+  "previews": {
+    "figure_v2_variant_A.png": {
+      "size_px": [
+        1600,
+        2435
+      ],
+      "sha256": "93b4d8d34f19093ee13363ab2b2dad966abda51caf0a4fc4ec9d0a652fc46649"
+    },
+    "figure_v2_variant_B.png": {
+      "size_px": [
+        1600,
+        1555
+      ],
+      "sha256": "57011c16d8c30f98f7fb908e99888c0196b3d0baf8082fa1b15ef12396287807"
+    }
+  },
+  "compact_print_audit": {
+    "maximum_insertion_inches": [
+      6.5,
+      7.7
+    ],
+    "method": "Preserve aspect ratio; scale=min(max_width/viewBox_width,max_height/viewBox_height); point size=font_size*scale*72/25.4. No transformed text.",
+    "variants": {
+      "A": {
+        "native_mm": [
+          180.0,
+          274.0
+        ],
+        "insertion_mm": [
+          128.4832116788321,
+          195.57999999999998
+        ],
+        "insertion_inches": [
+          5.0583941605839415,
+          7.7
+        ],
+        "scale": 0.7137956204379562,
+        "minimum_print_pt": 6.677080291970802,
+        "svg_sha256": "ddc5b97ff7250e093235fc6e372181eb53382aecac634b210641c7074fb187b7"
+      },
+      "B": {
+        "native_mm": [
+          180.0,
+          175.0
+        ],
+        "insertion_mm": [
+          165.1,
+          160.51388888888889
+        ],
+        "insertion_inches": [
+          6.5,
+          6.319444444444445
+        ],
+        "scale": 0.9172222222222222,
+        "minimum_print_pt": 8.579999999999998,
+        "svg_sha256": "18c457c901afd1db02b6a5c60a434d42eb9e86ef312b8962284b6885581e7a5b"
+      },
+      "C": {
+        "native_mm": [
+          165.1,
+          185.4
+        ],
+        "insertion_mm": [
+          165.1,
+          185.4
+        ],
+        "insertion_inches": [
+          6.5,
+          7.299212598425197
+        ],
+        "scale": 1.0,
+        "minimum_print_pt": 9.354330708661418,
+        "svg_sha256": "e280c4c553c8bf64181facb7c26f556c6cd4a956c8282b2760aa9572ac698c24"
+      }
+    },
+    "preserved_AB_sha256": {
+      "figure_v2_variant_A.png": "93b4d8d34f19093ee13363ab2b2dad966abda51caf0a4fc4ec9d0a652fc46649",
+      "figure_v2_variant_A.svg": "ddc5b97ff7250e093235fc6e372181eb53382aecac634b210641c7074fb187b7",
+      "figure_v2_variant_B.png": "57011c16d8c30f98f7fb908e99888c0196b3d0baf8082fa1b15ef12396287807",
+      "figure_v2_variant_B.svg": "18c457c901afd1db02b6a5c60a434d42eb9e86ef312b8962284b6885581e7a5b"
+    },
+    "source_sha256": {
+      "configs/v2_design.json": "d790c26eae4a3c029cca73e3845efd3d95673017d88bafe42e37fb81f70046a4",
+      "configs/v2_extension.json": "7786624c6fc28aafe71f86495e8c653ab8ffc860cf2e316048e78db5c089ba92",
+      "configs/v2_geographic_sensitivity.json": "83e6a506dc88ca8509cf7f384a9c3295dddcdcb3de314e7bdff4ec4ed37b519a",
+      "docs/v2_protocol.md": "1812c005fba15c6c072f66d3ade92e9f4377e6839c67a62e64667733da557673"
+    },
+    "generator_sha256": "3084dd5f7797642561ae12238e450b1e4fccaf36a2160028bbf36574b1d15f6c",
+    "preserved_AB_generator_sha256": "a091dafcca9611fa45f550777d771f0c9281c0de145f5e016dc922b8e8b42f03",
+    "c_png": {
+      "filename": "figure_v2_variant_C.png",
+      "sha256": "5b08318548ec8f2a31ed625d901909b876c3cef6fb94a172983a31e225177b0b",
+      "width_px": 1950,
+      "renderer": "Existing bundled Sharp; 300 pixels/inch at native 6.5 inch width",
+      "size_px": [
+        1950,
+        2190
+      ]
+    },
+    "c_checks": {
+      "editable_arial": true,
+      "embedded_rasters": 0,
+      "text_bounds": "Windows Arial/Arial Bold via Pillow, >=1 mm containment; panel text >=4 mm horizontal inset",
+      "minimum_arrow_length_mm": 12,
+      "arrow_border_clearance_mm": 3,
+      "model_results_read": false,
+      "outcomes_or_effect_claims": false,
+      "visual_review": "Final 1950-pixel PNG inspected: no clipping, overlapping text or arrow obstruction; forward-only reading order. No Word/PDF embedding or physical-print check."
+    },
+    "c_texts": [
+      {
+        "id": "panel-label-a",
+        "text": "a",
+        "font_mm": 3.6,
+        "measured_bounds_mm": [
+          6.0,
+          7.58,
+          8.0,
+          9.55
+        ]
+      },
+      {
+        "id": "panel-a-heading",
+        "text": "Old panel: development only",
+        "font_mm": 3.6,
+        "measured_bounds_mm": [
+          11.0,
+          15.370000000000001,
+          60.2,
+          18.77
+        ]
+      },
+      {
+        "id": "panel-a-line-1",
+        "text": "24 regions × 5 images = 120 images",
+        "font_mm": 3.3,
+        "measured_bounds_mm": [
+          11.0,
+          21.63,
+          64.47999999999999,
+          24.7
+        ]
+      },
+      {
+        "id": "panel-a-line-2",
+        "text": "3 fixed allocations: 12 source / 4 validation / 8 unused",
+        "font_mm": 3.3,
+        "measured_bounds_mm": [
+          11.0,
+          27.6,
+          89.48,
+          30.04
+        ]
+      },
+      {
+        "id": "panel-a-line-3",
+        "text": "Calibration uses extra development labels outside budget B",
+        "font_mm": 3.3,
+        "measured_bounds_mm": [
+          11.0,
+          33.6,
+          98.1,
+          36.7
+        ]
+      },
+      {
+        "id": "panel-label-b",
+        "text": "b",
+        "font_mm": 3.6,
+        "measured_bounds_mm": [
+          6.0,
+          52.92,
+          8.2,
+          55.55
+        ]
+      },
+      {
+        "id": "panel-b-heading",
+        "text": "Candidate selection without candidate masks",
+        "font_mm": 3.6,
+        "measured_bounds_mm": [
+          11.0,
+          61.37,
+          88.8,
+          64.05
+        ]
+      },
+      {
+        "id": "panel-b-line-1",
+        "text": "36 candidates per pool; balanced and skewed profiles",
+        "font_mm": 3.3,
+        "measured_bounds_mm": [
+          11.0,
+          67.6,
+          89.85,
+          70.66
+        ]
+      },
+      {
+        "id": "panel-b-line-2",
+        "text": "DINOv2 RGB descriptors + source IDs + budget + seed",
+        "font_mm": 3.3,
+        "measured_bounds_mm": [
+          11.0,
+          73.6,
+          92.28,
+          76.7
+        ]
+      },
+      {
+        "id": "panel-b-line-3",
+        "text": "8 base selectors + real / permuted weighted FL (skewed only)",
+        "font_mm": 3.3,
+        "measured_bounds_mm": [
+          11.0,
+          79.6,
+          101.31,
+          82.7
+        ]
+      },
+      {
+        "id": "panel-label-c",
+        "text": "c",
+        "font_mm": 3.6,
+        "measured_bounds_mm": [
+          6.0,
+          99.58,
+          8.0,
+          101.55
+        ]
+      },
+      {
+        "id": "panel-c-heading",
+        "text": "Two different model recipes",
+        "font_mm": 3.6,
+        "measured_bounds_mm": [
+          11.0,
+          107.37,
+          58.8,
+          110.72
+        ]
+      },
+      {
+        "id": "panel-c-line-1",
+        "text": "ResNet18 U-Net-style: 90 full fits; B=12, skewed pool",
+        "font_mm": 3.3,
+        "measured_bounds_mm": [
+          11.0,
+          113.6,
+          88.78,
+          116.7
+        ]
+      },
+      {
+        "id": "panel-c-line-2",
+        "text": "Frozen DINOv2 + MLP: 486 fits; B=6/12/24, both pools",
+        "font_mm": 3.3,
+        "measured_bounds_mm": [
+          11.0,
+          119.6,
+          91.12,
+          122.66
+        ]
+      },
+      {
+        "id": "panel-c-line-3",
+        "text": "3 allocations × 3 paired fit seeds per condition; 576 fits total",
+        "font_mm": 3.3,
+        "measured_bounds_mm": [
+          11.0,
+          125.6,
+          97.84,
+          128.66
+        ]
+      },
+      {
+        "id": "panel-label-d",
+        "text": "d",
+        "font_mm": 3.6,
+        "measured_bounds_mm": [
+          6.0,
+          144.92,
+          8.2,
+          147.55
+        ]
+      },
+      {
+        "id": "panel-d-heading",
+        "text": "New panel: 24 regions × 3 images = 72; evaluation only",
+        "font_mm": 3.6,
+        "measured_bounds_mm": [
+          11.0,
+          153.4,
+          105.0,
+          156.77
+        ]
+      },
+      {
+        "id": "panel-d-line-1",
+        "text": "Per fit / region: merge the 3 image confusion matrices",
+        "font_mm": 3.3,
+        "measured_bounds_mm": [
+          11.0,
+          159.6,
+          89.46,
+          162.7
+        ]
+      },
+      {
+        "id": "panel-d-line-2",
+        "text": "Regional union-class mIoU → average across the 9 fits",
+        "font_mm": 3.3,
+        "measured_bounds_mm": [
+          11.0,
+          165.6,
+          91.64,
+          168.7
+        ]
+      },
+      {
+        "id": "panel-d-line-3",
+        "text": "24-region paired bootstrap; 10,000 resamples",
+        "font_mm": 3.3,
+        "measured_bounds_mm": [
+          11.0,
+          171.63,
+          77.91,
+          174.7
+        ]
+      }
+    ],
+    "readme_sha256": "25b4922dd796ea87626ad045db9e57cda57d2209f604b80ffa183d262eded6b6"
+  }
+}

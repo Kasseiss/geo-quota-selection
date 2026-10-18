@@ -1,0 +1,73 @@
+{
+  "status": "running",
+  "identity": {
+    "split": "source2",
+    "encoder_lr": 0.0001,
+    "selected_ids": [
+      "chisinau__chisinau_28",
+      "melbourne__melbourne_34",
+      "maputo__maputo_11",
+      "tonga__tonga_43",
+      "daressalaam__daressalaam_83",
+      "melbourne__melbourne_7",
+      "mahe__mahe_42",
+      "pointenoire__pointenoire_8",
+      "austin__austin_45",
+      "rotterdam__rotterdam_20",
+      "christchurch__christchurch_9",
+      "melbourne__melbourne_64",
+      "aachen__aachen_47",
+      "austin__austin_18",
+      "daressalaam__daressalaam_98",
+      "rotterdam__rotterdam_32",
+      "chisinau__chisinau_2",
+      "tonga__tonga_32",
+      "pointenoire__pointenoire_9",
+      "pointenoire__pointenoire_7",
+      "austin__austin_31",
+      "mahe__mahe_22",
+      "chisinau__chisinau_66",
+      "christchurch__christchurch_45"
+    ],
+    "validation_ids": [
+      "accra__accra_16",
+      "accra__accra_43",
+      "accra__accra_54",
+      "accra__accra_62",
+      "accra__accra_9",
+      "bogota__bogota_1",
+      "bogota__bogota_2",
+      "bogota__bogota_3",
+      "bogota__bogota_4",
+      "bogota__bogota_6",
+      "rio__rio_19",
+      "rio__rio_22",
+      "rio__rio_34",
+      "rio__rio_5",
+      "rio__rio_50",
+      "santiago__santiago_1",
+      "santiago__santiago_26",
+      "santiago__santiago_29",
+      "santiago__santiago_51",
+      "santiago__santiago_57"
+    ],
+    "code_hashes": {
+      "v2_segmentation.py": "5f8d46af866497e5a6db1c9779764566bdb8ddd3bcc01bcf3bb2721478e5a5d2",
+      "v2_selection.py": "e1665e1932e05e5f00a1403c62399e0b1a00dc2618c72ba05c44fdc3d20efe96",
+      "v2_calibrate.py": "92a4a16140fe89cc3a9efa413362667954943f9078fd204f277c1accd8293334",
+      "core.py": "8c7339630c32f8d89a8725ffab9450ce5054d15fab8c0c299e45b9d8fe0010e8"
+    },
+    "design_sha256": "d790c26eae4a3c029cca73e3845efd3d95673017d88bafe42e37fb81f70046a4",
+    "development_manifest_sha256": "0b66d75a91e6251ff7db4c71d0241a0bdf1f0bd8195b3d0e8263b52b1f852147",
+    "development_records_sha256": "0cc7a82624d4c8a8a8566c959bfccf2adc230b5f9ea480ca8fe285b98e906aee",
+    "environment": {
+      "torch": "2.13.0+cpu",
+      "numpy": "2.5.1",
+      "python": "3.13.13",
+      "threads": 8,
+      "device": "cpu",
+      "device_name": "AMD64 Family 25 Model 117 Stepping 2, AuthenticAMD",
+      "pretrained_weight_sha256": "f37072fd47e89c5e827621c5baffa7500819f7896bbacec160b1a16c560e07ec"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "input_sha256": {
+    "evidence/v2/calibration/calibration.json": "9bc9f894a2dc916d824bcec465ef23edab2be74005a5c3c6151f59dc8bf0aac3",
+    "evidence/v2/calibration/source0/encoder_lr_0.0001.json": "33da3e41edc3fc0a70f5c8dc73bf811ce27bdb9d69409aa7cf2e7a8d59af3d49",
+    "evidence/v2/calibration/source0/encoder_lr_0.0003.json": "a918173d48a663ec07fbdb7204a913a79ece1e4d2f8d699209492ad031d26038",
+    "evidence/v2/calibration/source1/encoder_lr_0.0001.json": "09c49a8e21f17aefe98e0a1e6d7900bed60ddc02d0f93d0e2690dd402e185054",
+    "evidence/v2/calibration/source1/encoder_lr_0.0003.json": "4226990eb77ab8d57027a52310774c244b2d4e0ebd55ada1c4f1822645b49bf4",
+    "evidence/v2/calibration/source2/encoder_lr_0.0001.json": "325a4474ec97a9d6017ad8ee49c8e6f247e657016afdfe6914f4a2d000d7333f",
+    "evidence/v2/calibration/source2/encoder_lr_0.0003.json": "9c454c724c049926ae2570277f42c6a4f550b41981db3f0bb8edc22433b93c6f"
+  },
+  "output_sha256": {
+    "figures/v2/source_calibration.svg": "06a4cbf8005b4189df817166aac1f21b9649a264b922c3e4fdf9013381171159",
+    "figures/v2/source_calibration.pdf": "977bcb2aea8f31da16b09e5981c3c4f10da8f7ffb92c6cfd40419434f01dfcb7",
+    "figures/v2/source_calibration.png": "5a7aef4566901736cea29854a095166dd8a2a49113e29065fed4097ed3f9490b"
+  },
+  "new_panel_outcomes_read": false,
+  "recommended_print_width_inches": 6.5,
+  "height_inches": 2.85,
+  "minimum_font_pt_at_recommended_width": 9.0,
+  "visual_review": "PASS: parent viewed revised PNG; all three panels, axis labels, recipe markers and shared legend legible; final manuscript placement still pending",
+  "caption": "Source-only calibration of the complete spatial model. Curves show equal-region union-class mIoU on each allocation's four old validation regions. Stars indicate the predefined maximum-score recipe, with fewer steps then lower learning rate breaking ties. Absolute scores across panels refer to different validation sets and are not matched model comparisons. The decoder learning rate is ten times the encoder rate. No new-panel outcome informed these choices."
+}

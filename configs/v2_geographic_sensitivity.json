@@ -1,0 +1,19 @@
+{
+  "status": "FIXED_BEFORE_NEW_PANEL_MODEL_SCORES",
+  "purpose": "descriptive_geographic_metadata_sensitivity",
+  "primary_unchanged": true,
+  "exclude_entire_regions": ["monrovia"],
+  "reason": "monrovia__monrovia_48 has all257 transformed boundary samples outside the declared EPSG32636 CRS/operation area. Retain the fixed panel for the primary analysis, but remove the entire three-image Monrovia region in this metadata sensitivity.",
+  "target_retained_regions": 23,
+  "first_average": "Average all three source allocations and three paired fit seeds within each region before filtering and calculating paired differences",
+  "metrics": ["union_class_miou", "truth_present_miou"],
+  "contrast": ["region_kcenter", "kcenter"],
+  "model": "resnet18_unet",
+  "pool": "skewed5_1",
+  "budget": 12,
+  "repetitions": 10000,
+  "bootstrap_seed": 2026101805,
+  "not_independent_confirmatory_claim": true,
+  "source_caution": "aachen__aachen_1 lies slightly beyond the declared EPSG25832 area; no source image is replaced or coordinate repaired. Existing source0-specific contrast is also reported because that allocation uses no Aachen images.",
+  "screen_limits": "Zero overlap candidates among supported/caution bboxes and zero exact decoded cross-role duplicates do not prove original orthomosaic, acquisition or pretraining independence. Unknown operation precision padding is a screening convention, not an error guarantee."
+}

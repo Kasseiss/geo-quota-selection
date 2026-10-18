@@ -1,0 +1,10 @@
+{
+  "created_utc": "2026-10-18T07:19:02.534739+00:00",
+  "purpose": "Three-step source-only kernel diagnostic, not a held-out result or utilization-padding job",
+  "passed": false,
+  "original_files_modified": false,
+  "target_panel_opened": false,
+  "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "torch": "2.5.1+cu121",
+  "error": "AssertionError: Legacy CUDA profiling requires use_cpu=True"
+}

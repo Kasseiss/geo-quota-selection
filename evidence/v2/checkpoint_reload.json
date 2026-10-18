@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "created_utc": "2026-10-18T09:48:20.457620+00:00",
+  "scope": "Predetermined source0/selection0/init0/real quota k-center complete spatial model",
+  "checkpoint_sha256": "8c250eda11ae0d4578704d3d68b503e7eadebc6f2af31b83d67fd6676ce74c0b",
+  "model_state_sha256": "b1ec966efb02e19333fcdc6d828809e40f948c40ebe0c48be4d4c33a34992179",
+  "result_sha256": "b5ddce17ce581cabc6e2dbb477094dd4b9b283cdcb523bb1bff89ae224c63b23",
+  "manifest_sha256": "676953ed28ab90a6448bfd15c1bbed352b8b5d42ae8de6d54416ad258a1d105a",
+  "freeze_sha256": "5fd417464cc88024ad4063b2dc77366c1b6d3c80ea7cb1fd3083b0ddc2957bd8",
+  "verifier_sha256": "85a62b5104297dc397589794d6fb8d4030154c359ae92fea90cf7f707c6c8dcd",
+  "model_code_sha256": "5f8d46af866497e5a6db1c9779764566bdb8ddd3bcc01bcf3bb2721478e5a5d2",
+  "matched_images": 72,
+  "matched_regions": 24,
+  "expected_confusion_digest": "838269fcb9423af2c5e85b226a3fd0ad120c3de9930645abc1f703df35d3fdca",
+  "reloaded_confusion_digest": "838269fcb9423af2c5e85b226a3fd0ad120c3de9930645abc1f703df35d3fdca",
+  "all_integer_confusion_matrices_exact": true,
+  "aggregate_exact": true,
+  "checkpoint_predetermined_not_score_selected": true,
+  "refitting_performed": false,
+  "device": "cpu"
+}

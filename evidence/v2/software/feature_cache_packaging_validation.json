@@ -1,0 +1,1839 @@
+{
+  "schema": "v2-feature-cache-packaging-validation-1",
+  "scope": "Packager synthetic inventory/MOVE/safety fixtures and read-only existing formal-cache byte identity inventory; no NPZ arrays decoded or formal score outputs read.",
+  "latest_attempt": {
+    "created_utc": "2026-10-18T01:47:50.364265+00:00",
+    "syntax_compilation_passed": true,
+    "tests_run": 11,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 2,
+    "test_results": [
+      {
+        "test": "v2_package_delivery.FixtureChecks.test_cap_boundaries_and_v1_scope",
+        "status": "passed"
+      },
+      {
+        "test": "v2_package_delivery.FixtureChecks.test_compact_inventory_moves_only_manifest_references",
+        "status": "passed"
+      },
+      {
+        "test": "v2_package_delivery.FixtureChecks.test_exact_feature_inventory_and_move_accounting_v1_retention",
+        "status": "passed"
+      },
+      {
+        "test": "v2_package_delivery.FixtureChecks.test_feature_inventory_rejects_stale_freeze_index_and_redirect",
+        "status": "skipped",
+        "reason": "Platform does not permit feature-cache symlink fixtures; shared junction regression remains active"
+      },
+      {
+        "test": "v2_package_delivery.FixtureChecks.test_feature_inventory_rejects_wrong_sha_missing_duplicates_and_escape",
+        "status": "passed"
+      },
+      {
+        "test": "v2_package_delivery.FixtureChecks.test_move_sha_receipt_manifest_v1_retention_and_duplicate_destination",
+        "status": "passed"
+      },
+      {
+        "test": "v2_package_delivery.FixtureChecks.test_name_surrogate_rejected_but_cloud_placeholder_allowed",
+        "status": "passed"
+      },
+      {
+        "test": "v2_package_delivery.FixtureChecks.test_refresh_only_operational_files_and_preserve_lineage",
+        "status": "passed"
+      },
+      {
+        "test": "v2_package_delivery.FixtureChecks.test_research_review_is_bound_to_manuscript_and_numbers",
+        "status": "passed"
+      },
+      {
+        "test": "v2_package_delivery.FixtureChecks.test_symlink_source_cannot_move_protected_content",
+        "status": "skipped",
+        "reason": "Platform does not permit symbolic-link fixtures"
+      },
+      {
+        "test": "v2_package_delivery.FixtureChecks.test_windows_junction_ancestor_cannot_move_v1",
+        "status": "passed"
+      }
+    ],
+    "test_output": "test_cap_boundaries_and_v1_scope (v2_package_delivery.FixtureChecks.test_cap_boundaries_and_v1_scope) ... ok\ntest_compact_inventory_moves_only_manifest_references (v2_package_delivery.FixtureChecks.test_compact_inventory_moves_only_manifest_references) ... ok\ntest_exact_feature_inventory_and_move_accounting_v1_retention (v2_package_delivery.FixtureChecks.test_exact_feature_inventory_and_move_accounting_v1_retention) ... ok\ntest_feature_inventory_rejects_stale_freeze_index_and_redirect (v2_package_delivery.FixtureChecks.test_feature_inventory_rejects_stale_freeze_index_and_redirect) ... skipped 'Platform does not permit feature-cache symlink fixtures; shared junction regression remains active'\ntest_feature_inventory_rejects_wrong_sha_missing_duplicates_and_escape (v2_package_delivery.FixtureChecks.test_feature_inventory_rejects_wrong_sha_missing_duplicates_and_escape) ... ok\ntest_move_sha_receipt_manifest_v1_retention_and_duplicate_destination (v2_package_delivery.FixtureChecks.test_move_sha_receipt_manifest_v1_retention_and_duplicate_destination) ... ok\ntest_name_surrogate_rejected_but_cloud_placeholder_allowed (v2_package_delivery.FixtureChecks.test_name_surrogate_rejected_but_cloud_placeholder_allowed) ... ok\ntest_refresh_only_operational_files_and_preserve_lineage (v2_package_delivery.FixtureChecks.test_refresh_only_operational_files_and_preserve_lineage) ... ok\ntest_research_review_is_bound_to_manuscript_and_numbers (v2_package_delivery.FixtureChecks.test_research_review_is_bound_to_manuscript_and_numbers) ... ok\ntest_symlink_source_cannot_move_protected_content (v2_package_delivery.FixtureChecks.test_symlink_source_cannot_move_protected_content) ... skipped 'Platform does not permit symbolic-link fixtures'\ntest_windows_junction_ancestor_cannot_move_v1 (v2_package_delivery.FixtureChecks.test_windows_junction_ancestor_cannot_move_v1) ... ok\n\n----------------------------------------------------------------------\nRan 11 tests in 170.959s\n\nOK (skipped=2)\n",
+    "code_and_document_sha256": {
+      "code/v2_package_delivery.py": "582299df32204d61f6f6ef114aba1de39fea8b8be0b83e36426d5d2a2984c04f",
+      "docs/v2_reproduction_guide.md": "7e12851f2516b8cb30d7739296994b3bde0fde71b4ddf183c74cbb77614e19b8",
+      "docs/v2_environment_record.md": "91afd2a40fc1e90529780526bb4723a0ebce511ad0d2f634f47eb92d0f79ce73",
+      "docs/v2_packaging.md": "b77df2067afd69de84ee6170b10be5f9d5e38b27396f5cffd2bcd92c567aa79a"
+    },
+    "frozen_dependency_count": 53,
+    "changed_or_mismatched_frozen_dependencies": [],
+    "actual_cache_candidate_inventory": {
+      "format": "v2-frozen-feature-cache-inventory-1",
+      "freeze_sha256": "5fd417464cc88024ad4063b2dc77366c1b6d3c80ea7cb1fd3083b0ddc2957bd8",
+      "compact_manifest_sha256": "676953ed28ab90a6448bfd15c1bbed352b8b5d42ae8de6d54416ad258a1d105a",
+      "indexes": {
+        "cache/dinov2-formal120/index.json": {
+          "sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "expected_count": 120,
+          "verified_count": 120,
+          "bytes": 90158066
+        },
+        "v2/cache/new_panel_dinov2/index.json": {
+          "sha256": "a357fcc755ea3eedb9c81c01ee020356affab6e7e3eec9d9a1c2bf1dc9cd2952",
+          "expected_count": 72,
+          "verified_count": 72,
+          "bytes": 52351635
+        }
+      },
+      "file_count": 192,
+      "total_bytes": 142509701,
+      "action": "move",
+      "logical_byte_increase": 0,
+      "files": [
+        {
+          "id": "aachen__aachen_1",
+          "region": "aachen",
+          "relative_path": "cache/dinov2-formal120/aachen__aachen_1.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "0c4d17a217a3b2ddd9cd70ca9a180e3a08410f824596345c1e2e0b7e09494e3a",
+          "bytes": 740368
+        },
+        {
+          "id": "aachen__aachen_28",
+          "region": "aachen",
+          "relative_path": "cache/dinov2-formal120/aachen__aachen_28.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "d87240a5a286aa5b6b97d990c36fa72792f3c368614fd33ca2611e7a968de1ef",
+          "bytes": 735013
+        },
+        {
+          "id": "aachen__aachen_36",
+          "region": "aachen",
+          "relative_path": "cache/dinov2-formal120/aachen__aachen_36.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "46512653801505a8750e7dc168bf703e8fdb0f2be0990e0cfd1376bc289151db",
+          "bytes": 740731
+        },
+        {
+          "id": "aachen__aachen_47",
+          "region": "aachen",
+          "relative_path": "cache/dinov2-formal120/aachen__aachen_47.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "1eb80d8376ba390ecd38505c0f1a2aea1e70e94a21ddb8f48d074c3436a8f3c4",
+          "bytes": 746464
+        },
+        {
+          "id": "aachen__aachen_68",
+          "region": "aachen",
+          "relative_path": "cache/dinov2-formal120/aachen__aachen_68.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "3b84dcfe13f34c7f35edbb75e31afb1fd9b712c2330abf688805d3c43989f762",
+          "bytes": 749615
+        },
+        {
+          "id": "accra__accra_16",
+          "region": "accra",
+          "relative_path": "cache/dinov2-formal120/accra__accra_16.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "cdf028dabae6f43ad3b645b6c066c7984901cb60e042c87d248d5b2abe6f8d21",
+          "bytes": 758626
+        },
+        {
+          "id": "accra__accra_43",
+          "region": "accra",
+          "relative_path": "cache/dinov2-formal120/accra__accra_43.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "75a4c8d3408e6dfacfda34f4a72c32c2de5cdceefcf3a3c96da252ac88ce67a8",
+          "bytes": 747583
+        },
+        {
+          "id": "accra__accra_54",
+          "region": "accra",
+          "relative_path": "cache/dinov2-formal120/accra__accra_54.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "b347c0b74df7225244f09b5cbe724032e50caaf037916aa42562a940be906536",
+          "bytes": 751935
+        },
+        {
+          "id": "accra__accra_62",
+          "region": "accra",
+          "relative_path": "cache/dinov2-formal120/accra__accra_62.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "149facc627ca61054bd4b13fb39d80085722db629424d6ddd35bd17add841d00",
+          "bytes": 756623
+        },
+        {
+          "id": "accra__accra_9",
+          "region": "accra",
+          "relative_path": "cache/dinov2-formal120/accra__accra_9.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "10e497a80b37682adc3d87af6599bcf1eb268e7a0257316b5e1b77a95e97dc48",
+          "bytes": 755436
+        },
+        {
+          "id": "austin__austin_18",
+          "region": "austin",
+          "relative_path": "cache/dinov2-formal120/austin__austin_18.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "fff1b81c251719af95fd2f275e001ce08cc84bec8f7f6d5cfcaa3ff570fd05fc",
+          "bytes": 752883
+        },
+        {
+          "id": "austin__austin_31",
+          "region": "austin",
+          "relative_path": "cache/dinov2-formal120/austin__austin_31.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "51feed6508da3f31a69df8113d93b1e25065166d803c7bb52550621e6abe1572",
+          "bytes": 752971
+        },
+        {
+          "id": "austin__austin_42",
+          "region": "austin",
+          "relative_path": "cache/dinov2-formal120/austin__austin_42.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "c6e56af6964bb7d349494e75763abf36a0569d43442810b398dd2d8b638b5747",
+          "bytes": 760170
+        },
+        {
+          "id": "austin__austin_45",
+          "region": "austin",
+          "relative_path": "cache/dinov2-formal120/austin__austin_45.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "f20d35771fe3c68babf761e81367de85bea7b8ce2687212583bb26f20866b169",
+          "bytes": 753303
+        },
+        {
+          "id": "austin__austin_50",
+          "region": "austin",
+          "relative_path": "cache/dinov2-formal120/austin__austin_50.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "e5930f4935ed36c7fa5b908277c7c63ef7ccf8a33ea82b02954020ae4635407c",
+          "bytes": 751840
+        },
+        {
+          "id": "bogota__bogota_1",
+          "region": "bogota",
+          "relative_path": "cache/dinov2-formal120/bogota__bogota_1.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "f2bc27e4eb961e10d6c113a4113e81ca52bd7ebfdcc1d28051308849be023ebf",
+          "bytes": 746648
+        },
+        {
+          "id": "bogota__bogota_2",
+          "region": "bogota",
+          "relative_path": "cache/dinov2-formal120/bogota__bogota_2.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "1bdbe43f3b20356c5544bd7431f0da5385c13e2b7cc3da9664944331253de797",
+          "bytes": 751628
+        },
+        {
+          "id": "bogota__bogota_3",
+          "region": "bogota",
+          "relative_path": "cache/dinov2-formal120/bogota__bogota_3.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "1fdcd6de0727e5da6cc6288c53f006303f796feb403bfe0277b0f987409d94fa",
+          "bytes": 753053
+        },
+        {
+          "id": "bogota__bogota_4",
+          "region": "bogota",
+          "relative_path": "cache/dinov2-formal120/bogota__bogota_4.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "7dd86b573460769f4c52924ed1d6176ee4f20d6b938798abd51e40a99d99090e",
+          "bytes": 744286
+        },
+        {
+          "id": "bogota__bogota_6",
+          "region": "bogota",
+          "relative_path": "cache/dinov2-formal120/bogota__bogota_6.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "28d3bea22daaec3b67312e67680fc020971c5dfb56145676d98c5323d97d3cc4",
+          "bytes": 753730
+        },
+        {
+          "id": "chiangmai__chiangmai_10",
+          "region": "chiangmai",
+          "relative_path": "cache/dinov2-formal120/chiangmai__chiangmai_10.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "a188fc388540b22dcf4d8eb15c96529b5f0db70b1f3989b2645a92f4b5b819fb",
+          "bytes": 749509
+        },
+        {
+          "id": "chiangmai__chiangmai_16",
+          "region": "chiangmai",
+          "relative_path": "cache/dinov2-formal120/chiangmai__chiangmai_16.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "377290b7c4346197dca09010b50e378072b0d3b4927369eb8a24741bf8aed24c",
+          "bytes": 753030
+        },
+        {
+          "id": "chiangmai__chiangmai_2",
+          "region": "chiangmai",
+          "relative_path": "cache/dinov2-formal120/chiangmai__chiangmai_2.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "94693c9a37ffc9763bd601769c0a21596e2610fd52174bf9ae4ec8020505ca6a",
+          "bytes": 747851
+        },
+        {
+          "id": "chiangmai__chiangmai_3",
+          "region": "chiangmai",
+          "relative_path": "cache/dinov2-formal120/chiangmai__chiangmai_3.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "93542d67d1cd7b33731dfa59114a141e4cf02fa86a2712bdef794d8eafa189e2",
+          "bytes": 753148
+        },
+        {
+          "id": "chiangmai__chiangmai_4",
+          "region": "chiangmai",
+          "relative_path": "cache/dinov2-formal120/chiangmai__chiangmai_4.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "1da872f6190799b99b12fbe77a56d6393d774ed1bd4760f95c31df9505c31757",
+          "bytes": 755488
+        },
+        {
+          "id": "chicago__chicago_14",
+          "region": "chicago",
+          "relative_path": "cache/dinov2-formal120/chicago__chicago_14.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "986bfecbf59d9dcb54c4e406e733e476cea0366220b6e6ccb467a445ac45a916",
+          "bytes": 751956
+        },
+        {
+          "id": "chicago__chicago_21",
+          "region": "chicago",
+          "relative_path": "cache/dinov2-formal120/chicago__chicago_21.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "ea6e12480160833300b3bc0b62a1e3bcec7ec0db0ef8a3d6c1d0a178696e71c1",
+          "bytes": 749494
+        },
+        {
+          "id": "chicago__chicago_23",
+          "region": "chicago",
+          "relative_path": "cache/dinov2-formal120/chicago__chicago_23.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "43362cafa7cb82d7b17f3e3212a0b71beca5902688df7b7c90137c1f80550a05",
+          "bytes": 752883
+        },
+        {
+          "id": "chicago__chicago_38",
+          "region": "chicago",
+          "relative_path": "cache/dinov2-formal120/chicago__chicago_38.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "e3e66dbb97cc707ad32b21be7ef3cc7836265736a300b0f35d5b8c235c4a68ea",
+          "bytes": 741627
+        },
+        {
+          "id": "chicago__chicago_49",
+          "region": "chicago",
+          "relative_path": "cache/dinov2-formal120/chicago__chicago_49.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "5c9eadb49b2360b52d9cd3802f2ccf698d925ddca0e9f4617370b5c500a4631f",
+          "bytes": 743239
+        },
+        {
+          "id": "chisinau__chisinau_2",
+          "region": "chisinau",
+          "relative_path": "cache/dinov2-formal120/chisinau__chisinau_2.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "7b7bd9ff49f1d0165a352f25e17a29d7630f81264e6c5b04cb477fd310fc58d1",
+          "bytes": 749724
+        },
+        {
+          "id": "chisinau__chisinau_28",
+          "region": "chisinau",
+          "relative_path": "cache/dinov2-formal120/chisinau__chisinau_28.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "ad5ac18b9e786c9aa26194489c6e144fc4dbf832abd8a6c5a01e187eb16ebb16",
+          "bytes": 755188
+        },
+        {
+          "id": "chisinau__chisinau_51",
+          "region": "chisinau",
+          "relative_path": "cache/dinov2-formal120/chisinau__chisinau_51.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "42fedb0e2360ff938582f43650d7c7c5d472b9d74ae3d13998b5641d1e716de0",
+          "bytes": 759279
+        },
+        {
+          "id": "chisinau__chisinau_66",
+          "region": "chisinau",
+          "relative_path": "cache/dinov2-formal120/chisinau__chisinau_66.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "88f06239bfa86a18cadf12b0968c005b83b813537b4a97c48c34a15d92bdb438",
+          "bytes": 752001
+        },
+        {
+          "id": "chisinau__chisinau_7",
+          "region": "chisinau",
+          "relative_path": "cache/dinov2-formal120/chisinau__chisinau_7.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "d183564f468b9aa6c17b4d91df9cca1195cde69d7857d2d1e2a87aa981f8b5b6",
+          "bytes": 750103
+        },
+        {
+          "id": "christchurch__christchurch_15",
+          "region": "christchurch",
+          "relative_path": "cache/dinov2-formal120/christchurch__christchurch_15.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "80083b2e387bb116838b76cf85a7be775f6baf99561ca68c5043ad96d30ba31d",
+          "bytes": 738172
+        },
+        {
+          "id": "christchurch__christchurch_3",
+          "region": "christchurch",
+          "relative_path": "cache/dinov2-formal120/christchurch__christchurch_3.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "c4943c3f27241601d3d719dea718b41b1ae763136fce3de630acebcfcc3e8134",
+          "bytes": 737926
+        },
+        {
+          "id": "christchurch__christchurch_45",
+          "region": "christchurch",
+          "relative_path": "cache/dinov2-formal120/christchurch__christchurch_45.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "9762fc921ace843289e3d596e61b6feab576cf357ad58ef1d7c69a697002e3de",
+          "bytes": 748399
+        },
+        {
+          "id": "christchurch__christchurch_56",
+          "region": "christchurch",
+          "relative_path": "cache/dinov2-formal120/christchurch__christchurch_56.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "1dbae2d2e35e01e849375f2457fa65c3b84a8a04983b0b775fac5cef34447861",
+          "bytes": 740468
+        },
+        {
+          "id": "christchurch__christchurch_9",
+          "region": "christchurch",
+          "relative_path": "cache/dinov2-formal120/christchurch__christchurch_9.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "b58b892a192a2f07770e4208095bffe414b5b3cd19e791e12cd5319d26c770dc",
+          "bytes": 746908
+        },
+        {
+          "id": "daressalaam__daressalaam_104",
+          "region": "daressalaam",
+          "relative_path": "cache/dinov2-formal120/daressalaam__daressalaam_104.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "e4bc3b041142f4d8793c767ff4a088376730ad46b9562ee60d35a9a4682b1c2f",
+          "bytes": 756136
+        },
+        {
+          "id": "daressalaam__daressalaam_3",
+          "region": "daressalaam",
+          "relative_path": "cache/dinov2-formal120/daressalaam__daressalaam_3.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "ea7f5d6b7e9ec30edd6dbf1cb65e8c842d90161f0ec86c1f900d075b07da45c8",
+          "bytes": 757620
+        },
+        {
+          "id": "daressalaam__daressalaam_41",
+          "region": "daressalaam",
+          "relative_path": "cache/dinov2-formal120/daressalaam__daressalaam_41.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "8acb2f228ff08b63b8f02866a57a775a905d2025a23389f48e8fa0abca4f3f02",
+          "bytes": 767341
+        },
+        {
+          "id": "daressalaam__daressalaam_83",
+          "region": "daressalaam",
+          "relative_path": "cache/dinov2-formal120/daressalaam__daressalaam_83.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "4e7a1c258ef491b8e94648ddf286e80b465bc5388bc17eef0d4f63f06c23f22e",
+          "bytes": 754174
+        },
+        {
+          "id": "daressalaam__daressalaam_98",
+          "region": "daressalaam",
+          "relative_path": "cache/dinov2-formal120/daressalaam__daressalaam_98.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "246c8edd26654364aab4b155798e2d8136abdb8b3eafce2892b863d7faafa5fb",
+          "bytes": 762685
+        },
+        {
+          "id": "dhaka__dhaka_32",
+          "region": "dhaka",
+          "relative_path": "cache/dinov2-formal120/dhaka__dhaka_32.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "99b29281665de5b866c1f8956dd831af7c92ff11a39385d10e97c82e8d8bdcd2",
+          "bytes": 747267
+        },
+        {
+          "id": "dhaka__dhaka_38",
+          "region": "dhaka",
+          "relative_path": "cache/dinov2-formal120/dhaka__dhaka_38.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "de3b14bc9bfd09534f27a41af4ac01a2f0b7d77288333dccd9afc7c0573bdfa8",
+          "bytes": 751431
+        },
+        {
+          "id": "dhaka__dhaka_39",
+          "region": "dhaka",
+          "relative_path": "cache/dinov2-formal120/dhaka__dhaka_39.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "09e6dbec85dcf171487bca4fae2bbb9fd01e9d7665a96b854b20026de5732014",
+          "bytes": 757250
+        },
+        {
+          "id": "dhaka__dhaka_40",
+          "region": "dhaka",
+          "relative_path": "cache/dinov2-formal120/dhaka__dhaka_40.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "56488fde0f833a4021e159725dc09ed72b3b3229993445a933d3afa1f3b95ec8",
+          "bytes": 758582
+        },
+        {
+          "id": "dhaka__dhaka_48",
+          "region": "dhaka",
+          "relative_path": "cache/dinov2-formal120/dhaka__dhaka_48.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "42a52d8cce59e5b1ac9a548067982fcd91cd1fe7f82b1818ab413da0db42052b",
+          "bytes": 739170
+        },
+        {
+          "id": "kyoto__kyoto_11",
+          "region": "kyoto",
+          "relative_path": "cache/dinov2-formal120/kyoto__kyoto_11.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "97f12aeb5122f5c9a79646e7acf22e0183a3f15ccf87582fc1992e1d186ed675",
+          "bytes": 760964
+        },
+        {
+          "id": "kyoto__kyoto_15",
+          "region": "kyoto",
+          "relative_path": "cache/dinov2-formal120/kyoto__kyoto_15.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "4fc188b369252b4be9c3f3e4dbc45734190f4f1e5ac3b0757789265ff7cadbf6",
+          "bytes": 753299
+        },
+        {
+          "id": "kyoto__kyoto_39",
+          "region": "kyoto",
+          "relative_path": "cache/dinov2-formal120/kyoto__kyoto_39.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "3397a91fec491cb7156ad56400b32effe1e3f2d567ea154a546064e1f7773d32",
+          "bytes": 750008
+        },
+        {
+          "id": "kyoto__kyoto_60",
+          "region": "kyoto",
+          "relative_path": "cache/dinov2-formal120/kyoto__kyoto_60.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "82675debab475b33372f5de3bbfc05c22e66b5896f6f056c44871d0c0887080e",
+          "bytes": 752369
+        },
+        {
+          "id": "kyoto__kyoto_64",
+          "region": "kyoto",
+          "relative_path": "cache/dinov2-formal120/kyoto__kyoto_64.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "fcb181acb795453b7725daafe073b360f02bc92fd50f16b024087be7dd2d4813",
+          "bytes": 762042
+        },
+        {
+          "id": "mahe__mahe_10",
+          "region": "mahe",
+          "relative_path": "cache/dinov2-formal120/mahe__mahe_10.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "160f1fdc868c206e2ab73da6437724e46ff69d06a5541f4ff84e2bc8520b7861",
+          "bytes": 747936
+        },
+        {
+          "id": "mahe__mahe_22",
+          "region": "mahe",
+          "relative_path": "cache/dinov2-formal120/mahe__mahe_22.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "6066abf9dbc7482afe6bfa6b124f3656cf02a7c7c114b0669ce98b240b56fab4",
+          "bytes": 740178
+        },
+        {
+          "id": "mahe__mahe_4",
+          "region": "mahe",
+          "relative_path": "cache/dinov2-formal120/mahe__mahe_4.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "df71fb76035417e72597e16eb04a592f64e7e052a8e4526b206216a84725e5f6",
+          "bytes": 739629
+        },
+        {
+          "id": "mahe__mahe_42",
+          "region": "mahe",
+          "relative_path": "cache/dinov2-formal120/mahe__mahe_42.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "f8b8cf50c3205dcfce468564e1abb8dbf6248157608ef24dc9338c13b00de3d5",
+          "bytes": 758130
+        },
+        {
+          "id": "mahe__mahe_70",
+          "region": "mahe",
+          "relative_path": "cache/dinov2-formal120/mahe__mahe_70.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "fa5977d2195215be53c260f8df67948c83ec2ded3deea6283b7412fd906789d3",
+          "bytes": 761139
+        },
+        {
+          "id": "maputo__maputo_1",
+          "region": "maputo",
+          "relative_path": "cache/dinov2-formal120/maputo__maputo_1.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "cb84bf2f9633a07a359af17c17bb8812474d98381d98ec389838628a58c1fa65",
+          "bytes": 757792
+        },
+        {
+          "id": "maputo__maputo_11",
+          "region": "maputo",
+          "relative_path": "cache/dinov2-formal120/maputo__maputo_11.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "6a7f9a6f6d566a34dbed8ec0db4fd4b8d7b078e6ca20c093ad6b59ec876f9689",
+          "bytes": 753218
+        },
+        {
+          "id": "maputo__maputo_13",
+          "region": "maputo",
+          "relative_path": "cache/dinov2-formal120/maputo__maputo_13.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "9c298cb5ad6c553a333f027de4fdc9a16be9ded3a2b30e1488cb077743a6098f",
+          "bytes": 760090
+        },
+        {
+          "id": "maputo__maputo_14",
+          "region": "maputo",
+          "relative_path": "cache/dinov2-formal120/maputo__maputo_14.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "dc57e61cb08557e697a186d0665d56cec55922cc550f81863a7a6f4cb510129a",
+          "bytes": 756344
+        },
+        {
+          "id": "maputo__maputo_9",
+          "region": "maputo",
+          "relative_path": "cache/dinov2-formal120/maputo__maputo_9.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "7cd3d318870884e1f2aa956ebf4f804c3709e5bb98c16c31a0093aa15fbe0997",
+          "bytes": 758166
+        },
+        {
+          "id": "melbourne__melbourne_18",
+          "region": "melbourne",
+          "relative_path": "cache/dinov2-formal120/melbourne__melbourne_18.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "f3796fa060d213f093c923a9fa2236cc011527b802cda4dd56c0b3bd8675ee9a",
+          "bytes": 745671
+        },
+        {
+          "id": "melbourne__melbourne_23",
+          "region": "melbourne",
+          "relative_path": "cache/dinov2-formal120/melbourne__melbourne_23.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "864811ccc4b72fea93bb76980665f26473212ad80bb218a574034c11f3ef5e81",
+          "bytes": 751734
+        },
+        {
+          "id": "melbourne__melbourne_34",
+          "region": "melbourne",
+          "relative_path": "cache/dinov2-formal120/melbourne__melbourne_34.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "afd8828efeb7197bf9d8b297c2189307ccf5be4598698948b50dee8b1263a1e6",
+          "bytes": 757063
+        },
+        {
+          "id": "melbourne__melbourne_64",
+          "region": "melbourne",
+          "relative_path": "cache/dinov2-formal120/melbourne__melbourne_64.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "3be12b46263a246e6af1776b9e6b2f348b67ef20d391369091101f164ec6ce7b",
+          "bytes": 747980
+        },
+        {
+          "id": "melbourne__melbourne_7",
+          "region": "melbourne",
+          "relative_path": "cache/dinov2-formal120/melbourne__melbourne_7.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "d52eb220a4bb96f919e4cbb9416ee38149dd03d62b87e946eed3a76c0efae080",
+          "bytes": 750778
+        },
+        {
+          "id": "niamey__niamey_10",
+          "region": "niamey",
+          "relative_path": "cache/dinov2-formal120/niamey__niamey_10.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "f72e4221a3828b5258cd6ddcd51ffe360a150528cade06f0381686239af94afd",
+          "bytes": 758311
+        },
+        {
+          "id": "niamey__niamey_11",
+          "region": "niamey",
+          "relative_path": "cache/dinov2-formal120/niamey__niamey_11.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "5f6f5eabcd66097b32fae4eb0cfa4fa20e749cb691a44bbac0ec1470e2056a02",
+          "bytes": 761158
+        },
+        {
+          "id": "niamey__niamey_3",
+          "region": "niamey",
+          "relative_path": "cache/dinov2-formal120/niamey__niamey_3.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "bf7b4af0173dcfc2d1748010a0ff367319e25717f0d842e0eaec59bfbc73be51",
+          "bytes": 759751
+        },
+        {
+          "id": "niamey__niamey_8",
+          "region": "niamey",
+          "relative_path": "cache/dinov2-formal120/niamey__niamey_8.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "a01519dc0c3231c9ecb25de4a29f48f1aec1d0632ed906a73a97bf548f5be57c",
+          "bytes": 756359
+        },
+        {
+          "id": "niamey__niamey_9",
+          "region": "niamey",
+          "relative_path": "cache/dinov2-formal120/niamey__niamey_9.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "737e7bd0ec7e5904a4517517c6054e77477c9fcbf3008a92bfa5e9287eb856dd",
+          "bytes": 762688
+        },
+        {
+          "id": "pointenoire__pointenoire_1",
+          "region": "pointenoire",
+          "relative_path": "cache/dinov2-formal120/pointenoire__pointenoire_1.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "4d1a2f58caf583179755411609d6728596db89fc534ae20975333b0917976ed1",
+          "bytes": 755535
+        },
+        {
+          "id": "pointenoire__pointenoire_5",
+          "region": "pointenoire",
+          "relative_path": "cache/dinov2-formal120/pointenoire__pointenoire_5.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "bc6eac1172f40a821075cc46a32ec6dc0c3650d14f4291c5c787b89542f5e407",
+          "bytes": 761730
+        },
+        {
+          "id": "pointenoire__pointenoire_7",
+          "region": "pointenoire",
+          "relative_path": "cache/dinov2-formal120/pointenoire__pointenoire_7.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "cec3c2faa44546d03d47dead99307d7b9a81262210061df13e05a330dd39077c",
+          "bytes": 761632
+        },
+        {
+          "id": "pointenoire__pointenoire_8",
+          "region": "pointenoire",
+          "relative_path": "cache/dinov2-formal120/pointenoire__pointenoire_8.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "24f264667bccc414576e908e2baa411af04b18df8d482d69679e7a5f4bf727df",
+          "bytes": 761636
+        },
+        {
+          "id": "pointenoire__pointenoire_9",
+          "region": "pointenoire",
+          "relative_path": "cache/dinov2-formal120/pointenoire__pointenoire_9.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "9d64f3869cc27fe809e82511dfa177fa2818568010b374f63fdf125152fa970b",
+          "bytes": 762736
+        },
+        {
+          "id": "rio__rio_19",
+          "region": "rio",
+          "relative_path": "cache/dinov2-formal120/rio__rio_19.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "c58b5997e5273d79432440017ff9342fd9e5739ec96fac5529b995917f979674",
+          "bytes": 744319
+        },
+        {
+          "id": "rio__rio_22",
+          "region": "rio",
+          "relative_path": "cache/dinov2-formal120/rio__rio_22.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "09e8d0256a8268846319b0b8c7e4a8dd903c2fb67c514116281aadf91ec366f8",
+          "bytes": 745604
+        },
+        {
+          "id": "rio__rio_34",
+          "region": "rio",
+          "relative_path": "cache/dinov2-formal120/rio__rio_34.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "ff11c4aefab660ee7a534df021d8d84bc6f623ec7057e5830e28f51ab6c746f9",
+          "bytes": 749685
+        },
+        {
+          "id": "rio__rio_5",
+          "region": "rio",
+          "relative_path": "cache/dinov2-formal120/rio__rio_5.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "3033e6e332b0828af2bef60d659a10cfb801aaabde92bb01cacaaa56f7206940",
+          "bytes": 754594
+        },
+        {
+          "id": "rio__rio_50",
+          "region": "rio",
+          "relative_path": "cache/dinov2-formal120/rio__rio_50.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "1b3125eddb1b558e8784a7b131efae62430bfce3876b97124fbb060e0bec05be",
+          "bytes": 742047
+        },
+        {
+          "id": "rotterdam__rotterdam_20",
+          "region": "rotterdam",
+          "relative_path": "cache/dinov2-formal120/rotterdam__rotterdam_20.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "2877d4f81212aae8256ec4c71b55f7113de89cb6f7e9014a10410f195efd5b0a",
+          "bytes": 752293
+        },
+        {
+          "id": "rotterdam__rotterdam_30",
+          "region": "rotterdam",
+          "relative_path": "cache/dinov2-formal120/rotterdam__rotterdam_30.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "357bb30aba242dcc5b21f811123d80b155545c37e17c23b150bb08c938f23d43",
+          "bytes": 750166
+        },
+        {
+          "id": "rotterdam__rotterdam_31",
+          "region": "rotterdam",
+          "relative_path": "cache/dinov2-formal120/rotterdam__rotterdam_31.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "cd74a6a6d242efb513255719a25f0db1fcb6f855088b330ff13886db8f422969",
+          "bytes": 754421
+        },
+        {
+          "id": "rotterdam__rotterdam_32",
+          "region": "rotterdam",
+          "relative_path": "cache/dinov2-formal120/rotterdam__rotterdam_32.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "a0efefede1236b7b6db6b02914d1593b33807d57af0564363540b971a36a0c73",
+          "bytes": 743520
+        },
+        {
+          "id": "rotterdam__rotterdam_44",
+          "region": "rotterdam",
+          "relative_path": "cache/dinov2-formal120/rotterdam__rotterdam_44.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "3541f398b0112c01d0fd5544fd657268fab2d15ee6f4a4727ea24bc28cdc01f9",
+          "bytes": 744170
+        },
+        {
+          "id": "santiago__santiago_1",
+          "region": "santiago",
+          "relative_path": "cache/dinov2-formal120/santiago__santiago_1.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "68fb5bc585564cdb8243f0263a3375b1dd797fb60f5b2493cff52fbc0c52b3a1",
+          "bytes": 756821
+        },
+        {
+          "id": "santiago__santiago_26",
+          "region": "santiago",
+          "relative_path": "cache/dinov2-formal120/santiago__santiago_26.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "55bacf7aceea6ecb91e923935285e391ec46afff8313a1935482914fdb22ad75",
+          "bytes": 762837
+        },
+        {
+          "id": "santiago__santiago_29",
+          "region": "santiago",
+          "relative_path": "cache/dinov2-formal120/santiago__santiago_29.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "4a2f0692e8b78ed15632e580fd45f50cb6999df07eab9aa23bfda1770662fe66",
+          "bytes": 756630
+        },
+        {
+          "id": "santiago__santiago_51",
+          "region": "santiago",
+          "relative_path": "cache/dinov2-formal120/santiago__santiago_51.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "c06136d247757fbb92926d217323048a2ada8c2f78f3e4131cf262a1180b7055",
+          "bytes": 762220
+        },
+        {
+          "id": "santiago__santiago_57",
+          "region": "santiago",
+          "relative_path": "cache/dinov2-formal120/santiago__santiago_57.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "70fc30186aaa522f25ad266f60707aaaa1e2afaad11a5fd4dda19470cb0614ea",
+          "bytes": 755263
+        },
+        {
+          "id": "shanghai__shanghai_27",
+          "region": "shanghai",
+          "relative_path": "cache/dinov2-formal120/shanghai__shanghai_27.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "a60c9b170dc6ae8cfe6fbe7e45d51ffef5e4fe08f9b9f2c24db0ac19edab885b",
+          "bytes": 734330
+        },
+        {
+          "id": "shanghai__shanghai_29",
+          "region": "shanghai",
+          "relative_path": "cache/dinov2-formal120/shanghai__shanghai_29.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "f5d4026532a4078e85342f2df7c7eefcac0360ef7af4bb319031302d06590ed2",
+          "bytes": 741598
+        },
+        {
+          "id": "shanghai__shanghai_46",
+          "region": "shanghai",
+          "relative_path": "cache/dinov2-formal120/shanghai__shanghai_46.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "a5adefbb363832f9d03af1281eeb3362983f46d21df02282e7b25205f680d462",
+          "bytes": 748237
+        },
+        {
+          "id": "shanghai__shanghai_50",
+          "region": "shanghai",
+          "relative_path": "cache/dinov2-formal120/shanghai__shanghai_50.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "1fda8002c1962e69eecb75a26af9306a291ad826d9e1543277602af342c37b9f",
+          "bytes": 740655
+        },
+        {
+          "id": "shanghai__shanghai_6",
+          "region": "shanghai",
+          "relative_path": "cache/dinov2-formal120/shanghai__shanghai_6.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "6b32e536c9d654138633f942569e610d17b0b1ed2158db05d032a62b6d6424fa",
+          "bytes": 735154
+        },
+        {
+          "id": "tonga__tonga_32",
+          "region": "tonga",
+          "relative_path": "cache/dinov2-formal120/tonga__tonga_32.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "1f567cc0e47c43affc33b1893a71b6421a248be7571a0b79fca937cd385d11ab",
+          "bytes": 746511
+        },
+        {
+          "id": "tonga__tonga_43",
+          "region": "tonga",
+          "relative_path": "cache/dinov2-formal120/tonga__tonga_43.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "4147a1d3bc17a284515e8e223c8e3942520f97457eb9e8c8f521924f077ba0f2",
+          "bytes": 758729
+        },
+        {
+          "id": "tonga__tonga_53",
+          "region": "tonga",
+          "relative_path": "cache/dinov2-formal120/tonga__tonga_53.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "90f2d1c4fcb987c3fc57e234a0278027a0c7e97c6248962e83bc932e9e4a8106",
+          "bytes": 745351
+        },
+        {
+          "id": "tonga__tonga_6",
+          "region": "tonga",
+          "relative_path": "cache/dinov2-formal120/tonga__tonga_6.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "a61c79336012f21f0396363f7f3d7b1661df5a36483cc639edf81c28c874f0f8",
+          "bytes": 752686
+        },
+        {
+          "id": "tonga__tonga_63",
+          "region": "tonga",
+          "relative_path": "cache/dinov2-formal120/tonga__tonga_63.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "e91fc498998f00f53a0c27c333cdc04fd74bdf5bb15e80a235765474e9f10933",
+          "bytes": 759440
+        },
+        {
+          "id": "ulaanbaatar__ulaanbaatar_23",
+          "region": "ulaanbaatar",
+          "relative_path": "cache/dinov2-formal120/ulaanbaatar__ulaanbaatar_23.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "e5e91ee09fb31092ba2ff0e05be126ab9af8ca4e4db1dcaa250e3c8bbf95c9d5",
+          "bytes": 755907
+        },
+        {
+          "id": "ulaanbaatar__ulaanbaatar_3",
+          "region": "ulaanbaatar",
+          "relative_path": "cache/dinov2-formal120/ulaanbaatar__ulaanbaatar_3.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "9b15c14cd9427bb323642597a3dab9ef7d2b1b9730342fd828ec0b3d2dad524c",
+          "bytes": 755353
+        },
+        {
+          "id": "ulaanbaatar__ulaanbaatar_31",
+          "region": "ulaanbaatar",
+          "relative_path": "cache/dinov2-formal120/ulaanbaatar__ulaanbaatar_31.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "fe23cb8a715c379edf3c4c3321367d4c9af95e22bcf0a6fba6832244d444061e",
+          "bytes": 753220
+        },
+        {
+          "id": "ulaanbaatar__ulaanbaatar_36",
+          "region": "ulaanbaatar",
+          "relative_path": "cache/dinov2-formal120/ulaanbaatar__ulaanbaatar_36.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "efbfb6254e56612cae577269570aef7bc08530ddfe438498aecf5844ec88e75b",
+          "bytes": 755043
+        },
+        {
+          "id": "ulaanbaatar__ulaanbaatar_46",
+          "region": "ulaanbaatar",
+          "relative_path": "cache/dinov2-formal120/ulaanbaatar__ulaanbaatar_46.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "51dcbf9dd318bf996b1b50bb47b429a6578e2400cbe82dffe0a58e82586f35b9",
+          "bytes": 756027
+        },
+        {
+          "id": "vegas__vegas_14",
+          "region": "vegas",
+          "relative_path": "cache/dinov2-formal120/vegas__vegas_14.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "2917dd59d4481c6e181951f5da00c867f55899c7031b72a6c418482b3dd0faba",
+          "bytes": 745673
+        },
+        {
+          "id": "vegas__vegas_17",
+          "region": "vegas",
+          "relative_path": "cache/dinov2-formal120/vegas__vegas_17.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "0bade327f36ba79e180376edc292a0959284087bb6d2d64cba766ae846ef6597",
+          "bytes": 740534
+        },
+        {
+          "id": "vegas__vegas_32",
+          "region": "vegas",
+          "relative_path": "cache/dinov2-formal120/vegas__vegas_32.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "12ac9a0446b7a353d1b8e5915565a2ec81cde069ecf43d9670880410fb9c65b3",
+          "bytes": 735139
+        },
+        {
+          "id": "vegas__vegas_39",
+          "region": "vegas",
+          "relative_path": "cache/dinov2-formal120/vegas__vegas_39.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "e9e564f0d06b49832648ea33ef8cf672a46b9c16d10674fa56757750a21b0651",
+          "bytes": 735703
+        },
+        {
+          "id": "vegas__vegas_7",
+          "region": "vegas",
+          "relative_path": "cache/dinov2-formal120/vegas__vegas_7.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "7e683257b49436a58aefab96265a2822fa4adae8f265bc989222075abfb87a40",
+          "bytes": 745579
+        },
+        {
+          "id": "vienna__vienna_26",
+          "region": "vienna",
+          "relative_path": "cache/dinov2-formal120/vienna__vienna_26.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "87631e6585a46813eeb698654a92e9ec99eef7d06ec94334d95c52a275e34734",
+          "bytes": 750937
+        },
+        {
+          "id": "vienna__vienna_33",
+          "region": "vienna",
+          "relative_path": "cache/dinov2-formal120/vienna__vienna_33.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "5c59536834d792100865b21d3a09e38e67313ae9023801d14881d16365609cb9",
+          "bytes": 747317
+        },
+        {
+          "id": "vienna__vienna_41",
+          "region": "vienna",
+          "relative_path": "cache/dinov2-formal120/vienna__vienna_41.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "6acc835a75b56af511c287b0b6ab036cf668e94c2f28dfc9834b6882a06a5362",
+          "bytes": 749850
+        },
+        {
+          "id": "vienna__vienna_61",
+          "region": "vienna",
+          "relative_path": "cache/dinov2-formal120/vienna__vienna_61.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "4670881b8f80b072bf63b54e49307a25728443f08bbf9fe5cf9d9db50b74f917",
+          "bytes": 748253
+        },
+        {
+          "id": "vienna__vienna_68",
+          "region": "vienna",
+          "relative_path": "cache/dinov2-formal120/vienna__vienna_68.npz",
+          "index": "cache/dinov2-formal120/index.json",
+          "index_sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+          "sha256": "ca193a9ef027787a6146eafee7213b05c108d87eceb7f80903ac7d2896858996",
+          "bytes": 749229
+        },
+        {
+          "id": "abancay__abancay_32",
+          "region": "abancay",
+          "relative_path": "v2/cache/new_panel_dinov2/abancay__abancay_32.npz",
+          "index": "v2/cache/new_panel_dinov2/index.json",
+          "index_sha256": "a357fcc755ea3eedb9c81c01ee020356affab6e7e3eec9d9a1c2bf1dc9cd2952",
+          "sha256": "991f3cd70e64b233cda04e87b29900e2f3504dd16402aee3aaae19e66424b221",
+          "bytes": 726755
+        },
+        {
+          "id": "abancay__abancay_41",
+          "region": "abancay",
+          "relative_path": "v2/cache/new_panel_dinov2/abancay__abancay_41.npz",
+          "index": "v2/cache/new_panel_dinov2/index.json",
+          "index_sha256": "a357fcc755ea3eedb9c81c01ee020356affab6e7e3eec9d9a1c2bf1dc9cd2952",
+          "sha256": "2d07242ecdf678dc28a60b611225a1473e7a54cd067c5fa45ffdbfc913788699",
+          "bytes": 726137
+        },
+        {
+          "id": "abancay__abancay_45",
+          "region": "abancay",
+          "relative_path": "v2/cache/new_panel_dinov2/abancay__abancay_45.npz",
+          "index": "v2/cache/new_panel_dinov2/index.json",
+          "index_sha256": "a357fcc755ea3eedb9c81c01ee020356affab6e7e3eec9d9a1c2bf1dc9cd2952",
+          "sha256": "aec5b3985e16ee2e07c62b80cebac9e4d0afb8daca96523e5f6ef6cf23a9cccb",
+          "bytes": 726877
+        },
+        {
+          "id": "al_qurnah__al_qurnah_33",
+          "region": "al_qurnah",
+          "relative_path": "v2/cache/new_panel_dinov2/al_qurnah__al_qurnah_33.npz",
+          "index": "v2/cache/new_panel_dinov2/index.json",
+          "index_sha256": "a357fcc755ea3eedb9c81c01ee020356affab6e7e3eec9d9a1c2bf1dc9cd2952",
+          "sha256": "520469ace5cb59d938c495ad6209962d6e0cbd2ce10875409e404e570f01057a",
+          "bytes": 726151
+        },
+        {
+          "id": "al_qurnah__al_qurnah_49",
+          "region": "al_qurnah",
+          "relative_path": "v2/cache/new_panel_dinov2/al_qurnah__al_qurnah_49.npz",
+          "index": "v2/cache/new_panel_dinov2/index.json",
+          "index_sha256": "a357fcc755ea3eedb9c81c01ee020356affab6e7e3eec9d9a1c2bf1dc9cd2952",
+          "sha256": "8048e1da43b13246eb8313c1c6c6539ab5f39fab73543ebb95ab881a3e4f9ef0",
+          "bytes": 726328
+        },
+        {
+          "id": "al_qurnah__al_qurnah_60",
+          "region": "al_qurnah",
+          "relative_path": "v2/cache/new_panel_dinov2/al_qurnah__al_qurnah_60.npz",
+          "index": "v2/cache/new_panel_dinov2/index.json",
+          "index_sha256": "a357fcc755ea3eedb9c81c01ee020356affab6e7e3eec9d9a1c2bf1dc9cd2952",
+          "sha256": "ed5320da202e274c6c25fcb63569fe4281920eb44da8fc59d5b5d9e803f0bb36",
+          "bytes": 726226
+        },
+        {
+          "id": "baybay__baybay_36",
+          "region": "baybay",
+          "relative_path": "v2/cache/new_panel_dinov2/baybay__baybay_36.npz",
+          "index": "v2/cache/new_panel_dinov2/index.json",
+          "index_sha256": "a357fcc755ea3eedb9c81c01ee020356affab6e7e3eec9d9a1c2bf1dc9cd2952",
+          "sha256": "d79c647ac8e2b682d869ac877cb7c550300c1af51237ff494e95a530b656bc99",
+          "bytes": 728476
+        },
+        {
+          "id": "baybay__baybay_53",
+          "region": "baybay",
+          "relative_path": "v2/cache/new_panel_dinov2/baybay__baybay_53.npz",
+          "index": "v2/cache/new_panel_dinov2/index.json",
+          "index_sha256": "a357fcc755ea3eedb9c81c01ee020356affab6e7e3eec9d9a1c2bf1dc9cd2952",
+          "sha256": "7c3d2bff5f1321bddbd47d4e86355bf289bf8bf7720a350888824b6dc4955ad2",
+          "bytes": 727190
+        },
+        {
+          "id": "baybay__baybay_65",
+          "region": "baybay",
+          "relative_path": "v2/cache/new_panel_dinov2/baybay__baybay_65.npz",
+          "index": "v2/cache/new_panel_dinov2/index.json",
+          "index_sha256": "a357fcc755ea3eedb9c81c01ee020356affab6e7e3eec9d9a1c2bf1dc9cd2952",
+          "sha256": "7b17def3d9853ff41d998fe10377d6f0e6d307e71df6bbb9f836cee439d6ed9e",
+          "bytes": 727727
+        },
+        {
+          "id": "bielefeld__bielefeld_29",
+          "region": "bielefeld",
+          "relative_path": "v2/cache/new_panel_dinov2/bielefeld__bielefeld_29.npz",
+          "index": "v2/cache/new_panel_dinov2/index.json",
+          "index_sha256": "a357fcc755ea3eedb9c81c01ee020356affab6e7e3eec9d9a1c2bf1dc9cd2952",
+          "sha256": "30edbdc235a1c702bd5a30c7474990a447edc1150496b796bd58e7ded2d2b720",
+          "bytes": 726818
+        },
+        {
+          "id": "bielefeld__bielefeld_61",
+          "region": "bielefeld",
+          "relative_path": "v2/cache/new_panel_dinov2/bielefeld__bielefeld_61.npz",
+          "index": "v2/cache/new_panel_dinov2/index.json",
+          "index_sha256": "a357fcc755ea3eedb9c81c01ee020356affab6e7e3eec9d9a1c2bf1dc9cd2952",
+          "sha256": "ec08b7bc2e96aeaf2d44c30fa443442330db52cfcded667ba13869919ee7c901",
+          "bytes": 727200
+        },
+        {
+          "id": "bielefeld__bielefeld_63",
+          "region": "bielefeld",
+          "relative_path": "v2/cache/new_panel_dinov2/bielefeld__bielefeld_63.npz",
+          "index": "v2/cache/new_panel_dinov2/index.json",
+          "index_sha256": "a357fcc755ea3eedb9c81c01ee020356affab6e7e3eec9d9a1c2bf1dc9cd2952",
+          "sha256": "81690ab20893adde6748fa2eb3d8c5965e62f59d21ca8b4082034646b246cce7",
+          "bytes": 727069
+        },
+        {
+          "id": "buenos_aires__buenos_aires_15",
+          "region": "buenos_aires",
+          "relative_path": "v2/cache/new_panel_dinov2/buenos_aires__buenos_aires_15.npz",
+          "index": "v2/cache/new_panel_dinov2/index.json",
+          "index_sha256": "a357fcc755ea3eedb9c81c01ee020356affab6e7e3eec9d9a1c2bf1dc9cd2952",
+          "sha256": "2f6080f47e5df2e9b6d98cecb3c6e063e81f67dc957161f7fd0a5e5a23bf2bc6",
+          "bytes": 726742
+        },
+        {
+          "id": "buenos_aires__buenos_aires_34",
+          "region": "buenos_aires",
+          "relative_path": "v2/cache/new_panel_dinov2/buenos_aires__buenos_aires_34.npz",
+          "index": "v2/cache/new_panel_dinov2/index.json",
+          "index_sha256": "a357fcc755ea3eedb9c81c01ee020356affab6e7e3eec9d9a1c2bf1dc9cd2952",
+          "sha256": "4c5b10ccc577d7945c55588ed9b7482e3b68fb6bd1131ae76882dc7a0c3fb145",
+          "bytes": 726984
+        },
+        {
+          "id": "buenos_aires__buenos_aires_45",
+          "region": "buenos_aires",
+          "relative_path": "v2/cache/new_panel_dinov2/buenos_aires__buenos_aires_45.npz",
+          "index": "v2/cache/new_panel_dinov2/index.json",
+          "index_sha256": "a357fcc755ea3eedb9c81c01ee020356affab6e7e3eec9d9a1c2bf1dc9cd2952",
+          "sha256": "77618d19c46e6c9626d6d67bfd96e01304f25e27c5aabc4acc8ef556c4766e26",
+          "bytes": 727411
+        },
+        {
+          "id": "chiclayo__chiclayo_23",
+          "region": "chiclayo",
+          "relative_path": "v2/cache/new_panel_dinov2/chiclayo__chiclayo_23.npz",
+          "index": "v2/cache/new_panel_dinov2/index.json",
+          "index_sha256": "a357fcc755ea3eedb9c81c01ee020356affab6e7e3eec9d9a1c2bf1dc9cd2952",
+          "sha256": "b77e8295338250ed7f35e3ca03ff4bcb09e2ef56a80cbcc5c40d5531e48aea72",
+          "bytes": 727845
+        },
+        {
+          "id": "chiclayo__chiclayo_25",
+          "region": "chiclayo",
+          "relative_path": "v2/cache/new_panel_dinov2/chiclayo__chiclayo_25.npz",
+          "index": "v2/cache/new_panel_dinov2/index.json",
+          "index_sha256": "a357fcc755ea3eedb9c81c01ee020356affab6e7e3eec9d9a1c2bf1dc9cd2952",
+          "sha256": "0f1303c73831d03711e636361ac92c38d3f0797e6a3289cb2fc08ea49df911c8",
+          "bytes": 727459
+        },
+        {
+          "id": "chiclayo__chiclayo_4",
+          "region": "chiclayo",
+          "relative_path": "v2/cache/new_panel_dinov2/chiclayo__chiclayo_4.npz",
+          "index": "v2/cache/new_panel_dinov2/index.json",
+          "index_sha256": "a357fcc755ea3eedb9c81c01ee020356affab6e7e3eec9d9a1c2bf1dc9cd2952",
+          "sha256": "ccb7c902a6b37693c44a4c667460ad41c026e2d80a7cb4d2a88128c1c917c660",
+          "bytes": 727188
+        },
+        {
+          "id": "coxsbazar__coxsbazar_14",
+          "region": "coxsbazar",
+          "relative_path": "v2/cache/new_panel_dinov2/coxsbazar__coxsbazar_14.npz",
+          "index": "v2/cache/new_panel_dinov2/index.json",
+          "index_sha256": "a357fcc755ea3eedb9c81c01ee020356affab6e7e3eec9d9a1c2bf1dc9cd2952",
+          "sha256": "7daae617edac9b509732290a501e423e1931c4cdbc9b0540379f33ec6155dbaf",
+          "bytes": 726054
+        },
+        {
+          "id": "coxsbazar__coxsbazar_52",
+          "region": "coxsbazar",
+          "relative_path": "v2/cache/new_panel_dinov2/coxsbazar__coxsbazar_52.npz",
+          "index": "v2/cache/new_panel_dinov2/index.json",
+          "index_sha256": "a357fcc755ea3eedb9c81c01ee020356affab6e7e3eec9d9a1c2bf1dc9cd2952",
+          "sha256": "a2035b26cc8996af0b2944afba5a0ecc461c3292a205b76fab211595a6106bce",
+          "bytes": 726397
+        },
+        {
+          "id": "coxsbazar__coxsbazar_53",
+          "region": "coxsbazar",
+          "relative_path": "v2/cache/new_panel_dinov2/coxsbazar__coxsbazar_53.npz",
+          "index": "v2/cache/new_panel_dinov2/index.json",
+          "index_sha256": "a357fcc755ea3eedb9c81c01ee020356affab6e7e3eec9d9a1c2bf1dc9cd2952",
+          "sha256": "d3bb1938d2c00cdef2ae57eabd1e32e768db77b525793c8a324edd969e36a400",
+          "bytes": 726870
+        },
+        {
+          "id": "dowa__dowa_12",
+          "region": "dowa",
+          "relative_path": "v2/cache/new_panel_dinov2/dowa__dowa_12.npz",
+          "index": "v2/cache/new_panel_dinov2/index.json",
+          "index_sha256": "a357fcc755ea3eedb9c81c01ee020356affab6e7e3eec9d9a1c2bf1dc9cd2952",
+          "sha256": "ea228dcb0f5acb7702271c7a846febef9817147f0bfbe36a703455e3becfd03f",
+          "bytes": 727029
+        },
+        {
+          "id": "dowa__dowa_20",
+          "region": "dowa",
+          "relative_path": "v2/cache/new_panel_dinov2/dowa__dowa_20.npz",
+          "index": "v2/cache/new_panel_dinov2/index.json",
+          "index_sha256": "a357fcc755ea3eedb9c81c01ee020356affab6e7e3eec9d9a1c2bf1dc9cd2952",
+          "sha256": "8bc1a38beaca9c1e37376855c71fda8c72b1aa481db279fcee2acd545010ec41",
+          "bytes": 727409
+        },
+        {
+          "id": "dowa__dowa_9",
+          "region": "dowa",
+          "relative_path": "v2/cache/new_panel_dinov2/dowa__dowa_9.npz",
+          "index": "v2/cache/new_panel_dinov2/index.json",
+          "index_sha256": "a357fcc755ea3eedb9c81c01ee020356affab6e7e3eec9d9a1c2bf1dc9cd2952",
+          "sha256": "9d493cb94ed823292c6f69fb1211d3251554713e08cd530f4d1e95c9cf87e703",
+          "bytes": 726556
+        },
+        {
+          "id": "kagera__kagera_24",
+          "region": "kagera",
+          "relative_path": "v2/cache/new_panel_dinov2/kagera__kagera_24.npz",
+          "index": "v2/cache/new_panel_dinov2/index.json",
+          "index_sha256": "a357fcc755ea3eedb9c81c01ee020356affab6e7e3eec9d9a1c2bf1dc9cd2952",
+          "sha256": "dead1acbe7856aa1679ee620f92053a6dbe699ff61001b50d0be93c49ab03338",
+          "bytes": 727582
+        },
+        {
+          "id": "kagera__kagera_46",
+          "region": "kagera",
+          "relative_path": "v2/cache/new_panel_dinov2/kagera__kagera_46.npz",
+          "index": "v2/cache/new_panel_dinov2/index.json",
+          "index_sha256": "a357fcc755ea3eedb9c81c01ee020356affab6e7e3eec9d9a1c2bf1dc9cd2952",
+          "sha256": "09264a7acb1df97da9b780b16f9f3ceb22966dbe96069c817abc5591dcf88545",
+          "bytes": 726861
+        },
+        {
+          "id": "kagera__kagera_59",
+          "region": "kagera",
+          "relative_path": "v2/cache/new_panel_dinov2/kagera__kagera_59.npz",
+          "index": "v2/cache/new_panel_dinov2/index.json",
+          "index_sha256": "a357fcc755ea3eedb9c81c01ee020356affab6e7e3eec9d9a1c2bf1dc9cd2952",
+          "sha256": "ef82d9747a42a40980704be081042a1fda76bf36bda4dfb85c44471fa741f607",
+          "bytes": 727314
+        },
+        {
+          "id": "kampala__kampala_1",
+          "region": "kampala",
+          "relative_path": "v2/cache/new_panel_dinov2/kampala__kampala_1.npz",
+          "index": "v2/cache/new_panel_dinov2/index.json",
+          "index_sha256": "a357fcc755ea3eedb9c81c01ee020356affab6e7e3eec9d9a1c2bf1dc9cd2952",
+          "sha256": "645ec9b5d03c1c94409a3def408f2d2ba36a12e590e7794823fd1ab440ba19f7",
+          "bytes": 727213
+        },
+        {
+          "id": "kampala__kampala_2",
+          "region": "kampala",
+          "relative_path": "v2/cache/new_panel_dinov2/kampala__kampala_2.npz",
+          "index": "v2/cache/new_panel_dinov2/index.json",
+          "index_sha256": "a357fcc755ea3eedb9c81c01ee020356affab6e7e3eec9d9a1c2bf1dc9cd2952",
+          "sha256": "727597d831bec4de8d1928cc0d32346c859a9f5beab24645d1fbe4e263ab3153",
+          "bytes": 726867
+        },
+        {
+          "id": "kampala__kampala_5",
+          "region": "kampala",
+          "relative_path": "v2/cache/new_panel_dinov2/kampala__kampala_5.npz",
+          "index": "v2/cache/new_panel_dinov2/index.json",
+          "index_sha256": "a357fcc755ea3eedb9c81c01ee020356affab6e7e3eec9d9a1c2bf1dc9cd2952",
+          "sha256": "108200c12003b40c97ed78b9cdb6d3e53ef6ddbd6d3923aa92939dbc6066fe9a",
+          "bytes": 727280
+        },
+        {
+          "id": "khartoum__khartoum_21",
+          "region": "khartoum",
+          "relative_path": "v2/cache/new_panel_dinov2/khartoum__khartoum_21.npz",
+          "index": "v2/cache/new_panel_dinov2/index.json",
+          "index_sha256": "a357fcc755ea3eedb9c81c01ee020356affab6e7e3eec9d9a1c2bf1dc9cd2952",
+          "sha256": "ea9d9cdc16d8b8c46534d4a09357806c7b00efaafd27d80c0f86bff37c602d2e",
+          "bytes": 727395
+        },
+        {
+          "id": "khartoum__khartoum_33",
+          "region": "khartoum",
+          "relative_path": "v2/cache/new_panel_dinov2/khartoum__khartoum_33.npz",
+          "index": "v2/cache/new_panel_dinov2/index.json",
+          "index_sha256": "a357fcc755ea3eedb9c81c01ee020356affab6e7e3eec9d9a1c2bf1dc9cd2952",
+          "sha256": "572e71e2b8807123b3ee4869065f74699dac747dfeb0f999c5b1ea16fb05c737",
+          "bytes": 726418
+        },
+        {
+          "id": "khartoum__khartoum_53",
+          "region": "khartoum",
+          "relative_path": "v2/cache/new_panel_dinov2/khartoum__khartoum_53.npz",
+          "index": "v2/cache/new_panel_dinov2/index.json",
+          "index_sha256": "a357fcc755ea3eedb9c81c01ee020356affab6e7e3eec9d9a1c2bf1dc9cd2952",
+          "sha256": "0de0f580f462dadc3bd12cb214e9e96435cfa46878c99fca492631676dcd79b2",
+          "bytes": 726794
+        },
+        {
+          "id": "kinshasa__kinshasa_1",
+          "region": "kinshasa",
+          "relative_path": "v2/cache/new_panel_dinov2/kinshasa__kinshasa_1.npz",
+          "index": "v2/cache/new_panel_dinov2/index.json",
+          "index_sha256": "a357fcc755ea3eedb9c81c01ee020356affab6e7e3eec9d9a1c2bf1dc9cd2952",
+          "sha256": "bd293b87794b9a7f6d913fc2b48e66ec5851178735cf2880b444b9b2f9d5fe33",
+          "bytes": 727325
+        },
+        {
+          "id": "kinshasa__kinshasa_2",
+          "region": "kinshasa",
+          "relative_path": "v2/cache/new_panel_dinov2/kinshasa__kinshasa_2.npz",
+          "index": "v2/cache/new_panel_dinov2/index.json",
+          "index_sha256": "a357fcc755ea3eedb9c81c01ee020356affab6e7e3eec9d9a1c2bf1dc9cd2952",
+          "sha256": "56ca211493b64d7c781baedbe04ddb94469c9318c1a141885feee5550a9c0623",
+          "bytes": 727229
+        },
+        {
+          "id": "kinshasa__kinshasa_3",
+          "region": "kinshasa",
+          "relative_path": "v2/cache/new_panel_dinov2/kinshasa__kinshasa_3.npz",
+          "index": "v2/cache/new_panel_dinov2/index.json",
+          "index_sha256": "a357fcc755ea3eedb9c81c01ee020356affab6e7e3eec9d9a1c2bf1dc9cd2952",
+          "sha256": "4730c66a9e10feed27cc8cd8090aeced1af3c233b7c76eed65e17bc5d00d233c",
+          "bytes": 727288
+        },
+        {
+          "id": "kitsap__kitsap_2",
+          "region": "kitsap",
+          "relative_path": "v2/cache/new_panel_dinov2/kitsap__kitsap_2.npz",
+          "index": "v2/cache/new_panel_dinov2/index.json",
+          "index_sha256": "a357fcc755ea3eedb9c81c01ee020356affab6e7e3eec9d9a1c2bf1dc9cd2952",
+          "sha256": "df203fcb20998f2aeb0952ded25ae4e787dfb3b39539d3a01c376ad8f26eeb31",
+          "bytes": 726995
+        },
+        {
+          "id": "kitsap__kitsap_39",
+          "region": "kitsap",
+          "relative_path": "v2/cache/new_panel_dinov2/kitsap__kitsap_39.npz",
+          "index": "v2/cache/new_panel_dinov2/index.json",
+          "index_sha256": "a357fcc755ea3eedb9c81c01ee020356affab6e7e3eec9d9a1c2bf1dc9cd2952",
+          "sha256": "87ff3eae4eadf5e6ef2f766983d5bd40bb920a710d0cbb16cb234d3bd883f15c",
+          "bytes": 726755
+        },
+        {
+          "id": "kitsap__kitsap_46",
+          "region": "kitsap",
+          "relative_path": "v2/cache/new_panel_dinov2/kitsap__kitsap_46.npz",
+          "index": "v2/cache/new_panel_dinov2/index.json",
+          "index_sha256": "a357fcc755ea3eedb9c81c01ee020356affab6e7e3eec9d9a1c2bf1dc9cd2952",
+          "sha256": "c7d0cc6e3b38f2b5a13f7d73059217e03050bf30c386a4764d973e1140389620",
+          "bytes": 727010
+        },
+        {
+          "id": "monrovia__monrovia_26",
+          "region": "monrovia",
+          "relative_path": "v2/cache/new_panel_dinov2/monrovia__monrovia_26.npz",
+          "index": "v2/cache/new_panel_dinov2/index.json",
+          "index_sha256": "a357fcc755ea3eedb9c81c01ee020356affab6e7e3eec9d9a1c2bf1dc9cd2952",
+          "sha256": "d4e2e6a3291f91a2a274bf427c7f5359cc05471e5f207e6f8a0dfc3b41e37545",
+          "bytes": 726801
+        },
+        {
+          "id": "monrovia__monrovia_48",
+          "region": "monrovia",
+          "relative_path": "v2/cache/new_panel_dinov2/monrovia__monrovia_48.npz",
+          "index": "v2/cache/new_panel_dinov2/index.json",
+          "index_sha256": "a357fcc755ea3eedb9c81c01ee020356affab6e7e3eec9d9a1c2bf1dc9cd2952",
+          "sha256": "6aee1e8342812e9f88155a0d3ccc3113d01769fbfd75ffa8a3fc4817a89a8cdf",
+          "bytes": 727872
+        },
+        {
+          "id": "monrovia__monrovia_58",
+          "region": "monrovia",
+          "relative_path": "v2/cache/new_panel_dinov2/monrovia__monrovia_58.npz",
+          "index": "v2/cache/new_panel_dinov2/index.json",
+          "index_sha256": "a357fcc755ea3eedb9c81c01ee020356affab6e7e3eec9d9a1c2bf1dc9cd2952",
+          "sha256": "015c08062ca03d1a1378aa2c256d4be13703684bf52e99a44d1a1d6aa0a0f7ef",
+          "bytes": 727047
+        },
+        {
+          "id": "ngaoundere__ngaoundere_28",
+          "region": "ngaoundere",
+          "relative_path": "v2/cache/new_panel_dinov2/ngaoundere__ngaoundere_28.npz",
+          "index": "v2/cache/new_panel_dinov2/index.json",
+          "index_sha256": "a357fcc755ea3eedb9c81c01ee020356affab6e7e3eec9d9a1c2bf1dc9cd2952",
+          "sha256": "5f3a06ba3d192e7f4911d6041a17c7d11eb090f774a4cbc76786eb04b460042f",
+          "bytes": 726516
+        },
+        {
+          "id": "ngaoundere__ngaoundere_31",
+          "region": "ngaoundere",
+          "relative_path": "v2/cache/new_panel_dinov2/ngaoundere__ngaoundere_31.npz",
+          "index": "v2/cache/new_panel_dinov2/index.json",
+          "index_sha256": "a357fcc755ea3eedb9c81c01ee020356affab6e7e3eec9d9a1c2bf1dc9cd2952",
+          "sha256": "33e078a86505d00aa6c38e3226172213d2a75c1742f68c1d19d682f6b2fdbf45",
+          "bytes": 727405
+        },
+        {
+          "id": "ngaoundere__ngaoundere_34",
+          "region": "ngaoundere",
+          "relative_path": "v2/cache/new_panel_dinov2/ngaoundere__ngaoundere_34.npz",
+          "index": "v2/cache/new_panel_dinov2/index.json",
+          "index_sha256": "a357fcc755ea3eedb9c81c01ee020356affab6e7e3eec9d9a1c2bf1dc9cd2952",
+          "sha256": "5ce57d3b77de738792218972a5b4a426d2c663c9257b810a5672222f20d7d119",
+          "bytes": 727407
+        },
+        {
+          "id": "paris__paris_38",
+          "region": "paris",
+          "relative_path": "v2/cache/new_panel_dinov2/paris__paris_38.npz",
+          "index": "v2/cache/new_panel_dinov2/index.json",
+          "index_sha256": "a357fcc755ea3eedb9c81c01ee020356affab6e7e3eec9d9a1c2bf1dc9cd2952",
+          "sha256": "a0ad556c4c0049970e52cabedf30e35358400147e4750b1d1b0e58cdc701e475",
+          "bytes": 727890
+        },
+        {
+          "id": "paris__paris_54",
+          "region": "paris",
+          "relative_path": "v2/cache/new_panel_dinov2/paris__paris_54.npz",
+          "index": "v2/cache/new_panel_dinov2/index.json",
+          "index_sha256": "a357fcc755ea3eedb9c81c01ee020356affab6e7e3eec9d9a1c2bf1dc9cd2952",
+          "sha256": "3e4306fbea64890ffd4aff9611eaee96bebaed4cf84d83420f5e7633b23ee8fa",
+          "bytes": 726820
+        },
+        {
+          "id": "paris__paris_61",
+          "region": "paris",
+          "relative_path": "v2/cache/new_panel_dinov2/paris__paris_61.npz",
+          "index": "v2/cache/new_panel_dinov2/index.json",
+          "index_sha256": "a357fcc755ea3eedb9c81c01ee020356affab6e7e3eec9d9a1c2bf1dc9cd2952",
+          "sha256": "455e86a7eb8a81a46ac94286d3dd8109cd8aea813bcc67b531590cd1a40998ae",
+          "bytes": 727904
+        },
+        {
+          "id": "rosario__rosario_1",
+          "region": "rosario",
+          "relative_path": "v2/cache/new_panel_dinov2/rosario__rosario_1.npz",
+          "index": "v2/cache/new_panel_dinov2/index.json",
+          "index_sha256": "a357fcc755ea3eedb9c81c01ee020356affab6e7e3eec9d9a1c2bf1dc9cd2952",
+          "sha256": "9a9dc94a4796e1efdbd701a2fd2e30e15ab6167998543faa3b8dd549e7ff21de",
+          "bytes": 727409
+        },
+        {
+          "id": "rosario__rosario_4",
+          "region": "rosario",
+          "relative_path": "v2/cache/new_panel_dinov2/rosario__rosario_4.npz",
+          "index": "v2/cache/new_panel_dinov2/index.json",
+          "index_sha256": "a357fcc755ea3eedb9c81c01ee020356affab6e7e3eec9d9a1c2bf1dc9cd2952",
+          "sha256": "161dc56d3e602d3dc415a7e493fa9811f46632ca028e6ecb8f5cf9451af4665d",
+          "bytes": 727247
+        },
+        {
+          "id": "rosario__rosario_9",
+          "region": "rosario",
+          "relative_path": "v2/cache/new_panel_dinov2/rosario__rosario_9.npz",
+          "index": "v2/cache/new_panel_dinov2/index.json",
+          "index_sha256": "a357fcc755ea3eedb9c81c01ee020356affab6e7e3eec9d9a1c2bf1dc9cd2952",
+          "sha256": "d05089ed0aced650cb75f55dd0a261db8904defd97fad4a606a1cfd91594b1af",
+          "bytes": 727628
+        },
+        {
+          "id": "san_tome__san_tome_17",
+          "region": "san_tome",
+          "relative_path": "v2/cache/new_panel_dinov2/san_tome__san_tome_17.npz",
+          "index": "v2/cache/new_panel_dinov2/index.json",
+          "index_sha256": "a357fcc755ea3eedb9c81c01ee020356affab6e7e3eec9d9a1c2bf1dc9cd2952",
+          "sha256": "63547ba5359c36ebf4c0eefb59721cb8316fd93b4855ff0f2cbf2e9ab27c1ec7",
+          "bytes": 726700
+        },
+        {
+          "id": "san_tome__san_tome_41",
+          "region": "san_tome",
+          "relative_path": "v2/cache/new_panel_dinov2/san_tome__san_tome_41.npz",
+          "index": "v2/cache/new_panel_dinov2/index.json",
+          "index_sha256": "a357fcc755ea3eedb9c81c01ee020356affab6e7e3eec9d9a1c2bf1dc9cd2952",
+          "sha256": "11e53ab41211bd5a22e4654782dc5ed3499bee550c147739fef016b21bfaee4e",
+          "bytes": 726881
+        },
+        {
+          "id": "san_tome__san_tome_46",
+          "region": "san_tome",
+          "relative_path": "v2/cache/new_panel_dinov2/san_tome__san_tome_46.npz",
+          "index": "v2/cache/new_panel_dinov2/index.json",
+          "index_sha256": "a357fcc755ea3eedb9c81c01ee020356affab6e7e3eec9d9a1c2bf1dc9cd2952",
+          "sha256": "305157adff7acf872adbd75980d4c4066e26aa79feabf08f57922e8b5a0ea034",
+          "bytes": 726664
+        },
+        {
+          "id": "soriano__soriano_20",
+          "region": "soriano",
+          "relative_path": "v2/cache/new_panel_dinov2/soriano__soriano_20.npz",
+          "index": "v2/cache/new_panel_dinov2/index.json",
+          "index_sha256": "a357fcc755ea3eedb9c81c01ee020356affab6e7e3eec9d9a1c2bf1dc9cd2952",
+          "sha256": "b0eaf1e23cf598484eff036ab48a2cd0dc50c3a1bb039d96765ad097c5e802ae",
+          "bytes": 727730
+        },
+        {
+          "id": "soriano__soriano_5",
+          "region": "soriano",
+          "relative_path": "v2/cache/new_panel_dinov2/soriano__soriano_5.npz",
+          "index": "v2/cache/new_panel_dinov2/index.json",
+          "index_sha256": "a357fcc755ea3eedb9c81c01ee020356affab6e7e3eec9d9a1c2bf1dc9cd2952",
+          "sha256": "5045489a604ddf4a50df0cf84ca5806feadaed0b3f55d44b6bc382e8761828f6",
+          "bytes": 727703
+        },
+        {
+          "id": "soriano__soriano_7",
+          "region": "soriano",
+          "relative_path": "v2/cache/new_panel_dinov2/soriano__soriano_7.npz",
+          "index": "v2/cache/new_panel_dinov2/index.json",
+          "index_sha256": "a357fcc755ea3eedb9c81c01ee020356affab6e7e3eec9d9a1c2bf1dc9cd2952",
+          "sha256": "f70d8a0aa4b595ff17ae76c0e4a46ce3b77bfd96e6eead952c26c1299b77bdfb",
+          "bytes": 727530
+        },
+        {
+          "id": "svaneti__svaneti_19",
+          "region": "svaneti",
+          "relative_path": "v2/cache/new_panel_dinov2/svaneti__svaneti_19.npz",
+          "index": "v2/cache/new_panel_dinov2/index.json",
+          "index_sha256": "a357fcc755ea3eedb9c81c01ee020356affab6e7e3eec9d9a1c2bf1dc9cd2952",
+          "sha256": "6ad96d7aca3ed57bb0a223a8f729139c38936d025d61c363c5aec376da209c69",
+          "bytes": 727073
+        },
+        {
+          "id": "svaneti__svaneti_45",
+          "region": "svaneti",
+          "relative_path": "v2/cache/new_panel_dinov2/svaneti__svaneti_45.npz",
+          "index": "v2/cache/new_panel_dinov2/index.json",
+          "index_sha256": "a357fcc755ea3eedb9c81c01ee020356affab6e7e3eec9d9a1c2bf1dc9cd2952",
+          "sha256": "1809acfe12f960f5bbec51e155d743be708231cc66bcdfef951e8f96389d6070",
+          "bytes": 726474
+        },
+        {
+          "id": "svaneti__svaneti_7",
+          "region": "svaneti",
+          "relative_path": "v2/cache/new_panel_dinov2/svaneti__svaneti_7.npz",
+          "index": "v2/cache/new_panel_dinov2/index.json",
+          "index_sha256": "a357fcc755ea3eedb9c81c01ee020356affab6e7e3eec9d9a1c2bf1dc9cd2952",
+          "sha256": "dd77dda18fc332e0b0971b57e3ef19dab3f51339de279c1cca2f3bc9a690aae9",
+          "bytes": 727854
+        },
+        {
+          "id": "tokyo__tokyo_13",
+          "region": "tokyo",
+          "relative_path": "v2/cache/new_panel_dinov2/tokyo__tokyo_13.npz",
+          "index": "v2/cache/new_panel_dinov2/index.json",
+          "index_sha256": "a357fcc755ea3eedb9c81c01ee020356affab6e7e3eec9d9a1c2bf1dc9cd2952",
+          "sha256": "0a79a9a86aabb2512e41bc2fdf6ee03c7b8403f9efc2290a63185edc1aaf0cdc",
+          "bytes": 726965
+        },
+        {
+          "id": "tokyo__tokyo_29",
+          "region": "tokyo",
+          "relative_path": "v2/cache/new_panel_dinov2/tokyo__tokyo_29.npz",
+          "index": "v2/cache/new_panel_dinov2/index.json",
+          "index_sha256": "a357fcc755ea3eedb9c81c01ee020356affab6e7e3eec9d9a1c2bf1dc9cd2952",
+          "sha256": "a38ecd9b2d175cbf6918d1a07a40ece2cafece19716c4e35fbbdf26887b90fd1",
+          "bytes": 726565
+        },
+        {
+          "id": "tokyo__tokyo_40",
+          "region": "tokyo",
+          "relative_path": "v2/cache/new_panel_dinov2/tokyo__tokyo_40.npz",
+          "index": "v2/cache/new_panel_dinov2/index.json",
+          "index_sha256": "a357fcc755ea3eedb9c81c01ee020356affab6e7e3eec9d9a1c2bf1dc9cd2952",
+          "sha256": "eb887c987e38f84d775a884b9752cf9392adc0a0ae9057abf7c0b0e618174963",
+          "bytes": 726987
+        },
+        {
+          "id": "tyrolw__tyrolw_4",
+          "region": "tyrolw",
+          "relative_path": "v2/cache/new_panel_dinov2/tyrolw__tyrolw_4.npz",
+          "index": "v2/cache/new_panel_dinov2/index.json",
+          "index_sha256": "a357fcc755ea3eedb9c81c01ee020356affab6e7e3eec9d9a1c2bf1dc9cd2952",
+          "sha256": "47cfd957677c40c276225856e56451be8c488c24663d76f366a0d6c00c64e0c9",
+          "bytes": 727264
+        },
+        {
+          "id": "tyrolw__tyrolw_57",
+          "region": "tyrolw",
+          "relative_path": "v2/cache/new_panel_dinov2/tyrolw__tyrolw_57.npz",
+          "index": "v2/cache/new_panel_dinov2/index.json",
+          "index_sha256": "a357fcc755ea3eedb9c81c01ee020356affab6e7e3eec9d9a1c2bf1dc9cd2952",
+          "sha256": "4d072573bfc9ef81945e43f948183faf1103103b4f84a38d419645ebeabb75ea",
+          "bytes": 726759
+        },
+        {
+          "id": "tyrolw__tyrolw_68",
+          "region": "tyrolw",
+          "relative_path": "v2/cache/new_panel_dinov2/tyrolw__tyrolw_68.npz",
+          "index": "v2/cache/new_panel_dinov2/index.json",
+          "index_sha256": "a357fcc755ea3eedb9c81c01ee020356affab6e7e3eec9d9a1c2bf1dc9cd2952",
+          "sha256": "08e0337f39b7e5b72b36b8084c61dbfdf46c3af2ba14d5bf670d9cc046671922",
+          "bytes": 727444
+        },
+        {
+          "id": "western__western_14",
+          "region": "western",
+          "relative_path": "v2/cache/new_panel_dinov2/western__western_14.npz",
+          "index": "v2/cache/new_panel_dinov2/index.json",
+          "index_sha256": "a357fcc755ea3eedb9c81c01ee020356affab6e7e3eec9d9a1c2bf1dc9cd2952",
+          "sha256": "ff8befab46a7483bf82fde40bb07b4ca4fb1bd03b78c2ce51de15738ab52ed36",
+          "bytes": 727513
+        },
+        {
+          "id": "western__western_18",
+          "region": "western",
+          "relative_path": "v2/cache/new_panel_dinov2/western__western_18.npz",
+          "index": "v2/cache/new_panel_dinov2/index.json",
+          "index_sha256": "a357fcc755ea3eedb9c81c01ee020356affab6e7e3eec9d9a1c2bf1dc9cd2952",
+          "sha256": "20590486959d8bac4fa1a5d0784abdc23498c819d0e2ec8a2935406543de5329",
+          "bytes": 727442
+        },
+        {
+          "id": "western__western_20",
+          "region": "western",
+          "relative_path": "v2/cache/new_panel_dinov2/western__western_20.npz",
+          "index": "v2/cache/new_panel_dinov2/index.json",
+          "index_sha256": "a357fcc755ea3eedb9c81c01ee020356affab6e7e3eec9d9a1c2bf1dc9cd2952",
+          "sha256": "b468e49df598c6781f3ac6d632f4c15960cf219a1888566fd83a35b8e07352dc",
+          "bytes": 727163
+        },
+        {
+          "id": "zanzibar__zanzibar_131",
+          "region": "zanzibar",
+          "relative_path": "v2/cache/new_panel_dinov2/zanzibar__zanzibar_131.npz",
+          "index": "v2/cache/new_panel_dinov2/index.json",
+          "index_sha256": "a357fcc755ea3eedb9c81c01ee020356affab6e7e3eec9d9a1c2bf1dc9cd2952",
+          "sha256": "a6232cdd0d3022f038c65e17f4a5cb50e710b79631242f8c4eccfb307d1528ca",
+          "bytes": 727306
+        },
+        {
+          "id": "zanzibar__zanzibar_133",
+          "region": "zanzibar",
+          "relative_path": "v2/cache/new_panel_dinov2/zanzibar__zanzibar_133.npz",
+          "index": "v2/cache/new_panel_dinov2/index.json",
+          "index_sha256": "a357fcc755ea3eedb9c81c01ee020356affab6e7e3eec9d9a1c2bf1dc9cd2952",
+          "sha256": "acca8c7b91d99f6b205bffdead0b37ea9b800dbdd0d19288c1504dcb561e769c",
+          "bytes": 726945
+        },
+        {
+          "id": "zanzibar__zanzibar_36",
+          "region": "zanzibar",
+          "relative_path": "v2/cache/new_panel_dinov2/zanzibar__zanzibar_36.npz",
+          "index": "v2/cache/new_panel_dinov2/index.json",
+          "index_sha256": "a357fcc755ea3eedb9c81c01ee020356affab6e7e3eec9d9a1c2bf1dc9cd2952",
+          "sha256": "ef12fedfbe7694a89d62fc129bc61c3302e1831297ec8b3de00f72819117accf",
+          "bytes": 727503
+        }
+      ]
+    },
+    "inventory_error": null,
+    "scientific_runs_or_scores_read": false,
+    "real_plan_assembly_or_reproduction_performed": false,
+    "fixtures_only": true,
+    "passed": true
+  },
+  "previous_attempts": [],
+  "final_code_and_document_sha256": {
+    "code/v2_package_delivery.py": "582299df32204d61f6f6ef114aba1de39fea8b8be0b83e36426d5d2a2984c04f",
+    "docs/v2_reproduction_guide.md": "e3cd0f04eecbcf7348ef5cec7b7e8c61b0e00385ebe85d00a0b389534d9b4045",
+    "docs/v2_environment_record.md": "8201fe0b966ae16965330c99ca5203e1961b1d117c365716c8a0d9761261398a",
+    "docs/v2_packaging.md": "3b44104680eb87e1db5869b86d7a6a9694d6c3227bd37437af212b34a782b1b8"
+  },
+  "documentation_clarification_after_test": {
+    "created_utc": "2026-10-18T01:49:00.968246+00:00",
+    "change": "Clarified that source120 caches retain native-mask-derived soft targets while panel72 caches retain evaluation features. No tested code changed."
+  },
+  "platform_skip_scope": "Two real symlink-creation fixtures skipped because Windows denied creation. Real Windows junction protection and mocked name-surrogate/cloud-tag tests passed. The stale-index rejection assertion executed before the cache-symlink fixture reached its platform skip."
+}

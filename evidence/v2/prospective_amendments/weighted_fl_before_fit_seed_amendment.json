@@ -1,0 +1,44 @@
+{
+  "status": "PROSPECTIVE_SUPPLEMENT_BEFORE_NEW_PANEL_EVALUATION",
+  "reason": "Add a controlled use of actual versus permuted source-group frequencies within the same facility-location objective. General weighted facility location and group-average utility are existing methods; no algorithmic novelty is claimed.",
+  "base_design": "configs/v2_design.json",
+  "base_design_unchanged": true,
+  "additional_strategies": [
+    "region_weighted_facility_location",
+    "permuted_region_weighted_facility_location"
+  ],
+  "pools": [
+    "skewed5_1"
+  ],
+  "weight": "1/(R*n_group(i)) on each covered candidate row i; selected representatives are unweighted columns",
+  "similarity": "Identical clipped shifted cosine and greedy tie order to ordinary facility location",
+  "permutation": "Same group-size-preserving label permutation as legacy permuted quota k-center; fresh selection RNG uses the original seed",
+  "balanced_degeneracy": "When source counts are equal, dispatch to ordinary facility location exactly. Do not refit duplicate balanced conditions.",
+  "full_model": "Use every existing full-model source split, budget, selection seed and initialization seed, restricted to pools above",
+  "frozen_control": "Use every existing frozen-control source split, budget, selection seed and initialization seed, restricted to pools above",
+  "expected_base_full_runs": 72,
+  "expected_base_frozen_runs": 432,
+  "expected_additional_full_runs": 18,
+  "expected_additional_frozen_runs": 54,
+  "expected_additional_total_runs": 72,
+  "expected_full_runs": 90,
+  "expected_frozen_runs": 486,
+  "expected_total_runs": 576,
+  "primary_unchanged": true,
+  "secondary_descriptive_contrasts": [
+    [
+      "region_weighted_facility_location",
+      "facility_location"
+    ],
+    [
+      "region_weighted_facility_location",
+      "permuted_region_weighted_facility_location"
+    ]
+  ],
+  "causal_boundary": "A comparison with quota k-center also changes the coverage objective. It cannot isolate quota rigidity; that would require a common-objective hard-quota control.",
+  "no_new_panel_scores_at_amendment": true,
+  "not_public_preregistration": true,
+  "created_utc": "2026-10-17T23:33:09.435400+00:00",
+  "base_design_sha256": "d790c26eae4a3c029cca73e3845efd3d95673017d88bafe42e37fb81f70046a4",
+  "calibration_status_at_amendment": "source0 complete; source1 running; no new-panel scores"
+}

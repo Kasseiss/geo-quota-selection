@@ -1,0 +1,16 @@
+{
+  "utc": "2026-10-17T23:05:14.178807+00:00",
+  "conversion_code_sha256": "28ab383e2d67f3c3a45f8fff796a7f54f5aee9f1bb5b66bd86ba4fd0a6370db6",
+  "tests": 8,
+  "failures": 0,
+  "errors": 0,
+  "real_old_pair": {
+    "id": "aachen__aachen_1",
+    "source_bytes_verified": 4004482,
+    "compact_payload_bytes": 372598,
+    "geographic_status": "warning_outside_declared_crs_or_operation_area_of_use"
+  },
+  "new_panel_payloads_read": false,
+  "network_accessed": false,
+  "temporary_outputs_removed": true
+}

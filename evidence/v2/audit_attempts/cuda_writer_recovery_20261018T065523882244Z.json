@@ -1,0 +1,12 @@
+{
+  "created_utc": "2026-10-18T06:55:22.526757+00:00",
+  "previous_lease": {
+    "pid": 24696,
+    "plan_sha256": "15d586fd03389d495dfc2b7d9cdea35b2b3089461ccb49cc37e5f8bd39ff1545"
+  },
+  "recorded_pid_confirmed_absent": true,
+  "existing_result_files_preserved": true,
+  "all53_original_frozen_hashes_match": true,
+  "gpu_runner_hash_matches_plan": true,
+  "reason": "Previous tool handles missing and actual process inventory confirms stopped; recover existing fixed run, not a new experiment."
+}

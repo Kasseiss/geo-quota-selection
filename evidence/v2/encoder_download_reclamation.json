@@ -1,0 +1,12 @@
+{
+  "created_utc": "2026-10-17T23:48:31.576372+00:00",
+  "relative_path": "runtime/torchhub/checkpoints/dinov2_vits14_pretrain.pth",
+  "bytes": 88283115,
+  "sha256": "b938bf1bc15cd2ec0feacfe3a1bb553fe8ea9ca46a7e1d8d00217f29aef60cd9",
+  "index_sha256": "a357fcc755ea3eedb9c81c01ee020356affab6e7e3eec9d9a1c2bf1dc9cd2952",
+  "reason": "Bounded2GB storage: official regenerable encoder download no longer needed by any planned fit; source and new-panel feature arrays remain available.",
+  "official_download_url": "https://dl.fbaipublicfiles.com/dinov2/dinov2_vits14/dinov2_vits14_pretrain.pth",
+  "original_data_removed": false,
+  "learned_research_checkpoint_removed": false,
+  "removed": true
+}

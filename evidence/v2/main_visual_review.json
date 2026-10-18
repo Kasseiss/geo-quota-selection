@@ -1,0 +1,240 @@
+{
+  "format": "v2-main-all-page-visual-review-1",
+  "created_utc": "2026-10-18T09:19:43.815431+00:00",
+  "passed": true,
+  "scope": "Rendered main manuscript visual/layout QA only; not journal acceptance, scientific audit or submission authorization.",
+  "reviewer": "Internal independent parallel_audit agent",
+  "docx": {
+    "path": "paper/v2/manuscript.docx",
+    "sha256": "287c4e2845cfefddd8b69bb751d147417dcf2728b2525c071492a01c394c1ee4"
+  },
+  "pdf": {
+    "path": "paper/v2/_qa/main/manuscript.pdf",
+    "sha256": "b0396af740ecb50d10dbc1b6de8028d757946ed320bfe0d3e734693d6c757629",
+    "page_count": 13
+  },
+  "final_public_pdf_expected_copy": {
+    "path": "paper/v2/manuscript.pdf",
+    "must_equal_sha256": "b0396af740ecb50d10dbc1b6de8028d757946ed320bfe0d3e734693d6c757629"
+  },
+  "render": {
+    "provided_by_parent": true,
+    "parent_final_render_native_session": 74460,
+    "reported_exit_code": 0,
+    "reported_dpi": 140,
+    "pixel_size": [
+      1190,
+      1540
+    ]
+  },
+  "pages_inspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+  ],
+  "pages_inspected_count": 13,
+  "inspection_method": "Every page viewed using view_image detail=original. Initial complete13-page review retained for9 final PNGs with byte-identical SHA; changed final pages2,4,5,6 then viewed again at original resolution after final render. No contact-sheet or text-only substitution.",
+  "final_changed_pages_reinspected": [
+    2,
+    4,
+    5,
+    6
+  ],
+  "byte_identical_final_pages_already_inspected": [
+    1,
+    3,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+  ],
+  "page_images": {
+    "1": {
+      "path": "paper/v2/_qa/main/page-1.png",
+      "sha256": "8fcead071f6c6c015d389fcded06fb83d755a0e0bb0c71809c196ea69c767a12",
+      "pixel_size": [
+        1190,
+        1540
+      ],
+      "inspected_at_original_resolution": true,
+      "passed": true
+    },
+    "2": {
+      "path": "paper/v2/_qa/main/page-2.png",
+      "sha256": "d61dd65b365665f94740b650054f820f7cfc7c51cd58fdf13acb24c930db0a77",
+      "pixel_size": [
+        1190,
+        1540
+      ],
+      "inspected_at_original_resolution": true,
+      "passed": true
+    },
+    "3": {
+      "path": "paper/v2/_qa/main/page-3.png",
+      "sha256": "cf72a622c7d4a0e768226bf3b1484ab15413d4f74d68e56887f9e9cf1b96639b",
+      "pixel_size": [
+        1190,
+        1540
+      ],
+      "inspected_at_original_resolution": true,
+      "passed": true
+    },
+    "4": {
+      "path": "paper/v2/_qa/main/page-4.png",
+      "sha256": "b6faa6f660d0a5d89ffb790e7e29f03d4b2033ad829d3f4a51cd4fd754c6fcab",
+      "pixel_size": [
+        1190,
+        1540
+      ],
+      "inspected_at_original_resolution": true,
+      "passed": true
+    },
+    "5": {
+      "path": "paper/v2/_qa/main/page-5.png",
+      "sha256": "4e54963ec1eccadc7e0e6aee6afbef31a735c86b10a73215225341dafab07239",
+      "pixel_size": [
+        1190,
+        1540
+      ],
+      "inspected_at_original_resolution": true,
+      "passed": true
+    },
+    "6": {
+      "path": "paper/v2/_qa/main/page-6.png",
+      "sha256": "46f68b4ccf9c49b6afdc315e7b820b4647bbd8c3653d01b78f5dca49cad38443",
+      "pixel_size": [
+        1190,
+        1540
+      ],
+      "inspected_at_original_resolution": true,
+      "passed": true
+    },
+    "7": {
+      "path": "paper/v2/_qa/main/page-7.png",
+      "sha256": "4609c1e17649869e8526b918bdf8059a3f61ccd3266e0f637a15ae4ec0d1da5f",
+      "pixel_size": [
+        1190,
+        1540
+      ],
+      "inspected_at_original_resolution": true,
+      "passed": true
+    },
+    "8": {
+      "path": "paper/v2/_qa/main/page-8.png",
+      "sha256": "a489e6c1d60fbb66ad4c49af30a4a2b8af0a882804a1e4b6fa08d52e4ad112b8",
+      "pixel_size": [
+        1190,
+        1540
+      ],
+      "inspected_at_original_resolution": true,
+      "passed": true
+    },
+    "9": {
+      "path": "paper/v2/_qa/main/page-9.png",
+      "sha256": "be794b571867b3b9296ac0e0790429a07edb78e002def8cd7901b0437c4bbde1",
+      "pixel_size": [
+        1190,
+        1540
+      ],
+      "inspected_at_original_resolution": true,
+      "passed": true
+    },
+    "10": {
+      "path": "paper/v2/_qa/main/page-10.png",
+      "sha256": "6b04f08f621c6281688453ce3e7e9554b01d6dfd378c457a5a43d6bcb51b25d9",
+      "pixel_size": [
+        1190,
+        1540
+      ],
+      "inspected_at_original_resolution": true,
+      "passed": true
+    },
+    "11": {
+      "path": "paper/v2/_qa/main/page-11.png",
+      "sha256": "8d8643628395a8d93c64d6bac0f6b04d468e35b0b089cafc1b131d05653d28af",
+      "pixel_size": [
+        1190,
+        1540
+      ],
+      "inspected_at_original_resolution": true,
+      "passed": true
+    },
+    "12": {
+      "path": "paper/v2/_qa/main/page-12.png",
+      "sha256": "27a6b413ea06a622d11f059b5e10f8a18d1a8549b89385a51279725396a1d0ea",
+      "pixel_size": [
+        1190,
+        1540
+      ],
+      "inspected_at_original_resolution": true,
+      "passed": true
+    },
+    "13": {
+      "path": "paper/v2/_qa/main/page-13.png",
+      "sha256": "4a4065b5f931d3f8aafbf915363528d1fb9d16d87110a471224f68ee675cd12e",
+      "pixel_size": [
+        1190,
+        1540
+      ],
+      "inspected_at_original_resolution": true,
+      "passed": true
+    }
+  },
+  "tables": [
+    {
+      "table": 1,
+      "font_pt": 9.5,
+      "shading_elements": 0,
+      "three_line_black_borders_visually_confirmed": true
+    },
+    {
+      "table": 2,
+      "font_pt": 9.5,
+      "shading_elements": 0,
+      "three_line_black_borders_visually_confirmed": true
+    },
+    {
+      "table": 3,
+      "font_pt": 9.5,
+      "shading_elements": 0,
+      "three_line_black_borders_visually_confirmed": true
+    },
+    {
+      "table": 4,
+      "font_pt": 9.5,
+      "shading_elements": 0,
+      "three_line_black_borders_visually_confirmed": true
+    }
+  ],
+  "findings": {
+    "glyphs_legible": true,
+    "missing_glyphs_or_black_boxes": false,
+    "visible_clipping_or_overlap": false,
+    "bad_blank_pages": false,
+    "bad_orphaned_headings_or_single_lines": false,
+    "figure_caption_pairs_same_page": {
+      "Figure1": 6,
+      "Figure2": 9
+    },
+    "table4_continuation": "Pages7–8 repeat the complete header; rows and final bottom border/table note remain intact.",
+    "paragraph_flow": "All section headings retain following content. Text continuations across2–3,3–4,4–5,10–11 and reference12 across12–13 remain readable and continuous.",
+    "intentional_whitespace": "Page8 has lower-page whitespace before the large complete Figure2 on page9; final reference page13 is shorter. Neither creates a blank page or orphaned caption.",
+    "outside_page_pdf_glyph_count": 0,
+    "issues_requiring_repair": []
+  },
+  "read_only_artifacts": true,
+  "only_new_file_written": "evidence/v2/main_visual_review.json"
+}

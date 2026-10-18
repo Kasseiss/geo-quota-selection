@@ -1,0 +1,178 @@
+{
+  "format": "v2-introduction-outline-check-1",
+  "created_utc": "2026-10-18T01:19:26.623562+00:00",
+  "scope": "Working evidence outline only; mechanical and bounded claim-scope review, not source-exhaustiveness or novelty approval",
+  "artifact": "paper/v2_working/introduction_outline.json",
+  "artifact_sha256": "a6c4be7996751fba1f5001c5d60521df9a25af09c3fa7a8492775fb04b1da4be",
+  "input_sha256": {
+    "docs/references_v2.bib": "2336b3efcf61fbca512b0872d834de35c36839e14f41498053b990fb7ff7d01c",
+    "docs/v2_literature_matrix.md": "202ad59165103a347b082686f38bd70bf39ed6f135e944722b6171049e299ad0",
+    "docs/v2_nogueira_version_check.md": "63501c93136f4863cda827acdd3b7af8d368c2c45acedd807b8dcc9e21b71722",
+    "docs/v2_li2026_fulltext_check.md": "9a9c42d879fc551e3debe75ab5668471818a2f387c0ec3b322001b946cffacf1",
+    "configs/v2_design.json": "d790c26eae4a3c029cca73e3845efd3d95673017d88bafe42e37fb81f70046a4",
+    "configs/v2_extension.json": "7786624c6fc28aafe71f86495e8c653ab8ffc860cf2e316048e78db5c089ba92"
+  },
+  "checks": {
+    "json_parse": true,
+    "bibliography_entries": 25,
+    "unique_bibliography_keys": 25,
+    "duplicate_bibliography_keys": [],
+    "unknown_citation_keys": [],
+    "used_citation_keys": [
+      "alemadi2025spatialshift",
+      "he2016resnet",
+      "he2024geocomplexity",
+      "kaijage2024spatialal",
+      "li2026spatialsampling",
+      "lu2025strategicsampling",
+      "mittal2025realistic",
+      "nogueira2026coreset",
+      "oquab2024dinov2",
+      "rafiey2024decomposable",
+      "roberts2017crossvalidation",
+      "ronneberger2015unet",
+      "sener2018coreset",
+      "wang2024utilityfairness",
+      "wei2015submodularity",
+      "xia2023openearthmap"
+    ],
+    "claim_contracts": 9,
+    "research_questions": 4,
+    "all_claims_have_sources_locations_limits": true,
+    "research_question_links_valid": true,
+    "exclusion_support_complete": true,
+    "primary_condition_matches_design": true,
+    "narrative_word_count": 1099,
+    "word_count_scope": "Reader contract, claim/function/bridge/limits, questions/contrasts/boundaries, exclusions and uncertainty text; excludes JSON keys, URLs and locator metadata",
+    "bounded_stock_phrase_scan_findings": []
+  },
+  "claim_source_locations": [
+    {
+      "key": "xia2023openearthmap",
+      "source": "https://openaccess.thecvf.com/content/WACV2023/html/Xia_OpenEarthMap_A_Benchmark_Dataset_for_Global_High-Resolution_Land_Cover_Mapping_WACV_2023_paper.html",
+      "location": "Official CVF title/abstract: global high-resolution land-cover benchmark",
+      "level": "C"
+    },
+    {
+      "key": "nogueira2026coreset",
+      "source": "https://elib.dlr.de/225462/1/Core-Set_Selection_for_Data-Efficient_Land_Cover_Segmentation.pdf",
+      "location": "§III opening; §IV-B; §V-A, pp19893–19897",
+      "level": "A, specified published main-text scope"
+    },
+    {
+      "key": "alemadi2025spatialshift",
+      "source": "https://link.springer.com/article/10.1007/s11263-025-02518-z",
+      "location": "§5.4; §5.7.1–5.7.2",
+      "level": "A"
+    },
+    {
+      "key": "sener2018coreset",
+      "source": "https://openreview.net/forum?id=H1aIuk-RW",
+      "location": "Core-set method discussion; exact subsection not newly rechecked",
+      "level": "C"
+    },
+    {
+      "key": "wei2015submodularity",
+      "source": "https://proceedings.mlr.press/v37/wei15.pdf",
+      "location": "§3, Eq.(6) and facility-location discussion; §4, Algorithm1",
+      "level": "A"
+    },
+    {
+      "key": "nogueira2026coreset",
+      "source": "https://elib.dlr.de/225462/1/Core-Set_Selection_for_Data-Efficient_Land_Cover_Segmentation.pdf",
+      "location": "§III-B; §IV-C, pp19894,19896",
+      "level": "A, specified published main-text scope"
+    },
+    {
+      "key": "nogueira2026coreset",
+      "source": "https://elib.dlr.de/225462/1/Core-Set_Selection_for_Data-Efficient_Land_Cover_Segmentation.pdf",
+      "location": "§III/Table1; §IV-A–D; §V-A, pp19893–19898",
+      "level": "A, formal version"
+    },
+    {
+      "key": "lu2025strategicsampling",
+      "source": "https://doi.org/10.1016/j.rse.2025.115034",
+      "location": "§2.2.3; §3.2.3, previously checked author-uploaded text",
+      "level": "C; supplements unavailable"
+    },
+    {
+      "key": "he2024geocomplexity",
+      "source": "https://www.mdpi.com/2072-4292/16/11/1987",
+      "location": "§2.1 Eq.(1); §2.2 Fig.4; §3.1",
+      "level": "C"
+    },
+    {
+      "key": "kaijage2024spatialal",
+      "source": "https://ris.utwente.nl/ws/portalfiles/portal/462920020/sensors-24-02108.pdf",
+      "location": "§3.2–3.3; §4.2",
+      "level": "C"
+    },
+    {
+      "key": "li2026spatialsampling",
+      "source": "https://www.sciencedirect.com/science/article/pii/S2211675326000588",
+      "location": "Highlights/Abstract only; access record in docs/v2_li2026_fulltext_check.md",
+      "level": "D"
+    },
+    {
+      "key": "wang2024utilityfairness",
+      "source": "https://openproceedings.org/2024/conf/edbt/paper-7.pdf",
+      "location": "§2–3, group utilities and Eqs.(1)–(2)",
+      "level": "A"
+    },
+    {
+      "key": "rafiey2024decomposable",
+      "source": "https://arxiv.org/html/2402.00138v2",
+      "location": "Eq.(1); §5/AppendixD.1; formal citation via PMLR235",
+      "level": "A; author-manuscript method location"
+    },
+    {
+      "key": "mittal2025realistic",
+      "source": "https://link.springer.com/article/10.1007/s11263-025-02372-z",
+      "location": "§2.3; §4.1; segmentation experimental appendix",
+      "level": "A"
+    },
+    {
+      "key": "roberts2017crossvalidation",
+      "source": "https://doi.org/10.1111/ecog.02881",
+      "location": "Structured-data cross-validation discussion; finer locator not newly checked",
+      "level": "C"
+    },
+    {
+      "key": "oquab2024dinov2",
+      "source": "https://openreview.net/forum?id=a68SUt6zFt",
+      "location": "Formal TMLR2024 record; representation role retained in literature matrix",
+      "level": "C"
+    },
+    {
+      "key": "he2016resnet",
+      "source": "https://openaccess.thecvf.com/content_cvpr_2016/html/He_Deep_Residual_Learning_CVPR_2016_paper.html",
+      "location": "Architecture and experiments; matrix's retained source",
+      "level": "C"
+    },
+    {
+      "key": "ronneberger2015unet",
+      "source": "https://link.springer.com/chapter/10.1007/978-3-319-24574-4_28",
+      "location": "Formal MICCAI chapter record, LNCS9351, pp234–241",
+      "level": "D for this task's retained metadata scope"
+    }
+  ],
+  "manual_scope_review": {
+    "claim_citation_alignment": "Checked against the current matrix and specified version/access records; inherited C/D levels retained.",
+    "argument_order": "Task and budget definition, geographic composition, visual objectives, alignment question; related work leads into matched questions.",
+    "functional_editing": "Reader purpose, main claim, evidence limit and bridge recorded for each block; no final manuscript paragraphs written.",
+    "outcome_language": "No project effect estimates, directions, significance claims or acceptance recommendations included.",
+    "version_boundary": "Nogueira formal main-text scope distinguished from historical v2; Li remains abstract-only.",
+    "limits": "No new primary-source browsing; original sources were not all reread during this outline task. Stock-pattern scan is not an authorship or prose-quality certificate."
+  },
+  "factual_uncertainties": [
+    "Li detailed protocol remains unavailable; the comparison must retain its abstract-only boundary.",
+    "Nogueira's external materials and complete v2-to-published diff remain unchecked despite specified formal main-text verification.",
+    "Lu supplements remain unavailable; geographic independence cannot be inferred from region names or image identifiers.",
+    "OpenEarthMap pagination conflict is unresolved in the retained bibliography; Roberts and Sener fine-grained locators are not newly checked."
+  ],
+  "project_model_results_read": false,
+  "new_browsing_performed": false,
+  "final_manuscript": false,
+  "novelty_approved": false,
+  "skill_used": "academic-writing-skills; bounded outline mode; explicit user restriction preserved manuscript-state and Methods artifacts untouched"
+}

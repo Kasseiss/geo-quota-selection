@@ -1,0 +1,50 @@
+{
+  "created_utc": "2026-10-18T07:38:51.121997+00:00",
+  "completed_cuda_snapshot": 38,
+  "trial_records": [
+    {
+      "generation": "20261018T072413_80f828a119",
+      "workers": 2,
+      "status": "complete",
+      "successful_fitting_steps": 4800,
+      "wall_seconds": 336.9060000000027,
+      "startup_wall_seconds": 55.562000000005355,
+      "fitting_phase_wall_seconds": 281.3439999999973,
+      "fitting_phase_seconds_per_600_steps": 35.167999999999665,
+      "normalized_seconds_per_600_steps": 42.113250000000335,
+      "summary_file": "evidence/v2/cuda_execution/parallel/20261018T072413_80f828a119/supervisor_summary.json",
+      "summary_sha256": "e11846fbb3f6490f4eb2efa6715ecdfa8e4df46e2416176cf869be50869d00b5"
+    },
+    {
+      "generation": "20261018T073131_cb9b1c1f59",
+      "workers": 4,
+      "status": "complete",
+      "successful_fitting_steps": 4800,
+      "wall_seconds": 361.0,
+      "startup_wall_seconds": 94.89100000000326,
+      "fitting_phase_wall_seconds": 266.10899999999674,
+      "fitting_phase_seconds_per_600_steps": 33.26362499999959,
+      "normalized_seconds_per_600_steps": 45.125,
+      "summary_file": "evidence/v2/cuda_execution/parallel/20261018T073131_cb9b1c1f59/supervisor_summary.json",
+      "summary_sha256": "a599263d047379b14b23f1747d7c2b60192e7dd880240fbd60dcfc0f705005db"
+    }
+  ],
+  "four_vs_two_fitting_wall_reduction_percent": 5.415079049135841,
+  "four_vs_two_total_wall_change_percent": 7.151549690417247,
+  "cohort": "Each trial completed4 missing source1/1200-step fits,4800 steps total; distinct identities and time periods, not a randomized systems benchmark.",
+  "selection": "two workers sustained V2; four workers had limited fitting benefit and low observed free physical RAM (~430MB); reduced budget-lock scope software tested and reviewed.",
+  "production_session": 41044,
+  "production_generation": "20261018T073802_4f529989bd",
+  "executor_sha256": "80d9e40683f1703fe5c7d12367680d0a207177f75d656c44038fa57e15d9945b",
+  "hardware_samples": {
+    "four_active": "evidence/v2/software/cuda_parallel_four_active_samples.json",
+    "four_active_range_percent": [
+      98,
+      99
+    ],
+    "dense_sample_caution": "cuda_parallel_dense_samples.json sampled after2-worker generation completion, all idle; not an active-training utilization estimate.",
+    "task_manager": "Screenshots display0%; cause of mismatch remains unresolved. Windows GPU index1 and CUDA ordinal0 identify the same RTX4060 in this environment."
+  },
+  "scientific_scores_used": false,
+  "limits": "No evidence of sustained100%; initialization, scans, evaluation and fit transitions can be idle. Actual V2 production throughput still to be measured."
+}

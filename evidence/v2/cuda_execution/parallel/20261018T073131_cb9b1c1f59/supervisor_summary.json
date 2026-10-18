@@ -1,0 +1,313 @@
+{
+  "generation": "20261018T073131_cb9b1c1f59",
+  "workers": 4,
+  "child_statuses": [
+    {
+      "worker": 0,
+      "pid": 20056,
+      "exit_code": 0,
+      "summary": {
+        "worker": 0,
+        "workers": 4,
+        "generation": "20261018T073131_cb9b1c1f59",
+        "assigned_indices": [
+          0,
+          4,
+          8,
+          12,
+          16,
+          20,
+          24,
+          28,
+          32,
+          36,
+          40,
+          44,
+          48,
+          52,
+          56,
+          60,
+          64,
+          68,
+          72,
+          76,
+          80,
+          84,
+          88
+        ],
+        "executed_indices": [
+          36
+        ],
+        "skipped_existing": [
+          0,
+          4,
+          8,
+          12,
+          16,
+          20,
+          24,
+          28,
+          32
+        ],
+        "successful_fitting_steps": 1200,
+        "status": "complete",
+        "wall_seconds": 263.1399999999994,
+        "process": {
+          "pid": 20056,
+          "alive": true,
+          "creation_token": "134367822996276300",
+          "working_set_bytes": 1366614016,
+          "peak_working_set_bytes": 1452752896
+        },
+        "free_physical_bytes_at_end": 1829330944
+      }
+    },
+    {
+      "worker": 1,
+      "pid": 26236,
+      "exit_code": 0,
+      "summary": {
+        "worker": 1,
+        "workers": 4,
+        "generation": "20261018T073131_cb9b1c1f59",
+        "assigned_indices": [
+          1,
+          5,
+          9,
+          13,
+          17,
+          21,
+          25,
+          29,
+          33,
+          37,
+          41,
+          45,
+          49,
+          53,
+          57,
+          61,
+          65,
+          69,
+          73,
+          77,
+          81,
+          85,
+          89
+        ],
+        "executed_indices": [
+          37
+        ],
+        "skipped_existing": [
+          1,
+          5,
+          9,
+          13,
+          17,
+          21,
+          25,
+          29,
+          33
+        ],
+        "successful_fitting_steps": 1200,
+        "status": "complete",
+        "wall_seconds": 260.67200000000594,
+        "process": {
+          "pid": 26236,
+          "alive": true,
+          "creation_token": "134367823214336809",
+          "working_set_bytes": 1365528576,
+          "peak_working_set_bytes": 1406177280
+        },
+        "free_physical_bytes_at_end": 718438400
+      }
+    },
+    {
+      "worker": 2,
+      "pid": 2420,
+      "exit_code": 0,
+      "summary": {
+        "worker": 2,
+        "workers": 4,
+        "generation": "20261018T073131_cb9b1c1f59",
+        "assigned_indices": [
+          2,
+          6,
+          10,
+          14,
+          18,
+          22,
+          26,
+          30,
+          34,
+          38,
+          42,
+          46,
+          50,
+          54,
+          58,
+          62,
+          66,
+          70,
+          74,
+          78,
+          82,
+          86
+        ],
+        "executed_indices": [
+          34
+        ],
+        "skipped_existing": [
+          2,
+          6,
+          10,
+          14,
+          18,
+          22,
+          26,
+          30
+        ],
+        "successful_fitting_steps": 1200,
+        "status": "complete",
+        "wall_seconds": 263.31299999999464,
+        "process": {
+          "pid": 2420,
+          "alive": true,
+          "creation_token": "134367823432083427",
+          "working_set_bytes": 1364131840,
+          "peak_working_set_bytes": 1404575744
+        },
+        "free_physical_bytes_at_end": 1841291264
+      }
+    },
+    {
+      "worker": 3,
+      "pid": 21000,
+      "exit_code": 0,
+      "summary": {
+        "worker": 3,
+        "workers": 4,
+        "generation": "20261018T073131_cb9b1c1f59",
+        "assigned_indices": [
+          3,
+          7,
+          11,
+          15,
+          19,
+          23,
+          27,
+          31,
+          35,
+          39,
+          43,
+          47,
+          51,
+          55,
+          59,
+          63,
+          67,
+          71,
+          75,
+          79,
+          83,
+          87
+        ],
+        "executed_indices": [
+          35
+        ],
+        "skipped_existing": [
+          3,
+          7,
+          11,
+          15,
+          19,
+          23,
+          27,
+          31
+        ],
+        "successful_fitting_steps": 1200,
+        "status": "complete",
+        "wall_seconds": 264.1399999999994,
+        "process": {
+          "pid": 21000,
+          "alive": true,
+          "creation_token": "134367823647205518",
+          "working_set_bytes": 1363804160,
+          "peak_working_set_bytes": 1404358656
+        },
+        "free_physical_bytes_at_end": 1904308224
+      }
+    }
+  ],
+  "ram_observations": [
+    {
+      "free_physical_bytes": 4152229888,
+      "required_bytes": 2415919104,
+      "pending_workers": 4,
+      "per_worker_forecast_bytes": 536870912,
+      "utc": "2026-10-18T07:31:23.731075+00:00"
+    },
+    {
+      "free_physical_bytes": 4165746688,
+      "required_bytes": 2415919104,
+      "pending_workers": 4,
+      "per_worker_forecast_bytes": 536870912,
+      "utc": "2026-10-18T07:31:39.587783+00:00"
+    },
+    {
+      "after_worker_ready": 0,
+      "free_physical_bytes": 3708731392,
+      "next_worker_forecast_bytes": 536870912
+    },
+    {
+      "free_physical_bytes": 3708731392,
+      "required_bytes": 1879048192,
+      "pending_workers": 3,
+      "per_worker_forecast_bytes": 536870912,
+      "utc": "2026-10-18T07:32:01.366895+00:00"
+    },
+    {
+      "after_worker_ready": 1,
+      "free_physical_bytes": 3403026432,
+      "next_worker_forecast_bytes": 536870912
+    },
+    {
+      "free_physical_bytes": 3403026432,
+      "required_bytes": 1342177280,
+      "pending_workers": 2,
+      "per_worker_forecast_bytes": 536870912,
+      "utc": "2026-10-18T07:32:23.134588+00:00"
+    },
+    {
+      "after_worker_ready": 2,
+      "free_physical_bytes": 3219189760,
+      "next_worker_forecast_bytes": 536870912
+    },
+    {
+      "free_physical_bytes": 3219189760,
+      "required_bytes": 805306368,
+      "pending_workers": 1,
+      "per_worker_forecast_bytes": 536870912,
+      "utc": "2026-10-18T07:32:44.648110+00:00"
+    },
+    {
+      "after_worker_ready": 3,
+      "free_physical_bytes": 2898948096,
+      "next_worker_forecast_bytes": 536870912
+    }
+  ],
+  "plan_sha256": "15d586fd03389d495dfc2b7d9cdea35b2b3089461ccb49cc37e5f8bd39ff1545",
+  "executor_code_sha256": "ac41d0c19aabdb6ffb041b07f50fd02828872f4bdac039ff886dd84d78d6bffc",
+  "status": "complete",
+  "successful_fitting_steps": 4800,
+  "started_utc": "2026-10-18T07:31:31.349843+00:00",
+  "wall_seconds": 361.0,
+  "successful_600_step_units": 8.0,
+  "normalized_seconds_per_600_steps": 45.125,
+  "fitting_phase_wall_seconds": 266.10899999999674,
+  "startup_wall_seconds": 94.89100000000326,
+  "fitting_phase_seconds_per_600_steps": 33.26362499999959,
+  "free_physical_bytes_at_end": 5462904832,
+  "finished_utc": "2026-10-18T07:37:32.346184+00:00",
+  "score_fields_read": false
+}

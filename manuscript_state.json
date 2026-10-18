@@ -1,0 +1,608 @@
+{
+  "schema_version": "1.1",
+  "project": {
+    "id": "mdpi-dl-20261018",
+    "title": "Geographic quotas and visual diversity in source image selection for land cover segmentation",
+    "archetype": "empirical",
+    "study_designs": [
+      "computational empirical benchmark"
+    ],
+    "lifecycle_stage": "V2 manuscript and supplement completed; all31 pages visually reviewed; standalone package verification pending",
+    "review_maturity": "exact artifact review",
+    "target_venue": "Remote Sensing (MDPI)",
+    "active_release": "V2_AUTHOR_REVIEW_PACKAGE",
+    "updated_utc": "2026-10-18T09:30:41.401325+00:00"
+  },
+  "artifacts": [
+    {
+      "id": "protocol",
+      "path": "docs/research_protocol.md",
+      "role": "study_protocol",
+      "status": "SUPERSEDED",
+      "required_for_release": false
+    },
+    {
+      "id": "venue",
+      "path": "docs/venue_evidence.md",
+      "role": "venue_evidence",
+      "status": "ACTIVE",
+      "required_for_release": false
+    },
+    {
+      "id": "formal_protocol",
+      "path": "docs/formal_protocol.md",
+      "role": "study_protocol",
+      "status": "HISTORICAL",
+      "required_for_release": false
+    },
+    {
+      "id": "main",
+      "path": "paper/manuscript.docx",
+      "role": "main_manuscript",
+      "status": "HISTORICAL",
+      "required_for_release": false
+    },
+    {
+      "id": "main_pdf",
+      "path": "paper/manuscript.pdf",
+      "role": "export",
+      "status": "HISTORICAL",
+      "required_for_release": false
+    },
+    {
+      "id": "supplement",
+      "path": "paper/supplementary_material.docx",
+      "role": "supplement",
+      "status": "HISTORICAL",
+      "required_for_release": false
+    },
+    {
+      "id": "supplement_pdf",
+      "path": "paper/supplementary_material.pdf",
+      "role": "export",
+      "status": "HISTORICAL",
+      "required_for_release": false
+    },
+    {
+      "id": "manuscript_source",
+      "path": "paper/manuscript_source.json",
+      "role": "editable_source",
+      "status": "HISTORICAL",
+      "required_for_release": false
+    },
+    {
+      "id": "cover_letter",
+      "path": "submission/cover_letter_draft.txt",
+      "role": "cover_letter",
+      "status": "HISTORICAL",
+      "required_for_release": false
+    },
+    {
+      "id": "v2_protocol",
+      "path": "docs/v2_protocol.md",
+      "role": "study_protocol",
+      "status": "ACTIVE",
+      "required_for_release": true
+    },
+    {
+      "id": "v2_design",
+      "path": "configs/v2_design.json",
+      "role": "study_design",
+      "status": "ACTIVE",
+      "required_for_release": true
+    },
+    {
+      "id": "v2_supplement_design",
+      "path": "configs/v2_extension.json",
+      "role": "study_design",
+      "status": "ACTIVE",
+      "required_for_release": true
+    },
+    {
+      "id": "v2_main",
+      "path": "paper/v2/manuscript.docx",
+      "role": "main_manuscript",
+      "status": "AUTHOR_REVIEW_PACKAGE",
+      "required_for_release": true
+    },
+    {
+      "id": "v2_main_pdf",
+      "path": "paper/v2/manuscript.pdf",
+      "role": "export",
+      "status": "AUTHOR_REVIEW_PACKAGE",
+      "required_for_release": true
+    },
+    {
+      "id": "v2_supplement",
+      "path": "paper/v2/supplementary_material.docx",
+      "role": "supplement",
+      "status": "AUTHOR_REVIEW_PACKAGE",
+      "required_for_release": true
+    },
+    {
+      "id": "v2_supplement_pdf",
+      "path": "paper/v2/supplementary_material.pdf",
+      "role": "export",
+      "status": "AUTHOR_REVIEW_PACKAGE",
+      "required_for_release": true
+    },
+    {
+      "id": "v2_source",
+      "path": "paper/v2/manuscript_source.json",
+      "role": "editable_source",
+      "status": "AUTHOR_REVIEW_PACKAGE",
+      "required_for_release": true
+    },
+    {
+      "id": "v2_supplement_source",
+      "path": "paper/v2/supplementary_source.json",
+      "role": "editable_source",
+      "status": "AUTHOR_REVIEW_PACKAGE",
+      "required_for_release": true
+    },
+    {
+      "id": "v2_methods_working",
+      "path": "paper/v2_working/methods_source.json",
+      "role": "working_methods_material",
+      "status": "WORKING_FACT_CHECKED_NOT_RELEASED",
+      "required_for_release": false,
+      "fact_review": "evidence/v2/methods_working_review.json",
+      "fact_review_sha256": "dcdeda1325ad66127a1be197f7c3ab10c75c3a95d2daa9d96016a66398021084"
+    },
+    {
+      "id": "v2_intro_working",
+      "path": "paper/v2_working/introduction_outline.json",
+      "role": "working_introduction_evidence_outline",
+      "status": "WORKING_NOT_RELEASED",
+      "required_for_release": false,
+      "scope_check": "evidence/v2/introduction_outline_check.json"
+    },
+    {
+      "id": "v2_supplement_design_working",
+      "path": "paper/v2_working/supplement_design_tables.json",
+      "role": "working_supplement_design_tables",
+      "status": "WORKING_FACT_CHECKED_NOT_RELEASED",
+      "required_for_release": false,
+      "scope_check": "evidence/v2/supplement_design_tables_check.json"
+    },
+    {
+      "id": "v2_cuda_execution_plan",
+      "path": "configs/v2_cuda_execution_plan.json",
+      "role": "secondary_cuda_execution_plan",
+      "status": "RUNNING",
+      "required_for_release": true
+    },
+    {
+      "id": "v2_pixel_budget_protocol",
+      "path": "docs/v2_pixel_budget_protocol.md",
+      "role": "study_protocol",
+      "status": "ACTIVE_SECONDARY_POST_PANEL_EXPOSURE",
+      "required_for_release": true
+    },
+    {
+      "id": "v2_pixel_budget_plan",
+      "path": "configs/v2_pixel_budget_plan.json",
+      "role": "study_design",
+      "status": "PENDING_IMPLEMENTATION_FREEZE",
+      "required_for_release": true
+    }
+  ],
+  "authority_sources": [
+    {
+      "id": "user-20261018-storage",
+      "kind": "user_instruction",
+      "path_or_reference": "Current chat: 2GB and RTX4060",
+      "scope": [
+        "storage",
+        "compute"
+      ],
+      "status": "VERIFIED",
+      "last_verified": "2026-10-18"
+    },
+    {
+      "id": "data_access_validation.json",
+      "kind": "verified_primary_evidence",
+      "path_or_reference": "data_access_validation.json",
+      "scope": [
+        "dataset acquisition"
+      ],
+      "status": "VERIFIED",
+      "last_verified": "2026-10-18"
+    },
+    {
+      "id": "formal_freeze",
+      "kind": "local_experimental_record",
+      "path_or_reference": "configs/formal_plan.json",
+      "scope": [
+        "formal matrix",
+        "analysis"
+      ],
+      "status": "VERIFIED",
+      "last_verified": "2026-10-18"
+    },
+    {
+      "id": "formal_data",
+      "kind": "verified_primary_evidence",
+      "path_or_reference": "data_access_validation120.json",
+      "scope": [
+        "data integrity"
+      ],
+      "status": "VERIFIED",
+      "last_verified": "2026-10-18"
+    }
+  ],
+  "contract": {
+    "gap": "Conditional predictive value of source-geography grouping beyond worst-distance and mean visual coverage, across fixed source allocations and two recorded segmentation recipes.",
+    "task": "Label-blind offline image-subset comparisons at matched per-fit image counts; shared labeled development/calibration outside these counts.",
+    "outcomes": [
+      "equal-region union-class mIoU (primary)",
+      "truth-present mIoU (secondary convention)",
+      "source-specific and regional effects",
+      "source-only subset coverage and class availability (descriptive)"
+    ],
+    "questions": [
+      {
+        "id": "V2Q1",
+        "text": "Does real quota k-center outperform k-center under the fixed complete-model/skew/B12 primary condition?",
+        "lock": "FROZEN"
+      },
+      {
+        "id": "V2Q2",
+        "text": "Do actual geography labels add value relative to size-preserving arbitrary groups, under the same selection procedure?",
+        "lock": "FROZEN"
+      },
+      {
+        "id": "V2Q3",
+        "text": "How do policy contrasts vary across source allocations, model recipes, budgets and metric conventions?",
+        "lock": "FROZEN"
+      },
+      {
+        "id": "V2Q4",
+        "text": "What does real versus permuted inverse-region-frequency facility location show within a common weighted-coverage objective?",
+        "lock": "FROZEN_SECONDARY"
+      }
+    ],
+    "contribution": "Pending assessment after complete576; empirical evidence only, not a novel algorithm or architecture.",
+    "nonclaims": [
+      "No SOTA, priority or acceptance guarantee",
+      "No equivalence inferred from a zero-crossing interval",
+      "Two model recipes do not isolate fine-tuning as a causal factor",
+      "Purposive24-region panel does not support global iid inference",
+      "No A100 computation claimed without verified execution",
+      "CUDA90 secondary execution reuses the panel and changes backend/software; not a new independent confirmatory test or causal hardware comparison.",
+      "Pixel-budget27 supplementary fits equalize available unique processed448 supervision pixels only, not cumulative crop visits, native annotation cost/time, class composition or new independent geographies."
+    ]
+  },
+  "semantic_locks": [],
+  "terminology": [],
+  "style_profile": {
+    "language_variant": "English",
+    "protected_terms": [
+      "DINOv2",
+      "ResNet18",
+      "OpenEarthMap",
+      "k-center",
+      "mIoU",
+      "IoU",
+      "region",
+      "source",
+      "quota"
+    ],
+    "discouraged_phrases": [
+      "we do not claim",
+      "we cannot claim",
+      "not an algorithmic contribution",
+      "scientific value depends on",
+      "rather than selected favorable"
+    ],
+    "preferred_open_compounds": [],
+    "allowed_repetitions": [
+      "region quota k-center",
+      "per-fit training budget",
+      "equal-region mIoU",
+      "source validation",
+      "formal test regions"
+    ],
+    "sentence_opening_words": 4,
+    "phrase_words": 5,
+    "phrase_min_occurrences": 3
+  },
+  "facts": [
+    {
+      "id": "storage_cap_bytes",
+      "value": 2000000000,
+      "source_id": "user-20261018-storage",
+      "scope_roles": [
+        "all"
+      ]
+    },
+    {
+      "id": "verified_pilot_pair",
+      "value": "aachen_1 1000x1000 RGB and 0..8 labels",
+      "source_id": "data_access_validation.json",
+      "scope_roles": [
+        "methods"
+      ]
+    }
+  ],
+  "alignment": [
+    {
+      "question_id": "V2Q1",
+      "method": "See frozen protocol and design/extension; all planned results required.",
+      "evidence": "tables/v2/primary.json; tables/v2_pixel_budget/descriptive_analysis.json",
+      "result": "Quota k-center minus visual k-center +1.678081pp; matched processed supervision +1.996366pp.",
+      "interpretation": "Allocation gain persists under available-pixel matching in the complete recipe.",
+      "limitation": "Fixed24-region panel,3 overlapping source allocations; descriptive user-directed post-exposure backend amendment.",
+      "contribution": "Positive matched allocation contrast and a direct supervision-budget intervention.",
+      "status": "COMPLETE"
+    },
+    {
+      "question_id": "V2Q2",
+      "method": "See frozen protocol and design/extension; all planned results required.",
+      "evidence": "tables/v2_cuda/descriptive_analysis.json; tables/v2_pixel_budget/descriptive_analysis.json",
+      "result": "Actual-minus-permuted quota contrast +0.896339pp; matched +0.246740pp; paired change−0.649598pp.",
+      "interpretation": "Actual membership and allocation comparisons respond differently to available supervision matching.",
+      "limitation": "One size-preserving reassignment per paired selection seed; processed available-pixel intervention.",
+      "contribution": "Direct paired contrast-change evidence within fixed grouping controls.",
+      "status": "COMPLETE"
+    },
+    {
+      "question_id": "V2Q3",
+      "method": "See frozen protocol and design/extension; all planned results required.",
+      "evidence": "tables/v2/conditions.csv; tables/v2/contrasts.json",
+      "result": "Frozen quota-minus-k-center peaks at budget12: balanced+0.902370pp,skewed+1.332156pp; all64conditions displayed.",
+      "interpretation": "Budget, recipe and source allocation determine selection performance.",
+      "limitation": "Recipes differ in multiple components and source-specific calibration; pool profiles can differ in image identities.",
+      "contribution": "Complete budget/recipe comparison with explicit strong random/coverage baselines.",
+      "status": "COMPLETE"
+    },
+    {
+      "question_id": "V2Q4",
+      "method": "See frozen protocol and design/extension; all planned results required.",
+      "evidence": "tables/v2_cuda/descriptive_analysis.json; tables/v2/contrasts.json",
+      "result": "Geographic weighted FL−FL +1.350356pp; actual−permuted weightedFL+2.131675pp in complete model.",
+      "interpretation": "Source-mean weighting improves same-family coverage comparisons.",
+      "limitation": "Weighted coverage is an established objective; full evidence is descriptive under backend amendment.",
+      "contribution": "Empirical comparison of source-mean weighting and metadata alignment.",
+      "status": "COMPLETE"
+    }
+  ],
+  "decisions": [
+    {
+      "date": "2026-10-18",
+      "decision": "User authorized at most 2 GB new storage and local RTX4060 validation. Retry A100 at major compute milestones; do not stall local preparation."
+    },
+    {
+      "date": "2026-10-18",
+      "decision": "Real single-image fit on RTX4060 decreases loss from 2.0792832374572754 to 0.23061184585094452 in 600 steps; a software/data pipeline diagnostic, not held-out research evidence."
+    },
+    {
+      "date": "2026-10-18",
+      "decision": "Formal experiment: frozen DINOv2-S/14 main, ResNet18 family control, linear head control, 630 fits. Full formal freeze replaces provisional DINOv2-B/14 and budgets with6/12/24; detailed rationale in docs/formal_protocol.md."
+    },
+    {
+      "date": "2026-10-18",
+      "decision": "User explicitly reopened goal. Prior delivery remains version1 historical evidence. New24 region panel not used for tuning; old24 all development.2GB cap unchanged. Existing runs and delivered files preserved; regenerable cache reclamation inventory recorded."
+    },
+    {
+      "date": "2026-10-18",
+      "decision": "Before any fresh-panel scores, separate prospective supplement adds real/permuted group-average facility location, skewed pools only. Base design and running calibration identities unchanged.576 new fits; original primary retained; weighted objectives are prior methods, not algorithm novelty."
+    },
+    {
+      "date": "2026-10-18",
+      "decision": "Before first new-panel model score, source-only subset diagnostic identified exact duplicate deterministic FL repeats under init0. Paired selection/optimization seeds0/1/2 prospectively replace fixed-init formal randomization for all576 planned conditions. Calibration remains init0; primary contrast/metric/source averaging/bootstrap unchanged. Confounded variance components are declared."
+    },
+    {
+      "date": "2026-10-18",
+      "decision": "V2 execution freeze5fd417464cc88024ad4063b2dc77366c1b6d3c80ea7cb1fd3083b0ddc2957bd8 created before new-panel model evaluation;53 frozen files.90 complete spatial fits and486 frozen-head fits launched.24-region primary retained;23-region Monrovia-excluded metadata sensitivity prospective. Do not edit frozen files or claim interim success."
+    },
+    {
+      "id": "pixel_budget_supplement_20261018",
+      "decision": "Add27 fixed processed-pixel-supervision controls for K/realGeoK/permutedGeoK after the lockedCUDA90, preserving original576 primary.",
+      "basis": "User requests fixing empirical weaknesses; source-only availability minimum2303273 supports common2300000, no score search.",
+      "status": "IMPLEMENTATION_IN_PROGRESS",
+      "source": "docs/v2_pixel_budget_protocol.md"
+    },
+    {
+      "date": "2026-10-18",
+      "decision": "User requests deleting defensive rhetoric and emphasizing achievements and strengths. Main prose leads with findings; essential scope appears once in Methods and a concise Discussion scope paragraph. Detailed execution/audit history belongs in Supplement. Scientific numbers and uncertainty remain unchanged."
+    },
+    {
+      "date": "2026-10-18",
+      "decision": "User-directed CPU-to-RTX4060 migration completed:72 CPU reference fits preserved separately, unifiedCUDA90 plus frozen486 form descriptive active576, matchedprocessedpixel27 complete;675 unique executions. Active audit, exact six-table reproduction, CUDA90 and pixel27 independent audits pass."
+    }
+  ],
+  "issues": [
+    {
+      "id": "I1",
+      "severity": "S4",
+      "status": "RESOLVED",
+      "description": "HistoricalV1 only:630 formal and144 pilot fits retained, with its completed draft; this does not complete the reopened V2 scientific objective.",
+      "evidence_status": "CONFIRMED"
+    },
+    {
+      "id": "I2",
+      "severity": "S2",
+      "status": "OPEN",
+      "description": "A100 unavailable after repeated direct and relay retries. User authorized local RTX4060; no A100 execution is claimed. This limits compute provenance but does not block local delivery.",
+      "evidence_status": "CONFIRMED"
+    },
+    {
+      "id": "I3",
+      "severity": "S3",
+      "status": "RESOLVED",
+      "description": "RTX4060 CuPy head training works; GPU derivatives agree with CPU PyTorch to <6e-8. Frozen encoder remains on CPU.",
+      "evidence_status": "CONFIRMED"
+    },
+    {
+      "id": "I4",
+      "severity": "S3",
+      "status": "RESOLVED",
+      "description": "Formal partition, controls, calibration and one primary contrast frozen before formal test evaluation. Literature boundaries documented. No architecture novelty, priority or journal acceptance claim is made.",
+      "evidence_status": "CONFIRMED"
+    },
+    {
+      "id": "I5",
+      "severity": "S4",
+      "status": "OPEN",
+      "description": "Author identities, institutions, funding and declarations are unknown.",
+      "evidence_status": "CONFIRMED"
+    },
+    {
+      "id": "I6",
+      "severity": "S2",
+      "status": "OPEN",
+      "description": "V2: georeference separation screen supported119/120 development and71/72 panel images; two CRS-area cautions retained, with fixed23-region sensitivity. No overlap/decoded duplicate candidates; full mosaic/provider/pretraining independence unproven.",
+      "evidence_status": "CONFIRMED"
+    },
+    {
+      "id": "I7",
+      "severity": "S4",
+      "status": "RESOLVED",
+      "evidence_status": "CONFIRMED",
+      "description": "Expanded validation completed:24new evaluation regions,3source allocations,10policies,complete spatial model,576activefits plus27pixelcontrols. Independent full-result and exact manuscript reviews support a specific empirical contribution;31pages visually reviewed. Standalone folder validation remains delivery-stage work."
+    }
+  ],
+  "release": {
+    "status": "AUTHOR_REVIEW_PACKAGE",
+    "candidate_artifact_ids": [
+      "v2_main",
+      "v2_main_pdf",
+      "v2_supplement",
+      "v2_supplement_pdf",
+      "v2_source",
+      "v2_supplement_source"
+    ],
+    "required_checks": [
+      "argument_structure",
+      "evidence_scope",
+      "scholarly_writing",
+      "delivery_integrity",
+      "functional_completeness"
+    ],
+    "completed_checks": [
+      "argument_structure",
+      "evidence_scope",
+      "scholarly_writing",
+      "delivery_integrity",
+      "functional_completeness"
+    ],
+    "checked_hashes": {
+      "paper/v2/manuscript.docx": "287c4e2845cfefddd8b69bb751d147417dcf2728b2525c071492a01c394c1ee4",
+      "paper/v2/manuscript.pdf": "b0396af740ecb50d10dbc1b6de8028d757946ed320bfe0d3e734693d6c757629",
+      "paper/v2/supplementary_material.docx": "3bedc34d314dd53f75510510936822b6117769311907665eeddbd8c221d765f3",
+      "paper/v2/supplementary_material.pdf": "394c2f2263439b0a37f8bb9192d7c4f42bf205fcab0de6c7a9bc089fec75cacf",
+      "paper/v2/manuscript_source.json": "f6509692cdb6c0238eabd9d0f678dc96483467928354078ba531ed2cfbeff478",
+      "tables/v2/conditions_by_source.csv": "1ee93c61458730b6bd1767f318f140082c533d1f6602c75e37d0e65d9bc7a930",
+      "tables/v2/conditions.csv": "6839eb25476fa491ff065efbe9f6dd5dd3511c208435f95f06265a860c4a9ef4",
+      "tables/v2/regions.csv": "f9a26a39d0c5d444fbeb2da3b46be518e64ac26c6261717ad30bbb78840e59c6",
+      "tables/v2/classes.csv": "64573f6c486f3d4c9a181d386d8dd1173876faa05d8b7f606b796ee2ca5ad533",
+      "tables/v2/contrasts.json": "55b704657c96730da6b3e1f6ea81e08f68a012e70dc2f844444ef2e545124551",
+      "tables/v2/primary.json": "4b1cba5b9778d3a338a7d54f2cb8b70ada0ab44335c72e4b4885fd9f47e61f8f",
+      "configs/v2_active_gpu_amendment.json": "05b06f37acaaff2412e63baf126ab0e66ce552770af2b3dcbaed497c7ed94518",
+      "evidence/v2/active_run_completeness.json": "cb32a37310ed765320b23ce29650e5a9fe60af4e874bab66f35b42b0adba5dfb",
+      "evidence/v2/cpu_reference_snapshot.json": "2e48118bccb1729cbd828917735a51d9ce58956d1d0accc383de330ea07b7201",
+      "tables/v2_cuda/descriptive_analysis.json": "6005ce9e5bae772d04d5cab09833b3a0cf2a28d01d672ba8a478a5050d60a23e",
+      "evidence/v2/pixel_budget_audit.json": "31c72c299db23cd51432c76d37f7a0a3f14357e31b87a11f19e340a5f2ba94e7",
+      "tables/v2_pixel_budget/descriptive_analysis.json": "271dcfa7a38085003a4c964f4dda8889092ad4946e6ec7ee0c73aaf74cd2c162",
+      "paper/v2/supplementary_source.json": "c7af676c27af5e8cf3d4c8bbd06a84d10438e4ede2e226a79107a57312d44e5d",
+      "docs/references_v2.bib": "a0389f038d2495538cb70a7173f0812c3a78fbf8e73106a1066a892847e71d97",
+      "evidence/v2/main_working_review.json": "a7238801126aca3dc31759158ddd5e1a9397ea07b69abfd77412ada018c5d546",
+      "evidence/v2/supplement_working_review.json": "35338526f5cce73154b889c171a180968f1b0326093821ca4fa766c6f51a0449",
+      "evidence/v2/main_visual_review.json": "7e418486ebb9773ade8f5f92f33173dd5e3b0d56dfef38edea1b72c4de892308",
+      "evidence/v2/supplement_visual_review.json": "410b45c9ad394865f3624c466a7f37cc9edf2178bdb9370614b28633599a18a3",
+      "evidence/v2/main_prose_review.json": "849d0e53843f7d43eb024058fa9397adb452dce1839c023c0b78f1ff91de3156",
+      "evidence/v2/supplement_prose_review.json": "1b5dce32c0afe1cb21f8b80975cdeda500c5d988a8da900bb22281843721834a",
+      "evidence/v2/pdf_structure_check.json": "fa2a48a92a425bca31e6b2863d527b7a6fb62bcea180e7227623efd8b49d06d6",
+      "evidence/v2/active_findings_working_review.json": "64f9cff689159c2f0adfdb1341ac9738cd3aadf2497b69d64cba7393556a807c"
+    },
+    "visual_check": "PASS: main13pages, supplement18pages; exact visual-review records under evidence/v2",
+    "submission_status": "AUTHOR_REVIEW_PACKAGE; authors and declarations pending; submission not performed"
+  },
+  "v1_historical_state": {
+    "alignment": [
+      {
+        "question_id": "Q1",
+        "method": "Frozen primary contrast, eight paired region means; 10000 region bootstrap samples.",
+        "evidence": "tables/formal/primary.json; evidence/formal_completeness.json; 630 run records",
+        "result": "+0.789158 percentage points, 95% interval [-0.403958, +2.040055].",
+        "interpretation": "No consistent advantage or equivalence established.",
+        "limitation": "Eight selected regions, one split and source pool realization; development labels outside per-fit budget.",
+        "contribution": "A controlled policy comparison preserving unfavorable outcomes.",
+        "status": "COMPLETE"
+      },
+      {
+        "question_id": "Q2",
+        "method": "Real versus permuted source grouping, same quota procedure.",
+        "evidence": "tables/formal/contrasts.json; conditions.csv",
+        "result": "+1.077769 points under primary metric; -0.0313895 under union-class metric.",
+        "interpretation": "Descriptive and convention sensitive; does not establish geography specificity.",
+        "limitation": "One group-size-preserving permutation per selection seed.",
+        "contribution": "Explicit arbitrary-group negative control.",
+        "status": "COMPLETE"
+      },
+      {
+        "question_id": "Q3",
+        "method": "Three model recipes, two pools, three budgets, five policies.",
+        "evidence": "90 rows in conditions.csv, six panels in Figure 3; supplementary tables S3-S9.",
+        "result": "Nine positive, eight negative and one zero quota-minus-k-center differences across 18 settings.",
+        "interpretation": "Conditional and heterogeneous; no universal improvement.",
+        "limitation": "Controls use three selection repeats with fixed initialization; recipe changes confound architecture and optimization.",
+        "contribution": "Complete boundary analysis and machine-readable results.",
+        "status": "COMPLETE"
+      }
+    ],
+    "dimensions": [
+      {
+        "id": "formal_conditions",
+        "values": [
+          "all_90"
+        ],
+        "required_fields": [
+          "results"
+        ],
+        "coverage": [
+          {
+            "value": "all_90",
+            "field": "results",
+            "status": "COMPLETE",
+            "evidence": "tables/formal/conditions.csv"
+          }
+        ]
+      }
+    ],
+    "contract": {
+      "gap": "Conditional incremental value of coarse source-region quotas beyond visual diversity, tested against an arbitrary-group quota control.",
+      "task": "Offline comparison of training subsets at matched per-fit image counts; extra shared labeled development and calibration are outside these counts.",
+      "outcomes": [
+        "equal-region mIoU",
+        "region and class IoUs",
+        "selection variability"
+      ],
+      "questions": [
+        {
+          "id": "Q1",
+          "text": "Does region quota k-center improve over k-center at the prespecified primary condition?",
+          "lock": "SEMANTIC"
+        },
+        {
+          "id": "Q2",
+          "text": "Does the real quota outperform the permuted grouping control?",
+          "lock": "SEMANTIC"
+        },
+        {
+          "id": "Q3",
+          "text": "How do directions vary across model recipes, pools, budgets and metric conventions?",
+          "lock": "SEMANTIC"
+        }
+      ],
+      "contribution": "Empirical comparison and reproducible evidence; no novel architecture claim.",
+      "nonclaims": [
+        "No SOTA or novelty guarantee",
+        "No fabricated data or results",
+        "No A100 execution before verified connection",
+        "Pilot results do not establish broad generalization"
+      ]
+    }
+  }
+}

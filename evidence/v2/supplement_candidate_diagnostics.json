@@ -1,0 +1,174 @@
+{
+  "status": "FINDINGS",
+  "candidate_sha256": "b4b289ac10a175dd2b98db22437da511b1de598eff08677d85af9bde7b53b5c7",
+  "profile_loaded": true,
+  "findings": [
+    {
+      "code": "PROSE010",
+      "artifact": "v2-supplement",
+      "match": "Union-class, Truth-present, Union-class, Truth-present",
+      "count": 4,
+      "message": "dense lexical hyphenation in one sentence; inspect clarity and field convention"
+    },
+    {
+      "code": "PROSE010",
+      "artifact": "v2-supplement",
+      "match": "BY-SA, by-sa, BY-NC-SA, by-nc-sa, DL-DE-BY, dl-de",
+      "count": 6,
+      "message": "dense lexical hyphenation in one sentence; inspect clarity and field convention"
+    },
+    {
+      "code": "PROSE001",
+      "artifact": "v2-supplement",
+      "match": "policy source source source all nine random k geo-random geok permuted geok k-means fl fd adaptation weighted fl permuted weighted fl sources tables v conditions by source csv conditions csv",
+      "count": 4,
+      "message": "exact or punctuation-only sentence repetition"
+    },
+    {
+      "code": "PROSE001",
+      "artifact": "v2-supplement",
+      "match": "all active conditions frozen dinov head balanced pool image budget",
+      "count": 3,
+      "message": "exact or punctuation-only sentence repetition"
+    },
+    {
+      "code": "PROSE001",
+      "artifact": "v2-supplement",
+      "match": "policy source source source all nine random k geo-random geok permuted geok k-means fl fd adaptation sources tables v conditions by source csv conditions csv",
+      "count": 3,
+      "message": "exact or punctuation-only sentence repetition"
+    },
+    {
+      "code": "PROSE001",
+      "artifact": "v2-supplement",
+      "match": "all active conditions frozen dinov head skewed pool image budget",
+      "count": 3,
+      "message": "exact or punctuation-only sentence repetition"
+    },
+    {
+      "code": "PROSE002",
+      "artifact": "v2-supplement",
+      "match": "all active conditions frozen",
+      "count": 6,
+      "message": "repeated sentence opening"
+    },
+    {
+      "code": "PROSE004",
+      "artifact": "v2-supplement",
+      "match": "all nine random k geo-random",
+      "count": 7,
+      "message": "repeated multiword phrase across sentences"
+    },
+    {
+      "code": "PROSE004",
+      "artifact": "v2-supplement",
+      "match": "geo-random geok permuted geok k-means",
+      "count": 7,
+      "message": "repeated multiword phrase across sentences"
+    },
+    {
+      "code": "PROSE004",
+      "artifact": "v2-supplement",
+      "match": "geok k-means fl fd adaptation",
+      "count": 7,
+      "message": "repeated multiword phrase across sentences"
+    },
+    {
+      "code": "PROSE004",
+      "artifact": "v2-supplement",
+      "match": "geok permuted geok k-means fl",
+      "count": 7,
+      "message": "repeated multiword phrase across sentences"
+    },
+    {
+      "code": "PROSE004",
+      "artifact": "v2-supplement",
+      "match": "k geo-random geok permuted geok",
+      "count": 7,
+      "message": "repeated multiword phrase across sentences"
+    },
+    {
+      "code": "PROSE004",
+      "artifact": "v2-supplement",
+      "match": "nine random k geo-random geok",
+      "count": 7,
+      "message": "repeated multiword phrase across sentences"
+    },
+    {
+      "code": "PROSE004",
+      "artifact": "v2-supplement",
+      "match": "permuted geok k-means fl fd",
+      "count": 7,
+      "message": "repeated multiword phrase across sentences"
+    },
+    {
+      "code": "PROSE004",
+      "artifact": "v2-supplement",
+      "match": "random k geo-random geok permuted",
+      "count": 7,
+      "message": "repeated multiword phrase across sentences"
+    },
+    {
+      "code": "PROSE004",
+      "artifact": "v2-supplement",
+      "match": "weighted fl permuted weighted fl",
+      "count": 5,
+      "message": "repeated multiword phrase across sentences"
+    },
+    {
+      "code": "PROSE004",
+      "artifact": "v2-supplement",
+      "match": "adaptation weighted fl permuted weighted",
+      "count": 4,
+      "message": "repeated multiword phrase across sentences"
+    },
+    {
+      "code": "PROSE004",
+      "artifact": "v2-supplement",
+      "match": "fd adaptation weighted fl permuted",
+      "count": 4,
+      "message": "repeated multiword phrase across sentences"
+    },
+    {
+      "code": "PROSE004",
+      "artifact": "v2-supplement",
+      "match": "fl fd adaptation weighted fl",
+      "count": 4,
+      "message": "repeated multiword phrase across sentences"
+    },
+    {
+      "code": "PROSE004",
+      "artifact": "v2-supplement",
+      "match": "k-means fl fd adaptation weighted",
+      "count": 4,
+      "message": "repeated multiword phrase across sentences"
+    },
+    {
+      "code": "PROSE004",
+      "artifact": "v2-supplement",
+      "match": "head balanced pool image budget",
+      "count": 3,
+      "message": "repeated multiword phrase across sentences"
+    },
+    {
+      "code": "PROSE004",
+      "artifact": "v2-supplement",
+      "match": "head skewed pool image budget",
+      "count": 3,
+      "message": "repeated multiword phrase across sentences"
+    }
+  ],
+  "manual_checks_required": [
+    "paragraph contract and adjacent-paragraph flow",
+    "claim scope and preservation of locked meaning",
+    "functional transitions and cumulative information flow",
+    "literature-example ordering from broad context to the closest precedent and gap, or another explicit evidentiary logic",
+    "function-preserving concision and sentence rhythm",
+    "natural scholarly subjects, syntax, and disciplinary accessibility",
+    "reader accessibility, including nonessential field shorthand, transition templates, and indirect verbs",
+    "claim-to-citation support and reference-list changes",
+    "observable stock or AI-like prose features without authorship inference",
+    "dash and hyphen style, including grammatical role, established open compounds, density, and suspended compounds",
+    "necessary technical repetition versus avoidable restatement"
+  ]
+}

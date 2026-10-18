@@ -1,0 +1,38 @@
+{
+  "generation": "20261018T073131_cb9b1c1f59",
+  "children": [
+    {
+      "worker": 0,
+      "pid": 20056,
+      "alive": true,
+      "creation_token": "134367822996276300",
+      "working_set_bytes": 2134016,
+      "peak_working_set_bytes": 2134016
+    },
+    {
+      "worker": 1,
+      "pid": 26236,
+      "alive": true,
+      "creation_token": "134367823214336809",
+      "working_set_bytes": 2134016,
+      "peak_working_set_bytes": 2134016
+    },
+    {
+      "worker": 2,
+      "pid": 2420,
+      "alive": true,
+      "creation_token": "134367823432083427",
+      "working_set_bytes": 2134016,
+      "peak_working_set_bytes": 2134016
+    },
+    {
+      "worker": 3,
+      "pid": 21000,
+      "alive": true,
+      "creation_token": "134367823647205518",
+      "working_set_bytes": 2134016,
+      "peak_working_set_bytes": 2134016
+    }
+  ],
+  "utc": "2026-10-18T07:33:06.176207+00:00"
+}

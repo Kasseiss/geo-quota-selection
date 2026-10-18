@@ -1,0 +1,15 @@
+{
+  "created_utc": "2026-10-18T00:56:54.743517+00:00",
+  "code": "code/v2_build_documents.py",
+  "code_sha256": "84e8e3217f4d333022bbe035ebf71e81a05994e9020508208d98b20dec8a6793",
+  "schema_sha256": "638487f7acdeeed9040f01ed63f819b22b8ff8695e1c4eb4b8deed6ef0265860",
+  "command": "python -B code/v2_build_documents.py --self-test",
+  "tests_run": 4,
+  "tests_passed": 4,
+  "exit_code": 0,
+  "passed": true,
+  "bibliography_entry_count_now": 25,
+  "actual_docx_generation_performed": false,
+  "limitation": "Actual completed576 evidence binding, manuscript content and page rendering still pending.",
+  "schema_note": "Bibliography-count wording generalized after upstream citation addition; input/output schema unchanged."
+}

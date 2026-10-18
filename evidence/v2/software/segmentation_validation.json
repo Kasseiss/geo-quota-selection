@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "all_encoder_and_decoder_parameters_have_finite_gradients": true,
+  "first_encoder_convolution_changed": true,
+  "batchnorm_running_stats_fixed": true,
+  "losses": [
+    2.1308417320251465,
+    2.119476318359375,
+    2.112584114074707
+  ],
+  "seconds": 0.3383012999984203,
+  "torch": "2.13.0+cpu",
+  "parameters": 12456328,
+  "device": "cpu",
+  "pretrained_weight_sha256": "f37072fd47e89c5e827621c5baffa7500819f7896bbacec160b1a16c560e07ec"
+}

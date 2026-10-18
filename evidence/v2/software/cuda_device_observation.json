@@ -1,0 +1,15 @@
+{
+  "created_utc": "2026-10-18T01:57:34.444678+00:00",
+  "source": "Actual nvidia-smi output and live session35745 training output observed",
+  "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "utilization_percent": 41,
+  "memory_used_mib": 401,
+  "memory_total_mib": 8188,
+  "training_pid": 24696,
+  "tensor_device": "cuda:0",
+  "native_training_session": 35745,
+  "cuda_plan_sha256": "15d586fd03389d495dfc2b7d9cdea35b2b3089461ccb49cc37e5f8bd39ff1545",
+  "cuda_preflight_sha256": "3b50f7d5980f2583787aa0785b82fce2679d3599d8f527befe1bd791a63699ea",
+  "sample_only_not_sustained_throughput": true,
+  "original_cpu_matrix_continues": true
+}

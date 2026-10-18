@@ -1,0 +1,23 @@
+{
+  "created_utc": "2026-10-17T23:44:36.227228+00:00",
+  "data_audit_sha256": "ca67960d03e63af09f664520bd585ebdeb012ea826ac48d92ff7e658575b2a3c",
+  "decision": "RETAIN_WITH_EXPLICIT_LIMITATION_AND_SENSITIVITY",
+  "reviewer": "research agent; pre-model-score review",
+  "cross_role_supported_comparisons": 8449,
+  "cross_role_supported_overlap_candidates": 0,
+  "cross_role_caution_comparisons": 191,
+  "cross_role_caution_overlap_candidates": 0,
+  "decoded_cross_role_duplicate_candidates": 0,
+  "supported_old_images": 119,
+  "supported_new_images": 71,
+  "caution_images": [
+    "aachen__aachen_1",
+    "monrovia__monrovia_48"
+  ],
+  "interpretation": "No actual overlap evidence found by these checks. The Monrovia48 transformation is outside its CRS area for all257 sampled points and cannot establish physical separation. Aachen1 slightly exceeds its CRS area. Neither caution is silently promoted to supported. Entire original orthomosaic/provider/pretraining independence remains unproven.",
+  "primary_fixed_panel_retained": true,
+  "sensitivity_configuration": "configs/v2_geographic_sensitivity.json",
+  "sensitivity_configuration_sha256": "83e6a506dc88ca8509cf7f384a9c3295dddcdcb3de314e7bdff4ec4ed37b519a",
+  "new_panel_model_scores_available_at_review": false,
+  "no_sample_replacement_or_crs_repair": true
+}

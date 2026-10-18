@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "started_utc": "2026-10-17T23:47:30.552119+00:00",
+  "completed_utc": "2026-10-17T23:47:31.123909+00:00",
+  "command": [
+    "python",
+    "code/v2_audit_runs.py",
+    "--self-test"
+  ],
+  "validated_file_sha256": {
+    "code/v2_audit_runs.py": "ad6f3084f0c5109458f2a72358a400dcf60c5e170805dabc84db30de2c886ff1",
+    "code/v2_weighted_selection.py": "9d73d805e8ebe0b6f0afbac5c16de1f6fdc8ffc6f6a892b30d87cf82c3fc1f11",
+    "configs/v2_design.json": "d790c26eae4a3c029cca73e3845efd3d95673017d88bafe42e37fb81f70046a4",
+    "configs/v2_extension.json": "7786624c6fc28aafe71f86495e8c653ab8ffc860cf2e316048e78db5c089ba92"
+  },
+  "code_unchanged_during_check": true,
+  "stdout": "",
+  "stderr": "test_actual_processed_histogram_and_same_total_wrong_classes (__main__.SyntheticAuditTests.test_actual_processed_histogram_and_same_total_wrong_classes) ... ok\ntest_cm_rejections (__main__.SyntheticAuditTests.test_cm_rejections) ... ok\ntest_evaluation_failure_paths_and_counts (__main__.SyntheticAuditTests.test_evaluation_failure_paths_and_counts) ... ok\ntest_extension_matrix_is_sparse_and_rejects_wrong_count_or_pool (__main__.SyntheticAuditTests.test_extension_matrix_is_sparse_and_rejects_wrong_count_or_pool) ... ok\ntest_logs_and_processed_scope (__main__.SyntheticAuditTests.test_logs_and_processed_scope) ... ok\n\n----------------------------------------------------------------------\nRan 5 tests in 0.018s\n\nOK\n",
+  "returncode": 0,
+  "scientific_new_panel_scores_read": false,
+  "synthetic_checks_only": true
+}

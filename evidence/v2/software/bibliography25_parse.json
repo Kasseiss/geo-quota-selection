@@ -1,0 +1,13 @@
+{
+  "created_utc": "2026-10-18T01:02:27.870931+00:00",
+  "bibliography_sha256": "2336b3efcf61fbca512b0872d834de35c36839e14f41498053b990fb7ff7d01c",
+  "formatter_code_sha256": "84e8e3217f4d333022bbe035ebf71e81a05994e9020508208d98b20dec8a6793",
+  "unique_entries": 25,
+  "original14_byte_sequence_preserved": true,
+  "checked_displays": {
+    "vanetten2018spacenet": "[1] Van Etten, Adam; Lindenbaum, Dave; Bacastow, Todd M. SpaceNet: A Remote Sensing Dataset and Challenge Series. arXiv preprint. 2018. arXiv:1807.01232. Preprint; first submitted 3 July 2018. https://doi.org/10.48550/arXiv.1807.01232",
+    "nogueira2026coreset": "[1] Nogueira, Keiller; Zaytar, Akram; Ma, Wanli; Roscher, Ribana; Hänsch, Ronny; Robinson, Caleb; Ortiz, Anthony; Fobi, Simone; Dodhia, Rahul; Lavista Ferres, Juan M.; Karakuş, Oktay; Rosin, Paul L. Core-Set Selection for Data-Efficient Land Cover Segmentation. IEEE Access. 2026. 14, 19891–19903. https://doi.org/10.1109/ACCESS.2026.3659734"
+  },
+  "passed": true,
+  "scope": "Current25-entry parsing, formal-version bibliographic alignment and upstream dataset reference display; manuscript citation completeness still pending."
+}

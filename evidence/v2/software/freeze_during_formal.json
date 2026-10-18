@@ -1,0 +1,8 @@
+{
+  "created_utc": "2026-10-18T00:20:44.732565+00:00",
+  "freeze_sha256": "5fd417464cc88024ad4063b2dc77366c1b6d3c80ea7cb1fd3083b0ddc2957bd8",
+  "checked_files": 53,
+  "changed_files": [],
+  "passed": true,
+  "scope": "Integrity of fixed execution/analysis inputs during formal fits; not experiment completeness or scientific contribution."
+}

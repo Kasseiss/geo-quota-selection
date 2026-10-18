@@ -1,0 +1,204 @@
+{
+  "created_utc": "2026-10-18T09:26:20.844243+00:00",
+  "files": {
+    "paper/v2/manuscript.pdf": {
+      "sha256": "b0396af740ecb50d10dbc1b6de8028d757946ed320bfe0d3e734693d6c757629",
+      "pages": 13,
+      "records": [
+        {
+          "page": 1,
+          "outside_page": 0,
+          "replacement_characters": 0,
+          "characters": 3592
+        },
+        {
+          "page": 2,
+          "outside_page": 0,
+          "replacement_characters": 0,
+          "characters": 3831
+        },
+        {
+          "page": 3,
+          "outside_page": 0,
+          "replacement_characters": 0,
+          "characters": 4001
+        },
+        {
+          "page": 4,
+          "outside_page": 0,
+          "replacement_characters": 0,
+          "characters": 2888
+        },
+        {
+          "page": 5,
+          "outside_page": 0,
+          "replacement_characters": 0,
+          "characters": 2647
+        },
+        {
+          "page": 6,
+          "outside_page": 0,
+          "replacement_characters": 0,
+          "characters": 607
+        },
+        {
+          "page": 7,
+          "outside_page": 0,
+          "replacement_characters": 0,
+          "characters": 2857
+        },
+        {
+          "page": 8,
+          "outside_page": 0,
+          "replacement_characters": 0,
+          "characters": 1717
+        },
+        {
+          "page": 9,
+          "outside_page": 0,
+          "replacement_characters": 0,
+          "characters": 250
+        },
+        {
+          "page": 10,
+          "outside_page": 0,
+          "replacement_characters": 0,
+          "characters": 3721
+        },
+        {
+          "page": 11,
+          "outside_page": 0,
+          "replacement_characters": 0,
+          "characters": 3013
+        },
+        {
+          "page": 12,
+          "outside_page": 0,
+          "replacement_characters": 0,
+          "characters": 3509
+        },
+        {
+          "page": 13,
+          "outside_page": 0,
+          "replacement_characters": 0,
+          "characters": 1844
+        }
+      ]
+    },
+    "paper/v2/supplementary_material.pdf": {
+      "sha256": "394c2f2263439b0a37f8bb9192d7c4f42bf205fcab0de6c7a9bc089fec75cacf",
+      "pages": 18,
+      "records": [
+        {
+          "page": 1,
+          "outside_page": 0,
+          "replacement_characters": 0,
+          "characters": 2834
+        },
+        {
+          "page": 2,
+          "outside_page": 0,
+          "replacement_characters": 0,
+          "characters": 966
+        },
+        {
+          "page": 3,
+          "outside_page": 0,
+          "replacement_characters": 0,
+          "characters": 1457
+        },
+        {
+          "page": 4,
+          "outside_page": 0,
+          "replacement_characters": 0,
+          "characters": 2437
+        },
+        {
+          "page": 5,
+          "outside_page": 0,
+          "replacement_characters": 0,
+          "characters": 3198
+        },
+        {
+          "page": 6,
+          "outside_page": 0,
+          "replacement_characters": 0,
+          "characters": 3055
+        },
+        {
+          "page": 7,
+          "outside_page": 0,
+          "replacement_characters": 0,
+          "characters": 1929
+        },
+        {
+          "page": 8,
+          "outside_page": 0,
+          "replacement_characters": 0,
+          "characters": 2714
+        },
+        {
+          "page": 9,
+          "outside_page": 0,
+          "replacement_characters": 0,
+          "characters": 1121
+        },
+        {
+          "page": 10,
+          "outside_page": 0,
+          "replacement_characters": 0,
+          "characters": 459
+        },
+        {
+          "page": 11,
+          "outside_page": 0,
+          "replacement_characters": 0,
+          "characters": 704
+        },
+        {
+          "page": 12,
+          "outside_page": 0,
+          "replacement_characters": 0,
+          "characters": 1665
+        },
+        {
+          "page": 13,
+          "outside_page": 0,
+          "replacement_characters": 0,
+          "characters": 1521
+        },
+        {
+          "page": 14,
+          "outside_page": 0,
+          "replacement_characters": 0,
+          "characters": 3151
+        },
+        {
+          "page": 15,
+          "outside_page": 0,
+          "replacement_characters": 0,
+          "characters": 2278
+        },
+        {
+          "page": 16,
+          "outside_page": 0,
+          "replacement_characters": 0,
+          "characters": 2177
+        },
+        {
+          "page": 17,
+          "outside_page": 0,
+          "replacement_characters": 0,
+          "characters": 3108
+        },
+        {
+          "page": 18,
+          "outside_page": 0,
+          "replacement_characters": 0,
+          "characters": 1568
+        }
+      ]
+    }
+  },
+  "passed": true
+}

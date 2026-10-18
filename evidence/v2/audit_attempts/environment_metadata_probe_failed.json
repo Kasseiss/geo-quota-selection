@@ -1,0 +1,7 @@
+{
+  "created_utc": "2026-10-18T00:30:06.690994+00:00",
+  "attempt": "Initial interpreter-only distribution metadata inventory",
+  "error": "PackageNotFoundError for pyproj; project-isolated metadata had not been inspected",
+  "scientific_inputs_or_results_changed": false,
+  "resolution": "v2_record_environment.py now records interpreter-visible versus isolated metadata explicitly; corrected inventory completed."
+}

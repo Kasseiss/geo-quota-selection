@@ -1,0 +1,58 @@
+{
+  "format": "v2-active-gpu-amendment-1",
+  "status": "USER_DRIVEN_BACKEND_REVISION_AFTER_PANEL_EXPOSURE",
+  "created_utc": "2026-10-18T08:26:58.878320+00:00",
+  "user_driven": true,
+  "after_panel_exposure": true,
+  "user_instruction_zh": "CPU上面的实验，想办法先获取已有结果，然后把剩下实验转移到4060上",
+  "cpu_reference_expected": 72,
+  "cpu_remaining_transferred": 18,
+  "cpu_writer_terminal_asserted": true,
+  "cpu_writer_process": {
+    "pid": 32212,
+    "observed_creation_utc": "2026-10-18T06:55:24.314904Z",
+    "creation_precision": "CIM microsecond observation; no invented native FILETIME token"
+  },
+  "cpu_stop_receipt": "evidence/v2/audit_attempts/cpu_to_gpu_boundary_20261018.json",
+  "cpu_stop_receipt_sha256": "dcafa86b226eb1e601a953ac7233c0b4819a15e80a9607bb0b214cbff5698df7",
+  "cpu_reference_snapshot": "evidence/v2/cpu_reference_snapshot.json",
+  "cpu_reference_snapshot_sha256": "2e48118bccb1729cbd828917735a51d9ce58956d1d0accc383de330ea07b7201",
+  "original_CPU90_completed": false,
+  "active_full": {
+    "backend": "CUDA",
+    "expected_runs": 90,
+    "plan": "configs/v2_cuda_execution_plan.json",
+    "plan_sha256": "15d586fd03389d495dfc2b7d9cdea35b2b3089461ccb49cc37e5f8bd39ff1545",
+    "audit": "evidence/v2/cuda_execution_audit.json",
+    "audit_sha256": "8d2fa70fb0766a9dd39a2db264ccdf3a394f8a897a0a4a330d43713bd47f7d32"
+  },
+  "active_frozen": {
+    "backend": "CuPy RTX4060",
+    "expected_runs": 486,
+    "source": "evidence/v2/runs/dinov2_mlp"
+  },
+  "active_expected_total": 576,
+  "main_display_descriptive": true,
+  "new_independent_holdout": false,
+  "no_confirmatory_upgrade": true,
+  "original_question_contrast_selections_calibration_and_panel_unchanged": true,
+  "original_freeze": "configs/v2_freeze.json",
+  "original_freeze_sha256": "5fd417464cc88024ad4063b2dc77366c1b6d3c80ea7cb1fd3083b0ddc2957bd8",
+  "frozen53_unchanged": true,
+  "pixel_budget_plan": "configs/v2_pixel_budget_plan.json",
+  "pixel_budget_plan_sha256": "3e776a5517286d634eb29968ab3a7cafa3912e166f47d84137e8d16ef03d58e9",
+  "expected_unique_execution_counts": {
+    "active_core": 576,
+    "separate_completed_CPU_reference": 72,
+    "separate_pixel_budget_supplement": 27,
+    "total_if_pixel27_complete": 675
+  },
+  "scientific_accounting": [
+    "Do not combine72CPU+18GPU into a homogeneous90-fit condition.",
+    "Use all90 complete auditedGPU identities uniformly for full-model comparisons; preserve actual scalar/V1/V2 provenance.",
+    "The sameGPU90 cannot count again as90 additional independent fits in the active576.",
+    "The originalCPU90 execution was not completed; all18 unexecutedCPU identities have already been executed in the completeGPU90, so no duplicate rerun is necessary.",
+    "The original CPU plan/freeze and outputs are retained as historical evidence; no original file is rewritten to pretend its backend changed.",
+    "The active main comparison uses the fixed contrast and metric descriptively after this user-directed post-exposure execution revision."
+  ]
+}

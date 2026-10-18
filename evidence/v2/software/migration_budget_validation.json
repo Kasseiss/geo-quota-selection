@@ -1,0 +1,67 @@
+{
+  "format": "v2-migration-budget-software-validation-1",
+  "passed": true,
+  "created_utc": "2026-10-18T08:39:05.455170+00:00",
+  "python": "3.13.13",
+  "code_sha256": {
+    "code/v2_migration_budget.py": "7774558717bec1235ee7b0b981cb9ab9bb30a2860f30d439f9164f68d833ed79",
+    "code/test_v2_migration_budget.py": "0547d5079cdf326f04b25f760d8a08d63d9b23e1095977fff63b9ad5e33f78ce",
+    "docs/v2_migration_budget.md": "c8b24c0774857898dd09b238533e5af6e88bf4a452cbe1d6b1b6ef170e4d1bc9"
+  },
+  "syntax_passed": true,
+  "command": "python code/test_v2_migration_budget.py",
+  "tests_run": 5,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "elapsed_seconds": 0.082,
+  "tests": [
+    {
+      "name": "allowance_boundary_and_midway_refusal",
+      "passed": true
+    },
+    {
+      "name": "exception_keeps_charge_and_files_and_blocks_nesting",
+      "passed": true
+    },
+    {
+      "name": "foreign_growth_and_cap_fail_closed",
+      "passed": true
+    },
+    {
+      "name": "invalid_amounts_and_failed_scan_release_ownership",
+      "passed": true
+    },
+    {
+      "name": "two_scans_many_charges_move_and_replacement",
+      "passed": true
+    }
+  ],
+  "evidence": {
+    "normal_lifecycle_full_scans": 2,
+    "charged_before_write": true,
+    "allowance_does_not_precharge": true,
+    "strict_cap_boundary_rejected": true,
+    "same_root_move_adds_zero": true,
+    "foreign_growth_below_cap_rejected": true,
+    "foreign_growth_at_cap_rejected": true,
+    "failed_writes_keep_charge": true,
+    "protected_fixture_bytes_unchanged": true,
+    "active_budget_nesting_rejected": true,
+    "helper_writes_payload": false,
+    "stdlib_only": true
+  },
+  "scope": {
+    "synthetic_temporary_directories_only": true,
+    "actual_migration_executed": false,
+    "real_payload_moved_copied_or_deleted": false,
+    "scientific_results_read": false,
+    "other_writers_stopped_by_this_tool": false
+  },
+  "limitations": [
+    "Caller must establish and maintain all-other-writers-stopped condition.",
+    "Final scan detects unaccounted net growth; offsetting deletions can conceal external writes.",
+    "Reservation includes caller-defined copy/metadata/reproduction bytes; each actual allocation still needs charge.",
+    "Ledger is retained in memory only; caller must persist it using separately charged receipt writes."
+  ]
+}

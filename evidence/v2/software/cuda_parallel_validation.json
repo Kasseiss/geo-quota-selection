@@ -1,0 +1,64 @@
+{
+  "schema": "v2-cuda-parallel-software-validation-1",
+  "latest_attempt": {
+    "created_utc": "2026-10-18T07:20:34.142008+00:00",
+    "passed": true,
+    "elapsed_seconds": 7.522517799996422,
+    "syntax_passed": true,
+    "tests_run": 5,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "tests": [
+      {
+        "test": "test_v2_cuda_parallel.SchedulerChecks.test_active_scalar_stale_parent_live_child_unknown_and_mismatch_refusal",
+        "status": "passed"
+      },
+      {
+        "test": "test_v2_cuda_parallel.SchedulerChecks.test_disjoint_partitions_and_exact_missing_fit_resume",
+        "status": "passed"
+      },
+      {
+        "test": "test_v2_cuda_parallel.SchedulerChecks.test_exclusive_output_creation_and_storage_ram_guards",
+        "status": "passed"
+      },
+      {
+        "test": "test_v2_cuda_parallel.SchedulerChecks.test_failed_fit_retains_attempt_raw_log_failure_and_no_result",
+        "status": "passed"
+      },
+      {
+        "test": "test_v2_cuda_parallel.SchedulerChecks.test_resume_refuses_identity_plan_log_and_provenance_drift",
+        "status": "passed"
+      }
+    ],
+    "test_output": "test_active_scalar_stale_parent_live_child_unknown_and_mismatch_refusal (test_v2_cuda_parallel.SchedulerChecks.test_active_scalar_stale_parent_live_child_unknown_and_mismatch_refusal) ... ok\ntest_disjoint_partitions_and_exact_missing_fit_resume (test_v2_cuda_parallel.SchedulerChecks.test_disjoint_partitions_and_exact_missing_fit_resume) ... {\"phase\": \"parallel_cuda_training\", \"worker\": 0, \"index\": 4, \"step\": 1, \"device\": \"cuda:0\"}\n{\"phase\": \"parallel_cuda_training\", \"worker\": 0, \"index\": 4, \"step\": 600, \"device\": \"cuda:0\"}\n{\"phase\": \"parallel_cuda_training\", \"worker\": 1, \"index\": 5, \"step\": 1, \"device\": \"cuda:0\"}\n{\"phase\": \"parallel_cuda_training\", \"worker\": 1, \"index\": 5, \"step\": 600, \"device\": \"cuda:0\"}\n{\"phase\": \"parallel_cuda_training\", \"worker\": 2, \"index\": 6, \"step\": 1, \"device\": \"cuda:0\"}\n{\"phase\": \"parallel_cuda_training\", \"worker\": 2, \"index\": 6, \"step\": 600, \"device\": \"cuda:0\"}\n{\"phase\": \"parallel_cuda_training\", \"worker\": 3, \"index\": 7, \"step\": 1, \"device\": \"cuda:0\"}\n{\"phase\": \"parallel_cuda_training\", \"worker\": 3, \"index\": 7, \"step\": 600, \"device\": \"cuda:0\"}\nok\ntest_exclusive_output_creation_and_storage_ram_guards (test_v2_cuda_parallel.SchedulerChecks.test_exclusive_output_creation_and_storage_ram_guards) ... ok\ntest_failed_fit_retains_attempt_raw_log_failure_and_no_result (test_v2_cuda_parallel.SchedulerChecks.test_failed_fit_retains_attempt_raw_log_failure_and_no_result) ... {\"phase\": \"parallel_cuda_training\", \"worker\": 0, \"index\": 0, \"step\": 1, \"device\": \"cuda:0\"}\nok\ntest_resume_refuses_identity_plan_log_and_provenance_drift (test_v2_cuda_parallel.SchedulerChecks.test_resume_refuses_identity_plan_log_and_provenance_drift) ... {\"phase\": \"parallel_cuda_training\", \"worker\": 0, \"index\": 0, \"step\": 1, \"device\": \"cuda:0\"}\n{\"phase\": \"parallel_cuda_training\", \"worker\": 0, \"index\": 0, \"step\": 600, \"device\": \"cuda:0\"}\nok\n\n----------------------------------------------------------------------\nRan 5 tests in 7.066s\n\nOK\n",
+    "file_sha256": {
+      "code/v2_cuda_parallel.py": "ac41d0c19aabdb6ffb041b07f50fd02828872f4bdac039ff886dd84d78d6bffc",
+      "code/test_v2_cuda_parallel.py": "458c0c7271ee959ea4e7620ab7982fc22f38b3c64e36bb3cf1a55b39571b8b71",
+      "docs/v2_cuda_parallel.md": "295d5ebcb09cc1d584df2702a43872cf8974a6fddda5f76ec6be6c1c046aafdf"
+    },
+    "plan_sha256": "15d586fd03389d495dfc2b7d9cdea35b2b3089461ccb49cc37e5f8bd39ff1545",
+    "scalar_reference_sha256": "dd14784a1642798b2df5be622545e2f8733d72db87cb29ecf984aff1d69e6cff",
+    "freeze_sha256": "5fd417464cc88024ad4063b2dc77366c1b6d3c80ea7cb1fd3083b0ddc2957bd8",
+    "frozen_count": 53,
+    "frozen_changes": [],
+    "actual_cuda_fits_launched": 0,
+    "real_scalar_stopped": false,
+    "real_run_results_or_score_fields_read": false,
+    "physical_memory_query_bytes": 1484869632,
+    "self_process_memory_query": {
+      "pid": 27824,
+      "alive": true,
+      "creation_token": "134367816256459216",
+      "working_set_bytes": 32673792,
+      "peak_working_set_bytes": 34775040
+    },
+    "limitations": [
+      "Real CUDA concurrency/speedup/VRAM feasibility not tested; parent must stop scalar and explicitly benchmark missing fits.",
+      "Physical RAM admission is a conservative heuristic; changing external demand, paging and fit-time OOM remain possible.",
+      "An unknown launch or hard-kill can require manual lease inspection; no automatic destructive recovery.",
+      "External CPU writers do not share the mutex; the original55MB reserve protects modest growth, not unlimited writes."
+    ]
+  },
+  "previous_attempts": []
+}

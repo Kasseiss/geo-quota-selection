@@ -1,0 +1,35 @@
+{
+  "passed": true,
+  "created_utc": "2026-10-18T00:41:51.320993+00:00",
+  "selection_sha256": "e1307d04ad33554c23b82041a5aa08531713cd94c161b626483be74be0aa7182",
+  "checkpoint_sha256": "8c250eda11ae0d4578704d3d68b503e7eadebc6f2af31b83d67fd6676ce74c0b",
+  "result_sha256": "b5ddce17ce581cabc6e2dbb477094dd4b9b283cdcb523bb1bff89ae224c63b23",
+  "code_sha256": "704ea05946388b44db7c9bd7e83ec5388306e40a7a9e80590a6db47066b654fd",
+  "checks": [
+    {
+      "id": "al_qurnah__al_qurnah_33",
+      "confusion_exact_match": true,
+      "prediction_array_sha256": "243c58b6b80da38f3e5af15448abe5747ee94144ff82120db85d08dccfdb78bd"
+    },
+    {
+      "id": "baybay__baybay_36",
+      "confusion_exact_match": true,
+      "prediction_array_sha256": "78033c2abb8dc9b6fd1bfe556efc74db777dc31e2cda7212a59d970401c072e6"
+    }
+  ],
+  "output_sha256": {
+    "figures/v2/qualitative_fixed_examples.svg": "f83fb75f78ced6167e934ef8a0904e021e787838a7f9856cf0581054a4a98c67",
+    "figures/v2/qualitative_fixed_examples.pdf": "15b0fbdd231dc392d24542aa5e5b9c1d921ea96413103063f55fc9006eeae951",
+    "figures/v2/qualitative_fixed_examples.png": "177b6640aaa520eb90aeb951de65230a374cd9a5a317694e054864868f0af19d"
+  },
+  "caption": "Filename-selected examples from Al Qurnah and Baybay. RGB images and reference masks were processed to448\u00d7448; predicted masks use the predetermined source0, paired fit seed0, quota k-center checkpoint. These two illustrations concern one fit; numerical comparisons use all planned fits. Void is light grey in masks, and predictions in void locations are hidden as in scoring. Source catalogue credits: Bilal Ko\u00e7 (Al Qurnah) and SkyEye (Baybay), OpenAerialMap / Open Imagery Network contributors, CC BY4.0 (https://creativecommons.org/licenses/by/4.0/), via OpenEarthMap. RGB images were bilinearly resized and labels nearest-resized; the categorical palette is assigned for display. Exact upstream scene URIs were not independently resolved.",
+  "refitting_performed": false,
+  "recommended_print_width_inches": 4.95,
+  "height_inches": 4.6,
+  "minimum_font_pt_at_recommended_width": 9.0,
+  "minimum_native_raster_dpi_at_recommended_width": 303.6617541535574,
+  "visual_review": "PASS: parent viewed all six revised panels and full nine-class legend; no clipping or overlap. Keep4.95in insertion width for>=300native dpi and>=9pt labels. Final manuscript page still pending.",
+  "comparative_performance_claim": false,
+  "public_posting_performed": false,
+  "prediction_hashes_unchanged_from_previous_size": true
+}

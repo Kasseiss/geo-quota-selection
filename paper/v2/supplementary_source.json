@@ -1,0 +1,2189 @@
+{
+  "format": "v2-document-source-1",
+  "kind": "supplement",
+  "title": "Supplementary material for Geographic allocation and visual coverage for data efficient land cover segmentation",
+  "authors": [],
+  "keywords": [
+    "OpenEarthMap",
+    "geographic selection",
+    "regional evaluation"
+  ],
+  "sections": [
+    {
+      "title": "S1. Execution sets and backend amendment",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The active comparison comprises 90 complete ResNet18 segmentation fits on the NVIDIA GeForce RTX 4060 Laptop GPU and 486 frozen-DINOv2 MLP-head fits, for 576 fits. The backend amendment followed initial panel evaluation. The active tables use the complete GPU set for all full-model conditions and present the fixed main contrast descriptively. The original CPU execution completed 72 fits, retained as a separate reference. Another 27 GPU fits apply a common processed-pixel supervision budget. Together these sets contain 675 completed executions; calibration trajectories are counted separately."
+        },
+        {
+          "type": "table",
+          "id": "S1",
+          "caption": "Table S1. Completed execution sets and their analysis roles.",
+          "headers": [
+            "Set",
+            "Backend",
+            "Fits",
+            "Composition"
+          ],
+          "rows": [
+            [
+              "Active complete model",
+              "PyTorch CUDA",
+              90,
+              "10 policies x 3 allocations x 3 paired seeds"
+            ],
+            [
+              "Active frozen head",
+              "CuPy CUDA",
+              486,
+              "54 conditions x 3 allocations x 3 paired seeds"
+            ],
+            [
+              "CPU reference",
+              "PyTorch CPU",
+              72,
+              "Completed subset of original CPU execution"
+            ],
+            [
+              "Pixel-budget control",
+              "PyTorch CUDA",
+              27,
+              "3 policies x 3 allocations x 3 paired seeds"
+            ],
+            [
+              "Total",
+              "Across the above sets",
+              675,
+              "576 active + 72 CPU reference + 27 pixel control"
+            ]
+          ],
+          "font_size_pt": 9.0,
+          "notes": [
+            "Sources: configs/v2_active_gpu_amendment.json; active_run_completeness.json; pixel_budget_audit.json."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "The amendment retains the source allocations, ordered selections, panel, paired seeds, source-calibrated learning rates and step counts. Complete-model GPU fits use Python 3.12.3, PyTorch 2.5.1+cu121, CUDA build 12.1 and NumPy 2.3.5, with two CPU threads per process. Scalar and two successive parallel executors retain their actual implementation hashes and generation records. Concurrent workers own disjoint identities and execute fits serially within each worker. Deterministic algorithms are requested in warning mode for the installed CUDA loss implementation."
+        },
+        {
+          "type": "paragraph",
+          "text": "CPU calibration uses Python 3.13.13, PyTorch 2.13.0+cpu, NumPy 2.5.1 and eight threads. DINOv2 extraction uses CPU PyTorch; frozen heads use CuPy 14.2.0 on the RTX4060. The archived complete-model checkpoint is the predetermined CPU reference source0/selection0/initialization0/GeoK identity. Independent CPU reload reproduced its 72 panel-image confusion matrices and 24 regional aggregates exactly."
+        }
+      ]
+    },
+    {
+      "title": "S2. Images, allocations and integrity screening",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "OpenEarthMap supplies the RGB images, source-region identifiers and eight valid land-cover labels {cite:xia2023openearthmap}. The 24 earlier regions contribute 120 development images, five per region. Three fixed cyclic allocations each assign 12 regions to source training, four to validation and eight to unused development. Each allocation has 60 available source images and 20 validation images. A separate panel contains three filename-sampled pairs from each of 24 additional regions. Source sampling uses seed 20261018 and new-panel sampling uses 2026101802. The sampling rule operates on filenames and complete-pair availability."
+        },
+        {
+          "type": "table",
+          "id": "S2",
+          "caption": "Table S2. Development-region availability and allocation roles. T = source training; V = source validation; U = unused development.",
+          "headers": [
+            "Region",
+            "Images",
+            "source0",
+            "source1",
+            "source2"
+          ],
+          "rows": [
+            [
+              "aachen",
+              5,
+              "U",
+              "V",
+              "T"
+            ],
+            [
+              "accra",
+              5,
+              "T",
+              "U",
+              "V"
+            ],
+            [
+              "austin",
+              5,
+              "U",
+              "T",
+              "T"
+            ],
+            [
+              "bogota",
+              5,
+              "T",
+              "U",
+              "V"
+            ],
+            [
+              "chiangmai",
+              5,
+              "V",
+              "T",
+              "U"
+            ],
+            [
+              "chicago",
+              5,
+              "T",
+              "T",
+              "U"
+            ],
+            [
+              "chisinau",
+              5,
+              "U",
+              "V",
+              "T"
+            ],
+            [
+              "christchurch",
+              5,
+              "U",
+              "T",
+              "T"
+            ],
+            [
+              "daressalaam",
+              5,
+              "T",
+              "U",
+              "T"
+            ],
+            [
+              "dhaka",
+              5,
+              "V",
+              "T",
+              "U"
+            ],
+            [
+              "kyoto",
+              5,
+              "U",
+              "T",
+              "T"
+            ],
+            [
+              "mahe",
+              5,
+              "T",
+              "U",
+              "T"
+            ],
+            [
+              "maputo",
+              5,
+              "T",
+              "U",
+              "T"
+            ],
+            [
+              "melbourne",
+              5,
+              "U",
+              "V",
+              "T"
+            ],
+            [
+              "niamey",
+              5,
+              "T",
+              "T",
+              "U"
+            ],
+            [
+              "pointenoire",
+              5,
+              "T",
+              "U",
+              "T"
+            ],
+            [
+              "rio",
+              5,
+              "T",
+              "U",
+              "V"
+            ],
+            [
+              "rotterdam",
+              5,
+              "U",
+              "T",
+              "T"
+            ],
+            [
+              "santiago",
+              5,
+              "T",
+              "U",
+              "V"
+            ],
+            [
+              "shanghai",
+              5,
+              "V",
+              "T",
+              "U"
+            ],
+            [
+              "tonga",
+              5,
+              "U",
+              "V",
+              "T"
+            ],
+            [
+              "ulaanbaatar",
+              5,
+              "T",
+              "T",
+              "U"
+            ],
+            [
+              "vegas",
+              5,
+              "V",
+              "T",
+              "U"
+            ],
+            [
+              "vienna",
+              5,
+              "T",
+              "T",
+              "U"
+            ]
+          ],
+          "font_size_pt": 9.0,
+          "notes": [
+            "Sources: configs/v2_design.json; development_manifest.json; supplement_design_tables.json.",
+            "Each allocation contains 12 T, four V and eight U regions. Aachen includes CRS-caution image aachen__aachen_1."
+          ]
+        },
+        {
+          "type": "table",
+          "id": "S3",
+          "caption": "Table S3. Permanent panel image identities and the fixed geographic sensitivity. All listed regions enter the 24-region summary.",
+          "headers": [
+            "Region",
+            "Three exact image IDs",
+            "23-region sensitivity"
+          ],
+          "rows": [
+            [
+              "abancay",
+              "abancay__abancay_32; abancay__abancay_41; abancay__abancay_45",
+              "Retained"
+            ],
+            [
+              "al_qurnah",
+              "al_qurnah__al_qurnah_33; al_qurnah__al_qurnah_49; al_qurnah__al_qurnah_60",
+              "Retained"
+            ],
+            [
+              "baybay",
+              "baybay__baybay_36; baybay__baybay_53; baybay__baybay_65",
+              "Retained"
+            ],
+            [
+              "bielefeld",
+              "bielefeld__bielefeld_29; bielefeld__bielefeld_61; bielefeld__bielefeld_63",
+              "Retained"
+            ],
+            [
+              "buenos_aires",
+              "buenos_aires__buenos_aires_15; buenos_aires__buenos_aires_34; buenos_aires__buenos_aires_45",
+              "Retained"
+            ],
+            [
+              "chiclayo",
+              "chiclayo__chiclayo_23; chiclayo__chiclayo_25; chiclayo__chiclayo_4",
+              "Retained"
+            ],
+            [
+              "coxsbazar",
+              "coxsbazar__coxsbazar_14; coxsbazar__coxsbazar_52; coxsbazar__coxsbazar_53",
+              "Retained"
+            ],
+            [
+              "dowa",
+              "dowa__dowa_12; dowa__dowa_20; dowa__dowa_9",
+              "Retained"
+            ],
+            [
+              "kagera",
+              "kagera__kagera_24; kagera__kagera_46; kagera__kagera_59",
+              "Retained"
+            ],
+            [
+              "kampala",
+              "kampala__kampala_1; kampala__kampala_2; kampala__kampala_5",
+              "Retained"
+            ],
+            [
+              "khartoum",
+              "khartoum__khartoum_21; khartoum__khartoum_33; khartoum__khartoum_53",
+              "Retained"
+            ],
+            [
+              "kinshasa",
+              "kinshasa__kinshasa_1; kinshasa__kinshasa_2; kinshasa__kinshasa_3",
+              "Retained"
+            ],
+            [
+              "kitsap",
+              "kitsap__kitsap_2; kitsap__kitsap_39; kitsap__kitsap_46",
+              "Retained"
+            ],
+            [
+              "monrovia",
+              "monrovia__monrovia_26; monrovia__monrovia_48; monrovia__monrovia_58",
+              "Excluded (entire region)"
+            ],
+            [
+              "ngaoundere",
+              "ngaoundere__ngaoundere_28; ngaoundere__ngaoundere_31; ngaoundere__ngaoundere_34",
+              "Retained"
+            ],
+            [
+              "paris",
+              "paris__paris_38; paris__paris_54; paris__paris_61",
+              "Retained"
+            ],
+            [
+              "rosario",
+              "rosario__rosario_1; rosario__rosario_4; rosario__rosario_9",
+              "Retained"
+            ],
+            [
+              "san_tome",
+              "san_tome__san_tome_17; san_tome__san_tome_41; san_tome__san_tome_46",
+              "Retained"
+            ],
+            [
+              "soriano",
+              "soriano__soriano_20; soriano__soriano_5; soriano__soriano_7",
+              "Retained"
+            ],
+            [
+              "svaneti",
+              "svaneti__svaneti_19; svaneti__svaneti_45; svaneti__svaneti_7",
+              "Retained"
+            ],
+            [
+              "tokyo",
+              "tokyo__tokyo_13; tokyo__tokyo_29; tokyo__tokyo_40",
+              "Retained"
+            ],
+            [
+              "tyrolw",
+              "tyrolw__tyrolw_4; tyrolw__tyrolw_57; tyrolw__tyrolw_68",
+              "Retained"
+            ],
+            [
+              "western",
+              "western__western_14; western__western_18; western__western_20",
+              "Retained"
+            ],
+            [
+              "zanzibar",
+              "zanzibar__zanzibar_131; zanzibar__zanzibar_133; zanzibar__zanzibar_36",
+              "Retained"
+            ]
+          ],
+          "font_size_pt": 9.0,
+          "notes": [
+            "Sources: v2/data/manifest.json; configs/v2_geographic_sensitivity.json.",
+            "monrovia__monrovia_48 has a CRS area-of-use caution."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "RGB is bilinearly resized to 448 x 448; masks use nearest-neighbor interpolation, with lossless PNG storage. Raw mask 0 denotes void; values 1 through 8 map to the prediction classes. Sidecars record archive member, size, CRC, SHA256, native dimensions, decoded-RGB identity, GeoTIFF metadata and processed-file hashes. Previously stored source files have prebound hashes; newly retrieved members receive their per-file SHA256 at retrieval. HTTP range requests retrieve selected archive members."
+        },
+        {
+          "type": "paragraph",
+          "text": "Supported WGS84 transformations cover 119 development and 71 panel images. The screen found zero overlap candidates in 8,449 supported cross-role envelope comparisons and zero decoded-RGB duplicate candidates. CRS area-of-use cautions concern aachen__aachen_1 and monrovia__monrovia_48. Native CRS tags are retained as recorded. The images remain in their fixed allocations; the geographic sensitivity excludes the entire Monrovia panel region. The screen describes image-level integrity within recorded transformation coverage. Upstream mosaic, provider and encoder-pretraining relationships remain additional sources of dependence."
+        }
+      ]
+    },
+    {
+      "title": "S3. Candidate pools and selection objectives",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Each allocation defines two 36-image candidate pools. The balanced profile contains three images per source region; the skewed profile contains five images from each of six fixed high-frequency regions and one from each remaining region. Pool membership can differ across profiles. Selectors receive image IDs, RGB descriptors, source-group labels, budget and seed. Candidate masks, class counts and validation/panel scores are absent from the selector interface. Shared calibration labels and pretrained encoders are resources beyond the per-fit image budget."
+        },
+        {
+          "type": "paragraph",
+          "text": "All descriptor policies use L2-normalized 384-dimensional DINOv2-S/14 CLS tokens {cite:oquab2024dinov2}. K starts from a seeded random image and repeatedly maximizes distance to the nearest selected image, with one minus cosine similarity and a seeded tie order {cite:sener2018coreset}. Random samples without replacement. Geo-random and GeoK restrict each step to non-exhausted groups with the smallest selected count. Geo-random draws from that eligible candidate union; GeoK maximizes nearest-set distance within it. Permuted GeoK applies the same procedure after a fixed size-preserving group reassignment for each selection seed."
+        },
+        {
+          "type": "paragraph",
+          "text": "The k-means++ policy uses D-squared seeding on the same descriptors and returns actual candidates {cite:arthur2007kmeanspp}. Facility location (FL) greedily maximizes summed coverage with similarity (cosine + 1)/2 clipped to [0,1] {cite:wei2015submodularity}. The FD adaptation creates 12 clusters by k-means++ initialization and up to 100 Lloyd iterations with empty-cluster repair, then draws images in random round-robin cluster order. The adaptation fixes DINO features and cluster count; the published feature-diversity method uses ImageNet ResNet18 descriptors and a Vendi-based adaptive count {cite:nogueira2026coreset}."
+        },
+        {
+          "type": "paragraph",
+          "text": "Weighted FL assigns a covered candidate in group r weight 1/(R n_r), where R is the group count and n_r the candidate count of that group. Each group contributes mean coverage to the objective. Its permuted control preserves group sizes and the weight multiset while reassigning membership. Both use ordinary FL similarities, greedy optimization and tie handling. Equal balanced-pool weights yield the ordinary FL objective; the added policies therefore use skewed pools. Group-mean utilities and weighted submodular objectives provide their methodological context {cite:wang2024utilityfairness,rafiey2024decomposable}."
+        },
+        {
+          "type": "table",
+          "id": "S4",
+          "caption": "Table S4. Active fit matrix. Each condition has three source allocations and three paired fits.",
+          "headers": [
+            "Recipe",
+            "Pool",
+            "Budgets",
+            "Policies",
+            "Conditions",
+            "Fits"
+          ],
+          "rows": [
+            [
+              "Complete",
+              "skewed5_1",
+              "12",
+              "8 base",
+              8,
+              72
+            ],
+            [
+              "Complete",
+              "skewed5_1",
+              "12",
+              "2 weighted",
+              2,
+              18
+            ],
+            [
+              "Frozen",
+              "balanced3",
+              "6, 12, 24",
+              "8 base",
+              24,
+              216
+            ],
+            [
+              "Frozen",
+              "skewed5_1",
+              "6, 12, 24",
+              "8 base",
+              24,
+              216
+            ],
+            [
+              "Frozen",
+              "skewed5_1",
+              "6, 12, 24",
+              "2 weighted",
+              6,
+              54
+            ],
+            [
+              "Active total",
+              "All above",
+              "As above",
+              "10 distinct",
+              64,
+              576
+            ]
+          ],
+          "font_size_pt": 9.0,
+          "notes": [
+            "Sources: configs/v2_design.json; configs/v2_extension.json.",
+            "Paired (selection, initialization) seeds are (0,0), (1,1), (2,2)."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "S4. Training recipes and inherited calibration",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The complete model uses an ImageNet-pretrained ResNet18 encoder and U-Net-style skip decoder {cite:he2016resnet,ronneberger2015unet}. Four blocks bilinearly resize features, concatenate matching skips and apply two 3 x 3 convolutions with GroupNorm and ReLU, yielding 128, 64, 32 and 16 channels. A 1 x 1 layer predicts eight classes. All 12,456,328 parameters are optimized. Encoder BatchNorm uses fixed pretrained running statistics and trainable affine parameters."
+        },
+        {
+          "type": "paragraph",
+          "text": "Training samples selected images uniformly with replacement and uses batches of two random 224 x 224 crops. All-void crops receive up to 16 crop proposals. Horizontal and vertical flips each have probability 0.5, followed by a uniform quarter rotation. Inputs use ImageNet normalization; cross entropy ignores void. AdamW uses betas 0.9/0.999, epsilon 1e-8 and weight decay 1e-4 on all parameters {cite:loshchilov2019adamw}. The constant decoder learning rate is ten times the constant encoder rate. Evaluation uses full 448 grids."
+        },
+        {
+          "type": "paragraph",
+          "text": "Calibration compares encoder rates 1e-4 and 3e-4 at steps 300, 600 and 1200 in each source allocation. The two trajectories share 24 random balanced-pool images, selection seed 101, initialization seed 0 and 20 source-validation images. Maximum equal-region union-class validation mIoU selects the recipe; ties favor fewer steps, then the lower rate. Six trajectories yield 18 checkpoint comparisons. GPU fits inherit these CPU-calibrated choices and share them across policies within an allocation."
+        },
+        {
+          "type": "table",
+          "id": "S5",
+          "caption": "Table S5. Inherited source-specific recipes and shared calibration resources.",
+          "headers": [
+            "Allocation",
+            "Encoder LR",
+            "Decoder LR",
+            "Steps",
+            "Calibration / validation images"
+          ],
+          "rows": [
+            [
+              "source0",
+              0.0003,
+              "0.0030",
+              600,
+              "24 / 20"
+            ],
+            [
+              "source1",
+              0.0001,
+              "0.0010",
+              1200,
+              "24 / 20"
+            ],
+            [
+              "source2",
+              0.0001,
+              "0.0010",
+              600,
+              "24 / 20"
+            ]
+          ],
+          "font_size_pt": 9.0,
+          "notes": [
+            "Source: evidence/v2/calibration/calibration.json and six rate trajectories.",
+            "Formal complete-model fits select 12 images. Calibration and validation labels are additional shared development resources."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "The frozen control fits a 128-unit ReLU MLP with 50,312 parameters to normalized 384-channel DINOv2 patch features on a 32 x 32 grid. Targets are adaptive-average-pooled native-mask class indicators, normalized over valid classes; cells with valid coverage below 0.5 are excluded. Each of 600 AdamW steps samples 4096 retained cells with replacement, with rate 1e-3 and weight decay 1e-4. Logits are bilinearly expanded to 448 before argmax. This recipe uses budgets 6, 12 and 24. The two model recipes also differ in pretraining, encoder, decoder, target aggregation and augmentation."
+        }
+      ]
+    },
+    {
+      "title": "S5. Regional estimand and uncertainty",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Within each fit and panel region, the three image confusion matrices are summed before class IoUs are computed. Class IoU divides its diagonal by row sum plus column sum minus diagonal. Union-class mIoU averages classes represented in truth or prediction, assigning zero to prediction-only classes. Truth-present mIoU averages classes represented in truth. Both score valid truth pixels on the processed grid. Regional scores are averaged across the three allocations and three paired fits before matched policy differences are formed."
+        },
+        {
+          "type": "paragraph",
+          "text": "Intervals use 10,000 percentile bootstrap resamples of paired regional differences, with seed 2026101805. The geographic units are the fixed 24 panel regions, or 23 for the Monrovia-excluded sensitivity. Source allocations and fitting seeds share regions and are averaged within geographic units {cite:roberts2017crossvalidation}. Intervals describe this purposive panel and recorded training randomization. The active main contrast is GeoK minus K for complete-model budget 12 in the skewed pool; the policy, budget and metric sensitivities are descriptive."
+        },
+        {
+          "type": "table",
+          "id": "S6",
+          "caption": "Table S6. Fixed main contrast and geographic/metric sensitivities. Differences and intervals are percentage points.",
+          "headers": [
+            "Summary",
+            "Metric",
+            "Regions",
+            "Difference [95% interval]"
+          ],
+          "rows": [
+            [
+              "All panel",
+              "Union-class",
+              24,
+              "1.678 [0.857, 2.507]"
+            ],
+            [
+              "All panel",
+              "Truth-present",
+              24,
+              "2.276 [1.343, 3.233]"
+            ],
+            [
+              "Monrovia excluded",
+              "Union-class",
+              23,
+              "1.576 [0.748, 2.412]"
+            ],
+            [
+              "Monrovia excluded",
+              "Truth-present",
+              23,
+              "2.170 [1.209, 3.137]"
+            ]
+          ],
+          "font_size_pt": 9.0,
+          "notes": [
+            "Source: tables/v2/primary.json."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "S6. Source-specific contrast table",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Table S7 reports every fixed contrast by source allocation and across all nine fits. The complete 64-condition matrix appears in Appendix S1. Positive differences favor the first named policy."
+        },
+        {
+          "type": "table",
+          "id": "S7",
+          "caption": "Table S7. All 36 fixed policy contrasts. Values are percentage-point differences; U = union-class, T = truth-present.",
+          "headers": [
+            "Recipe/pool/B",
+            "Contrast",
+            "s0 U",
+            "s1 U",
+            "s2 U",
+            "All U",
+            "All T"
+          ],
+          "rows": [
+            [
+              "Frozen/Bal/6",
+              "GeoK - K",
+              "−0.487",
+              "0.169",
+              "−0.403",
+              "−0.240",
+              "−0.263"
+            ],
+            [
+              "Frozen/Bal/6",
+              "GeoK - Permuted GeoK",
+              "−0.363",
+              "0.348",
+              "−0.104",
+              "−0.040",
+              "−0.039"
+            ],
+            [
+              "Frozen/Bal/6",
+              "GeoK - FL",
+              "0.477",
+              "0.223",
+              "−0.335",
+              "0.122",
+              "−0.113"
+            ],
+            [
+              "Frozen/Bal/6",
+              "GeoK - FD adaptation",
+              "−1.292",
+              "−0.349",
+              "0.009",
+              "−0.544",
+              "−0.392"
+            ],
+            [
+              "Frozen/Bal/12",
+              "GeoK - K",
+              "−0.639",
+              "1.619",
+              "1.727",
+              "0.902",
+              "1.035"
+            ],
+            [
+              "Frozen/Bal/12",
+              "GeoK - Permuted GeoK",
+              "−0.093",
+              "1.754",
+              "0.540",
+              "0.734",
+              "0.797"
+            ],
+            [
+              "Frozen/Bal/12",
+              "GeoK - FL",
+              "−0.589",
+              "0.884",
+              "0.576",
+              "0.290",
+              "0.124"
+            ],
+            [
+              "Frozen/Bal/12",
+              "GeoK - FD adaptation",
+              "−0.873",
+              "2.267",
+              "0.844",
+              "0.746",
+              "0.633"
+            ],
+            [
+              "Frozen/Bal/24",
+              "GeoK - K",
+              "0.271",
+              "−0.045",
+              "0.277",
+              "0.168",
+              "0.259"
+            ],
+            [
+              "Frozen/Bal/24",
+              "GeoK - Permuted GeoK",
+              "0.264",
+              "0.005",
+              "0.280",
+              "0.183",
+              "0.274"
+            ],
+            [
+              "Frozen/Bal/24",
+              "GeoK - FL",
+              "0.401",
+              "0.832",
+              "0.879",
+              "0.704",
+              "0.812"
+            ],
+            [
+              "Frozen/Bal/24",
+              "GeoK - FD adaptation",
+              "−0.153",
+              "1.644",
+              "−0.096",
+              "0.465",
+              "0.472"
+            ],
+            [
+              "Frozen/Skew/6",
+              "GeoK - K",
+              "−0.829",
+              "1.665",
+              "−0.339",
+              "0.166",
+              "−0.031"
+            ],
+            [
+              "Frozen/Skew/6",
+              "GeoK - Permuted GeoK",
+              "0.315",
+              "2.381",
+              "−0.366",
+              "0.777",
+              "0.630"
+            ],
+            [
+              "Frozen/Skew/6",
+              "GeoK - FL",
+              "−0.033",
+              "−1.066",
+              "−0.412",
+              "−0.504",
+              "−0.691"
+            ],
+            [
+              "Frozen/Skew/6",
+              "GeoK - FD adaptation",
+              "0.945",
+              "0.590",
+              "0.041",
+              "0.526",
+              "0.530"
+            ],
+            [
+              "Frozen/Skew/6",
+              "Weighted FL - FL",
+              "0.560",
+              "0.547",
+              "−0.158",
+              "0.316",
+              "0.673"
+            ],
+            [
+              "Frozen/Skew/6",
+              "Weighted FL - Permuted weighted FL",
+              "1.242",
+              "0.826",
+              "0.713",
+              "0.927",
+              "1.561"
+            ],
+            [
+              "Frozen/Skew/12",
+              "GeoK - K",
+              "0.714",
+              "3.066",
+              "0.216",
+              "1.332",
+              "1.751"
+            ],
+            [
+              "Frozen/Skew/12",
+              "GeoK - Permuted GeoK",
+              "1.060",
+              "2.747",
+              "0.006",
+              "1.271",
+              "1.661"
+            ],
+            [
+              "Frozen/Skew/12",
+              "GeoK - FL",
+              "1.353",
+              "0.606",
+              "−0.296",
+              "0.554",
+              "0.959"
+            ],
+            [
+              "Frozen/Skew/12",
+              "GeoK - FD adaptation",
+              "0.185",
+              "2.790",
+              "−0.416",
+              "0.853",
+              "1.253"
+            ],
+            [
+              "Frozen/Skew/12",
+              "Weighted FL - FL",
+              "0.933",
+              "0.102",
+              "0.325",
+              "0.453",
+              "1.117"
+            ],
+            [
+              "Frozen/Skew/12",
+              "Weighted FL - Permuted weighted FL",
+              "0.845",
+              "0.441",
+              "1.007",
+              "0.764",
+              "1.148"
+            ],
+            [
+              "Frozen/Skew/24",
+              "GeoK - K",
+              "0.232",
+              "0.537",
+              "0.190",
+              "0.320",
+              "0.351"
+            ],
+            [
+              "Frozen/Skew/24",
+              "GeoK - Permuted GeoK",
+              "0.537",
+              "0.591",
+              "0.041",
+              "0.390",
+              "0.459"
+            ],
+            [
+              "Frozen/Skew/24",
+              "GeoK - FL",
+              "0.623",
+              "−0.027",
+              "−0.277",
+              "0.106",
+              "0.081"
+            ],
+            [
+              "Frozen/Skew/24",
+              "GeoK - FD adaptation",
+              "0.884",
+              "1.815",
+              "−0.058",
+              "0.880",
+              "1.008"
+            ],
+            [
+              "Frozen/Skew/24",
+              "Weighted FL - FL",
+              "0.216",
+              "0.026",
+              "−0.148",
+              "0.032",
+              "−0.016"
+            ],
+            [
+              "Frozen/Skew/24",
+              "Weighted FL - Permuted weighted FL",
+              "−0.001",
+              "−0.008",
+              "0.355",
+              "0.115",
+              "0.104"
+            ],
+            [
+              "Full/Skew/12",
+              "GeoK - K",
+              "3.483",
+              "−0.541",
+              "2.092",
+              "1.678",
+              "2.276"
+            ],
+            [
+              "Full/Skew/12",
+              "GeoK - Permuted GeoK",
+              "1.110",
+              "−0.351",
+              "1.930",
+              "0.896",
+              "1.363"
+            ],
+            [
+              "Full/Skew/12",
+              "GeoK - FL",
+              "2.099",
+              "−1.959",
+              "−1.242",
+              "−0.367",
+              "0.050"
+            ],
+            [
+              "Full/Skew/12",
+              "GeoK - FD adaptation",
+              "0.770",
+              "−0.689",
+              "0.865",
+              "0.315",
+              "0.826"
+            ],
+            [
+              "Full/Skew/12",
+              "Weighted FL - FL",
+              "2.425",
+              "0.771",
+              "0.854",
+              "1.350",
+              "1.321"
+            ],
+            [
+              "Full/Skew/12",
+              "Weighted FL - Permuted weighted FL",
+              "0.667",
+              "1.908",
+              "3.820",
+              "2.132",
+              "1.766"
+            ]
+          ],
+          "font_size_pt": 9.0,
+          "notes": [
+            "Source: tables/v2/contrasts.json. Full = complete model; Frozen = DINO head; Bal/Skew = balanced3/skewed5_1.",
+            "The main-contrast interval is in Table S6. This table preserves the fixed contrast families."
+          ],
+          "column_weights": [
+            1.6,
+            3.1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "title": "S7. Equal available-pixel supervision control",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The source availability diagnostic found at least 2,303,273 valid processed pixels in every locked 12-image complete-model selection. The control fixes availability at 2,300,000 unique valid pixels for K, GeoK and permuted GeoK across the three allocations and paired seeds, giving 27 fits. Selected RGB images, ordering, learning rates, steps and initialization match the corresponding full-label CUDA identities."
+        },
+        {
+          "type": "paragraph",
+          "text": "Pixels are enumerated in selected-image order, then row-major order. An independent NumPy PCG64 generator, seeded by 2026101811 plus selection seed, uniformly draws excess valid positions without replacement and marks them ignored. The retained mask stays fixed throughout training; original void stays ignored. Crop eligibility and the 16-proposal rule use original complete masks, preserving the crop/augmentation random stream. A drawn crop with zero retained supervision stops execution. Source-validation and panel evaluation use complete original masks."
+        },
+        {
+          "type": "paragraph",
+          "text": "Independent reconstruction checks retained masks, packed keep-bitmap hashes, class counts and their combined ordered hash, exact 2,300,000 availability and original processed-file identities. This estimand concerns available unique labels on the processed grid; class composition and cumulative crop visits can vary with selected images. Each full-to-thinned change below is formed within the same region and matched source/seed identities before bootstrapping."
+        },
+        {
+          "type": "table",
+          "id": "S8",
+          "caption": "Table S8. Pixel-budget contrasts and directly paired full-to-thinned changes. Percentage points with stored 95% paired-region intervals.",
+          "headers": [
+            "Contrast",
+            "Allocation",
+            "Full label",
+            "2.3M pixels",
+            "Thin minus full"
+          ],
+          "rows": [
+            [
+              "GeoK - K",
+              "overall24",
+              "1.678 [0.857, 2.507]",
+              "1.996 [1.191, 2.832]",
+              "0.318 [−0.135, 0.739]"
+            ],
+            [
+              "GeoK - K",
+              "source0",
+              "3.483 [2.109, 4.890]",
+              "2.975 [1.421, 4.534]",
+              "−0.508 [−0.985, 0.001]"
+            ],
+            [
+              "GeoK - K",
+              "source1",
+              "−0.541 [−1.824, 0.817]",
+              "−0.614 [−1.801, 0.771]",
+              "−0.073 [−1.041, 0.784]"
+            ],
+            [
+              "GeoK - K",
+              "source2",
+              "2.092 [0.980, 3.228]",
+              "3.628 [2.500, 4.831]",
+              "1.536 [0.761, 2.294]"
+            ],
+            [
+              "GeoK - Permuted GeoK",
+              "overall24",
+              "0.896 [0.343, 1.449]",
+              "0.247 [−0.187, 0.688]",
+              "−0.650 [−1.049, −0.258]"
+            ],
+            [
+              "GeoK - Permuted GeoK",
+              "source0",
+              "1.110 [0.209, 2.016]",
+              "2.018 [0.967, 3.058]",
+              "0.908 [0.249, 1.623]"
+            ],
+            [
+              "GeoK - Permuted GeoK",
+              "source1",
+              "−0.351 [−1.657, 0.937]",
+              "−1.474 [−2.800, −0.218]",
+              "−1.123 [−2.282, −0.021]"
+            ],
+            [
+              "GeoK - Permuted GeoK",
+              "source2",
+              "1.930 [0.729, 3.178]",
+              "0.197 [−0.793, 1.191]",
+              "−1.734 [−2.847, −0.608]"
+            ]
+          ],
+          "font_size_pt": 9.0,
+          "notes": [
+            "Source: tables/v2_pixel_budget/descriptive_analysis.json. Union-class mIoU; 24 regions; bootstrap 10,000, seed 2026101805.",
+            "overall24 averages nine matched fits within region; source summaries average three."
+          ],
+          "column_weights": [
+            2,
+            1,
+            1.5,
+            1.5,
+            1.5
+          ]
+        }
+      ]
+    },
+    {
+      "title": "S8. Complementary figures",
+      "blocks": [
+        {
+          "type": "figure",
+          "id": "FS1",
+          "path": "figures/v2/results/primary_truth_present.png",
+          "width_inches": 6.5,
+          "alt": "Truth-present metric sensitivity of the fixed main comparison.",
+          "caption": "Figure S1. Truth-present metric sensitivity for the fixed main comparison. Left: GeoK minus visual K in 24 panel regions, in fixed design order; source points average three paired fits and black diamonds average nine. Right: overall24, fixed23 and source means. Horizontal bounds show stored 95% paired-region intervals for overall summaries. Values are percentage points. Complete-model predictions use the audited GPU execution."
+        },
+        {
+          "type": "figure",
+          "id": "FS2",
+          "path": "figures/v2/results/models_skewed_b12.png",
+          "width_inches": 6.5,
+          "alt": "All ten policies in two model recipes at budget12, skewed pool.",
+          "caption": "Figure S2. Both model recipes at image budget 12 in the skewed pool. Points show union-class and truth-present equal-region mIoU averaged across nine fits for all ten policies. The complete model uses the GPU ResNet18 recipe; the frozen recipe uses DINOv2 features and an MLP head. Pretraining, encoder, target grid, decoder and augmentation also differ."
+        }
+      ]
+    },
+    {
+      "title": "S9. Data attribution and licensing record",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "OpenEarthMap attribution follows the official catalogue https://open-earth-map.org/attribution.html and dataset record https://doi.org/10.5281/zenodo.7223446 {cite:xia2023openearthmap}. Tables S9 and S10 preserve provider/source relationships. GFDRR denotes the Global Facility for Disaster Reduction and Recovery; OAM denotes OpenAerialMap. RGB and mask licenses are tracked separately. OpenEarthMap labels follow the RGB license, with CC BY-NC-SA 4.0 for labels where RGB is public domain or unspecified. Unspecified RGB permissions remain unresolved."
+        },
+        {
+          "type": "table",
+          "id": "S9",
+          "caption": "Table S9. Catalogue attribution for 24 development regions. Countries follow recorded catalogue fields.",
+          "headers": [
+            "Region",
+            "Country",
+            "Source",
+            "Provider",
+            "RGB license"
+          ],
+          "rows": [
+            [
+              "aachen",
+              "Germany",
+              "GeoNRW",
+              "German state North Rhine-Westphalia",
+              "D"
+            ],
+            [
+              "accra",
+              "Ghana",
+              "Open Cities AI / OAM",
+              "GFDRR / Environmental Protection Agency Ghana",
+              "B"
+            ],
+            [
+              "austin",
+              "USA",
+              "Inria",
+              "USGS",
+              "PD"
+            ],
+            [
+              "chicago",
+              "USA",
+              "Inria",
+              "USGS",
+              "PD"
+            ],
+            [
+              "kyoto",
+              "Japan",
+              "Open data",
+              "Geospatial Information Authority of Japan",
+              "U"
+            ],
+            [
+              "melbourne",
+              "Australia",
+              "Open data",
+              "City of Melbourne",
+              "B"
+            ],
+            [
+              "rio",
+              "Brazil",
+              "SpaceNet 1",
+              "Maxar",
+              "SA"
+            ],
+            [
+              "shanghai",
+              "China",
+              "SpaceNet 2",
+              "Maxar",
+              "SA"
+            ],
+            [
+              "vegas",
+              "USA",
+              "SpaceNet 2",
+              "Maxar",
+              "SA"
+            ],
+            [
+              "vienna",
+              "Austria",
+              "Inria",
+              "Vienna",
+              "PD"
+            ],
+            [
+              "christchurch",
+              "New Zealand",
+              "AIRS",
+              "Land Information of New Zealand",
+              "B"
+            ],
+            [
+              "dhaka",
+              "Bangladesh",
+              "Open data",
+              "AIGEO Center",
+              "B"
+            ],
+            [
+              "chisinau",
+              "Moldova",
+              "HTCD (catalogue link)",
+              "Lightcyphers",
+              "B"
+            ],
+            [
+              "maputo",
+              "Mozambique",
+              "Open data",
+              "MapeandoMeuBairro",
+              "B"
+            ],
+            [
+              "niamey",
+              "Niger",
+              "Open Cities AI",
+              "GFDRR",
+              "B"
+            ],
+            [
+              "rotterdam",
+              "Netherlands",
+              "SpaceNet 6",
+              "Maxar",
+              "SA"
+            ],
+            [
+              "bogota",
+              "Colombia",
+              "Open data",
+              "Maptime Bogota",
+              "B"
+            ],
+            [
+              "chiangmai",
+              "Tailand (catalogue spelling)",
+              "Open data",
+              "UR Field Lab Chiang Mai",
+              "B"
+            ],
+            [
+              "daressalaam",
+              "Tanzania",
+              "Open Cities AI",
+              "GFDRR",
+              "B"
+            ],
+            [
+              "mahe",
+              "Seychelles",
+              "Open Cities AI",
+              "GFDRR",
+              "B"
+            ],
+            [
+              "santiago",
+              "Chile",
+              "Open data",
+              "SECTRA",
+              "B"
+            ],
+            [
+              "tonga",
+              "Tonga",
+              "Open data",
+              "World Bank, V-TOL Aerospace",
+              "B"
+            ],
+            [
+              "ulaanbaatar",
+              "Mongolia",
+              "Open data",
+              "City of Ulaanbaatar and Asia Foundation",
+              "B"
+            ],
+            [
+              "pointenoire",
+              "Congo (catalogue)",
+              "Open Cities AI",
+              "GFDRR",
+              "B"
+            ]
+          ],
+          "font_size_pt": 9.0,
+          "notes": [
+            "Source: docs/data_attribution.md, checked 2026-10-18. B = CC BY 4.0; SA = CC BY-SA 4.0; D = DL-DE-BY-2.0; PD = public domain; U = unspecified RGB license.",
+            "Accra has two source rows with unresolved per-image mapping. Dar es salaam has duplicate catalogue rows. Kyoto RGB license is unresolved."
+          ],
+          "column_weights": [
+            1.2,
+            1.2,
+            1.3,
+            2.3,
+            1
+          ]
+        },
+        {
+          "type": "table",
+          "id": "S10",
+          "caption": "Table S10. Catalogue attribution for the 24 added panel regions.",
+          "headers": [
+            "Region",
+            "Country",
+            "Source",
+            "Provider",
+            "RGB license"
+          ],
+          "rows": [
+            [
+              "abancay",
+              "Peru",
+              "SIGRID",
+              "CENEPRED",
+              "U"
+            ],
+            [
+              "al_qurnah",
+              "Iraq",
+              "OAM",
+              "Bilal Koç",
+              "B"
+            ],
+            [
+              "baybay",
+              "Philippines",
+              "OAM",
+              "SkyEye",
+              "B"
+            ],
+            [
+              "bielefeld",
+              "Germany",
+              "GeoNRW",
+              "North Rhine-Westphalia",
+              "D"
+            ],
+            [
+              "buenos_aires",
+              "Argentina",
+              "OAM",
+              "Municipalidad de Pergamino",
+              "B"
+            ],
+            [
+              "chiclayo",
+              "Peru",
+              "SIGRID",
+              "CENEPRED",
+              "U"
+            ],
+            [
+              "coxsbazar",
+              "Bangladesh",
+              "OAM",
+              "IOM Bangladesh NPM Drone",
+              "B"
+            ],
+            [
+              "dowa",
+              "Malawi",
+              "OAM",
+              "MapMalawi",
+              "B"
+            ],
+            [
+              "kagera",
+              "Tanzania",
+              "OAM",
+              "WeRobotics",
+              "B"
+            ],
+            [
+              "kampala",
+              "Uganda",
+              "Open Cities AI",
+              "GFDRR",
+              "B"
+            ],
+            [
+              "khartoum",
+              "Sudan",
+              "SpaceNet 2",
+              "Maxar",
+              "SA"
+            ],
+            [
+              "kinshasa",
+              "Congo (catalogue)",
+              "Open Cities AI",
+              "GFDRR",
+              "B"
+            ],
+            [
+              "kitsap",
+              "USA",
+              "Inria",
+              "USGS",
+              "PD"
+            ],
+            [
+              "monrovia",
+              "Liberia",
+              "Open Cities AI / OAM",
+              "GFDRR / Uhurulabs",
+              "B; mapping unresolved"
+            ],
+            [
+              "ngaoundere",
+              "Cameroon",
+              "Open Cities AI",
+              "GFDRR",
+              "B"
+            ],
+            [
+              "paris",
+              "France",
+              "SpaceNet 2",
+              "Maxar",
+              "SA"
+            ],
+            [
+              "rosario",
+              "Argentina",
+              "OAM",
+              "Julia Faraudello",
+              "B"
+            ],
+            [
+              "san_tome",
+              "Sao Tome and Principe",
+              "OAM",
+              "Drones Adventures",
+              "B"
+            ],
+            [
+              "soriano",
+              "Uruguay",
+              "OAM",
+              "IntelDrones SRL",
+              "B"
+            ],
+            [
+              "svaneti",
+              "Georgia",
+              "OAM",
+              "Transcaucasian Trail Association",
+              "B"
+            ],
+            [
+              "tokyo",
+              "Japan",
+              "GSI",
+              "Geospatial Information Authority of Japan",
+              "U"
+            ],
+            [
+              "tyrolw",
+              "Alias unconfirmed",
+              "Inria candidate",
+              "Tyrol candidate",
+              "PD candidate; alias unresolved"
+            ],
+            [
+              "western",
+              "Ghana",
+              "OAM",
+              "UMaT YouthMappers",
+              "B"
+            ],
+            [
+              "zanzibar",
+              "Tanzania",
+              "Open Cities AI / OAM",
+              "GFDRR / Commission for Lands and Revolutionary Government of Zanzibar",
+              "B; mapping unresolved"
+            ]
+          ],
+          "font_size_pt": 9.0,
+          "notes": [
+            "Sources: docs/v2_data_attribution.md and v2_attribution_followup.md, checked 2026-10-18. License codes follow Table S9.",
+            "Monrovia and Zanzibar each have two catalogue sources with unresolved image-level mapping. Tyrol has an unresolved alias relationship to tyrolw. Congo is retained as recorded."
+          ],
+          "column_weights": [
+            1.2,
+            1.2,
+            1.2,
+            2.4,
+            1.5
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Provider entrances are GeoNRW (https://www.opengeodata.nrw.de/produkte/), SIGRID/CENEPRED (https://sigrid.cenepred.gob.pe/), GSI (https://maps.gsi.go.jp/development/ichiran.html), Inria (https://project.inria.fr/aerialimagelabeling/), Open Cities AI (https://www.drivendata.org/competitions/60/building-segmentation-disaster-resilience/) and OAM (https://map.openaerialmap.org/). OAM credits include the listed provider and Open Imagery Network contributors. SpaceNet 1, 2 and 6 enter through https://spacenet.ai/spacenet-buildings-dataset-v1/, https://spacenet.ai/spacenet-buildings-dataset-v2/ and https://spacenet.ai/sn6-challenge/ {cite:vanetten2018spacenet}. Other catalogue entrances are AIRS (https://www.airs-dataset.com/) and the HTCD link (https://github.com/ShaoRuizhe/SUNet-change_detection)."
+        },
+        {
+          "type": "paragraph",
+          "text": "Current catalogue RGB-license cells are unspecified for Abancay, Chiclayo and Tokyo, as for Kyoto in development. A search-indexed extract of the original OpenEarthMap supplement gives CC BY 4.0 for Abancay and Chiclayo; direct retrieval was unavailable in the follow-up. The ledger retains unresolved status pending source-level verification. Exact scene URIs and acquisition dates remain available-metadata gaps. Displayed imagery carries provider credit and the 448-grid resampling/PNG-conversion notice."
+        },
+        {
+          "type": "paragraph",
+          "text": "License texts are CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/), CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/), CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0/) and DL-DE-BY-2.0 (https://www.govdata.de/dl-de/by-2-0). Public-domain status follows the catalogue statement. Provider credits and the processing notice accompany displays and retained provenance."
+        }
+      ]
+    },
+    {
+      "title": "Appendix S1. Complete source-specific condition matrix",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Tables S11a–S11g contain all 64 active conditions. Each cell is union-class / truth-present equal-region mIoU in percent. Source columns average three paired fits; All nine averages the three source columns. K denotes visual k-center, GeoK the actual-group quota rule, FL facility location and FD the feature-diversity adaptation. The canonical CSVs retain raw fitting means, class outcomes, coverage and selected-region summaries."
+        },
+        {
+          "type": "table",
+          "id": "S11a",
+          "caption": "Table S11a. All active conditions: frozen DINOv2 head, balanced pool, image budget 6.",
+          "headers": [
+            "Policy",
+            "source0",
+            "source1",
+            "source2",
+            "All nine"
+          ],
+          "rows": [
+            [
+              "Random",
+              "21.581 / 21.835",
+              "22.847 / 24.225",
+              "24.850 / 25.657",
+              "23.093 / 23.906"
+            ],
+            [
+              "K",
+              "21.131 / 21.578",
+              "22.577 / 23.647",
+              "24.864 / 25.718",
+              "22.858 / 23.648"
+            ],
+            [
+              "Geo-random",
+              "22.625 / 22.965",
+              "22.519 / 23.079",
+              "24.241 / 25.833",
+              "23.128 / 23.959"
+            ],
+            [
+              "GeoK",
+              "20.645 / 20.915",
+              "22.746 / 23.918",
+              "24.462 / 25.320",
+              "22.618 / 23.385"
+            ],
+            [
+              "Permuted GeoK",
+              "21.007 / 21.451",
+              "22.399 / 23.491",
+              "24.566 / 25.328",
+              "22.657 / 23.423"
+            ],
+            [
+              "k-means++",
+              "21.564 / 21.771",
+              "21.941 / 22.309",
+              "24.371 / 25.519",
+              "22.626 / 23.200"
+            ],
+            [
+              "FL",
+              "20.168 / 20.168",
+              "22.523 / 23.904",
+              "24.796 / 26.422",
+              "22.496 / 23.498"
+            ],
+            [
+              "FD adaptation",
+              "21.937 / 22.453",
+              "23.096 / 23.217",
+              "24.453 / 25.659",
+              "23.162 / 23.776"
+            ]
+          ],
+          "font_size_pt": 9.0,
+          "notes": [
+            "Sources: tables/v2/conditions_by_source.csv; conditions.csv. Entries are percent."
+          ],
+          "column_weights": [
+            2.2,
+            1.2,
+            1.2,
+            1.2,
+            1.2
+          ]
+        },
+        {
+          "type": "table",
+          "id": "S11b",
+          "caption": "Table S11b. All active conditions: frozen DINOv2 head, balanced pool, image budget 12.",
+          "headers": [
+            "Policy",
+            "source0",
+            "source1",
+            "source2",
+            "All nine"
+          ],
+          "rows": [
+            [
+              "Random",
+              "23.764 / 24.119",
+              "23.547 / 24.293",
+              "25.108 / 26.181",
+              "24.139 / 24.864"
+            ],
+            [
+              "K",
+              "23.466 / 23.901",
+              "23.719 / 24.124",
+              "25.157 / 26.187",
+              "24.114 / 24.737"
+            ],
+            [
+              "Geo-random",
+              "24.148 / 24.657",
+              "25.192 / 25.864",
+              "26.713 / 27.483",
+              "25.351 / 26.001"
+            ],
+            [
+              "GeoK",
+              "22.827 / 23.293",
+              "25.338 / 26.373",
+              "26.884 / 27.653",
+              "25.016 / 25.773"
+            ],
+            [
+              "Permuted GeoK",
+              "22.919 / 23.422",
+              "23.584 / 24.137",
+              "26.344 / 27.367",
+              "24.283 / 24.975"
+            ],
+            [
+              "k-means++",
+              "23.703 / 24.213",
+              "22.860 / 23.326",
+              "26.177 / 27.328",
+              "24.247 / 24.956"
+            ],
+            [
+              "FL",
+              "23.415 / 23.857",
+              "24.454 / 25.385",
+              "26.308 / 27.703",
+              "24.726 / 25.648"
+            ],
+            [
+              "FD adaptation",
+              "23.700 / 24.235",
+              "23.071 / 23.976",
+              "26.040 / 27.209",
+              "24.270 / 25.140"
+            ]
+          ],
+          "font_size_pt": 9.0,
+          "notes": [
+            "Sources: tables/v2/conditions_by_source.csv; conditions.csv. Entries are percent."
+          ],
+          "column_weights": [
+            2.2,
+            1.2,
+            1.2,
+            1.2,
+            1.2
+          ]
+        },
+        {
+          "type": "table",
+          "id": "S11c",
+          "caption": "Table S11c. All active conditions: frozen DINOv2 head, balanced pool, image budget 24.",
+          "headers": [
+            "Policy",
+            "source0",
+            "source1",
+            "source2",
+            "All nine"
+          ],
+          "rows": [
+            [
+              "Random",
+              "24.679 / 25.087",
+              "25.823 / 26.600",
+              "27.902 / 28.535",
+              "26.135 / 26.740"
+            ],
+            [
+              "K",
+              "24.387 / 24.725",
+              "25.819 / 26.470",
+              "27.403 / 28.583",
+              "25.870 / 26.593"
+            ],
+            [
+              "Geo-random",
+              "25.517 / 25.897",
+              "25.370 / 26.169",
+              "27.797 / 28.813",
+              "26.228 / 26.960"
+            ],
+            [
+              "GeoK",
+              "24.658 / 24.860",
+              "25.775 / 26.926",
+              "27.680 / 28.770",
+              "26.038 / 26.852"
+            ],
+            [
+              "Permuted GeoK",
+              "24.394 / 24.903",
+              "25.770 / 26.447",
+              "27.400 / 28.384",
+              "25.855 / 26.578"
+            ],
+            [
+              "k-means++",
+              "25.005 / 25.335",
+              "24.691 / 25.600",
+              "27.308 / 28.217",
+              "25.668 / 26.384"
+            ],
+            [
+              "FL",
+              "24.257 / 24.613",
+              "24.942 / 25.640",
+              "26.802 / 27.867",
+              "25.334 / 26.040"
+            ],
+            [
+              "FD adaptation",
+              "24.810 / 25.280",
+              "24.131 / 25.097",
+              "27.776 / 28.763",
+              "25.573 / 26.380"
+            ]
+          ],
+          "font_size_pt": 9.0,
+          "notes": [
+            "Sources: tables/v2/conditions_by_source.csv; conditions.csv. Entries are percent."
+          ],
+          "column_weights": [
+            2.2,
+            1.2,
+            1.2,
+            1.2,
+            1.2
+          ]
+        },
+        {
+          "type": "table",
+          "id": "S11d",
+          "caption": "Table S11d. All active conditions: frozen DINOv2 head, skewed pool, image budget 6.",
+          "headers": [
+            "Policy",
+            "source0",
+            "source1",
+            "source2",
+            "All nine"
+          ],
+          "rows": [
+            [
+              "Random",
+              "22.500 / 22.723",
+              "23.665 / 24.649",
+              "23.862 / 24.082",
+              "23.342 / 23.818"
+            ],
+            [
+              "K",
+              "24.130 / 25.217",
+              "22.307 / 23.697",
+              "24.635 / 25.389",
+              "23.691 / 24.768"
+            ],
+            [
+              "Geo-random",
+              "21.349 / 21.837",
+              "22.609 / 23.557",
+              "24.618 / 25.228",
+              "22.859 / 23.541"
+            ],
+            [
+              "GeoK",
+              "23.301 / 24.457",
+              "23.972 / 24.773",
+              "24.296 / 24.980",
+              "23.856 / 24.737"
+            ],
+            [
+              "Permuted GeoK",
+              "22.986 / 23.788",
+              "21.592 / 23.206",
+              "24.662 / 25.326",
+              "23.080 / 24.106"
+            ],
+            [
+              "k-means++",
+              "22.110 / 22.292",
+              "21.532 / 22.658",
+              "23.109 / 24.315",
+              "22.250 / 23.088"
+            ],
+            [
+              "FL",
+              "23.333 / 24.269",
+              "25.038 / 27.089",
+              "24.708 / 24.925",
+              "24.360 / 25.427"
+            ],
+            [
+              "FD adaptation",
+              "22.356 / 22.771",
+              "23.382 / 24.244",
+              "24.254 / 25.604",
+              "23.331 / 24.206"
+            ],
+            [
+              "Weighted FL",
+              "23.894 / 24.898",
+              "25.586 / 27.027",
+              "24.550 / 26.377",
+              "24.676 / 26.101"
+            ],
+            [
+              "Permuted weighted FL",
+              "22.652 / 22.652",
+              "24.760 / 26.221",
+              "23.837 / 24.745",
+              "23.749 / 24.539"
+            ]
+          ],
+          "font_size_pt": 9.0,
+          "notes": [
+            "Sources: tables/v2/conditions_by_source.csv; conditions.csv. Entries are percent."
+          ],
+          "column_weights": [
+            2.2,
+            1.2,
+            1.2,
+            1.2,
+            1.2
+          ]
+        },
+        {
+          "type": "table",
+          "id": "S11e",
+          "caption": "Table S11e. All active conditions: frozen DINOv2 head, skewed pool, image budget 12.",
+          "headers": [
+            "Policy",
+            "source0",
+            "source1",
+            "source2",
+            "All nine"
+          ],
+          "rows": [
+            [
+              "Random",
+              "23.235 / 23.462",
+              "25.250 / 26.157",
+              "25.577 / 26.102",
+              "24.687 / 25.240"
+            ],
+            [
+              "K",
+              "24.517 / 25.390",
+              "23.945 / 24.831",
+              "26.240 / 26.729",
+              "24.901 / 25.650"
+            ],
+            [
+              "Geo-random",
+              "25.369 / 26.582",
+              "25.127 / 25.992",
+              "26.950 / 28.034",
+              "25.815 / 26.869"
+            ],
+            [
+              "GeoK",
+              "25.231 / 26.296",
+              "27.012 / 28.478",
+              "26.456 / 27.428",
+              "26.233 / 27.401"
+            ],
+            [
+              "Permuted GeoK",
+              "24.171 / 24.724",
+              "24.265 / 25.569",
+              "26.450 / 26.925",
+              "24.962 / 25.739"
+            ],
+            [
+              "k-means++",
+              "24.310 / 24.561",
+              "25.486 / 26.545",
+              "25.727 / 26.614",
+              "25.174 / 25.907"
+            ],
+            [
+              "FL",
+              "23.879 / 24.308",
+              "26.406 / 27.320",
+              "26.752 / 27.697",
+              "25.679 / 26.442"
+            ],
+            [
+              "FD adaptation",
+              "25.047 / 25.606",
+              "24.222 / 25.194",
+              "26.872 / 27.644",
+              "25.380 / 26.148"
+            ],
+            [
+              "Weighted FL",
+              "24.812 / 25.801",
+              "26.508 / 28.448",
+              "27.077 / 28.428",
+              "26.132 / 27.559"
+            ],
+            [
+              "Permuted weighted FL",
+              "23.967 / 24.521",
+              "26.067 / 27.779",
+              "26.070 / 26.932",
+              "25.368 / 26.411"
+            ]
+          ],
+          "font_size_pt": 9.0,
+          "notes": [
+            "Sources: tables/v2/conditions_by_source.csv; conditions.csv. Entries are percent."
+          ],
+          "column_weights": [
+            2.2,
+            1.2,
+            1.2,
+            1.2,
+            1.2
+          ]
+        },
+        {
+          "type": "table",
+          "id": "S11f",
+          "caption": "Table S11f. All active conditions: frozen DINOv2 head, skewed pool, image budget 24.",
+          "headers": [
+            "Policy",
+            "source0",
+            "source1",
+            "source2",
+            "All nine"
+          ],
+          "rows": [
+            [
+              "Random",
+              "25.030 / 25.414",
+              "27.062 / 28.302",
+              "27.714 / 28.304",
+              "26.602 / 27.340"
+            ],
+            [
+              "K",
+              "25.487 / 25.970",
+              "26.319 / 27.363",
+              "27.700 / 28.423",
+              "26.502 / 27.252"
+            ],
+            [
+              "Geo-random",
+              "24.894 / 25.651",
+              "26.045 / 27.167",
+              "27.764 / 28.538",
+              "26.234 / 27.119"
+            ],
+            [
+              "GeoK",
+              "25.719 / 26.124",
+              "26.857 / 28.271",
+              "27.890 / 28.413",
+              "26.822 / 27.603"
+            ],
+            [
+              "Permuted GeoK",
+              "25.181 / 25.719",
+              "26.266 / 27.405",
+              "27.849 / 28.307",
+              "26.432 / 27.144"
+            ],
+            [
+              "k-means++",
+              "25.101 / 25.341",
+              "26.926 / 28.026",
+              "27.566 / 28.078",
+              "26.531 / 27.148"
+            ],
+            [
+              "FL",
+              "25.095 / 25.520",
+              "26.884 / 28.370",
+              "28.166 / 28.674",
+              "26.715 / 27.521"
+            ],
+            [
+              "FD adaptation",
+              "24.835 / 25.295",
+              "25.041 / 25.963",
+              "27.948 / 28.526",
+              "25.941 / 26.595"
+            ],
+            [
+              "Weighted FL",
+              "25.312 / 25.493",
+              "26.910 / 28.385",
+              "28.019 / 28.637",
+              "26.747 / 27.505"
+            ],
+            [
+              "Permuted weighted FL",
+              "25.313 / 25.614",
+              "26.919 / 28.325",
+              "27.664 / 28.262",
+              "26.632 / 27.401"
+            ]
+          ],
+          "font_size_pt": 9.0,
+          "notes": [
+            "Sources: tables/v2/conditions_by_source.csv; conditions.csv. Entries are percent."
+          ],
+          "column_weights": [
+            2.2,
+            1.2,
+            1.2,
+            1.2,
+            1.2
+          ]
+        },
+        {
+          "type": "table",
+          "id": "S11g",
+          "caption": "Table S11g. All active conditions: complete spatial model, skewed pool, image budget 12.",
+          "headers": [
+            "Policy",
+            "source0",
+            "source1",
+            "source2",
+            "All nine"
+          ],
+          "rows": [
+            [
+              "Random",
+              "17.674 / 17.674",
+              "19.798 / 20.644",
+              "19.271 / 19.893",
+              "18.914 / 19.403"
+            ],
+            [
+              "K",
+              "15.816 / 16.276",
+              "19.852 / 20.926",
+              "17.863 / 18.426",
+              "17.843 / 18.542"
+            ],
+            [
+              "Geo-random",
+              "21.363 / 21.972",
+              "22.223 / 23.674",
+              "20.654 / 21.658",
+              "21.413 / 22.434"
+            ],
+            [
+              "GeoK",
+              "19.299 / 19.778",
+              "19.311 / 22.037",
+              "19.955 / 20.639",
+              "19.522 / 20.818"
+            ],
+            [
+              "Permuted GeoK",
+              "18.189 / 18.346",
+              "19.662 / 21.075",
+              "18.025 / 18.945",
+              "18.625 / 19.455"
+            ],
+            [
+              "k-means++",
+              "18.855 / 18.997",
+              "20.711 / 22.025",
+              "19.399 / 20.559",
+              "19.655 / 20.527"
+            ],
+            [
+              "FL",
+              "17.200 / 17.200",
+              "21.270 / 23.149",
+              "21.197 / 21.956",
+              "19.889 / 20.768"
+            ],
+            [
+              "FD adaptation",
+              "18.529 / 18.650",
+              "19.999 / 21.426",
+              "19.090 / 19.899",
+              "19.206 / 19.992"
+            ],
+            [
+              "Weighted FL",
+              "19.625 / 20.121",
+              "22.041 / 23.396",
+              "22.051 / 22.751",
+              "21.239 / 22.089"
+            ],
+            [
+              "Permuted weighted FL",
+              "18.958 / 18.958",
+              "20.134 / 22.609",
+              "18.231 / 19.403",
+              "19.108 / 20.323"
+            ]
+          ],
+          "font_size_pt": 9.0,
+          "notes": [
+            "Sources: tables/v2/conditions_by_source.csv; conditions.csv. Entries are percent."
+          ],
+          "column_weights": [
+            2.2,
+            1.2,
+            1.2,
+            1.2,
+            1.2
+          ]
+        }
+      ]
+    }
+  ],
+  "back_matter": [],
+  "reference_order": [
+    "xia2023openearthmap",
+    "oquab2024dinov2",
+    "sener2018coreset",
+    "arthur2007kmeanspp",
+    "wei2015submodularity",
+    "nogueira2026coreset",
+    "wang2024utilityfairness",
+    "rafiey2024decomposable",
+    "he2016resnet",
+    "ronneberger2015unet",
+    "loshchilov2019adamw",
+    "roberts2017crossvalidation",
+    "vanetten2018spacenet"
+  ],
+  "evidence_binding": {
+    "audited_result_inventory_sha256": "b1ff51e20b7bcea5f1e3a926e771a698a5a79cea6a06e3b5bc768529ea9c8be8",
+    "freeze_sha256": "5fd417464cc88024ad4063b2dc77366c1b6d3c80ea7cb1fd3083b0ddc2957bd8",
+    "numeric_file_sha256": {
+      "tables/v2/conditions_by_source.csv": "1ee93c61458730b6bd1767f318f140082c533d1f6602c75e37d0e65d9bc7a930",
+      "tables/v2/conditions.csv": "6839eb25476fa491ff065efbe9f6dd5dd3511c208435f95f06265a860c4a9ef4",
+      "tables/v2/regions.csv": "f9a26a39d0c5d444fbeb2da3b46be518e64ac26c6261717ad30bbb78840e59c6",
+      "tables/v2/classes.csv": "64573f6c486f3d4c9a181d386d8dd1173876faa05d8b7f606b796ee2ca5ad533",
+      "tables/v2/contrasts.json": "55b704657c96730da6b3e1f6ea81e08f68a012e70dc2f844444ef2e545124551",
+      "tables/v2/primary.json": "4b1cba5b9778d3a338a7d54f2cb8b70ada0ab44335c72e4b4885fd9f47e61f8f"
+    },
+    "bibliography_sha256": "a0389f038d2495538cb70a7173f0812c3a78fbf8e73106a1066a892847e71d97",
+    "asset_sha256": {
+      "figures/v2/results/primary_truth_present.png": "341035341fe15e92cda52cb8ae9294534654ad4ea257f037cd87f18686f6076a",
+      "figures/v2/results/models_skewed_b12.png": "7fd629de436dcdc67a3cbc42eaa9ac0a82a4cb0ebd491e49b9ae982be3892988"
+    },
+    "supplemental_file_sha256": {
+      "configs/v2_active_gpu_amendment.json": "05b06f37acaaff2412e63baf126ab0e66ce552770af2b3dcbaed497c7ed94518",
+      "evidence/v2/active_run_completeness.json": "cb32a37310ed765320b23ce29650e5a9fe60af4e874bab66f35b42b0adba5dfb",
+      "configs/v2_cuda_execution_plan.json": "15d586fd03389d495dfc2b7d9cdea35b2b3089461ccb49cc37e5f8bd39ff1545",
+      "evidence/v2/cuda_execution_audit.json": "8d2fa70fb0766a9dd39a2db264ccdf3a394f8a897a0a4a330d43713bd47f7d32",
+      "tables/v2_cuda/descriptive_analysis.json": "6005ce9e5bae772d04d5cab09833b3a0cf2a28d01d672ba8a478a5050d60a23e",
+      "configs/v2_pixel_budget_plan.json": "3e776a5517286d634eb29968ab3a7cafa3912e166f47d84137e8d16ef03d58e9",
+      "evidence/v2/pixel_budget_audit.json": "31c72c299db23cd51432c76d37f7a0a3f14357e31b87a11f19e340a5f2ba94e7",
+      "tables/v2_pixel_budget/descriptive_analysis.json": "271dcfa7a38085003a4c964f4dda8889092ad4946e6ec7ee0c73aaf74cd2c162"
+    }
+  }
+}

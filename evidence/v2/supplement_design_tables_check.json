@@ -1,0 +1,147 @@
+{
+  "schema": "v2-supplement-design-tables-check-1",
+  "status": "WORKING_NOT_RELEASED",
+  "created_utc": "2026-10-18T01:36:35.771347+00:00",
+  "passed": true,
+  "scope": "Factual source membership, SHA, settings and planned-count verification only; no training, model-result inspection or statistical-result verification.",
+  "collection_path": "paper/v2_working/supplement_design_tables.json",
+  "collection_sha256": "6b7b670547d03dcf874f0ce953be7866246f52d0ade39e9f0d7168ee78b62f32",
+  "source_sha256": {
+    "cache/dinov2-formal120/index.json": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+    "code/core.py": "8c7339630c32f8d89a8725ffab9450ce5054d15fab8c0c299e45b9d8fe0010e8",
+    "code/v2_audit_runs.py": "ad6f3084f0c5109458f2a72358a400dcf60c5e170805dabc84db30de2c886ff1",
+    "code/v2_calibrate.py": "92a4a16140fe89cc3a9efa413362667954943f9078fd204f277c1accd8293334",
+    "code/v2_run.py": "cd629e13d391575194825a00727356912ec8992f9b7c117002d7fab6293693fe",
+    "configs/v2_design.json": "d790c26eae4a3c029cca73e3845efd3d95673017d88bafe42e37fb81f70046a4",
+    "configs/v2_extension.json": "7786624c6fc28aafe71f86495e8c653ab8ffc860cf2e316048e78db5c089ba92",
+    "configs/v2_freeze.json": "5fd417464cc88024ad4063b2dc77366c1b6d3c80ea7cb1fd3083b0ddc2957bd8",
+    "configs/v2_geographic_sensitivity.json": "83e6a506dc88ca8509cf7f384a9c3295dddcdcb3de314e7bdff4ec4ed37b519a",
+    "data/formal120/manifest.json": "193af54a83f3a61805403ddbde3159978f02e7db4d77ad6e851bebb85dc3d20f",
+    "evidence/v2/calibration/calibration.json": "9bc9f894a2dc916d824bcec465ef23edab2be74005a5c3c6151f59dc8bf0aac3",
+    "evidence/v2/calibration/source0/encoder_lr_0.0001.json": "33da3e41edc3fc0a70f5c8dc73bf811ce27bdb9d69409aa7cf2e7a8d59af3d49",
+    "evidence/v2/calibration/source0/encoder_lr_0.0003.json": "a918173d48a663ec07fbdb7204a913a79ece1e4d2f8d699209492ad031d26038",
+    "evidence/v2/calibration/source1/encoder_lr_0.0001.json": "09c49a8e21f17aefe98e0a1e6d7900bed60ddc02d0f93d0e2690dd402e185054",
+    "evidence/v2/calibration/source1/encoder_lr_0.0003.json": "4226990eb77ab8d57027a52310774c244b2d4e0ebd55ada1c4f1822645b49bf4",
+    "evidence/v2/calibration/source2/encoder_lr_0.0001.json": "325a4474ec97a9d6017ad8ee49c8e6f247e657016afdfe6914f4a2d000d7333f",
+    "evidence/v2/calibration/source2/encoder_lr_0.0003.json": "9c454c724c049926ae2570277f42c6a4f550b41981db3f0bb8edc22433b93c6f",
+    "evidence/v2/data_audit.json": "ca67960d03e63af09f664520bd585ebdeb012ea826ac48d92ff7e658575b2a3c",
+    "evidence/v2/environment_record.json": "923aaa43ae58687db6122c05f1ecc0e9cbe32a2615b27df2f923009ae930238c",
+    "evidence/v2/geographic_disposition.json": "8c191f8b296df66f33a6d75c08ee80fd5c64ebb4ab232fe3955ed9a2dccb59e3",
+    "v2/cache/new_panel_dinov2/index.json": "a357fcc755ea3eedb9c81c01ee020356affab6e7e3eec9d9a1c2bf1dc9cd2952",
+    "v2/data/development_manifest.json": "0b66d75a91e6251ff7db4c71d0241a0bdf1f0bd8195b3d0e8263b52b1f852147",
+    "v2/data/manifest.json": "676953ed28ab90a6448bfd15c1bbed352b8b5d42ae8de6d54416ad258a1d105a"
+  },
+  "freeze": {
+    "sha256": "5fd417464cc88024ad4063b2dc77366c1b6d3c80ea7cb1fd3083b0ddc2957bd8",
+    "dependency_count": 53,
+    "current_sha_mismatches": []
+  },
+  "checks": {
+    "unique_ids": 192,
+    "old_regions": 24,
+    "old_pairs": 120,
+    "new_regions": 24,
+    "new_pairs": 72,
+    "old_new_region_intersection": [],
+    "development_records_equal_combined_old_records": true,
+    "old_original_source_and_dino_index_identities_match": true,
+    "new_index_ids_and_processed_rgb_sha_match": true,
+    "processed_png_and_sidecar_file_sha_verified": 576,
+    "per_region_counts": {
+      "old": 5,
+      "new": 3
+    },
+    "source_allocations": [
+      {
+        "source": "source0",
+        "region_counts": {
+          "train": 12,
+          "validation": 4,
+          "unused_development": 8
+        },
+        "available_image_counts": {
+          "train": 60,
+          "validation": 20,
+          "unused_development": 40
+        }
+      },
+      {
+        "source": "source1",
+        "region_counts": {
+          "train": 12,
+          "validation": 4,
+          "unused_development": 8
+        },
+        "available_image_counts": {
+          "train": 60,
+          "validation": 20,
+          "unused_development": 40
+        }
+      },
+      {
+        "source": "source2",
+        "region_counts": {
+          "train": 12,
+          "validation": 4,
+          "unused_development": 8
+        },
+        "available_image_counts": {
+          "train": 60,
+          "validation": 20,
+          "unused_development": 40
+        }
+      }
+    ],
+    "shared_calibration_ids_across_lrs_and_checkpoints": true,
+    "calibration_selected_images_per_source": 24,
+    "calibration_validation_images_per_source": 20,
+    "calibration_grid_settings_per_source": 6,
+    "calibration_training_trajectories_total": 6,
+    "calibration_checkpoint_comparisons_total": 18,
+    "paired_seed_mapping": [
+      {
+        "selection_seed": 0,
+        "optimization_seed": 0
+      },
+      {
+        "selection_seed": 1,
+        "optimization_seed": 1
+      },
+      {
+        "selection_seed": 2,
+        "optimization_seed": 2
+      }
+    ],
+    "planned_count_totals": {
+      "base_full": 72,
+      "base_frozen": 432,
+      "weighted_full": 18,
+      "weighted_frozen": 54,
+      "total": 576,
+      "conditions": 64,
+      "conditions_by_source": 192
+    },
+    "weighted_balanced_duplicate_conditions": 0,
+    "primary_panel_regions": 24,
+    "descriptive_sensitivity_regions": 23,
+    "geographic_caution_ids": [
+      "aachen__aachen_1",
+      "monrovia__monrovia_48"
+    ]
+  },
+  "table_payload_sha256": {
+    "S_design_old_regions": "a1fd40fe20fff97d5bf47fcee74b780429824aa418399a82d5cadc358c45f6c4",
+    "S_design_panel_regions": "c0eb2331c68864355a8976935b943703d2f4596caf52c72aabad85bcb098f8ea",
+    "S_calibration_grid_and_recipes": "7b3e662a2b658cd81e6f7e0f8e61efaa40f431d952a78e4b9a8f23e58a453abe",
+    "S_planned_fit_matrix": "dec299d7196235215eb98f1359d66af30642596fa41040a6c44f5aa08014adcc"
+  },
+  "verified_file_identity_list_sha256": "a52adab3dbba149d578bb81379efd14cd9370f9f16dcfb3eed33ebc8266c5282",
+  "formal_results_or_canonical_score_outputs_read": false,
+  "class_histograms_or_target_mask_statistics_used": false,
+  "missing_design_facts": [],
+  "pending_integration": [
+    "Bind to current complete formal-result and analysis identities after the planned 576-run audit.",
+    "Bind actual per-fit execution/device evidence; this collection does not certify completed runs.",
+    "Integrate tables and cross-references into the final manuscript/supplement source, DOCX and PDF; complete visual and content QA."
+  ]
+}

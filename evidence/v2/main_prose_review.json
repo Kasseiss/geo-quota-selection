@@ -1,0 +1,161 @@
+{
+  "format": "v2-exact-prose-review-1",
+  "created_utc": "2026-10-18T09:25:32.812986+00:00",
+  "candidate_sha256": "e10b5ccde69334cdb658aa152a69fcc086af90f9cb9349eec5b99c257af84842",
+  "source_sha256": "f6509692cdb6c0238eabd9d0f678dc96483467928354078ba531ed2cfbeff478",
+  "passed": true,
+  "user_direction": "Present achievements and strengths; remove defensive rhetorical framing.",
+  "manual_checks": [
+    "Argument and paragraph function",
+    "Exact numerical scope and adjacent context",
+    "Claim-citation support via independent working reviews",
+    "Terminology, repetition and prose diagnostics",
+    "Publication prose separated from internal source hashes and work instructions"
+  ],
+  "diagnostic_dispositions": [
+    {
+      "diagnostic": {
+        "code": "PROSE010",
+        "artifact": "v2-main",
+        "match": "k-center, equal-region, k-center, region-bootstrap",
+        "count": 4,
+        "message": "dense lexical hyphenation in one sentence; inspect clarity and field convention"
+      },
+      "resolution": "CONTEXT_CHECKED_TECHNICAL_OR_TABLE_USE",
+      "explanation": "Repeated policy names, table headers and formula citations have technical or tabular functions. The exact sentences and surrounding paragraphs were read; flattened-table repetition is not repeated narrative. Established method names and statistical interval wording remain consistent."
+    },
+    {
+      "diagnostic": {
+        "code": "PROSE010",
+        "artifact": "v2-main",
+        "match": "image-based, label-based, core-set, U-Net",
+        "count": 4,
+        "message": "dense lexical hyphenation in one sentence; inspect clarity and field convention"
+      },
+      "resolution": "CONTEXT_CHECKED_TECHNICAL_OR_TABLE_USE",
+      "explanation": "Repeated policy names, table headers and formula citations have technical or tabular functions. The exact sentences and surrounding paragraphs were read; flattened-table repetition is not repeated narrative. Established method names and statistical interval wording remain consistent."
+    },
+    {
+      "diagnostic": {
+        "code": "PROSE010",
+        "artifact": "v2-main",
+        "match": "matched-pixel, k-center, actual-group, k-center, permuted-group, k-center",
+        "count": 6,
+        "message": "dense lexical hyphenation in one sentence; inspect clarity and field convention"
+      },
+      "resolution": "CONTEXT_CHECKED_TECHNICAL_OR_TABLE_USE",
+      "explanation": "Repeated policy names, table headers and formula citations have technical or tabular functions. The exact sentences and surrounding paragraphs were read; flattened-table repetition is not repeated narrative. Established method names and statistical interval wording remain consistent."
+    },
+    {
+      "diagnostic": {
+        "code": "PROSE010",
+        "artifact": "v2-main",
+        "match": "Allocation-specific, leave-one-region-out, metric-convention, Monrovia-excluded",
+        "count": 4,
+        "message": "dense lexical hyphenation in one sentence; inspect clarity and field convention"
+      },
+      "resolution": "CONTEXT_CHECKED_TECHNICAL_OR_TABLE_USE",
+      "explanation": "Repeated policy names, table headers and formula citations have technical or tabular functions. The exact sentences and surrounding paragraphs were read; flattened-table repetition is not repeated narrative. Established method names and statistical interval wording remain consistent."
+    },
+    {
+      "diagnostic": {
+        "code": "PROSE010",
+        "artifact": "v2-main",
+        "match": "k-center, equal-region, union-class, k-center",
+        "count": 4,
+        "message": "dense lexical hyphenation in one sentence; inspect clarity and field convention"
+      },
+      "resolution": "CONTEXT_CHECKED_TECHNICAL_OR_TABLE_USE",
+      "explanation": "Repeated policy names, table headers and formula citations have technical or tabular functions. The exact sentences and surrounding paragraphs were read; flattened-table repetition is not repeated narrative. Established method names and statistical interval wording remain consistent."
+    },
+    {
+      "diagnostic": {
+        "code": "PROSE010",
+        "artifact": "v2-main",
+        "match": "k-center, k-means, Feature-diversity, k-center, Permuted-group, k-center, equal-region, union-class",
+        "count": 8,
+        "message": "dense lexical hyphenation in one sentence; inspect clarity and field convention"
+      },
+      "resolution": "CONTEXT_CHECKED_TECHNICAL_OR_TABLE_USE",
+      "explanation": "Repeated policy names, table headers and formula citations have technical or tabular functions. The exact sentences and surrounding paragraphs were read; flattened-table repetition is not repeated narrative. Established method names and statistical interval wording remain consistent."
+    },
+    {
+      "diagnostic": {
+        "code": "PROSE010",
+        "artifact": "v2-main",
+        "match": "actual-group, k-center, size-preserving, permuted-group",
+        "count": 4,
+        "message": "dense lexical hyphenation in one sentence; inspect clarity and field convention"
+      },
+      "resolution": "CONTEXT_CHECKED_TECHNICAL_OR_TABLE_USE",
+      "explanation": "Repeated policy names, table headers and formula citations have technical or tabular functions. The exact sentences and surrounding paragraphs were read; flattened-table repetition is not repeated narrative. Established method names and statistical interval wording remain consistent."
+    },
+    {
+      "diagnostic": {
+        "code": "PROSE010",
+        "artifact": "v2-main",
+        "match": "k-center, k-center, k-center, k-center",
+        "count": 4,
+        "message": "dense lexical hyphenation in one sentence; inspect clarity and field convention"
+      },
+      "resolution": "CONTEXT_CHECKED_TECHNICAL_OR_TABLE_USE",
+      "explanation": "Repeated policy names, table headers and formula citations have technical or tabular functions. The exact sentences and surrounding paragraphs were read; flattened-table repetition is not repeated narrative. Established method names and statistical interval wording remain consistent."
+    },
+    {
+      "diagnostic": {
+        "code": "PROSE010",
+        "artifact": "v2-main",
+        "match": "k-center, k-center, k-center, k-center, k-center, k-center, k-center, k-center, k-center, k-center, k-center, k-center",
+        "count": 12,
+        "message": "dense lexical hyphenation in one sentence; inspect clarity and field convention"
+      },
+      "resolution": "CONTEXT_CHECKED_TECHNICAL_OR_TABLE_USE",
+      "explanation": "Repeated policy names, table headers and formula citations have technical or tabular functions. The exact sentences and surrounding paragraphs were read; flattened-table repetition is not repeated narrative. Established method names and statistical interval wording remain consistent."
+    },
+    {
+      "diagnostic": {
+        "code": "PROSE010",
+        "artifact": "v2-main",
+        "match": "complete-model, k-center, k-center, available-pixel, source-mean",
+        "count": 5,
+        "message": "dense lexical hyphenation in one sentence; inspect clarity and field convention"
+      },
+      "resolution": "CONTEXT_CHECKED_TECHNICAL_OR_TABLE_USE",
+      "explanation": "Repeated policy names, table headers and formula citations have technical or tabular functions. The exact sentences and surrounding paragraphs were read; flattened-table repetition is not repeated narrative. Established method names and statistical interval wording remain consistent."
+    },
+    {
+      "diagnostic": {
+        "code": "PROSE002",
+        "artifact": "v2-main",
+        "match": "geographic weighted facility location",
+        "count": 4,
+        "message": "repeated sentence opening"
+      },
+      "resolution": "CONTEXT_CHECKED_TECHNICAL_OR_TABLE_USE",
+      "explanation": "Repeated policy names, table headers and formula citations have technical or tabular functions. The exact sentences and surrounding paragraphs were read; flattened-table repetition is not repeated narrative. Established method names and statistical interval wording remain consistent."
+    },
+    {
+      "diagnostic": {
+        "code": "PROSE004",
+        "artifact": "v2-main",
+        "match": "cite wang utilityfairness rafiey decomposable",
+        "count": 3,
+        "message": "repeated multiword phrase across sentences"
+      },
+      "resolution": "CONTEXT_CHECKED_TECHNICAL_OR_TABLE_USE",
+      "explanation": "Repeated policy names, table headers and formula citations have technical or tabular functions. The exact sentences and surrounding paragraphs were read; flattened-table repetition is not repeated narrative. Established method names and statistical interval wording remain consistent."
+    },
+    {
+      "diagnostic": {
+        "code": "PROSE004",
+        "artifact": "v2-main",
+        "match": "points with an interval of",
+        "count": 3,
+        "message": "repeated multiword phrase across sentences"
+      },
+      "resolution": "CONTEXT_CHECKED_TECHNICAL_OR_TABLE_USE",
+      "explanation": "Repeated policy names, table headers and formula citations have technical or tabular functions. The exact sentences and surrounding paragraphs were read; flattened-table repetition is not repeated narrative. Established method names and statistical interval wording remain consistent."
+    }
+  ],
+  "author_metadata_status": "UNDETERMINED"
+}

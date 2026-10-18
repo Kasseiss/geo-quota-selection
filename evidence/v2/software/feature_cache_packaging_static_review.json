@@ -1,0 +1,119 @@
+{
+  "format": "v2-feature-cache-packaging-static-review-1",
+  "created_utc": "2026-10-18T01:53:02.503141+00:00",
+  "status": "BOUNDED_STATIC_REVIEW_NO_NEW_BLOCKER_FOUND",
+  "reviewed_code_sha256": "582299df32204d61f6f6ef114aba1de39fea8b8be0b83e36426d5d2a2984c04f",
+  "scope": "Independent bounded review of nonfrozen feature-cache packager enhancement, associated software proof and three documentation files. Not an assembly authorization or scientific/result review.",
+  "software_scope_passed": true,
+  "scientific_approval": false,
+  "release_approved": false,
+  "blocking_findings": [],
+  "required_changes": [],
+  "checks": [
+    {
+      "topic": "Exact192 cache/freeze/source/byte binding",
+      "locations": [
+        "code/v2_package_delivery.py:211-291"
+      ],
+      "conclusion": "Frozen53-file mapping binds the compact192 manifest and both complete120/72 indexes. Roles, unique flatID filenames, regions, old native RGB/mask provenance or new processedRGB SHA, and each cache byteSHA are verified. UnlistedNPZ under either exact cache root and redirecting descendants are rejected."
+    },
+    {
+      "topic": "MOVE-only exception and V1 scope",
+      "locations": [
+        "code/v2_package_delivery.py:128-175",
+        "code/v2_package_delivery.py:294-308",
+        "code/v2_package_delivery.py:427-429"
+      ],
+      "conclusion": "NPZ exception requires MOVE plus the feature-reference origin, a flat valid name and one of the two exact cache roots. Before mutation, the complete operation set must equal all192 indexed caches with unchanged SHA/size/relative target. ArbitraryNPZ COPY or extras cannot use the exception; unrelated cache roots, V1 delivery/archives/raw TIFF/runtime paths remain excluded."
+    },
+    {
+      "topic": "Path, mutation and pre-movement checks",
+      "locations": [
+        "code/v2_package_delivery.py:71-97",
+        "code/v2_package_delivery.py:527-569",
+        "code/v2_package_delivery.py:614-623"
+      ],
+      "conclusion": "All ancestors reject symlink/junction/name-surrogate redirects before resolve, followed by root-containment and source-scope checks. Assembly rebuilds a fresh ready plan and checks all operations/gates before writes; all192 feature inventories and all source/target identities are checked before the firstMOVE, then sourceSHA and path checks repeat at each operation. Existing destinations/duplicate targets are refused. No cross-device copy fallback exists."
+    },
+    {
+      "topic": "Refresh immutability and cache validation",
+      "locations": [
+        "code/v2_package_delivery.py:645-655",
+        "code/v2_package_delivery.py:724-739"
+      ],
+      "conclusion": "Refresh requires exact unchanged inventory and allows mutations only to four operational reports; caches, indexes, manifest, code and paper are immutable. The real scientific verifier calls feature_cache_inventory on the delivery again and verifies frozen inputs, then rechecks all delivered SHA values before refreshing lineage."
+    },
+    {
+      "topic": "Receipts, whole-project budget and no-writers requirement",
+      "locations": [
+        "code/v2_package_delivery.py:490-504",
+        "code/v2_package_delivery.py:531-532",
+        "code/v2_package_delivery.py:541-569",
+        "code/v2_package_delivery.py:585-603",
+        "code/v2_package_delivery.py:614-623",
+        "docs/v2_packaging.md:11-22"
+      ],
+      "conclusion": "Same-project cache renames have zero logical-byte growth. COPY, metadata and reproduction temporary reservation remain counted under the whole-project2GB budget; per-write/final capacity checks remain. The immutable plan snapshot and write-ahead operation events record eachNPZ SHA/size, and destination verification precedes completion. Public assembly requires complete scientific/reproduction/manuscript gates and explicit no-writers assertion. The flag is a maintainer assertion, not automatic process discovery; live training forbids actual assembly now."
+    },
+    {
+      "topic": "Documentation scope",
+      "locations": [
+        "docs/v2_packaging.md:26-36",
+        "docs/v2_reproduction_guide.md:43-57",
+        "docs/v2_environment_record.md:11-13"
+      ],
+      "conclusion": "The documents distinguish planned retention from actual delivery, source120 native-mask-derived targets from72 panel feature-only caches, NumPy-only tables verification from cached-head refitting, and cache reuse from original-feature regeneration. They do not claim a full576 refit or validated clean installation. The CPU/CuPy history remains the frozen-run description; an independentGPU preflight is outside this review."
+    }
+  ],
+  "independent_read_only_cache_check": {
+    "method": "Separate streaming SHA script; did not import or execute packager, decode arrays, open run outputs, or create a plan.",
+    "verified_files": 192,
+    "source_files": 120,
+    "panel_files": 72,
+    "total_bytes": 142509701,
+    "indexes_match_freeze": true,
+    "source_provenance_match": true,
+    "all_npz_sha_match": true,
+    "flat_unique_names": true,
+    "no_unlisted_npz_in_the_two_exact_roots": true,
+    "no_redirected_reference_or_descendant_observed": true
+  },
+  "frozen_dependency_check": {
+    "count": 53,
+    "changed_or_mismatched": []
+  },
+  "worker_proof_assessment": {
+    "contribution_only": true,
+    "independently_rerun": false,
+    "reported_tests_run": 11,
+    "reported_failures": 0,
+    "reported_errors": 0,
+    "reported_skipped": 2,
+    "reported_passed": true,
+    "tested_code_matches_reviewed_code": true,
+    "final_document_sha_bindings_match": true,
+    "post_test_document_clarification": {
+      "created_utc": "2026-10-18T01:49:00.968246+00:00",
+      "change": "Clarified that source120 caches retain native-mask-derived soft targets while panel72 caches retain evaluation features. No tested code changed."
+    },
+    "platform_limits": "Two real symlink fixtures skipped on Windows permission limits; proof reports real junction and mocked reparse-tag tests passed. Stale-index assertion executes before the feature-symlink skip. Synthetic files are byte-identity fixtures, not semanticNPZ/scientific-fit tests. Refresh-policy fixture stubs the science verifier; the public refresh route uses the real verifier."
+  },
+  "limits": [
+    "No real plan, assembly, MOVE, refresh or reproduction command was run; no training process was stopped or inspected through its result outputs.",
+    "No partial model score/result files were read, and no NPZ arrays were decoded. Byte identity does not constitute array-semantic or fitting validation.",
+    "No frozen file, source cache, original file, V1 artifact or colleague-owned code/document was changed. Only this review artifact was written.",
+    "No claim that all576 fits are complete, that current scientific gates pass, or that the final delivery is reproducible. Real assembly must wait for all writers to terminate and the full release gates to pass.",
+    "The independentGPU preflight and any separate future computational branch are outside scope; nothing here changes or approves the frozenCPU scientific runs."
+  ],
+  "source_sha256": {
+    "code/v2_package_delivery.py": "582299df32204d61f6f6ef114aba1de39fea8b8be0b83e36426d5d2a2984c04f",
+    "evidence/v2/software/feature_cache_packaging_validation.json": "d334c07eb43fa3d8bbe5726e10d376a0f14255ab44a55383e08ab0eebf9d7397",
+    "docs/v2_packaging.md": "3b44104680eb87e1db5869b86d7a6a9694d6c3227bd37437af212b34a782b1b8",
+    "docs/v2_reproduction_guide.md": "e3cd0f04eecbcf7348ef5cec7b7e8c61b0e00385ebe85d00a0b389534d9b4045",
+    "docs/v2_environment_record.md": "8201fe0b966ae16965330c99ca5203e1961b1d117c365716c8a0d9761261398a",
+    "configs/v2_freeze.json": "5fd417464cc88024ad4063b2dc77366c1b6d3c80ea7cb1fd3083b0ddc2957bd8",
+    "v2/data/manifest.json": "676953ed28ab90a6448bfd15c1bbed352b8b5d42ae8de6d54416ad258a1d105a",
+    "cache/dinov2-formal120/index.json": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+    "v2/cache/new_panel_dinov2/index.json": "a357fcc755ea3eedb9c81c01ee020356affab6e7e3eec9d9a1c2bf1dc9cd2952"
+  }
+}

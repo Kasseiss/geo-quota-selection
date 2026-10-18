@@ -1,0 +1,145 @@
+{
+  "stage": "Formal576 fits running after immutable execution freeze; no interim scientific conclusion.",
+  "sessions": {
+    "development_preparation": "complete120",
+    "calibration": "complete",
+    "panel_preparation": "complete192",
+    "post_panel_audit_and_features": "98465 stopped on a schema-compatibility audit failure, retained and corrected before proceeding",
+    "panel_feature_extraction": "complete72",
+    "formal_full": 63469,
+    "formal_frozen": "complete486; native exit0 observed; session41294 terminal",
+    "checkpoint_reload_when_ready": "complete:72/72 exact CMs,24regions",
+    "audit_and_statistics_after576": 57694
+  },
+  "active_design": "configs/v2_design.json",
+  "completed_software_checks": [
+    "8 preparation checks",
+    "10 base selection checks",
+    "7 weighted-selection checks",
+    "5 current data-audit checks",
+    "5 current run-audit checks",
+    "6 current statistics checks",
+    "whole-network gradient/update check",
+    "exact training-prefix state check"
+  ],
+  "required_next": [
+    "Finish90 full spatial model fits and486 frozen controls",
+    "Audit576 and reanalyse all fixed conditions",
+    "Actual six-file numerical reproduction; assess contribution before final results text",
+    "Create/review V2 manuscript+supplement+figures and author-review package within2GB"
+  ],
+  "prospective_supplement": "configs/v2_extension.json: base504 +72 additional weighted-FL fits =576; primary unchanged",
+  "randomization_amendment": "All policies pair selection seeds0/1/2 with optimization seeds0/1/2, before scoring; total576 unchanged",
+  "updated_utc": "2026-10-18T08:13:11.056303+00:00",
+  "geography": "119old+71new supported;2 CRS-area cautions;0 overlap/decoded duplicate candidates. Monrovia-excluded23-region sensitivity fixed before scoring.",
+  "freeze_sha256": "5fd417464cc88024ad4063b2dc77366c1b6d3c80ea7cb1fd3083b0ddc2957bd8",
+  "reproduction_wrapper": "Software fixtures3/3 and independent static boundary recheck passed; actual576 source/delivery reproduction pending",
+  "progress_snapshot": {
+    "full": 56,
+    "expected_full": 90,
+    "frozen": 486,
+    "expected_frozen": 486,
+    "source": "CPU completion56 observed in native session63469; secondary CUDA result-file count38, separate from original576."
+  },
+  "packager": "Software fixtures7 passed/1 symlink-permission skip; actual Windows junction protection passed. Scientific review and real plan/assembly pending",
+  "additional_nonconfirmatory_evidence": [
+    "Exact72-image checkpoint reload",
+    "Actual development calibration plot",
+    "Two fixed descriptive illustration images, post-first-fit choice disclosed; prediction CMs exact",
+    "Source-only selected class availability across90planned full-model selections; no policy or sample alteration"
+  ],
+  "result_plotter": "Four prospective display types implemented; parent observed synthetic checks pass under recorded matplotlib3.11.0. No actual result figures generated before complete576 audit.",
+  "interpretation_register": "docs/v2_interpretation_boundaries.md distinguishes per-fit image budget from total label cost and specifies native soft-target versus448 hard-label recipe differences; no new analysis plan or score conclusion",
+  "environment_record": "Current interpreter-visible versus isolated metadata recorded in evidence/v2/environment_record.json; no installation or new GPU probe; previous metadata-probe failure retained and corrected",
+  "print_size_figure_checks": {
+    "calibration": "re-rendered and parent visually passed at6.5in/9pt",
+    "qualitative": "re-rendered and parent visually passed at4.95in/9pt/303.66native dpi; exact prior prediction hashes retained",
+    "workflow": "Compact variantC parent visually checked;6.3in preferred insertion keeps9.0665pt minimum. A/B preserved. Final Word/PDF page check still pending."
+  },
+  "numpy_dependency_boundary": "Heavy imports denied while actual frozen10policy selections, CM validation and paired-bootstrap functions passed on synthetic objects; actual576 final-root reproduction pending",
+  "literature_status": {
+    "current_bibliography_entries": 25,
+    "bibliography_sha256": "a0389f038d2495538cb70a7173f0812c3a78fbf8e73106a1066a892847e71d97",
+    "closest_paper": "2026 IEEE Access published PDF lawfully acquired via DLR; relevant methods/strong baselines now checked; no full-version-diff or priority proof claimed",
+    "upstream_data_reference": "SpaceNet2018 added from official citation instructions and author arXiv record",
+    "Li2026": "bounded public fulltext search ended without manuscript; detailed controls remain unknown",
+    "OpenEarthMap": "Current CVF PDF pages6254-6264 added after official source check; Crossref discrepancy retained. Other24 entries unchanged; prior library retained."
+  },
+  "methods_working": {
+    "source": "paper/v2_working/methods_source.json",
+    "review": "evidence/v2/methods_working_review.json",
+    "review_sha256": "dcdeda1325ad66127a1be197f7c3ab10c75c3a95d2daa9d96016a66398021084",
+    "status": "Independent method-fact audit found no substantive inconsistency; contribution, complete results, final citation integration and page QA remain open"
+  },
+  "introduction_working": {
+    "outline": "paper/v2_working/introduction_outline.json",
+    "sha256": "a6c4be7996751fba1f5001c5d60521df9a25af09c3fa7a8492775fb04b1da4be",
+    "check": "evidence/v2/introduction_outline_check.json",
+    "parent_review": "Read all nine claim contracts and limits; input identities verified. Working argument outline accepted, not final scientific contribution approval.",
+    "question_integration_map": {
+      "RQ1": "V2Q1",
+      "RQ2": "V2Q2",
+      "RQ3": "V2Q4",
+      "RQ4": "V2Q3"
+    },
+    "open": "Use current bibliography page-update record in final integration; original working checks bind historical library. Li detailed-protocol and global citation gates remain open.",
+    "draft": "paper/v2_working/introduction_source.json",
+    "draft_review": "evidence/v2/introduction_working_review.json"
+  },
+  "last_goal_turn_classification": "User GPU-use challenge: measured actual RTX4060 98-99% across12 active four-worker samples; selected sustained two-worker production after genuine throughput/RAM trials; TaskManager mismatch unexplained.",
+  "frozen_base_phase": "All432 planned base fits emitted completion records; source0 weighted extension started. Exact inventory audit and numerical analysis remain pending the complete576.",
+  "latest_compute_retry": "A100 existing114 relay alias retried; banner timeout on2026-10-18; no remote GPU use claimed.",
+  "supplement_design_working": {
+    "source": "paper/v2_working/supplement_design_tables.json",
+    "sha256": "6b7b670547d03dcf874f0ce953be7866246f52d0ade39e9f0d7168ee78b62f32",
+    "check": "evidence/v2/supplement_design_tables_check.json",
+    "check_sha256": "7711ea4e0b3ec6f37e05e95e3c2668c8066393424a6a83a996e168667c72e8c0",
+    "scope": "Four fact tables. Parent checked exact collection/input hashes and row-count contract; working only. Actual result/device binding and final source/Word/PDF QA pending.",
+    "final_integration_note": "Format numeric learning rates in scientific notation; retain all precise source IDs and both CRS cautions. Do not print provenance metadata as paper prose."
+  },
+  "frozen_phase_completion": {
+    "path": "evidence/v2/frozen_phase_completion.json",
+    "sha256": "f6d5bd78e95acaefd72a77cc8cf928ea4462f2a507b080394e22bba994878f4e",
+    "scope": "Exact486 unique identities and referenced log integrity only; complete576 CM/recipe audit and scientific adjudication pending"
+  },
+  "packager_feature_extension": "Exact192 NPZ MOVE implementation completed; software11 fixtures9passed2symlinkskips; independent static review no new blocker. Actual assembly waits all writers including CUDA, complete science and artifacts.",
+  "secondary_cuda_execution": {
+    "session": 41044,
+    "planned": 90,
+    "completed_snapshot": 38,
+    "first_fit": "training step1 observed on cuda:0",
+    "plan": "configs/v2_cuda_execution_plan.json",
+    "plan_sha256": "15d586fd03389d495dfc2b7d9cdea35b2b3089461ccb49cc37e5f8bd39ff1545",
+    "scope": "Post-exposure secondary backend/software execution replication, not new independent confirmatory panel; original primary unchanged",
+    "actual_discrete_gpu_observation": "evidence/v2/software/cuda_device_observation.json",
+    "no_new_dependency_installation": true,
+    "status": "V1 scalar stopped at completed-fit boundary;2-worker and4-worker trials terminal exit0; sustained2-worker V2 running, no fit limit",
+    "generation": "20261018T073802_4f529989bd",
+    "workers": 2,
+    "executor": "code/v2_cuda_parallel_v2.py",
+    "executor_sha256": "80d9e40683f1703fe5c7d12367680d0a207177f75d656c44038fa57e15d9945b",
+    "parallel_selection": "evidence/v2/software/cuda_parallel_selection.json"
+  },
+  "time_estimate": {
+    "basis": "First3 CUDA600-step complete fits41.14/41.891/49.328s;1200-step source1 extrapolated, not measured yet",
+    "current_cuda_remaining_fits": 87,
+    "current_cuda_remaining_hours_range": [
+      1.5,
+      2.5
+    ],
+    "proposed_full_strengthening_gpu_hours_range": [
+      6,
+      12
+    ],
+    "scope": "GPU-time budget including calibration/retry margin; added-model estimates provisional; excludes implementation, full analysis and manuscript review; interruptions excluded",
+    "previous_cuda_estimate_status": "Historical scalar estimate; current parallel remaining runtime needs actual steady production timings."
+  },
+  "pixel_budget_supplement": {
+    "status": "protocol written; runner software ready, proof and lockedplan pending; no actual supplemental fits",
+    "planned": 27,
+    "supervision_pixels": 2300000,
+    "protocol": "docs/v2_pixel_budget_protocol.md",
+    "rationale": "evidence/v2/pixel_budget_rationale.json",
+    "scope": "post-panel-exposure descriptive processed unique available-label control; original primary unchanged"
+  }
+}

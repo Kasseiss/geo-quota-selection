@@ -1,0 +1,15 @@
+{
+  "created_utc": "2026-10-18T00:22:21.226523+00:00",
+  "code": "code/v2_reproduce.py",
+  "code_sha256": "199c0eb9933157dc472a6618acdd68cb4939cc8ee2e82bf4003f9d762671680e",
+  "command": "python -B code/v2_reproduce.py --self-test",
+  "exit_code": 0,
+  "tests_run": 3,
+  "tests_passed": 3,
+  "tests_skipped": 0,
+  "passed": true,
+  "limitations": [
+    "Temporary synthetic software fixtures only; not complete576 scientific evidence, real package assembly or delivery-root reproduction."
+  ],
+  "parent_observed_native_session": 64239
+}

@@ -1,0 +1,155 @@
+{
+  "scope": "Source descriptors only; no panel data or model scores",
+  "records": [
+    {
+      "source_split": "source0",
+      "strategy": "random",
+      "unique_ordered_subsets_over3_selection_seeds": 3
+    },
+    {
+      "source_split": "source0",
+      "strategy": "kcenter",
+      "unique_ordered_subsets_over3_selection_seeds": 3
+    },
+    {
+      "source_split": "source0",
+      "strategy": "region_random",
+      "unique_ordered_subsets_over3_selection_seeds": 3
+    },
+    {
+      "source_split": "source0",
+      "strategy": "region_kcenter",
+      "unique_ordered_subsets_over3_selection_seeds": 3
+    },
+    {
+      "source_split": "source0",
+      "strategy": "permuted_region_kcenter",
+      "unique_ordered_subsets_over3_selection_seeds": 3
+    },
+    {
+      "source_split": "source0",
+      "strategy": "kmeanspp",
+      "unique_ordered_subsets_over3_selection_seeds": 3
+    },
+    {
+      "source_split": "source0",
+      "strategy": "facility_location",
+      "unique_ordered_subsets_over3_selection_seeds": 3
+    },
+    {
+      "source_split": "source0",
+      "strategy": "fd_roundrobin",
+      "unique_ordered_subsets_over3_selection_seeds": 3
+    },
+    {
+      "source_split": "source0",
+      "strategy": "region_weighted_facility_location",
+      "unique_ordered_subsets_over3_selection_seeds": 2
+    },
+    {
+      "source_split": "source0",
+      "strategy": "permuted_region_weighted_facility_location",
+      "unique_ordered_subsets_over3_selection_seeds": 3
+    },
+    {
+      "source_split": "source1",
+      "strategy": "random",
+      "unique_ordered_subsets_over3_selection_seeds": 3
+    },
+    {
+      "source_split": "source1",
+      "strategy": "kcenter",
+      "unique_ordered_subsets_over3_selection_seeds": 3
+    },
+    {
+      "source_split": "source1",
+      "strategy": "region_random",
+      "unique_ordered_subsets_over3_selection_seeds": 3
+    },
+    {
+      "source_split": "source1",
+      "strategy": "region_kcenter",
+      "unique_ordered_subsets_over3_selection_seeds": 3
+    },
+    {
+      "source_split": "source1",
+      "strategy": "permuted_region_kcenter",
+      "unique_ordered_subsets_over3_selection_seeds": 3
+    },
+    {
+      "source_split": "source1",
+      "strategy": "kmeanspp",
+      "unique_ordered_subsets_over3_selection_seeds": 3
+    },
+    {
+      "source_split": "source1",
+      "strategy": "facility_location",
+      "unique_ordered_subsets_over3_selection_seeds": 1
+    },
+    {
+      "source_split": "source1",
+      "strategy": "fd_roundrobin",
+      "unique_ordered_subsets_over3_selection_seeds": 3
+    },
+    {
+      "source_split": "source1",
+      "strategy": "region_weighted_facility_location",
+      "unique_ordered_subsets_over3_selection_seeds": 1
+    },
+    {
+      "source_split": "source1",
+      "strategy": "permuted_region_weighted_facility_location",
+      "unique_ordered_subsets_over3_selection_seeds": 3
+    },
+    {
+      "source_split": "source2",
+      "strategy": "random",
+      "unique_ordered_subsets_over3_selection_seeds": 3
+    },
+    {
+      "source_split": "source2",
+      "strategy": "kcenter",
+      "unique_ordered_subsets_over3_selection_seeds": 3
+    },
+    {
+      "source_split": "source2",
+      "strategy": "region_random",
+      "unique_ordered_subsets_over3_selection_seeds": 3
+    },
+    {
+      "source_split": "source2",
+      "strategy": "region_kcenter",
+      "unique_ordered_subsets_over3_selection_seeds": 3
+    },
+    {
+      "source_split": "source2",
+      "strategy": "permuted_region_kcenter",
+      "unique_ordered_subsets_over3_selection_seeds": 3
+    },
+    {
+      "source_split": "source2",
+      "strategy": "kmeanspp",
+      "unique_ordered_subsets_over3_selection_seeds": 3
+    },
+    {
+      "source_split": "source2",
+      "strategy": "facility_location",
+      "unique_ordered_subsets_over3_selection_seeds": 1
+    },
+    {
+      "source_split": "source2",
+      "strategy": "fd_roundrobin",
+      "unique_ordered_subsets_over3_selection_seeds": 3
+    },
+    {
+      "source_split": "source2",
+      "strategy": "region_weighted_facility_location",
+      "unique_ordered_subsets_over3_selection_seeds": 1
+    },
+    {
+      "source_split": "source2",
+      "strategy": "permuted_region_weighted_facility_location",
+      "unique_ordered_subsets_over3_selection_seeds": 3
+    }
+  ]
+}

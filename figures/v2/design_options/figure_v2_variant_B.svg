@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="180mm" height="175.0mm" viewBox="0 0 180 175.0" version="1.1">
+<title>figure_v2_variant_B</title>
+<desc>Extension-study methods only. No performance values. Editable Arial text. The new panel has no feedback connection to development, selection or calibration.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="4" markerHeight="4" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#000000"/></marker></defs>
+<g id="page"><rect x="0.0" y="0.0" width="180.0" height="175.0" fill="#FFFFFF"/></g>
+<g id="labels" inkscape:groupmode="layer" inkscape:label="Title and panel labels">
+<g id="title"><text x="8.0" y="8.0" font-family="Arial" font-size="4.0" font-weight="bold" fill="#000000" text-anchor="start">A fixed selection comparison across two model recipes</text></g>
+<g id="panel-label-a"><text x="8.0" y="14.5" font-family="Arial" font-size="3.7" font-weight="bold" fill="#000000" text-anchor="start">a</text></g>
+<g id="panel-label-b"><text x="99.0" y="14.5" font-family="Arial" font-size="3.7" font-weight="bold" fill="#000000" text-anchor="start">b</text></g>
+<g id="panel-label-c"><text x="8.0" y="120.5" font-family="Arial" font-size="3.7" font-weight="bold" fill="#000000" text-anchor="start">c</text></g>
+</g>
+<g id="panel-a" inkscape:groupmode="layer" inkscape:label="Development and selection column">
+<g id="selection-column"><rect x="8.0" y="17.0" width="73.0" height="88.0" rx="2.0" fill="#EDF6FB" stroke="#0072B2" stroke-width="0.4"/></g>
+<g id="development-selection-title"><text x="13.0" y="23.0" font-family="Arial" font-size="3.7" font-weight="bold" fill="#000000" text-anchor="start">Development and selection</text></g>
+<g id="development-allocation-1"><text x="13.0" y="29.0" font-family="Arial" font-size="3.3" font-weight="normal" fill="#000000" text-anchor="start">Old 24 regions × 5 = 120 images</text></g>
+<g id="development-allocation-2"><text x="13.0" y="34.5" font-family="Arial" font-size="3.3" font-weight="normal" fill="#000000" text-anchor="start">3 splits: 12 train / 4 val / 8 unused</text></g>
+<g id="profiles-1"><text x="13.0" y="41.0" font-family="Arial" font-size="3.3" font-weight="normal" fill="#000000" text-anchor="start">36 candidates in each pool</text></g>
+<g id="profiles-2"><text x="13.0" y="46.5" font-family="Arial" font-size="3.3" font-weight="normal" fill="#000000" text-anchor="start">Balanced 12 × 3; skewed 6 × 5 + 6 × 1</text></g>
+<g id="selection-descriptor"><text x="13.0" y="52.0" font-family="Arial" font-size="3.3" font-weight="normal" fill="#000000" text-anchor="start">DINOv2 RGB + source IDs + B + seed</text></g>
+<g id="policy-header"><text x="13.0" y="58.0" font-family="Arial" font-size="3.3" font-weight="bold" fill="#000000" text-anchor="start">8 base selectors; no candidate labels</text></g>
+<g id="eight-policies-1"><text x="13.0" y="64.0" font-family="Arial" font-size="3.3" font-weight="normal" fill="#000000" text-anchor="start">Random; k-center; quota random</text></g>
+<g id="eight-policies-2"><text x="13.0" y="69.0" font-family="Arial" font-size="3.3" font-weight="normal" fill="#000000" text-anchor="start">Quota k-center; permuted quota</text></g>
+<g id="eight-policies-3"><text x="13.0" y="74.0" font-family="Arial" font-size="3.3" font-weight="normal" fill="#000000" text-anchor="start">k-means++; facility location</text></g>
+<g id="eight-policies-4"><text x="13.0" y="79.0" font-family="Arial" font-size="3.3" font-weight="normal" fill="#000000" text-anchor="start">Feature-diversity round-robin</text></g>
+<g id="eight-policies-5"><text x="13.0" y="84.0" font-family="Arial" font-size="3.3" font-weight="normal" fill="#000000" text-anchor="start">(fixed-cluster adaptation)</text></g>
+<g id="weighted-fl-supplement-1"><text x="13.0" y="90.0" font-family="Arial" font-size="3.3" font-weight="normal" fill="#000000" text-anchor="start">+ Real / permuted weighted FL</text></g>
+<g id="weighted-fl-supplement-2"><text x="13.0" y="95.0" font-family="Arial" font-size="3.3" font-weight="normal" fill="#000000" text-anchor="start">Skewed only: 1/(R × n_group)</text></g>
+<g id="weighted-fl-supplement-3"><text x="13.0" y="100.0" font-family="Arial" font-size="3.3" font-weight="normal" fill="#000000" text-anchor="start">Same FL; columns unweighted</text></g>
+</g>
+<g id="panel-b" inkscape:groupmode="layer" inkscape:label="Full and frozen model recipes">
+<g id="recipe-column"><rect x="99.0" y="17.0" width="73.0" height="88.0" rx="2.0" fill="#FFF8EB" stroke="#E69F00" stroke-width="0.4"/></g>
+<g id="recipe-column-title"><text x="104.0" y="23.0" font-family="Arial" font-size="3.7" font-weight="bold" fill="#000000" text-anchor="start">Two different model recipes</text></g>
+<g id="full-model"><rect x="104.0" y="29.0" width="63.0" height="26.0" rx="1.5" fill="#FFFFFF" stroke="#E69F00" stroke-width="0.4"/></g>
+<g id="full-recipe-1"><text x="108.0" y="35.0" font-family="Arial" font-size="3.3" font-weight="bold" fill="#000000" text-anchor="start">ResNet18 U-Net-style</text></g>
+<g id="full-recipe-2"><text x="108.0" y="40.0" font-family="Arial" font-size="3.3" font-weight="normal" fill="#000000" text-anchor="start">90 fits (72 + 18); B=12; skewed</text></g>
+<g id="full-recipe-3"><text x="108.0" y="45.0" font-family="Arial" font-size="3.3" font-weight="normal" fill="#000000" text-anchor="start">All weights train; BN stats fixed</text></g>
+<g id="full-recipe-4"><text x="108.0" y="50.0" font-family="Arial" font-size="3.3" font-weight="normal" fill="#000000" text-anchor="start">224 crops / 448 inference</text></g>
+<g id="frozen-model"><rect x="104.0" y="61.0" width="63.0" height="22.0" rx="1.5" fill="#F3F8FC" stroke="#0072B2" stroke-width="0.4"/></g>
+<g id="frozen-recipe-1"><text x="108.0" y="67.0" font-family="Arial" font-size="3.3" font-weight="bold" fill="#000000" text-anchor="start">Frozen DINOv2 + MLP</text></g>
+<g id="frozen-recipe-2"><text x="108.0" y="72.0" font-family="Arial" font-size="3.3" font-weight="normal" fill="#000000" text-anchor="start">486 fits; both pools; B=6/12/24</text></g>
+<g id="frozen-recipe-3"><text x="108.0" y="77.0" font-family="Arial" font-size="3.3" font-weight="normal" fill="#000000" text-anchor="start">600 steps; LR 0.001; head trained</text></g>
+<g id="shared-resources-1"><text x="104.0" y="89.0" font-family="Arial" font-size="3.3" font-weight="normal" fill="#000000" text-anchor="start">Old val sets full recipe; labels</text></g>
+<g id="shared-resources-2"><text x="104.0" y="94.5" font-family="Arial" font-size="3.3" font-weight="normal" fill="#000000" text-anchor="start">outside B. Paired fit seeds 0/1/2</text></g>
+<g id="shared-resources-3"><text x="104.0" y="100.0" font-family="Arial" font-size="3.3" font-weight="normal" fill="#000000" text-anchor="start">(selection = init); 3 splits; 576 fits</text></g>
+</g>
+<g id="panel-c" inkscape:groupmode="layer" inkscape:label="Permanent evaluation and region-level inference">
+<g id="new-panel-analysis"><rect x="8.0" y="123.0" width="164.0" height="33.0" rx="2.0" fill="#F3F8FC" stroke="#0072B2" stroke-width="0.4"/></g>
+<g id="inference-title"><text x="13.0" y="129.0" font-family="Arial" font-size="3.7" font-weight="bold" fill="#000000" text-anchor="start">Permanent panel: 24 new regions × 3 images = 72</text></g>
+<g id="regional-analysis-1"><text x="13.0" y="135.0" font-family="Arial" font-size="3.3" font-weight="normal" fill="#000000" text-anchor="start">Evaluation only at 448; no feedback to selection, calibration or checkpoint choice</text></g>
+<g id="regional-analysis-2"><text x="13.0" y="140.5" font-family="Arial" font-size="3.3" font-weight="normal" fill="#000000" text-anchor="start">1  Per fit / region: sum 3 image confusion matrices → regional union-class mIoU</text></g>
+<g id="regional-analysis-3"><text x="13.0" y="146.0" font-family="Arial" font-size="3.3" font-weight="normal" fill="#000000" text-anchor="start">2  Average 3 allocations × 3 paired fit seeds (= 9 fits) → 24 region differences</text></g>
+<g id="regional-analysis-4"><text x="13.0" y="151.5" font-family="Arial" font-size="3.3" font-weight="normal" fill="#000000" text-anchor="start">3  Bootstrap the 24 regions 10,000 times; splits and seeds are not extra regions</text></g>
+</g>
+<g id="arrows" inkscape:groupmode="layer" inkscape:label="Forward arrows only">
+<g id="selection-to-model-recipes"><line x1="84.0" y1="66.0" x2="96.0" y2="66.0" stroke="#000000" stroke-width="0.3" marker-end="url(#arrow)"/></g>
+<g id="recipes-to-new-panel-analysis"><line x1="135.5" y1="108.0" x2="135.5" y2="120.0" stroke="#000000" stroke-width="0.3" marker-end="url(#arrow)"/></g>
+</g>
+<g id="scope-notes" inkscape:groupmode="layer" inkscape:label="Recipe comparison boundary">
+<g id="nonclaim-1"><text x="8.0" y="164.0" font-family="Arial" font-size="3.3" font-weight="normal" fill="#000000" text-anchor="start">Seeds pair selection with optimization; model recipes do not isolate fine-tuning.</text></g>
+<g id="nonclaim-2"><text x="8.0" y="169.5" font-family="Arial" font-size="3.3" font-weight="normal" fill="#000000" text-anchor="start">Weighted FL is not claimed as novel; quota-versus-FL does not isolate quota rigidity.</text></g>
+</g>
+</svg>

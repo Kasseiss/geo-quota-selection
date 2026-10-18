@@ -1,0 +1,23 @@
+{
+  "created_utc": "2026-10-18T00:44:50.862022+00:00",
+  "reviewer": "parent research agent; digital preview and calculated insertion scale",
+  "checked_file_sha256": {
+    "figures/v2/design_options/figure_v2_variant_C.svg": "e280c4c553c8bf64181facb7c26f556c6cd4a956c8282b2760aa9572ac698c24",
+    "figures/v2/design_options/figure_v2_variant_C.png": "5b08318548ec8f2a31ed625d901909b876c3cef6fb94a172983a31e225177b0b",
+    "figures/v2/design_options/build_compact.py": "3084dd5f7797642561ae12238e450b1e4fccaf36a2160028bbf36574b1d15f6c",
+    "figures/v2/design_options/figure_qa.json": "d244f5df73bc565e17524b56f493094b795dfdd4fc8a155bd1b0afc4bb456eff"
+  },
+  "parent_viewed_png": true,
+  "visual_review": "PASS: four ordered panels, all labels and three arrows legible; no clipping/overlap; no performance values",
+  "chosen_variant": "C",
+  "native_inches": [
+    6.5,
+    7.2992
+  ],
+  "preferred_manuscript_width_inches": 6.3,
+  "minimum_font_pt_at_preferred_width": 9.0665,
+  "word_or_final_pdf_embedding_tested": false,
+  "physical_print_tested": false,
+  "frozen_scientific_plan_changed": false,
+  "caption_scope": "24 primary regions;23-region metadata sensitivity descriptive;90complete/486frozen/576total; 3source allocations x3paired seeds"
+}

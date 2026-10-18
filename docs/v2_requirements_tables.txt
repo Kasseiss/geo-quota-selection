@@ -1,0 +1,2 @@
+# Recorded tested numerical-table dependency; not a clean-install test.
+numpy==2.5.1

@@ -1,0 +1,165 @@
+{
+  "schema": "v2-cuda90-delivery-inventory-validation-1",
+  "latest_attempt": {
+    "created_utc": "2026-10-18T08:30:08.162017+00:00",
+    "passed": true,
+    "tests_run": 7,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "elapsed_seconds": 71.0463185999979,
+    "tests": [
+      {
+        "test": "test_v2_cuda_delivery_inventory.InventoryChecks.test_active_global_perfit_and_unknown_child_refused",
+        "status": "passed"
+      },
+      {
+        "test": "test_v2_cuda_delivery_inventory.InventoryChecks.test_complete_mixed_history_exact_operations_and_zero_move_growth",
+        "status": "passed"
+      },
+      {
+        "test": "test_v2_cuda_delivery_inventory.InventoryChecks.test_legacy_scalar_receipt_enters_exact_copy_inventory_without_changing_history",
+        "status": "passed"
+      },
+      {
+        "test": "test_v2_cuda_delivery_inventory.InventoryChecks.test_legacy_scalar_reuse_requires_pinned_receipt_and_later_windows_identity",
+        "status": "passed"
+      },
+      {
+        "test": "test_v2_cuda_delivery_inventory.InventoryChecks.test_pid_reuse_identity_and_unsafe_paths",
+        "status": "passed"
+      },
+      {
+        "test": "test_v2_cuda_delivery_inventory.InventoryChecks.test_plan_audit_analysis_and_raw_bytes_drift_refused",
+        "status": "passed"
+      },
+      {
+        "test": "test_v2_cuda_delivery_inventory.InventoryChecks.test_unclosed_generation_unexpected_archive_and_extra_result_refused",
+        "status": "passed"
+      }
+    ],
+    "test_output": "test_active_global_perfit_and_unknown_child_refused (test_v2_cuda_delivery_inventory.InventoryChecks.test_active_global_perfit_and_unknown_child_refused) ... ok\ntest_complete_mixed_history_exact_operations_and_zero_move_growth (test_v2_cuda_delivery_inventory.InventoryChecks.test_complete_mixed_history_exact_operations_and_zero_move_growth) ... ok\ntest_legacy_scalar_receipt_enters_exact_copy_inventory_without_changing_history (test_v2_cuda_delivery_inventory.InventoryChecks.test_legacy_scalar_receipt_enters_exact_copy_inventory_without_changing_history) ... ok\ntest_legacy_scalar_reuse_requires_pinned_receipt_and_later_windows_identity (test_v2_cuda_delivery_inventory.InventoryChecks.test_legacy_scalar_reuse_requires_pinned_receipt_and_later_windows_identity) ... ok\ntest_pid_reuse_identity_and_unsafe_paths (test_v2_cuda_delivery_inventory.InventoryChecks.test_pid_reuse_identity_and_unsafe_paths) ... ok\ntest_plan_audit_analysis_and_raw_bytes_drift_refused (test_v2_cuda_delivery_inventory.InventoryChecks.test_plan_audit_analysis_and_raw_bytes_drift_refused) ... ok\ntest_unclosed_generation_unexpected_archive_and_extra_result_refused (test_v2_cuda_delivery_inventory.InventoryChecks.test_unclosed_generation_unexpected_archive_and_extra_result_refused) ... ok\n\n----------------------------------------------------------------------\nRan 7 tests in 71.041s\n\nOK\n",
+    "file_sha256": {
+      "code/v2_cuda_delivery_inventory.py": "366dc06135e693f9be323b6a9cc77a4aa57265c1d11b77c7b4e8b0e248e813f5",
+      "code/test_v2_cuda_delivery_inventory.py": "70232a27596b2adc3b21af01f04cefde2782c9cccbc0537ca27d003c15af827e",
+      "docs/v2_cuda_delivery_inventory.md": "69fdd0406b6882752c5259479f354b47e4a3e8178f41843041efa4c01b5aa8ef"
+    },
+    "protected_file_sha256": {
+      "code/v2_cuda_execution.py": "dd14784a1642798b2df5be622545e2f8733d72db87cb29ecf984aff1d69e6cff",
+      "code/v2_cuda_parallel.py": "ac41d0c19aabdb6ffb041b07f50fd02828872f4bdac039ff886dd84d78d6bffc",
+      "code/v2_cuda_parallel_v2.py": "80d9e40683f1703fe5c7d12367680d0a207177f75d656c44038fa57e15d9945b",
+      "configs/v2_cuda_execution_plan.json": "15d586fd03389d495dfc2b7d9cdea35b2b3089461ccb49cc37e5f8bd39ff1545",
+      "configs/v2_freeze.json": "5fd417464cc88024ad4063b2dc77366c1b6d3c80ea7cb1fd3083b0ddc2957bd8",
+      "code/v2_pixel_budget.py": "1b7e79fa4058bae13b2ad7161392aab5416049056380ade950d3c2b1872b5e1b",
+      "configs/v2_pixel_budget_plan.json": "3e776a5517286d634eb29968ab3a7cafa3912e166f47d84137e8d16ef03d58e9",
+      "docs/v2_pixel_budget_protocol.md": "74e3a0d3cc25612b5a6d9be7749f797d39111baf579033bec4dbae62de653d04",
+      "evidence/v2/audit_attempts/cuda_parallel_boundary_switch_20261018T072357896177Z.json": "842d48e5a39ebaffa9e27e397083d514ee3f1e2e739bf60d8601ab8c14de8a2b",
+      "evidence/v2/cuda_execution/stale_writer_9f9b1f10d9d54efca34b071aa8d3119f.json": "0f99c8ef5b6e900ec99277e80f0710cebdb9022a3a7fd1c745cfaaaf62d15ad1"
+    },
+    "protected_changes": [],
+    "python": "3.13.13",
+    "real_experiment_scores_read": false,
+    "real_jobs_launched_or_stopped": 0,
+    "actual_cuda90_inventory_or_packaging_executed": false,
+    "scope": "Narrow historical scalar PID-reuse resolution using SHA-pinned original stop receipt and OS Windows FILETIME creation identity; full synthetic inventory regression suite. Read-only native historical PID/receipt resolution also verified; no full scientific inventory invoked.",
+    "legacy_receipt_pinned_sha256": {
+      "evidence/v2/audit_attempts/cuda_parallel_boundary_switch_20261018T072357896177Z.json": "842d48e5a39ebaffa9e27e397083d514ee3f1e2e739bf60d8601ab8c14de8a2b"
+    },
+    "limitations": [
+      "The exception is limited to a token-less two-field historical scalar lease with a matching existing terminal receipt.",
+      "Unknown creation identity or missing/tampered receipt for a live reused PID fails closed.",
+      "No scientific result, lease or original terminal receipt is edited; full inventory remains separately required before packaging."
+    ],
+    "native_legacy_scalar_identity_resolution": {
+      "scope": "Read-only native OS identity/immutable receipt check; no scientific result or inventory invocation.",
+      "record_file": "evidence/v2/cuda_execution/stale_writer_9f9b1f10d9d54efca34b071aa8d3119f.json",
+      "record_sha256": "0f99c8ef5b6e900ec99277e80f0710cebdb9022a3a7fd1c745cfaaaf62d15ad1",
+      "pid": 29164,
+      "current_process_observation": {
+        "alive": true,
+        "creation_token": "134367824246351144",
+        "creation_clock": "windows_filetime_100ns_since_1601"
+      },
+      "confirmed_scalar_terminal_utc": "2026-10-18T07:23:57.895441+00:00",
+      "terminal_windows_filetime": "134367818378954410",
+      "current_creation_strictly_after_terminal": true,
+      "resolved_receipt_sha256": {
+        "evidence/v2/audit_attempts/cuda_parallel_boundary_switch_20261018T072357896177Z.json": "842d48e5a39ebaffa9e27e397083d514ee3f1e2e739bf60d8601ab8c14de8a2b"
+      },
+      "processes_started_or_stopped": 0
+    }
+  },
+  "previous_attempts": [
+    {
+      "passed": false,
+      "tests_run": 5,
+      "failures": 1,
+      "errors": 0,
+      "elapsed_seconds": 155.842,
+      "failure": "Fixture incorrectly expected harmless pre-inventory analysis whitespace to fail. Analysis has its own byte hash, without a circular audit binding. Changed test to stale audit_sha256; added final audit/analysis/input binding rechecks.",
+      "file_sha256_not_recorded": true
+    },
+    {
+      "previous_proof_file_sha256": "287823ac6bf6a7c2de2c83c46d679b337b3ab811fab9c475ae590812f072b57d",
+      "created_utc": "2026-10-18T08:03:05.796232+00:00",
+      "passed": true,
+      "tests_run": 5,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "elapsed_seconds": 98.89885189999768,
+      "tests": [
+        {
+          "test": "test_v2_cuda_delivery_inventory.InventoryChecks.test_active_global_perfit_and_unknown_child_refused",
+          "status": "passed"
+        },
+        {
+          "test": "test_v2_cuda_delivery_inventory.InventoryChecks.test_complete_mixed_history_exact_operations_and_zero_move_growth",
+          "status": "passed"
+        },
+        {
+          "test": "test_v2_cuda_delivery_inventory.InventoryChecks.test_pid_reuse_identity_and_unsafe_paths",
+          "status": "passed"
+        },
+        {
+          "test": "test_v2_cuda_delivery_inventory.InventoryChecks.test_plan_audit_analysis_and_raw_bytes_drift_refused",
+          "status": "passed"
+        },
+        {
+          "test": "test_v2_cuda_delivery_inventory.InventoryChecks.test_unclosed_generation_unexpected_archive_and_extra_result_refused",
+          "status": "passed"
+        }
+      ],
+      "test_output": "test_active_global_perfit_and_unknown_child_refused (test_v2_cuda_delivery_inventory.InventoryChecks.test_active_global_perfit_and_unknown_child_refused) ... ok\ntest_complete_mixed_history_exact_operations_and_zero_move_growth (test_v2_cuda_delivery_inventory.InventoryChecks.test_complete_mixed_history_exact_operations_and_zero_move_growth) ... ok\ntest_pid_reuse_identity_and_unsafe_paths (test_v2_cuda_delivery_inventory.InventoryChecks.test_pid_reuse_identity_and_unsafe_paths) ... ok\ntest_plan_audit_analysis_and_raw_bytes_drift_refused (test_v2_cuda_delivery_inventory.InventoryChecks.test_plan_audit_analysis_and_raw_bytes_drift_refused) ... ok\ntest_unclosed_generation_unexpected_archive_and_extra_result_refused (test_v2_cuda_delivery_inventory.InventoryChecks.test_unclosed_generation_unexpected_archive_and_extra_result_refused) ... ok\n\n----------------------------------------------------------------------\nRan 5 tests in 98.890s\n\nOK\n",
+      "file_sha256": {
+        "code/v2_cuda_delivery_inventory.py": "fc6b45baa28d0a996f62f70bb3eddf50e7ab4096d6b0e78e6edf4a9ec8ca7dfd",
+        "code/test_v2_cuda_delivery_inventory.py": "041e685d3b46fc66bd5719561fe2ca6d06107183c9c1bc5dbd66882ca4cbb30d",
+        "docs/v2_cuda_delivery_inventory.md": "c5021bbdb87ab6cafe36ba28465b3d8620db383e330db658600881173efdf82e"
+      },
+      "protected_file_sha256": {
+        "code/v2_cuda_execution.py": "dd14784a1642798b2df5be622545e2f8733d72db87cb29ecf984aff1d69e6cff",
+        "code/v2_cuda_parallel.py": "ac41d0c19aabdb6ffb041b07f50fd02828872f4bdac039ff886dd84d78d6bffc",
+        "code/v2_cuda_parallel_v2.py": "80d9e40683f1703fe5c7d12367680d0a207177f75d656c44038fa57e15d9945b",
+        "configs/v2_cuda_execution_plan.json": "15d586fd03389d495dfc2b7d9cdea35b2b3089461ccb49cc37e5f8bd39ff1545",
+        "configs/v2_freeze.json": "5fd417464cc88024ad4063b2dc77366c1b6d3c80ea7cb1fd3083b0ddc2957bd8"
+      },
+      "protected_changes": [],
+      "python": "3.13.13",
+      "real_experiment_scores_read": false,
+      "real_jobs_launched_or_stopped": 0,
+      "actual_cuda90_inventory_or_packaging_executed": false,
+      "scope": "Synthetic byte/lease fixtures and mocked process liveness only; no Torch/raster/real results.",
+      "limitations": [
+        "Real CUDA90 completion audit and analysis do not yet exist; actual inventory remains gated.",
+        "All source writers must be terminal; CUDA helper does not observe unrelated document/CPU jobs.",
+        "Unknown launch or inaccessible process status fails closed; no lock removal or recovery mutation."
+      ],
+      "native_windows_process_query": {
+        "self_process_observed_alive": true,
+        "self_creation_token_available": true,
+        "synthetic_absent_pid_observed_dead": true,
+        "processes_started_or_stopped": 0
+      }
+    }
+  ]
+}

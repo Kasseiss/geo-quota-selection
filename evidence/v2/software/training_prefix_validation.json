@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "same_training_prefix_state_exact": true,
+  "standalone_steps": 2,
+  "long_run_steps": 4,
+  "checkpoint_step": 2,
+  "model_state_sha256": "6612e1b4f62c3b1ac0b92ef190551ddcdf33d5e19ed95dbae198da7ed60fd167",
+  "development_record_ids": [
+    "aachen__aachen_1",
+    "aachen__aachen_28",
+    "aachen__aachen_36"
+  ],
+  "new_panel_accessed": false,
+  "model_code_sha256": "5f8d46af866497e5a6db1c9779764566bdb8ddd3bcc01bcf3bb2721478e5a5d2",
+  "test_code_sha256": "dd906fb4f66b6241ec99127dcf7b3699d59c0d587494cfba28cea361e6cf7399",
+  "source": "Actual old development PNG pairs"
+}

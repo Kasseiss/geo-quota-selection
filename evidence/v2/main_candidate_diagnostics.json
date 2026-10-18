@@ -1,0 +1,111 @@
+{
+  "status": "FINDINGS",
+  "candidate_sha256": "e10b5ccde69334cdb658aa152a69fcc086af90f9cb9349eec5b99c257af84842",
+  "profile_loaded": true,
+  "findings": [
+    {
+      "code": "PROSE010",
+      "artifact": "v2-main",
+      "match": "k-center, equal-region, k-center, region-bootstrap",
+      "count": 4,
+      "message": "dense lexical hyphenation in one sentence; inspect clarity and field convention"
+    },
+    {
+      "code": "PROSE010",
+      "artifact": "v2-main",
+      "match": "image-based, label-based, core-set, U-Net",
+      "count": 4,
+      "message": "dense lexical hyphenation in one sentence; inspect clarity and field convention"
+    },
+    {
+      "code": "PROSE010",
+      "artifact": "v2-main",
+      "match": "matched-pixel, k-center, actual-group, k-center, permuted-group, k-center",
+      "count": 6,
+      "message": "dense lexical hyphenation in one sentence; inspect clarity and field convention"
+    },
+    {
+      "code": "PROSE010",
+      "artifact": "v2-main",
+      "match": "Allocation-specific, leave-one-region-out, metric-convention, Monrovia-excluded",
+      "count": 4,
+      "message": "dense lexical hyphenation in one sentence; inspect clarity and field convention"
+    },
+    {
+      "code": "PROSE010",
+      "artifact": "v2-main",
+      "match": "k-center, equal-region, union-class, k-center",
+      "count": 4,
+      "message": "dense lexical hyphenation in one sentence; inspect clarity and field convention"
+    },
+    {
+      "code": "PROSE010",
+      "artifact": "v2-main",
+      "match": "k-center, k-means, Feature-diversity, k-center, Permuted-group, k-center, equal-region, union-class",
+      "count": 8,
+      "message": "dense lexical hyphenation in one sentence; inspect clarity and field convention"
+    },
+    {
+      "code": "PROSE010",
+      "artifact": "v2-main",
+      "match": "actual-group, k-center, size-preserving, permuted-group",
+      "count": 4,
+      "message": "dense lexical hyphenation in one sentence; inspect clarity and field convention"
+    },
+    {
+      "code": "PROSE010",
+      "artifact": "v2-main",
+      "match": "k-center, k-center, k-center, k-center",
+      "count": 4,
+      "message": "dense lexical hyphenation in one sentence; inspect clarity and field convention"
+    },
+    {
+      "code": "PROSE010",
+      "artifact": "v2-main",
+      "match": "k-center, k-center, k-center, k-center, k-center, k-center, k-center, k-center, k-center, k-center, k-center, k-center",
+      "count": 12,
+      "message": "dense lexical hyphenation in one sentence; inspect clarity and field convention"
+    },
+    {
+      "code": "PROSE010",
+      "artifact": "v2-main",
+      "match": "complete-model, k-center, k-center, available-pixel, source-mean",
+      "count": 5,
+      "message": "dense lexical hyphenation in one sentence; inspect clarity and field convention"
+    },
+    {
+      "code": "PROSE002",
+      "artifact": "v2-main",
+      "match": "geographic weighted facility location",
+      "count": 4,
+      "message": "repeated sentence opening"
+    },
+    {
+      "code": "PROSE004",
+      "artifact": "v2-main",
+      "match": "cite wang utilityfairness rafiey decomposable",
+      "count": 3,
+      "message": "repeated multiword phrase across sentences"
+    },
+    {
+      "code": "PROSE004",
+      "artifact": "v2-main",
+      "match": "points with an interval of",
+      "count": 3,
+      "message": "repeated multiword phrase across sentences"
+    }
+  ],
+  "manual_checks_required": [
+    "paragraph contract and adjacent-paragraph flow",
+    "claim scope and preservation of locked meaning",
+    "functional transitions and cumulative information flow",
+    "literature-example ordering from broad context to the closest precedent and gap, or another explicit evidentiary logic",
+    "function-preserving concision and sentence rhythm",
+    "natural scholarly subjects, syntax, and disciplinary accessibility",
+    "reader accessibility, including nonessential field shorthand, transition templates, and indirect verbs",
+    "claim-to-citation support and reference-list changes",
+    "observable stock or AI-like prose features without authorship inference",
+    "dash and hyphen style, including grammatical role, established open compounds, density, and suspended compounds",
+    "necessary technical repetition versus avoidable restatement"
+  ]
+}

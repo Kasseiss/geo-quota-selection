@@ -1,0 +1,314 @@
+{
+  "format": "v2-active-result-figures-software-validation-1",
+  "created_utc": "2026-10-18T09:08:47.194141+00:00",
+  "passed": true,
+  "syntax_passed": true,
+  "code_sha256": {
+    "code/v2_plot_results.py": "e0b0728bdb4e8a332a48d89802be1bed78b67331ca16b0972ecc41af1b38f118",
+    "docs/v2_active_result_figures.md": "d7b6a5e9f4bff2e8600e3e5b06718e8c0365533fc6f664561293c1b50326b119"
+  },
+  "previous_plotter_code_sha256": "ee24c0b544ac13178f530e06e634b54763207dc3acd92d8ccba263a0185bcf14",
+  "previous_validation": {
+    "path": "evidence/v2/software/result_plotter_validation.json",
+    "sha256": "12e567b8c53192e42fec64397e2267ea74975b2d7af50b192939cd7c57bf3745",
+    "record": {
+      "created_utc": "2026-10-18T00:30:06.690994+00:00",
+      "code": "code/v2_plot_results.py",
+      "code_sha256": "ee24c0b544ac13178f530e06e634b54763207dc3acd92d8ccba263a0185bcf14",
+      "command": "python -B code/v2_plot_results.py --self-test",
+      "exit_code": 0,
+      "passed": true,
+      "parent_observed_native_session": 91626,
+      "checks": [
+        "synthetic64condition schema",
+        "four invalid schemas rejected",
+        "12temporary SVG/PDF/PNG formats",
+        "minimum9pt and canvas bounds",
+        "missing-CI handling",
+        "stable inventory digest sensitivity",
+        "incomplete audit refused"
+      ],
+      "environment": {
+        "python": "3.13.13",
+        "matplotlib": "3.11.0"
+      },
+      "formal_results_read_or_written": false,
+      "limitation": "Actual complete-matrix figures and visual review pending."
+    }
+  },
+  "dependency_sha256": {
+    "code/v2_active_gpu_results.py": "c8a220193a9124f548dce2fafd3500495dcc6f91980d957d1a96d1e9d2a7722d"
+  },
+  "amendment_sha256": "05b06f37acaaff2412e63baf126ab0e66ce552770af2b3dcbaed497c7ed94518",
+  "command": "python -B code/v2_plot_results.py --self-test",
+  "exit_code": 0,
+  "elapsed_wall_seconds": 6.3293834,
+  "environment": {
+    "python": "3.13.13",
+    "matplotlib": "3.11.0"
+  },
+  "checks": [
+    "synthetic64conditions unchanged",
+    "missing/duplicate/balanced-weighted/nonfinite schemas rejected",
+    "four figure families/12 temporary SVG PDF PNG assets",
+    "minimum9pt/font/canvas bounds",
+    "stored-CI only/missing-CI label",
+    "legacy incomplete audit refused",
+    "active validator dispatch without legacy audit",
+    "active failed bundle/wrong count/confirmatory role/wrong code/stale audit binding rejected",
+    "stale numeric SHA rejected",
+    "stable inventory digest sensitivity",
+    "metric comparison title and plain source labels",
+    "23-region label names excluded region",
+    "display qualifier removal preserves active role gate"
+  ],
+  "gate_contract": {
+    "tool": "code/v2_active_gpu_results.py:validate_bundle(root)",
+    "audit": "evidence/v2/active_run_completeness.json",
+    "analysis": "tables/v2/analysis_identity.json",
+    "active_fits": {
+      "GPU_full": 90,
+      "frozen_head": 486,
+      "CPU_reference_included": 0
+    },
+    "scope": "descriptive_main_display_after_post_exposure_user_backend_amendment",
+    "new_confirmatory_evidence": false,
+    "legacy_branch_preserved": true,
+    "target_tool_loaded_from_root": true,
+    "gate_rechecked_after_render": true
+  },
+  "formal_results_read_or_written": true,
+  "actual_figures_rendered": true,
+  "synthetic_validator_fixture_not_scientific_auditor": true,
+  "limitations": [
+    "Final DOCX/PDF placement requires separate all-page visual review.",
+    "Stored intervals and scientific numerical outputs are used without recomputing them."
+  ],
+  "previous_attempts": [
+    {
+      "format": "v2-active-result-figures-software-validation-1",
+      "created_utc": "2026-10-18T08:42:56.896630+00:00",
+      "passed": true,
+      "syntax_passed": true,
+      "code_sha256": {
+        "code/v2_plot_results.py": "1379c3bdcc146e82a371206f105eef309bbe0e8e4acd8bc798afbf999e4956d4",
+        "docs/v2_active_result_figures.md": "d7b6a5e9f4bff2e8600e3e5b06718e8c0365533fc6f664561293c1b50326b119"
+      },
+      "previous_plotter_code_sha256": "ee24c0b544ac13178f530e06e634b54763207dc3acd92d8ccba263a0185bcf14",
+      "previous_validation": {
+        "path": "evidence/v2/software/result_plotter_validation.json",
+        "sha256": "12e567b8c53192e42fec64397e2267ea74975b2d7af50b192939cd7c57bf3745",
+        "record": {
+          "created_utc": "2026-10-18T00:30:06.690994+00:00",
+          "code": "code/v2_plot_results.py",
+          "code_sha256": "ee24c0b544ac13178f530e06e634b54763207dc3acd92d8ccba263a0185bcf14",
+          "command": "python -B code/v2_plot_results.py --self-test",
+          "exit_code": 0,
+          "passed": true,
+          "parent_observed_native_session": 91626,
+          "checks": [
+            "synthetic64condition schema",
+            "four invalid schemas rejected",
+            "12temporary SVG/PDF/PNG formats",
+            "minimum9pt and canvas bounds",
+            "missing-CI handling",
+            "stable inventory digest sensitivity",
+            "incomplete audit refused"
+          ],
+          "environment": {
+            "python": "3.13.13",
+            "matplotlib": "3.11.0"
+          },
+          "formal_results_read_or_written": false,
+          "limitation": "Actual complete-matrix figures and visual review pending."
+        }
+      },
+      "dependency_sha256": {
+        "code/v2_active_gpu_results.py": "c8a220193a9124f548dce2fafd3500495dcc6f91980d957d1a96d1e9d2a7722d"
+      },
+      "amendment_sha256": "05b06f37acaaff2412e63baf126ab0e66ce552770af2b3dcbaed497c7ed94518",
+      "command": "python -B code/v2_plot_results.py --self-test",
+      "exit_code": 0,
+      "elapsed_wall_seconds": 9.580183,
+      "environment": {
+        "python": "3.13.13",
+        "matplotlib": "3.11.0"
+      },
+      "checks": [
+        "synthetic64conditions unchanged",
+        "missing/duplicate/balanced-weighted/nonfinite schemas rejected",
+        "four figure families/12 temporary SVG PDF PNG assets",
+        "minimum9pt/font/canvas bounds",
+        "active fixed-main descriptive title",
+        "stored-CI only/missing-CI label",
+        "legacy incomplete audit refused",
+        "active validator dispatch without legacy audit",
+        "active failed bundle/wrong count/confirmatory role/wrong code/stale audit binding rejected",
+        "stale numeric SHA rejected",
+        "stable inventory digest sensitivity"
+      ],
+      "gate_contract": {
+        "tool": "code/v2_active_gpu_results.py:validate_bundle(root)",
+        "audit": "evidence/v2/active_run_completeness.json",
+        "analysis": "tables/v2/analysis_identity.json",
+        "active_fits": {
+          "GPU_full": 90,
+          "frozen_head": 486,
+          "CPU_reference_included": 0
+        },
+        "scope": "descriptive_main_display_after_post_exposure_user_backend_amendment",
+        "new_confirmatory_evidence": false,
+        "legacy_branch_preserved": true,
+        "target_tool_loaded_from_root": true,
+        "gate_rechecked_after_render": true
+      },
+      "formal_results_read_or_written": false,
+      "actual_figures_rendered": false,
+      "synthetic_validator_fixture_not_scientific_auditor": true,
+      "limitations": [
+        "Synthetic adapter tests do not replace active scientific auditor validation.",
+        "Actual rendering awaits parent passed active audit; output visual review remains required.",
+        "No new confidence intervals, fits, predictions or numerical tables were computed."
+      ]
+    },
+    {
+      "format": "v2-active-result-figures-software-validation-1",
+      "created_utc": "2026-10-18T08:52:57.143365+00:00",
+      "passed": true,
+      "syntax_passed": true,
+      "code_sha256": {
+        "code/v2_plot_results.py": "ea5c4e293f780a394a95bb6fbb39ecb326eda84c89a76710a9a80e09a2987303",
+        "docs/v2_active_result_figures.md": "d7b6a5e9f4bff2e8600e3e5b06718e8c0365533fc6f664561293c1b50326b119"
+      },
+      "previous_plotter_code_sha256": "ee24c0b544ac13178f530e06e634b54763207dc3acd92d8ccba263a0185bcf14",
+      "previous_validation": {
+        "path": "evidence/v2/software/result_plotter_validation.json",
+        "sha256": "12e567b8c53192e42fec64397e2267ea74975b2d7af50b192939cd7c57bf3745",
+        "record": {
+          "created_utc": "2026-10-18T00:30:06.690994+00:00",
+          "code": "code/v2_plot_results.py",
+          "code_sha256": "ee24c0b544ac13178f530e06e634b54763207dc3acd92d8ccba263a0185bcf14",
+          "command": "python -B code/v2_plot_results.py --self-test",
+          "exit_code": 0,
+          "passed": true,
+          "parent_observed_native_session": 91626,
+          "checks": [
+            "synthetic64condition schema",
+            "four invalid schemas rejected",
+            "12temporary SVG/PDF/PNG formats",
+            "minimum9pt and canvas bounds",
+            "missing-CI handling",
+            "stable inventory digest sensitivity",
+            "incomplete audit refused"
+          ],
+          "environment": {
+            "python": "3.13.13",
+            "matplotlib": "3.11.0"
+          },
+          "formal_results_read_or_written": false,
+          "limitation": "Actual complete-matrix figures and visual review pending."
+        }
+      },
+      "dependency_sha256": {
+        "code/v2_active_gpu_results.py": "c8a220193a9124f548dce2fafd3500495dcc6f91980d957d1a96d1e9d2a7722d"
+      },
+      "amendment_sha256": "05b06f37acaaff2412e63baf126ab0e66ce552770af2b3dcbaed497c7ed94518",
+      "command": "python -B code/v2_plot_results.py --self-test",
+      "exit_code": 0,
+      "elapsed_wall_seconds": 6.3793412,
+      "environment": {
+        "python": "3.13.13",
+        "matplotlib": "3.11.0"
+      },
+      "checks": [
+        "synthetic64conditions unchanged",
+        "missing/duplicate/balanced-weighted/nonfinite schemas rejected",
+        "four figure families/12 temporary SVG PDF PNG assets",
+        "minimum9pt/font/canvas bounds",
+        "active fixed-main descriptive title",
+        "stored-CI only/missing-CI label",
+        "legacy incomplete audit refused",
+        "active validator dispatch without legacy audit",
+        "active failed bundle/wrong count/confirmatory role/wrong code/stale audit binding rejected",
+        "stale numeric SHA rejected",
+        "stable inventory digest sensitivity"
+      ],
+      "gate_contract": {
+        "tool": "code/v2_active_gpu_results.py:validate_bundle(root)",
+        "audit": "evidence/v2/active_run_completeness.json",
+        "analysis": "tables/v2/analysis_identity.json",
+        "active_fits": {
+          "GPU_full": 90,
+          "frozen_head": 486,
+          "CPU_reference_included": 0
+        },
+        "scope": "descriptive_main_display_after_post_exposure_user_backend_amendment",
+        "new_confirmatory_evidence": false,
+        "legacy_branch_preserved": true,
+        "target_tool_loaded_from_root": true,
+        "gate_rechecked_after_render": true
+      },
+      "formal_results_read_or_written": true,
+      "actual_figures_rendered": true,
+      "synthetic_validator_fixture_not_scientific_auditor": true,
+      "limitations": [
+        "Final DOCX/PDF placement requires separate all-page visual review.",
+        "Stored intervals and scientific numerical outputs are used without recomputing them."
+      ],
+      "formal_scope": "Read passed active bundle and numerical tables; wrote figure assets/manifest; scientific numerical tables unchanged.",
+      "layout_fix": "Wrap both primary-panel x-axis labels onto three lines; definitions and units unchanged.",
+      "visual_review": {
+        "performed": true,
+        "pngs": [
+          "figures/v2/results/primary_union.png",
+          "figures/v2/results/primary_truth_present.png",
+          "figures/v2/results/models_skewed_b12.png",
+          "figures/v2/results/frozen_pools_budgets.png"
+        ],
+        "verdict": "All four real result PNGs inspected; labels readable, no canvas clipping or text collisions after axis-label wrap. Model and frozen-budget figures unchanged in design."
+      },
+      "actual_output_sha256": {
+        "figures/v2/results/primary_union.svg": "ad88885db06ca20af2b995dc01ca77e7fdb3ec7c89a8b308c67872bdd916aa7e",
+        "figures/v2/results/primary_union.pdf": "4ebab0cbecd3364b64864ce3e29fe3d05b5b27b84d2962623076087cc6b8da9d",
+        "figures/v2/results/primary_union.png": "5359f0f112c9646730e55c03f5b0ca53296e5344329fa9560a183044fe892faa",
+        "figures/v2/results/primary_truth_present.svg": "7b254ed49b003c1befcc068d2eefbf84572c7985ee01b943a88e78129a64eb58",
+        "figures/v2/results/primary_truth_present.pdf": "88b622aee70ee44924bfac3c1b8662baa0e546aa562a188b6ea44707685a66b6",
+        "figures/v2/results/primary_truth_present.png": "c14ca98993ce833bb2c4d851620706c64b0bf911f17643f22b61c39dd22ba9a0",
+        "figures/v2/results/models_skewed_b12.svg": "b12aca5061d3fa562ea323763e7881a63a168b0ff63dcc81945619d8186ff498",
+        "figures/v2/results/models_skewed_b12.pdf": "c640dcc5bdbcb05bbc9ef98768eb499f5ad893286b47c215b3370856f9642db5",
+        "figures/v2/results/models_skewed_b12.png": "7fd629de436dcdc67a3cbc42eaa9ac0a82a4cb0ebd491e49b9ae982be3892988",
+        "figures/v2/results/frozen_pools_budgets.svg": "a7425a4a9e90c476d5b5a47e19ee4cbad548075adfc36b77fad2d3d255c0fb49",
+        "figures/v2/results/frozen_pools_budgets.pdf": "4b36a172be4a5846491e5bf6b7678b7a8ba76e9ecc8f646ff0eb292082fab2d9",
+        "figures/v2/results/frozen_pools_budgets.png": "028c370396b97de1f7e2bcb13cf2b35cd5c2ccc972b5645ebaa0f721a07c3993"
+      },
+      "actual_figure_manifest_sha256": "6179be85ea3db09e905aab1a4545bd9d3e9ba75f45e9da7dcaf646f21b2b14aa"
+    }
+  ],
+  "formal_scope": "Read passed active bundle and numerical tables; wrote figure assets/manifest; scientific numerical tables unchanged.",
+  "layout_fix": "Preserved three-line x labels; simplified display titles/source labels and explicitly named Monrovia exclusion. Audit/analysis role metadata and mathematics unchanged.",
+  "visual_review": {
+    "performed": true,
+    "pngs": [
+      "figures/v2/results/primary_union.png",
+      "figures/v2/results/primary_truth_present.png",
+      "figures/v2/results/models_skewed_b12.png",
+      "figures/v2/results/frozen_pools_budgets.png"
+    ],
+    "verdict": "All four real result PNGs inspected after final label simplification. Titles, labels and legend are readable without clipping or collisions; main comparison title and source rows omit repeated scope qualifiers."
+  },
+  "actual_output_sha256": {
+    "figures/v2/results/primary_union.svg": "71a8fad4eda91815205e87efd597999a7f950da3551a45f490173ed227c46a2e",
+    "figures/v2/results/primary_union.pdf": "75194985b10d192df8600be746c5a75f503f29bbd972f4a1e20aa7a4e9fb0ea9",
+    "figures/v2/results/primary_union.png": "aeb8a2547e5ce1a515f127712d5572a1a09d5d1a2f94ac8a16201e80c88cc2f6",
+    "figures/v2/results/primary_truth_present.svg": "1074153aab35abbd0acf20320751ace256c4163594375127bf148349fd7cc24b",
+    "figures/v2/results/primary_truth_present.pdf": "6dc4517133b6bfed2d52d36cffc248ca6b6342984ede9b53c5c09f18009e5e99",
+    "figures/v2/results/primary_truth_present.png": "341035341fe15e92cda52cb8ae9294534654ad4ea257f037cd87f18686f6076a",
+    "figures/v2/results/models_skewed_b12.svg": "dace1f12230ab9601bc6174a891e7c96b4921c81b2d721427c02a3970a864ffc",
+    "figures/v2/results/models_skewed_b12.pdf": "da225c6083b29036c0ca764c0fff97daaf7ecfee9e91f0a6c1aa702108a79880",
+    "figures/v2/results/models_skewed_b12.png": "7fd629de436dcdc67a3cbc42eaa9ac0a82a4cb0ebd491e49b9ae982be3892988",
+    "figures/v2/results/frozen_pools_budgets.svg": "84352e338c838e06f16457e980e7827f30f5fef1e2ce5a849f48a896cb410d73",
+    "figures/v2/results/frozen_pools_budgets.pdf": "9be199ae1556c79798f2023167c1600d862c083c7e427b0b8a01f793a69632db",
+    "figures/v2/results/frozen_pools_budgets.png": "028c370396b97de1f7e2bcb13cf2b35cd5c2ccc972b5645ebaa0f721a07c3993"
+  },
+  "actual_figure_manifest_sha256": "3c2898007be7326df23d0fc8b0d1bd00f4bca8cd4bd761dc6ac1152ff6db2487"
+}

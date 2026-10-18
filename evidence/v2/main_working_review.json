@@ -1,0 +1,128 @@
+{
+  "format": "v2-main-working-review-1",
+  "created_utc": "2026-10-18T09:19:20.094267+00:00",
+  "status": "EXACT_WORKING_MAIN_REVIEW_NO_NEW_CRITICAL_FINDING",
+  "candidate": "paper/v2/manuscript_source.json",
+  "candidate_sha256": "f6509692cdb6c0238eabd9d0f678dc96483467928354078ba531ed2cfbeff478",
+  "review_scope": "Entire main source: title,abstract,Introduction,Methods,Results,Discussion,Conclusion,4tables,2figure captions,backmatter,18reference sequence and bindings.",
+  "reviewed_with_skill": "academic-writing-skills",
+  "checks": {
+    "citation_order_matches_first_appearance": true,
+    "citation_count": 18,
+    "missing_citation_keys": [],
+    "bibliography_SHA_matches": true,
+    "all_six_numeric_SHA_match": true,
+    "all_supplemental_SHA_match": true,
+    "all_asset_SHA_match": true,
+    "budget_definition_explicit": true,
+    "objective_weight_wording_correct": true,
+    "actual_vs_permuted_weight_multiset_explicit": true,
+    "fit_SD_includes_allocations": true,
+    "sixteen_total_crop_proposals_explicit": true,
+    "causal_decomposition_phrase_removed": true,
+    "preceding_study_distinguished": true
+  },
+  "resolved_findings": [
+    {
+      "location": "Methods2.3",
+      "resolution": "Image budget B explicitly excludes additional shared calibration/validation labels."
+    },
+    {
+      "location": "Discussion4.1",
+      "resolution": "Equal aggregate realized coverage corrected to equal total region weight in objective."
+    },
+    {
+      "location": "Abstract,Introduction,Results3.3,Discussion4.1/4.2,Conclusion",
+      "resolution": "Independent-factor separation wording replaced by controlled comparisons and differing responses to pixel matching."
+    },
+    {
+      "location": "Results3.2",
+      "resolution": "Weight-multiset invariance explicitly belongs to actual-versus-permuted weighting."
+    },
+    {
+      "location": "Table2note",
+      "resolution": "Fit SD explicitly includes source-allocation and paired-seed variation."
+    },
+    {
+      "location": "Methods2.1/2.3",
+      "resolution": "Prior-study evaluation clarified; crop proposal total stated accurately."
+    }
+  ],
+  "open_critical_findings": [],
+  "numeric_review": {
+    "primary": "1.68pp [0.86,2.51],20/24positive,LOO1.50-1.89,Monrovia-excluded1.58[0.75,2.41] consistent.",
+    "complete_ranking": "All10 Table2 means,fitSD and source-coverage means match canonical conditions.csv; quota random21.41% and realweightedFL21.24% correctly foregrounded.",
+    "geographic_controls": "Quota actual-permuted0.90[0.34,1.45],weightedFL-FL1.35[0.59,2.10],weighted actual-permuted2.13[1.26,2.98];source effects consistent.",
+    "pixel_control": "Matched quota-K2.00[1.19,2.83],paired change0.32[-0.13,0.74];matched actual-permuted0.25[-0.19,0.69],paired change-0.65[-1.05,-0.26];direct paired-change interpretation accurate.",
+    "frozen_recipe": "B6/B12/B24 contrasts in balanced/skewed pools,weighted/permuted comparisons and4.40-7.06pp full-recipe gap consistent."
+  },
+  "scientific_assessment": "The argument now presents the controlled empirical contribution positively: geographic allocation complements visual coverage, the objective and supervision budget determine contrasts, and strong simple baselines inform practical choices. Current claims do not promote existing objectives into a new algorithm or turn complete-recipe differences into a fine-tuning effect.",
+  "citation_review": "All18citekeys exist in current25-entry bibliography and match first-use order. Statements match the recorded local literature inspection scope; no new external exhaustive/full-text review claimed.",
+  "backmatter_review": "No invented personal authorship/funding/ethics declarations found. Generative-AI assistance statement matches the recorded workflow. Personal author information remains a known separate completion item.",
+  "required_scope_placement": "Existing Methods backend/exposure paragraph,Discussion recipe paragraph,and singleDiscussion4.4scope are sufficient. No additional repetitive caveats requested.",
+  "release_boundary": {
+    "research_review_final_gate": false,
+    "supplement_entirety_reviewed": false,
+    "rendered_DOCX_PDF_visual_QA": false,
+    "reason": "Final five-paper-file and six-numerical-file review binding follows complete main/supplement exports and visual QA."
+  },
+  "evidence_sha256": {
+    "tables/v2/conditions_by_source.csv": "1ee93c61458730b6bd1767f318f140082c533d1f6602c75e37d0e65d9bc7a930",
+    "tables/v2/conditions.csv": "6839eb25476fa491ff065efbe9f6dd5dd3511c208435f95f06265a860c4a9ef4",
+    "tables/v2/regions.csv": "f9a26a39d0c5d444fbeb2da3b46be518e64ac26c6261717ad30bbb78840e59c6",
+    "tables/v2/classes.csv": "64573f6c486f3d4c9a181d386d8dd1173876faa05d8b7f606b796ee2ca5ad533",
+    "tables/v2/contrasts.json": "55b704657c96730da6b3e1f6ea81e08f68a012e70dc2f844444ef2e545124551",
+    "tables/v2/primary.json": "4b1cba5b9778d3a338a7d54f2cb8b70ada0ab44335c72e4b4885fd9f47e61f8f",
+    "docs/references_v2.bib": "a0389f038d2495538cb70a7173f0812c3a78fbf8e73106a1066a892847e71d97",
+    "docs/v2_literature_matrix.md": "d12f7505ba122bbfef3f81f91c586ac833f29a651d9fa2038db384107d46e938",
+    "tables/v2_cuda/descriptive_analysis.json": "6005ce9e5bae772d04d5cab09833b3a0cf2a28d01d672ba8a478a5050d60a23e",
+    "tables/v2_pixel_budget/descriptive_analysis.json": "271dcfa7a38085003a4c964f4dda8889092ad4946e6ec7ee0c73aaf74cd2c162",
+    "code/v2_segmentation.py": "5f8d46af866497e5a6db1c9779764566bdb8ddd3bcc01bcf3bb2721478e5a5d2",
+    "code/v2_selection.py": "e1665e1932e05e5f00a1403c62399e0b1a00dc2618c72ba05c44fdc3d20efe96",
+    "code/v2_weighted_selection.py": "9d73d805e8ebe0b6f0afbac5c16de1f6fdc8ffc6f6a892b30d87cf82c3fc1f11",
+    "code/v2_calibrate.py": "92a4a16140fe89cc3a9efa413362667954943f9078fd204f277c1accd8293334"
+  },
+  "functional_completeness": "Requested main-source scientific/numerical/citation/prose scope covered; identified issues closed on this candidate. Final rendered-package and personal metadata gates remain separate.",
+  "candidate_text_sha256": "04e414e27e78c0d43e73ad57b7074711de5c8756934590a14e7ea9a083537bf9",
+  "candidate_text_hash_definition": {
+    "included_top_level_fields": [
+      "format",
+      "kind",
+      "title",
+      "authors",
+      "keywords",
+      "abstract",
+      "sections",
+      "back_matter",
+      "reference_order"
+    ],
+    "serialization": "UTF-8 json.dumps ensure_ascii=False sort_keys=True separators=(comma,colon) allow_nan=False; evidence_binding excluded",
+    "scope": "Includes full prose,tables,captions,asset paths and citation order. A binding-only refresh does not change this digest; changed scientific text/table/caption/layout fields does."
+  },
+  "review_history": [
+    {
+      "candidate_sha256": "9e26a940a0bb4172e9816d68b4aec2fc8d3ea7ff478b67f9f07600751597ef94",
+      "candidate_text_sha256": "de216546f6a8f31f9efe702220234c6ee0163b3a7ec38e15117b377d8d2b3e95",
+      "status": "EXACT_WORKING_MAIN_REVIEW_NO_NEW_CRITICAL_FINDING"
+    },
+    {
+      "candidate_sha256": "518a944c537d6ee37fb3fcdec983fb0710135395062829840c0841f3638548ce",
+      "candidate_text_sha256": "9ab604ff891584fb3fdd4402821dc0ba21c87b0879a063e5f3bbc390c9a06428",
+      "status": "EXACT_WORKING_MAIN_REVIEW_NO_NEW_CRITICAL_FINDING"
+    }
+  ],
+  "readability_update": {
+    "verified": "mIoU mean intersection over union; class-token CLS; group normalization and rectified linear units ReLU; multilayer perceptron MLP; image descriptor wording. Removed promise of an absent CPU qualitative supplement example.",
+    "scientific_claims_or_numeric_values_changed": false
+  },
+  "last_editorial_update": {
+    "verified_clauses": [
+      "Earlier development wording does not imply a preceding publication.",
+      "After initial panel evaluation, backend amendment and unified90CUDA descriptive analysis accurately describe the execution order.",
+      "CPU72 remains a separate reference;core576 andtotal675 unchanged."
+    ],
+    "numeric_claims_changed": false,
+    "citations_changed": false,
+    "open_material_findings": []
+  }
+}

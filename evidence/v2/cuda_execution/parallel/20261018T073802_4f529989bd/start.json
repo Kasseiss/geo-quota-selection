@@ -1,0 +1,22 @@
+{
+  "generation": "20261018T073802_4f529989bd",
+  "children": [
+    {
+      "worker": 0,
+      "pid": 21776,
+      "alive": true,
+      "creation_token": "134367826895896162",
+      "working_set_bytes": 2154496,
+      "peak_working_set_bytes": 2154496
+    },
+    {
+      "worker": 1,
+      "pid": 25828,
+      "alive": true,
+      "creation_token": "134367827116285603",
+      "working_set_bytes": 2142208,
+      "peak_working_set_bytes": 2142208
+    }
+  ],
+  "utc": "2026-10-18T07:38:53.107476+00:00"
+}

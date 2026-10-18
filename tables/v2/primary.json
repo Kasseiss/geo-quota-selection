@@ -1,0 +1,1107 @@
+{
+  "format": "v2-primary-1",
+  "specification": {
+    "model": "resnet18_unet",
+    "pool": "skewed5_1",
+    "budget": 12,
+    "contrast": [
+      "region_kcenter",
+      "kcenter"
+    ],
+    "metric": "equal-region union-class mIoU",
+    "unit": "new held-out region",
+    "first_average": [
+      "source_split",
+      "selection_seed",
+      "initialization_seed"
+    ],
+    "interval": "paired percentile region bootstrap",
+    "repetitions": 10000,
+    "bootstrap_seed": 2026101805
+  },
+  "interpretation": "Fixed contrast/metric under a user-driven backend amendment after panel exposure; descriptive main display, not a new prospective primary",
+  "fits_per_strategy": 9,
+  "source_allocations": 3,
+  "selection_seeds": 3,
+  "initialization_seeds": 3,
+  "randomization": {
+    "fit_seed_pairs": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        2
+      ]
+    ],
+    "policy": "Three paired selection/optimization seeds; not a Cartesian factorial",
+    "selection_and_optimization_factors_separable": false,
+    "randomization_amended_before_new_panel_scores": true,
+    "calibration_initialization_seed": 0
+  },
+  "geographic_replicates": 24,
+  "metrics": {
+    "union_class_miou": {
+      "difference": 0.01678081197906719,
+      "region_count": 24,
+      "unit": "held-out geographic region; source allocations and fitting seeds averaged first",
+      "regional_differences": [
+        {
+          "region": "abancay",
+          "a": 0.2810706153883483,
+          "b": 0.22446030546699636,
+          "difference": 0.056610309921351964
+        },
+        {
+          "region": "al_qurnah",
+          "a": 0.22961946991989896,
+          "b": 0.20540494289640987,
+          "difference": 0.024214527023489085
+        },
+        {
+          "region": "baybay",
+          "a": 0.20799252386145192,
+          "b": 0.18058814550118987,
+          "difference": 0.02740437836026205
+        },
+        {
+          "region": "bielefeld",
+          "a": 0.14333523392689215,
+          "b": 0.1426549150900153,
+          "difference": 0.0006803188368768587
+        },
+        {
+          "region": "buenos_aires",
+          "a": 0.3056694905789485,
+          "b": 0.29779787379581246,
+          "difference": 0.007871616783136026
+        },
+        {
+          "region": "chiclayo",
+          "a": 0.16255842544206145,
+          "b": 0.15872682260833296,
+          "difference": 0.0038316028337284924
+        },
+        {
+          "region": "coxsbazar",
+          "a": 0.12133877274782079,
+          "b": 0.10546944388421536,
+          "difference": 0.015869328863605425
+        },
+        {
+          "region": "dowa",
+          "a": 0.13439890118717088,
+          "b": 0.10955934930659429,
+          "difference": 0.024839551880576585
+        },
+        {
+          "region": "kagera",
+          "a": 0.16013550679926392,
+          "b": 0.14297373870352653,
+          "difference": 0.017161768095737384
+        },
+        {
+          "region": "kampala",
+          "a": 0.2590605393463409,
+          "b": 0.2016813130813325,
+          "difference": 0.05737922626500838
+        },
+        {
+          "region": "khartoum",
+          "a": 0.14712051588440903,
+          "b": 0.1556983724018034,
+          "difference": -0.008577856517394372
+        },
+        {
+          "region": "kinshasa",
+          "a": 0.25791376070111804,
+          "b": 0.249693928437821,
+          "difference": 0.008219832263297033
+        },
+        {
+          "region": "kitsap",
+          "a": 0.17482195673692838,
+          "b": 0.17401515172518017,
+          "difference": 0.0008068050117482073
+        },
+        {
+          "region": "monrovia",
+          "a": 0.25685670904514973,
+          "b": 0.21660431937113814,
+          "difference": 0.040252389674011596
+        },
+        {
+          "region": "ngaoundere",
+          "a": 0.20041032501117662,
+          "b": 0.1784485284146733,
+          "difference": 0.021961796596503325
+        },
+        {
+          "region": "paris",
+          "a": 0.07820205750251244,
+          "b": 0.10943652183849312,
+          "difference": -0.031234464335980677
+        },
+        {
+          "region": "rosario",
+          "a": 0.23957300342819327,
+          "b": 0.24925181098262003,
+          "difference": -0.009678807554426766
+        },
+        {
+          "region": "san_tome",
+          "a": 0.31697488102246185,
+          "b": 0.29020396348138455,
+          "difference": 0.0267709175410773
+        },
+        {
+          "region": "soriano",
+          "a": 0.29654737237621337,
+          "b": 0.27035088987098277,
+          "difference": 0.0261964825052306
+        },
+        {
+          "region": "svaneti",
+          "a": 0.21412042127712894,
+          "b": 0.16637230787144774,
+          "difference": 0.04774811340568119
+        },
+        {
+          "region": "tokyo",
+          "a": 0.13268242217092155,
+          "b": 0.1260234223935264,
+          "difference": 0.006658999777395147
+        },
+        {
+          "region": "tyrolw",
+          "a": 0.0806491338187813,
+          "b": 0.08285549733007642,
+          "difference": -0.00220636351129512
+        },
+        {
+          "region": "western",
+          "a": 0.13188622958560106,
+          "b": 0.11171594742041119,
+          "difference": 0.020170282165189873
+        },
+        {
+          "region": "zanzibar",
+          "a": 0.1522356989007022,
+          "b": 0.1324469672878993,
+          "difference": 0.019788731612802923
+        }
+      ],
+      "leave_one_region_out": [
+        {
+          "omitted_region": "abancay",
+          "difference": 0.015049094677228722
+        },
+        {
+          "omitted_region": "al_qurnah",
+          "difference": 0.016457606977135802
+        },
+        {
+          "omitted_region": "baybay",
+          "difference": 0.016318917788580457
+        },
+        {
+          "omitted_region": "bielefeld",
+          "difference": 0.017480833420031986
+        },
+        {
+          "omitted_region": "buenos_aires",
+          "difference": 0.017168168291933763
+        },
+        {
+          "omitted_region": "chiclayo",
+          "difference": 0.017343821072342783
+        },
+        {
+          "omitted_region": "coxsbazar",
+          "difference": 0.01682044167973944
+        },
+        {
+          "omitted_region": "dowa",
+          "difference": 0.01643043198334939
+        },
+        {
+          "omitted_region": "kagera",
+          "difference": 0.016764248669646747
+        },
+        {
+          "omitted_region": "kampala",
+          "difference": 0.015015663531852358
+        },
+        {
+          "omitted_region": "khartoum",
+          "difference": 0.01788336278326117
+        },
+        {
+          "omitted_region": "kinshasa",
+          "difference": 0.0171530284884485
+        },
+        {
+          "omitted_region": "kitsap",
+          "difference": 0.017475334021124535
+        },
+        {
+          "omitted_region": "monrovia",
+          "difference": 0.01576030860102613
+        },
+        {
+          "omitted_region": "ngaoundere",
+          "difference": 0.016555551778309096
+        },
+        {
+          "omitted_region": "paris",
+          "difference": 0.018868432688417095
+        },
+        {
+          "omitted_region": "rosario",
+          "difference": 0.01793123021965388
+        },
+        {
+          "omitted_region": "san_tome",
+          "difference": 0.01634645956332762
+        },
+        {
+          "omitted_region": "soriano",
+          "difference": 0.016371434999668782
+        },
+        {
+          "omitted_region": "svaneti",
+          "difference": 0.015434407569214407
+        },
+        {
+          "omitted_region": "tokyo",
+          "difference": 0.017220890770444235
+        },
+        {
+          "omitted_region": "tyrolw",
+          "difference": 0.017606341348213376
+        },
+        {
+          "omitted_region": "western",
+          "difference": 0.016633443710105333
+        },
+        {
+          "omitted_region": "zanzibar",
+          "difference": 0.016650032864556942
+        }
+      ],
+      "bootstrap": {
+        "method": "paired percentile region bootstrap",
+        "repetitions": 10000,
+        "seed": 2026101805,
+        "lower": 0.008565408951195421,
+        "upper": 0.02506700200137039,
+        "level": 0.95
+      },
+      "role": "descriptive_main_display_after_post_exposure_user_backend_amendment"
+    },
+    "truth_present_miou": {
+      "difference": 0.02275782194088759,
+      "region_count": 24,
+      "unit": "held-out geographic region; source allocations and fitting seeds averaged first",
+      "regional_differences": [
+        {
+          "region": "abancay",
+          "a": 0.31010814974647244,
+          "b": 0.25625762154556075,
+          "difference": 0.053850528200911685
+        },
+        {
+          "region": "al_qurnah",
+          "a": 0.24003990590082935,
+          "b": 0.21473247302984896,
+          "difference": 0.02530743287098039
+        },
+        {
+          "region": "baybay",
+          "a": 0.24744180298059737,
+          "b": 0.21497796217269521,
+          "difference": 0.032463840807902156
+        },
+        {
+          "region": "bielefeld",
+          "a": 0.1471064979713185,
+          "b": 0.1473937994275638,
+          "difference": -0.0002873014562453091
+        },
+        {
+          "region": "buenos_aires",
+          "a": 0.3305960459899826,
+          "b": 0.29779787379581246,
+          "difference": 0.03279817219417014
+        },
+        {
+          "region": "chiclayo",
+          "a": 0.16255842544206145,
+          "b": 0.15872682260833296,
+          "difference": 0.0038316028337284924
+        },
+        {
+          "region": "coxsbazar",
+          "a": 0.12133877274782079,
+          "b": 0.10546944388421536,
+          "difference": 0.015869328863605425
+        },
+        {
+          "region": "dowa",
+          "a": 0.13660017461349236,
+          "b": 0.1112192074826093,
+          "difference": 0.02538096713088306
+        },
+        {
+          "region": "kagera",
+          "a": 0.180877141937672,
+          "b": 0.16114858349803546,
+          "difference": 0.01972855843963653
+        },
+        {
+          "region": "kampala",
+          "a": 0.28297621595718625,
+          "b": 0.2041441699446097,
+          "difference": 0.07883204601257654
+        },
+        {
+          "region": "khartoum",
+          "a": 0.1700512183323527,
+          "b": 0.18131487802294577,
+          "difference": -0.011263659690593064
+        },
+        {
+          "region": "kinshasa",
+          "a": 0.2654198127314269,
+          "b": 0.249693928437821,
+          "difference": 0.015725884293605885
+        },
+        {
+          "region": "kitsap",
+          "a": 0.18949810613854043,
+          "b": 0.17599331859005335,
+          "difference": 0.01350478754848708
+        },
+        {
+          "region": "monrovia",
+          "a": 0.26372652411635245,
+          "b": 0.21660431937113814,
+          "difference": 0.04712220474521431
+        },
+        {
+          "region": "ngaoundere",
+          "a": 0.2031961066936312,
+          "b": 0.18087344160314067,
+          "difference": 0.022322665090490523
+        },
+        {
+          "region": "paris",
+          "a": 0.08845704346186681,
+          "b": 0.11611565728232742,
+          "difference": -0.027658613820460615
+        },
+        {
+          "region": "rosario",
+          "a": 0.24698687106393566,
+          "b": 0.24925181098262003,
+          "difference": -0.002264939918684372
+        },
+        {
+          "region": "san_tome",
+          "a": 0.34100189968755856,
+          "b": 0.29020396348138455,
+          "difference": 0.05079793620617401
+        },
+        {
+          "region": "soriano",
+          "a": 0.31644647663519326,
+          "b": 0.2743605346729617,
+          "difference": 0.04208594196223159
+        },
+        {
+          "region": "svaneti",
+          "a": 0.21777276984320593,
+          "b": 0.16637230787144774,
+          "difference": 0.05140046197175818
+        },
+        {
+          "region": "tokyo",
+          "a": 0.13894591029901865,
+          "b": 0.13235993995772638,
+          "difference": 0.006585970341292269
+        },
+        {
+          "region": "tyrolw",
+          "a": 0.0806491338187813,
+          "b": 0.08285549733007642,
+          "difference": -0.00220636351129512
+        },
+        {
+          "region": "western",
+          "a": 0.14059351676695797,
+          "b": 0.11365681923670315,
+          "difference": 0.02693669753025482
+        },
+        {
+          "region": "zanzibar",
+          "a": 0.1739836558865168,
+          "b": 0.14866007795183916,
+          "difference": 0.025323577934677627
+        }
+      ],
+      "leave_one_region_out": [
+        {
+          "omitted_region": "abancay",
+          "difference": 0.021405965146973502
+        },
+        {
+          "omitted_region": "al_qurnah",
+          "difference": 0.022646969291753125
+        },
+        {
+          "omitted_region": "baybay",
+          "difference": 0.022335821120582612
+        },
+        {
+          "omitted_region": "bielefeld",
+          "difference": 0.02375978382771946
+        },
+        {
+          "omitted_region": "buenos_aires",
+          "difference": 0.022321284973353568
+        },
+        {
+          "omitted_region": "chiclayo",
+          "difference": 0.023580701032503204
+        },
+        {
+          "omitted_region": "coxsbazar",
+          "difference": 0.023057321639899864
+        },
+        {
+          "omitted_region": "dowa",
+          "difference": 0.022643772150018223
+        },
+        {
+          "omitted_region": "kagera",
+          "difference": 0.02288952904963764
+        },
+        {
+          "omitted_region": "kampala",
+          "difference": 0.020319812198640246
+        },
+        {
+          "omitted_region": "khartoum",
+          "difference": 0.02423701679443023
+        },
+        {
+          "omitted_region": "kinshasa",
+          "difference": 0.023063558360334625
+        },
+        {
+          "omitted_region": "kitsap",
+          "difference": 0.023160127784035443
+        },
+        {
+          "omitted_region": "monrovia",
+          "difference": 0.021698500949395124
+        },
+        {
+          "omitted_region": "ngaoundere",
+          "difference": 0.022776741803948335
+        },
+        {
+          "omitted_region": "paris",
+          "difference": 0.024949840887033167
+        },
+        {
+          "omitted_region": "rosario",
+          "difference": 0.02384576810869507
+        },
+        {
+          "omitted_region": "san_tome",
+          "difference": 0.02153868653804905
+        },
+        {
+          "omitted_region": "soriano",
+          "difference": 0.021917468896481333
+        },
+        {
+          "omitted_region": "svaneti",
+          "difference": 0.02151248976563235
+        },
+        {
+          "omitted_region": "tokyo",
+          "difference": 0.023460945923478693
+        },
+        {
+          "omitted_region": "tyrolw",
+          "difference": 0.023843221308373796
+        },
+        {
+          "omitted_region": "western",
+          "difference": 0.022576131697871624
+        },
+        {
+          "omitted_region": "zanzibar",
+          "difference": 0.022646267332461938
+        }
+      ],
+      "bootstrap": {
+        "method": "paired percentile region bootstrap",
+        "repetitions": 10000,
+        "seed": 2026101805,
+        "lower": 0.013431422511488458,
+        "upper": 0.032332123814829805,
+        "level": 0.95
+      },
+      "role": "descriptive_metric_convention_sensitivity"
+    }
+  },
+  "geographic_sensitivity": {
+    "purpose": "descriptive_geographic_metadata_sensitivity",
+    "primary_unchanged": true,
+    "configuration": {
+      "status": "FIXED_BEFORE_NEW_PANEL_MODEL_SCORES",
+      "purpose": "descriptive_geographic_metadata_sensitivity",
+      "primary_unchanged": true,
+      "exclude_entire_regions": [
+        "monrovia"
+      ],
+      "reason": "monrovia__monrovia_48 has all257 transformed boundary samples outside the declared EPSG32636 CRS/operation area. Retain the fixed panel for the primary analysis, but remove the entire three-image Monrovia region in this metadata sensitivity.",
+      "target_retained_regions": 23,
+      "first_average": "Average all three source allocations and three paired fit seeds within each region before filtering and calculating paired differences",
+      "metrics": [
+        "union_class_miou",
+        "truth_present_miou"
+      ],
+      "contrast": [
+        "region_kcenter",
+        "kcenter"
+      ],
+      "model": "resnet18_unet",
+      "pool": "skewed5_1",
+      "budget": 12,
+      "repetitions": 10000,
+      "bootstrap_seed": 2026101805,
+      "not_independent_confirmatory_claim": true,
+      "source_caution": "aachen__aachen_1 lies slightly beyond the declared EPSG25832 area; no source image is replaced or coordinate repaired. Existing source0-specific contrast is also reported because that allocation uses no Aachen images.",
+      "screen_limits": "Zero overlap candidates among supported/caution bboxes and zero exact decoded cross-role duplicates do not prove original orthomosaic, acquisition or pretraining independence. Unknown operation precision padding is a screening convention, not an error guarantee."
+    },
+    "averaging_order": "Average all9 paired fits within each region, then exclude entire named regions",
+    "metrics": {
+      "union_class_miou": {
+        "difference": 0.015760308601026125,
+        "region_count": 23,
+        "unit": "held-out geographic region; source allocations and fitting seeds averaged first",
+        "regional_differences": [
+          {
+            "region": "abancay",
+            "a": 0.2810706153883483,
+            "b": 0.22446030546699636,
+            "difference": 0.056610309921351964
+          },
+          {
+            "region": "al_qurnah",
+            "a": 0.22961946991989896,
+            "b": 0.20540494289640987,
+            "difference": 0.024214527023489085
+          },
+          {
+            "region": "baybay",
+            "a": 0.20799252386145192,
+            "b": 0.18058814550118987,
+            "difference": 0.02740437836026205
+          },
+          {
+            "region": "bielefeld",
+            "a": 0.14333523392689215,
+            "b": 0.1426549150900153,
+            "difference": 0.0006803188368768587
+          },
+          {
+            "region": "buenos_aires",
+            "a": 0.3056694905789485,
+            "b": 0.29779787379581246,
+            "difference": 0.007871616783136026
+          },
+          {
+            "region": "chiclayo",
+            "a": 0.16255842544206145,
+            "b": 0.15872682260833296,
+            "difference": 0.0038316028337284924
+          },
+          {
+            "region": "coxsbazar",
+            "a": 0.12133877274782079,
+            "b": 0.10546944388421536,
+            "difference": 0.015869328863605425
+          },
+          {
+            "region": "dowa",
+            "a": 0.13439890118717088,
+            "b": 0.10955934930659429,
+            "difference": 0.024839551880576585
+          },
+          {
+            "region": "kagera",
+            "a": 0.16013550679926392,
+            "b": 0.14297373870352653,
+            "difference": 0.017161768095737384
+          },
+          {
+            "region": "kampala",
+            "a": 0.2590605393463409,
+            "b": 0.2016813130813325,
+            "difference": 0.05737922626500838
+          },
+          {
+            "region": "khartoum",
+            "a": 0.14712051588440903,
+            "b": 0.1556983724018034,
+            "difference": -0.008577856517394372
+          },
+          {
+            "region": "kinshasa",
+            "a": 0.25791376070111804,
+            "b": 0.249693928437821,
+            "difference": 0.008219832263297033
+          },
+          {
+            "region": "kitsap",
+            "a": 0.17482195673692838,
+            "b": 0.17401515172518017,
+            "difference": 0.0008068050117482073
+          },
+          {
+            "region": "ngaoundere",
+            "a": 0.20041032501117662,
+            "b": 0.1784485284146733,
+            "difference": 0.021961796596503325
+          },
+          {
+            "region": "paris",
+            "a": 0.07820205750251244,
+            "b": 0.10943652183849312,
+            "difference": -0.031234464335980677
+          },
+          {
+            "region": "rosario",
+            "a": 0.23957300342819327,
+            "b": 0.24925181098262003,
+            "difference": -0.009678807554426766
+          },
+          {
+            "region": "san_tome",
+            "a": 0.31697488102246185,
+            "b": 0.29020396348138455,
+            "difference": 0.0267709175410773
+          },
+          {
+            "region": "soriano",
+            "a": 0.29654737237621337,
+            "b": 0.27035088987098277,
+            "difference": 0.0261964825052306
+          },
+          {
+            "region": "svaneti",
+            "a": 0.21412042127712894,
+            "b": 0.16637230787144774,
+            "difference": 0.04774811340568119
+          },
+          {
+            "region": "tokyo",
+            "a": 0.13268242217092155,
+            "b": 0.1260234223935264,
+            "difference": 0.006658999777395147
+          },
+          {
+            "region": "tyrolw",
+            "a": 0.0806491338187813,
+            "b": 0.08285549733007642,
+            "difference": -0.00220636351129512
+          },
+          {
+            "region": "western",
+            "a": 0.13188622958560106,
+            "b": 0.11171594742041119,
+            "difference": 0.020170282165189873
+          },
+          {
+            "region": "zanzibar",
+            "a": 0.1522356989007022,
+            "b": 0.1324469672878993,
+            "difference": 0.019788731612802923
+          }
+        ],
+        "leave_one_region_out": [
+          {
+            "omitted_region": "abancay",
+            "difference": 0.013903490359193133
+          },
+          {
+            "omitted_region": "al_qurnah",
+            "difference": 0.015376025945459627
+          },
+          {
+            "omitted_region": "baybay",
+            "difference": 0.015231032702879038
+          },
+          {
+            "omitted_region": "bielefeld",
+            "difference": 0.01644576268121473
+          },
+          {
+            "omitted_region": "buenos_aires",
+            "difference": 0.016118885501839313
+          },
+          {
+            "omitted_region": "chiclayo",
+            "difference": 0.016302522499539653
+          },
+          {
+            "omitted_region": "coxsbazar",
+            "difference": 0.01575535313454525
+          },
+          {
+            "omitted_region": "dowa",
+            "difference": 0.015347615724682923
+          },
+          {
+            "omitted_region": "kagera",
+            "difference": 0.015696605896721068
+          },
+          {
+            "omitted_region": "kampala",
+            "difference": 0.013868539616299662
+          },
+          {
+            "omitted_region": "khartoum",
+            "difference": 0.016866588833681605
+          },
+          {
+            "omitted_region": "kinshasa",
+            "difference": 0.016103057525468357
+          },
+          {
+            "omitted_region": "kitsap",
+            "difference": 0.016440013309629666
+          },
+          {
+            "omitted_region": "ngaoundere",
+            "difference": 0.01547842278304989
+          },
+          {
+            "omitted_region": "paris",
+            "difference": 0.017896434643617343
+          },
+          {
+            "omitted_region": "rosario",
+            "difference": 0.016916632062637618
+          },
+          {
+            "omitted_region": "san_tome",
+            "difference": 0.015259826376478346
+          },
+          {
+            "omitted_region": "soriano",
+            "difference": 0.015285937059925923
+          },
+          {
+            "omitted_region": "svaneti",
+            "difference": 0.014306317473541804
+          },
+          {
+            "omitted_region": "tokyo",
+            "difference": 0.016174004456645717
+          },
+          {
+            "omitted_region": "tyrolw",
+            "difference": 0.016576975515222546
+          },
+          {
+            "omitted_region": "western",
+            "difference": 0.0155598552572005
+          },
+          {
+            "omitted_region": "zanzibar",
+            "difference": 0.01557719846412718
+          }
+        ],
+        "bootstrap": {
+          "method": "paired percentile region bootstrap",
+          "repetitions": 10000,
+          "seed": 2026101805,
+          "lower": 0.0074769276806769015,
+          "upper": 0.02412450157383336,
+          "level": 0.95
+        },
+        "excluded_regions": [
+          "monrovia"
+        ],
+        "role": "descriptive_geographic_metadata_sensitivity_not_additional_confirmatory_test"
+      },
+      "truth_present_miou": {
+        "difference": 0.02169850094939513,
+        "region_count": 23,
+        "unit": "held-out geographic region; source allocations and fitting seeds averaged first",
+        "regional_differences": [
+          {
+            "region": "abancay",
+            "a": 0.31010814974647244,
+            "b": 0.25625762154556075,
+            "difference": 0.053850528200911685
+          },
+          {
+            "region": "al_qurnah",
+            "a": 0.24003990590082935,
+            "b": 0.21473247302984896,
+            "difference": 0.02530743287098039
+          },
+          {
+            "region": "baybay",
+            "a": 0.24744180298059737,
+            "b": 0.21497796217269521,
+            "difference": 0.032463840807902156
+          },
+          {
+            "region": "bielefeld",
+            "a": 0.1471064979713185,
+            "b": 0.1473937994275638,
+            "difference": -0.0002873014562453091
+          },
+          {
+            "region": "buenos_aires",
+            "a": 0.3305960459899826,
+            "b": 0.29779787379581246,
+            "difference": 0.03279817219417014
+          },
+          {
+            "region": "chiclayo",
+            "a": 0.16255842544206145,
+            "b": 0.15872682260833296,
+            "difference": 0.0038316028337284924
+          },
+          {
+            "region": "coxsbazar",
+            "a": 0.12133877274782079,
+            "b": 0.10546944388421536,
+            "difference": 0.015869328863605425
+          },
+          {
+            "region": "dowa",
+            "a": 0.13660017461349236,
+            "b": 0.1112192074826093,
+            "difference": 0.02538096713088306
+          },
+          {
+            "region": "kagera",
+            "a": 0.180877141937672,
+            "b": 0.16114858349803546,
+            "difference": 0.01972855843963653
+          },
+          {
+            "region": "kampala",
+            "a": 0.28297621595718625,
+            "b": 0.2041441699446097,
+            "difference": 0.07883204601257654
+          },
+          {
+            "region": "khartoum",
+            "a": 0.1700512183323527,
+            "b": 0.18131487802294577,
+            "difference": -0.011263659690593064
+          },
+          {
+            "region": "kinshasa",
+            "a": 0.2654198127314269,
+            "b": 0.249693928437821,
+            "difference": 0.015725884293605885
+          },
+          {
+            "region": "kitsap",
+            "a": 0.18949810613854043,
+            "b": 0.17599331859005335,
+            "difference": 0.01350478754848708
+          },
+          {
+            "region": "ngaoundere",
+            "a": 0.2031961066936312,
+            "b": 0.18087344160314067,
+            "difference": 0.022322665090490523
+          },
+          {
+            "region": "paris",
+            "a": 0.08845704346186681,
+            "b": 0.11611565728232742,
+            "difference": -0.027658613820460615
+          },
+          {
+            "region": "rosario",
+            "a": 0.24698687106393566,
+            "b": 0.24925181098262003,
+            "difference": -0.002264939918684372
+          },
+          {
+            "region": "san_tome",
+            "a": 0.34100189968755856,
+            "b": 0.29020396348138455,
+            "difference": 0.05079793620617401
+          },
+          {
+            "region": "soriano",
+            "a": 0.31644647663519326,
+            "b": 0.2743605346729617,
+            "difference": 0.04208594196223159
+          },
+          {
+            "region": "svaneti",
+            "a": 0.21777276984320593,
+            "b": 0.16637230787144774,
+            "difference": 0.05140046197175818
+          },
+          {
+            "region": "tokyo",
+            "a": 0.13894591029901865,
+            "b": 0.13235993995772638,
+            "difference": 0.006585970341292269
+          },
+          {
+            "region": "tyrolw",
+            "a": 0.0806491338187813,
+            "b": 0.08285549733007642,
+            "difference": -0.00220636351129512
+          },
+          {
+            "region": "western",
+            "a": 0.14059351676695797,
+            "b": 0.11365681923670315,
+            "difference": 0.02693669753025482
+          },
+          {
+            "region": "zanzibar",
+            "a": 0.1739836558865168,
+            "b": 0.14866007795183916,
+            "difference": 0.025323577934677627
+          }
+        ],
+        "leave_one_region_out": [
+          {
+            "omitted_region": "abancay",
+            "difference": 0.020237045165235286
+          },
+          {
+            "omitted_region": "al_qurnah",
+            "difference": 0.021534458589323072
+          },
+          {
+            "omitted_region": "baybay",
+            "difference": 0.021209167319462992
+          },
+          {
+            "omitted_region": "bielefeld",
+            "difference": 0.02269785560419697
+          },
+          {
+            "omitted_region": "buenos_aires",
+            "difference": 0.021193970438268993
+          },
+          {
+            "omitted_region": "chiclayo",
+            "difference": 0.022510632681925432
+          },
+          {
+            "omitted_region": "coxsbazar",
+            "difference": 0.021963463316931026
+          },
+          {
+            "omitted_region": "dowa",
+            "difference": 0.02153111612296386
+          },
+          {
+            "omitted_region": "kagera",
+            "difference": 0.021788043790747794
+          },
+          {
+            "omitted_region": "kampala",
+            "difference": 0.01910152162834143
+          },
+          {
+            "omitted_region": "khartoum",
+            "difference": 0.0231967809784855
+          },
+          {
+            "omitted_region": "kinshasa",
+            "difference": 0.021969983524658277
+          },
+          {
+            "omitted_region": "kitsap",
+            "difference": 0.022070942467618225
+          },
+          {
+            "omitted_region": "ngaoundere",
+            "difference": 0.021670129852072614
+          },
+          {
+            "omitted_region": "paris",
+            "difference": 0.023942006166206755
+          },
+          {
+            "omitted_region": "rosario",
+            "difference": 0.022787748261580563
+          },
+          {
+            "omitted_region": "san_tome",
+            "difference": 0.020375799346814272
+          },
+          {
+            "omitted_region": "soriano",
+            "difference": 0.02077179908517529
+          },
+          {
+            "omitted_region": "svaneti",
+            "difference": 0.02034841181201499
+          },
+          {
+            "omitted_region": "tokyo",
+            "difference": 0.022385434158854352
+          },
+          {
+            "omitted_region": "tyrolw",
+            "difference": 0.022785085697608322
+          },
+          {
+            "omitted_region": "western",
+            "difference": 0.021460401104810598
+          },
+          {
+            "omitted_region": "zanzibar",
+            "difference": 0.02153372472279138
+          }
+        ],
+        "bootstrap": {
+          "method": "paired percentile region bootstrap",
+          "repetitions": 10000,
+          "seed": 2026101805,
+          "lower": 0.012090083772187902,
+          "upper": 0.031373535471549564,
+          "level": 0.95
+        },
+        "excluded_regions": [
+          "monrovia"
+        ],
+        "role": "descriptive_geographic_metadata_sensitivity_not_additional_confirmatory_test"
+      }
+    }
+  },
+  "role": "descriptive_main_display_after_post_exposure_user_backend_amendment",
+  "new_confirmatory_evidence": false,
+  "prospective_GPU_primary": false,
+  "original_CPU90_completed": false,
+  "backend_amendment_sha256": "05b06f37acaaff2412e63baf126ab0e66ce552770af2b3dcbaed497c7ed94518"
+}

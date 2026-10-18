@@ -1,0 +1,260 @@
+{
+  "format": "v2-exact-prose-review-1",
+  "created_utc": "2026-10-18T09:25:32.813987+00:00",
+  "candidate_sha256": "b4b289ac10a175dd2b98db22437da511b1de598eff08677d85af9bde7b53b5c7",
+  "source_sha256": "c7af676c27af5e8cf3d4c8bbd06a84d10438e4ede2e226a79107a57312d44e5d",
+  "passed": true,
+  "user_direction": "Present achievements and strengths; remove defensive rhetorical framing.",
+  "manual_checks": [
+    "Argument and paragraph function",
+    "Exact numerical scope and adjacent context",
+    "Claim-citation support via independent working reviews",
+    "Terminology, repetition and prose diagnostics",
+    "Publication prose separated from internal source hashes and work instructions"
+  ],
+  "diagnostic_dispositions": [
+    {
+      "diagnostic": {
+        "code": "PROSE010",
+        "artifact": "v2-supplement",
+        "match": "Union-class, Truth-present, Union-class, Truth-present",
+        "count": 4,
+        "message": "dense lexical hyphenation in one sentence; inspect clarity and field convention"
+      },
+      "resolution": "CONTEXT_CHECKED_TECHNICAL_OR_TABLE_USE",
+      "explanation": "Repeated policy names, table headers and formula citations have technical or tabular functions. The exact sentences and surrounding paragraphs were read; flattened-table repetition is not repeated narrative. Established method names and statistical interval wording remain consistent."
+    },
+    {
+      "diagnostic": {
+        "code": "PROSE010",
+        "artifact": "v2-supplement",
+        "match": "BY-SA, by-sa, BY-NC-SA, by-nc-sa, DL-DE-BY, dl-de",
+        "count": 6,
+        "message": "dense lexical hyphenation in one sentence; inspect clarity and field convention"
+      },
+      "resolution": "CONTEXT_CHECKED_TECHNICAL_OR_TABLE_USE",
+      "explanation": "Repeated policy names, table headers and formula citations have technical or tabular functions. The exact sentences and surrounding paragraphs were read; flattened-table repetition is not repeated narrative. Established method names and statistical interval wording remain consistent."
+    },
+    {
+      "diagnostic": {
+        "code": "PROSE001",
+        "artifact": "v2-supplement",
+        "match": "policy source source source all nine random k geo-random geok permuted geok k-means fl fd adaptation weighted fl permuted weighted fl sources tables v conditions by source csv conditions csv",
+        "count": 4,
+        "message": "exact or punctuation-only sentence repetition"
+      },
+      "resolution": "CONTEXT_CHECKED_TECHNICAL_OR_TABLE_USE",
+      "explanation": "Repeated policy names, table headers and formula citations have technical or tabular functions. The exact sentences and surrounding paragraphs were read; flattened-table repetition is not repeated narrative. Established method names and statistical interval wording remain consistent."
+    },
+    {
+      "diagnostic": {
+        "code": "PROSE001",
+        "artifact": "v2-supplement",
+        "match": "all active conditions frozen dinov head balanced pool image budget",
+        "count": 3,
+        "message": "exact or punctuation-only sentence repetition"
+      },
+      "resolution": "CONTEXT_CHECKED_TECHNICAL_OR_TABLE_USE",
+      "explanation": "Repeated policy names, table headers and formula citations have technical or tabular functions. The exact sentences and surrounding paragraphs were read; flattened-table repetition is not repeated narrative. Established method names and statistical interval wording remain consistent."
+    },
+    {
+      "diagnostic": {
+        "code": "PROSE001",
+        "artifact": "v2-supplement",
+        "match": "policy source source source all nine random k geo-random geok permuted geok k-means fl fd adaptation sources tables v conditions by source csv conditions csv",
+        "count": 3,
+        "message": "exact or punctuation-only sentence repetition"
+      },
+      "resolution": "CONTEXT_CHECKED_TECHNICAL_OR_TABLE_USE",
+      "explanation": "Repeated policy names, table headers and formula citations have technical or tabular functions. The exact sentences and surrounding paragraphs were read; flattened-table repetition is not repeated narrative. Established method names and statistical interval wording remain consistent."
+    },
+    {
+      "diagnostic": {
+        "code": "PROSE001",
+        "artifact": "v2-supplement",
+        "match": "all active conditions frozen dinov head skewed pool image budget",
+        "count": 3,
+        "message": "exact or punctuation-only sentence repetition"
+      },
+      "resolution": "CONTEXT_CHECKED_TECHNICAL_OR_TABLE_USE",
+      "explanation": "Repeated policy names, table headers and formula citations have technical or tabular functions. The exact sentences and surrounding paragraphs were read; flattened-table repetition is not repeated narrative. Established method names and statistical interval wording remain consistent."
+    },
+    {
+      "diagnostic": {
+        "code": "PROSE002",
+        "artifact": "v2-supplement",
+        "match": "all active conditions frozen",
+        "count": 6,
+        "message": "repeated sentence opening"
+      },
+      "resolution": "CONTEXT_CHECKED_TECHNICAL_OR_TABLE_USE",
+      "explanation": "Repeated policy names, table headers and formula citations have technical or tabular functions. The exact sentences and surrounding paragraphs were read; flattened-table repetition is not repeated narrative. Established method names and statistical interval wording remain consistent."
+    },
+    {
+      "diagnostic": {
+        "code": "PROSE004",
+        "artifact": "v2-supplement",
+        "match": "all nine random k geo-random",
+        "count": 7,
+        "message": "repeated multiword phrase across sentences"
+      },
+      "resolution": "CONTEXT_CHECKED_TECHNICAL_OR_TABLE_USE",
+      "explanation": "Repeated policy names, table headers and formula citations have technical or tabular functions. The exact sentences and surrounding paragraphs were read; flattened-table repetition is not repeated narrative. Established method names and statistical interval wording remain consistent."
+    },
+    {
+      "diagnostic": {
+        "code": "PROSE004",
+        "artifact": "v2-supplement",
+        "match": "geo-random geok permuted geok k-means",
+        "count": 7,
+        "message": "repeated multiword phrase across sentences"
+      },
+      "resolution": "CONTEXT_CHECKED_TECHNICAL_OR_TABLE_USE",
+      "explanation": "Repeated policy names, table headers and formula citations have technical or tabular functions. The exact sentences and surrounding paragraphs were read; flattened-table repetition is not repeated narrative. Established method names and statistical interval wording remain consistent."
+    },
+    {
+      "diagnostic": {
+        "code": "PROSE004",
+        "artifact": "v2-supplement",
+        "match": "geok k-means fl fd adaptation",
+        "count": 7,
+        "message": "repeated multiword phrase across sentences"
+      },
+      "resolution": "CONTEXT_CHECKED_TECHNICAL_OR_TABLE_USE",
+      "explanation": "Repeated policy names, table headers and formula citations have technical or tabular functions. The exact sentences and surrounding paragraphs were read; flattened-table repetition is not repeated narrative. Established method names and statistical interval wording remain consistent."
+    },
+    {
+      "diagnostic": {
+        "code": "PROSE004",
+        "artifact": "v2-supplement",
+        "match": "geok permuted geok k-means fl",
+        "count": 7,
+        "message": "repeated multiword phrase across sentences"
+      },
+      "resolution": "CONTEXT_CHECKED_TECHNICAL_OR_TABLE_USE",
+      "explanation": "Repeated policy names, table headers and formula citations have technical or tabular functions. The exact sentences and surrounding paragraphs were read; flattened-table repetition is not repeated narrative. Established method names and statistical interval wording remain consistent."
+    },
+    {
+      "diagnostic": {
+        "code": "PROSE004",
+        "artifact": "v2-supplement",
+        "match": "k geo-random geok permuted geok",
+        "count": 7,
+        "message": "repeated multiword phrase across sentences"
+      },
+      "resolution": "CONTEXT_CHECKED_TECHNICAL_OR_TABLE_USE",
+      "explanation": "Repeated policy names, table headers and formula citations have technical or tabular functions. The exact sentences and surrounding paragraphs were read; flattened-table repetition is not repeated narrative. Established method names and statistical interval wording remain consistent."
+    },
+    {
+      "diagnostic": {
+        "code": "PROSE004",
+        "artifact": "v2-supplement",
+        "match": "nine random k geo-random geok",
+        "count": 7,
+        "message": "repeated multiword phrase across sentences"
+      },
+      "resolution": "CONTEXT_CHECKED_TECHNICAL_OR_TABLE_USE",
+      "explanation": "Repeated policy names, table headers and formula citations have technical or tabular functions. The exact sentences and surrounding paragraphs were read; flattened-table repetition is not repeated narrative. Established method names and statistical interval wording remain consistent."
+    },
+    {
+      "diagnostic": {
+        "code": "PROSE004",
+        "artifact": "v2-supplement",
+        "match": "permuted geok k-means fl fd",
+        "count": 7,
+        "message": "repeated multiword phrase across sentences"
+      },
+      "resolution": "CONTEXT_CHECKED_TECHNICAL_OR_TABLE_USE",
+      "explanation": "Repeated policy names, table headers and formula citations have technical or tabular functions. The exact sentences and surrounding paragraphs were read; flattened-table repetition is not repeated narrative. Established method names and statistical interval wording remain consistent."
+    },
+    {
+      "diagnostic": {
+        "code": "PROSE004",
+        "artifact": "v2-supplement",
+        "match": "random k geo-random geok permuted",
+        "count": 7,
+        "message": "repeated multiword phrase across sentences"
+      },
+      "resolution": "CONTEXT_CHECKED_TECHNICAL_OR_TABLE_USE",
+      "explanation": "Repeated policy names, table headers and formula citations have technical or tabular functions. The exact sentences and surrounding paragraphs were read; flattened-table repetition is not repeated narrative. Established method names and statistical interval wording remain consistent."
+    },
+    {
+      "diagnostic": {
+        "code": "PROSE004",
+        "artifact": "v2-supplement",
+        "match": "weighted fl permuted weighted fl",
+        "count": 5,
+        "message": "repeated multiword phrase across sentences"
+      },
+      "resolution": "CONTEXT_CHECKED_TECHNICAL_OR_TABLE_USE",
+      "explanation": "Repeated policy names, table headers and formula citations have technical or tabular functions. The exact sentences and surrounding paragraphs were read; flattened-table repetition is not repeated narrative. Established method names and statistical interval wording remain consistent."
+    },
+    {
+      "diagnostic": {
+        "code": "PROSE004",
+        "artifact": "v2-supplement",
+        "match": "adaptation weighted fl permuted weighted",
+        "count": 4,
+        "message": "repeated multiword phrase across sentences"
+      },
+      "resolution": "CONTEXT_CHECKED_TECHNICAL_OR_TABLE_USE",
+      "explanation": "Repeated policy names, table headers and formula citations have technical or tabular functions. The exact sentences and surrounding paragraphs were read; flattened-table repetition is not repeated narrative. Established method names and statistical interval wording remain consistent."
+    },
+    {
+      "diagnostic": {
+        "code": "PROSE004",
+        "artifact": "v2-supplement",
+        "match": "fd adaptation weighted fl permuted",
+        "count": 4,
+        "message": "repeated multiword phrase across sentences"
+      },
+      "resolution": "CONTEXT_CHECKED_TECHNICAL_OR_TABLE_USE",
+      "explanation": "Repeated policy names, table headers and formula citations have technical or tabular functions. The exact sentences and surrounding paragraphs were read; flattened-table repetition is not repeated narrative. Established method names and statistical interval wording remain consistent."
+    },
+    {
+      "diagnostic": {
+        "code": "PROSE004",
+        "artifact": "v2-supplement",
+        "match": "fl fd adaptation weighted fl",
+        "count": 4,
+        "message": "repeated multiword phrase across sentences"
+      },
+      "resolution": "CONTEXT_CHECKED_TECHNICAL_OR_TABLE_USE",
+      "explanation": "Repeated policy names, table headers and formula citations have technical or tabular functions. The exact sentences and surrounding paragraphs were read; flattened-table repetition is not repeated narrative. Established method names and statistical interval wording remain consistent."
+    },
+    {
+      "diagnostic": {
+        "code": "PROSE004",
+        "artifact": "v2-supplement",
+        "match": "k-means fl fd adaptation weighted",
+        "count": 4,
+        "message": "repeated multiword phrase across sentences"
+      },
+      "resolution": "CONTEXT_CHECKED_TECHNICAL_OR_TABLE_USE",
+      "explanation": "Repeated policy names, table headers and formula citations have technical or tabular functions. The exact sentences and surrounding paragraphs were read; flattened-table repetition is not repeated narrative. Established method names and statistical interval wording remain consistent."
+    },
+    {
+      "diagnostic": {
+        "code": "PROSE004",
+        "artifact": "v2-supplement",
+        "match": "head balanced pool image budget",
+        "count": 3,
+        "message": "repeated multiword phrase across sentences"
+      },
+      "resolution": "CONTEXT_CHECKED_TECHNICAL_OR_TABLE_USE",
+      "explanation": "Repeated policy names, table headers and formula citations have technical or tabular functions. The exact sentences and surrounding paragraphs were read; flattened-table repetition is not repeated narrative. Established method names and statistical interval wording remain consistent."
+    },
+    {
+      "diagnostic": {
+        "code": "PROSE004",
+        "artifact": "v2-supplement",
+        "match": "head skewed pool image budget",
+        "count": 3,
+        "message": "repeated multiword phrase across sentences"
+      },
+      "resolution": "CONTEXT_CHECKED_TECHNICAL_OR_TABLE_USE",
+      "explanation": "Repeated policy names, table headers and formula citations have technical or tabular functions. The exact sentences and surrounding paragraphs were read; flattened-table repetition is not repeated narrative. Established method names and statistical interval wording remain consistent."
+    }
+  ],
+  "author_metadata_status": "UNDETERMINED"
+}

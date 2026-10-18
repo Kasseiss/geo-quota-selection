@@ -1,0 +1,59 @@
+{
+  "format": "v2-data-audit-1",
+  "created_utc": "2026-10-17T23:41:15.891720+00:00",
+  "passed": false,
+  "processed_pngs_usable": false,
+  "integrity_errors": [
+    {
+      "scope": "identities",
+      "error": "'id'"
+    }
+  ],
+  "inputs": {
+    "manifest": {
+      "path": "v2/data/manifest.json",
+      "sha256": "676953ed28ab90a6448bfd15c1bbed352b8b5d42ae8de6d54416ad258a1d105a",
+      "bytes": 246947
+    },
+    "design": {
+      "path": "configs/v2_design.json",
+      "sha256": "d790c26eae4a3c029cca73e3845efd3d95673017d88bafe42e37fb81f70046a4",
+      "bytes": 6982
+    },
+    "original_manifest": {
+      "path": "data/formal120/manifest.json",
+      "sha256": "193af54a83f3a61805403ddbde3159978f02e7db4d77ad6e851bebb85dc3d20f",
+      "bytes": 133133
+    },
+    "original_dino_index": {
+      "path": "cache/dinov2-formal120/index.json",
+      "sha256": "769b4152e286870148b07bb74c7196e9db989945417a9353376a8307055a5f4d",
+      "bytes": 1504299
+    },
+    "immutable_development_manifest": {
+      "path": "v2/data/development_manifest.json",
+      "sha256": "0b66d75a91e6251ff7db4c71d0241a0bdf1f0bd8195b3d0e8263b52b1f852147",
+      "bytes": 155861
+    },
+    "selection_plan": {
+      "path": "v2/data/selection_plan.json",
+      "sha256": "ba6a1558b1c78da17ec92d2f04a2bd8028f30b184206c74c6c39ae84e50014ea",
+      "bytes": 119841
+    }
+  },
+  "audit_code_sha256": "33d8fa11e02b2a28ec6304589e1b00b34dbd93c21a38f821616e71df2cc4b68e",
+  "geography_helper_sha256": "c595e317d56a55090efb37ba69009925c1d68ca43739269d9653ed2e9ea63653",
+  "original_semantic_class_count_fields_accessed_or_aggregated": false,
+  "processed_mask_class_counts_computed_for_cm_truth_margin_validation": true,
+  "native_tiff_or_new_network_reads": false,
+  "model_results_read": false,
+  "limitations": [
+    "Geography is read only from SHA-bound preparation sidecars; native TIFFs are not reopened or transformed by this audit.",
+    "Supported coverage requires a declared successful offline transform and every sampled boundary point within the declared CRS and operation area of use.",
+    "Padded bounding boxes screen sampled boundaries conservatively; they are not analytic footprint or surveyed coordinate-error guarantees.",
+    "CRS cautions and unknown geographies are excluded from supported separation checks and reported explicitly; caution boundaries are screened separately when available.",
+    "No candidate overlap and no exact decoded-RGB duplicate establish only the stated evidence coverage, not independence of full source mosaics or absence of all leakage.",
+    "Candidate overlaps and exact decoded-RGB matches require human review; this tool never deletes or substitutes samples.",
+    "Original raw TIFF files and deleted feature arrays are not rehashed here; their source hashes are cross-bound through the original manifest, DINO index and preparation provenance."
+  ]
+}

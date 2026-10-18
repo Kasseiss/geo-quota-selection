@@ -1,0 +1,30 @@
+{
+  "created_utc": "2026-10-18T00:37:01.343921+00:00",
+  "passed": true,
+  "scope": "Actual frozen imports and source-selection/CM/bootstrap functions with heavy imports explicitly denied; synthetic objects only",
+  "blocked_top_level_imports": [
+    "PIL",
+    "cupy",
+    "matplotlib",
+    "pyproj",
+    "requests",
+    "scipy",
+    "torch",
+    "torchvision"
+  ],
+  "tested_strategy_count": 10,
+  "checked_file_sha256": {
+    "code/core.py": "8c7339630c32f8d89a8725ffab9450ce5054d15fab8c0c299e45b9d8fe0010e8",
+    "code/v2_selection.py": "e1665e1932e05e5f00a1403c62399e0b1a00dc2618c72ba05c44fdc3d20efe96",
+    "code/v2_weighted_selection.py": "9d73d805e8ebe0b6f0afbac5c16de1f6fdc8ffc6f6a892b30d87cf82c3fc1f11",
+    "code/v2_audit_runs.py": "ad6f3084f0c5109458f2a72358a400dcf60c5e170805dabc84db30de2c886ff1",
+    "code/v2_statistics.py": "fdc8f32ddac241ffea227ed756ff6d852f72feefa4b1578a4b998a1ea66612c2"
+  },
+  "numpy": "2.5.1",
+  "new_panel_result_files_read": false,
+  "canonical_outputs_written": false,
+  "limitations": [
+    "Not a fresh installation",
+    "Not actual576 table reproduction; complete-matrix source and final-root reproduction still required"
+  ]
+}

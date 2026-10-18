@@ -1,0 +1,11 @@
+{
+  "plan_sha256": "3e776a5517286d634eb29968ab3a7cafa3912e166f47d84137e8d16ef03d58e9",
+  "runner_code_sha256": "1b7e79fa4058bae13b2ad7161392aab5416049056380ade950d3c2b1872b5e1b",
+  "helper_code_sha256": {
+    "code/v2_cuda_parallel_v2.py": "80d9e40683f1703fe5c7d12367680d0a207177f75d656c44038fa57e15d9945b"
+  },
+  "partition": "plan_index_modulo_2",
+  "workers": 2,
+  "external_growth_reserve_bytes": 55000000,
+  "per_worker_output_reserve_bytes": 4000000
+}

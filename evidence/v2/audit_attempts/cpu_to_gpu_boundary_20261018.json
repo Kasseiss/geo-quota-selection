@@ -1,0 +1,13 @@
+{
+  "status": "STOPPED_AFTER_NEW_COMPLETED_FIT_BOUNDARY_BY_USER_BACKEND_MIGRATION",
+  "started_utc": "2026-10-18T08:22:05.6937368Z",
+  "stopped_utc": "2026-10-18T08:22:42.5696025Z",
+  "pid": 32212,
+  "creation_utc": "2026-10-18T06:55:24",
+  "initial_completed": 71,
+  "final_completed": 72,
+  "last_completed_run": "source2_skewed5_1_b12_s2_i2_fd_roundrobin",
+  "user_instruction": "Preserve existing CPU results and transfer all remaining fits to RTX4060",
+  "obsolete_cpu576_watcher_stopped": 9556,
+  "raw_and_partial_attempts_preserved": true
+}

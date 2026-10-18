@@ -1,0 +1,14 @@
+{
+  "status": "started",
+  "identity": {
+    "model": "resnet18_unet",
+    "source_split": "source0",
+    "pool": "skewed5_1",
+    "budget": 12,
+    "selection_seed": 2,
+    "initialization_seed": 2,
+    "strategy": "kcenter"
+  },
+  "plan_sha256": "15d586fd03389d495dfc2b7d9cdea35b2b3089461ccb49cc37e5f8bd39ff1545",
+  "device": "cuda:0"
+}

@@ -1,0 +1,88 @@
+{
+  "format": "v2-oem-reference-check-1",
+  "created_utc": "2026-10-18T01:22:50.817672+00:00",
+  "scope": "Official bibliographic identity and CVF pagination only; no project outcomes or dataset access",
+  "citation_key": "xia2023openearthmap",
+  "identity": {
+    "title": "OpenEarthMap: A Benchmark Dataset for Global High-Resolution Land Cover Mapping",
+    "authors": [
+      "Junshi Xia",
+      "Naoto Yokoya",
+      "Bruno Adriano",
+      "Clifford Broni-Bediako"
+    ],
+    "venue": "2023 IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)",
+    "year": 2023,
+    "doi": "10.1109/WACV56688.2023.00619"
+  },
+  "cvf_pagination": {
+    "supported_pages": "6254--6264",
+    "first_printed_page": 6254,
+    "last_printed_page": 6264,
+    "physical_pdf_page_count": 11,
+    "inclusive_printed_span": 11,
+    "not_bibliographic_pages": "1--11",
+    "source_url": "https://openaccess.thecvf.com/content/WACV2023/papers/Xia_OpenEarthMap_A_Benchmark_Dataset_for_Global_High-Resolution_Land_Cover_Mapping_WACV_2023_paper.pdf",
+    "first_footer_location": "PDF physical page1, footer",
+    "last_footer_location": "PDF physical page11, footer",
+    "response_bytes": 8314640,
+    "retrieval": "Ordinary unauthenticated urllib.request; in-memory pypdf parsing",
+    "pdf_persisted": false,
+    "pdf_sha256": null,
+    "intermediate_page_footers_individually_registered": false
+  },
+  "official_cvf_bibliographic_record": {
+    "url": "https://openaccess.thecvf.com/content/WACV2023/html/Xia_OpenEarthMap_A_Benchmark_Dataset_for_Global_High-Resolution_Land_Cover_Mapping_WACV_2023_paper.html",
+    "locations": [
+      "Author/conference citation line",
+      "BibTeX Xia_2023_WACV.pages"
+    ],
+    "pages": "6254-6264",
+    "access_level": "Official-page search-index text; direct web open returned403"
+  },
+  "publisher_deposited_doi_metadata": {
+    "url": "https://api.crossref.org/works/10.1109/WACV56688.2023.00619",
+    "retrieval": "Ordinary public Crossref JSON API request",
+    "observed_fields": {
+      "message.DOI": "10.1109/wacv56688.2023.00619",
+      "message.page": "6243-6253",
+      "message.publisher": "IEEE",
+      "message.container-title": [
+        "2023 IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)"
+      ],
+      "message.published-print.date-parts": [
+        [
+          2023,
+          1
+        ]
+      ],
+      "message.resource.primary.URL": "https://ieeexplore.ieee.org/document/10030160/"
+    },
+    "title_and_author_order_agree_with_cvf": true
+  },
+  "resolution": {
+    "for_current_cvf_artifact": "6254--6264 directly supported; may be used for the currently linked CVF version",
+    "crossref_discrepancy_resolved_by_publisher": false,
+    "cause_of_discrepancy": "Unknown; do not assert typo or alternate printed edition",
+    "ieee_download_pdf_pagination": "Not verified; normal IEEE page required JavaScript verification"
+  },
+  "existing_bib_comparison": {
+    "title_match": true,
+    "author_order_match": true,
+    "year_match": true,
+    "doi_match_case_insensitive": true,
+    "pages_currently_omitted": true,
+    "entry_sha256": "213fa9b09b30de99173d5f2279be3d1f5cf8a700f8714c72b3ad1a0a9df6ea8a",
+    "file_sha256": "2336b3efcf61fbca512b0872d834de35c36839e14f41498053b990fb7ff7d01c",
+    "modified": false
+  },
+  "note_file": "docs/v2_openearthmap_reference_check.md",
+  "note_sha256": "fe4baf45e673a4d3927d8dd8a73659ed5ba8fb602038f3a8b027c1bb75b0877e",
+  "reference_matrix_outline_modified": false,
+  "project_results_read": false,
+  "dataset_downloaded": false,
+  "remaining_uncertainties": [
+    "Why the DOI-deposited page field differs from the CVF printed pages",
+    "Printed pagination of the IEEE-hosted download"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "started_utc": "2026-10-17T23:47:29.755919+00:00",
+  "completed_utc": "2026-10-17T23:47:30.549973+00:00",
+  "command": [
+    "python",
+    "code/test_v2_weighted_selection.py"
+  ],
+  "validated_file_sha256": {
+    "code/test_v2_weighted_selection.py": "a7cd168a84432cf6ae8cc9e1b8facca596e541be89dca42b3da9d488f79af5f4",
+    "code/v2_weighted_selection.py": "9d73d805e8ebe0b6f0afbac5c16de1f6fdc8ffc6f6a892b30d87cf82c3fc1f11",
+    "code/v2_selection.py": "e1665e1932e05e5f00a1403c62399e0b1a00dc2618c72ba05c44fdc3d20efe96",
+    "code/core.py": "8c7339630c32f8d89a8725ffab9450ce5054d15fab8c0c299e45b9d8fe0010e8"
+  },
+  "code_unchanged_during_check": true,
+  "stdout": "",
+  "stderr": ".......\n----------------------------------------------------------------------\nRan 7 tests in 0.209s\n\nOK\n",
+  "returncode": 0,
+  "scientific_new_panel_scores_read": false,
+  "synthetic_checks_only": true
+}

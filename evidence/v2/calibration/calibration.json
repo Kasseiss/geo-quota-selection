@@ -1,0 +1,188 @@
+{
+  "purpose": "Old24 development only; all new panel records excluded before fit/evaluate",
+  "design_sha256": "d790c26eae4a3c029cca73e3845efd3d95673017d88bafe42e37fb81f70046a4",
+  "development_manifest_sha256": "0b66d75a91e6251ff7db4c71d0241a0bdf1f0bd8195b3d0e8263b52b1f852147",
+  "execution_code_sha256": {
+    "v2_segmentation.py": "5f8d46af866497e5a6db1c9779764566bdb8ddd3bcc01bcf3bb2721478e5a5d2",
+    "v2_selection.py": "e1665e1932e05e5f00a1403c62399e0b1a00dc2618c72ba05c44fdc3d20efe96",
+    "v2_calibrate.py": "92a4a16140fe89cc3a9efa413362667954943f9078fd204f277c1accd8293334",
+    "core.py": "8c7339630c32f8d89a8725ffab9450ce5054d15fab8c0c299e45b9d8fe0010e8"
+  },
+  "device": "cpu",
+  "torch": "2.13.0+cpu",
+  "splits": [
+    {
+      "source_split": "source0",
+      "settings": [
+        {
+          "encoder_lr": 0.0001,
+          "steps": 300,
+          "validation_union_miou": 0.15210864027705806,
+          "validation_truth_present_miou": 0.15210864027705806,
+          "record": "evidence/v2/calibration/source0/encoder_lr_0.0001.json"
+        },
+        {
+          "encoder_lr": 0.0001,
+          "steps": 600,
+          "validation_union_miou": 0.1893343301876188,
+          "validation_truth_present_miou": 0.1893343301876188,
+          "record": "evidence/v2/calibration/source0/encoder_lr_0.0001.json"
+        },
+        {
+          "encoder_lr": 0.0001,
+          "steps": 1200,
+          "validation_union_miou": 0.20367008696517552,
+          "validation_truth_present_miou": 0.20367008696517552,
+          "record": "evidence/v2/calibration/source0/encoder_lr_0.0001.json"
+        },
+        {
+          "encoder_lr": 0.0003,
+          "steps": 300,
+          "validation_union_miou": 0.13959379250735793,
+          "validation_truth_present_miou": 0.13959379250735793,
+          "record": "evidence/v2/calibration/source0/encoder_lr_0.0003.json"
+        },
+        {
+          "encoder_lr": 0.0003,
+          "steps": 600,
+          "validation_union_miou": 0.22954064560356122,
+          "validation_truth_present_miou": 0.22954064560356124,
+          "record": "evidence/v2/calibration/source0/encoder_lr_0.0003.json"
+        },
+        {
+          "encoder_lr": 0.0003,
+          "steps": 1200,
+          "validation_union_miou": 0.22121057351754891,
+          "validation_truth_present_miou": 0.22121057351754891,
+          "record": "evidence/v2/calibration/source0/encoder_lr_0.0003.json"
+        }
+      ],
+      "chosen": {
+        "encoder_lr": 0.0003,
+        "steps": 600,
+        "validation_union_miou": 0.22954064560356122,
+        "validation_truth_present_miou": 0.22954064560356124,
+        "record": "evidence/v2/calibration/source0/encoder_lr_0.0003.json"
+      }
+    },
+    {
+      "source_split": "source1",
+      "settings": [
+        {
+          "encoder_lr": 0.0001,
+          "steps": 300,
+          "validation_union_miou": 0.1600282073374807,
+          "validation_truth_present_miou": 0.1600282073374807,
+          "record": "evidence/v2/calibration/source1/encoder_lr_0.0001.json"
+        },
+        {
+          "encoder_lr": 0.0001,
+          "steps": 600,
+          "validation_union_miou": 0.20526731567120954,
+          "validation_truth_present_miou": 0.20526731567120954,
+          "record": "evidence/v2/calibration/source1/encoder_lr_0.0001.json"
+        },
+        {
+          "encoder_lr": 0.0001,
+          "steps": 1200,
+          "validation_union_miou": 0.2699095599869555,
+          "validation_truth_present_miou": 0.2699095599869555,
+          "record": "evidence/v2/calibration/source1/encoder_lr_0.0001.json"
+        },
+        {
+          "encoder_lr": 0.0003,
+          "steps": 300,
+          "validation_union_miou": 0.18132922150938913,
+          "validation_truth_present_miou": 0.18132922150938913,
+          "record": "evidence/v2/calibration/source1/encoder_lr_0.0003.json"
+        },
+        {
+          "encoder_lr": 0.0003,
+          "steps": 600,
+          "validation_union_miou": 0.21658634009510785,
+          "validation_truth_present_miou": 0.21658634009510788,
+          "record": "evidence/v2/calibration/source1/encoder_lr_0.0003.json"
+        },
+        {
+          "encoder_lr": 0.0003,
+          "steps": 1200,
+          "validation_union_miou": 0.23671788066343136,
+          "validation_truth_present_miou": 0.23671788066343136,
+          "record": "evidence/v2/calibration/source1/encoder_lr_0.0003.json"
+        }
+      ],
+      "chosen": {
+        "encoder_lr": 0.0001,
+        "steps": 1200,
+        "validation_union_miou": 0.2699095599869555,
+        "validation_truth_present_miou": 0.2699095599869555,
+        "record": "evidence/v2/calibration/source1/encoder_lr_0.0001.json"
+      }
+    },
+    {
+      "source_split": "source2",
+      "settings": [
+        {
+          "encoder_lr": 0.0001,
+          "steps": 300,
+          "validation_union_miou": 0.26015803569509666,
+          "validation_truth_present_miou": 0.2601580356950966,
+          "record": "evidence/v2/calibration/source2/encoder_lr_0.0001.json"
+        },
+        {
+          "encoder_lr": 0.0001,
+          "steps": 600,
+          "validation_union_miou": 0.29160554337445377,
+          "validation_truth_present_miou": 0.3134208244970116,
+          "record": "evidence/v2/calibration/source2/encoder_lr_0.0001.json"
+        },
+        {
+          "encoder_lr": 0.0001,
+          "steps": 1200,
+          "validation_union_miou": 0.2908156050946893,
+          "validation_truth_present_miou": 0.3225838319825297,
+          "record": "evidence/v2/calibration/source2/encoder_lr_0.0001.json"
+        },
+        {
+          "encoder_lr": 0.0003,
+          "steps": 300,
+          "validation_union_miou": 0.20191698681392875,
+          "validation_truth_present_miou": 0.2199316569963523,
+          "record": "evidence/v2/calibration/source2/encoder_lr_0.0003.json"
+        },
+        {
+          "encoder_lr": 0.0003,
+          "steps": 600,
+          "validation_union_miou": 0.2563999640504263,
+          "validation_truth_present_miou": 0.27611024388241534,
+          "record": "evidence/v2/calibration/source2/encoder_lr_0.0003.json"
+        },
+        {
+          "encoder_lr": 0.0003,
+          "steps": 1200,
+          "validation_union_miou": 0.263326901355561,
+          "validation_truth_present_miou": 0.303171012211659,
+          "record": "evidence/v2/calibration/source2/encoder_lr_0.0003.json"
+        }
+      ],
+      "chosen": {
+        "encoder_lr": 0.0001,
+        "steps": 600,
+        "validation_union_miou": 0.29160554337445377,
+        "validation_truth_present_miou": 0.3134208244970116,
+        "record": "evidence/v2/calibration/source2/encoder_lr_0.0001.json"
+      }
+    }
+  ],
+  "development_records_sha256": "0cc7a82624d4c8a8a8566c959bfccf2adc230b5f9ea480ca8fe285b98e906aee",
+  "environment": {
+    "torch": "2.13.0+cpu",
+    "numpy": "2.5.1",
+    "python": "3.13.13",
+    "threads": 8,
+    "device": "cpu",
+    "device_name": "AMD64 Family 25 Model 117 Stepping 2, AuthenticAMD",
+    "pretrained_weight_sha256": "f37072fd47e89c5e827621c5baffa7500819f7896bbacec160b1a16c560e07ec"
+  },
+  "complete": true
+}

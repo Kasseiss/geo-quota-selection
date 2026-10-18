@@ -1,0 +1,78 @@
+{
+  "purpose": "Source identity records retained outside publication prose",
+  "records": [
+    {
+      "title": "S10. Audit and numerical provenance",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The active audit checks all 576 identities, GPU/full and frozen-head provenance, ordered selections, calibrated recipes, original freeze dependencies and source/panel confusion-matrix truth margins. Pixel auditing first checks terminal metadata for all 27 records, then validates evaluation matrices and independently reconstructs source masks. Log audits check finite recorded losses at step 1, every 50 steps and the final step. Unsampled optimizer steps lie outside the saved log record. Terminal state hashes identify reported states; independent state reload is available for the archived CPU reference checkpoint."
+        },
+        {
+          "type": "paragraph",
+          "text": "The six canonical numerical files were regenerated through the active analysis implementation and compared byte-for-byte. They contain 192 source-condition rows, 64 conditions, 1,536 condition-region rows, 512 condition-class rows and the fixed contrast/main-comparison objects. Before reading the summaries, the plotter checks current input, result, artifact, analysis and numerical SHA256 bindings, and repeats the gate after rendering. Table reproduction uses Python and NumPy; checkpoint reload and refitting use their separately recorded environments. Full code, source manifests, sidecars, result/log records and cache-index identities provide the reproduction chain."
+        },
+        {
+          "type": "table",
+          "id": "S12",
+          "caption": "Exact source identities used for this working supplement.",
+          "headers": [
+            "Project-relative source",
+            "SHA256"
+          ],
+          "rows": [
+            [
+              "configs/v2_active_gpu_amendment.json",
+              "05b06f37acaaff2412e63baf126ab0e66ce552770af2b3dcbaed497c7ed94518"
+            ],
+            [
+              "configs/v2_freeze.json",
+              "5fd417464cc88024ad4063b2dc77366c1b6d3c80ea7cb1fd3083b0ddc2957bd8"
+            ],
+            [
+              "evidence/v2/calibration/calibration.json",
+              "9bc9f894a2dc916d824bcec465ef23edab2be74005a5c3c6151f59dc8bf0aac3"
+            ],
+            [
+              "evidence/v2/data_audit.json",
+              "ca67960d03e63af09f664520bd585ebdeb012ea826ac48d92ff7e658575b2a3c"
+            ],
+            [
+              "evidence/v2/geographic_disposition.json",
+              "8c191f8b296df66f33a6d75c08ee80fd5c64ebb4ab232fe3955ed9a2dccb59e3"
+            ],
+            [
+              "evidence/v2/active_run_completeness.json",
+              "cb32a37310ed765320b23ce29650e5a9fe60af4e874bab66f35b42b0adba5dfb"
+            ],
+            [
+              "evidence/v2/pixel_budget_audit.json",
+              "31c72c299db23cd51432c76d37f7a0a3f14357e31b87a11f19e340a5f2ba94e7"
+            ],
+            [
+              "evidence/v2/checkpoint_reload.json",
+              "cbcb485704ac96babfc17bbf9fcff6b01f71a54635c4e177133d0b7a4b39cfbe"
+            ],
+            [
+              "tables/v2/analysis_identity.json",
+              "174fc68da192de332ab35ac5313a5415b5a3386661f83a1c8c98a577a9d3ea36"
+            ],
+            [
+              "tables/v2_pixel_budget/descriptive_analysis.json",
+              "271dcfa7a38085003a4c964f4dda8889092ad4946e6ec7ee0c73aaf74cd2c162"
+            ]
+          ],
+          "font_size_pt": 9.0,
+          "notes": [
+            "The active analysis identity binds all six canonical numerical files; audit input/code maps bind the source configuration and executable dependency graph.",
+            "Parent integration supplies the final document evidence_binding and formatted-document review."
+          ],
+          "column_weights": [
+            2.7,
+            3.5
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "created_utc": "2026-10-18T08:13:11.056303+00:00",
+  "status": "WORKING_TEXT_CHECKED_NOT_A_FINAL_MANUSCRIPT_OR_CONTRIBUTION_APPROVAL",
+  "source_sha256": "a495e5baa7c540cae743764a17c981d0a383709f023918e17849f81a522141ea",
+  "candidate_sha256": "14b5e39c80baf8fef71619cb8093103ed3b8abe3d882d87774b04cafb8a16384",
+  "basis_bibliography_sha256": "a0389f038d2495538cb70a7173f0812c3a78fbf8e73106a1066a892847e71d97",
+  "source_paragraphs": 8,
+  "candidate_audit": "PASS; no terminology/prose deterministic findings in exact extracted810-word candidate after revisions.",
+  "independent_review": "Prior candidate reviewed by method_audit; parent corrected quota/coverage wording, V2Q3 recipe scope, source/seed variation framing, redundant subset wording and suspended compounds.",
+  "parent_manual_review": [
+    "Each paragraph retains its evidence-outline function and adjacent flow.",
+    "All13 cited keys are supported by existing source-specific traces, with Li abstract-only restriction retained.",
+    "All four question meanings match state V2Q1,Q2,Q4,Q3; original primary remains complete/skew/B12.",
+    "No priority/newalgorithm/convergence/independence/equivalence or actual outcome claim.",
+    "Exact-prose suspended-compound findings resolved; technical names retained."
+  ],
+  "open": [
+    "Contribution and ending must be reassessed after complete results.",
+    "Full manuscript cross-file citation order, evidence links, formatted-page QA and four passes remain incomplete."
+  ]
+}

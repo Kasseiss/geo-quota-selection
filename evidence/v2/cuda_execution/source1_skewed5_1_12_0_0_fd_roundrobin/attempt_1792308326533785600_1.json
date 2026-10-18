@@ -1,0 +1,25 @@
+{
+  "status": "started",
+  "identity": {
+    "model": "resnet18_unet",
+    "source_split": "source1",
+    "pool": "skewed5_1",
+    "budget": 12,
+    "selection_seed": 0,
+    "initialization_seed": 0,
+    "strategy": "fd_roundrobin"
+  },
+  "plan_sha256": "15d586fd03389d495dfc2b7d9cdea35b2b3089461ccb49cc37e5f8bd39ff1545",
+  "device": "cuda:0",
+  "scheduling": {
+    "generation": "20261018T072413_80f828a119",
+    "worker": 1,
+    "workers": 2,
+    "plan_index": 31,
+    "partition_rule": "fixed_plan_index_modulo_workers",
+    "pid": 29392,
+    "amendment_file": "evidence/v2/cuda_execution/parallel/20261018T072413_80f828a119/scheduling_amendment.json",
+    "amendment_sha256": "c60cb9bab13846fe48d5dadef636e7721561a7f2120f180420ec45b4291e788a",
+    "cpu_threads_per_worker": 2
+  }
+}
