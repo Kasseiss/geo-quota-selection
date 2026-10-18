@@ -430,11 +430,12 @@ BACK = [
     ('Funding', 'To be completed by the authors.'),
     ('Data Availability Statement',
      'OpenEarthMap is available from https://doi.org/10.5281/zenodo.7223446 under the licences of its individual '
-     'sources. The accompanying research archive contains the image identities, provenance records, configurations, '
-     'selection and training code, per-image confusion matrices, training logs, all result tables and the code that '
-     'draws every figure in this article. Raw RGB imagery is not redistributed under a single licence; retrieval '
-     'scripts and per-region attribution are provided instead. A permanent repository address will be supplied '
-     'before publication.'),
+     'sources. The accompanying research archive is openly available at '
+     'https://github.com/Kasseiss/geo-quota-selection and contains the image identities, provenance records, '
+     'configurations, selection and training code, per-image confusion matrices, training logs, all result tables '
+     'and the code that draws every figure in this article. Raw RGB imagery and label masks are not redistributed '
+     'under a single licence; retrieval scripts, a per-region attribution register and a manifest identifying every '
+     'image are provided instead. No new primary data were collected.'),
     ('Use of Generative AI',
      'OpenAI Codex assisted with study planning, software, experiment execution and analysis, and Anthropic Claude '
      'assisted with figure preparation and manuscript editing. All numerical results come from recorded experiment '
