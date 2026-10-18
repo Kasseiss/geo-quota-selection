@@ -1,3 +1,7 @@
+> **Historical note.** This is the internal delivery-package README as written before the public archive
+> was created. Statements below such as "no public data upload has been performed" describe that earlier
+> stage; the archive is now published, and the current description is the repository README with
+> `docs/RELEASE_NOTES.md`.
 # V2 author-review package
 
 The active core contains90 complete RTX4060 model executions and486 frozen-feature fits, for576 conditions/runs in the fixed identity matrix. The72 completed CPU reference runs and27 equal-available-pixel supplemental runs are separate evidence; the same90 GPU executions are not counted twice. The18 remaining CPU executions were replaced by their already completed GPU identities at the user's request. This resource-directed amendment occurred after panel exposure; the active main display is descriptive and is not a newly prospective confirmatory test. See configs/v2_active_gpu_amendment.json.
