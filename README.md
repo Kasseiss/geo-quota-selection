@@ -1,8 +1,7 @@
 # Geographic allocation for low-budget land cover image selection
 
 Research archive for the manuscript **"When Diversity Means Outliers: Geographic Allocation for
-Selecting Training Images in Low-Budget Land Cover Segmentation"** (submitted to *Remote Sensing*,
-MDPI).
+Selecting Training Images in Low-Budget Land Cover Segmentation"** (MDPI).
 
 The study asks a single question at a very small annotation budget: when only twelve training images
 can be labelled, does *where* they come from matter more than how *different* they look? Ten
